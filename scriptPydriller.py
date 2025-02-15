@@ -34,6 +34,8 @@ with open(csv_filename, mode="w", newline="", encoding="utf-8") as csv_file:
         if not main_branches.intersection(commit.branches):
             continue
         
+
+        
         for file in commit.modified_files:
             # Check if the file is a README file
             # if file.filename.lower().startswith("readme"):
