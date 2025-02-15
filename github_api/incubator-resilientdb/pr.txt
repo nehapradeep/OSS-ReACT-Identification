@@ -1,0 +1,504 @@
+PR #173: Smart contract merge (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/173
+Created at: 2025-02-14T09:14:45Z, Merged at: 2025-02-14T09:14:57Z
+================================================================================
+PR #172: Smart contract merge (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/172
+Created at: 2025-02-14T07:53:26Z, Merged at: 2025-02-14T07:53:35Z
+================================================================================
+PR #171: Support SmartContract with Key-Value (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/171
+Created at: 2025-02-13T19:30:45Z, Merged at: 2025-02-14T07:45:09Z
+================================================================================
+PR #170: MemLens Database Specific Changes (State: open)
+URL: https://github.com/apache/incubator-resilientdb/pull/170
+Created at: 2025-02-12T11:42:38Z, Merged at: None
+================================================================================
+PR #168: Fix ut (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/168
+Created at: 2025-01-06T06:53:16Z, Merged at: 2025-01-06T07:15:09Z
+================================================================================
+PR #167: add gcc (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/167
+Created at: 2025-01-06T05:10:09Z, Merged at: 2025-01-06T06:47:43Z
+================================================================================
+PR #166: Stable Fides Version (State: open)
+URL: https://github.com/apache/incubator-resilientdb/pull/166
+Created at: 2025-01-03T02:32:09Z, Merged at: None
+================================================================================
+PR #165: Use custom Ports (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/165
+Created at: 2024-12-08T04:32:49Z, Merged at: 2024-12-08T04:35:41Z
+================================================================================
+PR #164: Integrate clangd Autocomplete Support into Bazel C++ Project (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/164
+Created at: 2024-11-09T08:33:46Z, Merged at: None
+================================================================================
+PR #157: Minor fixes to the Dockerfile, Entrypoint and Readme (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/157
+Created at: 2024-09-27T09:09:20Z, Merged at: 2024-09-27T18:36:03Z
+================================================================================
+PR #156: Sync with master (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/156
+Created at: 2024-09-27T08:20:21Z, Merged at: 2024-09-27T08:21:18Z
+================================================================================
+PR #154: [License]Add the missing license file (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/154
+Created at: 2024-08-01T04:11:17Z, Merged at: 2024-08-01T07:06:35Z
+================================================================================
+PR #153: Update CHANGELOG.md (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/153
+Created at: 2024-07-30T17:39:49Z, Merged at: 2024-07-31T05:38:47Z
+================================================================================
+PR #152: Update README.md (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/152
+Created at: 2024-07-27T20:42:22Z, Merged at: 2024-07-28T02:50:16Z
+================================================================================
+PR #151: Update .licenserc.yaml (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/151
+Created at: 2024-07-11T13:37:14Z, Merged at: 2024-07-12T06:51:46Z
+================================================================================
+PR #150: Add missing ASF headers and provide dev/check-license script (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/150
+Created at: 2024-07-11T12:41:19Z, Merged at: 2024-07-11T13:34:28Z
+================================================================================
+PR #145: Install (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/145
+Created at: 2024-06-23T07:53:31Z, Merged at: 2024-06-23T08:10:12Z
+================================================================================
+PR #143: Fix Apache License (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/143
+Created at: 2024-05-04T15:39:08Z, Merged at: 2024-05-04T17:13:15Z
+================================================================================
+PR #142: Fix Bug (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/142
+Created at: 2024-05-03T03:19:25Z, Merged at: 2024-05-03T03:55:28Z
+================================================================================
+PR #141: Added Resview to CHANGELOG (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/141
+Created at: 2024-04-16T22:42:46Z, Merged at: 2024-04-16T22:43:07Z
+================================================================================
+PR #140: add poe (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/140
+Created at: 2024-04-10T22:13:59Z, Merged at: 2024-04-10T22:39:42Z
+================================================================================
+PR #139: "Fixed issue with data carryover between instances" (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/139
+Created at: 2024-04-02T23:01:17Z, Merged at: 2024-04-02T23:17:16Z
+================================================================================
+PR #138: ResView Branch (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/138
+Created at: 2024-03-30T17:47:20Z, Merged at: 2024-03-31T06:34:47Z
+================================================================================
+PR #137: update kv_operation.py route to bazel-out and update readme (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/137
+Created at: 2024-03-09T06:27:47Z, Merged at: 2024-03-09T07:17:16Z
+================================================================================
+PR #136: kv-service python api (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/136
+Created at: 2024-03-09T04:15:17Z, Merged at: 2024-03-09T05:27:33Z
+================================================================================
+PR #135: Fix incorrect comment intervals in Prometheus config (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/135
+Created at: 2024-03-07T10:28:16Z, Merged at: 2024-03-07T13:16:25Z
+================================================================================
+PR #133: add GetRequestFromReplica interface (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/133
+Created at: 2024-01-29T22:23:24Z, Merged at: 2024-01-29T22:44:39Z
+================================================================================
+PR #132: add bazel version (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/132
+Created at: 2024-01-07T11:42:17Z, Merged at: 2024-01-07T12:06:27Z
+================================================================================
+PR #131: Fix test (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/131
+Created at: 2024-01-02T15:10:15Z, Merged at: None
+================================================================================
+PR #130: Use .asf.yaml to manage GitHub settings (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/130
+Created at: 2024-01-02T09:39:41Z, Merged at: 2024-01-02T12:33:25Z
+================================================================================
+PR #129: Update copyright date in NOTICE (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/129
+Created at: 2024-01-02T08:44:11Z, Merged at: 2024-01-02T09:12:01Z
+================================================================================
+PR #127: "Added flags to enable/disable resview functions and faulty switches" (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/127
+Created at: 2023-12-25T23:58:11Z, Merged at: 2023-12-25T23:58:24Z
+================================================================================
+PR #126: Fix the failure memory order argument to atomic_compare_exchange_strong explicit (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/126
+Created at: 2023-12-20T20:18:55Z, Merged at: 2023-12-29T10:29:25Z
+================================================================================
+PR #124: change apache license (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/124
+Created at: 2023-12-01T22:37:18Z, Merged at: 2023-12-01T22:37:51Z
+================================================================================
+PR #123: add notice file (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/123
+Created at: 2023-12-01T22:28:15Z, Merged at: 2023-12-01T22:29:26Z
+================================================================================
+PR #122: change apache license (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/122
+Created at: 2023-12-01T22:03:47Z, Merged at: 2023-12-01T22:23:40Z
+================================================================================
+PR #121: License (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/121
+Created at: 2023-12-01T21:45:04Z, Merged at: 2023-12-01T22:01:30Z
+================================================================================
+PR #120: change license under service folder (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/120
+Created at: 2023-12-01T21:20:27Z, Merged at: 2023-12-01T21:40:49Z
+================================================================================
+PR #119: support old api command line (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/119
+Created at: 2023-11-30T20:44:17Z, Merged at: 2023-11-30T21:19:11Z
+================================================================================
+PR #118: Update CHANGELOG.md (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/118
+Created at: 2023-11-30T05:19:05Z, Merged at: 2023-11-30T05:41:51Z
+================================================================================
+PR #117: Support version based key-value service. (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/117
+Created at: 2023-11-29T23:06:57Z, Merged at: 2023-11-30T00:50:27Z
+================================================================================
+PR #116: Fixed light logo bug | removed nexres refs (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/116
+Created at: 2023-11-21T09:21:30Z, Merged at: 2023-11-21T11:28:32Z
+================================================================================
+PR #115: Updated loqo quality (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/115
+Created at: 2023-11-16T19:46:03Z, Merged at: 2023-11-16T23:35:07Z
+================================================================================
+PR #114: Updated logo (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/114
+Created at: 2023-11-16T04:43:44Z, Merged at: 2023-11-16T05:58:03Z
+================================================================================
+PR #112: Utxo api (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/112
+Created at: 2023-11-09T22:06:13Z, Merged at: 2023-11-09T23:19:09Z
+================================================================================
+PR #111: Change getvalues cmd type to getallvalues (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/111
+Created at: 2023-11-06T00:21:40Z, Merged at: 2023-11-06T01:10:18Z
+================================================================================
+PR #110: Modified Dockerfile to add entrypoint (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/110
+Created at: 2023-11-05T20:52:54Z, Merged at: 2023-11-05T22:18:04Z
+================================================================================
+PR #108: fix utxo start script (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/108
+Created at: 2023-11-03T22:12:16Z, Merged at: 2023-11-03T22:29:11Z
+================================================================================
+PR #106: disable local recovery (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/106
+Created at: 2023-11-02T17:01:07Z, Merged at: 2023-11-02T18:50:50Z
+================================================================================
+PR #102: Support Custom Configuration (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/102
+Created at: 2023-10-27T20:35:15Z, Merged at: 2023-10-28T20:42:39Z
+================================================================================
+PR #100: Hs (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/100
+Created at: 2023-10-27T16:38:48Z, Merged at: 2023-10-27T16:38:56Z
+================================================================================
+PR #99: Poe (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/99
+Created at: 2023-10-27T16:36:01Z, Merged at: 2023-10-27T16:36:08Z
+================================================================================
+PR #93: Deploy (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/93
+Created at: 2023-10-27T05:26:06Z, Merged at: 2023-10-27T16:39:58Z
+================================================================================
+PR #92: Grafna (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/92
+Created at: 2023-10-26T16:30:49Z, Merged at: 2023-10-26T18:34:21Z
+================================================================================
+PR #90: fix read permission (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/90
+Created at: 2023-10-14T20:50:35Z, Merged at: 2023-10-21T01:02:29Z
+================================================================================
+PR #89: Added build-push workflow (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/89
+Created at: 2023-10-13T23:32:10Z, Merged at: 2023-10-15T09:37:35Z
+================================================================================
+PR #86: Added Dockerfiles and readme update (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/86
+Created at: 2023-10-11T00:35:09Z, Merged at: 2023-10-11T05:55:17Z
+================================================================================
+PR #85: Poe (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/85
+Created at: 2023-10-09T20:30:45Z, Merged at: None
+================================================================================
+PR #84: remove syslock (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/84
+Created at: 2023-10-04T00:12:13Z, Merged at: 2023-10-04T00:15:58Z
+================================================================================
+PR #83: Add files via upload (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/83
+Created at: 2023-10-03T18:53:37Z, Merged at: 2023-10-03T21:32:44Z
+================================================================================
+PR #82: Add files via upload (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/82
+Created at: 2023-10-03T18:52:56Z, Merged at: 2023-10-11T01:11:42Z
+================================================================================
+PR #81: add new (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/81
+Created at: 2023-10-02T22:58:41Z, Merged at: None
+================================================================================
+PR #80: fix: kv service tools in performance test (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/80
+Created at: 2023-09-17T12:45:25Z, Merged at: 2023-09-17T16:48:18Z
+================================================================================
+PR #79: Update README.md (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/79
+Created at: 2023-09-06T22:10:17Z, Merged at: 2023-09-07T02:36:12Z
+================================================================================
+PR #78: Cjcchen patch 3 (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/78
+Created at: 2023-09-01T05:16:39Z, Merged at: 2023-09-01T16:01:13Z
+================================================================================
+PR #77: Cjcchen patch 3 (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/77
+Created at: 2023-08-31T07:45:39Z, Merged at: 2023-09-01T03:53:48Z
+================================================================================
+PR #76: viewchange changelog (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/76
+Created at: 2023-08-22T08:27:14Z, Merged at: 2023-08-22T08:36:57Z
+================================================================================
+PR #75: viewchange changelog (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/75
+Created at: 2023-08-22T07:59:46Z, Merged at: 2023-08-22T08:00:46Z
+================================================================================
+PR #74: fix typos (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/74
+Created at: 2023-08-22T07:46:54Z, Merged at: 2023-08-22T15:25:19Z
+================================================================================
+PR #73: add system info in local recovery (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/73
+Created at: 2023-08-21T19:44:37Z, Merged at: 2023-08-22T07:35:56Z
+================================================================================
+PR #72: View change (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/72
+Created at: 2023-08-19T17:45:29Z, Merged at: 2023-08-21T09:44:39Z
+================================================================================
+PR #71: Update README.md (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/71
+Created at: 2023-08-18T23:08:42Z, Merged at: 2023-08-19T00:42:49Z
+================================================================================
+PR #70: Update README.md (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/70
+Created at: 2023-08-18T22:29:03Z, Merged at: None
+================================================================================
+PR #69: fixed typo at README.md (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/69
+Created at: 2023-08-18T20:06:41Z, Merged at: 2023-08-18T22:41:36Z
+================================================================================
+PR #68: Res local (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/68
+Created at: 2023-08-05T00:03:34Z, Merged at: 2023-08-05T16:05:58Z
+================================================================================
+PR #67: Doc (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/67
+Created at: 2023-06-07T22:30:42Z, Merged at: 2023-06-07T22:40:59Z
+================================================================================
+PR #66: change img path (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/66
+Created at: 2023-06-04T22:00:33Z, Merged at: 2023-06-04T22:15:39Z
+================================================================================
+PR #65: add png (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/65
+Created at: 2023-06-03T06:17:05Z, Merged at: 2023-06-03T20:05:57Z
+================================================================================
+PR #64: Resilient v2 (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/64
+Created at: 2023-06-02T22:52:23Z, Merged at: 2023-06-03T02:21:55Z
+================================================================================
+PR #63: move out storage (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/63
+Created at: 2023-06-01T23:41:50Z, Merged at: 2023-06-02T02:46:47Z
+================================================================================
+PR #62: Resilient v2 (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/62
+Created at: 2023-06-01T20:52:47Z, Merged at: 2023-06-01T21:31:18Z
+================================================================================
+PR #61: Add files via upload (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/61
+Created at: 2023-05-31T20:29:50Z, Merged at: 2023-06-01T05:37:58Z
+================================================================================
+PR #60: add pic in readme (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/60
+Created at: 2023-05-31T17:55:48Z, Merged at: 2023-05-31T18:50:32Z
+================================================================================
+PR #59: Resilient v2 (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/59
+Created at: 2023-05-27T01:10:42Z, Merged at: 2023-05-31T17:50:14Z
+================================================================================
+PR #58: conceptual outline for quecc (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/58
+Created at: 2023-04-16T05:48:50Z, Merged at: None
+================================================================================
+PR #57: Perf (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/57
+Created at: 2023-04-05T18:02:05Z, Merged at: 2023-04-05T18:03:10Z
+================================================================================
+PR #56: Aarch64 (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/56
+Created at: 2023-04-05T04:55:52Z, Merged at: 2023-04-05T04:56:45Z
+================================================================================
+PR #55: Resilient v2 (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/55
+Created at: 2023-04-04T01:57:13Z, Merged at: 2023-04-04T09:11:29Z
+================================================================================
+PR #54: Update README.md (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/54
+Created at: 2023-03-16T05:15:52Z, Merged at: 2023-03-16T05:24:29Z
+================================================================================
+PR #53: Update README.md (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/53
+Created at: 2023-03-15T05:10:59Z, Merged at: 2023-03-15T07:05:32Z
+================================================================================
+PR #52: Update deploy.sh (State: open)
+URL: https://github.com/apache/incubator-resilientdb/pull/52
+Created at: 2023-03-15T04:44:55Z, Merged at: None
+================================================================================
+PR #51: Update deploy.sh (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/51
+Created at: 2023-03-15T02:13:30Z, Merged at: 2023-03-15T02:33:12Z
+================================================================================
+PR #50: Eurosys'23 branch (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/50
+Created at: 2023-03-14T16:19:32Z, Merged at: None
+================================================================================
+PR #49: Update README.md (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/49
+Created at: 2023-03-13T05:58:31Z, Merged at: 2023-03-13T05:59:41Z
+================================================================================
+PR #48: Deployment (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/48
+Created at: 2023-03-13T05:02:10Z, Merged at: 2023-03-13T05:57:37Z
+================================================================================
+PR #47: Add doxygen comments to sdk client (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/47
+Created at: 2023-03-02T06:07:45Z, Merged at: 2023-03-02T07:43:26Z
+================================================================================
+PR #46: Fixed relative path issue (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/46
+Created at: 2023-03-01T02:50:02Z, Merged at: 2023-03-01T03:18:24Z
+================================================================================
+PR #45: Restructured doxygen directory to be within documents (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/45
+Created at: 2023-03-01T02:10:03Z, Merged at: 2023-03-01T02:25:28Z
+================================================================================
+PR #44: Utxo (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/44
+Created at: 2023-02-28T08:41:57Z, Merged at: 2023-02-28T08:49:01Z
+================================================================================
+PR #43: Modified gh-pages action, added cname option (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/43
+Created at: 2023-02-27T22:50:02Z, Merged at: 2023-02-27T22:58:38Z
+================================================================================
+PR #42: Modified Doxyfile (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/42
+Created at: 2023-02-27T10:35:09Z, Merged at: 2023-02-27T11:08:20Z
+================================================================================
+PR #41: Fixed publish directory key (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/41
+Created at: 2023-02-27T09:07:33Z, Merged at: 2023-02-27T09:20:50Z
+================================================================================
+PR #40: Added doxyfile and github actions config (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/40
+Created at: 2023-02-27T03:03:27Z, Merged at: 2023-02-27T03:09:53Z
+================================================================================
+PR #39: Fix build pybind (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/39
+Created at: 2023-02-25T11:06:25Z, Merged at: 2023-02-27T03:02:14Z
+================================================================================
+PR #38: ifix optional (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/38
+Created at: 2023-02-23T20:56:23Z, Merged at: 2023-02-23T21:35:32Z
+================================================================================
+PR #36: Update CHANGELOG.md (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/36
+Created at: 2023-02-23T08:36:46Z, Merged at: 2023-02-23T09:32:44Z
+================================================================================
+PR #35: update kv client + kv server in application folder (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/35
+Created at: 2023-02-22T17:50:17Z, Merged at: 2023-02-22T18:13:07Z
+================================================================================
+PR #34: Update CHANGELOG.md (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/34
+Created at: 2023-02-22T17:48:33Z, Merged at: 2023-02-22T18:11:45Z
+================================================================================
+PR #33: SDK Full Release  (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/33
+Created at: 2023-02-22T02:06:04Z, Merged at: 2023-02-22T16:46:04Z
+================================================================================
+PR #32: Code of conduct (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/32
+Created at: 2023-02-11T21:47:40Z, Merged at: 2023-02-12T03:16:18Z
+================================================================================
+PR #31: Update README.md (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/31
+Created at: 2023-02-11T21:40:58Z, Merged at: 2023-02-12T03:15:31Z
+================================================================================
+PR #30: Update README.md (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/30
+Created at: 2023-02-10T20:05:00Z, Merged at: 2023-02-10T20:25:52Z
+================================================================================
+PR #29: Update README.md (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/29
+Created at: 2023-02-09T23:20:37Z, Merged at: 2023-02-09T23:21:27Z
+================================================================================
+PR #28: Smart contract (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/28
+Created at: 2023-01-23T13:26:14Z, Merged at: 2023-01-26T00:24:04Z
+================================================================================
+PR #27: Create LICENSE (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/27
+Created at: 2023-01-04T00:13:36Z, Merged at: 2023-01-04T00:13:44Z
+================================================================================
+PR #26: Geo pbft (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/26
+Created at: 2022-12-19T17:51:23Z, Merged at: 2022-12-19T17:52:10Z
+================================================================================
+PR #24: Remove Unnecessary Socket Connections (Already Tested on Oracle Cloud) (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/24
+Created at: 2021-12-27T12:03:57Z, Merged at: None
+================================================================================
+PR #23: Fix Input_thread Bugs and Semaphore Optimization (already passed test on Oracle Cloud) (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/23
+Created at: 2021-12-15T06:59:08Z, Merged at: 2021-12-27T06:32:01Z
+================================================================================
+PR #22: Feature/queue integration (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/22
+Created at: 2021-12-02T00:40:49Z, Merged at: None
+================================================================================
+PR #21: fix: dev: fixed the regular expression (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/21
+Created at: 2021-11-02T04:02:06Z, Merged at: 2021-12-27T06:33:00Z
+================================================================================
+PR #20: attempt at resdb-singularity using singularity-compose, but the tport… (State: open)
+URL: https://github.com/apache/incubator-resilientdb/pull/20
+Created at: 2021-10-30T21:43:27Z, Merged at: None
+================================================================================
+PR #19: Release v3 (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/19
+Created at: 2021-09-30T18:04:05Z, Merged at: 2021-09-30T18:46:26Z
+================================================================================
+PR #16: Client Memory #11 and config file bug fixed (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/16
+Created at: 2021-04-14T01:55:36Z, Merged at: 2021-04-14T02:00:46Z
+================================================================================
+PR #14: Nanomsg Next Generation upgrade (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/14
+Created at: 2021-03-06T02:38:04Z, Merged at: 2021-03-06T02:39:11Z
+================================================================================
+PR #4: Gossip (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/4
+Created at: 2019-11-27T18:03:25Z, Merged at: None
+================================================================================
+PR #2: Bug fix for handling multiple clients (State: closed)
+URL: https://github.com/apache/incubator-resilientdb/pull/2
+Created at: 2019-11-25T23:42:00Z, Merged at: 2019-11-26T01:51:45Z
+================================================================================

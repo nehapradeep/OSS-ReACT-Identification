@@ -1,0 +1,1612 @@
+PR #668: Add Kanaries Doc link to missing api key cloud error. (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/668
+Created at: 2024-12-06T21:02:56Z, Merged at: 2024-12-30T13:34:04Z
+================================================================================
+PR #662: README spelling correction (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/662
+Created at: 2024-11-23T16:18:41Z, Merged at: 2024-11-27T12:57:10Z
+================================================================================
+PR #661: feat: dispaly in repl (State: open)
+URL: https://github.com/Kanaries/pygwalker/pull/661
+Created at: 2024-11-22T07:11:46Z, Merged at: None
+================================================================================
+PR #659: Improve: Code readability, python linter score, FAIR4RS score (State: open)
+URL: https://github.com/Kanaries/pygwalker/pull/659
+Created at: 2024-11-19T15:44:52Z, Merged at: None
+================================================================================
+PR #657: feat:add some  chinese readme (State: open)
+URL: https://github.com/Kanaries/pygwalker/pull/657
+Created at: 2024-11-08T09:33:02Z, Merged at: None
+================================================================================
+PR #656: Document panel-graphic-walker (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/656
+Created at: 2024-11-06T17:18:36Z, Merged at: 2024-11-08T08:54:21Z
+================================================================================
+PR #655: Add marimo example (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/655
+Created at: 2024-11-06T11:29:28Z, Merged at: 2024-11-08T08:59:49Z
+================================================================================
+PR #653: docs: add marimo usage to README (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/653
+Created at: 2024-11-06T04:04:52Z, Merged at: 2024-11-08T08:57:41Z
+================================================================================
+PR #652: Update README.md (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/652
+Created at: 2024-11-05T07:28:57Z, Merged at: 2024-11-06T08:55:24Z
+================================================================================
+PR #651: feat: support common anywidget (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/651
+Created at: 2024-10-31T02:20:53Z, Merged at: 2024-10-31T02:39:41Z
+================================================================================
+PR #649: fix: marimo component encoding (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/649
+Created at: 2024-10-29T04:11:44Z, Merged at: 2024-10-29T05:21:11Z
+================================================================================
+PR #647: feat: support marimo poc version (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/647
+Created at: 2024-10-24T03:36:40Z, Merged at: 2024-10-26T14:42:13Z
+================================================================================
+PR #646: Updated Readme.md file (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/646
+Created at: 2024-10-23T14:05:17Z, Merged at: None
+================================================================================
+PR #643: chore: typo "dataset_tpye" (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/643
+Created at: 2024-10-15T10:30:14Z, Merged at: 2024-10-15T10:43:37Z
+================================================================================
+PR #642: Updated the bash script in test-init.sh (State: open)
+URL: https://github.com/Kanaries/pygwalker/pull/642
+Created at: 2024-10-15T06:22:38Z, Merged at: None
+================================================================================
+PR #641: chore: updated a typo in test_data_parsers.py (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/641
+Created at: 2024-10-12T14:39:14Z, Merged at: 2024-10-15T10:25:35Z
+================================================================================
+PR #637: fix: streamlit component (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/637
+Created at: 2024-10-02T07:05:28Z, Merged at: 2024-10-02T07:18:00Z
+================================================================================
+PR #636: fix: mssql dialect map (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/636
+Created at: 2024-10-01T07:21:58Z, Merged at: 2024-10-01T07:35:20Z
+================================================================================
+PR #635: Updated the streamlit_comm.py file to only remove the trailing slash. (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/635
+Created at: 2024-09-30T08:24:48Z, Merged at: None
+================================================================================
+PR #634: Updated the typo in polars_parser.py (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/634
+Created at: 2024-09-30T08:14:41Z, Merged at: None
+================================================================================
+PR #632: fix: exp.Subquery alias (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/632
+Created at: 2024-09-27T04:46:26Z, Merged at: 2024-09-27T05:12:27Z
+================================================================================
+PR #623: chore: update test-init.sh (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/623
+Created at: 2024-09-23T06:49:22Z, Merged at: 2024-09-27T07:21:30Z
+================================================================================
+PR #620: feat: compress all data in html (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/620
+Created at: 2024-09-19T09:58:55Z, Merged at: 2024-09-19T11:05:32Z
+================================================================================
+PR #613: chore: bump to v0.4.9.8 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/613
+Created at: 2024-08-29T02:29:37Z, Merged at: 2024-08-29T02:52:21Z
+================================================================================
+PR #612: fix: remove duplicate dsl parser (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/612
+Created at: 2024-08-29T02:13:12Z, Merged at: 2024-08-29T02:27:00Z
+================================================================================
+PR #609: feat: adjust ui style (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/609
+Created at: 2024-08-23T08:07:33Z, Merged at: 2024-08-23T08:38:46Z
+================================================================================
+PR #608: feat: adjust ui style (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/608
+Created at: 2024-08-23T06:01:59Z, Merged at: 2024-08-23T06:18:10Z
+================================================================================
+PR #607: feat: support table component in streamlit (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/607
+Created at: 2024-08-21T03:41:14Z, Merged at: 2024-08-21T03:54:14Z
+================================================================================
+PR #606: fix: rendering in streamlit (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/606
+Created at: 2024-08-15T03:45:04Z, Merged at: 2024-08-15T06:32:57Z
+================================================================================
+PR #603: chore: bump to v0.4.9.4 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/603
+Created at: 2024-08-01T05:55:19Z, Merged at: 2024-08-01T06:10:47Z
+================================================================================
+PR #602: feat: component api support poi chart (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/602
+Created at: 2024-07-31T08:55:27Z, Merged at: 2024-07-31T09:10:23Z
+================================================================================
+PR #601: chore: update gw_dsl_parser version (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/601
+Created at: 2024-07-31T08:08:40Z, Merged at: 2024-07-31T08:25:02Z
+================================================================================
+PR #600: fix: disable kernel computation in JupyterConvert (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/600
+Created at: 2024-07-31T02:22:18Z, Merged at: 2024-07-31T02:42:21Z
+================================================================================
+PR #599: fix: manually invoke display_preview_on_jupyter (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/599
+Created at: 2024-07-30T08:56:06Z, Merged at: 2024-07-30T09:27:41Z
+================================================================================
+PR #598: feat: support streamlit custom component (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/598
+Created at: 2024-07-30T08:04:57Z, Merged at: 2024-07-30T08:36:23Z
+================================================================================
+PR #594: feat: new tips for data limit (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/594
+Created at: 2024-07-25T07:40:30Z, Merged at: 2024-07-25T07:55:24Z
+================================================================================
+PR #593: feat: add component api (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/593
+Created at: 2024-07-24T07:27:51Z, Merged at: 2024-07-24T07:58:56Z
+================================================================================
+PR #592: fix: error spec of ChartPreviewApp (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/592
+Created at: 2024-07-24T03:52:15Z, Merged at: 2024-07-24T04:07:20Z
+================================================================================
+PR #591: chore: update duckdb version (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/591
+Created at: 2024-07-07T01:20:36Z, Merged at: 2024-07-07T01:42:40Z
+================================================================================
+PR #588: fix: polars test case (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/588
+Created at: 2024-07-02T01:36:00Z, Merged at: 2024-07-02T01:48:14Z
+================================================================================
+PR #587: fix: polars test case (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/587
+Created at: 2024-07-02T01:26:37Z, Merged at: None
+================================================================================
+PR #586: feat: add pygwalker web api tips in streamlit (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/586
+Created at: 2024-07-01T12:48:08Z, Merged at: 2024-07-07T01:15:40Z
+================================================================================
+PR #585: feat: add pygwalker web api tips in streamlit (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/585
+Created at: 2024-07-01T05:24:47Z, Merged at: None
+================================================================================
+PR #584: chore: bump to v0.4.9 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/584
+Created at: 2024-06-27T03:53:58Z, Merged at: 2024-06-27T04:39:10Z
+================================================================================
+PR #583: feat: add dev mode for app (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/583
+Created at: 2024-06-27T01:01:51Z, Merged at: 2024-06-27T03:24:31Z
+================================================================================
+PR #582: feat: update graphic-walker version (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/582
+Created at: 2024-06-20T05:05:02Z, Merged at: 2024-06-20T05:23:54Z
+================================================================================
+PR #581: feat: modify render preview (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/581
+Created at: 2024-06-20T03:50:56Z, Merged at: 2024-06-20T04:45:13Z
+================================================================================
+PR #579: feat: adjust the position of copy tips (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/579
+Created at: 2024-06-19T07:52:15Z, Merged at: 2024-06-19T12:29:05Z
+================================================================================
+PR #578: chore: temporarily specify the numpy version (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/578
+Created at: 2024-06-18T08:48:35Z, Merged at: 2024-06-18T09:01:50Z
+================================================================================
+PR #574: fix: modify document of appearance param (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/574
+Created at: 2024-06-12T05:06:40Z, Merged at: 2024-06-12T05:24:43Z
+================================================================================
+PR #572: chore: refactor _get_data_parser to use a loop for dynamic imports (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/572
+Created at: 2024-06-10T00:25:00Z, Merged at: None
+================================================================================
+PR #566: chore: bump to v0.4.8.9 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/566
+Created at: 2024-06-01T01:19:05Z, Merged at: 2024-06-01T02:29:20Z
+================================================================================
+PR #565: fix: wrong api url when deployment custom proxy server (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/565
+Created at: 2024-05-31T15:24:20Z, Merged at: 2024-05-31T15:40:19Z
+================================================================================
+PR #563: bug fix to retrieve specs on URLs with path (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/563
+Created at: 2024-05-31T09:39:33Z, Merged at: None
+================================================================================
+PR #562: fix: convert regex sql to postgres (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/562
+Created at: 2024-05-29T13:40:31Z, Merged at: 2024-05-29T13:56:03Z
+================================================================================
+PR #560: feat: add iso time unit (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/560
+Created at: 2024-05-29T07:38:27Z, Merged at: 2024-05-29T08:01:29Z
+================================================================================
+PR #558: feat: add web_server mode (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/558
+Created at: 2024-05-24T05:43:07Z, Merged at: 2024-05-24T06:02:41Z
+================================================================================
+PR #554: chore: bump to v0.4.8.5 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/554
+Created at: 2024-05-17T10:30:43Z, Merged at: 2024-05-17T10:51:09Z
+================================================================================
+PR #553: fix: fix dialect sql(mysql, postgres) (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/553
+Created at: 2024-05-17T10:12:17Z, Merged at: 2024-05-17T10:29:22Z
+================================================================================
+PR #550: feat: add global param max_data_length (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/550
+Created at: 2024-05-13T15:03:19Z, Merged at: 2024-05-14T01:54:58Z
+================================================================================
+PR #549: feat: add global param max_data_length (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/549
+Created at: 2024-05-13T12:32:33Z, Merged at: None
+================================================================================
+PR #548: feat: add global param max_data_length (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/548
+Created at: 2024-05-13T10:04:47Z, Merged at: None
+================================================================================
+PR #547: chore: update version of dsl_parser (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/547
+Created at: 2024-05-13T09:06:15Z, Merged at: 2024-05-13T09:58:18Z
+================================================================================
+PR #543: fix: "Copy to Clipboard" in different browser (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/543
+Created at: 2024-05-09T01:16:22Z, Merged at: 2024-05-09T02:51:24Z
+================================================================================
+PR #541: feat: update graphic-walker version (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/541
+Created at: 2024-05-07T09:52:05Z, Merged at: 2024-05-07T10:03:55Z
+================================================================================
+PR #540: fix: parse source code in jupyter (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/540
+Created at: 2024-05-07T03:48:45Z, Merged at: 2024-05-07T04:13:15Z
+================================================================================
+PR #539: fix: snowflake client return undefined (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/539
+Created at: 2024-05-06T04:53:52Z, Merged at: 2024-05-06T05:06:53Z
+================================================================================
+PR #537: chore: update ci script (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/537
+Created at: 2024-04-28T09:01:04Z, Merged at: 2024-04-28T09:13:10Z
+================================================================================
+PR #536: feat: update graphic-walker version (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/536
+Created at: 2024-04-28T08:35:42Z, Merged at: 2024-04-28T08:47:47Z
+================================================================================
+PR #535: fix: viewer container size base on the root iframe in streamlit (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/535
+Created at: 2024-04-28T08:14:11Z, Merged at: 2024-04-28T08:27:55Z
+================================================================================
+PR #534: chore: update python version in ci (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/534
+Created at: 2024-04-26T08:45:47Z, Merged at: 2024-04-26T08:59:33Z
+================================================================================
+PR #533: doc: update gradio demo (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/533
+Created at: 2024-04-26T04:19:59Z, Merged at: 2024-04-26T11:06:27Z
+================================================================================
+PR #530: fix: params name error (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/530
+Created at: 2024-04-16T07:15:32Z, Merged at: 2024-04-16T07:23:01Z
+================================================================================
+PR #529: fix: params name error (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/529
+Created at: 2024-04-16T06:59:12Z, Merged at: None
+================================================================================
+PR #527: fix: raise error when cancel appearance (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/527
+Created at: 2024-04-15T10:04:47Z, Merged at: 2024-04-15T10:18:04Z
+================================================================================
+PR #525: chore: bump to v0.4.8 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/525
+Created at: 2024-04-12T13:03:24Z, Merged at: 2024-04-12T13:10:08Z
+================================================================================
+PR #524: chore: modify tips when no api key (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/524
+Created at: 2024-04-12T11:57:41Z, Merged at: 2024-04-12T12:58:19Z
+================================================================================
+PR #523: feat: update graphic-walker version (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/523
+Created at: 2024-04-12T11:39:45Z, Merged at: 2024-04-12T11:56:22Z
+================================================================================
+PR #522: doc: update example code (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/522
+Created at: 2024-04-12T11:09:53Z, Merged at: 2024-04-12T11:15:47Z
+================================================================================
+PR #521: feat: collect error log (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/521
+Created at: 2024-04-12T11:01:08Z, Merged at: 2024-04-12T11:07:36Z
+================================================================================
+PR #520: feat: optimize the feature of saving & merge button (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/520
+Created at: 2024-04-12T09:42:54Z, Merged at: 2024-04-12T10:54:17Z
+================================================================================
+PR #517: chore: update duckdb version (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/517
+Created at: 2024-04-11T12:09:22Z, Merged at: 2024-04-11T12:15:03Z
+================================================================================
+PR #515: feat: add red point when spec changed (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/515
+Created at: 2024-04-09T09:53:13Z, Merged at: 2024-04-09T12:55:22Z
+================================================================================
+PR #514: feat: add red point when spec changed (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/514
+Created at: 2024-04-09T09:51:21Z, Merged at: None
+================================================================================
+PR #513: feat: add red point when spec changed (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/513
+Created at: 2024-04-09T09:24:29Z, Merged at: None
+================================================================================
+PR #512: chore: code style (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/512
+Created at: 2024-04-03T10:37:44Z, Merged at: 2024-04-03T10:42:40Z
+================================================================================
+PR #511: chore: update graphic walker to 0.4.58 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/511
+Created at: 2024-04-03T07:50:42Z, Merged at: 2024-04-03T08:15:15Z
+================================================================================
+PR #509: refactor: redesign APIs (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/509
+Created at: 2024-04-01T12:44:38Z, Merged at: 2024-04-02T06:44:52Z
+================================================================================
+PR #506: doc: update expired links (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/506
+Created at: 2024-03-30T11:01:31Z, Merged at: 2024-03-30T11:07:36Z
+================================================================================
+PR #504: feat: support chat feature (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/504
+Created at: 2024-03-29T05:29:43Z, Merged at: 2024-03-29T05:36:16Z
+================================================================================
+PR #503: doc: remove expired links (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/503
+Created at: 2024-03-28T01:19:42Z, Merged at: 2024-03-28T01:24:25Z
+================================================================================
+PR #501: refactor: deprecated function name (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/501
+Created at: 2024-03-27T07:39:07Z, Merged at: 2024-03-27T07:49:45Z
+================================================================================
+PR #499: doc: remove expired links (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/499
+Created at: 2024-03-27T01:21:06Z, Merged at: 2024-03-27T01:26:05Z
+================================================================================
+PR #498: fix: parse array field in mysql (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/498
+Created at: 2024-03-26T09:52:22Z, Merged at: 2024-03-26T09:59:17Z
+================================================================================
+PR #497: feat: update feature for uploading chart to cloud (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/497
+Created at: 2024-03-26T09:01:26Z, Merged at: 2024-03-26T09:11:40Z
+================================================================================
+PR #494: fix: StrictVersion was removed in python3.12 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/494
+Created at: 2024-03-23T02:43:59Z, Merged at: 2024-03-23T02:52:08Z
+================================================================================
+PR #492: chore: update version of pypa/gh-action-pypi-publish (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/492
+Created at: 2024-03-20T15:57:25Z, Merged at: 2024-03-20T15:57:36Z
+================================================================================
+PR #490: chore: bump to v0.4.8a4 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/490
+Created at: 2024-03-20T12:58:07Z, Merged at: 2024-03-20T12:58:13Z
+================================================================================
+PR #489: fix: update graphic walker to 0.4.56 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/489
+Created at: 2024-03-20T12:35:43Z, Merged at: 2024-03-20T12:48:42Z
+================================================================================
+PR #485: fix: temporarily fix bugs of pure chart rendering in streamlit (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/485
+Created at: 2024-03-15T10:45:04Z, Merged at: 2024-03-15T10:49:58Z
+================================================================================
+PR #484: feat: modify height of walker ui (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/484
+Created at: 2024-03-15T02:33:52Z, Merged at: 2024-03-15T03:54:59Z
+================================================================================
+PR #483: feat: support vega spec (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/483
+Created at: 2024-03-14T09:38:33Z, Merged at: 2024-03-14T09:48:45Z
+================================================================================
+PR #482: refactor: modify type of field_specs (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/482
+Created at: 2024-03-13T14:40:08Z, Merged at: 2024-03-13T15:01:48Z
+================================================================================
+PR #481: fix: change dict in place (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/481
+Created at: 2024-03-13T14:16:34Z, Merged at: 2024-03-13T14:31:40Z
+================================================================================
+PR #480: feat: add new html apis (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/480
+Created at: 2024-03-13T14:02:42Z, Merged at: 2024-03-13T14:08:40Z
+================================================================================
+PR #478: doc: add dash example (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/478
+Created at: 2024-03-13T08:39:03Z, Merged at: 2024-03-13T08:47:20Z
+================================================================================
+PR #477: feat: support custom ask callback function (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/477
+Created at: 2024-03-11T09:24:07Z, Merged at: 2024-03-11T09:31:49Z
+================================================================================
+PR #474: chore: bump to v0.4.7 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/474
+Created at: 2024-03-08T09:45:07Z, Merged at: 2024-03-08T13:07:50Z
+================================================================================
+PR #473: chore: bump to v0.4.7a8 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/473
+Created at: 2024-03-08T07:51:12Z, Merged at: 2024-03-08T07:56:55Z
+================================================================================
+PR #472: refactor: use spec_io_mode instead of debug parameter (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/472
+Created at: 2024-03-08T07:28:59Z, Merged at: 2024-03-08T07:39:07Z
+================================================================================
+PR #471: feat: add new api to_chart_html (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/471
+Created at: 2024-03-08T07:02:21Z, Merged at: 2024-03-08T07:12:07Z
+================================================================================
+PR #470: feat: add new api to_chart_html (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/470
+Created at: 2024-03-08T06:52:38Z, Merged at: None
+================================================================================
+PR #469: feat: add new api to_chart_html (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/469
+Created at: 2024-03-08T06:39:25Z, Merged at: None
+================================================================================
+PR #468: feat: update graphic-walker version (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/468
+Created at: 2024-03-08T01:46:58Z, Merged at: 2024-03-08T02:20:03Z
+================================================================================
+PR #465: feat: add new api in jupyter (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/465
+Created at: 2024-03-06T10:26:57Z, Merged at: 2024-03-06T10:37:43Z
+================================================================================
+PR #464: feat: add new api in jupyter (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/464
+Created at: 2024-03-06T10:15:45Z, Merged at: None
+================================================================================
+PR #463: Improved error handling (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/463
+Created at: 2024-03-05T16:38:47Z, Merged at: None
+================================================================================
+PR #462: fix: set default width to None in streamlit (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/462
+Created at: 2024-03-05T06:53:14Z, Merged at: 2024-03-05T07:07:21Z
+================================================================================
+PR #461: feat: cloud calculate (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/461
+Created at: 2024-03-05T06:36:49Z, Merged at: 2024-03-05T06:44:52Z
+================================================================================
+PR #460: fix: use utc timezone when using js calculate (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/460
+Created at: 2024-03-05T04:57:11Z, Merged at: 2024-03-05T05:07:15Z
+================================================================================
+PR #459: fix: use utc timezone when using js calculate (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/459
+Created at: 2024-03-05T04:36:49Z, Merged at: None
+================================================================================
+PR #457: feat: update graphic-walker version (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/457
+Created at: 2024-03-04T08:41:49Z, Merged at: 2024-03-04T08:57:21Z
+================================================================================
+PR #453: optimized gradio server hack function (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/453
+Created at: 2024-03-01T16:04:47Z, Merged at: None
+================================================================================
+PR #452: feat: using batch api when query cloud dataset (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/452
+Created at: 2024-03-01T13:07:40Z, Merged at: 2024-03-01T13:24:13Z
+================================================================================
+PR #451: refactor: remove deprecated parameters (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/451
+Created at: 2024-03-01T03:44:08Z, Merged at: 2024-03-01T04:13:16Z
+================================================================================
+PR #450: implementation of secrets module (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/450
+Created at: 2024-02-29T19:35:07Z, Merged at: None
+================================================================================
+PR #449: feat: add buttons to switch theme (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/449
+Created at: 2024-02-29T09:04:00Z, Merged at: 2024-02-29T09:29:06Z
+================================================================================
+PR #446: feat: modify position of tips (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/446
+Created at: 2024-02-29T01:28:36Z, Merged at: 2024-02-29T01:40:26Z
+================================================================================
+PR #445: environment display mapping error handling (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/445
+Created at: 2024-02-28T21:50:20Z, Merged at: None
+================================================================================
+PR #443: fix: the UI style changes when system theme changes (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/443
+Created at: 2024-02-28T02:05:35Z, Merged at: 2024-02-28T02:30:30Z
+================================================================================
+PR #442: fix: ui style in dark (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/442
+Created at: 2024-02-27T10:15:19Z, Merged at: 2024-02-27T10:23:39Z
+================================================================================
+PR #441: docs: add examples (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/441
+Created at: 2024-02-26T00:52:47Z, Merged at: 2024-02-26T01:12:03Z
+================================================================================
+PR #440: feat: auto switches to kernel calculate base on data size (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/440
+Created at: 2024-02-22T05:45:32Z, Merged at: 2024-02-22T05:57:46Z
+================================================================================
+PR #439: feat: auto switches to kernel calculate base on data size (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/439
+Created at: 2024-02-22T05:35:56Z, Merged at: None
+================================================================================
+PR #438: feat: update duckdb version (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/438
+Created at: 2024-02-22T01:05:45Z, Merged at: 2024-02-22T01:20:19Z
+================================================================================
+PR #437: feat: update duckdb version (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/437
+Created at: 2024-02-21T07:46:42Z, Merged at: None
+================================================================================
+PR #435: enhancing metricsChart class initialization (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/435
+Created at: 2024-02-12T17:17:20Z, Merged at: None
+================================================================================
+PR #434: chore: bump to v0.4.6 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/434
+Created at: 2024-02-08T06:12:52Z, Merged at: 2024-02-08T06:12:59Z
+================================================================================
+PR #433: feat: update graphic-walker version (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/433
+Created at: 2024-02-08T05:53:50Z, Merged at: 2024-02-08T06:04:04Z
+================================================================================
+PR #432: refactor: modify param name (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/432
+Created at: 2024-02-08T02:39:17Z, Merged at: 2024-02-08T02:46:16Z
+================================================================================
+PR #431: refactor: modify param name (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/431
+Created at: 2024-02-08T02:12:56Z, Merged at: None
+================================================================================
+PR #430: feat: loaded init_streamlit_comm implicitly (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/430
+Created at: 2024-02-07T03:04:53Z, Merged at: 2024-02-07T03:15:45Z
+================================================================================
+PR #428: feat: streamlining data aggregation in cohort_matrix (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/428
+Created at: 2024-02-06T15:25:36Z, Merged at: None
+================================================================================
+PR #426: feat: optimize the memory usage of generating html (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/426
+Created at: 2024-02-06T03:59:54Z, Merged at: 2024-02-06T04:08:33Z
+================================================================================
+PR #425: Simplified JSON encoder for handling Decimal types (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/425
+Created at: 2024-02-05T16:01:23Z, Merged at: None
+================================================================================
+PR #422: chore: bump to v0.4.5 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/422
+Created at: 2024-02-02T14:42:29Z, Merged at: 2024-02-02T14:42:37Z
+================================================================================
+PR #421: chore: bump to v0.4.6 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/421
+Created at: 2024-02-02T14:38:08Z, Merged at: 2024-02-02T14:38:55Z
+================================================================================
+PR #420: feat: add new param: default_tab (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/420
+Created at: 2024-02-02T13:59:42Z, Merged at: 2024-02-02T14:09:39Z
+================================================================================
+PR #418: feat: update graphic-walker version (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/418
+Created at: 2024-02-02T10:48:29Z, Merged at: 2024-02-02T10:56:32Z
+================================================================================
+PR #416: feat: optimize communication with http (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/416
+Created at: 2024-02-02T09:54:02Z, Merged at: 2024-02-02T10:10:28Z
+================================================================================
+PR #415: feat: streamlit add new component: filter renderer (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/415
+Created at: 2024-02-02T07:28:45Z, Merged at: 2024-02-02T07:47:56Z
+================================================================================
+PR #413: feat: update graphic-walker version (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/413
+Created at: 2024-01-30T15:20:01Z, Merged at: 2024-01-30T15:20:11Z
+================================================================================
+PR #412: feat: add data profiling (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/412
+Created at: 2024-01-30T01:52:24Z, Merged at: 2024-01-30T02:31:10Z
+================================================================================
+PR #411: feat: optimize communication in jupyter (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/411
+Created at: 2024-01-29T14:10:58Z, Merged at: 2024-01-30T01:30:48Z
+================================================================================
+PR #410: feat: add new render mode (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/410
+Created at: 2024-01-29T10:43:41Z, Merged at: 2024-01-29T10:54:09Z
+================================================================================
+PR #409: feat: kanaries_key as an instance variable (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/409
+Created at: 2024-01-25T14:25:40Z, Merged at: 2024-01-25T14:32:49Z
+================================================================================
+PR #408: chore: bump to v0.4.4 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/408
+Created at: 2024-01-25T08:42:31Z, Merged at: 2024-01-25T09:09:54Z
+================================================================================
+PR #407: chore: bump to v0.4.4 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/407
+Created at: 2024-01-25T08:35:20Z, Merged at: None
+================================================================================
+PR #405: fix: cache streamlit html (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/405
+Created at: 2024-01-25T03:50:31Z, Merged at: 2024-01-25T03:57:52Z
+================================================================================
+PR #403: chore: bump to v0.4.3 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/403
+Created at: 2024-01-23T14:05:02Z, Merged at: 2024-01-23T14:13:15Z
+================================================================================
+PR #402: feat: add default timezone && update graphic-walker version (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/402
+Created at: 2024-01-23T13:53:23Z, Merged at: 2024-01-23T14:02:53Z
+================================================================================
+PR #401: simplification of default parameter (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/401
+Created at: 2024-01-22T15:26:41Z, Merged at: None
+================================================================================
+PR #399: feat: use new time offset config (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/399
+Created at: 2024-01-19T03:14:02Z, Merged at: 2024-01-19T03:37:11Z
+================================================================================
+PR #398: Update track.py (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/398
+Created at: 2024-01-17T15:40:25Z, Merged at: None
+================================================================================
+PR #397: chore: bump to v0.4.2 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/397
+Created at: 2024-01-17T09:38:30Z, Merged at: 2024-01-17T09:48:21Z
+================================================================================
+PR #396: fix: data painter may not work when using kernel calculate (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/396
+Created at: 2024-01-17T04:47:52Z, Merged at: 2024-01-17T06:17:27Z
+================================================================================
+PR #394: chore: Update docstring about tracking (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/394
+Created at: 2024-01-15T09:20:14Z, Merged at: 2024-01-17T02:14:04Z
+================================================================================
+PR #393: release: 0.4.1 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/393
+Created at: 2024-01-14T07:46:46Z, Merged at: 2024-01-14T08:28:35Z
+================================================================================
+PR #391: chore: bump to v0.4.0 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/391
+Created at: 2024-01-11T08:33:31Z, Merged at: 2024-01-11T08:40:11Z
+================================================================================
+PR #390: feat: cancel infer string to temporal (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/390
+Created at: 2024-01-11T08:09:26Z, Merged at: 2024-01-11T08:26:32Z
+================================================================================
+PR #387: feat: add calculation field (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/387
+Created at: 2024-01-09T04:08:25Z, Merged at: 2024-01-09T05:08:46Z
+================================================================================
+PR #386: feat: adding tips when returned datas too large (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/386
+Created at: 2024-01-08T08:12:07Z, Merged at: 2024-01-08T08:21:45Z
+================================================================================
+PR #385: refactor: move other init communication code out of pygwalker class (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/385
+Created at: 2024-01-08T01:52:40Z, Merged at: 2024-01-08T02:06:13Z
+================================================================================
+PR #384: refactor: move other initialization communication code out of pygwalk… (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/384
+Created at: 2024-01-08T01:50:41Z, Merged at: None
+================================================================================
+PR #383: feat: modify upload chart to dashboard (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/383
+Created at: 2024-01-05T08:51:45Z, Merged at: 2024-01-05T08:58:35Z
+================================================================================
+PR #382: feat: recover to_html api (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/382
+Created at: 2024-01-05T01:12:50Z, Merged at: 2024-01-05T01:19:36Z
+================================================================================
+PR #378: feat: StreamlitRenderer._get_html add cache (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/378
+Created at: 2024-01-02T08:37:05Z, Merged at: 2024-01-02T08:44:57Z
+================================================================================
+PR #377: chore: bump to v0.3.20 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/377
+Created at: 2023-12-29T09:34:57Z, Merged at: 2023-12-29T09:42:52Z
+================================================================================
+PR #376: feat: metrics chart add new chart (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/376
+Created at: 2023-12-29T08:46:48Z, Merged at: 2023-12-29T08:54:31Z
+================================================================================
+PR #375: feat: data parser add new param: infer_number_to_dimension (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/375
+Created at: 2023-12-29T01:58:52Z, Merged at: 2023-12-29T02:08:55Z
+================================================================================
+PR #374: feat: add login-cli to set kanaries token (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/374
+Created at: 2023-12-28T07:43:28Z, Merged at: 2023-12-28T07:50:20Z
+================================================================================
+PR #373: chore: update method(track_event) annotation (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/373
+Created at: 2023-12-28T02:30:01Z, Merged at: 2023-12-28T02:41:25Z
+================================================================================
+PR #372: feat: add metrics chart feature (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/372
+Created at: 2023-12-26T07:42:30Z, Merged at: 2023-12-26T07:57:31Z
+================================================================================
+PR #369: chore: bump to v0.3.19 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/369
+Created at: 2023-12-22T10:53:30Z, Merged at: 2023-12-22T11:00:05Z
+================================================================================
+PR #367: chore: bump to v0.3.19a4 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/367
+Created at: 2023-12-22T01:47:34Z, Merged at: 2023-12-22T01:53:53Z
+================================================================================
+PR #366: feat: connector add optional params: engine_params (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/366
+Created at: 2023-12-21T03:13:02Z, Merged at: 2023-12-21T03:23:08Z
+================================================================================
+PR #365: feat: data parser add new param: infer_string_to_date (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/365
+Created at: 2023-12-21T02:32:23Z, Merged at: 2023-12-21T03:06:06Z
+================================================================================
+PR #364: fix: dark mode bug && jupyter communication bug (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/364
+Created at: 2023-12-20T06:13:57Z, Merged at: 2023-12-20T06:20:53Z
+================================================================================
+PR #363: feat: add tips when init graphic-walker ui (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/363
+Created at: 2023-12-20T05:16:56Z, Merged at: 2023-12-20T05:28:29Z
+================================================================================
+PR #362: feat: auto add filter field when data painter saved (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/362
+Created at: 2023-12-20T02:10:18Z, Merged at: 2023-12-20T02:17:16Z
+================================================================================
+PR #361: feat: StreamlitRenderer add show_cloud_tool param (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/361
+Created at: 2023-12-19T13:15:48Z, Merged at: 2023-12-19T13:25:53Z
+================================================================================
+PR #360: feat: add data painter feature (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/360
+Created at: 2023-12-19T12:07:32Z, Merged at: 2023-12-19T13:11:39Z
+================================================================================
+PR #357: chore: bump to v0.3.18 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/357
+Created at: 2023-12-14T15:05:18Z, Merged at: 2023-12-14T15:14:10Z
+================================================================================
+PR #356: fix: bugs of adapting config, filter, dark (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/356
+Created at: 2023-12-14T13:38:59Z, Merged at: 2023-12-14T13:45:24Z
+================================================================================
+PR #355: chore: bump to v0.3.18a4 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/355
+Created at: 2023-12-14T03:00:22Z, Merged at: 2023-12-14T03:09:37Z
+================================================================================
+PR #354: feat: add kanaries_track (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/354
+Created at: 2023-12-13T08:25:18Z, Merged at: 2023-12-13T08:46:08Z
+================================================================================
+PR #352: feat: modify cloud features (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/352
+Created at: 2023-12-12T06:15:58Z, Merged at: 2023-12-12T06:50:37Z
+================================================================================
+PR #351: fix: temproray fix cloud dataset can't parse object type (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/351
+Created at: 2023-12-12T01:37:54Z, Merged at: 2023-12-12T01:47:22Z
+================================================================================
+PR #350: feat: add share url tips after uploading chart (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/350
+Created at: 2023-12-11T10:35:55Z, Merged at: 2023-12-11T10:45:10Z
+================================================================================
+PR #349: fix: Decimal(nan) cannot be serialized normally (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/349
+Created at: 2023-12-11T09:59:30Z, Merged at: 2023-12-11T10:33:11Z
+================================================================================
+PR #347: feat: add upload chart to cloud (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/347
+Created at: 2023-12-10T03:38:23Z, Merged at: 2023-12-10T03:45:23Z
+================================================================================
+PR #344: chore: bump to v0.3.17 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/344
+Created at: 2023-12-06T11:21:26Z, Merged at: 2023-12-06T11:49:15Z
+================================================================================
+PR #343: fix: fix bugs of removing fid encode (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/343
+Created at: 2023-12-06T06:48:20Z, Merged at: 2023-12-06T07:02:20Z
+================================================================================
+PR #340: feat:  file type of the uploaded file dataset from csv to parquet (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/340
+Created at: 2023-12-01T07:52:13Z, Merged at: 2023-12-01T08:00:22Z
+================================================================================
+PR #339: feat: remove encoding field name (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/339
+Created at: 2023-12-01T04:27:45Z, Merged at: 2023-12-01T05:53:27Z
+================================================================================
+PR #338: feat: delete share cloud charts feature (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/338
+Created at: 2023-11-30T13:45:53Z, Merged at: 2023-11-30T14:04:24Z
+================================================================================
+PR #337: feat: add cloud dataset create and explore (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/337
+Created at: 2023-11-30T13:11:38Z, Merged at: 2023-11-30T13:32:55Z
+================================================================================
+PR #336: fix: add workflow field when invoke upload_spec_to_cloud (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/336
+Created at: 2023-11-30T02:21:13Z, Merged at: 2023-11-30T02:28:45Z
+================================================================================
+PR #335: feat: modify display_chart from png to canvas (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/335
+Created at: 2023-11-29T15:18:30Z, Merged at: 2023-11-29T15:25:56Z
+================================================================================
+PR #334: feat: add kaggle tips (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/334
+Created at: 2023-11-29T09:57:45Z, Merged at: 2023-11-29T12:22:59Z
+================================================================================
+PR #332: fix: add export config field and kaggle preview style (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/332
+Created at: 2023-11-29T05:50:39Z, Merged at: 2023-11-29T06:01:10Z
+================================================================================
+PR #331: feat: display preview when save and run all in kaggle (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/331
+Created at: 2023-11-29T03:14:43Z, Merged at: 2023-11-29T03:33:54Z
+================================================================================
+PR #330: feat: use new preview base graphc-walker canvas (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/330
+Created at: 2023-11-29T02:47:10Z, Merged at: 2023-11-29T03:03:53Z
+================================================================================
+PR #329: feat: raise error when use incorrect view sql (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/329
+Created at: 2023-11-27T08:29:50Z, Merged at: 2023-11-27T08:38:30Z
+================================================================================
+PR #328: chore: bump to v0.3.16 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/328
+Created at: 2023-11-24T10:53:59Z, Merged at: 2023-11-24T11:15:40Z
+================================================================================
+PR #327: fix: read ksf config failed when not set token and remove log print (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/327
+Created at: 2023-11-24T08:40:47Z, Merged at: 2023-11-24T08:48:18Z
+================================================================================
+PR #326: chore: bump to v0.3.16a1 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/326
+Created at: 2023-11-24T02:30:50Z, Merged at: 2023-11-24T02:51:18Z
+================================================================================
+PR #325: fix: temproal timezone bugs (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/325
+Created at: 2023-11-24T01:50:22Z, Merged at: 2023-11-24T02:28:51Z
+================================================================================
+PR #322: fix: fid_fname_map some fields cannot be mapped  (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/322
+Created at: 2023-11-16T08:06:51Z, Merged at: 2023-11-16T08:17:45Z
+================================================================================
+PR #321: feat: add export dataframe tool (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/321
+Created at: 2023-11-16T07:31:21Z, Merged at: 2023-11-16T07:40:54Z
+================================================================================
+PR #320: fix: pure renderer params bugs in streamlit (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/320
+Created at: 2023-11-14T09:52:42Z, Merged at: 2023-11-14T10:00:28Z
+================================================================================
+PR #318: feat: modify request way of ask-viz api (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/318
+Created at: 2023-11-14T07:17:01Z, Merged at: 2023-11-14T07:27:16Z
+================================================================================
+PR #317: chore: bump to v0.3.13 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/317
+Created at: 2023-11-13T15:29:44Z, Merged at: 2023-11-13T15:50:59Z
+================================================================================
+PR #316: fix: filter bugs in connector and duckdb && add chart exists tips when create shared chart (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/316
+Created at: 2023-11-13T15:14:34Z, Merged at: 2023-11-13T15:26:08Z
+================================================================================
+PR #315: fix: modify IGlobalStore to VizSpecStore (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/315
+Created at: 2023-11-13T06:15:49Z, Merged at: 2023-11-13T08:21:47Z
+================================================================================
+PR #314: chore: bump to v0.3.12 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/314
+Created at: 2023-11-11T01:55:16Z, Merged at: 2023-11-11T02:06:46Z
+================================================================================
+PR #313: chore: bump to v0.3.12 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/313
+Created at: 2023-11-11T01:50:42Z, Merged at: None
+================================================================================
+PR #312: fix: fix timestamp field to sql bugs (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/312
+Created at: 2023-11-10T16:47:07Z, Merged at: 2023-11-10T17:15:53Z
+================================================================================
+PR #309: feat: hide cloud tips when privacy is offline (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/309
+Created at: 2023-11-08T04:00:15Z, Merged at: 2023-11-08T04:19:27Z
+================================================================================
+PR #308: feat: update graphic-walker to 0.4.25 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/308
+Created at: 2023-11-08T03:15:23Z, Merged at: 2023-11-08T03:30:17Z
+================================================================================
+PR #306: fix: streamlit api - get_streamlit_html (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/306
+Created at: 2023-11-07T08:47:05Z, Merged at: 2023-11-07T09:14:42Z
+================================================================================
+PR #304: chore: bump to v0.3.10 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/304
+Created at: 2023-11-03T09:26:34Z, Merged at: 2023-11-03T09:42:41Z
+================================================================================
+PR #303: feat: add upload cloud spec tips when spec params is none (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/303
+Created at: 2023-11-03T06:12:52Z, Merged at: 2023-11-03T06:54:24Z
+================================================================================
+PR #302: chore: bump to v0.3.10a4 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/302
+Created at: 2023-11-02T12:38:35Z, Merged at: 2023-11-02T12:50:18Z
+================================================================================
+PR #301: feat: cancel log of update version (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/301
+Created at: 2023-11-02T12:26:28Z, Merged at: 2023-11-02T12:35:11Z
+================================================================================
+PR #300: feat: avoid kanaries_token being rendered directly on the html (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/300
+Created at: 2023-11-02T12:10:22Z, Merged at: 2023-11-02T12:20:32Z
+================================================================================
+PR #299: feat: add track collector (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/299
+Created at: 2023-11-02T11:43:46Z, Merged at: 2023-11-02T11:58:43Z
+================================================================================
+PR #298: refacotr: split fucntion from create_cloud_graphic_walker (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/298
+Created at: 2023-11-02T07:54:00Z, Merged at: 2023-11-02T08:55:43Z
+================================================================================
+PR #297: refactor: streamlit module (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/297
+Created at: 2023-11-02T06:16:50Z, Merged at: 2023-11-02T06:47:53Z
+================================================================================
+PR #296: feat: add new feature walk_on_cloud (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/296
+Created at: 2023-11-02T02:42:03Z, Merged at: 2023-11-02T02:51:36Z
+================================================================================
+PR #292: chore: bump to v0.3.10a3 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/292
+Created at: 2023-10-30T08:58:14Z, Merged at: 2023-10-30T09:23:21Z
+================================================================================
+PR #291: fix: communications can't work when gradio reload (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/291
+Created at: 2023-10-30T07:16:09Z, Merged at: 2023-10-30T07:24:04Z
+================================================================================
+PR #290: feat: avoid read config files from affecting the main feature (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/290
+Created at: 2023-10-30T07:03:22Z, Merged at: 2023-10-30T07:13:26Z
+================================================================================
+PR #289: feat: add communication on gradio(pre-demo) (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/289
+Created at: 2023-10-29T08:37:04Z, Merged at: 2023-10-29T08:50:07Z
+================================================================================
+PR #288: chore: bump to v0.3.10a1 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/288
+Created at: 2023-10-27T10:24:14Z, Merged at: 2023-10-27T11:11:55Z
+================================================================================
+PR #287: feat: modify cloud server tips (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/287
+Created at: 2023-10-27T09:47:59Z, Merged at: 2023-10-27T10:17:49Z
+================================================================================
+PR #286: feat: store local user id (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/286
+Created at: 2023-10-27T05:59:39Z, Merged at: 2023-10-27T06:14:31Z
+================================================================================
+PR #285: refactor: pygwalker config utils (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/285
+Created at: 2023-10-27T05:10:02Z, Merged at: 2023-10-27T05:23:10Z
+================================================================================
+PR #280: feat: add cloud config file read and write (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/280
+Created at: 2023-10-24T07:25:28Z, Merged at: 2023-10-24T07:42:49Z
+================================================================================
+PR #279: feat: add vizgpt feature(temporary) (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/279
+Created at: 2023-10-23T02:01:04Z, Merged at: 2023-10-23T02:08:41Z
+================================================================================
+PR #275: chore: bump to v0.3.9 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/275
+Created at: 2023-10-18T12:00:20Z, Merged at: 2023-10-18T12:08:12Z
+================================================================================
+PR #273: chore: bump to v0.3.8 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/273
+Created at: 2023-10-17T09:30:44Z, Merged at: 2023-10-17T09:39:31Z
+================================================================================
+PR #272: feat: convert datetime to number for millisecond timestamp (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/272
+Created at: 2023-10-17T09:09:59Z, Merged at: 2023-10-17T09:21:52Z
+================================================================================
+PR #271: fix: connector date range bug (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/271
+Created at: 2023-10-16T07:08:20Z, Merged at: 2023-10-16T11:38:01Z
+================================================================================
+PR #269: chore: bump to v0.3.8a7 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/269
+Created at: 2023-10-13T10:35:51Z, Merged at: 2023-10-13T10:42:55Z
+================================================================================
+PR #268: fix: temporal range bug (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/268
+Created at: 2023-10-13T06:38:27Z, Merged at: 2023-10-13T10:13:04Z
+================================================================================
+PR #267: feat: pure_renderer support to switch explore mode in streamlit (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/267
+Created at: 2023-10-13T06:23:47Z, Merged at: 2023-10-13T06:35:26Z
+================================================================================
+PR #265: feat: streamlit add pre-filters feature (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/265
+Created at: 2023-10-11T08:50:29Z, Merged at: 2023-10-11T10:09:48Z
+================================================================================
+PR #264: feat: update grpahic-walker (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/264
+Created at: 2023-10-11T08:13:18Z, Merged at: 2023-10-11T08:29:45Z
+================================================================================
+PR #263: fix: adjust returned value of StreamlitRenderer (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/263
+Created at: 2023-10-10T02:57:33Z, Merged at: 2023-10-10T03:05:42Z
+================================================================================
+PR #262:  feat: size of chart remains the same as size of html (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/262
+Created at: 2023-10-09T08:03:51Z, Merged at: 2023-10-09T08:13:37Z
+================================================================================
+PR #261: feat: modify single chart renderer in streamlit (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/261
+Created at: 2023-10-09T05:55:52Z, Merged at: 2023-10-09T06:26:55Z
+================================================================================
+PR #260: chore: bump to v0.3.8a4 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/260
+Created at: 2023-10-07T09:06:29Z, Merged at: 2023-10-07T09:07:02Z
+================================================================================
+PR #259: feat: update grpahic-walker to support fold feature (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/259
+Created at: 2023-10-07T08:49:47Z, Merged at: 2023-10-07T09:00:03Z
+================================================================================
+PR #258: feat: streamlit support renderer mode of graphic-walker (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/258
+Created at: 2023-10-07T08:37:23Z, Merged at: 2023-10-07T08:45:49Z
+================================================================================
+PR #255: fix: streamlit base url (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/255
+Created at: 2023-10-03T06:07:58Z, Merged at: 2023-10-03T06:15:23Z
+================================================================================
+PR #253: refactor: use shadcn components (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/253
+Created at: 2023-09-30T02:39:15Z, Merged at: 2023-09-30T07:21:19Z
+================================================================================
+PR #251: chore: bump to v0.3.8a2 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/251
+Created at: 2023-09-28T14:10:10Z, Merged at: 2023-09-28T14:20:13Z
+================================================================================
+PR #250: chore: lazy load gw_dsl_parser module (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/250
+Created at: 2023-09-28T13:54:30Z, Merged at: 2023-09-28T14:07:43Z
+================================================================================
+PR #249: fix: DatabaseDataParser parse sub_query (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/249
+Created at: 2023-09-28T05:47:52Z, Merged at: 2023-09-28T09:24:36Z
+================================================================================
+PR #246: fix: DatabaseDataParser format_sql (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/246
+Created at: 2023-09-27T03:28:22Z, Merged at: 2023-09-27T03:48:29Z
+================================================================================
+PR #245: fix: fix date feature bugs (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/245
+Created at: 2023-09-27T01:56:56Z, Merged at: 2023-09-27T02:20:55Z
+================================================================================
+PR #244: fix: temporary fix for sqlglot conversion error (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/244
+Created at: 2023-09-26T13:39:16Z, Merged at: 2023-09-26T13:54:42Z
+================================================================================
+PR #243: fix: communication is not established when render geo chart (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/243
+Created at: 2023-09-26T07:09:01Z, Merged at: 2023-09-26T12:55:46Z
+================================================================================
+PR #241: fix: format sql in database parser (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/241
+Created at: 2023-09-25T14:19:12Z, Merged at: 2023-09-25T15:12:45Z
+================================================================================
+PR #238: chore: add new optional dependency (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/238
+Created at: 2023-09-23T00:08:08Z, Merged at: 2023-09-23T01:10:40Z
+================================================================================
+PR #237: fix: snowflake connection data types (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/237
+Created at: 2023-09-22T23:24:57Z, Merged at: 2023-09-22T23:55:13Z
+================================================================================
+PR #236: fix: missing error cases for temporal type infer (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/236
+Created at: 2023-09-22T19:37:03Z, Merged at: None
+================================================================================
+PR #235: chore: bump to v0.3.7 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/235
+Created at: 2023-09-22T08:57:52Z, Merged at: 2023-09-22T08:58:06Z
+================================================================================
+PR #234: chore: bump to v0.3.7a5 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/234
+Created at: 2023-09-22T08:33:08Z, Merged at: 2023-09-22T08:40:15Z
+================================================================================
+PR #233: feat: support database connector (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/233
+Created at: 2023-09-22T08:17:19Z, Merged at: 2023-09-22T08:30:37Z
+================================================================================
+PR #231: chore: bump to v0.3.7a2 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/231
+Created at: 2023-09-20T15:37:31Z, Merged at: 2023-09-20T15:37:49Z
+================================================================================
+PR #230: chore: bump to v0.3.7a1 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/230
+Created at: 2023-09-20T15:05:25Z, Merged at: 2023-09-20T15:12:15Z
+================================================================================
+PR #229: chore: bump to v0.3.7a0 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/229
+Created at: 2023-09-20T12:57:07Z, Merged at: 2023-09-20T13:04:21Z
+================================================================================
+PR #228: feat: support communications on streamlit (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/228
+Created at: 2023-09-20T12:37:22Z, Merged at: 2023-09-20T12:48:52Z
+================================================================================
+PR #227: feat: remove format temporal field (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/227
+Created at: 2023-09-20T12:18:17Z, Merged at: 2023-09-20T12:25:11Z
+================================================================================
+PR #226: doc: update readme (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/226
+Created at: 2023-09-15T15:38:52Z, Merged at: 2023-09-15T15:38:59Z
+================================================================================
+PR #225: chore: bump to v0.3.6 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/225
+Created at: 2023-09-15T02:37:19Z, Merged at: 2023-09-15T02:48:33Z
+================================================================================
+PR #223: fix: react render cause dnd not work (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/223
+Created at: 2023-09-14T09:25:39Z, Merged at: 2023-09-14T10:03:57Z
+================================================================================
+PR #222: feat: add drill function on the temporal field (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/222
+Created at: 2023-09-14T08:56:36Z, Merged at: 2023-09-14T09:21:49Z
+================================================================================
+PR #220: refactor: delete auth-wrapper lib (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/220
+Created at: 2023-09-12T06:36:04Z, Merged at: 2023-09-12T06:36:59Z
+================================================================================
+PR #219: feat: use new dsl_parser (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/219
+Created at: 2023-09-12T05:20:07Z, Merged at: 2023-09-12T06:09:32Z
+================================================================================
+PR #218: feat: adjust inferred field type (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/218
+Created at: 2023-09-06T04:01:21Z, Merged at: 2023-09-06T05:07:25Z
+================================================================================
+PR #216: chore: bump to v0.3.5 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/216
+Created at: 2023-09-01T08:34:34Z, Merged at: 2023-09-01T08:42:26Z
+================================================================================
+PR #215: feat: share charts beta version (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/215
+Created at: 2023-09-01T07:13:17Z, Merged at: 2023-09-01T07:46:54Z
+================================================================================
+PR #214: chore: update readme && default params (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/214
+Created at: 2023-08-30T09:46:15Z, Merged at: 2023-08-30T12:00:49Z
+================================================================================
+PR #213: refactor: compress wasm (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/213
+Created at: 2023-08-29T14:58:55Z, Merged at: 2023-08-29T15:31:54Z
+================================================================================
+PR #209: chore: bump to v0.3.4 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/209
+Created at: 2023-08-24T08:39:28Z, Merged at: 2023-08-24T08:39:43Z
+================================================================================
+PR #206: fix: version is empty when export code (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/206
+Created at: 2023-08-23T08:38:36Z, Merged at: 2023-08-23T09:21:12Z
+================================================================================
+PR #205: feat: auto fill new field in old chart config (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/205
+Created at: 2023-08-23T07:37:41Z, Merged at: 2023-08-23T08:15:59Z
+================================================================================
+PR #202: chore: bump to v0.3.3 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/202
+Created at: 2023-08-17T10:20:51Z, Merged at: 2023-08-17T10:54:49Z
+================================================================================
+PR #200: feat: support dataframe of spark (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/200
+Created at: 2023-08-15T09:53:02Z, Merged at: 2023-08-15T10:01:35Z
+================================================================================
+PR #199: chore: bump to v0.3.2 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/199
+Created at: 2023-08-10T12:06:48Z, Merged at: 2023-08-10T12:07:06Z
+================================================================================
+PR #198: chore: bump to v0.3.2a (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/198
+Created at: 2023-08-10T10:48:06Z, Merged at: 2023-08-10T11:29:09Z
+================================================================================
+PR #197: chore: bump to v0.3.1 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/197
+Created at: 2023-08-10T02:53:47Z, Merged at: 2023-08-10T02:54:20Z
+================================================================================
+PR #195: chore: modify pypi authors (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/195
+Created at: 2023-08-09T05:10:06Z, Merged at: 2023-08-09T05:10:21Z
+================================================================================
+PR #194: chore: bump to v0.3.0 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/194
+Created at: 2023-08-08T10:32:25Z, Merged at: 2023-08-08T10:33:05Z
+================================================================================
+PR #193: chore: bump to v0.3.0a1 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/193
+Created at: 2023-08-08T09:54:05Z, Merged at: 2023-08-08T10:02:25Z
+================================================================================
+PR #191: doc: update slack url (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/191
+Created at: 2023-08-04T06:44:15Z, Merged at: 2023-08-04T06:44:47Z
+================================================================================
+PR #190: chore: bump to v0.2.2 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/190
+Created at: 2023-08-03T14:13:14Z, Merged at: 2023-08-03T14:38:39Z
+================================================================================
+PR #186: feat: upgrade graphic-walker (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/186
+Created at: 2023-07-28T05:15:59Z, Merged at: 2023-07-28T05:16:20Z
+================================================================================
+PR #185: refactor data parser (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/185
+Created at: 2023-07-28T03:07:19Z, Merged at: 2023-07-28T03:27:10Z
+================================================================================
+PR #183: chore: bump to v0.2.0 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/183
+Created at: 2023-07-24T14:25:56Z, Merged at: 2023-07-25T02:59:48Z
+================================================================================
+PR #182: refactor: app index.tsx code (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/182
+Created at: 2023-07-24T13:58:22Z, Merged at: 2023-07-24T14:10:40Z
+================================================================================
+PR #181: fix: preview default show first chart (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/181
+Created at: 2023-07-22T00:50:13Z, Merged at: 2023-07-22T00:50:23Z
+================================================================================
+PR #180: chore: bump to v0.2.0a5 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/180
+Created at: 2023-07-21T10:22:57Z, Merged at: 2023-07-21T11:10:16Z
+================================================================================
+PR #177: fix: communication data type bug (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/177
+Created at: 2023-07-20T09:58:05Z, Merged at: 2023-07-20T09:58:13Z
+================================================================================
+PR #176: chore: bump to v0.2.0a4 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/176
+Created at: 2023-07-20T08:04:56Z, Merged at: 2023-07-20T08:16:26Z
+================================================================================
+PR #175: chore: bump to v0.2.0a3 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/175
+Created at: 2023-07-18T07:20:05Z, Merged at: 2023-07-18T07:51:14Z
+================================================================================
+PR #174: chore: bump to v0.2.0a2 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/174
+Created at: 2023-07-14T10:19:12Z, Merged at: 2023-07-14T10:20:45Z
+================================================================================
+PR #173: chore: bump to v0.2.0a2 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/173
+Created at: 2023-07-14T10:03:13Z, Merged at: None
+================================================================================
+PR #172: feat: improve dispaly and save chart (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/172
+Created at: 2023-07-14T09:43:09Z, Merged at: 2023-07-14T09:56:55Z
+================================================================================
+PR #169: feat: add tips on start (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/169
+Created at: 2023-07-12T07:16:45Z, Merged at: 2023-07-12T07:17:13Z
+================================================================================
+PR #168: feat: add display chart by invoke function (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/168
+Created at: 2023-07-12T03:59:33Z, Merged at: 2023-07-12T04:15:26Z
+================================================================================
+PR #167: feat: remove iframe in preview html (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/167
+Created at: 2023-07-11T14:34:20Z, Merged at: None
+================================================================================
+PR #166: fix: communication kernel (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/166
+Created at: 2023-07-11T10:13:07Z, Merged at: 2023-07-11T10:13:15Z
+================================================================================
+PR #165: chore: bump to v0.2.0a1 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/165
+Created at: 2023-07-11T07:44:44Z, Merged at: 2023-07-11T09:41:01Z
+================================================================================
+PR #164: feat: sendMsg add timeout param & modify cloud function show (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/164
+Created at: 2023-07-11T07:12:15Z, Merged at: 2023-07-11T07:14:23Z
+================================================================================
+PR #163: extract code of tool & fix dependencies version (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/163
+Created at: 2023-07-11T07:04:05Z, Merged at: 2023-07-11T07:04:20Z
+================================================================================
+PR #162: feat: preview chart when no kernel (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/162
+Created at: 2023-07-11T06:32:31Z, Merged at: 2023-07-11T06:33:08Z
+================================================================================
+PR #158: doc: modify contact information (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/158
+Created at: 2023-07-07T03:40:04Z, Merged at: 2023-07-07T03:41:04Z
+================================================================================
+PR #157: fix: export config bug (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/157
+Created at: 2023-07-05T12:29:09Z, Merged at: 2023-07-05T14:15:43Z
+================================================================================
+PR #156: feat: add the adaptation of different jupyter (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/156
+Created at: 2023-07-05T08:43:39Z, Merged at: 2023-07-05T09:35:51Z
+================================================================================
+PR #155: add feature that save config to json file  (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/155
+Created at: 2023-07-05T05:54:38Z, Merged at: 2023-07-05T06:01:28Z
+================================================================================
+PR #153: fix: invoke code & communication & ci (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/153
+Created at: 2023-07-04T07:31:47Z, Merged at: 2023-07-04T07:48:44Z
+================================================================================
+PR #148: feat: use new communication on jupyter (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/148
+Created at: 2023-07-01T09:06:19Z, Merged at: 2023-07-01T09:33:04Z
+================================================================================
+PR #147: fix: streamlit large data limit (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/147
+Created at: 2023-07-01T09:03:37Z, Merged at: 2023-07-01T09:04:38Z
+================================================================================
+PR #146: #145 doc: fix typos (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/146
+Created at: 2023-06-28T09:28:03Z, Merged at: 2023-06-30T07:26:10Z
+================================================================================
+PR #144: fix: types & lint issues (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/144
+Created at: 2023-06-25T15:57:59Z, Merged at: 2023-06-30T01:26:48Z
+================================================================================
+PR #143: chore: bump to v0.1.11 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/143
+Created at: 2023-06-25T11:33:42Z, Merged at: 2023-06-25T11:34:34Z
+================================================================================
+PR #142: Feat: add custom data parser  (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/142
+Created at: 2023-06-25T10:24:53Z, Merged at: 2023-06-25T11:21:56Z
+================================================================================
+PR #140: refactor: refactor check_update (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/140
+Created at: 2023-06-25T03:30:35Z, Merged at: 2023-06-25T03:55:53Z
+================================================================================
+PR #138: refactor: refactor pygwalker (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/138
+Created at: 2023-06-22T11:54:01Z, Merged at: 2023-06-23T00:48:57Z
+================================================================================
+PR #136: chore: bump to v0.1.10 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/136
+Created at: 2023-06-20T07:23:40Z, Merged at: 2023-06-20T07:25:47Z
+================================================================================
+PR #135: feat: modify get_formated_spec_params_code max_line (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/135
+Created at: 2023-06-20T05:59:05Z, Merged at: 2023-06-20T06:11:47Z
+================================================================================
+PR #134: feat: add modin test (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/134
+Created at: 2023-06-19T15:09:13Z, Merged at: 2023-06-20T03:01:04Z
+================================================================================
+PR #133: fix: fix to_html bug (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/133
+Created at: 2023-06-19T14:14:47Z, Merged at: 2023-06-19T14:55:27Z
+================================================================================
+PR #131: Added modin.🐼 suppport. (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/131
+Created at: 2023-06-17T06:41:44Z, Merged at: 2023-06-19T13:53:12Z
+================================================================================
+PR #130: style: adjust gwalker_props.py code style (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/130
+Created at: 2023-06-15T08:23:21Z, Merged at: 2023-06-15T10:42:47Z
+================================================================================
+PR #129: feat: Also added modin.🐼 support. (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/129
+Created at: 2023-06-13T15:53:14Z, Merged at: None
+================================================================================
+PR #128: fix: remove data restrictions for non-Jupyter env (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/128
+Created at: 2023-06-12T08:55:38Z, Merged at: 2023-06-14T05:29:37Z
+================================================================================
+PR #121: [Release] v0.1.9.1 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/121
+Created at: 2023-05-31T12:09:03Z, Merged at: 2023-05-31T12:29:20Z
+================================================================================
+PR #120: [fix] fix format invoke code and 'undefine' id (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/120
+Created at: 2023-05-31T12:03:52Z, Merged at: 2023-05-31T12:06:15Z
+================================================================================
+PR #116: [Release] v0.1.9 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/116
+Created at: 2023-05-25T13:45:22Z, Merged at: 2023-05-25T15:06:16Z
+================================================================================
+PR #115: refactor: remove submodule dependencies: graphic-walker && udpate auth-wrapper version (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/115
+Created at: 2023-05-25T13:34:05Z, Merged at: 2023-05-25T13:40:18Z
+================================================================================
+PR #114: [Feat] Add multi ways to upload and download chart (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/114
+Created at: 2023-05-15T02:37:52Z, Merged at: 2023-05-24T07:01:31Z
+================================================================================
+PR #113: [Release] v0.1.8 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/113
+Created at: 2023-05-12T04:06:36Z, Merged at: 2023-05-12T06:47:13Z
+================================================================================
+PR #109: [Feat]: Support multiple ways to pass parameter 'spec' (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/109
+Created at: 2023-05-10T02:28:58Z, Merged at: None
+================================================================================
+PR #108: [Chore] Bump GW version to v0.3.5 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/108
+Created at: 2023-05-09T10:29:10Z, Merged at: 2023-05-12T04:06:06Z
+================================================================================
+PR #106: [Feat]: Tunnel with Jupyter Comms (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/106
+Created at: 2023-05-08T07:15:03Z, Merged at: None
+================================================================================
+PR #105: [Feat-Dev] Synchronously load data to browser (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/105
+Created at: 2023-05-05T03:32:42Z, Merged at: 2023-05-05T03:33:05Z
+================================================================================
+PR #104: [Feat] Synchronously load data to browser (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/104
+Created at: 2023-04-28T01:41:32Z, Merged at: 2023-05-08T07:24:30Z
+================================================================================
+PR #102: [Workflow]: Upload Packages to Artifacts when Running Publish PyPI (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/102
+Created at: 2023-04-23T05:51:20Z, Merged at: 2023-04-23T06:05:29Z
+================================================================================
+PR #100: workflow:Publish PyPI (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/100
+Created at: 2023-04-21T06:31:06Z, Merged at: 2023-04-21T06:50:02Z
+================================================================================
+PR #99: [Feat]: Allows to serialize all Python classes with __str__ method (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/99
+Created at: 2023-04-17T17:30:58Z, Merged at: 2023-04-18T15:02:35Z
+================================================================================
+PR #96: [Feat] Support specifying field meta as an argument (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/96
+Created at: 2023-04-09T19:13:29Z, Merged at: 2023-04-18T15:02:12Z
+================================================================================
+PR #95: [Feat] Support configuring user-wide privacy policy (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/95
+Created at: 2023-04-06T17:38:26Z, Merged at: 2023-04-10T02:19:51Z
+================================================================================
+PR #93: fix: wrong download script (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/93
+Created at: 2023-03-31T09:07:35Z, Merged at: 2023-03-31T11:12:37Z
+================================================================================
+PR #89: fix: update gw to main (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/89
+Created at: 2023-03-26T18:35:00Z, Merged at: 2023-03-26T18:41:02Z
+================================================================================
+PR #88: B fix 02 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/88
+Created at: 2023-03-26T18:14:36Z, Merged at: 2023-03-26T18:23:34Z
+================================================================================
+PR #87: [Feat]: Support Plotly Dash enviroment (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/87
+Created at: 2023-03-20T10:44:54Z, Merged at: None
+================================================================================
+PR #84: Feat export code (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/84
+Created at: 2023-03-16T18:27:18Z, Merged at: None
+================================================================================
+PR #82: Add DataCamp Workspace to list of supported environments (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/82
+Created at: 2023-03-16T08:58:15Z, Merged at: 2023-03-16T12:56:46Z
+================================================================================
+PR #79: [Refactor] Build pygwalker-app from an independent package (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/79
+Created at: 2023-03-13T07:58:52Z, Merged at: 2023-03-13T09:17:55Z
+================================================================================
+PR #77: build[0.1.4.10]:bump graphic-walker to 0.2.15 (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/77
+Created at: 2023-03-12T13:34:31Z, Merged at: 2023-03-12T13:41:20Z
+================================================================================
+PR #75: test: Add automated build tests (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/75
+Created at: 2023-03-10T01:54:20Z, Merged at: None
+================================================================================
+PR #74: [Feat]: Support Streamlit enviroment and make Jupyter and Streamlit optional (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/74
+Created at: 2023-03-09T06:48:16Z, Merged at: 2023-03-09T19:04:54Z
+================================================================================
+PR #73: [Feat] Support exporting and importing UI specifications in code (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/73
+Created at: 2023-03-08T17:17:46Z, Merged at: None
+================================================================================
+PR #67: [Refactor]: build web app in pygwalker only (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/67
+Created at: 2023-03-06T17:34:36Z, Merged at: 2023-03-06T17:35:03Z
+================================================================================
+PR #66: [Feat]: Support Specified Dark Theme (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/66
+Created at: 2023-03-06T16:38:26Z, Merged at: 2023-03-06T16:40:24Z
+================================================================================
+PR #61: [Refactor]: Build Widget in pygwalker instead of graphic-walker (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/61
+Created at: 2023-03-05T14:20:50Z, Merged at: None
+================================================================================
+PR #57: [Feat]: Support Polars DataFrame and make Pandas and Polars optional (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/57
+Created at: 2023-03-02T15:45:05Z, Merged at: 2023-03-03T17:40:39Z
+================================================================================
+PR #53: [Feat]: Support Aggregation and DnD for non-position channels. (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/53
+Created at: 2023-02-28T15:23:22Z, Merged at: 2023-03-01T03:45:55Z
+================================================================================
+PR #52: [Doc] Update screenshots with new UI themes (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/52
+Created at: 2023-02-28T14:34:58Z, Merged at: 2023-02-28T14:37:16Z
+================================================================================
+PR #51: [Fix]: Unexpectly displays Unicode characters as hex digits (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/51
+Created at: 2023-02-28T07:38:28Z, Merged at: 2023-02-28T09:37:53Z
+================================================================================
+PR #48: [Feat]: Support different themes including dark theme (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/48
+Created at: 2023-02-27T19:34:15Z, Merged at: 2023-02-27T19:55:00Z
+================================================================================
+PR #46: fix: slack link (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/46
+Created at: 2023-02-27T14:55:00Z, Merged at: 2023-02-27T15:04:47Z
+================================================================================
+PR #45: Revert "[Feat]: Dump dataSource in tight mode to reduce .ipynb file size." (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/45
+Created at: 2023-02-27T14:19:40Z, Merged at: 2023-02-27T14:19:48Z
+================================================================================
+PR #44: [Feat]: Dump dataSource in tight mode to reduce .ipynb file size. (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/44
+Created at: 2023-02-27T12:17:38Z, Merged at: 2023-02-27T12:29:30Z
+================================================================================
+PR #38: [Feat]: Allow editing meta-info of data at any time (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/38
+Created at: 2023-02-24T18:37:35Z, Merged at: 2023-02-24T18:53:23Z
+================================================================================
+PR #35: [Fix]: Encoding error with non-string column names (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/35
+Created at: 2023-02-23T19:31:46Z, Merged at: 2023-02-24T21:51:22Z
+================================================================================
+PR #34: [Fix]: Temporal locales and format (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/34
+Created at: 2023-02-23T18:52:20Z, Merged at: 2023-02-23T18:58:35Z
+================================================================================
+PR #31: [Fix]: JSON.parse errors when DataFrame contains special characters (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/31
+Created at: 2023-02-22T19:45:10Z, Merged at: 2023-02-22T19:53:27Z
+================================================================================
+PR #30: [Fix]:Vega-Lite error with special chars in field id (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/30
+Created at: 2023-02-22T18:23:03Z, Merged at: 2023-02-22T19:04:54Z
+================================================================================
+PR #25: [Feat]: Added to_html API to pygwalker (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/25
+Created at: 2023-02-22T10:46:53Z, Merged at: 2023-02-22T12:47:09Z
+================================================================================
+PR #19: [Feat]: Support using in Databricks Notebooks (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/19
+Created at: 2023-02-21T20:17:34Z, Merged at: 2023-02-21T20:24:54Z
+================================================================================
+PR #14: Correct typo (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/14
+Created at: 2023-02-21T07:48:56Z, Merged at: 2023-02-21T07:58:40Z
+================================================================================
+PR #9: [windows]Open templates in utf8 encoding (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/9
+Created at: 2023-02-20T17:52:33Z, Merged at: 2023-02-20T18:11:11Z
+================================================================================
+PR #7: [Docs]Support more envs (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/7
+Created at: 2023-02-20T15:05:20Z, Merged at: 2023-02-20T15:05:45Z
+================================================================================
+PR #6: [Feat]: Change JS module format to support Kaggle Notebooks (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/6
+Created at: 2023-02-20T10:20:38Z, Merged at: 2023-02-20T10:32:09Z
+================================================================================
+PR #5: [Fix]:issue of parsing nan (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/5
+Created at: 2023-02-20T10:15:52Z, Merged at: 2023-02-20T10:16:36Z
+================================================================================
+PR #3: Update README.md (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/3
+Created at: 2023-02-18T01:07:07Z, Merged at: 2023-02-18T12:45:46Z
+================================================================================
+PR #2: [Fix] binder deps (State: closed)
+URL: https://github.com/Kanaries/pygwalker/pull/2
+Created at: 2023-02-18T00:13:19Z, Merged at: 2023-02-18T00:18:06Z
+================================================================================
