@@ -3,13 +3,13 @@ import os
 from pydriller import Repository
 
 # Define the repository URL
-repo_url = "https://github.com/apache/incubator-liminal.git"
+repo_url = "https://github.com/apache/incubator-resilientdb"
 
 # Define the CSV file name
-csv_filename = "liminal_commit_data.csv"
-readme_filename = "readme-liminal.md"
-license_filename = "license-liminal.txt"
-contributing_filename = "contributing-liminal.md"
+csv_filename = "resdb_commit_data.csv"
+readme_filename = "readme-resdb.md"
+license_filename = "license-resdb.txt"
+contributing_filename = "contributing-resdb.md"
 
 # Initialize variables to store latest README, LICENSE, and CONTRIBUTING.md content
 latest_readme = None
@@ -35,7 +35,7 @@ with open(csv_filename, mode="w", newline="", encoding="utf-8") as csv_file:
             continue
         
 
-        
+
         for file in commit.modified_files:
             # Check if the file is a README file
             # if file.filename.lower().startswith("readme"):
