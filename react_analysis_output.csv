@@ -1,0 +1,6 @@
+OSS Project,ReACT number,Outcome
+Liminal Project,ReACT-3,py: 65.94%; md: 10.84%; yml: 6.73%; txt: 4.49%; sh: 3.64%; png: 2.79%; yaml: 1.39%; rst: 0.93%; in: 0.70%; gitignore: 0.54%; conf: 0.54%; bat: 0.31%; py~HEAD: 0.31%; gif: 0.23%; csv: 0.23%; json: 0.15%; cfg: 0.15%; toml: 0.08%
+Liminal Project,ReACT-11 Keep the project small and simple.,Met
+Liminal Project,ReACT-26 Conduct unit tests.,Met
+Liminal Project,ReACT-32 Promote code transparency. Keep the code as simple as possible,Needs Improvement
+Liminal Project,ReACT-82 Have and enforce a code of conduct,Needs Improvement
