@@ -83,6 +83,36 @@ def analyze_file_extensions(file_path, react_number, project_name="Liminal Proje
     
     print(f"Analysis saved to {output_file}")
 
+def analyze_commit_messages(csv_filename):
+    project_metrics = {"ReACT-66 Perform adequate testing before integrating a feature": False}
+    total_commits = 0
+    revert_commits = 0
+    
+    with open(csv_filename, mode="r", encoding="utf-8") as csv_file:
+        reader = csv.DictReader(csv_file)
+        
+        for row in reader:
+            commit_message = row["Commit Message"].lower()
+            total_commits += 1
+            
+            if "test" in commit_message or "tested" in commit_message or "unit test" in commit_message:
+                project_metrics["ReACT-66 Perform adequate testing before integrating a feature"] = True
+            
+            if "revert" in commit_message:
+                revert_commits += 1
+    
+    if total_commits > 0 and (revert_commits / total_commits) > 0.1:  # If more than 10% commits are revert commits
+        project_metrics["ReACT-66 Perform adequate testing before integrating a feature"] = False
+    
+    recommendations = [key for key, value in project_metrics.items() if not value]
+    
+    if recommendations:
+        print("Recommendations for commit messages:")
+        for react in recommendations:
+            print(f"- {react}")
+    else:
+        print("ReACT guidelines for ReACT 66 is met!")
+
 def analyze_contributing_md(directory_path):
     project_metrics = {
         "ReACT-9 Grant newcomer access to the main repository": False,
@@ -108,17 +138,19 @@ def analyze_contributing_md(directory_path):
     recommendations = [key for key, value in project_metrics.items() if not value]
     
     if recommendations:
-        print("Recommendations for CONTRIBUTING.md:")
+        print("Recommendations [CONTRIBUTING.md]")
         for react in recommendations:
             print(f"- {react}")
     else:
-        print("All ReACT guidelines for CONTRIBUTING.md are met!")
+        print("CONTRIBUTING.md are met!")
 
 # Example usage
 file_path = "liminal_commit_data.csv"
 react_number = "ReACT-3"
-#analyze_file_extensions(file_path, react_number)
+analyze_file_extensions(file_path, react_number)
 
 csv_filename = "liminal_commit_data.csv"
-#analyze_react_metrics(csv_filename)
-analyze_contributing_md(csv_filename)
+analyze_react_metrics(csv_filename)
+directory_path = "contributing-liminal.md"
+analyze_contributing_md(directory_path)
+analyze_commit_messages(csv_filename)
