@@ -83,10 +83,42 @@ def analyze_file_extensions(file_path, react_number, project_name="Liminal Proje
     
     print(f"Analysis saved to {output_file}")
 
+def analyze_contributing_md(directory_path):
+    project_metrics = {
+        "ReACT-9 Grant newcomer access to the main repository": False,
+        "ReACT-19 Flag newcomers to ensure a welcoming environment for them": False,
+        "ReACT-33 Provide clear and detailed contribution guidelines": False,
+        "ReACT-84 Provide onboarding support and help newcomers to make their first contribution": False
+    }
+    
+    contributing_md_path = os.path.join(directory_path)
+    if os.path.exists(contributing_md_path):
+        with open(contributing_md_path, "r", encoding="utf-8") as f:
+            content = f.read().lower()
+            
+            if "how to request for access" in content:
+                project_metrics["ReACT-9 Grant newcomer access to the main repository"] = True
+            if "flag newcomers" in content:
+                project_metrics["ReACT-19 Flag newcomers to ensure a welcoming environment for them"] = True
+            if "contribution guidelines" in content:
+                project_metrics["ReACT-33 Provide clear and detailed contribution guidelines"] = True
+            if "onboarding support" in content or "first contribution" in content:
+                project_metrics["ReACT-84 Provide onboarding support and help newcomers to make their first contribution"] = True
+    
+    recommendations = [key for key, value in project_metrics.items() if not value]
+    
+    if recommendations:
+        print("Recommendations for CONTRIBUTING.md:")
+        for react in recommendations:
+            print(f"- {react}")
+    else:
+        print("All ReACT guidelines for CONTRIBUTING.md are met!")
+
 # Example usage
 file_path = "liminal_commit_data.csv"
 react_number = "ReACT-3"
-analyze_file_extensions(file_path, react_number)
+#analyze_file_extensions(file_path, react_number)
 
 csv_filename = "liminal_commit_data.csv"
-analyze_react_metrics(csv_filename)
+#analyze_react_metrics(csv_filename)
+analyze_contributing_md(csv_filename)
