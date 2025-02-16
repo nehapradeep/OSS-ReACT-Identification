@@ -4,3 +4,6 @@ Liminal Project,ReACT-11 Keep the project small and simple.,Met
 Liminal Project,ReACT-26 Conduct unit tests.,Met
 Liminal Project,ReACT-32 Promote code transparency. Keep the code as simple as possible,Needs Improvement
 Liminal Project,ReACT-82 Have and enforce a code of conduct,Needs Improvement
+Celeborn Project,ReACT-16,Grouping the commits by committer, we counted how many merge commits each committer made and calculate the total number of integrators
+Celeborn Project,ReACT-36,Calculate the percentage of commits by each author and Identify the timeline: First commit to latest commit for each author
+Celeborn Project,ReACT-38,Contributors with a minimum number of commits and Contributors who have been active over a longer period, ideally contributing over months or years
