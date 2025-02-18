@@ -4,9 +4,10 @@ import requests
 
 repos = [
     # {'owner': 'Kanaries', 'repo': 'pygwalker'},
-    {'owner': 'apache', 'repo': 'incubator-resilientdb'},
-    {'owner': 'apache', 'repo': 'kvrocks'},
-    {'owner': 'apache', 'repo': 'doris'},
+    # {'owner': 'apache', 'repo': 'incubator-resilientdb'},
+    # {'owner': 'apache', 'repo': 'kvrocks'},
+    # {'owner': 'apache', 'repo': 'doris'},
+    # {'owner': 'apache', 'repo': 'incubator-liminal'},
     {'owner': 'apache', 'repo': 'celeborn'}
 ]
 token = None or os.environ['GITHUB_TOKEN']
