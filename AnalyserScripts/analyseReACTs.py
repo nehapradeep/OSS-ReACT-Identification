@@ -2,12 +2,12 @@ import csv
 import os
 import pandas as pd
 
-def analyze_react_metrics(csv_filename):
+def analyze_react_metrics(csv_filename, project_name, output_file="final_react_analysis.csv"):
     project_metrics = {
-        "ReACT-11 Keep the project small and simple.": True,  # Assume small and simple unless large LOC is detected
-        "ReACT-26 Conduct unit tests.": False,  # Will be True if test files are found
-        "ReACT-32 Promote code transparency. Keep the code as simple as possible": False,  # Will be evaluated based on comments
-        "ReACT-82 Have and enforce a code of conduct": False   # Will be True if CODE_OF_CONDUCT.md exists
+        "ReACT-11 Keep the project small and simple.": True,
+        "ReACT-26 Conduct unit tests.": False,
+        "ReACT-32 Promote code transparency. Keep the code as simple as possible": False,
+        "ReACT-82 Have and enforce a code of conduct": False
     }
     
     total_files = 0
@@ -23,67 +23,82 @@ def analyze_react_metrics(csv_filename):
             total_loc += int(row["Total Lines Changed"])
             
             file_name = row["File Name"].lower()
-            file_extension = row["File Extension"].lower()
             
-            # Check for test files
             if "test" in file_name or file_name.startswith("test_"):
                 test_files += 1
-                
-            # Check for code of conduct
+            
             if file_name == "code_of_conduct.md":
-                project_metrics["ReACT-82 Have and enforce a code of conduct (have file named CODE_OF_CONDUCT.md"] = True
-                
-            # Approximate comment ratio (assuming comments are 20% of deleted lines)
+                project_metrics["ReACT-82 Have and enforce a code of conduct"] = True
+            
             total_comment_lines += int(row["Deleted Lines"]) * 0.2
     
-    # Evaluate ReACT-11: Project simplicity (if LOC > 10,000, recommend keeping it simple) - Can be Vague
+    # Analysis of ReACT-11
     if total_loc > 1000000:
         project_metrics["ReACT-11 Keep the project small and simple."] = False
     
-    # Evaluate ReACT-26: If no test files exist, recommend unit tests
+    # Analysis of ReACT-26
     if test_files > 0:
         project_metrics["ReACT-26 Conduct unit tests."] = True
     
-    # Evaluate ReACT-32: If comments are less than 15% of total LOC, recommend more transparency
+    # Analysis of ReACT-32
     if total_comment_lines / total_loc > 0.15:
         project_metrics["ReACT-32 Promote code transparency. Keep the code as simple as possible"] = True
     
-    recommendations = [key for key, value in project_metrics.items() if not value]
-    
-    if recommendations:
-        print("Recommendations:")
-        for react in recommendations:
-            print(f"- {react}")
-    else:
-        print("All ReACT guidelines are met! No recommendations needed.")
-
-
-def analyze_file_extensions(file_path, react_number, project_name="Liminal Project", output_file="react_analysis_output.csv"):
-    # Step 1: Read the project's CSV file
-    df = pd.read_csv(file_path)
-    
-    # Step 2: Compute the percentage of each file extension
-    extension_counts = df["File Extension"].value_counts()
-    extension_percentage = (extension_counts / extension_counts.sum()) * 100
-    
-    # Step 3: Prepare the output CSV file
-    file_exists = os.path.isfile(output_file)
-    
-    # Step 4: Store the results in a DataFrame
-    outcome_str = "; ".join([f"{ext}: {perc:.2f}%" for ext, perc in extension_percentage.items()])
-    
-    output_data = pd.DataFrame({
-        "OSS Project": [project_name],
-        "ReACT number": [react_number],
-        "Outcome": [outcome_str]  # Store all percentages in a single cell
-    })
-    
-    # Step 5: Save or append to the CSV file
-    output_data.to_csv(output_file, mode='a', index=False, header=not file_exists)
+    # Writing the results to the CSV
+    with open(output_file, mode="a", encoding="utf-8", newline="") as csv_file:
+        fieldnames = ["Project Name", "ReACT Name/Number", "Outcome", "Recommendation"]
+        writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+        if not os.path.isfile(output_file) or os.stat(output_file).st_size == 0:
+            writer.writeheader()
+        
+        for key in project_metrics:
+            analysis = "Meets criteria"
+            recommendation = "Recommend"
+            if not project_metrics[key]:
+                analysis = "Does not meet criteria"
+                # Add specific explanation to Analysis
+                if key == "ReACT-11 Keep the project small and simple.":
+                    analysis += f" (Total LOC is {total_loc}, which exceeds the recommended limit of 1 million.)"
+                elif key == "ReACT-26 Conduct unit tests.":
+                    analysis += " (No unit tests found, but test files are present.)"
+                elif key == "ReACT-32 Promote code transparency. Keep the code as simple as possible":
+                    analysis += f" (Comment ratio is {total_comment_lines / total_loc:.2f}, which is below the recommended threshold of 15%.)"
+                elif key == "ReACT-82 Have and enforce a code of conduct":
+                    analysis += " (No code of conduct file found in the project.)"
+                recommendation = "Do not recommend"
+            
+            writer.writerow({
+                "Project Name": project_name,
+                "ReACT Name/Number": key,
+                "Outcome": analysis,
+                "Recommendation": recommendation
+            })
     
     print(f"Analysis saved to {output_file}")
 
-def analyze_commit_messages(csv_filename):
+def analyze_file_extensions(file_path, react_number, project_name, output_file="final_react_analysis.csv"):
+    df = pd.read_csv(file_path)
+    extension_counts = df["File Extension"].value_counts()
+    extension_percentage = (extension_counts / extension_counts.sum()) * 100
+    file_exists = os.path.isfile(output_file)
+    outcome_str = "; ".join([f"{ext}: {perc:.2f}%" for ext, perc in extension_percentage.items()])
+    
+    with open(output_file, mode="a", encoding="utf-8", newline="") as csv_file:
+        fieldnames = ["Project Name", "ReACT Name/Number", "Outcome", "Recommendation"]
+        writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+        if not file_exists or os.stat(output_file).st_size == 0:
+            writer.writeheader()
+        
+        writer.writerow({
+            "Project Name": project_name,
+            "ReACT Name/Number": react_number,
+            "Outcome": outcome_str,
+            "Recommendation": "N/A"
+        })
+    
+    print(f"Analysis saved to {output_file}")
+
+def analyze_commit_messages(csv_filename, project_name, output_file="final_react_analysis.csv"):
     project_metrics = {"ReACT-66 Perform adequate testing before integrating a feature": False}
     total_commits = 0
     revert_commits = 0
@@ -101,59 +116,46 @@ def analyze_commit_messages(csv_filename):
             if "revert" in commit_message:
                 revert_commits += 1
     
-    if total_commits > 0 and (revert_commits / total_commits) > 0.1:  # If more than 10% commits are revert commits
+    if total_commits > 0 and (revert_commits / total_commits) > 0.1:
         project_metrics["ReACT-66 Perform adequate testing before integrating a feature"] = False
     
-    recommendations = [key for key, value in project_metrics.items() if not value]
-    
-    if recommendations:
-        print("Recommendations for commit messages:")
-        for react in recommendations:
-            print(f"- {react}")
-    else:
-        print("ReACT guidelines for ReACT 66 is met!")
-
-def analyze_contributing_md(directory_path):
-    project_metrics = {
-        "ReACT-9 Grant newcomer access to the main repository": False,
-        "ReACT-19 Flag newcomers to ensure a welcoming environment for them": False,
-        "ReACT-33 Provide clear and detailed contribution guidelines": False,
-        "ReACT-84 Provide onboarding support and help newcomers to make their first contribution": False
-    }
-    
-    contributing_md_path = os.path.join(directory_path)
-    if os.path.exists(contributing_md_path):
-        with open(contributing_md_path, "r", encoding="utf-8") as f:
-            content = f.read().lower()
+    with open(output_file, mode="a", encoding="utf-8", newline="") as csv_file:
+        fieldnames = ["Project Name", "ReACT Name/Number", "Outcome", "Recommendation"]
+        writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+        if not os.path.isfile(output_file) or os.stat(output_file).st_size == 0:
+            writer.writeheader()
+        
+        for key in project_metrics:
+            analysis = "Meets criteria"
+            recommendation = "Recommend"
+            if not project_metrics[key]:
+                analysis = "Does not meet criteria"
+                # Add specific explanation to Analysis
+                if key == "ReACT-66 Perform adequate testing before integrating a feature":
+                    analysis += " (More than 10% of commits are revert commits, indicating insufficient testing before integration.)"
+                recommendation = "Do not recommend"
             
-            if "how to request for access" in content:
-                project_metrics["ReACT-9 Grant newcomer access to the main repository"] = True
-            if "flag newcomers" in content:
-                project_metrics["ReACT-19 Flag newcomers to ensure a welcoming environment for them"] = True
-            if "contribution guidelines" in content:
-                project_metrics["ReACT-33 Provide clear and detailed contribution guidelines"] = True
-            if "onboarding support" in content or "first contribution" in content:
-                project_metrics["ReACT-84 Provide onboarding support and help newcomers to make their first contribution"] = True
+            writer.writerow({
+                "Project Name": project_name,
+                "ReACT Name/Number": key,
+                "Outcome": analysis,
+                "Recommendation": recommendation
+            })
     
-    recommendations = [key for key, value in project_metrics.items() if not value]
+    print(f"Analysis saved to {output_file}")
+
+def main():
+    project_name = "ResDB"
+    input_csv = "resdb_commit_data2.csv"
+    output_csv = "final_react_analysis.csv"
     
-    if recommendations:
-        print("Recommendations [CONTRIBUTING.md]")
-        for react in recommendations:
-            print(f"- {react}")
-    else:
-        print("CONTRIBUTING.md are met!")
+    analyze_react_metrics(input_csv, project_name, output_csv)
+    analyze_commit_messages(input_csv, project_name, output_csv)
+    analyze_file_extensions(input_csv, "ReACT-File Extension Analysis", project_name, output_csv)
+    
+if __name__ == "__main__":
+    main()
 
-# Example usage
-file_path = "liminal_commit_data.csv"
-react_number = "ReACT-3"
-analyze_file_extensions(file_path, react_number)
-
-csv_filename = "liminal_commit_data.csv"
-analyze_react_metrics(csv_filename)
-directory_path = "contributing-liminal.md"
-analyze_contributing_md(directory_path)
-analyze_commit_messages(csv_filename)
 
 def analyze_react_16(file_path, output_file="react_commit_author.csv"):
     """

@@ -16,12 +16,13 @@ latest_readme = None
 latest_license = None
 latest_contributing = None
 
+
 # Open CSV file for writing
 with open(csv_filename, mode="w", newline="", encoding="utf-8") as csv_file:
     fieldnames = [
         "Commit Hash", "Author Email", "Author Date", "Committer Email", "Committer Date",
         "Commit Message", "Branches", "In Main Branch", "Is Merge Commit",
-        "Number of Modified Files", "File Name", "File Extension", "Change Type",
+        "Number of Modified Files", "File Name", "File Extension",
         "Added Lines", "Deleted Lines", "Total Lines Changed"
     ]
     writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
@@ -31,16 +32,15 @@ with open(csv_filename, mode="w", newline="", encoding="utf-8") as csv_file:
 
     # Traverse the repository commits
     for commit in Repository(repo_url).traverse_commits():
+        
         if not main_branches.intersection(commit.branches):
             continue
-        
-
 
         for file in commit.modified_files:
-            # Check if the file is a README file
-            # if file.filename.lower().startswith("readme"):
-            #     latest_readme = file.source_code if file.source_code else "No content"
-            
+            # Skip object files (e.g., .o, .obj), dependency files (.d), and other generated files
+            if file.filename.endswith(('.o', '.obj', '.d', '.exe', '.bin', '.dll', '.so', '.class', '.jar')) or file.source_code is None:
+                continue
+                continue
             # Check if the file is a LICENSE file
             if file.filename.lower() == "license" or file.filename.lower().startswith("license"):
                 latest_license = file.source_code if file.source_code else "No content"
@@ -63,7 +63,6 @@ with open(csv_filename, mode="w", newline="", encoding="utf-8") as csv_file:
                 "Number of Modified Files": len(commit.modified_files),
                 "File Name": file.filename,
                 "File Extension": file.filename.split('.')[-1] if '.' in file.filename else "None",
-                "Change Type": file.change_type,
                 "Added Lines": file.added_lines,
                 "Deleted Lines": file.deleted_lines,
                 "Total Lines Changed": file.added_lines + file.deleted_lines
@@ -86,5 +85,3 @@ print(f"Data successfully saved in {csv_filename}")
 print(f"Latest README saved in {readme_filename}")
 print(f"Latest LICENSE saved in {license_filename}")
 print(f"Latest CONTRIBUTING.md saved in {contributing_filename}")
-
-
