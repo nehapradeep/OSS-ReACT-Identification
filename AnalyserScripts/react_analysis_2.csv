@@ -1,0 +1,15 @@
+ReACT-17,Encourage mentors to collaborate with mentees on addressing bugs or issues.,yes
+ReACT-27,As a newcomer, explain what you've tried when asking for help, and use the provided template. (good-first-issue),Yes
+
+ReACT-58,Encourage senior developers to answer questions of newcomers,Yes
+
+ReACT-61,Make the tasks technically interesting,Yes
+
+ReACT-67,Clearly communicate unresolved issues to the developers,yes
+
+ReACT-86,Acknowledge all contributions of newcomers (comments),Yes
+
+ReACT-95,Set expectations and needs early: Show newcomers what is expected from them, where the difficulties lie, and what skills and level of expertise they need to have (what programming languages and technologies are used by the project, etc.). Place this information somewhere that newcomers access early in their journey (check issue comments under: Issue tag: “good first issue”),no
+
+ReACT-103,Keep the community informed about decisions.,Yes
+
