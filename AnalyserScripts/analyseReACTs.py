@@ -152,6 +152,15 @@ def main():
     analyze_react_metrics(input_csv, project_name, output_csv)
     analyze_commit_messages(input_csv, project_name, output_csv)
     analyze_file_extensions(input_csv, "ReACT-File Extension Analysis", project_name, output_csv)
+    file_path = "pydrillerCSV/celeborn_commit_data.csv"
+    react_number = "ReACT-16"
+    analyze_file_extensions(file_path, react_number)
+    analyze_react_16(file_path)
+    analyze_react_36(file_path)
+    analyze_react_38_with_loc(file_path)
+
+csv_filename = "pydrillerCSV/celeborn_commit_data.csv"
+analyze_react_metrics(csv_filename)
     
 if __name__ == "__main__":
     main()
@@ -283,12 +292,4 @@ def analyze_react_38_with_loc(file_path, min_commits=10, min_months_active=3, mi
     print(output_df)
 
 # Example usage
-file_path = "pydrillerCSV/celeborn_commit_data.csv"
-react_number = "ReACT-16"
-analyze_file_extensions(file_path, react_number)
-analyze_react_16(file_path)
-analyze_react_36(file_path)
-analyze_react_38_with_loc(file_path)
 
-csv_filename = "pydrillerCSV/celeborn_commit_data.csv"
-analyze_react_metrics(csv_filename)
