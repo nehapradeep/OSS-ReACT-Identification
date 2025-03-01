@@ -68,6 +68,38 @@ def analyze_react_81(commit_csv_filename, output_file="final_react_analysis.csv"
     save_analysis("ReACT-81 Keep knowledge up to date and findable.", analysis, recommendation, output_file)
 
 #neha
+def analyze_react_9(contrib_md_path, output_file="final_react_analysis.csv"):
+    keyword = "how to request for access"
+    analyze_contributing_react(contrib_md_path, "ReACT-9", keyword, output_file)
+
+#neha
+def analyze_react_19(contrib_md_path, output_file="final_react_analysis.csv"):
+    keyword = "flag newcomers"
+    analyze_contributing_react(contrib_md_path, "ReACT-19", keyword, output_file)
+
+#neha
+def analyze_react_33(contrib_md_path, output_file="final_react_analysis.csv"):
+    keyword = "contribution guidelines"
+    analyze_contributing_react(contrib_md_path, "ReACT-33", keyword, output_file)
+
+#neha
+def analyze_react_84(contrib_md_path, output_file="final_react_analysis.csv"):
+    keyword = "onboarding support"
+    analyze_contributing_react(contrib_md_path, "ReACT-84", keyword, output_file)
+
+#neha
+def analyze_contributing_react(contrib_md_path, react, keyword, output_file):
+    try:
+        with open(contrib_md_path, "r", encoding="utf-8") as file:
+            content = file.read().lower()
+            meets_criteria = keyword in content
+            analysis = f"Meets criteria (Found keyword: '{keyword}')" if meets_criteria else f"Does not meet criteria (Keyword '{keyword}' not found)"
+            recommendation = "" if meets_criteria else "Do not recommend"
+            save_analysis(react, analysis, recommendation, output_file)
+    except FileNotFoundError:
+        print(f"Error: CONTRIBUTING.md file not found at {contrib_md_path}")
+
+#neha
 def save_analysis(react_name, outcome, recommendation, output_file):
     with open(output_file, mode="a", encoding="utf-8", newline="") as csv_file:
         fieldnames = ["Project Name", "ReACT Name/Number", "Outcome", "Recommendation"]
@@ -83,11 +115,16 @@ def save_analysis(react_name, outcome, recommendation, output_file):
     
     print(f"Analysis for {react_name} saved to {output_file}")
 
-project_path = '/Users/nehapradeep/Desktop/UCDavis/Winter25/SE/OSS ReAct/OSS-ReACT-Identification'
+project_path = '/Users/nehapradeep/Desktop/UCDavis/Winter25/SE/OSS ReAct/OSS-ReACT-Identification/'
 project_name = 'kvrocks'
 pr_csv = os.path.join(project_path, "github_api", project_name, "pr.csv")
 commit_csv = os.path.join(project_path, "pydrillerCSV", project_name, f"{project_name}_commit_data.csv")
+contrib_md = os.path.join(project_path, "github_api", project_name, "CONTRIBUTING.md")
 
 analyze_react_14(pr_csv)
 analyze_react_62(pr_csv)
 analyze_react_81(commit_csv)
+analyze_react_9(contrib_md)
+analyze_react_19(contrib_md)
+analyze_react_33(contrib_md)
+analyze_react_84(contrib_md)
