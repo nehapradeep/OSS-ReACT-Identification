@@ -6,6 +6,7 @@ from datetime import datetime
 #React 62
 #React 81
 
+#neha
 def analyze_react_14(csv_filename, output_file="final_react_analysis.csv"):
     pr_merge_times = []
     
@@ -27,6 +28,8 @@ def analyze_react_14(csv_filename, output_file="final_react_analysis.csv"):
     
     save_analysis("ReACT-14 Merge pull requests promptly.", analysis, recommendation, output_file)
 
+
+#neha
 def analyze_react_62(csv_filename, output_file="final_react_analysis.csv"):
     first_pr_timestamp = None
     
@@ -45,6 +48,7 @@ def analyze_react_62(csv_filename, output_file="final_react_analysis.csv"):
     
     save_analysis("ReACT-62 Encourage developers to start contributing to the project early.", analysis, recommendation, output_file)
 
+#neha
 def analyze_react_81(commit_csv_filename, output_file="final_react_analysis.csv"):
     readme_updates = []
     
@@ -63,6 +67,7 @@ def analyze_react_81(commit_csv_filename, output_file="final_react_analysis.csv"
     
     save_analysis("ReACT-81 Keep knowledge up to date and findable.", analysis, recommendation, output_file)
 
+#neha
 def save_analysis(react_name, outcome, recommendation, output_file):
     with open(output_file, mode="a", encoding="utf-8", newline="") as csv_file:
         fieldnames = ["Project Name", "ReACT Name/Number", "Outcome", "Recommendation"]
