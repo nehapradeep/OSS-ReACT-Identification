@@ -1,0 +1,88 @@
+import csv
+import os
+from datetime import datetime
+
+#React 14
+#React 62
+#React 81
+
+def analyze_react_14(csv_filename, output_file="final_react_analysis.csv"):
+    pr_merge_times = []
+    
+    with open(csv_filename, mode="r", encoding="utf-8") as csv_file:
+        reader = csv.DictReader(csv_file)
+        
+        for row in reader:
+            created_at = datetime.strptime(row["Created At"], "%Y-%m-%dT%H:%M:%SZ")
+            merged_at = row["Merged At"]
+            
+            if merged_at != "None":
+                merged_at = datetime.strptime(merged_at, "%Y-%m-%dT%H:%M:%SZ")
+                pr_merge_times.append((merged_at - created_at).total_seconds())
+    
+    avg_merge_time = sum(pr_merge_times) / len(pr_merge_times) if pr_merge_times else None
+    meets_criteria = avg_merge_time is not None and avg_merge_time <= 7 * 24 * 3600
+    analysis = f"Meets criteria (Avg merge time: {avg_merge_time / 3600:.2f} hours)" if meets_criteria else f"Does not meet criteria (Avg merge time: {avg_merge_time / 3600:.2f} hours exceeds 7 days.)"
+    recommendation = "" if meets_criteria else "Do not recommend"
+    
+    save_analysis("ReACT-14 Merge pull requests promptly.", analysis, recommendation, output_file)
+
+def analyze_react_62(csv_filename, output_file="final_react_analysis.csv"):
+    first_pr_timestamp = None
+    
+    with open(csv_filename, mode="r", encoding="utf-8") as csv_file:
+        reader = csv.DictReader(csv_file)
+        
+        for row in reader:
+            created_at = datetime.strptime(row["Created At"], "%Y-%m-%dT%H:%M:%SZ")
+            
+            if first_pr_timestamp is None:
+                first_pr_timestamp = created_at
+    
+    meets_criteria = first_pr_timestamp is not None
+    analysis = f"Meets criteria (First PR created at: {first_pr_timestamp})" if meets_criteria else "Does not meet criteria (No early PRs found.)"
+    recommendation = "" if meets_criteria else "Do not recommend"
+    
+    save_analysis("ReACT-62 Encourage developers to start contributing to the project early.", analysis, recommendation, output_file)
+
+def analyze_react_81(commit_csv_filename, output_file="final_react_analysis.csv"):
+    readme_updates = []
+    
+    with open(commit_csv_filename, mode="r", encoding="utf-8") as csv_file:
+        reader = csv.DictReader(csv_file)
+        
+        for row in reader:
+            if row["File Name"] == "README.md":
+                commit_date = datetime.strptime(row["Author Date"], "%Y-%m-%d %H:%M:%S%z")
+                readme_updates.append(commit_date)
+    
+    last_update = max(readme_updates) if readme_updates else None
+    meets_criteria = last_update is not None and (datetime.now(last_update.tzinfo) - last_update).days <= 365
+    analysis = f"Meets criteria (Last README update: {last_update})" if meets_criteria else "Does not meet criteria (README has not been updated in the last year.)"
+    recommendation = "" if meets_criteria else "Do not recommend"
+    
+    save_analysis("ReACT-81 Keep knowledge up to date and findable.", analysis, recommendation, output_file)
+
+def save_analysis(react_name, outcome, recommendation, output_file):
+    with open(output_file, mode="a", encoding="utf-8", newline="") as csv_file:
+        fieldnames = ["Project Name", "ReACT Name/Number", "Outcome", "Recommendation"]
+        writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+        if not os.path.isfile(output_file) or os.stat(output_file).st_size == 0:
+            writer.writeheader()
+        writer.writerow({
+            "Project Name": project_name,
+            "ReACT Name/Number": react_name,
+            "Outcome": outcome,
+            "Recommendation": recommendation
+        })
+    
+    print(f"Analysis for {react_name} saved to {output_file}")
+
+project_path = '/Users/nehapradeep/Desktop/UCDavis/Winter25/SE/OSS ReAct/OSS-ReACT-Identification'
+project_name = 'kvrocks'
+pr_csv = os.path.join(project_path, "github_api", project_name, "pr.csv")
+commit_csv = os.path.join(project_path, "pydrillerCSV", project_name, f"{project_name}_commit_data.csv")
+
+analyze_react_14(pr_csv)
+analyze_react_62(pr_csv)
+analyze_react_81(commit_csv)
