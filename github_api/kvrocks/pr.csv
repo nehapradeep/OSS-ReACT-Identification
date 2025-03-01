@@ -1,0 +1,1757 @@
+PR Number,Title,State,URL,Created At,Merged At
+2790,chore(ci): bump crate-ci/typo to v1.2.7,open,,2025-02-13T16:54:22Z,None
+2788,chore(ci): bump action apache/skywalking-eyes/header to 0.7.0,closed,,2025-02-13T07:41:12Z,2025-02-13T12:11:35Z
+2787,chore(ci): bump minica to v1.1.0,closed,,2025-02-12T09:39:31Z,2025-02-12T16:01:59Z
+2786,chore(build): bump golang-lint to 1.64.3,open,,2025-02-12T08:40:03Z,None
+2785,chore(test): update godeps,closed,,2025-02-11T13:26:37Z,2025-02-12T02:05:11Z
+2783,fix(string): the server will be crashed when passing a negative offset in SETRANGE command,closed,,2025-02-10T12:18:46Z,2025-02-10T15:38:37Z
+2782,chore: bump jsoncons to v1.2.0,closed,,2025-02-09T10:26:13Z,2025-02-09T12:30:02Z
+2781,"feat(server): add rocksdb_version, server_time_usec, executable and config_file to INFO",closed,,2025-02-09T05:59:25Z,2025-02-09T10:36:51Z
+2780,ci: fix build-push-action by supplying context argument,closed,,2025-02-09T05:19:15Z,2025-02-09T08:48:50Z
+2779,ci: keep git history while building nightly images,closed,,2025-02-08T15:13:36Z,2025-02-08T16:45:30Z
+2778,chore(server): return InfoEntries instead of string in Get..Info(),closed,,2025-02-08T14:59:16Z,2025-02-09T02:54:40Z
+2776,chore: bump googletest to 1.16.0,closed,,2025-02-07T18:33:49Z,2025-02-08T00:49:54Z
+2775,feat(info): move the last scan time as field to the info keyspace section,closed,,2025-02-07T14:53:17Z,2025-02-08T03:05:50Z
+2774,chore(server): improve code style of `Server::Get..Info()`,closed,,2025-02-06T15:00:52Z,2025-02-07T01:47:28Z
+2773,ci: parallel longest running test in slotmigrate_test.go and bitmap_test.go,closed,,2025-02-06T08:12:40Z,None
+2772,feat(info): support to specify multiple sections for INFO,closed,,2025-02-05T16:30:56Z,2025-02-06T14:36:04Z
+2769,ci: release nightly images for version tags,closed,,2025-02-04T07:37:46Z,2025-02-04T09:31:45Z
+2768,ci: isolate geoadd and georange test and run it in parallel,closed,,2025-02-04T05:46:34Z,2025-02-04T12:00:43Z
+2765,fix(conn): detect and drop HTTP requests in connection,closed,,2025-02-03T14:23:42Z,2025-02-04T03:37:29Z
+2764,feat(rockdb): Allow customization of Rocksdb threads number,closed,,2025-02-03T14:03:18Z,None
+2763,ci: execute long running go tests in parallel,open,,2025-02-03T02:36:24Z,None
+2762,chore(test): update godeps,closed,,2025-02-02T09:05:04Z,2025-02-02T15:33:57Z
+2761,fix: typo in signal handler,closed,,2025-02-01T18:50:00Z,None
+2760,ci: add an alpine-based build & test workflow,closed,,2025-02-01T15:50:52Z,2025-02-02T05:42:59Z
+2759,build: remove glibc-specific dependencies,closed,,2025-02-01T13:19:16Z,2025-02-01T15:16:48Z
+2757,fix(tls): remove SSL_sendfile path to avoid errors in replication fullsync,closed,,2025-02-01T05:35:34Z,2025-02-01T09:17:49Z
+2755,chore(ci): bump crate-ci/typos to 1.29.5,closed,,2025-01-31T09:57:42Z,2025-01-31T12:39:08Z
+2754,fix(tests): flaky test case in BLMPOP command,closed,,2025-01-31T07:18:09Z,2025-01-31T08:53:55Z
+2753,chore: replace DCHECK_NOTNULL to suppress warnings,closed,,2025-01-30T02:28:51Z,2025-01-30T06:09:19Z
+2751,ci: refactor nightly image workflow and utilize arm64 runners,closed,,2025-01-28T14:38:36Z,2025-01-29T02:56:30Z
+2750,feat(hash): add the support of HSETEXPIRE command (HSET + EXPIRE),closed,,2025-01-28T13:13:50Z,2025-01-30T04:11:49Z
+2749,ci: add arm64 job for check-docker,closed,,2025-01-28T06:15:46Z,2025-01-28T11:03:53Z
+2748,chore: update copyright year in NOTICE,closed,,2025-01-27T10:09:53Z,2025-01-27T12:31:40Z
+2747,chore(command): add admin flag for permission-required commands,closed,,2025-01-27T09:52:21Z,2025-01-28T01:11:21Z
+2746,chore(config): enable the RESP3 potocol by default,closed,,2025-01-27T09:22:19Z,2025-01-29T07:11:27Z
+2745,feat(command): add support of RESP output format for the POLLUPDATES command,closed,,2025-01-27T07:41:56Z,2025-01-27T14:25:53Z
+2744,chore: bump fmtlib to 11.1.3,closed,,2025-01-26T19:14:05Z,2025-01-27T02:50:59Z
+2742,chore(.asf.yaml): make 2.11 a protected branch,closed,,2025-01-26T06:34:32Z,2025-01-26T06:51:08Z
+2741,feat(tdigest): add tdigest algorithm and storage encoding implementations,closed,,2025-01-25T15:23:10Z,2025-02-12T06:17:15Z
+2740,feat(script): allow blocking commands in scripting,closed,,2025-01-25T11:08:16Z,2025-01-28T06:56:30Z
+2739,chore(x.py): fix several typing issue in x.py,closed,,2025-01-25T09:33:27Z,2025-01-27T09:12:30Z
+2738,chore(cmake): add c to language list of `project()`,closed,,2025-01-25T07:53:40Z,2025-01-26T06:27:59Z
+2737,chore(dockerfile): switch compiler to clang,closed,,2025-01-25T05:42:14Z,2025-01-25T10:19:51Z
+2736,chore(server): check the arity should happen before the flag generate,closed,,2025-01-25T05:24:02Z,2025-01-25T14:24:31Z
+2733,feat(main): refine shutdown message to show signal name,closed,,2025-01-25T02:34:12Z,2025-01-25T04:03:28Z
+2732,fix(script): disable exclusive commands to be executed in scripting,closed,,2025-01-25T02:31:57Z,2025-01-25T06:03:44Z
+2731,"feat(script, function): remove global lock for EVAL, EVALSHA and FCALL",closed,,2025-01-24T02:42:15Z,2025-01-25T02:01:18Z
+2724,perf(cluster): add upper bound for scan during migration,closed,,2025-01-17T06:59:27Z,2025-01-19T03:40:47Z
+2721,feat: support histograms for command latency statistics,closed,,2025-01-14T23:39:20Z,2025-01-22T02:41:07Z
+2720,chore: bump fmtlib to 11.1.2,closed,,2025-01-13T08:24:00Z,2025-01-13T12:27:34Z
+2719,chore: bump jsoncons to v1.1.0,closed,,2025-01-10T09:17:20Z,2025-01-17T07:09:45Z
+2718,chore(tests): use built-in min and max,closed,,2025-01-10T08:48:43Z,2025-01-10T10:46:07Z
+2717,feat(hash): add support of hash expiration commands,open,,2025-01-09T00:27:28Z,None
+2716,fix(cluster): should stop the migration if it's changed to the slave role,closed,,2025-01-08T11:00:26Z,2025-01-09T02:18:18Z
+2714,ci: rearranging CI steps to avoid side effects with go,closed,,2025-01-07T19:19:33Z,None
+2713,test: get rid of external dependency by implementing generic Min/Max functions,closed,,2025-01-06T19:18:00Z,2025-01-08T11:15:55Z
+2711,ci: bump crate-ci/typos to 1.29.4,closed,,2025-01-05T12:09:19Z,2025-01-05T14:28:14Z
+2710,test: update go deps,closed,,2025-01-05T09:06:06Z,2025-01-08T02:14:09Z
+2709,chore: bump cpptrace to v0.7.5,closed,,2025-01-05T08:18:25Z,2025-01-05T12:52:12Z
+2708,test: [CHECKING CI] Update some test Go deps,closed,,2025-01-04T17:31:27Z,None
+2707,ci: bump golangcilinter to 1.63.3,closed,,2025-01-03T12:05:48Z,2025-01-03T14:49:52Z
+2706,test: updates go deps,closed,,2025-01-03T11:11:06Z,None
+2705,chore: bump rocksdb to v9.10.0,closed,,2025-01-02T21:43:01Z,2025-01-03T02:25:52Z
+2704,chore: bump jsoncons to v1.0.0,closed,,2025-01-02T12:36:45Z,2025-01-02T15:21:20Z
+2703,feat(search): add basic infra for text fields (without indexing),open,,2024-12-31T14:36:18Z,None
+2702,feat(search): trim whitespaces in tag values,closed,,2024-12-31T13:36:51Z,2025-01-01T00:55:06Z
+2701,build: add concurrent level option for make while ninja is used,closed,,2024-12-31T13:35:39Z,2025-01-01T02:55:44Z
+2700,chore: bump xxhash to v0.8.3,closed,,2024-12-30T08:19:21Z,2024-12-30T10:14:14Z
+2699,chore: bump fmtlib to v11.1.1,closed,,2024-12-28T09:31:49Z,2024-12-28T16:01:52Z
+2698,chore: bump fmtlib to 11.1.0,closed,,2024-12-26T11:44:09Z,2024-12-27T02:11:18Z
+2697,ci: bump crate-ci/typos action to 1.28.4,closed,,2024-12-24T19:11:02Z,2024-12-25T02:33:20Z
+2696,chore: bump cpptrace to v0.7.4,closed,,2024-12-22T10:32:35Z,2024-12-22T13:59:33Z
+2694,chore: bump rocksdb to v9.9.3,closed,,2024-12-17T19:03:48Z,2024-12-18T02:47:22Z
+2693,chore: add move assign operator for MultiLockGuard,closed,,2024-12-15T03:08:28Z,2024-12-15T05:17:42Z
+2692,feat(search): add TAGGED as an alternative syntax to HASTAG,closed,,2024-12-12T04:46:46Z,2024-12-12T11:38:36Z
+2691,test(integration): add integration test for master lost during syncing sst files.,closed,,2024-12-11T15:13:50Z,2024-12-12T06:39:35Z
+2689,refactor: reduce memory copying during incremental synchronization,closed,,2024-12-10T09:48:31Z,2024-12-11T10:52:09Z
+2688,feat(config): add the `partition_filters` option to disable the partitioned filters,closed,,2024-12-06T04:56:03Z,2024-12-06T09:06:08Z
+2687,chore: bump rocksdb to v9.8.4,closed,,2024-12-04T08:46:47Z,2024-12-04T12:12:15Z
+2686,fix(string): reset the value of expired key for SETRANGE cmd,closed,,2024-12-02T09:11:37Z,2024-12-03T07:37:39Z
+2685,fix(worker): memory leak when Worker::AddConnection() failed,closed,,2024-12-02T08:59:52Z,None
+2683,feat: skip block cache deallocation to make shutdown fast,closed,,2024-12-01T15:45:33Z,2024-12-05T07:57:28Z
+2682,ci: bump gotest testify to v1.10.0,closed,,2024-11-30T12:02:39Z,2024-11-30T13:24:11Z
+2681,ci: bump redis-py to 5.2.0,closed,,2024-11-26T19:29:07Z,2024-11-27T03:01:49Z
+2680,ci: bump crate-ci/typos to 1.28,closed,,2024-11-26T12:57:41Z,2024-11-26T15:34:17Z
+2678,"feat(cmd, config): support REPLICAOF command and replicaof config option",closed,,2024-11-23T08:45:35Z,2024-11-24T03:11:08Z
+2677,feat(conn): allow CONFIG in stale-data replica,closed,,2024-11-23T08:41:49Z,2024-11-23T13:12:53Z
+2672,feat(cmd): add more information to shutdown log,closed,,2024-11-19T13:24:41Z,2024-11-19T17:52:43Z
+2670,chore: bump cpptrace to v0.7.3,closed,,2024-11-16T08:17:37Z,2024-11-17T14:56:15Z
+2669,feat(cmd): add the auth flag for authentication checking,closed,,2024-11-16T07:42:41Z,2024-11-16T09:14:37Z
+2668,feat(conn): avoid to check the command name directly,closed,,2024-11-16T05:21:05Z,2024-11-17T04:22:00Z
+2667,fix(string): reset the value of expired key for incrby cmd ,closed,,2024-11-16T02:38:52Z,2024-11-18T11:18:39Z
+2666,feat(cmd): all blocking commands should be no-script,closed,,2024-11-15T14:56:27Z,2024-11-16T06:22:40Z
+2665,chore: bump zlib to 1.3.1,closed,,2024-11-15T10:38:29Z,None
+2664,refactor: initialize google logger after parsing options,closed,,2024-11-15T10:28:49Z,2024-11-16T00:51:33Z
+2663,fix(cmd): always print ok log when get full data file info failed,closed,,2024-11-15T07:13:05Z,2024-11-15T13:50:09Z
+2662,fix(replication): slave blocks until keepalive timer is reached when master is gone without fin/rst notification,closed,,2024-11-14T09:41:46Z,2024-11-16T15:22:57Z
+2661,fix(cmd): args should be parsed before retrieving keys in COMMAND GETKEYS,closed,,2024-11-14T05:01:50Z,2024-11-14T08:43:15Z
+2658,feat(config): make rocksdb.dump_malloc_stats configurable,closed,,2024-11-11T18:10:26Z,2024-11-13T06:11:37Z
+2657,fix(stream): add `KeyRangeGen` for `XRead` and `XReadGroup`,closed,,2024-11-11T15:24:09Z,2024-11-15T04:27:39Z
+2656,feat(cmd): updating NO_KEY To a valid Key,closed,,2024-11-10T17:13:09Z,None
+2655,feat(search): print properties for vector field in FT.INFO,closed,,2024-11-10T13:10:48Z,2024-11-10T15:24:03Z
+2654,feat(cluster): add support of the JSON type in cluster migration,closed,,2024-11-10T12:43:47Z,2024-11-12T01:56:34Z
+2653,ci: update deps in gotest,closed,,2024-11-09T08:23:06Z,2024-11-09T09:58:26Z
+2652,test: update gotest deps,closed,,2024-11-08T18:16:59Z,None
+2651,fix(log): fix rocksdb stall condition string output,closed,,2024-11-08T04:44:23Z,2024-11-08T06:32:54Z
+2650,chore(search): improve code structure of IndexManager,closed,,2024-11-07T11:29:14Z,2024-11-08T02:08:36Z
+2649,feat(search): add mutex to HNSW index updating,closed,,2024-11-07T03:14:26Z,2024-11-07T10:05:53Z
+2648,fix(bugfix): for txn_write_batch creation,closed,,2024-11-04T14:17:32Z,2024-11-05T02:18:36Z
+2647,chore: use FetchContent_MakeAvailable instead of FetchContent_Populate,closed,,2024-11-04T09:51:32Z,None
+2646,ci: update sonarcloud-github-c-cpp to v3,closed,,2024-11-04T09:19:19Z,2024-11-05T13:51:35Z
+2645,ci: update crate-ci/typos to 1.27.0,closed,,2024-11-04T09:14:11Z,2024-11-04T11:35:39Z
+2644,chore(enhancement): rename is_txn_mode to txn_context_enabled,closed,,2024-11-04T08:05:10Z,2024-11-14T04:33:57Z
+2643,fix(cluster): should remove the master if it's not node in the cluster,closed,,2024-11-03T12:47:09Z,2024-11-04T04:12:24Z
+2641,chore(cmd): add comments for command flags,closed,,2024-11-02T17:52:35Z,2024-11-03T04:26:11Z
+2640,fix(script): avoid SetCurrentConnection on read-only scripting,closed,,2024-11-02T17:01:19Z,2024-11-03T11:38:09Z
+2639,chore: bump rocksdb to v9.7.4,closed,,2024-11-02T09:36:48Z,2024-11-03T02:44:45Z
+2637,feat(cmd): add blocking flag and remove useless flags,closed,,2024-11-02T07:11:12Z,2024-11-02T16:50:08Z
+2634,chore: Add devcontainer config for Kvrocks,closed,,2024-11-01T07:25:51Z,2024-11-02T13:36:14Z
+2632,chore: bump oneTBB to v2022.0.0,closed,,2024-10-31T20:36:51Z,2024-11-01T04:03:23Z
+2631,chore: bump jsoncons to v0.178.0,closed,,2024-10-31T15:13:11Z,2024-11-01T06:47:46Z
+2630,feat(status): support rocksdb::Status fowarding in GET_OR_RET,closed,,2024-10-31T05:19:59Z,2024-10-31T07:42:25Z
+2629,chore: Improve the code style by introducing macros ,closed,,2024-10-30T15:17:44Z,None
+2627,"feat(resp): optimize simple string ""OK"" construction",closed,,2024-10-28T15:37:45Z,2024-10-31T05:32:49Z
+2624,fix(cmd): add exclusive flag to FLUSHDB/FLUSHALL,closed,,2024-10-26T02:43:58Z,2024-10-26T12:13:19Z
+2623,fix(command): wrong key range in commands: DISK/MEMORY/DUMP,closed,,2024-10-26T02:01:43Z,2024-10-26T05:42:06Z
+2621,feat(cmd): make key range fields private in CommandAttributes,closed,,2024-10-24T12:42:48Z,2024-10-24T15:09:05Z
+2620,refactor: hoist key mutexes to ExecuteCommands,closed,,2024-10-24T04:57:21Z,2024-11-04T16:25:14Z
+2619,feat(cmd): avoid to use CommandAttributes::flags directly,closed,,2024-10-23T17:11:00Z,2024-10-24T09:58:16Z
+2615,feat(config): Minor update comment for compression_start_level error code,closed,,2024-10-21T16:40:55Z,2024-10-22T08:00:19Z
+2614,fix(rocksdb): downgrade RocksDB to v9.3.1 due to a blobdb issue,closed,,2024-10-20T13:11:13Z,2024-10-20T14:40:26Z
+2611,feat(conn): move time-consuming ops out of ExecuteCommand for context,closed,,2024-10-19T05:58:39Z,2024-10-19T08:55:42Z
+2608,"feat(keys, scan): Support arbitrary glob patterns",closed,,2024-10-17T15:46:11Z,2024-10-29T02:22:36Z
+2607,feat(config): add `rocksdb.wal_compression` to allow enable wal compression,closed,,2024-10-17T09:07:02Z,2024-10-18T05:20:28Z
+2605,feat(config): add `rocksdb.compression_start_level` to allow configure levels without compression,closed,,2024-10-17T08:21:19Z,2024-10-21T13:01:32Z
+2600,chore: Bump  rocksdb to v9.7.2,closed,,2024-10-14T19:11:35Z,2024-10-17T16:30:22Z
+2599,fix: Better checking for prefix matches,closed,,2024-10-14T15:32:53Z,2024-10-15T04:07:01Z
+2598,feat(worker): Allow passing a socket FD to dup and listen on,closed,,2024-10-14T15:19:19Z,2024-10-18T01:46:42Z
+2597,fix: should remove the db lock from the context to prevent blocking user requests,closed,,2024-10-14T05:29:00Z,2024-10-14T16:48:13Z
+2595,refactor: move rdb related code to `storage/rdb` folder,closed,,2024-10-13T07:52:30Z,2024-10-13T13:14:03Z
+2593,docs: remove the Slack invitation link from README.md,closed,,2024-10-12T10:54:00Z,2024-10-12T11:24:32Z
+2592,feat(config): support retrieving configuration fields using glob patterns,closed,,2024-10-12T01:21:23Z,2024-10-12T11:20:57Z
+2591,chore: add branch 2.10 as a protected branch in .asf.yaml,closed,,2024-10-11T16:33:47Z,2024-10-11T16:56:14Z
+2590,ci: add arm64 linux pipeline,closed,,2024-10-11T12:08:32Z,2025-01-18T13:47:13Z
+2589,fix: some rocksdb properties are counted multiple times,closed,,2024-10-11T03:54:26Z,2024-10-11T12:33:40Z
+2588,docs: Add Kvrocks' Zulip URL to README,closed,,2024-10-09T15:00:14Z,2024-10-09T15:13:59Z
+2586,refactor: promote the `engine::Context` in the `Execute`,closed,,2024-10-08T14:11:06Z,2024-10-11T03:09:02Z
+2585,chore: Bump cpptrace to v0.7.2,closed,,2024-10-07T06:59:25Z,2024-10-07T09:09:58Z
+2584,ci: update github actions,closed,,2024-10-06T09:21:44Z,2024-10-06T19:53:38Z
+2581,chore(search): update README to add some references for KQIR,closed,,2024-10-05T14:59:17Z,2024-10-05T15:20:14Z
+2579,fix(json): JSON.MSET may update on the old json value,closed,,2024-10-05T09:38:17Z,2024-10-05T14:37:22Z
+2577,feat(search): Added Alias Commands to Search,open,,2024-10-04T18:12:04Z,None
+2576,fix(stream): fix `XINFO` group metadata key overlapping.,closed,,2024-10-04T13:14:57Z,2024-10-04T16:13:36Z
+2575,ci: disable kvrocks2redis test for archlinux,closed,,2024-10-03T04:09:25Z,2024-10-03T06:25:03Z
+2573,feat(ts): initialize metadata encoding for time series,open,,2024-10-03T03:47:09Z,None
+2572,feat(json): change default max_nesting_depth to 1024,closed,,2024-10-03T03:41:34Z,2024-10-03T10:02:52Z
+2571,feat(search): add field options and definition part to FT.INFO,closed,,2024-10-03T03:17:58Z,2024-10-04T00:31:19Z
+2570,feat(command): add slow flag to more commands,closed,,2024-10-03T02:41:42Z,2024-10-03T08:02:34Z
+2569,fix(stream): change XREADGROUP response for empty read response,closed,,2024-10-02T00:10:17Z,2024-10-03T13:53:01Z
+2566,fix(stream): Fix XPENDING serialization issue,closed,,2024-09-30T20:58:03Z,2024-10-04T02:26:46Z
+2564,feat(search): support the FT.TAGVALS command,closed,,2024-09-30T19:23:10Z,2024-10-04T09:38:33Z
+2557,fix(test): use fixed seed to improve reproducibility.,closed,,2024-09-26T14:46:15Z,2024-09-27T10:35:31Z
+2556,feat: Added key expiration support,open,,2024-09-25T03:58:24Z,None
+2553,fix: format changes,closed,,2024-09-23T03:40:16Z,None
+2549,fix(replication): didn't resume the db status after restarting full sync,closed,,2024-09-21T04:36:14Z,2024-09-21T06:09:28Z
+2548,"feat: Add the ability to checkpoint an existing server, and spawn a read-only server on that view.",open,,2024-09-20T18:34:09Z,None
+2547,fix(rdb): incorrect type conversion during RDB loads the int8 encoding,closed,,2024-09-20T07:52:42Z,2024-09-21T09:05:03Z
+2545,feat: support cuckoo filter and most commands,closed,,2024-09-18T19:36:02Z,None
+2544,chore(tests): refactor and enhance test cases to prevent flaky test failure,closed,,2024-09-18T13:24:19Z,2024-09-20T13:02:19Z
+2543,update,closed,,2024-09-17T16:05:57Z,None
+2540,chore(tests): enhance the namespace replication to prevent flaky test,closed,,2024-09-16T12:53:53Z,2024-09-17T03:02:33Z
+2538,fix: add more check in cluster node parsing,closed,,2024-09-14T21:19:39Z,2024-09-22T04:53:36Z
+2537,chore: bump PEGTL to v3.2.8,closed,,2024-09-14T12:28:18Z,2024-09-15T13:47:52Z
+2536,chore: bump cpptrace to v0.7.1,closed,,2024-09-14T08:23:11Z,2024-09-15T11:50:51Z
+2535,feat: Bitmap type DUMP/RESTORE command support,closed,,2024-09-14T08:13:26Z,2024-09-14T16:14:40Z
+2533,chore(tests): add basic tests for the stream consumer group ,closed,,2024-09-14T02:35:26Z,2024-09-17T00:36:54Z
+2530,test: add go test cases for `txn-context-enabled` config,closed,,2024-09-09T02:37:32Z,2024-09-10T13:31:19Z
+2529,Add files via upload,closed,,2024-09-08T18:51:08Z,None
+2527,fix(namespace): didn't reload namespaces from DB after the full sync,closed,,2024-09-08T07:10:29Z,2024-09-08T12:21:54Z
+2525,chore: bump rocksdb to v9.6.1,closed,,2024-09-07T06:31:52Z,2024-09-08T10:13:49Z
+2524,feat: support count min sketch data structure and most commands,open,,2024-09-07T02:56:19Z,None
+2522,chore(tests): add basic test case for the full+partial sync,closed,,2024-09-05T14:30:58Z,2024-09-06T04:08:44Z
+2519,fix(typo): `filed -> field`,closed,,2024-09-02T09:16:55Z,2024-09-02T12:23:37Z
+2517,fix(test): remove meaningless `list-max-ziplist-size`,closed,,2024-09-01T14:51:04Z,2024-09-02T04:34:21Z
+2516,fix(replication): potential deadlock  when switching master frequently,closed,,2024-09-01T14:12:48Z,2024-09-02T07:10:03Z
+2513,feat: support maxmemory-clients config,closed,,2024-08-30T13:51:11Z,None
+2510,ci: add Debian environment to CI workflow,closed,,2024-08-28T13:15:15Z,2024-08-30T05:29:16Z
+2508,feat: support limit WriteBatch size,closed,,2024-08-28T02:16:11Z,2024-09-04T02:36:52Z
+2507,chore: Enable -Werror=unused-parameter flag,closed,,2024-08-26T14:20:24Z,2024-08-27T11:17:33Z
+2506,feat(config): add `txn_context_enabled` to allow to enable the transaction feature,closed,,2024-08-25T12:28:01Z,2024-08-31T17:07:42Z
+2505,fix(configuration): wrong comment line about the pidfile in configuration file,closed,,2024-08-24T13:48:10Z,2024-08-25T06:18:42Z
+2502,chore: Bump rocksdb to v9.5.2,closed,,2024-08-22T06:08:01Z,2024-08-25T02:32:30Z
+2501,chore: Bump cpptrace to v0.7.0,closed,,2024-08-22T05:59:17Z,2024-08-23T11:00:23Z
+2499,fix(config):  wrong rocksdb config name max_sub_compactions,closed,,2024-08-20T12:39:17Z,2024-08-21T01:55:30Z
+2498,"feat: support limit WriteBatch size,client outbuf limit and maxmemory clients ",closed,,2024-08-20T05:49:38Z,None
+2495,feat: add CLIENT PAUSE and CLIENT REPLY subcommands,open,,2024-08-18T14:05:09Z,None
+2494,feat: Add slow flags for commands with heavy disk I/O,closed,,2024-08-18T01:22:47Z,2024-08-19T08:42:48Z
+2493,chore: bump jsoncons to v0.177.0,closed,,2024-08-17T09:21:02Z,2024-10-03T12:03:44Z
+2491,feat(search): Support mutex to guarantee index update thread safety,closed,,2024-08-16T03:32:42Z,None
+2488,feat: use non-root user in Docker image,closed,,2024-08-12T09:49:04Z,2024-08-14T06:43:57Z
+2485,chore: use `StringJoin` in `EnumField::Set`,closed,,2024-08-10T03:02:11Z,2024-08-10T07:07:30Z
+2484,feat(search): allow to omit `ON HASH|JSON` in FT.CREATE,closed,,2024-08-10T02:49:47Z,2024-08-10T09:53:45Z
+2483,feat(conn): add arguments for unknown command message,closed,,2024-08-10T01:34:04Z,2024-08-10T08:19:22Z
+2482,fix: monitor dumps 0xffffff prefix for signed char,closed,,2024-08-10T01:08:10Z,2024-08-10T02:34:33Z
+2480,chore(dockerfile): add binutils for addr2line in dockerfile,closed,,2024-08-09T15:00:34Z,2024-08-10T00:21:31Z
+2479,feat(command): add category enum for every command,closed,,2024-08-09T11:51:33Z,2024-08-09T13:20:36Z
+2477,feat(search): add support of HNSW vector fields for FT.CREATE,closed,,2024-08-08T05:10:56Z,2024-08-08T22:44:38Z
+2476,chore(storage): Remove speedb due to lack of active,closed,,2024-08-07T13:41:28Z,2024-08-07T16:10:51Z
+2472,feat(command): Implement the new command POLLUPDATES for polling updates by sequence,closed,,2024-08-06T15:07:19Z,2024-08-09T01:56:20Z
+2466,feat(search): Hnsw Vector Search Optimizaton Pass,closed,,2024-08-04T21:06:01Z,2024-08-07T13:41:11Z
+2465,chore: improve the style and document for SlotMigration,closed,,2024-08-04T07:36:57Z,2024-08-05T08:34:32Z
+2463,chore(hyperloglog): add go test cases and minor optimizations/bugfixes,closed,,2024-08-02T05:45:57Z,2024-08-04T06:00:41Z
+2461,feat: replace worker connection's mutex with `tbb::concurrent_hash_map`,open,,2024-08-01T13:57:14Z,None
+2460,chore: bump googletest to v1.15.2,closed,,2024-08-01T09:15:54Z,2024-08-06T12:32:30Z
+2457,feat(hyperloglog): Add support of PFMERGE command,closed,,2024-07-31T11:28:09Z,2024-08-01T12:58:11Z
+2456,chore: Remove USE_ALIGNED_ACCESS and enhance BYTE_ORDER handling,open,,2024-07-31T10:30:21Z,None
+2455,build(cmake): update compiler version requirement,closed,,2024-07-31T09:33:48Z,2024-07-31T14:44:30Z
+2452,[WIP]feat(config): Add Support for maxmemory Configuration,closed,,2024-07-28T14:59:28Z,None
+2451,feat(ci): integrate Rocky Linux environment into the CI workflow,closed,,2024-07-28T11:27:59Z,2024-07-31T10:39:43Z
+2450,feat(search): implement vector query for sql/redisearch parser & transformer,closed,,2024-07-28T05:03:36Z,2024-08-02T01:22:30Z
+2448,feat(config): implement integer config option with unit,closed,,2024-07-26T09:16:07Z,2024-07-28T03:19:02Z
+2447,docs: optimize the building section in README,closed,,2024-07-25T14:45:07Z,2024-07-26T06:22:40Z
+2446,feat(script): Support script flags of Eval script and Function,closed,,2024-07-25T07:08:02Z,2024-08-14T11:49:09Z
+2444,feat(config): allow to change the max length of the bulk string,closed,,2024-07-24T16:24:54Z,2024-07-25T05:46:06Z
+2443,feat(search): support query parameters in SQL and RediSearch query,closed,,2024-07-23T11:15:45Z,2024-07-24T02:24:19Z
+2441,chore: bump lz4 to v1.10.0,closed,,2024-07-22T09:26:37Z,2024-07-24T10:00:57Z
+2440,chore: bump fmtlib to v11.0.2,closed,,2024-07-22T09:21:39Z,2024-07-22T13:33:39Z
+2439,fix(search): misidentify DESC token in SQL parser,closed,,2024-07-21T05:26:22Z,2024-07-21T08:37:24Z
+2436,chore: fix complier warning in cluster and HNSW indexing,closed,,2024-07-18T10:17:07Z,2024-07-18T13:57:05Z
+2434,feat(search): Hnsw Vector Search Plan Operator & Executor,closed,,2024-07-18T04:02:54Z,2024-07-24T07:21:08Z
+2431,docs: add build debug kvrocks doc,closed,,2024-07-16T14:28:54Z,2024-07-25T11:03:55Z
+2430,chore: bump googletest to v1.15.0,closed,,2024-07-16T06:55:15Z,2024-07-16T08:24:27Z
+2429,feat(config): change redis-cursor-compatible default value to yes,closed,,2024-07-16T06:38:31Z,2024-07-16T10:48:21Z
+2428,ci: add Debian environment to CI workflow,closed,,2024-07-16T04:24:22Z,None
+2413,chore(x.py): revert gotest timeout to 1800sec,closed,,2024-07-14T11:41:02Z,2024-07-14T15:52:47Z
+2412,chore: bump cpptrace to v0.6.3,closed,,2024-07-14T09:48:49Z,2024-07-16T12:35:28Z
+2410,chore(x.py): improve style of commit message for release,closed,,2024-07-14T04:58:16Z,2024-07-14T09:50:13Z
+2409,ci: update runner os from ubuntu 20 to 22,closed,,2024-07-14T04:54:02Z,2024-07-14T08:07:33Z
+2408,chore: bump Rocksdb to v9.4.0,closed,,2024-07-13T08:29:17Z,2024-07-14T05:01:10Z
+2407,chore(test): bump dependencies of go-redis,closed,,2024-07-13T08:13:16Z,2024-07-13T13:31:51Z
+2406,chore(resp): extract RESP functions from Connection,closed,,2024-07-13T06:44:50Z,2024-07-13T16:21:36Z
+2405,perf(conn): skip index matching when index map is empty,closed,,2024-07-13T06:06:15Z,2024-07-13T08:47:02Z
+2404,fix: Add timeouts to go-redis client and ping on client creation,closed,,2024-07-11T17:09:34Z,2024-07-13T21:54:58Z
+2403,ci: [DO NOT MERGE] Macos13 test,closed,,2024-07-11T14:00:15Z,None
+2402,feat(hash): Support hash field expiration,open,,2024-07-11T12:26:09Z,None
+2400,chore(test): bump dependencies of go test,closed,,2024-07-10T12:33:50Z,2024-07-10T14:07:13Z
+2397,fix(stream): NOGROUP/BUSYGROUP error message should return without 'ERR' prefix,closed,,2024-07-09T15:58:23Z,2024-07-10T01:14:58Z
+2396,chore(.asf.yaml): add release branch 2.9 to protected branches,closed,,2024-07-09T11:56:15Z,2024-07-09T12:47:20Z
+2395,feat: add `iter->status()` check for loop iterators,closed,,2024-07-06T03:18:17Z,2024-07-07T11:50:06Z
+2394,chore: Bump fmtlib to 11.0.1,closed,,2024-07-05T17:49:28Z,2024-07-06T14:00:19Z
+2393,chore(ci): drop CentOS7 in CI since it's EOL now,closed,,2024-07-02T11:49:56Z,2024-07-02T13:34:16Z
+2392,refactor: rename variable names for clarity in LCS method,closed,,2024-07-02T00:47:16Z,2024-07-02T14:42:56Z
+2391,chore: Bump fmtlib to 11.0.0.,closed,,2024-07-01T19:38:12Z,2024-07-02T17:46:34Z
+2390,feat(json): add support of JSON.RESP command,closed,,2024-07-01T11:21:41Z,2024-07-23T07:54:02Z
+2389,feat(cluster): support migrate slot range,closed,,2024-07-01T05:28:39Z,2024-07-14T13:19:21Z
+2388,ci: use official typos github action,closed,,2024-06-30T13:28:52Z,2024-07-01T09:59:37Z
+2387,feat(stream): add support of XPENDING command,closed,,2024-06-30T12:58:35Z,2024-07-21T14:01:51Z
+2386,fix(.asf.yaml): branch protection cannot be created,closed,,2024-06-30T03:47:01Z,2024-06-30T03:56:02Z
+2385,chore: protect release branches in .asf.yaml,closed,,2024-06-30T03:29:59Z,2024-06-30T03:39:58Z
+2384,refactor(stream): change the encoding of stream consumer group,closed,,2024-06-29T14:29:24Z,2024-07-17T04:23:16Z
+2383,feat(config): add compaction-checker-cron to extend original compaction-checker-range,closed,,2024-06-29T13:06:16Z,2024-06-30T03:15:11Z
+2380,chore: Bump rocksdb to v9.3.1,closed,,2024-06-29T08:37:46Z,2024-07-06T17:28:59Z
+2377,refactor(cron): add CronPattern and implement more cron syntax,closed,,2024-06-27T15:36:10Z,2024-06-29T12:00:07Z
+2376,fix(search): make scan/filter executor follow case-sensitive attribute,closed,,2024-06-27T12:00:32Z,2024-06-27T15:12:39Z
+2375,chore: Bump oneTBB to 2021.13.0,closed,,2024-06-27T07:32:44Z,2024-07-07T04:14:41Z
+2374,fix(json):  JSON.ARRTRIM key no exists ,closed,,2024-06-21T09:03:33Z,2024-06-24T07:42:20Z
+2373,feat(stream): add support of the `XAUTOCLAIM` command,closed,,2024-06-20T15:47:33Z,2024-06-27T10:41:42Z
+2372,chore: Bump cpptrace to v0.6.2,closed,,2024-06-20T11:41:43Z,2024-06-20T14:47:57Z
+2371,feat(search): add vector type to kqir::Value,closed,,2024-06-19T10:42:32Z,2024-06-19T15:49:50Z
+2369,feat(search): add a value type system to KQIR,closed,,2024-06-18T15:11:22Z,2024-06-19T09:38:12Z
+2368,feat(search): Add HNSW encoding index & insertion/deletion algorithm,closed,,2024-06-18T02:24:18Z,2024-07-13T04:55:49Z
+2367,ci: Bump build-push-action to v6,closed,,2024-06-17T12:20:24Z,2024-06-29T15:04:40Z
+2366,feat(search): add a flag to dump DOT graphs in FT.EXPLAINSQL,closed,,2024-06-15T04:03:38Z,2024-06-15T07:16:52Z
+2363,chore: bump cpptrace to v0.6.1,closed,,2024-06-12T06:41:29Z,2024-06-12T13:46:18Z
+2362,chore(error): unify error by adding Redis error codes for Status,closed,,2024-06-11T14:44:22Z,2024-06-15T03:43:33Z
+2361,chore: bump jsoncons to v176.0,closed,,2024-06-10T19:22:59Z,2024-06-15T02:25:55Z
+2360,"feat(cron): add support for ""*/n"" interval cronjob syntax",closed,,2024-06-09T16:21:03Z,2024-06-14T05:05:16Z
+2359,feat: git hook pre-push,closed,,2024-06-09T08:03:09Z,2024-06-14T08:58:02Z
+2358,feat(stacktrace): replace backtrace and google::Symbolize with cpptrace,closed,,2024-06-09T06:51:15Z,2024-06-09T15:01:32Z
+2357,feat(search): add support of command FT.EXPLAIN/EXPLAINSQL,closed,,2024-06-07T15:04:53Z,2024-06-08T04:56:29Z
+2356,chore(test): add basic go test cases for search commands,closed,,2024-06-07T13:42:23Z,2024-06-08T10:44:25Z
+2354,chore(search): replace KQIR arch graph with a high-resolution one,closed,,2024-06-03T13:34:05Z,2024-06-03T13:35:08Z
+2353,feat(search): add support for command FT.DROPINDEX,closed,,2024-06-03T09:32:56Z,2024-06-03T15:25:10Z
+2352,fix(stream): make consumer decrement pending number when message is acknowledged.,closed,,2024-06-02T09:47:09Z,2024-06-03T05:13:54Z
+2351,feat(search): improve the response format of FT.SEARCH|SEARCHSQL,closed,,2024-06-02T08:07:23Z,2024-06-02T10:52:50Z
+2349,feat(search): implement IndexManager and command FT.CREATE|INFO|_LIST|SEARCH|SEARCHSQL,closed,,2024-06-01T11:37:04Z,2024-06-02T08:04:42Z
+2348,build: Change base Docker image from Alpine to Debian,closed,,2024-06-01T09:05:39Z,2024-06-03T02:28:00Z
+2347,fix(config): avoid rewriting the config file if it's unnecessary,closed,,2024-06-01T07:59:56Z,2024-06-01T16:20:38Z
+2346,feat(search): add index building method to IndexUpdater,closed,,2024-06-01T03:40:03Z,2024-06-01T07:32:06Z
+2345,fix(json): NumOp crash on large numbers,closed,,2024-05-31T12:02:33Z,2024-06-01T06:15:52Z
+2343,chore(storage): remove FindKeyRangeWithPrefix and fix DeleteRange,closed,,2024-05-30T14:42:00Z,2024-05-31T11:07:40Z
+2342,ci(pr-lint): force the PR title to follow the conventional commits,closed,,2024-05-30T10:56:21Z,2024-05-31T03:27:06Z
+2341,Rename last_idle_ms and last_active_ms in stream consumer metadata,closed,,2024-05-30T02:13:22Z,2024-05-30T09:15:49Z
+2340,fix(json): int64 overflow in JSON numop,closed,,2024-05-30T01:02:29Z,None
+2338,Implement the new encoding for search framework,closed,,2024-05-29T15:20:10Z,2024-05-30T15:08:09Z
+2337,(ci) Remove 'ps aux' command from kvrocks2redis test,closed,,2024-05-29T07:19:39Z,2024-05-29T09:23:58Z
+2336,Fix JSON.[STRLEN|OBJLEN] response inconsistently with Redis when the path doesn't exist,closed,,2024-05-28T11:01:34Z,2024-05-30T11:18:56Z
+2334,Improve RESP handling code in replication,closed,,2024-05-27T13:40:09Z,2024-05-29T12:17:50Z
+2333,Set ENABLE_NEW_ENCODING=FALSE in CI workflow,closed,,2024-05-26T02:31:02Z,2024-05-26T04:15:31Z
+2332,refactor: Improve consistency and isolation semantics by adding Context parameter to DB API,closed,,2024-05-25T07:56:01Z,2024-08-24T11:49:42Z
+2328,Use hset instead of hmset at test kvrocks2redis,closed,,2024-05-24T07:49:42Z,2024-05-27T05:31:18Z
+2327,chore: bump rocksdb to v9.2.1,closed,,2024-05-24T07:01:47Z,2024-06-03T11:57:48Z
+2325,Bump Snappy v1.2.1,closed,,2024-05-22T07:09:11Z,2024-05-22T09:38:01Z
+2324,ci: Update MacOS runner to macos13,closed,,2024-05-20T19:00:23Z,2024-07-14T06:24:18Z
+2323,feat: add support of the command JSON.DEBUG MEMORY,closed,,2024-05-20T10:38:00Z,2024-05-31T14:24:54Z
+2322,Fix missing temp dir while running sonar scan,closed,,2024-05-19T15:14:51Z,2024-05-20T01:45:32Z
+2321,Upload build artifact for the sonar scan,closed,,2024-05-19T07:05:52Z,2024-05-19T08:49:14Z
+2320,Remove x.py build inside sonar.yml,closed,,2024-05-18T06:46:45Z,2024-05-18T14:11:52Z
+2319,Remove x.py build inside sonar.yml,closed,,2024-05-18T06:05:13Z,None
+2318,Disable the SonarCloud workflow run,closed,,2024-05-18T01:29:28Z,None
+2317,Improve logging message for retryable background IO errors,closed,,2024-05-16T14:10:32Z,2024-05-17T11:34:27Z
+2313,CMake: Enable -Werror=unused-parameter flag to treat unused-parameter warnings as errors,closed,,2024-05-15T08:11:37Z,None
+2311,Set new data type encoding ON by default,closed,,2024-05-15T05:19:11Z,2024-05-15T09:41:29Z
+2309,ci: trying to fix sonar in interval_test,open,,2024-05-12T17:24:35Z,None
+2308,perf: Set async_io default value to yes,closed,,2024-05-11T13:36:40Z,2024-06-04T03:32:18Z
+2307,Fix minica version in CI workflow to prevent TLS test failure,closed,,2024-05-11T04:22:37Z,2024-05-11T05:24:03Z
+2304,Add README for KQIR,closed,,2024-05-09T15:16:10Z,2024-05-10T02:56:19Z
+2303,Fix compiler warnings in KQIR and RDB,closed,,2024-05-08T08:39:10Z,2024-05-11T06:25:13Z
+2300,Optimize the implementation of IntervalSet intersection,closed,,2024-05-07T14:25:38Z,2024-05-11T07:58:26Z
+2299,Remove the performance benchmark result section in README.md,closed,,2024-05-07T13:31:45Z,2024-05-07T13:48:41Z
+2298,Add UBSan build support and UBSan CI workflow,closed,,2024-05-07T05:59:45Z,2024-05-13T13:09:04Z
+2296,Refactor Column Family Handling,closed,,2024-05-06T18:14:03Z,2024-05-14T11:34:57Z
+2290,Move logo acknowledgement to NOTICE,closed,,2024-05-05T06:00:32Z,2024-05-05T06:03:13Z
+2289,Add plan executor for KQIR numeric/tag scan operator,closed,,2024-05-04T09:12:13Z,2024-05-04T12:08:00Z
+2288,Bump jsoncons to v0.175.0,closed,,2024-05-03T08:32:37Z,2024-05-03T12:24:41Z
+2286,(ci) Using ubuntu-22.04 for build docker image ,closed,,2024-05-02T17:30:20Z,2024-05-03T00:41:34Z
+2285,Fix  JSON.STRLEN not_exists return null,closed,,2024-04-30T07:05:30Z,2024-04-30T10:52:50Z
+2282,Fix plan operator child iterator in KQIR,closed,,2024-04-29T13:42:00Z,2024-04-29T16:02:26Z
+2281,Add plan executors for KQIR via iterator model,closed,,2024-04-29T11:11:32Z,2024-05-04T02:52:31Z
+2280,Fix the error logging when the importer is not in a started state,closed,,2024-04-28T15:11:46Z,2024-04-29T05:25:40Z
+2278,Add index selection pass for KQIR planning,closed,,2024-04-27T15:01:29Z,2024-04-29T03:23:08Z
+2277,Use the QUICKLIST encoding to dump the list payload to compatible with Redis >= 4,closed,,2024-04-27T10:52:34Z,2024-04-30T04:17:20Z
+2276,Trying to add the unit of time in variable name,closed,,2024-04-26T20:24:43Z,2024-05-07T06:01:25Z
+2275,Trying to set rocksdb iterator lower_bound if possible,closed,,2024-04-26T15:22:04Z,2024-04-27T04:11:40Z
+2273,Support ASKING command,closed,,2024-04-26T09:37:59Z,2024-04-28T09:03:52Z
+2272,Improve code style in cluster,closed,,2024-04-26T02:29:06Z,2024-05-01T13:56:40Z
+2271,Use jsonpath::replace instead of jsonpointer::replace,closed,,2024-04-25T11:35:06Z,2024-04-25T14:01:29Z
+2270,Bump jsoncons to v0.174.0,closed,,2024-04-22T17:25:42Z,2024-04-23T15:12:33Z
+2265,Fix unused-variable error for lower gcc version due to structure bindings,closed,,2024-04-22T10:02:23Z,2024-04-22T14:11:12Z
+2264,Minor code style enhancement for src/server,closed,,2024-04-22T05:34:29Z,2024-04-22T09:54:55Z
+2262,Add support of the SORT command,closed,,2024-04-21T15:40:30Z,2024-05-07T07:02:38Z
+2260,Unified the leading `k` in connection flags,closed,,2024-04-20T13:31:51Z,2024-04-20T14:40:13Z
+2259,Fix the replica should remove the master link when receiving the CLUSTER RESET command,closed,,2024-04-20T12:32:24Z,2024-04-20T15:38:04Z
+2258,Add a option to specify write_buffer_size for minor column families,open,,2024-04-20T10:42:02Z,None
+2257,Optimize numeric comparison via interval analysis in KQIR,closed,,2024-04-20T04:39:34Z,2024-04-21T06:17:24Z
+2256,Add a univariate interval analysis pass for KQIR,closed,,2024-04-19T12:35:19Z,2024-04-20T03:16:09Z
+2255,Support TYPE flag in the SCAN command,closed,,2024-04-19T10:27:39Z,2024-04-21T01:12:44Z
+2254,Bump rocksdb to v9.1.1,closed,,2024-04-18T19:40:11Z,None
+2252,Fix should use the minimum compatible RDB version when dumping the payload,closed,,2024-04-16T05:25:57Z,2024-04-16T07:24:24Z
+2250,Refactor TTL processing in string type,closed,,2024-04-14T12:06:35Z,2024-04-15T09:18:18Z
+2249,Fix change type of `ttl_` to `int64_t` in `commands` to avoid disturbing,closed,,2024-04-14T08:28:30Z,None
+2247,Add plan lowering pass for KQIR,closed,,2024-04-14T05:59:09Z,2024-04-14T09:59:33Z
+2246,Bump oneTBB to 2021.12.0,closed,,2024-04-13T08:23:50Z,2024-04-13T12:30:55Z
+2245,Reject invalid flags in the parsing of SCAN,closed,,2024-04-13T05:40:03Z,2024-04-13T11:21:18Z
+2244,Add support of the CLUSTER REPLICAS command,closed,,2024-04-12T16:21:09Z,2024-04-13T09:39:10Z
+2242,Remove redundant info about `block_cache_usage` field,closed,,2024-04-12T13:08:33Z,2024-04-14T13:20:57Z
+2241,(ci) Bump apache/skywalking-eyes to 0.6.0,closed,,2024-04-12T12:49:26Z,2024-04-13T08:38:45Z
+2240,Unify index info structure between indexer and sema checker,closed,,2024-04-12T11:39:51Z,2024-04-13T05:42:47Z
+2239,Rename SelectExpr to SelectClause to prevent misunderstanding,closed,,2024-04-11T14:29:10Z,2024-04-12T09:16:19Z
+2238,Add support of the command COPY,closed,,2024-04-11T13:37:47Z,2024-04-12T13:03:11Z
+2236,Fix additional parameter parsing in SCAN,closed,,2024-04-11T02:32:21Z,None
+2234,Add clone method to KQIR Node,closed,,2024-04-09T14:31:47Z,2024-04-10T13:32:15Z
+2233,Make query expression always present in SearchStmt,closed,,2024-04-09T09:59:11Z,2024-04-10T14:53:32Z
+2232,Initialize the query plan part of KQIR,closed,,2024-04-08T15:49:59Z,2024-04-09T11:38:33Z
+2230,feat: support for the sort command[draft],closed,,2024-04-08T07:22:28Z,None
+2228,Add support of the command JSON.MSET,closed,,2024-04-07T02:34:35Z,2024-04-08T12:07:07Z
+2227,Add support of  the command DUMP,closed,,2024-04-06T16:23:45Z,2024-04-08T11:02:03Z
+2226,Add a simple pass manager for KQIR,closed,,2024-04-05T23:58:03Z,2024-04-06T09:38:35Z
+2225,Add support of the command MOVEX,closed,,2024-04-05T15:11:37Z,2024-04-07T13:31:05Z
+2224,Bump Snappy to 1.2.0,closed,,2024-04-05T09:31:51Z,2024-04-05T12:39:59Z
+2223,Skip noindex fields in indexer,closed,,2024-04-05T06:44:46Z,2024-04-05T23:40:29Z
+2222,Allow to scan keys with the suffix,closed,,2024-04-04T16:22:02Z,None
+2221,Fix wrongly try to rewrite the namespace in the cluster mode,closed,,2024-04-04T11:28:24Z,2024-04-05T01:40:59Z
+2220,Disable the ANALYZE command to reconsider the design,closed,,2024-04-03T15:37:26Z,2024-04-05T06:44:32Z
+2219,Fix write flag for FUNCTION and SCRIPT commands,closed,,2024-04-03T14:55:48Z,2024-04-04T10:55:41Z
+2218,Add NotExpr pushing pass for KQIR,closed,,2024-04-03T12:49:20Z,2024-04-03T14:37:45Z
+2217,Add cron to recalculate db size,closed,,2024-04-02T16:24:17Z,2024-04-03T10:31:26Z
+2216,Add a simple AND/OR expression simplification pass for KQIR,closed,,2024-04-02T15:02:23Z,2024-04-02T23:47:48Z
+2213,Fix GetOptions in C++17 build,closed,,2024-03-31T12:16:35Z,2024-04-01T11:32:30Z
+2211,Add IR visitor and boolean simplification pass,closed,,2024-03-31T03:13:09Z,2024-03-31T09:25:01Z
+2210,Add support of the CLUSTER RESET command,closed,,2024-03-30T15:35:31Z,2024-04-01T03:55:37Z
+2209,Fix should forbid importing the slot which belongs to itself in cluster mode,closed,,2024-03-30T13:20:37Z,2024-03-30T14:58:11Z
+2208,Add Docker Hub link to README,closed,,2024-03-30T12:22:28Z,2024-03-30T12:26:15Z
+2207,Add semantics checker for KQIR,closed,,2024-03-29T09:33:34Z,2024-03-29T14:45:15Z
+2206,Ignore case on the dbsize cmd,closed,,2024-03-28T03:09:35Z,2024-03-30T02:01:30Z
+2205,Add support for dumping DOT graphs from KQIR,closed,,2024-03-27T16:49:01Z,2024-03-29T09:22:48Z
+2204,Bump zstd to v1.5.6,closed,,2024-03-27T12:24:27Z,2024-03-28T01:39:38Z
+2202,Add support of the command XCLAIM,closed,,2024-03-26T17:04:24Z,2024-05-13T09:53:28Z
+2201,Fix wrongly append the ERR prefix in no script error,closed,,2024-03-26T13:58:38Z,2024-03-27T01:53:23Z
+2196,Fix missing migrating/importing information in the CLUSTER NODES command,closed,,2024-03-24T12:47:41Z,2024-03-25T00:47:10Z
+2194,Allow to retrieve the cluster node id via the CLUSTERX command,closed,,2024-03-23T13:58:52Z,2024-03-24T02:15:19Z
+2192,Add Redis query parser via PEGTL for search module,closed,,2024-03-23T04:57:42Z,2024-03-23T08:49:21Z
+2190,Feat: add support of XPENDING,closed,,2024-03-21T16:09:26Z,None
+2189,Revert broken ubuntu image temporary fix,closed,,2024-03-21T11:35:54Z,2024-03-21T15:09:27Z
+2186,Fix the pidfile and backup_dir will be rewritten even though they weren't modified,closed,,2024-03-20T13:19:44Z,2024-03-21T04:24:23Z
+2184,Add SQL SELECT parser via PEGTL for search module,closed,,2024-03-20T08:01:35Z,2024-03-23T04:52:44Z
+2183,Initialize the data structure of KQIR,closed,,2024-03-20T01:46:59Z,2024-03-20T06:01:45Z
+2182,Bump rocksdb to v9.0.0,closed,,2024-03-19T19:57:25Z,2024-04-09T13:37:38Z
+2178,Support value setting for nonexistent paths in JSON.SET,closed,,2024-03-18T09:51:51Z,2024-03-18T12:06:41Z
+2175,Enable CI for kvrocks2redis,closed,,2024-03-16T16:15:45Z,2024-04-21T03:11:08Z
+2174,Add snapshot option for Geting Metadata,closed,,2024-03-15T16:58:06Z,2024-03-19T07:27:00Z
+2173,Feat: add support of READONLY and READWRITE,closed,,2024-03-15T14:58:52Z,2024-03-17T13:54:37Z
+2171,Add compression level option,closed,,2024-03-14T21:28:44Z,2024-03-16T01:46:45Z
+2170,Add BIT support to BITPOS,closed,,2024-03-14T20:26:15Z,2024-03-20T14:04:47Z
+2169,Add support of the XACK command,closed,,2024-03-14T10:58:57Z,2024-03-15T00:45:46Z
+2161,Try to workaround the broken ubuntu image,closed,,2024-03-13T02:17:02Z,2024-03-13T03:19:01Z
+2160,Update the redis-py version in README of kvrocks2redis tests,closed,,2024-03-12T13:53:11Z,2024-03-12T15:28:16Z
+2159,Use the PUSH type in PubSub output if the RESP3 was enabled,closed,,2024-03-12T10:50:28Z,2024-03-13T05:10:28Z
+2155,Add macos arm64 runner to actions workflow,closed,,2024-03-11T08:48:16Z,2024-03-11T13:18:54Z
+2153,Fix XREADGROUP command didn't fetch the latest metadata after creating a consumer,closed,,2024-03-11T07:04:36Z,2024-03-11T12:18:02Z
+2152,Add arm64 macOS support for kvrocks CI,closed,,2024-03-11T06:59:38Z,None
+2150,Fix missing fields in HELLO command response,closed,,2024-03-10T15:36:06Z,2024-03-11T05:54:57Z
+2148,Fix build warnings: local variable 's' will be copied despite being returned by name,closed,,2024-03-09T23:21:28Z,2024-03-10T14:30:41Z
+2147,Get SonarCube tracking net code from latest release (unstable branch),closed,,2024-03-09T21:59:56Z,None
+2146,Trying to use mget in SADD,closed,,2024-03-09T17:37:59Z,None
+2145,Extract common/port.h and optimize dbstats,closed,,2024-03-09T17:02:05Z,2024-03-10T06:43:25Z
+2142,feat(hyperloglog): add support of the Hyperloglog data structure,closed,,2024-03-07T09:27:00Z,2024-07-31T05:34:23Z
+2141,Add support of the command XGROUP DELCONSUMER,closed,,2024-03-07T06:03:02Z,2024-03-09T13:41:22Z
+2139,Fix duplicate flag for build rocksdb,closed,,2024-03-06T13:58:53Z,2024-03-07T01:55:34Z
+2138,Uniform image update/upgrade in Dockerfile,closed,,2024-03-06T12:48:20Z,2024-03-06T13:59:40Z
+2134,Add unit test for index updater,closed,,2024-03-02T12:54:45Z,2024-03-03T02:32:05Z
+2132,Fix incorrect ZRANGE command response format in RESP3 mode,closed,,2024-03-02T09:04:44Z,2024-03-02T10:24:55Z
+2131,Fix glog may buffer the stdout's output,closed,,2024-03-02T06:29:59Z,2024-03-02T09:09:25Z
+2130,Add support of lua function 'redis.setresp()',closed,,2024-02-29T15:06:51Z,2024-03-01T12:06:15Z
+2124,Fix incorrent bytes to calculate length of ziplist/listpack 32bit string,closed,,2024-02-28T14:04:09Z,2024-02-28T16:37:05Z
+2123,Make COMMAND command consistent with redis when the renamed command exists,closed,,2024-02-28T10:34:14Z,2024-02-28T14:05:41Z
+2122,Bump rocksdb to 8.11.3,closed,,2024-02-28T08:40:46Z,2024-02-29T00:27:02Z
+2120,Add the support of the XREADGROUP command,closed,,2024-02-27T12:48:25Z,2024-03-01T08:19:15Z
+2119,Add support of RESP3 in Lua,closed,,2024-02-26T16:09:58Z,2024-02-29T11:00:38Z
+2117,Fallback to use the redis command migration type if the target don't support the ApplyBatch command,closed,,2024-02-26T13:12:00Z,2024-02-28T15:29:43Z
+2116,Add the support of the LCS command,closed,,2024-02-25T15:15:15Z,2024-03-03T12:45:53Z
+2115,Implement index updating for numeric and tag field,closed,,2024-02-23T15:33:11Z,2024-02-26T23:52:01Z
+2113,"Extract a rand sample helper and support negative sample count in ""Set""",closed,,2024-02-23T05:54:31Z,2024-02-26T12:53:12Z
+2112,Check if the type is an entry  while iterating the stream subkeys,closed,,2024-02-23T01:21:33Z,2024-02-23T03:58:51Z
+2111,Initialize the unified index updater for HASH and JSON data type,closed,,2024-02-21T14:47:49Z,2024-02-24T00:46:23Z
+2110,Bump rocksdb to 8.10.2,closed,,2024-02-21T09:29:04Z,2024-02-21T11:19:28Z
+2108,Bit: Minor refactor BitOp,closed,,2024-02-21T05:42:46Z,2024-02-21T15:48:39Z
+2107,Small corrections of spelling in a config file,closed,,2024-02-19T19:28:57Z,2024-02-21T02:11:22Z
+2106,chore: bump glog to 0.7.1,closed,,2024-02-18T13:21:00Z,2024-11-19T02:19:46Z
+2105,Bitmap: Extract common bit operations like GetBit and SetBitTo,closed,,2024-02-18T11:26:10Z,2024-02-19T09:20:30Z
+2104,Fix flaky test cases in keyspace_test.go,closed,,2024-02-17T10:13:03Z,2024-02-17T13:39:31Z
+2103,Set the redis-cursor-compatible field to yes in the initial configuration,closed,,2024-02-15T07:35:21Z,2024-02-17T10:37:02Z
+2102,Add support of RESP3 verbatim string,closed,,2024-02-14T10:55:22Z,2024-02-18T07:45:24Z
+2100,Use require.JSONEq instead of require.Equal for the JSON string,closed,,2024-02-13T03:07:43Z,2024-02-13T11:12:13Z
+2099,Add usage of std::move where compiler suggested,closed,,2024-02-12T20:25:56Z,2024-02-13T05:16:43Z
+2098,ci: Update actions to avoid Node.js deprecated warning,closed,,2024-02-12T16:31:20Z,2024-02-15T11:36:04Z
+2096,Improve code style for auth in ExecuteCommands,closed,,2024-02-10T12:26:29Z,2024-02-10T13:26:02Z
+2095,Unify the workflow of command executing in connection and scripting,closed,,2024-02-10T06:20:08Z,2024-02-10T09:46:54Z
+2094,Add a noindex flag to search metadata,closed,,2024-02-09T13:51:04Z,2024-02-10T01:45:55Z
+2093,Bump typo checker in CI to 1.18.1,closed,,2024-02-07T19:08:18Z,2024-02-09T12:30:44Z
+2092,Bump span-lite to 0.11.0,closed,,2024-02-07T18:56:30Z,2024-02-08T02:56:38Z
+2090,chore: add x on Social Media,closed,,2024-02-06T09:30:32Z,2024-02-06T11:17:54Z
+2089,Bump jsoncons to 0.173.4,closed,,2024-02-05T08:48:47Z,2024-02-06T02:25:46Z
+2088,Add support of RESP3 attribute type,closed,,2024-02-04T13:18:35Z,2024-02-05T03:36:38Z
+2087,Support BIT and BYTE options in the BITCOUNT command,closed,,2024-02-01T13:44:26Z,2024-02-07T10:25:52Z
+2086,Add search metadata encoding for numeric fields,closed,,2024-02-01T12:19:07Z,2024-02-01T15:16:06Z
+2085,Make BITPOS in Bitmap handling `stop_given`,closed,,2024-02-01T05:54:34Z,2024-02-02T10:24:48Z
+2083,Bump zlib to 1.3.1,closed,,2024-01-31T19:46:49Z,None
+2082,Bump jsoncons to 0.173.2,closed,,2024-01-31T19:37:47Z,2024-02-01T02:54:35Z
+2081,Bump fmtlib to 10.2.1,closed,,2024-01-31T19:30:18Z,2024-02-01T05:21:31Z
+2080,Bump speedb to 2.8.0,closed,,2024-01-31T19:24:09Z,2024-02-01T03:48:31Z
+2075,Making RedisBitmapTest also tests Bitmap String,closed,,2024-01-30T11:10:06Z,2024-01-31T07:11:24Z
+2074,[WIP] Refactor: Simplify implementation of GetBit/SetBit,closed,,2024-01-30T06:38:17Z,None
+2069,Bugfix: BITCOUNT/BITPOS negative handling fixing,closed,,2024-01-28T14:43:53Z,2024-01-29T12:31:38Z
+2067,Allow to migrate cluster slot by raw write batch,closed,,2024-01-28T11:19:41Z,2024-01-31T05:18:33Z
+2066,Initialize metadata and tag indexing encoding for RediSearch,closed,,2024-01-28T09:49:20Z,2024-01-30T12:04:34Z
+2063,Fix SonarCloud analysis run on PR branch has wrong coverage on New Code,closed,,2024-01-28T02:33:13Z,None
+2062,Remove raw pointers and useless copy in TestBase,closed,,2024-01-27T14:27:11Z,2024-01-28T02:03:16Z
+2060,Fix coverage upload failure in Sonar CI,closed,,2024-01-27T02:27:41Z,2024-01-27T03:40:06Z
+2055,Use CommandKeyRangeVecGen to support retrieving store keys,closed,,2024-01-26T07:22:15Z,2024-01-27T02:11:29Z
+2054,Add additional environment prerequisites,closed,,2024-01-25T15:07:09Z,2024-01-25T15:50:42Z
+2053,Add the support of RESP3 double type,closed,,2024-01-25T14:49:56Z,2024-01-26T05:09:54Z
+2052,Fix Sonar CI fail in unstable branch,closed,,2024-01-25T13:45:59Z,2024-01-25T14:39:49Z
+2051,"Fix crash in zset store getkeys, fix zdiff/bzmpop range, add tests",closed,,2024-01-25T08:39:10Z,2024-01-25T11:11:04Z
+2049,Dump github event information in CI,closed,,2024-01-24T13:00:16Z,2024-01-25T03:56:40Z
+2048,Fix sonar action can't get PR number,closed,,2024-01-24T11:43:24Z,2024-01-25T12:31:56Z
+2047,Ignore max-db-size limit when deleting data or writing aux informations,closed,,2024-01-24T02:35:37Z,2024-01-30T13:07:52Z
+2046,fix(debug command): update err msg `int` -> `integer`,closed,,2024-01-23T16:02:13Z,2024-01-24T02:02:39Z
+2044,Refine ctor definition of CommandParser,closed,,2024-01-22T15:18:35Z,2024-01-26T03:17:36Z
+2043,Use condition argument of cv.wait instead of loop,closed,,2024-01-22T15:02:59Z,2024-01-23T09:01:47Z
+2042,Remove the second parameter of MultiBulkString,closed,,2024-01-22T14:55:34Z,2024-01-23T01:59:53Z
+2041,Enhance error handling and types in BITFIELD,closed,,2024-01-22T14:47:37Z,2024-01-24T14:10:40Z
+2040,Implement the unify WAL iterator,closed,,2024-01-22T13:39:02Z,2024-01-26T02:04:57Z
+2039,Minor: avoid the implicit conversion from PinnableSlice to Slice,closed,,2024-01-22T11:30:31Z,2024-01-22T14:16:31Z
+2038,Only runs sonar action on the main repo,closed,,2024-01-22T03:08:16Z,2024-01-22T07:07:17Z
+2037,Fix shell command in SonarCloud CI,closed,,2024-01-21T12:08:34Z,2024-01-21T14:13:36Z
+2034,Add RESP3 big number,closed,,2024-01-21T10:44:47Z,2024-01-21T16:12:50Z
+2033,Fix build file missing in SonarCloud CI,closed,,2024-01-21T08:56:18Z,2024-01-21T10:34:27Z
+2032,Make the result of SRANDMEMBER random,closed,,2024-01-20T07:06:53Z,2024-01-23T06:48:07Z
+2031,Add support of using hyper clock cache as the block cache,closed,,2024-01-20T02:39:26Z,2024-01-24T09:02:23Z
+2030,Run SonarQube scan in Github Actions to support coverage analysis,closed,,2024-01-19T13:38:43Z,2024-01-21T07:45:33Z
+2029,Clarification in kvrocks.conf that disable_wal will break replication,closed,,2024-01-19T02:39:56Z,2024-01-19T03:44:06Z
+2028,Add the support of RESP3 map type,closed,,2024-01-18T15:58:27Z,2024-01-21T08:43:10Z
+2027,Minor: improve the style of zdiff,closed,,2024-01-17T15:04:53Z,2024-01-18T02:00:14Z
+2026,Add support of the command RENAME&RENAMENX ,closed,,2024-01-17T12:27:27Z,2024-01-23T08:09:08Z
+2025,Minor refactor the implementation of the command ZRANDMEMBER,closed,,2024-01-16T15:56:32Z,2024-01-17T02:00:14Z
+2024,Implement RESP3 set type for the set data structure,closed,,2024-01-16T12:12:07Z,2024-01-17T05:38:16Z
+2021,Add support of the command ZDIFF and ZDIFFSTORE,closed,,2024-01-15T03:48:44Z,2024-01-17T10:17:02Z
+2020,persist cluster-enabled status in RocksDB,open,,2024-01-15T00:32:24Z,None
+2019,ZDIFF and ZDIFFSTORE,closed,,2024-01-14T16:53:24Z,None
+2018,Fix RESET arity and command flags,closed,,2024-01-14T16:08:50Z,2024-01-15T01:48:32Z
+2017,Implement the RESP3 null for the nil string and array,closed,,2024-01-14T13:49:43Z,2024-01-15T10:40:23Z
+2016,Add support of new command: ZRANDMEMBER ,closed,,2024-01-14T08:38:34Z,2024-01-15T07:57:10Z
+2015,Add type check before metadata decode ,closed,,2024-01-14T04:53:46Z,2024-01-17T13:54:21Z
+2013,Replace manual RedisType check by calling IsSingleKVType,closed,,2024-01-14T03:19:21Z,2024-01-14T05:53:01Z
+2011,Add support of the command ZDIFF and ZDIFFSTORE,closed,,2024-01-13T16:04:24Z,None
+2010,Add the ApplyBatch command for data migration scenario,closed,,2024-01-13T14:12:22Z,2024-01-14T07:59:07Z
+2005,Bump rocksdb to 8.10.0,closed,,2024-01-11T19:31:21Z,2024-01-13T07:28:12Z
+2004,Implement an unify key-value iterator for Kvrocks,closed,,2024-01-11T12:35:00Z,2024-01-12T10:16:52Z
+2003,Add support of new command: ssubscribe and sunsubscribe,closed,,2024-01-11T11:19:10Z,2024-01-12T05:27:31Z
+2000,Add support of the command ZDIFF and ZDIFFSTORE,closed,,2024-01-10T08:30:34Z,None
+1999,Add support of new command: RESET,closed,,2024-01-10T03:40:32Z,2024-01-14T03:26:19Z
+1992,Add the support of ZINTER and ZINTERCARD,closed,,2024-01-07T14:42:50Z,2024-01-09T13:40:49Z
+1991, Implement the RESP3 boolean type,closed,,2024-01-06T14:15:22Z,2024-01-08T02:10:10Z
+1990,Add support of BITFIELD_RO,closed,,2024-01-06T07:38:17Z,2024-01-06T11:06:50Z
+1987,Allow to get the latest sequence number when creating the backup,closed,,2024-01-04T13:00:22Z,2024-01-05T02:49:11Z
+1979,Fix parse BITCOUNT,closed,,2024-01-03T03:34:08Z,2024-01-03T04:31:13Z
+1975,Update copyright date in NOTICE,closed,,2024-01-02T03:28:28Z,2024-01-02T03:32:05Z
+1973,The storage engine type awareness in Kvrocks,closed,,2023-12-31T03:31:42Z,2024-01-03T02:52:29Z
+1971,Record and export the keyspace hit/miss count to INFO command,closed,,2023-12-26T14:07:03Z,2023-12-27T01:45:47Z
+1970,Fix `GET` return no error when key type is not string,closed,,2023-12-25T11:42:15Z,None
+1968,Avoid to fetch old value in SET command if NX/XX/GET/KEEPTTL is not set,closed,,2023-12-24T14:55:33Z,2023-12-25T01:53:35Z
+1967,Optimize ParseMetadata by introducing RedisTypes,closed,,2023-12-24T13:31:30Z,2023-12-24T14:23:39Z
+1965,Add support of EXPIRETIME and PEXPIRETIME,closed,,2023-12-24T09:26:18Z,2023-12-26T13:07:05Z
+1964,Unify the way of parsing metadata,closed,,2023-12-23T15:22:39Z,2023-12-24T04:59:01Z
+1963,Refactor kvrocks2redis via rocksdb secondary instance,closed,,2023-12-22T14:27:16Z,2024-01-03T01:55:23Z
+1962,Use human readable string instead of the integer when printing flush/compaction reason,closed,,2023-12-20T14:06:48Z,2024-02-01T12:23:56Z
+1961,Add version information for each command in doc,closed,,2023-12-20T12:39:41Z,None
+1960,Add command support version(#1929),closed,,2023-12-19T15:07:48Z,None
+1957,Add no-multi no-script flags to SHUTDOWN command,closed,,2023-12-19T13:33:30Z,2023-12-19T14:39:03Z
+1956,Add INFO comment when DB not scaned,closed,,2023-12-19T11:07:35Z,2024-01-03T00:36:44Z
+1943,Add the support of ANALYZE command to inspect the performance of RocksDB,closed,,2023-12-18T15:01:02Z,2024-01-02T15:51:02Z
+1940,Add filesystem related lib,open,,2023-12-18T07:32:10Z,None
+1938,Add the rocksdb's block cache hit/miss count to the INFO command,closed,,2023-12-17T14:43:37Z,2023-12-18T02:02:21Z
+1935,Add SET command KEEPTLE and GET options supported,closed,,2023-12-16T11:20:47Z,2023-12-18T10:13:48Z
+1933,Bump rocksdb to v8.9.1,closed,,2023-12-12T08:18:49Z,2023-12-13T11:15:49Z
+1930,Add the support of JSON.MGET command,closed,,2023-12-09T13:51:13Z,2023-12-14T12:47:27Z
+1928,Fix redundant ERR prefix in cluster redirect error message,closed,,2023-12-08T10:51:41Z,2023-12-08T13:28:21Z
+1927,Add redis_mode/kvrocks_mode fields in INFO SERVER,closed,,2023-12-08T08:33:47Z,2023-12-08T09:41:29Z
+1920,Minor refactor the return value of JSON methods,closed,,2023-12-05T14:27:07Z,2023-12-06T01:43:45Z
+1919,Improve the command JSON.MERGE via jsonpath::remove,closed,,2023-12-05T02:08:47Z,2023-12-05T10:30:29Z
+1918,Fix JSON.DEL should return 0 if the key was not found,closed,,2023-12-04T13:26:00Z,2023-12-04T14:55:12Z
+1917,Add the support of JSON.FORGET command,closed,,2023-12-03T13:40:33Z,2023-12-03T14:37:58Z
+1916,Fix name of rocksdb's write delay and stop stats in INFO command,closed,,2023-12-03T11:58:16Z,2023-12-03T13:05:00Z
+1915,chore: clear unused vector,closed,,2023-12-03T10:50:01Z,2023-12-03T12:01:53Z
+1911,Bump jsoncons to 0.172.0,closed,,2023-11-27T08:18:17Z,2023-11-27T12:43:27Z
+1909,Fix server crash when receiving the empty inline command,closed,,2023-11-24T10:35:17Z,2023-11-24T14:07:43Z
+1906,Add the bind argument to the docker quickstart section,closed,,2023-11-23T12:32:39Z,2023-11-23T14:54:21Z
+1904,Bump rocksdb to 8.8.1,closed,,2023-11-23T09:09:42Z,2023-11-24T05:11:46Z
+1903,Enable rocksdb read option `avoid_unnecessary_blocking_io` to avoid unexpected long latency,closed,,2023-11-22T08:54:49Z,2023-11-22T15:55:00Z
+1902,Bump rocksdb to 8.7.3,closed,,2023-11-21T09:18:42Z,2023-11-22T03:52:40Z
+1901,Support for the BITFIELD command,closed,,2023-11-20T16:46:35Z,2023-12-03T15:27:28Z
+1900,Change the default value of cmake option DEPS_FETCH_PROXY,closed,,2023-11-20T10:50:32Z,2023-11-20T13:12:06Z
+1895,Bump oneTBB to 2011.11.0,closed,,2023-11-17T19:06:03Z,2023-11-18T03:14:19Z
+1892,fix go test `JSON.TOGGLE basics` parameters order,closed,,2023-11-12T08:43:15Z,2023-11-12T11:35:37Z
+1891,Fix potentially overflow msg_namelen value in SupervisedSystemd,closed,,2023-11-11T14:52:40Z,2023-11-12T02:28:38Z
+1890,support JSON.NUMINCRBY and JSON.NUMMULTBY command,closed,,2023-11-10T14:09:42Z,2023-12-01T12:47:44Z
+1888,support pinnable slice get,closed,,2023-11-09T22:27:15Z,2023-11-26T04:04:18Z
+1887,Fix TBB compile failure due to `-Werror` and `#warning`,closed,,2023-11-09T15:08:22Z,2023-11-10T04:59:02Z
+1886,fix integer paring error in listpack and ziplist when load RDB,closed,,2023-11-08T14:38:41Z,None
+1882,Don't rewrite unchanged items into the configuration file,closed,,2023-11-06T15:51:31Z,2023-11-07T13:46:17Z
+1881,Support for the JSON.ARRTRIM command,closed,,2023-11-06T12:53:50Z,2023-11-12T13:50:21Z
+1880,Fix unescaped characters in configuration rewriting,closed,,2023-11-06T09:37:09Z,2023-11-06T11:15:51Z
+1878,Add column family parameter to Compact methon,closed,,2023-11-05T15:24:16Z,2023-11-06T09:58:07Z
+1877,Add more sanity checks for docker image,closed,,2023-11-05T14:58:28Z,2023-11-09T04:54:40Z
+1875, support for the JSON.TOGGLE command,closed,,2023-11-03T14:38:59Z,2023-11-09T06:46:04Z
+1874,Support for the JSON.ARRPOP command,closed,,2023-11-03T14:19:49Z,2023-11-05T09:43:00Z
+1872,Support for the JSON.OBJKEYS command,closed,,2023-11-03T13:11:02Z,2023-11-07T05:01:10Z
+1871,Add CBOR as a storage format for the JSON data type,closed,,2023-11-03T11:35:52Z,2023-11-03T15:49:20Z
+1870,Add support of the XINFO GROUPS and CONSUMERS,closed,,2023-11-03T08:37:52Z,2023-11-12T08:47:59Z
+1869,support for the JSON.TOGGLE command,closed,,2023-11-03T04:39:07Z,None
+1868,only run publish-nightly action on the main repo,closed,,2023-11-02T13:56:19Z,2023-11-03T00:08:39Z
+1867,Support for the JSON.ARRINSERT command ,closed,,2023-11-02T13:41:07Z,2023-11-17T14:23:10Z
+1865,support JSON.ARRINDEX command,closed,,2023-11-01T16:18:26Z,2023-11-10T03:39:32Z
+1863,Graceful shutdown the workers when reducing worker threads,closed,,2023-10-31T13:31:24Z,2023-11-17T01:54:04Z
+1862,chore: polish wording and code block style in README,closed,,2023-10-30T11:39:58Z,2023-10-30T11:46:39Z
+1861,"Unify server's shorten form, change svr to srv",closed,,2023-10-30T01:53:22Z,2023-10-30T04:25:13Z
+1860,Support for the JSON.OBJLEN command,closed,,2023-10-29T16:28:49Z,2023-12-05T01:55:41Z
+1859,Support for the JSON.DEL command,closed,,2023-10-29T04:50:11Z,2023-11-30T15:06:49Z
+1858,Refactor command utilities to class methods,closed,,2023-10-28T05:12:09Z,2023-10-28T12:33:45Z
+1857,Bump speedb to 2.7.0,closed,,2023-10-25T16:14:50Z,2023-10-26T09:53:37Z
+1856,Support for the JSON.ARRLEN command,closed,,2023-10-25T09:51:10Z,2023-10-26T14:31:46Z
+1855,Allow to change the worker thread number in-flight,closed,,2023-10-24T13:13:52Z,2023-10-30T01:13:55Z
+1854,Make a compile error while facing unused variables,closed,,2023-10-24T11:58:13Z,2023-10-24T13:19:20Z
+1853,Fix status mis-return in JSON.CLEAR and polish code style,closed,,2023-10-24T11:39:12Z,2023-10-25T08:54:36Z
+1852,Add support for the JSON.MERGE command ,closed,,2023-10-24T00:50:59Z,2023-11-10T15:28:57Z
+1850,Support for the JSON.CLEAR command,closed,,2023-10-22T17:07:44Z,2023-10-24T11:14:19Z
+1849,JSON: Fix arity of JSON.SET,closed,,2023-10-21T14:50:10Z,2023-10-22T01:02:06Z
+1848,Add type name of JSON in redis_metadata.h,closed,,2023-10-21T11:52:43Z,2023-10-21T15:38:52Z
+1847,Add the support of JSON.TYPE command,closed,,2023-10-21T10:40:16Z,2023-10-21T14:01:29Z
+1846,Fix code style of Json::ArrAppend,closed,,2023-10-21T08:04:07Z,2023-10-21T17:11:27Z
+1845,Fix output when key is not found in JSON.GET,closed,,2023-10-21T01:16:20Z,2023-10-21T02:32:11Z
+1843,Add method to read JSON from storage for simplifying code,closed,,2023-10-20T15:03:28Z,2023-10-21T06:49:59Z
+1842,Change workers in-flight,closed,,2023-10-20T12:29:25Z,None
+1841,Add support for JSON.STRAPPEND and JSON.STRLEN command,closed,,2023-10-20T03:34:31Z,2023-12-05T12:23:02Z
+1840,Support format options for `JSON.GET`,closed,,2023-10-19T15:18:35Z,2023-10-21T00:37:15Z
+1839,RDB: style enhancement for rdb load,closed,,2023-10-19T14:31:13Z,2023-10-20T09:59:56Z
+1837,Add the support of the json.arrappend command,closed,,2023-10-19T04:53:48Z,2023-10-20T12:57:52Z
+1834,Add subcommand and permission check to RDB command,closed,,2023-10-18T12:04:47Z,2023-10-18T14:00:51Z
+1833,Add support of the XGROUP SETID command,closed,,2023-10-18T10:21:42Z,2023-10-19T13:24:59Z
+1831,Bump jsoncons to 0.171.1,closed,,2023-10-18T07:36:41Z,2023-10-18T09:46:09Z
+1830,RDB: fix Endian handling in rdb_intset,closed,,2023-10-16T06:54:16Z,2023-10-16T09:35:15Z
+1829,JSON: support basic legacy path,closed,,2023-10-16T05:20:20Z,None
+1828,Add test cases for JSON.SET and JSON.GET,closed,,2023-10-15T15:11:16Z,2023-10-16T04:48:57Z
+1827,Catch up for json-set with multiple values,closed,,2023-10-15T14:54:52Z,2023-10-16T02:46:30Z
+1804,Fix server cannot start without the configuration file,closed,,2023-10-15T09:38:55Z,2023-10-15T15:11:53Z
+1803,Add support of new command JSON.SET and JSON.GET,closed,,2023-10-15T09:22:24Z,2023-10-15T13:08:18Z
+1799,Add support of the XGROUP CREATECONSUMER command,closed,,2023-10-11T08:56:39Z,2023-10-12T03:44:35Z
+1798,Add the support of the load RDB command,closed,,2023-10-09T05:37:46Z,2023-10-17T14:28:39Z
+1797,Add the support of loading data from RDB file,closed,,2023-10-09T04:21:05Z,None
+1796,Add LISTLIB subcommand as an extension to FUNCTION,closed,,2023-10-09T02:31:28Z,2023-10-09T08:28:45Z
+1795,[WIP] Implement Xreadgroup,closed,,2023-10-07T15:16:53Z,None
+1794,Bump rocksdb to version 8.6.7,closed,,2023-10-06T08:07:57Z,2023-10-07T00:53:30Z
+1792,Add speedb as an alternative to rocksdb,closed,,2023-10-01T10:05:33Z,2023-10-13T03:07:41Z
+1791,Add support of command FCALL_RO,closed,,2023-10-01T06:37:18Z,2023-10-01T11:47:41Z
+1790,Fix data race in instant metrics,closed,,2023-10-01T01:13:52Z,2023-10-01T10:08:45Z
+1788,Implement FUNCTION commands like redis,closed,,2023-09-29T16:02:14Z,2023-10-01T06:30:55Z
+1787,Split functions in main.cc to multiple headers,closed,,2023-09-28T06:29:29Z,2023-09-28T08:03:58Z
+1786,Bump rocksdb to 8.5.4,closed,,2023-09-27T10:21:04Z,2023-09-27T11:58:04Z
+1785,Update controller URL in README.md,closed,,2023-09-27T05:33:41Z,2023-09-27T05:43:59Z
+1784,Fix should listen on 0.0.0.0 in docker image,closed,,2023-09-26T10:45:21Z,2023-09-26T12:48:25Z
+1782,Restore the GCC TSAN test in CI,closed,,2023-09-26T06:27:49Z,2023-09-26T08:01:57Z
+1780,Skip TLS replica test until fixed,closed,,2023-09-25T14:51:14Z,2023-09-26T01:23:28Z
+1779,Fix no binary directory error of xxhash in CMake,closed,,2023-09-25T11:27:25Z,2023-09-26T02:50:26Z
+1776,Add the support of the namespace replication,closed,,2023-09-24T13:14:35Z,2023-10-09T06:15:52Z
+1774,Add the support of the BLMPOP command,closed,,2023-09-22T07:22:18Z,2023-09-22T12:46:02Z
+1773,"Allow create-cluster to be run from other dirs, not just its own dir",closed,,2023-09-21T06:35:27Z,2023-09-21T08:05:39Z
+1771,Fix missing return value receiver when using Go's slices.Compact,closed,,2023-09-20T13:42:35Z,2023-09-20T14:53:27Z
+1769,Fix TLS connection for sendAuth in replication,closed,,2023-09-20T05:44:03Z,2023-09-20T11:23:35Z
+1768,Add the support of the BF.INSERT command,closed,,2023-09-19T09:38:59Z,2023-09-22T07:58:21Z
+1766,GEO FROMMEMBER returns error when member does not exist,closed,,2023-09-18T07:30:35Z,2023-09-18T14:37:30Z
+1764,Make BlockSplitBloomFilter a view,closed,,2023-09-18T02:02:12Z,2023-09-18T06:51:27Z
+1763,Fix wrong replica's port number(=0) if the listening port is not set,closed,,2023-09-18T00:54:14Z,2023-09-21T06:51:51Z
+1762,Use SSL_sendfile in SockSendFile while available,closed,,2023-09-17T05:50:03Z,2023-09-17T13:39:53Z
+1761,Wait more time(5s->10s) for the replication in Go tests,closed,,2023-09-16T11:42:58Z,None
+1760,Fix pointer-bool-conversion warning in `GeoHashHelper::BoundingBox`,closed,,2023-09-16T09:36:52Z,2023-09-17T02:35:19Z
+1758,Add the support of the BF.MADD command,closed,,2023-09-15T04:49:32Z,2023-09-19T06:42:09Z
+1757,Add BlockingCommander to refactor all blocking commands,closed,,2023-09-13T02:24:10Z,2023-09-13T05:37:27Z
+1756,Add the support of the BF.MEXISTS and BF.CARD Command,closed,,2023-09-12T13:52:41Z,2023-09-14T02:48:37Z
+1755,Fix GEO store commands not removing dst key when result set is empty,closed,,2023-09-12T04:59:51Z,2023-09-12T11:57:59Z
+1752,Add nodiscard to methods of redis::Database,closed,,2023-09-11T04:36:50Z,2023-09-11T08:13:23Z
+1751,Add nodiscard to Metadata::Decode,closed,,2023-09-09T15:56:05Z,2023-09-10T07:58:15Z
+1750,Add nodiscard attribute to methods of Storage,closed,,2023-09-09T15:16:46Z,2023-09-09T23:41:03Z
+1749,Fix GEORADIUSBYMEMBER STORE should return the elements number,closed,,2023-09-09T09:54:07Z,2023-09-11T05:29:34Z
+1748,Support logging subcompaction job info in event listener,closed,,2023-09-08T08:05:12Z,None
+1747,Fix `TYPE` command with bloom filter,closed,,2023-09-08T04:16:09Z,2023-09-09T09:09:11Z
+1746,Allow runing RANDOMKEY in lua script,closed,,2023-09-07T07:26:18Z,2023-09-07T14:41:18Z
+1745,Remove redundant string contruction from Slice,closed,,2023-09-07T03:43:25Z,2023-09-07T07:20:29Z
+1744,Add missing const specifiers to methods,closed,,2023-09-06T15:26:07Z,2023-09-07T03:45:29Z
+1743,Fix `GETEX` not working correctly on `Redis::Bitmap`,closed,,2023-09-06T11:00:20Z,2023-09-07T08:30:28Z
+1741,Bump luaJIT to 53882a1,closed,,2023-09-05T14:14:07Z,None
+1740,Add the client name and ipport to the slowlog output,closed,,2023-09-05T11:23:09Z,2023-09-06T16:13:00Z
+1739,Fix error messages in parsing of bit commands,closed,,2023-09-04T04:55:26Z,2023-09-05T03:15:53Z
+1738,Make output slice of Metadata::Decode available,closed,,2023-09-04T04:36:15Z,2023-09-04T23:51:41Z
+1737,Add the support of LMPOP command,closed,,2023-09-04T02:08:45Z,2023-09-06T14:44:31Z
+1729,Replace the random char seed to global rand to avoid collision,closed,,2023-09-03T05:09:36Z,2023-09-03T09:15:49Z
+1727,Fix boundary check in Bitmap::BitOp,closed,,2023-09-02T11:51:53Z,2023-09-02T17:20:37Z
+1726,Split Inter in ZSet::InterStore into a separate function,closed,,2023-09-02T09:26:13Z,2023-09-03T10:12:51Z
+1725,Bump rocksdb from v8.3.2 to v8.3.3 and change the default value of rocksdb.level_compaction_dynamic_level_bytes from no to yes,closed,,2023-09-02T08:50:34Z,2023-09-04T10:34:34Z
+1724,Fix RESTORE TTL is 0 with ASBTTL does not restore the key,closed,,2023-09-02T07:14:25Z,2023-09-02T10:14:09Z
+1723,Add MOVE command as Redis,closed,,2023-09-01T13:42:13Z,2023-09-02T05:48:34Z
+1721,Add the support of SCALING for bloom filter,closed,,2023-08-31T18:06:40Z,2023-09-12T05:57:37Z
+1718,Use `emplace` instead of `insert` for map,closed,,2023-08-31T01:02:52Z,2023-08-31T05:16:59Z
+1717,Use resp functions instead of manual concatenation,closed,,2023-08-31T01:02:18Z,2023-09-01T01:24:58Z
+1716,Replace sha512sum with shasum,closed,,2023-08-31T00:50:50Z,2023-08-31T02:05:03Z
+1713,Change the default value of max-io-mb to 0 (unlimited),closed,,2023-08-30T08:24:37Z,2023-08-30T12:00:06Z
+1712,Introduce MDel do the batch delete and use MultiLockGuard guarantee atomicity,closed,,2023-08-30T07:52:24Z,2023-09-04T07:41:47Z
+1710,Add the support of the bloom BF.INFO command,closed,,2023-08-29T21:04:06Z,2023-08-31T11:25:21Z
+1709,Fix RESTORE check for zset2 object type,closed,,2023-08-29T08:23:08Z,2023-08-29T14:38:51Z
+1708,Remove the no-script flag in the LASTSAVE command,closed,,2023-08-29T02:57:05Z,2023-08-29T04:25:21Z
+1707,Bump fmtlib to version 10.1.1,closed,,2023-08-28T19:33:05Z,2023-08-29T10:00:28Z
+1706,Update the Redis migration tool to RedisShake due to redis-migrate-tool is inactive for a long time,closed,,2023-08-28T10:40:42Z,2023-08-29T03:14:02Z
+1705,Fix RESTORE to create a key without expire under the same ms,closed,,2023-08-28T04:19:53Z,2023-08-28T06:24:59Z
+1704,Add the support of the XGROUP CREATE and DESTROY command,closed,,2023-08-25T14:43:02Z,2023-09-01T16:03:44Z
+1703,Fix wrong metadata parsing in CompactOnExpiredCollector,closed,,2023-08-25T12:07:19Z,2023-08-26T14:43:53Z
+1702,Add LASTSAVE command,closed,,2023-08-25T09:27:27Z,2023-08-28T13:06:02Z
+1700,Use MultiLockGuard to guarantee atomicity for multiple keys commands,closed,,2023-08-25T06:11:23Z,2023-08-26T05:37:40Z
+1699,Add the support of basic scalable bloom,closed,,2023-08-24T19:16:28Z,2023-08-29T15:58:53Z
+1698,Improve the cleanup order in the main function,closed,,2023-08-24T13:40:51Z,2023-08-25T02:16:12Z
+1697,Fix ZINTERSTORE command key range,closed,,2023-08-24T11:07:12Z,2023-08-24T12:12:31Z
+1695,Disable building of the unused shared library for jemalloc,closed,,2023-08-24T02:53:20Z,2023-08-24T04:48:40Z
+1694,Introduce dependency xxhash for bloomfilter,closed,,2023-08-24T00:28:46Z,2023-08-24T02:12:21Z
+1693,Add splited bloom filter for RedisBloom support ,closed,,2023-08-23T13:55:22Z,2023-08-24T07:46:14Z
+1691,Fix GEORADIUSBYMEMBER against non existing key reply,closed,,2023-08-23T06:56:34Z,2023-08-23T10:08:22Z
+1690,Remove valgrind config file,closed,,2023-08-22T00:51:57Z,2023-08-22T08:41:37Z
+1689,Move sha1 and redis rand sources to vendor directory,closed,,2023-08-22T00:38:16Z,2023-08-22T05:01:41Z
+1688,Use StatusOr in util::GetPeerAddr,closed,,2023-08-21T23:11:13Z,2023-08-22T03:22:57Z
+1687,Fix LPOS rank passing LLONG_MIN overflow issue,closed,,2023-08-21T07:32:48Z,2023-08-21T09:30:55Z
+1685,Add returned next pointer for EncodeFixed,closed,,2023-08-20T00:12:25Z,2023-08-20T02:21:46Z
+1684,Add the support of the restore command,closed,,2023-08-19T12:33:23Z,2023-08-28T03:21:51Z
+1683,Refactor encoding via templates,closed,,2023-08-18T14:08:03Z,2023-08-19T23:43:28Z
+1682,Bump zlib to version 1.3,closed,,2023-08-18T12:17:38Z,2023-08-20T04:02:21Z
+1681,Add the support of the LPOS command,closed,,2023-08-18T06:29:43Z,2023-08-19T12:42:38Z
+1680,Fix flaky test failure in TestSlotMigrateSync,closed,,2023-08-16T16:41:09Z,2023-08-18T15:03:25Z
+1677,Fix GEOSEARCHSTORE not overwrite the dst key,closed,,2023-08-15T09:28:10Z,2023-08-16T02:15:10Z
+1676,Bind to localhost by default for security,closed,,2023-08-15T05:52:34Z,2023-08-15T08:48:45Z
+1675,Define variables more close to its use place in types,closed,,2023-08-15T05:51:47Z,2023-08-15T07:32:44Z
+1674,Fix migrator and importer thread didn't start if `persist-cluster-nodes-enabled` was disabled,closed,,2023-08-14T11:36:56Z,2023-08-14T14:37:42Z
+1673,Rename cluster-enable in kvrocks2redis to cluster-enabled,closed,,2023-08-14T04:12:21Z,2023-08-14T06:09:39Z
+1672,Bump fmtlib to version 10.1.0,closed,,2023-08-12T17:35:24Z,2023-08-13T02:05:51Z
+1671,Return string instead of output pointer in metadata,closed,,2023-08-12T08:49:13Z,2023-08-12T23:28:42Z
+1669,Fix data dace when closing the server close in Go tests,closed,,2023-08-11T15:26:17Z,2023-08-11T16:45:41Z
+1668,Tentatively comment out GCC TSAN in CI to avoid blocking PRs,closed,,2023-08-11T04:04:59Z,2023-08-11T05:58:25Z
+1667,Try to recover automatically from the background error about sst corrupt,closed,,2023-08-11T03:26:45Z,2023-08-15T06:09:34Z
+1666,WIP: Fix CMake compiler check error in GCC TSAN CI,closed,,2023-08-10T23:31:53Z,None
+1664,Fix several mismatching default option values and their comments,closed,,2023-08-10T20:03:15Z,2023-08-11T21:01:18Z
+1663,ci: add typos check ,closed,,2023-08-10T14:53:49Z,2023-08-11T07:13:44Z
+1661,Fix SISMEMBER should return 0 when key does not exist,closed,,2023-08-10T09:17:17Z,2023-08-11T09:44:12Z
+1660,Add a spell check ci that will fail future PRs,closed,,2023-08-10T08:47:22Z,None
+1657,Add new MPUBLISH command,closed,,2023-08-09T08:26:38Z,2023-08-11T13:45:02Z
+1656,"GEOSEARCH* from is not optional, FROMLONLAT or FROMMEMBER must require",closed,,2023-08-09T06:26:17Z,2023-08-09T07:50:45Z
+1655,Add dynamic flag generator to replace adhoc logic in ExecuteCommands,closed,,2023-08-09T01:02:19Z,2023-08-09T05:01:51Z
+1653,Fix missing exclusive flag in the namespace command,closed,,2023-08-08T14:43:33Z,2023-08-09T01:57:59Z
+1652,Fix add/delete repeated members error in zset/set/hash types,closed,,2023-08-08T13:09:15Z,2023-08-11T23:19:05Z
+1650,CAS command supports EXAT and PXAT options,closed,,2023-08-07T10:10:34Z,2023-08-07T14:18:05Z
+1649,Print version as kvrocks in kvrocks2redis,closed,,2023-08-07T09:29:29Z,2023-08-07T12:57:14Z
+1646,Refactor replication callbacks via templates,closed,,2023-08-06T22:11:38Z,2023-08-07T21:22:30Z
+1645,Fix miscreating column families when opening with the readonly mode,closed,,2023-08-06T16:10:14Z,2023-08-07T06:38:23Z
+1642,Add SUSE environment to CI for building and testing kvrocks,closed,,2023-08-06T14:22:11Z,2023-08-07T04:29:30Z
+1641,Add EvconnlistenerBase to avoid void* casts,closed,,2023-08-06T02:20:02Z,2023-08-06T22:06:49Z
+1640,Use EqualICase instead of strcasecmp in cluster,closed,,2023-08-06T00:59:51Z,2023-08-06T10:26:18Z
+1639,Make config enum error more clear for users,closed,,2023-08-06T00:51:59Z,2023-08-06T09:12:36Z
+1638,Make special exclusive command check a function,closed,,2023-08-06T00:50:45Z,2023-08-06T08:12:20Z
+1637,Remove useless memory allocation & string field in lock manager & guard,closed,,2023-08-05T23:55:49Z,2023-08-06T03:41:09Z
+1636,Make lock guard movable & accept generalized arguments,closed,,2023-08-04T22:52:28Z,2023-08-05T23:11:40Z
+1634,MSET change it to batch write instead of batch per key,closed,,2023-08-04T03:34:57Z,2023-08-07T08:24:58Z
+1633,Fix GLIBC link issue in archlinux CI,closed,,2023-08-03T22:21:34Z,2023-08-04T03:02:02Z
+1632,[WIP] BloomFilter command Draft and implemention,closed,,2023-08-03T16:13:14Z,None
+1631,Fix MSETNX not allow overriding the same key,closed,,2023-08-03T07:31:27Z,2023-08-04T15:04:05Z
+1630,Support TLS for replication,closed,,2023-08-02T23:30:03Z,2023-09-12T04:42:28Z
+1629,Bump GoogleTest to v1.14.0,closed,,2023-08-02T19:47:04Z,2023-08-04T01:11:43Z
+1627,Fix PORTABLE variable in CMake,closed,,2023-08-01T22:16:53Z,2023-08-02T02:19:02Z
+1626,Fix missing pop in ScriptExists,closed,,2023-08-01T00:01:43Z,2023-08-01T11:48:02Z
+1625,Fix GEOSEARCH/GEOSEARCHSTORE FROMMEMBER against non existing src key reply,closed,,2023-07-31T08:17:33Z,2023-08-01T02:05:22Z
+1624,Enable rebase merge in enabled_merge_buttons,closed,,2023-07-31T03:13:49Z,2023-08-01T04:19:10Z
+1623,Add kvrocks controller to README,closed,,2023-07-30T21:30:15Z,2023-07-31T01:55:59Z
+1622,Release 2.5.1,closed,,2023-07-30T12:08:05Z,2023-08-01T04:20:16Z
+1617,Simply test the built docker image in CI,closed,,2023-07-29T04:37:06Z,2023-07-29T10:16:48Z
+1616,Remove .git in dockerignore,closed,,2023-07-29T04:33:58Z,2023-07-29T08:52:41Z
+1615,Fix data race when updating the slots_info string,closed,,2023-07-28T13:20:00Z,2023-07-29T03:37:38Z
+1613,Fix -Wreturn-std-move warning,closed,,2023-07-27T15:40:38Z,None
+1612,Skip WATCH if connection is already dirty,closed,,2023-07-27T15:06:23Z,2023-07-29T06:27:43Z
+1611,Support change log-level in runtime,closed,,2023-07-26T07:24:34Z,2023-07-26T08:42:24Z
+1609,Fix ZRANGESTORE not overwrite the dst key,closed,,2023-07-25T10:04:35Z,2023-07-25T16:01:40Z
+1608,"Remove deprecated golangci linters: structcheck, deadcode and varcheck",closed,,2023-07-25T04:12:34Z,2023-07-25T06:19:34Z
+1607,ZRANGE / ZREVRANK add withscore option support,closed,,2023-07-25T03:37:21Z,2023-07-29T13:16:28Z
+1606,(deps) Bump oneTBB 2021.10.0,closed,,2023-07-24T19:52:21Z,2023-07-25T02:28:01Z
+1605,Fix make warning on GCC,closed,,2023-07-24T17:19:03Z,2023-07-28T08:03:14Z
+1604,"Fix ZREMRANGEBYSCORE arity, should be 4 instead of -4",closed,,2023-07-24T07:10:52Z,2023-07-24T09:01:55Z
+1602,Fix: Enable portable flag for Docker container builds,closed,,2023-07-21T06:54:15Z,2023-07-21T15:21:54Z
+1601,Add an archlinux environment for building and testing in CI,closed,,2023-07-21T01:56:38Z,2023-07-22T15:41:03Z
+1600,[WIP] Basic Json command Draft and implemention,closed,,2023-07-20T17:44:23Z,None
+1597,Update error message and add the ERR error code,closed,,2023-07-19T12:52:17Z,2023-07-22T08:57:48Z
+1596,Use LMOVE logic to handle RPOPLPUSH,closed,,2023-07-18T09:26:30Z,2023-07-19T14:36:06Z
+1595,Fix INFO used_memory_rss_human field name,closed,,2023-07-17T07:08:28Z,2023-07-18T19:52:25Z
+1593,Fix ZRANGESTORE arity -4 crash the server,closed,,2023-07-14T04:19:04Z,2023-07-14T08:30:46Z
+1592,Add the support of BLMOVE,closed,,2023-07-13T18:04:33Z,2023-07-16T07:09:53Z
+1591,Fix version typo in variable name,closed,,2023-07-13T06:26:18Z,2023-07-13T12:02:42Z
+1590,Fix prerequisite install commands in README,closed,,2023-07-13T04:34:57Z,2023-07-13T04:57:08Z
+1589,ZUNION arity should be -3 instread of -4,closed,,2023-07-13T04:23:22Z,2023-07-13T10:13:31Z
+1584,ci: typos and needs,closed,,2023-07-12T11:59:44Z,2023-07-12T13:57:52Z
+1583,Fix flaky test TestZset ZRANGEBYSCORE_fuzzy_test,closed,,2023-07-12T07:49:42Z,2023-07-12T11:55:27Z
+1582,Storage: Extract an MultiGet Options for rocksdb::MultiGet,closed,,2023-07-12T04:23:30Z,2023-07-13T03:33:47Z
+1581,Fix DECRBY LLONG_MIN caused an overflow,closed,,2023-07-12T04:11:18Z,2023-07-13T06:33:38Z
+1577,Avoid Write calls when SIADD added_cnt is 0,closed,,2023-07-11T09:27:42Z,2023-07-12T02:29:00Z
+1576,Fix config set compression type didn't take effect,closed,,2023-07-10T16:12:41Z,2023-07-16T10:28:59Z
+1575,Enable the jemalloc option --disable-cache-oblivious,closed,,2023-07-10T15:25:20Z,2023-07-20T13:09:08Z
+1574,Style: Change Storage::SetReadOptions to DefaultScanOptions,closed,,2023-07-10T08:15:51Z,2023-07-11T03:56:47Z
+1573,Fix GEOHASH / GEOPOS should return nil array instead of error for non-existing key,closed,,2023-07-10T08:07:55Z,2023-07-12T04:12:51Z
+1571,Add support of the command LPOS,closed,,2023-07-09T16:42:17Z,None
+1570,Make INFO command reject cases with arguments greater than 2,closed,,2023-07-09T14:21:29Z,2023-07-10T07:42:12Z
+1569,Add container environment for building and testing in CI,closed,,2023-07-09T08:02:33Z,2023-07-10T05:00:51Z
+1568,Fix EVAL crashing server when numkeys is -1,closed,,2023-07-09T07:18:31Z,2023-07-09T08:49:36Z
+1567,Fix SCRIPT EXISTS arity,closed,,2023-07-09T06:55:00Z,2023-07-10T09:07:58Z
+1566,Add used-after-move checking to clang-tidy,closed,,2023-07-08T14:46:18Z,2023-07-10T03:31:37Z
+1565,Add the support of the HRANDFIELD command,closed,,2023-07-08T14:13:34Z,2023-07-16T13:37:53Z
+1563,(deps) Bump jsoncons to 0.171.0,closed,,2023-07-08T07:33:51Z,2023-07-08T15:12:21Z
+1562,Fix EXEC / DISCARD without MULTI wrongly reset watch,closed,,2023-07-07T08:33:43Z,2023-07-11T11:43:53Z
+1561,Fix SCRIPT misleading error message,closed,,2023-07-07T07:24:13Z,2023-07-07T11:25:56Z
+1559,Fix ZUNION hang in syntax error,closed,,2023-07-06T15:27:35Z,2023-07-07T02:17:54Z
+1558,Avoid printing the invalid configuration key when loading namespaces,closed,,2023-07-06T13:06:57Z,2023-07-07T05:16:21Z
+1557,LSET return no suck key instread of NotFound when key not exist,closed,,2023-07-06T10:13:07Z,2023-07-06T12:00:38Z
+1556,Return an error when Stream::Range fails and remove some debug server logs,closed,,2023-07-06T08:47:32Z,2023-07-18T04:08:11Z
+1555,Build: Disable `-static-libgcc` on MacOS building,closed,,2023-07-06T06:54:45Z,2023-07-06T14:31:39Z
+1550,[feat] diable no-tls ports,closed,,2023-07-05T19:14:20Z,None
+1549,Reduce the block cache configurations into a single one,closed,,2023-07-05T17:46:46Z,2023-07-09T07:12:40Z
+1548,Fix plain GETEX wrongly removing expiration time,closed,,2023-07-05T16:43:58Z,2023-07-07T06:24:34Z
+1547,docs: show CI badge for unstable branch exactly,closed,,2023-07-05T11:48:08Z,2023-07-05T11:56:08Z
+1546,Fix GETEX not checking wrong type error causing key overwriting,closed,,2023-07-05T11:40:02Z,2023-07-05T14:51:08Z
+1543,Fix ZMPOP/BZMPOP duplicate parameters,closed,,2023-07-05T03:51:09Z,2023-07-05T10:35:58Z
+1542,Fix compile error after upgrading the rocksdb,closed,,2023-07-05T01:10:08Z,2023-07-05T08:00:10Z
+1541,Add dynamic key range generator with multiple range output,closed,,2023-07-04T17:41:51Z,2023-07-09T04:12:38Z
+1539,Fix the inconsistent response behavior with Redis in memory usage  command,closed,,2023-07-04T15:28:00Z,2023-07-05T04:47:09Z
+1537,Fix stdin usage text in PrintUsage,closed,,2023-07-04T04:38:25Z,2023-07-04T09:49:08Z
+1534,Support rapid slot migration based on raw key value,closed,,2023-06-30T11:24:16Z,None
+1533,Add support for GEOSEARCH and GEOSEARCHSTORE,closed,,2023-06-28T17:45:07Z,2023-07-24T07:12:07Z
+1531,List each command on a separate line in list type,closed,,2023-06-27T15:02:55Z,2023-06-28T10:18:00Z
+1519,"Drop `incubator-` prefix from Go test files, as well as yaml files and comment lines",closed,,2023-06-26T04:01:29Z,2023-06-26T06:16:45Z
+1518,Parse the timeout parameter as double in the blocking command ,closed,,2023-06-24T11:38:40Z,2023-06-27T11:19:12Z
+1517,Add support of new command: ZINTER / ZINTERCARD,closed,,2023-06-24T10:26:45Z,None
+1516,build(deps): Bump rocksdb v8.3.2,closed,,2023-06-24T09:43:07Z,2023-06-25T22:16:25Z
+1515,Remove incubating from the x.py and DISCLAIMER file,closed,,2023-06-23T02:32:31Z,2023-06-23T09:31:49Z
+1514,Remove incubator/incubating from README,closed,,2023-06-22T15:10:18Z,2023-06-22T15:18:22Z
+1513,Remove user and group from Docker,closed,,2023-06-22T14:26:50Z,2023-06-23T08:21:30Z
+1507,Fix incorrect mount data in docker volume,closed,,2023-06-21T08:21:38Z,2023-06-21T14:35:42Z
+1506,[WIP] Add the support of the ZRANDMEMBER command,closed,,2023-06-19T17:27:10Z,None
+1505,Add TakeFloat to Command Parser,closed,,2023-06-19T09:48:14Z,2023-06-20T03:27:27Z
+1502,Add support of the new command ZUNION,closed,,2023-06-17T05:43:50Z,2023-06-22T01:50:50Z
+1499,Remove ConnContext pointers to prevent manual allocation,closed,,2023-06-16T17:47:57Z,2023-06-18T03:46:22Z
+1498,Warning message for invalid key in configuration file,closed,,2023-06-16T16:09:34Z,2023-06-26T23:38:55Z
+1496,Fix a few typos in CMakeLists.txt,closed,,2023-06-14T15:04:10Z,2023-06-15T01:57:22Z
+1494,"[WIP] Add the support of the ZDIFF, ZDIFFSTORE commands",closed,,2023-06-12T19:17:45Z,None
+1493,Fix data race when joining the task runner,closed,,2023-06-11T12:08:04Z,2023-06-13T08:21:11Z
+1492,Fix ZRANGE command should return an empty array when count = 0,closed,,2023-06-11T09:06:36Z,2023-06-15T03:13:32Z
+1491,Automatically download the golangci-lint if not exists,closed,,2023-06-11T08:06:39Z,2023-07-04T07:13:53Z
+1490,Add the support of the BZMPOP command,closed,,2023-06-10T15:18:46Z,2023-06-18T16:28:53Z
+1489,Add Redis-compatible cursors for `SCAN` commands,closed,,2023-06-10T04:20:23Z,2023-06-25T11:54:03Z
+1488,Feat: Block instance replication of itself and it's own replicas,closed,,2023-06-07T11:17:20Z,2023-06-12T11:07:17Z
+1487,Avoid manually releasing DB pointer via unique_ptr,closed,,2023-06-06T12:16:14Z,2023-06-07T09:22:49Z
+1486,Remove global server ptr getter used in scripting,closed,,2023-06-06T06:56:14Z,2023-06-06T10:47:23Z
+1482,Add the support of the ZRANGESTORE command ,closed,,2023-06-04T01:44:19Z,2023-06-05T03:57:59Z
+1481,Fix crash when hitting the perflog command rule,closed,,2023-06-01T14:25:15Z,2023-06-01T16:07:48Z
+1479,Fix all weird out parameters `int *ret` in the codebase ,closed,,2023-05-30T11:26:33Z,2023-05-31T05:19:34Z
+1477,build: tidy dockerfile,closed,,2023-05-27T12:23:19Z,2023-05-27T23:47:32Z
+1476,Escape the special chars in the monitor command output,closed,,2023-05-27T05:52:41Z,2023-05-30T07:18:41Z
+1475,Refine functions and add parsing test to set and zset ,closed,,2023-05-26T04:40:33Z,2023-05-26T10:15:24Z
+1474,docker can use env conf,closed,,2023-05-25T03:42:48Z,None
+1473,Print error when occurring the flaky test in TestBitmap,closed,,2023-05-24T16:56:57Z,2023-05-25T01:57:25Z
+1471,Add separate mutex that protects blocked stream consumers,closed,,2023-05-24T14:49:37Z,2023-05-26T04:15:16Z
+1470,refactor:  register commands based on the order of redis commands,closed,,2023-05-24T07:10:31Z,None
+1468,Add the support of the ZMPOP command,closed,,2023-05-23T16:39:53Z,2023-05-26T08:10:06Z
+1467,Add test case for the HMGET command,closed,,2023-05-23T15:46:53Z,2023-05-24T03:43:03Z
+1465,[WIP] feat: persist the cluster-enabled status in rocksdb,closed,,2023-05-22T09:56:15Z,None
+1464,Fix flaky test in migration timeout,closed,,2023-05-22T09:15:38Z,2023-05-24T00:08:54Z
+1463,Don't use auto-retry in unit/type/list_test.go,closed,,2023-05-22T06:58:04Z,2023-05-22T09:22:20Z
+1453,Use the rocksdb mget to improve the performance,closed,,2023-05-21T12:43:23Z,2023-05-22T05:27:42Z
+1449,Fix flaky test case in Go unit/type/list.go,closed,,2023-05-19T14:37:50Z,2023-05-19T15:58:01Z
+1446,build: migrate go-redis/redis to redis/go-redis,closed,,2023-05-18T16:09:22Z,2023-05-19T14:41:56Z
+1444,Add support of the new command SINTERCARD(Redis 7),closed,,2023-05-18T10:35:14Z,2023-06-13T04:48:25Z
+1443,Use constexpr to simplify the getXXX method in EvbufCallbackBase,closed,,2023-05-18T09:13:13Z,2023-05-19T10:18:28Z
+1440,Suppress error in TBB to make build failure for GCC 12 and above,closed,,2023-05-15T12:53:30Z,2023-05-16T07:33:39Z
+1438,build(deps): bump jsoncons to v170.0.2,closed,,2023-05-13T07:11:01Z,2023-05-14T02:44:58Z
+1437,Relax the lower bound of the expiration test case to make tests more stable,closed,,2023-05-12T11:51:46Z,2023-05-12T14:16:49Z
+1436,Rename KvrocksLabs to RocksLabs in cmake,closed,,2023-05-10T16:40:07Z,2023-05-11T11:43:47Z
+1435,Bump fmtlib to 10.0.0,closed,,2023-05-10T14:23:09Z,2023-05-13T02:18:44Z
+1434,Docker image based on Alpine Linux,closed,,2023-05-08T08:25:40Z,2023-05-17T13:53:07Z
+1433,Replace header <sys/poll.h> to <poll.h> in io_util.cc,closed,,2023-05-07T22:51:51Z,2023-05-08T05:58:37Z
+1432,Bump oneTBB to v2021.9.0,closed,,2023-05-07T22:30:23Z,2023-05-08T03:42:06Z
+1431,Fix backtrace lib for musl building support,closed,,2023-05-07T22:00:13Z,2023-05-08T07:18:18Z
+1430,Return error from CommandZRangeGeneric in case of unexpected range_type,closed,,2023-05-07T16:53:15Z,2023-05-08T00:37:06Z
+1429,refactor: zset ranges,closed,,2023-05-07T09:25:38Z,2023-05-07T14:11:39Z
+1428,feat: Catch up `ZRANGE` options,closed,,2023-05-07T04:50:48Z,2023-05-07T08:23:09Z
+1427,ci: fix needs param,closed,,2023-05-06T09:49:47Z,2023-05-06T11:04:21Z
+1426,Bump jsoncons to v0.170.1,closed,,2023-05-06T08:20:17Z,2023-05-06T12:15:49Z
+1424,Support RocksDB auto-tune rate limiter for the background IO,closed,,2023-05-06T07:41:24Z,2023-05-17T04:00:12Z
+1422,ci: add path-filter,closed,,2023-05-05T12:02:53Z,2023-05-06T09:49:15Z
+1420,Introduce UniqueEvent and CallbackBase for more intuitive event handle,closed,,2023-05-05T08:56:41Z,2023-05-05T12:01:50Z
+1419,Support specify release candidate number,closed,,2023-05-05T02:31:58Z,2023-05-05T07:46:00Z
+1418,Support blocking migration for the cluster migrate command,closed,,2023-05-04T12:45:43Z,2023-05-15T01:07:51Z
+1415,Add redis cli to nightly image,closed,,2023-05-02T08:29:04Z,2023-05-05T13:12:20Z
+1414,support slot batch for CLUSTERX SETSLOT,closed,,2023-05-01T18:31:04Z,2023-05-14T11:53:31Z
+1409,Remove useless type cast in redis_slot.cc,closed,,2023-04-29T10:18:23Z,2023-04-29T12:43:21Z
+1408,Rename internal macro ENABLE_NEW_ENCODING to METADATA_ENCODING_VERSION,closed,,2023-04-29T07:25:50Z,2023-04-29T11:01:32Z
+1406,Allow default username and fix case sensitive check in HELLO,closed,,2023-04-28T16:49:37Z,2023-04-29T06:11:17Z
+1405,Add the ability to use the '*-123' pattern to specify stream entry ID via XADD,closed,,2023-04-27T20:01:48Z,2023-04-29T03:19:08Z
+1404,Have an UI,closed,,2023-04-27T13:13:49Z,None
+1401,Add a particular test case for HGETALL with async_io=true,closed,,2023-04-23T13:40:00Z,2023-04-24T12:29:03Z
+1400,build(deps): Bump Snappy 1.1.10 with upstream compile fix,closed,,2023-04-23T08:17:36Z,2023-04-23T14:56:17Z
+1399,Bump luaJIT to c0a8e68,closed,,2023-04-22T11:04:07Z,2023-04-24T23:44:47Z
+1398,Bump RocksDB to version 8.1.1,closed,,2023-04-21T08:07:36Z,2023-04-22T03:59:27Z
+1397,Fix CONFIG REWRITE append duplicate newlines,closed,,2023-04-20T08:13:07Z,2023-04-20T12:58:23Z
+1394,Add TIME command as Redis,closed,,2023-04-18T14:37:03Z,2023-04-19T06:48:19Z
+1392,Convert 0.0.0.0 to local ip addresses when  matching the cluster node,closed,,2023-04-17T15:01:18Z,2023-04-20T09:22:03Z
+1391,Forbid goto statement and remove useless struct prefix,closed,,2023-04-14T16:15:29Z,2023-04-15T01:40:34Z
+1390,Check function names in readability-identifier-naming,closed,,2023-04-14T13:50:52Z,2023-04-14T15:26:42Z
+1388,Check method and namespace names in readability-identifier-naming,closed,,2023-04-14T07:14:46Z,2023-04-14T08:17:17Z
+1387,Check static class member and type alias name in readability-identifier-naming,closed,,2023-04-14T05:56:14Z,2023-04-14T07:02:18Z
+1386,Remove underscore suffix for public member name,closed,,2023-04-14T03:37:50Z,2023-04-14T05:38:52Z
+1385,Fix member name convension for readability-identifier-naming,closed,,2023-04-13T17:10:16Z,2023-04-14T03:30:02Z
+1384,Fix missing to set the cluster node id when loading,closed,,2023-04-13T15:37:17Z,2023-04-14T04:37:10Z
+1383,Enable readability-identifier-naming in clang-tidy,closed,,2023-04-13T09:39:54Z,2023-04-13T16:33:53Z
+1380,Fix disordered stack pop in replyToRedisReply,closed,,2023-04-12T02:58:12Z,2023-04-12T06:08:52Z
+1379,Add cluster section into the info command,closed,,2023-04-11T17:17:59Z,2023-04-12T07:48:34Z
+1375,Add MEMORY USAGE command as an alias to existing DISK USAGE command,closed,,2023-04-08T14:12:16Z,2023-04-09T14:17:20Z
+1374,Add max background jobs to configuration,closed,,2023-04-08T08:04:48Z,2023-04-13T05:34:34Z
+1373,Minor refactoring of slot migration source code,closed,,2023-04-06T19:59:26Z,2023-04-07T13:35:05Z
+1370,chore: tidy the NOTICE file ,closed,,2023-04-05T06:21:51Z,2023-04-05T07:28:06Z
+1369,Update zstd version to 1.5.5,closed,,2023-04-05T06:17:55Z,2023-04-05T08:31:04Z
+1368,Refactor Status to avoid large stack size in happy path,closed,,2023-04-04T13:45:29Z,2023-04-05T03:14:29Z
+1367,Use prefix extractor to improve performance,closed,,2023-04-04T01:13:41Z,None
+1366,Introduce JSONCONS for RedisJSON and rewrite Server::GetRocksDBStatsJson,closed,,2023-04-03T14:15:46Z,2023-04-04T03:27:14Z
+1364,Add handling LMOVE in BatchExtractor,closed,,2023-04-02T19:43:57Z,2023-04-03T03:35:49Z
+1363,Use more efficient popcount in Redis::Bitmap,closed,,2023-04-02T02:57:35Z,2023-04-02T12:22:41Z
+1362,Remove manual code concat in scripting,closed,,2023-03-31T08:18:23Z,2023-03-31T15:29:20Z
+1361,Fix redundant newline in eval error compiling  message,closed,,2023-03-31T05:56:31Z,2023-03-31T07:46:01Z
+1360,Systemd service file update,closed,,2023-03-29T14:36:55Z,2023-03-30T01:43:27Z
+1359,Rewrite popcount and bitpos in redis bitmap,closed,,2023-03-27T16:20:21Z,2023-03-28T05:48:57Z
+1358,Rewrite encoding functions,closed,,2023-03-27T13:36:36Z,2023-03-27T16:13:09Z
+1356,Make the create-cluster script robustness,closed,,2023-03-26T10:04:43Z,2023-03-27T00:41:38Z
+1355,fix: fix BIN_PATH,closed,,2023-03-26T09:54:37Z,None
+1354,Add CLIENT INFO command as Redis,closed,,2023-03-25T02:00:50Z,2023-03-25T07:54:28Z
+1352,Round expire time for seconds to improve precision for 32bit-common-field encoding,closed,,2023-03-24T15:00:39Z,2023-03-24T16:36:41Z
+1351,Unify time retrieving and remove srand call in metadata construction,closed,,2023-03-24T14:59:17Z,2023-03-25T00:52:19Z
+1349,Fix stream_metadata enum -Wint-in-bool-context warning,closed,,2023-03-24T11:37:57Z,2023-03-24T13:20:51Z
+1348,Add some readability checks and fix all reports in current codebase,closed,,2023-03-23T14:11:23Z,2023-03-23T15:42:14Z
+1347,Add SUBSTR command as redis,closed,,2023-03-23T07:04:29Z,2023-03-23T13:18:14Z
+1345,Fix missing stream increment batch in cluster migration,closed,,2023-03-22T16:21:22Z,2023-03-24T05:40:53Z
+1343,Clean up files before and after running go tests,closed,,2023-03-22T03:57:11Z,None
+1342,Implement the new encoding with 64bit size and expire time in milliseconds,closed,,2023-03-21T10:24:24Z,2023-03-23T09:23:56Z
+1341,Make Status::Code::cOK private to avoid direct access,closed,,2023-03-21T04:28:13Z,2023-03-21T06:54:22Z
+1340,Keep feature descriptions consistent with documentation,closed,,2023-03-20T14:31:37Z,2023-03-21T01:19:43Z
+1339,Use waitForImportState instead of the sleep in Go test case,closed,,2023-03-20T14:09:10Z,2023-03-20T15:09:28Z
+1337,Add clang-tidy checking for unit tests,closed,,2023-03-20T09:37:10Z,2023-03-20T13:35:49Z
+1336,Remove the test db dir after deleting the storage in CPP unittest,closed,,2023-03-20T09:19:12Z,2023-03-20T11:10:55Z
+1335,Relax race condition between subkey compaction thread,closed,,2023-03-20T06:27:07Z,2023-03-21T02:54:06Z
+1334,Fix clang-tidy warnings,closed,,2023-03-19T20:42:21Z,2023-03-20T09:16:59Z
+1333,Bump RocksDB 8.0.0,closed,,2023-03-19T13:36:04Z,2023-03-20T04:02:24Z
+1332,build: package sources in a folder,closed,,2023-03-18T12:36:07Z,2023-03-18T13:52:08Z
+1331,Avoid crash due to task runner start failed,closed,,2023-03-18T08:36:27Z,2023-03-18T15:38:09Z
+1330,Refactor Status to avoid large stack size in happy path,closed,,2023-03-18T07:36:01Z,None
+1329,Relax the condition in unit tests of TaskRunner,closed,,2023-03-18T07:03:49Z,2023-03-18T09:34:14Z
+1328,Add max background jobs to configuration,closed,,2023-03-18T04:52:11Z,None
+1327,test: Remove testdb and compactdb dirs on exit,closed,,2023-03-18T02:24:40Z,2023-03-18T11:22:54Z
+1326,chore: Update README.md,closed,,2023-03-18T01:25:26Z,2023-03-18T02:29:14Z
+1325,Allow to configure the compaction checker policy,closed,,2023-03-17T13:57:46Z,2023-03-25T10:26:01Z
+1324,Move unit tests for redis types to a new directory,closed,,2023-03-16T13:59:45Z,2023-03-16T15:32:16Z
+1323,Introduce TBB to refactor task runners,closed,,2023-03-16T13:57:50Z,2023-03-17T09:21:31Z
+1322,Replace list with other cache-friendly containers,closed,,2023-03-16T03:49:02Z,2023-03-16T07:48:24Z
+1321,Minor refactoring of stc/storage/storage.cc,closed,,2023-03-15T15:33:40Z,2023-03-16T03:49:58Z
+1320,Check if the checkpoint seq is in the WAL boundary before using,closed,,2023-03-14T02:48:54Z,2023-03-17T14:50:26Z
+1318,Refactor task runner for more robust runtime state,closed,,2023-03-13T08:35:30Z,2023-03-13T13:56:22Z
+1316,Use inline to replace extern global constants,closed,,2023-03-13T03:28:24Z,2023-03-13T04:40:56Z
+1315,"Return empty string instead of nil in HGETALL, HVALS, HRANGEBYLEX responses",closed,,2023-03-11T18:13:19Z,2023-03-12T05:43:25Z
+1314,Use std::shared_mutex instead of our own ReadWriteLock implementation,closed,,2023-03-11T17:27:12Z,2023-03-12T03:28:09Z
+1313,Refactor eval commands,closed,,2023-03-11T03:20:49Z,2023-03-11T07:15:44Z
+1312,Improve code style and do some minor fix in scripting,closed,,2023-03-10T09:20:19Z,2023-03-10T17:35:28Z
+1310,Allow HSETNX to receive multiple field-value pairs like HSET,closed,,2023-03-09T16:13:45Z,2023-03-10T02:55:08Z
+1303,Support replica-announce-ip and replica-announce-port,closed,,2023-03-09T06:43:44Z,2023-03-09T13:59:57Z
+1302,Add CreateThread to avoid manual try-catch,closed,,2023-03-08T15:24:29Z,2023-03-09T06:24:25Z
+1299,Add move assign and reset for ObserverOrUnique,closed,,2023-03-06T17:11:36Z,2023-03-07T03:29:17Z
+1297,Fix for execution timing of commands from lua,closed,,2023-03-06T01:26:01Z,2023-03-06T02:54:42Z
+1296,Bump rocksdb to 7.10.2,closed,,2023-03-02T09:30:07Z,2023-03-03T12:40:13Z
+1293,feat: add explicit fallthrough in the replication state transmission,closed,,2023-03-01T15:48:43Z,2023-03-02T04:27:41Z
+1288,ci: try large runner,closed,,2023-03-01T04:09:38Z,None
+1287,Use the RocksDB WriteBatchWithIndex to implement the read-your-own-writes in transaction,closed,,2023-02-28T15:00:30Z,2023-03-04T14:19:16Z
+1286,Fix outdated result in type command for expired keys,closed,,2023-02-28T04:25:11Z,2023-02-28T08:25:57Z
+1285,Fix type command bug,closed,,2023-02-28T03:40:09Z,None
+1280,"Minor refactoring of src/common, src/server",closed,,2023-02-25T21:54:01Z,2023-02-27T04:00:39Z
+1279,Support watch/unwatch commands,closed,,2023-02-24T03:31:49Z,2023-03-07T15:06:20Z
+1274,"Fix license issues in rand.h, rocksdb_crc32c.h and batch_debugger.h",closed,,2023-02-22T02:49:48Z,2023-02-22T07:07:18Z
+1272,Use nproc instead of default for job numbers in docker build to avoid timeout,closed,,2023-02-21T08:02:25Z,2023-02-21T09:11:19Z
+1271,Force disable the IPO option in macOS,closed,,2023-02-21T00:49:32Z,2023-02-21T03:20:06Z
+1269,Fix inconsistent response format with Redis,closed,,2023-02-20T14:06:21Z,2023-02-20T15:54:20Z
+1268,Remove some new-delete patterns and refine LockManager hash function,closed,,2023-02-20T09:17:14Z,2023-02-20T12:31:55Z
+1264,Move the kvrocks.conf into volume in Dockerfile,closed,,2023-02-14T16:13:54Z,2023-02-18T15:39:31Z
+1259,fix: license headers in third-party code,closed,,2023-02-14T02:54:35Z,2023-02-14T04:30:18Z
+1258,build: Drop travis workflow,closed,,2023-02-13T14:02:10Z,2023-02-14T12:32:07Z
+1256,Use append action instead of nargs for cmake defs in x.py,closed,,2023-02-10T13:21:04Z,2023-02-19T06:50:02Z
+1255,Bump zstd to version 1.5.4,closed,,2023-02-10T10:22:36Z,2023-02-10T13:22:09Z
+1253,Add more version detail in server info,closed,,2023-02-09T03:35:10Z,2023-02-09T05:37:50Z
+1252,Show version and commit hash in a more pretty way,closed,,2023-02-08T12:33:21Z,2023-02-08T15:28:57Z
+1251,Add optional args to XLEN to specify start ID and direction,closed,,2023-02-08T11:34:40Z,2023-02-08T13:58:09Z
+1250,Automatically set the env MACOSX_DEPLOYMENT_TARGET to the current macOS version unless the env is already set,closed,,2023-02-07T13:04:46Z,2023-02-08T02:02:43Z
+1249,Add header filter for clang-tidy checks,closed,,2023-02-07T03:01:48Z,2023-02-07T06:38:11Z
+1248,"Revert ""Automatically build and push the docker image when tagging a new version""",closed,,2023-02-06T05:34:18Z,2023-02-06T06:30:46Z
+1247,Automatically build and push the docker image when tagging a new version,closed,,2023-02-06T00:39:18Z,2023-02-06T04:09:30Z
+1245,Remove useless buf and prealloc in InternalKey,closed,,2023-02-05T09:09:23Z,2023-02-05T15:57:47Z
+1244,Split redis_cmd.cc to multiple files by category,closed,,2023-02-04T10:05:48Z,2023-02-05T03:01:42Z
+1241,Enable LuaJIT to improve the performance of scripts,closed,,2023-02-02T02:20:20Z,2023-02-02T09:51:50Z
+1240,Add TRYAGAIN prefix to error message for writing forbidden slot,closed,,2023-01-31T14:20:30Z,2023-02-01T01:38:10Z
+1239,Add an option to turn on/off the persist cluster nodes in local file,closed,,2023-01-30T13:14:33Z,2023-01-31T01:56:04Z
+1238,Disable the rebase-merge button,closed,,2023-01-30T12:35:52Z,2023-01-30T13:23:33Z
+1237,Add an option to turn on/off the persist cluster nodes in local file,closed,,2023-01-30T12:04:53Z,None
+1233,Make docker image more portable,closed,,2023-01-27T16:41:50Z,2023-01-28T03:15:30Z
+1232,XREAD returns dedicated status if it blocks,closed,,2023-01-24T13:55:19Z,2023-01-25T06:38:04Z
+1231,Add contributing section in README,closed,,2023-01-22T02:15:11Z,2023-01-22T03:33:48Z
+1230,Add ability to set log level via config file,closed,,2023-01-18T21:05:44Z,2023-01-19T05:37:51Z
+1229,Update RocksDB to 7.9.2 & Google test to 1.13.0,closed,,2023-01-18T12:06:00Z,2023-01-19T02:59:43Z
+1228,Fix deadlock when unblocking connection on stream,closed,,2023-01-16T16:52:44Z,2023-01-17T02:44:40Z
+1227,Add ParseFloat and replace stod with it,closed,,2023-01-16T14:57:08Z,2023-01-17T07:06:24Z
+1225,Fix error message passing in Server::Start,closed,,2023-01-15T02:27:55Z,2023-01-15T03:45:01Z
+1222,Kvrocks2Redis: decode slot ID in cluster mode,closed,,2023-01-10T17:17:48Z,2023-01-11T15:38:38Z
+1221,Refactor config parsing in kvrocks2redis,closed,,2023-01-09T07:05:22Z,2023-01-12T04:17:11Z
+1219,Persist the cluster nodes info after applying the cluster topology,closed,,2023-01-07T08:17:13Z,2023-01-12T09:43:05Z
+1218,Add integer parsing with unit support,closed,,2023-01-07T08:15:47Z,2023-01-07T15:43:59Z
+1217,Make config load errors more friendly,closed,,2023-01-05T12:07:15Z,2023-01-06T07:27:47Z
+1215,Allow to enable the async_io option to improve the performance,closed,,2023-01-02T14:43:17Z,2023-01-28T04:18:04Z
+1214,Refactoring: check function return Status marked as [[nodiscard]],closed,,2022-12-29T12:30:13Z,2023-01-02T18:43:14Z
+1209,Check source code of kvrocks2redis by clang-tidy,closed,,2022-12-26T18:34:10Z,2022-12-27T03:19:19Z
+1208,Refactor slot migrate Go-tests,closed,,2022-12-26T18:24:49Z,2022-12-27T05:50:10Z
+1207,cleanup packaging fpm code,closed,,2022-12-26T15:59:36Z,2022-12-27T04:48:00Z
+1206,Adapt kvrocks with ToplingDB,closed,,2022-12-26T02:38:58Z,None
+1205,Refactor return value of functions that related to a slot migration,closed,,2022-12-24T19:39:21Z,2022-12-26T11:52:20Z
+1203,Bump rocksdb to 7.8.3,closed,,2022-12-22T13:44:14Z,2022-12-23T10:24:10Z
+1201,Fetch dependencies from local archives in x.py,closed,,2022-12-21T15:39:05Z,None
+1200,Refine Status::Prefixed and add more test cases,closed,,2022-12-21T09:48:02Z,2022-12-21T13:34:19Z
+1199,Add new lines after every section in Server::GetInfo,closed,,2022-12-20T09:23:22Z,2022-12-21T03:55:48Z
+1198,Inplace construct error message in StatusOr while data type is large enough,closed,,2022-12-20T07:37:52Z,2022-12-21T08:01:33Z
+1197,Add support of stream migration during slot migration process,closed,,2022-12-19T17:04:04Z,2022-12-21T07:04:49Z
+1195,Check if the thread is joinable before joining in replication thread,closed,,2022-12-18T05:47:28Z,2022-12-18T12:55:34Z
+1193,Add nodiscard attribute to Status and StatusOr,closed,,2022-12-18T05:32:26Z,2022-12-18T15:29:46Z
+1192,Make IO functions return StatusOr,closed,,2022-12-17T15:23:20Z,2022-12-21T09:18:55Z
+1191,Remove old string parsing util and replace them by ParseInt,closed,,2022-12-17T13:48:28Z,2022-12-18T05:41:21Z
+1190,Fix typo of document links in README,closed,,2022-12-17T09:12:59Z,2022-12-17T13:06:11Z
+1189,Refine words and add more social media links in README,closed,,2022-12-17T07:54:56Z,2022-12-17T09:09:51Z
+1183,Fix SockConect doesn't resolve domain before connecting,closed,,2022-12-16T17:18:12Z,2022-12-17T10:27:25Z
+1181,Delete docs directory,closed,,2022-12-16T12:05:22Z,2022-12-16T13:58:39Z
+1173,Fix StatusOr copy assignment,closed,,2022-12-09T14:12:24Z,2022-12-09T16:11:13Z
+1172,Add timeout when replica connect master,closed,,2022-12-09T00:43:41Z,2022-12-12T14:30:12Z
+1171,feat: add config for log cleaner,closed,,2022-12-08T16:09:34Z,2022-12-21T10:49:11Z
+1162,Fix wrongly append the ERR prefix in no script error,closed,,2022-12-05T16:05:28Z,2022-12-06T01:53:38Z
+1159,Fix cppcoreguidelines-narrowing-conversions warning reported by clang-tidy,closed,,2022-12-04T21:56:13Z,2022-12-12T02:32:12Z
+1158,Add the compatible Redis version to the info command ,closed,,2022-12-04T09:51:07Z,2022-12-06T16:48:35Z
+1156,Fix modernize-use-nullptr warning reported by clang-tidy,closed,,2022-12-03T17:48:34Z,2022-12-04T02:03:02Z
+1155,Fix cppcoreguidelines-macro-usage warning reported by clang-tidy,closed,,2022-12-03T15:20:52Z,2022-12-04T12:30:16Z
+1154,Re-enable require branches to be up-to-date,closed,,2022-12-03T14:05:25Z,2022-12-03T15:04:06Z
+1153,Fix cppcoreguidelines-init-variables warning reported by clang-tidy,closed,,2022-12-03T13:07:08Z,2022-12-03T15:03:12Z
+1151,Fix inconsistency between Set and ToString in OctalField,closed,,2022-12-02T04:12:58Z,2022-12-02T07:08:28Z
+1149,refactor: move VERSION to src/folder #1148,closed,,2022-12-01T08:46:04Z,2022-12-02T04:07:30Z
+1145,Fix wrong include in redis_cmd.cc,closed,,2022-11-26T15:09:05Z,2022-11-26T15:58:02Z
+1144,Split `util.h` to more concrete util headers,closed,,2022-11-26T07:59:47Z,2022-11-26T12:42:49Z
+1143,Replace c-style typedef with direct definition or using,closed,,2022-11-26T07:17:20Z,2022-11-26T09:01:49Z
+1142,Fix format output in Server::GetRocksDBStatsJson,closed,,2022-11-25T13:22:43Z,2022-11-25T14:18:16Z
+1141,Harden list_test.go,closed,,2022-11-25T13:04:36Z,2022-11-25T14:13:48Z
+1140,Introduce command register mechanism to allow splitting command definition to multiple TUs,closed,,2022-11-25T08:25:20Z,2022-11-26T14:57:35Z
+1139,Introduce fmt dependency to simplify string formatting,closed,,2022-11-25T04:38:54Z,2022-11-25T11:07:49Z
+1137,Tidy files inside src/commands,closed,,2022-11-24T14:16:39Z,2022-11-25T01:57:36Z
+1134,Improve files structure,closed,,2022-11-24T06:21:31Z,2022-11-24T09:04:47Z
+1133,Fix the script load should return SHA as the bulk string,closed,,2022-11-23T13:36:35Z,2022-11-23T15:53:17Z
+1130,Remove default value of parallelism in x.py,closed,,2022-11-21T10:32:11Z,2022-11-22T03:41:21Z
+1129,Fix redis cli test will fail if cannot read response at once,closed,,2022-11-19T06:40:47Z,2022-11-20T12:52:46Z
+1128,Increase blocking timeout to harden the blocking pop test case,closed,,2022-11-19T05:25:55Z,2022-11-26T09:02:46Z
+1125,Use core number as the default concurrent compile task number in x.py,closed,,2022-11-15T13:07:56Z,None
+1124,Fix cppcoreguidelines-special-member-functions warning reported by cl…,closed,,2022-11-15T08:24:37Z,2022-11-15T15:40:05Z
+1121,Fix `modernize-avoid-bind` warning reported by clang-tidy,closed,,2022-11-14T10:06:00Z,2022-11-14T12:49:07Z
+1120,`HrangebyLex` supports specify intervals,closed,,2022-11-13T17:10:47Z,2023-01-17T03:42:24Z
+1119,Support more `ZRANGE` options,closed,,2022-11-13T12:32:47Z,None
+1116,feat: add support for Redis sintercard command,closed,,2022-11-13T06:02:11Z,None
+1115,Fix performance-inefficient-vector-operation warning reported by clang-tidy,closed,,2022-11-13T03:48:56Z,2022-11-15T12:35:03Z
+1114,Fix modernize-use-using warning reported by clang-tidy,closed,,2022-11-13T03:42:40Z,2022-11-15T06:42:47Z
+1113,Fix modernize-make-unique warning reported by clang-tidy,closed,,2022-11-13T01:44:01Z,2022-11-14T05:40:00Z
+1112,Fix modernize-loop-convert warning reported by clang-tidy,closed,,2022-11-13T00:03:09Z,2022-11-16T03:31:44Z
+1111,Fix modernize-use-auto warning reported by clang-tidy,closed,,2022-11-12T23:45:53Z,2022-11-15T03:35:28Z
+1110,Fix modernize-redundant-void-arg warning reported by clang-tidy,closed,,2022-11-12T23:34:48Z,2022-11-14T10:55:31Z
+1109,Fix performance-faster-string-find warning reported by clang-tidy,closed,,2022-11-12T23:28:45Z,2022-11-14T09:46:25Z
+1108,Fix performance-for-range-copy warning reported by clang-tidy,closed,,2022-11-12T23:05:14Z,2022-11-14T08:17:18Z
+1107,Fix modernize-use-bool-literals warning reported by clang-tidy,closed,,2022-11-12T22:52:07Z,2022-11-14T03:53:26Z
+1106,Fix performance-unnecessary-value-param warning reported by clang-tidy,closed,,2022-11-12T16:44:03Z,2022-11-14T03:00:14Z
+1086,Unify write-like syscall wrappers in util.cc,closed,,2022-11-11T16:26:14Z,2022-11-12T03:06:16Z
+1085,Clean code in redis_reply.cc,closed,,2022-11-11T16:10:28Z,2022-11-12T03:07:52Z
+1084,Fix `modernize-use-emplace` and `performance-unnecessary-copy-initialization` reported by clang-tidy,closed,,2022-11-11T16:10:21Z,2022-11-12T03:17:12Z
+1080,New status methods,closed,,2022-11-08T21:02:52Z,None
+1079,Improve libunwind linking in CMake,closed,,2022-11-05T13:43:40Z,2022-11-05T15:43:55Z
+1078,Add ZLIB dependency for compression in rocksdb,closed,,2022-11-05T12:41:01Z,2022-11-06T02:39:35Z
+1077,Remove useless string array in scripting,closed,,2022-11-05T12:06:12Z,2022-11-05T14:38:04Z
+1076,Fix compiler warning in replication,closed,,2022-11-05T12:05:18Z,2022-11-05T14:35:37Z
+1075,Fix part of the clang-tidy warning,closed,,2022-11-04T11:38:32Z,2022-11-04T16:05:10Z
+1074,Fix the nightly image in README,closed,,2022-11-04T08:10:02Z,2022-11-04T09:40:55Z
+1073,Move the nightly docker image organization to the apache,closed,,2022-11-04T04:15:44Z,2022-11-04T06:22:43Z
+1071,Export more rocksdb statistics to the info command,closed,,2022-11-03T17:04:26Z,None
+1070,ci: update actions to address warnings,closed,,2022-11-03T14:42:22Z,2022-11-04T01:46:34Z
+1069,util: Add WriteBatchInspector to inspect WriteBatch,closed,,2022-11-03T14:25:13Z,2022-11-05T08:01:27Z
+1068,Maybe fix crash in migration,closed,,2022-11-03T14:13:34Z,2022-11-04T01:43:17Z
+1067,Fix dangling reference in ReplicationThread::ParseWriteBatch,closed,,2022-11-03T07:14:17Z,2022-11-03T12:35:43Z
+1066,Check the iterator status before using,closed,,2022-11-02T16:53:28Z,None
+1065,Dump stacktrace for crashed instance started by go test in CI,closed,,2022-11-02T09:38:10Z,2022-11-03T09:29:25Z
+1064,"Revert ""feat: Upgrade rocksdb to v7.7.3""",closed,,2022-11-02T04:11:30Z,None
+1063,Remove duplicate ERR word in some error responses,closed,,2022-11-01T21:29:15Z,2022-11-02T06:08:44Z
+1062,Require redis-cli for testing,closed,,2022-11-01T19:30:44Z,2022-11-04T12:22:56Z
+1061,[BugFix] Fixing logging initialized before loaded,closed,,2022-11-01T15:32:32Z,2022-11-04T02:35:52Z
+1060,Fix log-dir and backup-dir appear at the same time.,closed,,2022-11-01T13:13:41Z,None
+1058,Remove PopulateCommands and InitCommandTable,closed,,2022-10-31T08:31:32Z,2022-10-31T10:28:29Z
+1057,Make compile flags more precise in CMakeLists,closed,,2022-10-30T14:55:18Z,2022-10-30T15:39:31Z
+1056,feat: Upgrade rocksdb to v7.7.3,closed,,2022-10-30T14:18:59Z,2022-11-01T07:08:20Z
+1055,Fix CAS and CAD return statuses,closed,,2022-10-30T12:08:02Z,2022-10-31T08:21:24Z
+1054,Replace ADD_CMD macro with template,closed,,2022-10-29T13:51:13Z,2022-10-29T15:42:21Z
+1053,Improve stacktrace format and clean main.cc,closed,,2022-10-29T13:19:47Z,2022-10-29T16:10:47Z
+1051,Update testing instructions in README,closed,,2022-10-29T06:40:53Z,2022-10-29T07:45:50Z
+1050,Update the docker image in README,closed,,2022-10-29T06:32:29Z,2022-10-29T08:00:20Z
+1048,Fix the anonymous typedef struct compile warnings,closed,,2022-10-28T15:20:49Z,2022-10-29T01:48:25Z
+1047,Fix rename-command didn't work when using it multiple times,closed,,2022-10-27T02:23:11Z,2022-10-28T08:40:54Z
+1046,Remove duplicate open function,closed,,2022-10-27T01:14:35Z,2022-10-27T04:49:19Z
+1045,rewrite *write function,closed,,2022-10-25T16:16:34Z,2022-10-28T02:04:28Z
+1044,feat: support show used_memory_startup,closed,,2022-10-25T15:29:00Z,2022-10-26T05:15:53Z
+1043,fix: properly parse cmake version,closed,,2022-10-25T11:05:07Z,2022-10-25T12:37:52Z
+1041,Fix missing dependency and add license files in Dockerfile,closed,,2022-10-25T08:35:57Z,2022-10-26T04:47:09Z
+1039,ci: make use of new command,closed,,2022-10-24T15:43:34Z,2022-10-25T02:47:19Z
+1038,Use a consistent way to get the current time,closed,,2022-10-24T13:09:18Z,2022-10-24T15:28:43Z
+1037,Support CLI options for kvrocks server,closed,,2022-10-24T10:11:50Z,2022-10-24T15:29:15Z
+1036,Add cpp unittest to x.py,closed,,2022-10-24T08:01:45Z,2022-10-24T15:31:46Z
+1035,Fix compiler warning in stats/db_stats,closed,,2022-10-24T07:54:03Z,2022-10-24T10:10:54Z
+1032,Add command parser,closed,,2022-10-23T15:20:49Z,2022-10-30T14:20:23Z
+1028,ci: improve cancel logics and task bunches,closed,,2022-10-23T04:07:23Z,2022-10-23T06:18:14Z
+1027,ci: tidy lint job,closed,,2022-10-23T02:40:22Z,2022-10-23T03:34:13Z
+1026,Support `config set backup-dir new-dir`,closed,,2022-10-22T06:44:23Z,2022-10-24T04:18:34Z
+1025,Use clang-tidy instead of cppcheck,closed,,2022-10-21T16:01:04Z,2022-10-23T01:32:25Z
+1023,Add mailing list to README,closed,,2022-10-21T10:22:46Z,2022-10-21T11:34:52Z
+1022,Implement the ZADD options,closed,,2022-10-21T09:59:38Z,2022-10-28T05:53:38Z
+1020,Fix don't duplicate killed clients which have already flagged kCloseAfterReply,closed,,2022-10-20T14:16:03Z,2022-10-21T03:14:11Z
+1017,Align the expire option behavior of redis,closed,,2022-10-20T12:08:28Z,2022-10-23T02:15:12Z
+1015,[DNM] trigger ci,closed,,2022-10-20T07:50:13Z,None
+1012,Move TCL test unit/tls to Go case,closed,,2022-10-19T10:44:58Z,2022-10-20T13:22:02Z
+1011,Use make_unique/make_shared from STL,closed,,2022-10-18T19:18:10Z,2022-10-19T01:53:07Z
+1009,Move TCL test unit/type/list to Go case,closed,,2022-10-18T07:43:48Z,2022-10-18T16:28:46Z
+1008,Move TCL test integration/slotmigrate to Go case,closed,,2022-10-18T03:58:39Z,2022-10-18T13:36:05Z
+1006,Update C++ standard to 17,closed,,2022-10-17T16:00:01Z,2022-10-18T03:30:36Z
+1005,test: migrate part of slotmigrate tests,closed,,2022-10-17T13:17:45Z,2022-10-18T01:46:10Z
+1004,test: migrate part of slotmigrate tests,closed,,2022-10-17T08:34:42Z,2022-10-17T09:49:09Z
+1003,test: finish migrating xtream tests ,closed,,2022-10-17T03:50:18Z,2022-10-17T05:26:48Z
+1002,test: migrate more xtream tests,closed,,2022-10-17T01:11:10Z,None
+1000,Increase the read/write timeout of tests in large value scenario,closed,,2022-10-16T11:33:59Z,2022-10-16T13:18:43Z
+998,Move TCL test unit/geo to Go case,closed,,2022-10-16T05:54:22Z,2022-10-17T00:01:35Z
+997,Move TCL test integration/replication to Go case,closed,,2022-10-15T13:11:53Z,2022-10-16T03:56:44Z
+994,Use warning instead of error for clang-format version mismatch in x.py,closed,,2022-10-14T16:11:40Z,2022-10-15T01:16:25Z
+993,Align georadius behavior of redis,closed,,2022-10-14T15:23:50Z,2022-10-14T17:23:36Z
+991,Change server redis version string,closed,,2022-10-14T15:06:25Z,None
+990,Move TCL test integration/cluster to Go case,closed,,2022-10-14T09:58:45Z,2022-10-15T01:12:52Z
+989,Refactor source file structure,closed,,2022-10-14T09:22:46Z,2022-10-17T00:00:17Z
+988,Move TCL test unit/type/zset to Go case,closed,,2022-10-14T06:34:30Z,2022-10-15T01:06:20Z
+987,test: migrate xadd options,closed,,2022-10-14T04:54:22Z,2022-10-14T06:36:27Z
+986,test: migrate xstream ids,closed,,2022-10-13T14:13:48Z,2022-10-13T23:45:33Z
+985,harden pubsub tests,closed,,2022-10-13T12:09:25Z,2022-10-13T13:24:49Z
+984,move xstream offset tests,closed,,2022-10-13T09:36:55Z,2022-10-13T11:52:05Z
+982,Move TCL test unit/pubsub to Go case ,closed,,2022-10-13T04:43:02Z,2022-10-13T08:15:51Z
+981,Replace constant macros to constexpr variables and enums in headers,closed,,2022-10-13T04:22:31Z,2022-10-13T12:23:12Z
+980,tidy test output,closed,,2022-10-12T14:32:40Z,2022-10-12T16:06:28Z
+979,Use clang-format instead of cpplint,closed,,2022-10-12T09:06:10Z,2022-10-13T02:44:02Z
+978,Move TCL test integration/redis-cli to Go case,closed,,2022-10-12T06:23:13Z,2022-10-12T09:37:12Z
+976,harden slow tests,closed,,2022-10-11T17:24:38Z,2022-10-12T01:59:26Z
+974,Remove useless parameter in `SlotMigrate::Loop`,closed,,2022-10-11T14:45:21Z,2022-10-12T01:59:52Z
+973,Add `UniqueFD` and `ScopeExit`,closed,,2022-10-11T14:20:41Z,2022-10-12T14:35:10Z
+972,Bump CMake minimum required version to 3.16,closed,,2022-10-10T13:31:46Z,2022-10-11T01:33:44Z
+971,Keep password case-sensitive in kvrocks2redis,closed,,2022-10-10T12:46:21Z,2022-10-11T05:14:17Z
+969,Fix server cannot exit properly when enabling cluster mode,closed,,2022-10-10T07:38:16Z,2022-10-11T05:11:59Z
+968,Update Github actions,closed,,2022-10-09T06:12:49Z,2022-10-09T07:07:11Z
+967,Add redis-benchmark to CI,closed,,2022-10-09T06:02:42Z,None
+966,Move TCL test integration/slotimport to Go case,closed,,2022-10-09T03:42:40Z,2022-10-09T14:49:02Z
+963,(WIP) Add parse util function(Waiting for parsing framework design),closed,,2022-10-08T14:28:22Z,None
+961,Implement the GETEX command,closed,,2022-10-08T11:37:37Z,2022-10-12T16:52:14Z
+959,Move TCL test integration/rsid_psync to Go case ,closed,,2022-10-08T03:48:33Z,2022-10-08T05:59:53Z
+958,Support save rdb,closed,,2022-10-07T13:07:48Z,None
+956,Move TCL test unit/introspection to Go case,closed,,2022-10-07T02:39:14Z,2022-10-07T08:51:44Z
+955,Move TCL test unit/expire to Go case ,closed,,2022-10-06T11:31:56Z,2022-10-07T14:29:29Z
+954,Move TCL test unit/multi to Go case,closed,,2022-10-06T09:50:01Z,2022-10-06T16:31:20Z
+953,feat: add mutil_path to conf,closed,,2022-10-05T12:54:33Z,None
+951,test: fix go cases package name,closed,,2022-10-04T03:20:50Z,2022-10-04T12:03:24Z
+944,Move TCL test unit/type/string to Go case ,closed,,2022-10-04T02:36:31Z,2022-10-11T10:09:57Z
+943,"Update to ubuntu 20.04, tcl 8.6 and cpplint 1.6.1 in GitHub Actions",closed,,2022-10-03T15:00:15Z,2022-10-05T10:25:40Z
+942,feat: save rdb,closed,,2022-10-03T12:34:14Z,None
+940,Update jemalloc to 5.3.0,closed,,2022-10-03T10:41:42Z,2022-10-03T23:25:55Z
+939,refactor: go cases with var flags,closed,,2022-10-03T05:32:09Z,2022-10-03T13:08:22Z
+938,Refactor var passing,closed,,2022-10-03T03:24:41Z,None
+937,test: tidy constants,closed,,2022-10-03T02:31:24Z,2022-10-03T04:18:50Z
+936,feat: add StatusOr#ValueOr,closed,,2022-09-30T16:09:57Z,2022-10-03T01:51:15Z
+935,Move TCL test unit/slowlog to Go case,closed,,2022-09-30T13:35:02Z,2022-10-04T02:54:44Z
+934,Move TCL test unit/scan to Go case ,closed,,2022-09-30T05:38:50Z,2022-09-30T11:08:14Z
+933,fix: ping return bulk string,closed,,2022-09-29T13:51:41Z,2022-10-04T02:57:50Z
+932,Add missing `return`s in redis_metadata.cc,closed,,2022-09-29T07:15:11Z,2022-09-29T18:49:06Z
+931,Fix missing return,closed,,2022-09-29T07:12:04Z,None
+930,Make the semantics of TYPE and SCAN commands consistent with Redis,closed,,2022-09-29T06:17:30Z,None
+925,Delete CODE_OF_CONDUCT.md,closed,,2022-09-27T11:33:44Z,2022-09-27T12:22:49Z
+924,"Use ParseInt to replace sto*, ato*",closed,,2022-09-27T07:24:48Z,2022-10-05T18:42:36Z
+923,Return from HRANGE if key wasn't found,closed,,2022-09-26T18:46:07Z,2022-09-27T01:41:15Z
+922,Fix uses the host as the port number in test case,closed,,2022-09-25T13:51:58Z,2022-09-27T04:55:16Z
+921,"Use ParseInt to replace stoul, stoull, atoi and stoi",closed,,2022-09-25T08:49:37Z,None
+920,Start redis server in go case,closed,,2022-09-25T07:35:28Z,None
+919,Fix many typos in cluster.cc,closed,,2022-09-25T03:12:43Z,2022-09-26T09:17:32Z
+917,Add the LuaJIT license to NOTICE,closed,,2022-09-24T15:12:31Z,2022-09-29T18:49:50Z
+916,Use lua instead of luaJIT by default,closed,,2022-09-24T11:40:56Z,2022-10-04T03:12:03Z
+914,Fix config set rocksdb.blob_garbage_collection_age_cutoff,closed,,2022-09-23T04:56:19Z,2022-09-23T05:46:36Z
+913,Customize prefix extractor for subkey,closed,,2022-09-23T03:13:36Z,None
+912,Fix sanitizer report checking in CI,closed,,2022-09-22T15:56:46Z,2022-09-23T00:36:26Z
+911,Disable the TLS by default,closed,,2022-09-22T15:23:31Z,2022-09-24T15:14:22Z
+909,Remove unnecessary ToString in Bitmap::IsEmptySegment,closed,,2022-09-22T12:23:30Z,2022-09-23T01:45:03Z
+906,Avoid using Get interface to obtain metadata when iterating data during migration,closed,,2022-09-22T07:18:58Z,2022-09-24T09:00:48Z
+903,Move TCL test unit/type/hash to Go case,closed,,2022-09-20T14:22:55Z,2022-09-27T15:31:07Z
+902,feat: impl FilterBlobByKey for SubKeyFilter,closed,,2022-09-20T12:17:58Z,2022-09-23T01:46:19Z
+901,Support EXAT/PEXAT option in the set command,closed,,2022-09-20T09:36:38Z,2022-09-28T05:24:04Z
+900,Move TCL test unit/scripting to Go case ,closed,,2022-09-20T05:39:27Z,2022-09-21T06:19:34Z
+899,test: harden quit_test and list_test,closed,,2022-09-20T02:55:28Z,2022-09-21T02:44:47Z
+898,Send SIGTERM after finishing the unit test,closed,,2022-09-20T01:55:03Z,2022-09-24T14:00:37Z
+897,Replace std::stol with ParseInt,closed,,2022-09-19T16:27:47Z,2022-09-25T08:04:28Z
+895,Support hrange command,closed,,2022-09-19T14:44:11Z,2022-09-20T16:14:13Z
+892,fix: f should be closed in gocase StartServer func,closed,,2022-09-19T13:41:00Z,2022-09-20T02:06:26Z
+888,refactor: quit test,closed,,2022-09-19T07:17:47Z,2022-09-19T09:25:11Z
+887,fix: Travis CI should report failure if commands fail,closed,,2022-09-18T10:36:55Z,2022-09-18T14:51:55Z
+885,feat: add rocksdb write_options to configuration,closed,,2022-09-18T08:43:31Z,2022-09-20T16:48:06Z
+883,delete unnecessary printf in test,closed,,2022-09-18T04:23:08Z,2022-09-18T05:05:13Z
+882,Support DISK Command,closed,,2022-09-17T11:28:18Z,2022-10-11T06:52:55Z
+881,Implement the command `hello`,closed,,2022-09-16T19:16:20Z,2022-09-18T10:39:24Z
+875,Move TCL test unit/type/bitmap to Go case,closed,,2022-09-14T14:26:46Z,2022-09-19T07:23:38Z
+871,Move TCL test unit/quit to Go case,closed,,2022-09-13T07:57:40Z,2022-09-19T06:37:35Z
+870,Replace bench with test,closed,,2022-09-13T02:48:23Z,2022-09-13T04:05:45Z
+869,disable retry for go-redis client,closed,,2022-09-12T23:43:24Z,2022-09-13T00:44:06Z
+866,Move TCL test unit/type/list to Go case,closed,,2022-09-12T09:23:24Z,None
+865,Move TCL test unit/config to Go case,closed,,2022-09-12T09:03:45Z,2022-09-12T11:58:55Z
+863,Add zstd to available compression algorithms,closed,,2022-09-12T07:53:13Z,2022-09-12T10:52:04Z
+858,Move TCL test unit/type/set to Go case,closed,,2022-09-11T08:37:43Z,2022-09-13T03:03:13Z
+854,Move TCL test unit/limits to Go case,closed,,2022-09-11T07:17:06Z,2022-09-11T12:12:17Z
+852,move to dedicated pacakge,closed,,2022-09-11T06:41:17Z,2022-09-11T07:16:48Z
+850,kvrocks docker can use environment variables define config,closed,,2022-09-11T03:33:46Z,None
+849,Support quoted string and inline comment in config,closed,,2022-09-11T02:53:25Z,2022-09-22T09:58:58Z
+846,Move tcl keyspace test cases to Go,closed,,2022-09-10T16:33:08Z,2022-09-11T04:04:00Z
+845,fix: georadius should return empty set if the key does not exist,closed,,2022-09-10T15:43:48Z,2022-09-11T03:42:58Z
+843,Report error if CMAKE_OSX_DEPLOYMENT_TARGET is not set on darwin,closed,,2022-09-09T16:43:45Z,2022-09-10T04:30:36Z
+840,Move TCL test unit/type/sint to Go case,closed,,2022-09-09T14:27:36Z,2022-09-09T15:38:25Z
+839,Fix successor commands won't be processed before receiving new read event,closed,,2022-09-08T15:29:17Z,2022-09-09T02:14:08Z
+838,chore: better help info for x.py check -h,closed,,2022-09-08T15:19:06Z,2022-09-08T17:22:16Z
+837,Move TCL test unit/type/incr to Go case,closed,,2022-09-08T14:25:23Z,2022-09-09T07:30:05Z
+835,Move TCL test unit/type/list-3 to Go case,closed,,2022-09-07T11:55:34Z,2022-09-11T17:05:08Z
+834,ci: add golangci_lint ,closed,,2022-09-07T11:54:54Z,2022-09-07T14:07:34Z
+833,Rewrite test unit/type/list-2 in Go,closed,,2022-09-06T19:46:39Z,2022-09-07T06:56:49Z
+832,Add go test to x.py and improve error in gocase,closed,,2022-09-06T17:46:42Z,2022-09-07T09:14:17Z
+830,refactor: unit/auth to gocase,closed,,2022-09-06T14:55:44Z,2022-09-06T16:29:21Z
+828,"Update dependency to latest version (lz4, libevent, gtest)",closed,,2022-09-06T12:28:57Z,2022-09-08T13:20:00Z
+827,Fix CMake policy CMP0135,closed,,2022-09-06T09:00:20Z,2022-09-06T16:28:43Z
+825,Add stream column family to compaction checker input,closed,,2022-09-05T09:49:11Z,2022-09-06T01:16:35Z
+810,refactor: unit/protocol to gocase,closed,,2022-09-04T03:51:08Z,2022-09-05T07:08:55Z
+809,"If unix socket is specified, don't listen default TCP if addr:port wasn't set",closed,,2022-09-03T18:17:06Z,2022-09-06T05:57:24Z
+808,Fix inline protocol can't parse LF only EOL,closed,,2022-09-03T03:56:28Z,2022-09-03T07:46:15Z
+806,refactor: write integration tests in Golang,closed,,2022-09-01T18:19:22Z,2022-09-03T17:29:01Z
+803,Fix CMake configuration error in snappy,closed,,2022-09-01T09:03:23Z,2022-09-01T10:36:52Z
+802,Fix transforming stream entry values to lowercase,closed,,2022-08-31T16:05:41Z,2022-09-01T04:16:02Z
+797,Add TLS support for kvrocks connections,closed,,2022-08-28T15:40:26Z,2022-09-11T08:06:47Z
+796,Show function name in backtrace,closed,,2022-08-28T15:29:24Z,2022-08-29T13:28:50Z
+793,Optimize get bitmap string and remove redundant num2bit array,closed,,2022-08-26T15:38:58Z,2022-08-31T03:37:19Z
+791,Use PutVarInt instead of PutFixed while encoding stream entry value,closed,,2022-08-24T20:41:22Z,2022-08-27T02:50:49Z
+790,Revert snappy from v1.1.9 to v1.1.7,closed,,2022-08-24T15:31:20Z,2022-08-25T11:42:14Z
+789,Replace `text` with `universal_newlines` to support python<3.7 in `x.py`,closed,,2022-08-23T18:29:26Z,2022-08-24T02:36:00Z
+787,Add newly designed `ParseInt`,closed,,2022-08-22T16:37:32Z,2022-08-27T14:29:16Z
+786,Add package `libstdc++-static` to prerequisite in README,closed,,2022-08-22T08:16:47Z,2022-08-22T14:25:17Z
+782,Add EVAL_RO,closed,,2022-08-20T15:33:11Z,2022-09-21T02:59:15Z
+781,replace new instead of std::make_unique or std::make_shared,closed,,2022-08-17T17:55:35Z,2022-08-21T16:13:03Z
+780,Replace backupable_db with backup_engine,closed,,2022-08-17T05:04:35Z,2022-08-17T05:36:09Z
+778,Add SMISMEMBER support,closed,,2022-08-14T15:54:44Z,2022-08-16T01:51:46Z
+775,"Fix some typos, and eliminate copy string in `List`",closed,,2022-08-11T15:47:19Z,2022-08-14T08:12:54Z
+773,Remove generic parameter for `Popen` in `x.py`,closed,,2022-08-06T14:21:00Z,2022-08-06T15:04:42Z
+772,Forbidden to add ns __namespace,closed,,2022-08-05T11:38:51Z,2022-08-07T15:44:05Z
+771,Add GETDEL command,closed,,2022-08-05T10:08:03Z,2022-08-07T15:45:07Z
+768,Add `StatusOr` for error handling in modern C++ style,closed,,2022-08-03T07:54:54Z,2022-08-16T14:37:06Z
+767,Replace atoi to Util::DecimalStringToNum,closed,,2022-08-03T03:10:35Z,2022-08-03T10:44:27Z
+765,Move runtest to x.py with customized server/cli path,closed,,2022-08-02T09:17:15Z,2022-08-03T07:39:57Z
+764,Add LTO/IPO compile support,closed,,2022-08-02T08:04:55Z,2022-11-20T12:38:38Z
+762,Fix incorrect rendered the release version in the commit message,closed,,2022-07-29T16:20:29Z,2022-07-30T00:23:51Z
+761,Fix starting server should wait for ready in tcl tests,closed,,2022-07-29T16:00:23Z,2022-07-30T04:47:15Z
+759,Propagate sanitizer flags to all cmake deps,closed,,2022-07-27T08:55:24Z,2022-07-31T07:16:09Z
+758,Statically link libgcc and libstdc++ while using Clang,closed,,2022-07-27T08:08:47Z,2022-07-28T04:35:05Z
+757,Bump luaJIT commit & cleanup scripting.cc,closed,,2022-07-27T07:40:36Z,2022-07-27T11:47:34Z
+754,Switch the default value of log-dir to,closed,,2022-07-25T16:21:17Z,2022-07-26T04:02:49Z
+752,Add fpm packaging to x.py,closed,,2022-07-24T08:13:56Z,2022-07-26T08:17:28Z
+751,Fix release workflow by changing action tags,closed,,2022-07-23T09:29:02Z,None
+750,Fix data race report with TSAN,closed,,2022-07-22T12:09:22Z,None
+748,Fix updating of nightly images in Travis CI,closed,,2022-07-22T08:33:19Z,2022-07-22T09:20:04Z
+747,Fix manifest creation of nightly tag in Travis CI,closed,,2022-07-22T06:51:19Z,2022-07-22T07:36:40Z
+746,Fix multiple arch nightly images by docker manifest in Travis CI,closed,,2022-07-22T03:26:01Z,2022-07-22T06:18:27Z
+745,Implement the data structure and partial commands of the Redis stream ,closed,,2022-07-21T21:12:58Z,2022-08-17T09:30:53Z
+744,Add the license notice for dependencies,closed,,2022-07-21T14:46:30Z,2022-07-23T03:13:50Z
+743,Fix occasionally failed in test/unit/expire.tcl,closed,,2022-07-21T13:42:26Z,2022-07-21T16:01:52Z
+741,Push nightly kvrocks images to Docker Hub in Travis CI,closed,,2022-07-21T09:33:13Z,2022-07-21T16:34:23Z
+740,Remove docs in repo and apply apache license header for some files,closed,,2022-07-20T13:32:48Z,2022-07-21T13:08:31Z
+739,Apply Apache License header for version.h.in,closed,,2022-07-20T13:21:27Z,None
+735,Release 2.1.0,closed,,2022-07-18T04:50:34Z,None
+734,Remove the changelog and will maintain it on our office website,closed,,2022-07-17T15:31:52Z,2022-07-18T13:49:41Z
+732,x.py: fix release tarball naming,closed,,2022-07-15T15:35:27Z,2022-07-15T16:54:55Z
+730,Make set command consistent with redis,closed,,2022-07-14T12:39:46Z,2022-07-15T11:42:50Z
+729,x.py: support source packaging,closed,,2022-07-14T10:08:14Z,2022-07-15T12:20:38Z
+725,replace shell scripts with x.py,closed,,2022-07-11T16:11:15Z,2022-07-12T14:43:36Z
+724,ci: build docker image with travis ci,closed,,2022-07-10T13:18:37Z,2022-07-11T06:20:43Z
+723,enhancement: use lock_guard to replace manual.,closed,,2022-07-09T13:10:53Z,2022-07-11T09:29:57Z
+722,Return values instead of passing pointers,closed,,2022-07-09T13:07:11Z,2022-07-10T13:08:41Z
+721,Update kvrocks.yaml,closed,,2022-07-08T13:44:52Z,2022-07-08T15:23:23Z
+716,"kvrocks.conf: deleted block resize command, added perflog ratio details",closed,,2022-07-05T13:32:05Z,2022-07-06T01:57:02Z
+714,Fix use after free  and some memory leaks which reported by ASan,closed,,2022-07-04T12:27:27Z,2022-07-20T07:56:10Z
+711,use unique_ptr in all `ut`,closed,,2022-07-03T16:09:26Z,2022-07-07T14:39:46Z
+709,Enhancement: not call GetCurrentTime when possible,closed,,2022-07-03T09:43:55Z,2022-07-05T07:58:34Z
+707,enhance: remove some `rocksdb::Slice::ToString()` calls when encoding or decoding the key,closed,,2022-07-03T09:11:29Z,2022-07-03T11:00:16Z
+705,Refactor Task: remove useless struct field,closed,,2022-07-03T03:38:51Z,2022-07-04T04:02:14Z
+704,use const & for avoiding copy,closed,,2022-07-02T15:49:00Z,2022-07-03T05:25:49Z
+703,Use unique ptr ,closed,,2022-07-01T12:31:10Z,2022-07-02T07:09:01Z
+701,Delete CONTRIBUTING,closed,,2022-07-01T02:18:37Z,2022-07-01T02:52:53Z
+700,Disable require branches to be up-to-date,closed,,2022-06-30T13:16:56Z,2022-06-30T15:06:25Z
+698,Check sanitizer status for TCL tests in CI,closed,,2022-06-30T05:43:56Z,2022-06-30T12:27:03Z
+697,✨ feat: luajit replace lua,closed,,2022-06-29T14:34:24Z,2022-07-20T11:43:13Z
+695,ci: separate daily ci and trigger daily ci only if labeled,closed,,2022-06-29T12:54:28Z,2022-06-30T01:38:13Z
+694,ci: add a label to trigger daily CI in PR,closed,,2022-06-29T10:24:51Z,None
+692,Forward C compiler to build deps in CMake,closed,,2022-06-29T08:39:20Z,2022-06-29T15:32:00Z
+690,Forward GitHub Discussions to dev mailing list,closed,,2022-06-29T03:20:14Z,2022-06-29T04:18:30Z
+689,ci: refactor CI yaml settings,closed,,2022-06-29T02:05:25Z,2022-06-29T07:40:50Z
+688,Fix some time dependencies in replication.tcl,closed,,2022-06-28T09:03:48Z,2022-06-28T12:44:26Z
+687,Fix loading status when getting keys replicas,closed,,2022-06-28T07:49:48Z,None
+686,Use lock guard for zremrangebylex command,closed,,2022-06-28T07:37:27Z,2022-06-28T13:13:04Z
+685,Support GitHub mirrors in CMake build configurations,closed,,2022-06-28T04:13:06Z,2022-06-28T15:35:34Z
+684,*: remove ptr of unique_ptr,closed,,2022-06-27T13:12:02Z,None
+683,Remove unique_ptr factory,closed,,2022-06-27T03:27:17Z,None
+682, enhance: use unique_ptr in SlotMigrate and FeedSlaveThread,closed,,2022-06-27T03:24:46Z,2022-06-28T14:06:08Z
+681,enhance: use unique_ptr in SlotMigrate and FeedSlaveThread ,closed,,2022-06-27T02:55:04Z,None
+680,enhance: use unique_ptr in FeedSlaveThread,closed,,2022-06-27T02:15:42Z,None
+679,chore: move cpp unit tests files to a dedicated folder,closed,,2022-06-27T00:39:49Z,2022-06-27T02:16:01Z
+678,use unique_ptr in parser,closed,,2022-06-26T16:05:54Z,2022-06-27T00:28:04Z
+675,minor: rm ptr of unique_ptr,closed,,2022-06-26T12:53:29Z,None
+674,minor: replace some char* with string,closed,,2022-06-26T03:02:39Z,None
+673,use unique_ptr in src/server.h,closed,,2022-06-25T16:55:05Z,2022-06-26T14:41:47Z
+672,enhance: use unique_ptr in Config,closed,,2022-06-25T15:45:01Z,2022-06-26T15:16:27Z
+671,enhance: use unique_ptr in Config,closed,,2022-06-25T13:56:20Z,None
+669,Fix typos in config file,closed,,2022-06-25T08:52:51Z,2022-06-25T14:12:39Z
+668,Fix get rocksdb ops tcl test case,closed,,2022-06-25T07:33:27Z,2022-06-26T12:50:54Z
+667,ci: Cancel previous workflows on the same ref,closed,,2022-06-25T03:55:51Z,2022-06-25T06:09:29Z
+666,Wait for migrating status finished to prevent test case failure,closed,,2022-06-25T03:55:22Z,2022-06-25T07:42:51Z
+661,Fix the role command can't be used when loading data,closed,,2022-06-24T15:12:00Z,2022-06-25T02:41:04Z
+660,fix: replication tests should wait for server restarted,closed,,2022-06-24T11:52:01Z,2022-06-25T04:59:32Z
+659,Update badges,closed,,2022-06-24T09:38:53Z,2022-06-24T10:20:08Z
+654,Fix lz4 in CMake: support ninja & add Findlz4.cmake,closed,,2022-06-23T13:40:38Z,2022-06-24T02:15:36Z
+653,Fix compile warnings in kvrocks,closed,,2022-06-23T09:51:07Z,2022-06-24T03:59:51Z
+652,Fix Wrongly parsed the RESP empty/null array,closed,,2022-06-23T09:46:27Z,2022-06-24T10:52:25Z
+651,add __builtin_unreachable to raiseError to make compiler happy,closed,,2022-06-22T15:44:59Z,2022-06-23T02:45:53Z
+650,Add a unique_ptr wrapper for rocksdb::Iterator,closed,,2022-06-22T15:06:30Z,2022-06-24T03:35:15Z
+649,Set CMAKE_EXPORT_COMPILE_COMMANDS to ON as a default behavior,closed,,2022-06-22T14:58:15Z,2022-06-23T23:55:32Z
+648,minior: polish readme doc,closed,,2022-06-22T14:41:17Z,2022-06-23T02:26:01Z
+646,Fix unmatched iterator in `Cluster::SetClusterNodes`,closed,,2022-06-21T17:33:33Z,2022-06-22T13:27:48Z
+645,Add some RAII type for evbuffer to avoid manual free,closed,,2022-06-21T14:51:58Z,2022-06-26T01:26:50Z
+644,Refactor Trim/Split/Split2KV functions in util.h,closed,,2022-06-21T08:40:58Z,2022-06-22T11:50:42Z
+643,Optimize happy path for constructing Status,closed,,2022-06-21T06:31:46Z,2022-06-21T09:29:13Z
+642,Fix load namespaces from the config file would ignore case-sensitive,closed,,2022-06-20T07:37:55Z,2022-06-20T13:08:52Z
+641,fix:invalid typo,closed,,2022-06-20T07:33:20Z,None
+638,bump .asf.yaml,closed,,2022-06-17T09:39:14Z,2022-06-17T10:09:35Z
+636,Add `required` job in kvrocks CI for `required_status_checks` configuration,closed,,2022-06-17T06:30:26Z,2022-06-17T07:56:26Z
+635,Refactor kvrocks CI (triggered by push & PR) configuration using matrix,closed,,2022-06-16T16:14:08Z,2022-06-18T05:42:21Z
+634,typo: fix typo in README,closed,,2022-06-16T14:24:31Z,2022-06-17T09:10:48Z
+632,Ignore `build` directory in .gitignore to avoid committing unused build files,closed,,2022-06-14T10:26:31Z,2022-06-14T11:14:29Z
+630,Refactor daily CI configuration using matrix,closed,,2022-06-14T06:13:10Z,2022-06-19T05:53:49Z
+628,Fix RocksDB can't auto resume after disk quota exceeded error,closed,,2022-06-09T11:21:21Z,2022-06-10T07:46:55Z
+626,CMake: support ninja as a build backend,closed,,2022-06-08T15:27:42Z,2022-06-10T07:09:31Z
+620,Fix don't swallow the error when creating column families failed,closed,,2022-06-04T07:09:54Z,2022-06-06T11:03:05Z
+619,Add notification settings to .asf.yaml,closed,,2022-06-04T01:36:50Z,2022-06-04T02:13:18Z
+618,Build static lib of glog in CMake,closed,,2022-06-03T08:04:09Z,2022-06-04T02:55:46Z
+617,Fix didn't build the unittest target in the daily CI,closed,,2022-06-02T13:31:03Z,2022-06-02T13:50:13Z
+614,Compile lua by C++ compilers to avoid memory leaks,closed,,2022-05-31T12:48:30Z,2022-06-01T04:45:38Z
+613,Allow to send logs to stdout/stderr,closed,,2022-05-29T04:15:11Z,2022-05-29T11:07:17Z
+611,Update blob_file_size unit MiB to bytes.,closed,,2022-05-28T11:26:04Z,2022-05-31T03:29:35Z
+610,Update max_bytes_for_level_base unit to bytes and remove unuseful error checker.,closed,,2022-05-28T11:20:43Z,2022-06-02T04:35:29Z
+608,"improve build.sh: add option processing to forward CMake options, job nums and unittest build switch",closed,,2022-05-26T06:34:19Z,2022-05-27T08:38:51Z
+606,Fix the slave may crash when restoring the db,closed,,2022-05-24T11:45:54Z,2022-05-25T08:10:41Z
+605,unittests: fix leaks reported by ASan,closed,,2022-05-24T06:56:01Z,2022-05-24T07:57:04Z
+599,Improve using of ASan and TSan in CMake build,closed,,2022-05-20T05:40:06Z,2022-06-02T08:20:33Z
+596,Claim Kvrocks is under the apache incubating state in README,closed,,2022-05-19T14:03:43Z,2022-05-19T14:40:04Z
+594,Add optional parameter to LPOP/RPOP to pop more than 1 element,closed,,2022-05-19T11:05:51Z,2022-05-25T09:48:38Z
+593,Improve `version.h.in` processing in CMake,closed,,2022-05-19T06:42:07Z,2022-05-19T11:03:44Z
+592,Search library first before linking `libstdc++.a` in CMake,closed,,2022-05-19T06:28:03Z,2022-05-19T12:31:48Z
+588,Fix release CI: use build.sh & use fresh directory & remove useless deps,closed,,2022-05-18T13:52:04Z,2022-05-19T03:11:29Z
+586,Refactor CMakeLists: introduce target `kvrocks_objs` to avoid redundance,closed,,2022-05-17T12:06:24Z,2022-05-18T08:24:50Z
+584,Support to use lz4 compression in RocksDB,closed,,2022-05-17T02:31:08Z,2022-06-23T11:19:20Z
+583,Disable the OPENSSL when building the newer version cmake,closed,,2022-05-16T13:48:27Z,2022-05-16T17:46:01Z
+579,Fix errors in daily CI,closed,,2022-05-14T04:59:17Z,2022-05-14T05:27:49Z
+578,Remove unused and misleading variable kDefaultConfPath,closed,,2022-05-13T09:42:24Z,2022-05-13T10:19:00Z
+577,Add LMove command,closed,,2022-05-13T09:28:41Z,2022-05-19T06:04:57Z
+576,Remove handwritten makefiles to keep only one build system,closed,,2022-05-12T18:01:42Z,2022-05-13T10:59:26Z
+573,Remove redundant debugging information,closed,,2022-05-11T16:05:31Z,2022-05-12T02:47:49Z
+571,Fix make uninstall file deletion path,closed,,2022-05-11T15:02:43Z,None
+568,Adopt issue template configs,closed,,2022-05-10T02:40:42Z,2022-05-10T08:01:26Z
+567,Add maillist to README.,closed,,2022-05-09T14:11:05Z,None
+566,CI also check the build with CMake status on ubuntu,closed,,2022-05-09T13:10:23Z,2022-05-10T09:00:28Z
+564,Use FetchContent instead of ExternalProject and git submodules in CMake,closed,,2022-05-09T09:10:09Z,2022-05-11T12:54:27Z
+558,Add DISCLAIMER file,closed,,2022-05-08T13:52:47Z,2022-05-09T14:04:25Z
+557,Fix can't find jemalloc when building with makefile on MacOSX,closed,,2022-05-08T13:37:54Z,2022-05-09T02:01:38Z
+555,Upgrade the rocksdb version to 6.29.5(latest version for 6.x),closed,,2022-05-08T12:13:46Z,2022-05-09T01:59:32Z
+554,Support to listen on ipv6 address,closed,,2022-05-08T11:03:50Z,2022-05-14T03:27:39Z
+553,Missing googletest dependency for Ubuntu/Debian,closed,,2022-05-07T10:42:21Z,2022-05-08T03:48:56Z
+551,Update repository link to Apache Incubator repo.,closed,,2022-05-06T04:23:14Z,2022-05-06T06:42:51Z
+550,Refactoring Dockerfile,closed,,2022-05-03T10:44:43Z,2022-05-07T09:42:19Z
+548,Apply Apache License header for Tcl files,closed,,2022-04-29T15:36:10Z,2022-04-30T07:20:45Z
+546,Add use case CIRCL.lu,closed,,2022-04-29T08:09:35Z,2022-04-30T07:23:23Z
+545,Add .asf.yaml file,closed,,2022-04-29T03:34:12Z,2022-04-29T07:44:57Z
+543,Apply Apache License header for source code ,closed,,2022-04-29T02:21:33Z,2022-04-29T03:13:30Z
+540,Disable macOS leak check,closed,,2022-04-22T12:39:01Z,2022-04-22T14:05:24Z
+539,Stop sending files if failed in full synchronization,closed,,2022-04-22T09:03:36Z,2022-04-22T11:20:24Z
+538,PSYNC based on Unique Replication Sequence ID,closed,,2022-04-22T07:24:25Z,2022-05-24T02:53:47Z
+533,Change license to Apache 2.0,closed,,2022-04-07T01:24:54Z,2022-04-07T02:46:50Z
+531,Add support for listening to unix socket,closed,,2022-03-30T13:44:53Z,2022-05-07T06:48:28Z
+529,Support slot batch operation for CLUSTERX SETSLOT,closed,,2022-03-24T06:10:19Z,None
+527,Fix tcl cases go wrong on Ubuntu,closed,,2022-03-23T06:29:38Z,2022-03-23T12:05:25Z
+526,Update Kvrocks introduction,closed,,2022-03-23T03:31:57Z,2022-03-23T04:20:03Z
+525,Support logging to stderr,closed,,2022-03-22T15:34:44Z,None
+524,Add cluster introduction in README,closed,,2022-03-22T13:38:37Z,2022-03-23T01:47:16Z
+523,Optimize expiration to make sure eventual consistency between replicas,closed,,2022-03-18T09:04:58Z,None
+520,Fix slave can't resync with master after password change,closed,,2022-03-13T10:08:45Z,2022-03-14T00:47:36Z
+518,Fix rocksdb cmake depends should use list instead of string,closed,,2022-03-11T16:19:47Z,2022-03-12T14:33:20Z
+517,Support unlink command,closed,,2022-03-10T16:07:37Z,2022-03-11T03:10:34Z
+515,fix: return bulk string (instead of array) when spop without count.,closed,,2022-03-08T10:04:22Z,2022-03-08T11:52:27Z
+514,Support auth before migrating slot,closed,,2022-03-06T15:19:47Z,2022-03-09T13:17:57Z
+508,Enable prefix bloom filter,closed,,2022-03-02T12:51:46Z,None
+507,Avoid requirepass and masterauth conflicts with the namespace tokens,closed,,2022-03-01T13:22:51Z,2022-03-24T14:50:09Z
+506,Fix wrong replication state,closed,,2022-02-28T07:39:00Z,2022-03-01T02:02:14Z
+505,Fix wrong replication state,closed,,2022-02-28T07:28:13Z,None
+503,Fix blob file size unit error and set default value to 256 MB,closed,,2022-02-25T12:48:31Z,2022-03-07T03:41:01Z
+502,Add lz4 and zstd compression algorithms options support.,closed,,2022-02-25T12:35:22Z,None
+501,Fix missing import some files in the unittest target,closed,,2022-02-25T11:31:47Z,2022-02-28T05:28:04Z
+500,Fix missing import some files in the unittest target ,closed,,2022-02-25T11:29:53Z,None
+499,Add more compression algorithum support.,closed,,2022-02-25T09:45:08Z,None
+498,Avoid flush all redis db in kvrocks2redis,closed,,2022-02-25T03:24:07Z,2022-02-28T01:35:14Z
+497,Add dynamically adjust the upper limit of the data that each layer configure option.,closed,,2022-02-24T14:02:44Z,2022-03-06T10:38:49Z
+496,fix set thread name fail with string more than 16 byte.,closed,,2022-02-23T07:51:23Z,2022-02-23T11:39:32Z
+495,fix set thread name fail with string more than 16 byte.,closed,,2022-02-23T02:51:58Z,None
+493,Fix the broken rpm endpoint in release ci,closed,,2022-02-22T11:17:43Z,2022-02-22T16:30:46Z
+479,Fix use connection after free,closed,,2022-02-12T09:53:09Z,2022-02-13T12:37:30Z
+473,Add cluster support in README,closed,,2022-02-09T05:46:13Z,2022-02-09T06:02:59Z
+472,Avoid accessing slot_migrate_ before it is created,closed,,2022-02-07T11:55:10Z,2022-02-18T08:17:46Z
+471,Support BITOP command,closed,,2022-01-31T03:08:30Z,2022-03-18T05:21:06Z
+470,Fix jemalloc.cmake must be before the rocksdb.cmake,closed,,2022-01-28T05:03:27Z,2022-01-28T05:31:13Z
+469,Fix included non-exists header file,closed,,2022-01-28T04:18:02Z,2022-01-28T04:46:02Z
+468,Release 2.0.6,closed,,2022-01-27T13:31:49Z,2022-01-28T06:10:07Z
+467,"Revert ""Fix the misuse of multi-get API""",closed,,2022-01-25T07:45:44Z,None
+465,Fix the bitmap range is smaller than that of Redis,closed,,2022-01-19T12:35:30Z,2022-01-23T05:41:51Z
+464,Remove the pr labelled condition and add macos test,closed,,2022-01-19T05:18:48Z,2022-01-19T06:07:56Z
+463,Support CLUSTERX SETSLOT command,closed,,2022-01-19T04:58:21Z,2022-01-21T11:05:54Z
+461,Fix memory leak when full replication,closed,,2022-01-18T09:07:08Z,2022-01-18T10:54:43Z
+460,Fix a cmake string subcommand error.,closed,,2022-01-17T01:12:52Z,2022-01-17T02:54:18Z
+459,Add code of conduct,closed,,2022-01-15T10:31:36Z,2022-01-15T13:18:25Z
+458,Remove duplicated codes.,closed,,2022-01-14T14:42:28Z,2022-01-14T15:42:06Z
+455,Make level0_file_num_compaction_trigger of RocksDB configurable,closed,,2022-01-13T10:28:42Z,2022-01-13T12:33:35Z
+452,Add tcl tests about redis-cli,closed,,2022-01-12T15:06:14Z,2022-01-14T08:48:32Z
+450,Support to compile on macOS 11,closed,,2022-01-10T11:18:44Z,2022-01-19T04:42:23Z
+447,Support GET command on bitmap type,closed,,2022-01-09T05:01:09Z,2022-01-12T08:45:40Z
+446,Fix failing full replication when enabling slave-empty-db-before-fullsync,closed,,2022-01-07T08:39:41Z,2022-01-10T07:48:55Z
+445,Update grammar in metadata design doc,closed,,2022-01-06T15:25:06Z,2022-01-07T04:22:11Z
+444,Support flushall/flushdb option,closed,,2022-01-06T06:52:26Z,None
+443,Ignore the dirty submodule,closed,,2022-01-03T13:36:31Z,2022-01-04T03:06:18Z
+442,Fix the misuse of multi-get API,closed,,2021-12-31T15:30:57Z,2022-01-04T03:07:02Z
+441,Fix occassionally failure in tcl test case,closed,,2021-12-31T04:50:54Z,2021-12-31T05:10:15Z
+440,Fix data race in `SetCurrentConnection`,closed,,2021-12-30T16:58:27Z,2021-12-31T06:10:23Z
+438,Optimize the seek of RocksDB iterators,closed,,2021-12-29T13:52:26Z,2021-12-30T09:56:19Z
+436,Allow to  disable jemalloc when compiling,closed,,2021-12-26T11:16:05Z,2022-01-10T07:01:10Z
+435,Export more informations to the command INFO output,closed,,2021-12-26T08:48:33Z,2021-12-27T02:18:09Z
+434,Fix zrevrangebyscore for multi members with the same max score,closed,,2021-12-24T12:30:33Z,2021-12-29T08:21:02Z
+431,Support to convert sortedint type to zset type in kvrocks2redis,closed,,2021-12-17T05:37:31Z,2021-12-22T01:23:51Z
+430,Support slot-based data migration,closed,,2021-12-17T03:14:06Z,2022-01-27T12:24:48Z
+429,Fix config rewrite overwrite the first rename-command with the last one,closed,,2021-12-16T16:30:20Z,2021-12-16T23:57:12Z
+427,fix:parseComplexKV with unknown metadatatype:7,closed,,2021-12-16T00:45:25Z,None
+425,Fix the parameter `blob_garbage_collection_age_cutoff` would be always zero,closed,,2021-12-14T04:43:34Z,2021-12-14T05:02:57Z
+423,Auto Rewrite the config after the namespace was updated,closed,,2021-12-11T08:30:04Z,2021-12-16T11:27:09Z
+420,Fix missing RUN keyword in dockerfile which cause the release CI failure,closed,,2021-12-09T04:44:19Z,2021-12-09T04:47:49Z
+419,Release 2.0.5,closed,,2021-12-07T01:41:59Z,2021-12-07T02:14:18Z
+418,Adjust the max open file limit according to the max clients and rocksdb max open files,closed,,2021-12-06T13:34:06Z,2021-12-07T01:01:04Z
+415,Implement CAS and CAD commands for string type,closed,,2021-12-03T07:02:47Z,2021-12-03T12:35:45Z
+411,Add the U-NEXT logo to who uses kvrocks,closed,,2021-12-01T06:27:02Z,2021-12-01T06:32:13Z
+410,Add the U-NEXT logo to who uses kvrocks,closed,,2021-12-01T06:05:14Z,None
+408,"Add ExHash type, support field expire",closed,,2021-12-01T02:51:45Z,None
+407,Support to use row cache of RocksDB,closed,,2021-11-30T09:17:08Z,2021-12-07T01:14:00Z
+404,Make kvrocks2redis work,closed,,2021-11-25T08:15:21Z,2021-12-03T12:47:48Z
+401,Fix info command extra colon in info RocksDB section,closed,,2021-11-21T15:40:42Z,2021-11-22T00:44:31Z
+396,Add write stall stats to info command output,closed,,2021-11-19T01:22:21Z,2021-11-19T09:33:31Z
+395,Add some rocksdb new feature,closed,,2021-11-17T11:44:49Z,2021-11-21T02:32:57Z
+394,增加雪球（北京）信息技术有限公司logo,closed,,2021-11-17T10:12:47Z,None
+393,增加雪球（北京）信息技术有限公司logo,closed,,2021-11-17T10:11:13Z,2021-11-17T10:25:11Z
+392,Allow to volume the local data dir into the docker instance,closed,,2021-11-13T15:04:34Z,2021-11-14T03:05:51Z
+391,Add the maxclients to the info command output,closed,,2021-11-12T15:45:03Z,2021-11-14T02:44:33Z
+390,Move some docs to wiki and update the links,closed,,2021-11-12T15:32:07Z,2021-11-14T03:05:14Z
+387,Add rocksdb ops statistics in info cmd,closed,,2021-11-04T09:09:48Z,2021-11-11T10:26:24Z
+386,Add the 北京软告科技股份有限公司 logo to who uses kvrocks,closed,,2021-11-03T15:27:23Z,2021-11-03T15:31:25Z
+385,Add the 北京软告科技股份有限公司 logo to who uses kvrocks,closed,,2021-11-03T14:32:17Z,None
+383,Add the 佳投互联网集团 company logo to who uses kvrocks,closed,,2021-11-03T06:49:22Z,2021-11-03T09:35:45Z
+382,Release 2.0.4,closed,,2021-11-02T08:00:05Z,2021-11-02T09:46:51Z
+381,Implement zrevrangebylex command,closed,,2021-11-01T13:50:04Z,2021-11-03T14:32:18Z
+379,Add the redis.log function in Lua script,closed,,2021-10-30T13:26:32Z,2021-11-01T11:59:33Z
+378,Improve the description of Perflog in default config file,closed,,2021-10-22T01:22:47Z,2021-10-22T09:54:00Z
+377,Remove unused configuration item `repl-workers`,closed,,2021-10-20T15:45:21Z,2021-10-21T04:17:20Z
+375,Support executing INFO command during restoring database,closed,,2021-10-19T09:03:27Z,2022-01-07T05:18:40Z
+374,Add master_repl_offset in INFO command output,closed,,2021-10-19T08:58:44Z,2021-10-20T02:39:49Z
+373,Set rocksdb.share_metadata_and_subkey_block_cache to yes by default,closed,,2021-10-17T14:59:01Z,2021-10-17T15:29:42Z
+371,Fix the lua reply string should be the bulk string,closed,,2021-10-15T14:50:26Z,2021-10-15T15:57:23Z
+369,Implement the evalsha and script command,closed,,2021-10-11T12:42:50Z,2021-10-19T03:22:01Z
+368,Fixed dynamic resize target_file_size_base bug,closed,,2021-10-09T02:22:26Z,2021-10-09T03:55:55Z
+365,Metadata and subkey column family share a singleblock cache,closed,,2021-09-23T14:43:56Z,2021-09-25T03:44:22Z
+363,Support the lua scripts on kvrocks,closed,,2021-09-16T01:51:57Z,2021-10-09T04:07:39Z
+362,Release 2.0.3,closed,,2021-09-10T11:37:41Z,2021-09-13T00:42:54Z
+361,Make client subcommands not case sensitive,closed,,2021-09-10T09:09:57Z,2021-09-10T09:32:36Z
+360,Fix wrong master port if enabling master-use-repl-port,closed,,2021-09-10T08:36:48Z,2021-09-10T09:10:57Z
+357,Update kvrocks.conf,closed,,2021-09-03T07:53:24Z,2021-09-03T09:48:43Z
+356,Auto set master/slave replication by cluster topology,closed,,2021-08-25T05:05:42Z,2021-08-27T07:11:49Z
+352,Support client kill type subcommands,closed,,2021-08-10T14:45:58Z,2021-08-11T06:22:32Z
+351,Copyright changed from kvrocks labs to kvrocks contributors,closed,,2021-07-31T08:56:25Z,2021-07-31T10:19:00Z
+347,Fix master pauses synchronizing with replicas,closed,,2021-07-30T07:22:38Z,2021-07-31T09:05:54Z
+344,Fix the slave won't reconnect when failing to connect with master,closed,,2021-07-25T12:05:42Z,2021-07-25T14:18:54Z
+343,Upgrade version of cpplint to calibrate the code-style of kvrocks.,closed,,2021-07-24T09:57:28Z,None
+340,[Code-style]Fix cpplint checking errors and code warnings.,closed,,2021-07-24T07:15:47Z,None
+338,Avoid useless space allocation in SetBit,closed,,2021-07-22T10:45:57Z,2021-07-23T05:19:14Z
+337,Fix SETNX and MSETNX commands can't guarantee atomicity,closed,,2021-07-21T08:25:29Z,2021-07-21T09:32:09Z
+336,Fix:SUBSCRIBE can't update last interaction time (backport #335),closed,,2021-07-20T10:35:21Z,2021-07-20T10:50:41Z
+335,Fix:SUBSCRIBE can't update last interaction time,closed,,2021-07-20T09:25:43Z,2021-07-20T10:16:26Z
+334,Supplements of guideline of compilation on macOS with make and clean up some code,closed,,2021-07-18T09:40:04Z,2021-07-20T03:37:36Z
+333,Only link the library when it's existed,closed,,2021-07-18T05:58:09Z,2021-07-18T07:48:01Z
+331,Use the rocksdb MultiGet in the MGet command,closed,,2021-07-17T08:22:08Z,2021-07-18T13:34:41Z
+330,Remove exposing slot-id-encoded config,closed,,2021-07-15T11:54:38Z,2021-07-16T02:27:49Z
+328,Release 2.0.2,closed,,2021-07-15T06:29:39Z,2021-07-19T01:19:40Z
+327,Update and add some docs,closed,,2021-07-11T09:51:25Z,None
+326,Add 'network request process' doc and 'slot-based data migrate' doc,closed,,2021-07-11T01:59:49Z,None
+324,Use CLUSTERX command to set cluster topology,closed,,2021-07-09T08:25:40Z,2021-07-14T13:00:08Z
+323,Set slot-id-encoded to no by default for compatibility,closed,,2021-07-09T07:24:13Z,2021-07-09T10:07:56Z
+321,Fix unable to link the libunwind in old version debian(<4.9),closed,,2021-06-29T02:01:10Z,2021-06-29T10:02:46Z
+316,Adapt redis sentinel ping check,closed,,2021-06-22T13:35:06Z,2021-06-23T04:09:28Z
+314,"Fix LTRIM only delete first item, LREM cannot correctly remove repeated items",closed,,2021-06-18T11:32:50Z,2021-07-01T12:25:51Z
+313,Add wechat official account picture,closed,,2021-06-18T10:57:41Z,2021-06-18T13:50:14Z
+311,Add supported cluster subcommands,closed,,2021-06-16T14:23:28Z,2021-06-16T14:47:28Z
+310,Make CONFIG SET command thread safe,closed,,2021-06-16T14:10:14Z,2021-06-16T14:46:58Z
+309,Support ARM macOS,closed,,2021-06-16T09:59:34Z,None
+308,Transfer kvrocks from bitleak to kvrockslabs,closed,,2021-06-15T12:14:02Z,2021-06-16T03:15:59Z
+307,Replace bitleak with kvrockslabs in README,closed,,2021-06-15T11:28:48Z,None
+306,Transfer the kvrocks to the new group 'KvrocksLabs',closed,,2021-06-15T10:58:31Z,2021-06-15T11:13:51Z
+304, Remove the default value of is_slotid_encoded,closed,,2021-06-10T14:47:44Z,2021-06-11T08:37:22Z
+303,Fix calculate the metadata key deletion ratio without counting subkeys,closed,,2021-06-10T12:42:56Z,None
+302,Support cluster mode,closed,,2021-06-08T07:42:00Z,2021-06-16T13:00:39Z
+301,Allow to use host in the master-slave replication,closed,,2021-06-07T12:34:24Z,2021-06-08T05:54:45Z
+300,Add source code overview doc,closed,,2021-06-07T06:36:47Z,2021-06-08T14:51:04Z
+299,Allow to use the hostname in the replication,closed,,2021-06-06T15:37:58Z,None
+298,Fix zset can't add the same member with different scores,closed,,2021-06-05T16:46:23Z,2021-06-07T11:45:24Z
+296,"Fix testcases ""PUBLISH/SUBSCRIBE after PUNSUBSCRIBE/UNSUBSCRIBE without arguments""",closed,,2021-06-03T07:40:10Z,2021-06-03T10:23:04Z
+295,Support the auto-resize-block-and-sst config directive (backport #289),closed,,2021-06-03T06:37:30Z,2021-06-03T07:24:25Z
+294,Auto resize rocksdb.block_size in autoResizeBlockAndSST,closed,,2021-06-03T05:39:35Z,2021-06-03T06:36:05Z
+291,Encode key with slot id,closed,,2021-06-02T13:59:08Z,2021-06-08T06:13:22Z
+290,Add the COMMAND  command in support-commands list,closed,,2021-06-02T10:38:38Z,2021-06-02T14:38:30Z
+289,Support the auto-resize-block-and-sst config directive,closed,,2021-06-02T09:08:12Z,2021-06-02T14:25:25Z
+288,Add the Baidu logo the the user list,closed,,2021-06-02T08:52:57Z,2021-06-02T12:06:59Z
+285,Support transaction,closed,,2021-06-01T13:45:48Z,2021-06-03T13:52:41Z
+284,Set TCP_KEEPALIVE for replication connection,closed,,2021-06-01T06:56:46Z,2021-06-01T10:15:13Z
+282,Improve robustness for replication tests,closed,,2021-05-28T11:31:24Z,2021-05-29T04:00:24Z
+281,Refactor workers concurrency,closed,,2021-05-28T09:43:32Z,2021-06-01T05:59:56Z
+280,Remove kvrocksrestore tool,closed,,2021-05-28T07:59:23Z,2021-05-28T09:46:59Z
+279,Refactor command write attribute,closed,,2021-05-27T08:11:44Z,2021-05-27T12:05:49Z
+278,Refactor db mutex,closed,,2021-05-26T13:39:25Z,2021-05-28T07:01:24Z
+277,Rename backup_env_ to env_,closed,,2021-05-26T09:35:30Z,2021-05-26T10:33:31Z
+276,Optimize server.db_mu_,closed,,2021-05-26T06:58:24Z,2021-05-26T08:23:56Z
+274,HSET supports to set multiple fields,closed,,2021-05-24T08:42:22Z,2021-05-25T03:35:17Z
+272,Add rename-command config,closed,,2021-05-20T07:50:30Z,2021-05-26T08:39:10Z
+271,Allow to use the dynamic libraries to make the building faster,closed,,2021-05-19T12:38:49Z,None
+270,add semi sync function for kvrocks,closed,,2021-05-19T09:25:35Z,None
+269,Fix release Linux packages didn't auto-upload to the release log,closed,,2021-05-19T06:25:04Z,2021-05-19T09:21:29Z
+268,Release 2.0.1,closed,,2021-05-18T08:29:54Z,2021-05-18T10:40:06Z
+267,Release 1.3.3,closed,,2021-05-18T06:58:57Z,2021-05-18T10:32:37Z
+266,Fix uninitialized compiling warnings with localtime_r (backport #261),closed,,2021-05-18T06:46:29Z,2021-05-18T06:53:08Z
+265,Upgrade the jemalloc version to the special commit,closed,,2021-05-17T12:12:22Z,2021-05-18T02:50:56Z
+264,Allow to run the kvrocks without assigning the config file,closed,,2021-05-17T12:03:27Z,2021-05-18T02:50:43Z
+263,Support macOS CI,closed,,2021-05-14T13:43:08Z,2021-05-18T04:59:54Z
+262,Build multiple operation system artifacts when releasing the new tag,closed,,2021-05-14T10:42:00Z,2021-05-17T03:20:16Z
+261,Fix uninitialized compiling warnings with localtime_r,closed,,2021-05-14T10:17:38Z,2021-05-14T10:46:05Z
+260,Fix skipping wrong CURRENT file when full synchronization,closed,,2021-05-12T12:01:55Z,2021-05-12T12:57:13Z
+259,Fix condition race for ReclaimOldDBPtr (backport #246),closed,,2021-05-12T06:55:30Z,2021-05-12T06:56:16Z
+258,Fix data race for accessing database in some commands (backport #253),closed,,2021-05-10T05:01:25Z,2021-05-10T05:03:03Z
+256,Fix data race in spop command since the lock guard didn't work,closed,,2021-05-08T12:19:18Z,None
+255,Fix returning wrong string range in getrange command (backport #254),closed,,2021-05-08T11:00:12Z,2021-05-08T11:02:48Z
+254,Fix returning wrong string range in getrange command,closed,,2021-05-08T10:26:41Z,2021-05-08T10:58:14Z
+253,Fix data race for accessing database in some commands,closed,,2021-05-08T10:22:22Z,2021-05-10T04:26:03Z
+252,Improvement: move command attributes together,closed,,2021-05-07T13:24:28Z,2021-05-08T10:55:00Z
+251,Support COMMAND command,closed,,2021-05-07T09:40:47Z,2021-05-10T09:20:11Z
+250,Move command attributes into redisCommand,closed,,2021-05-07T04:49:39Z,None
+248,Refactor the Redis command table to support attributes,closed,,2021-05-06T11:04:27Z,2021-05-06T13:20:26Z
+247,Use reference to avoid creating a copy in for loop,closed,,2021-05-06T11:00:25Z,2021-05-06T11:50:02Z
+246,Fix condition race for ReclaimOldDBPtr,closed,,2021-05-05T13:22:28Z,2021-05-07T09:15:46Z
+245,Add config purge-backup-on-fullsync,closed,,2021-05-03T14:23:28Z,2021-05-06T03:37:36Z
+244,Fix illegal instruction error in ubuntu docker image,closed,,2021-05-03T13:54:43Z,2021-05-03T14:13:12Z
+243,Refactor master handling psync requests,closed,,2021-05-03T10:33:25Z,2021-05-03T14:22:35Z
+241,Fix slave can't execute publish command (backport #238),closed,,2021-04-30T14:04:00Z,2021-04-30T14:23:35Z
+240,Fix slave can't execute publish command (backport #238),closed,,2021-04-30T14:02:36Z,2021-04-30T14:04:03Z
+239,Avoid copy constructor for request commands,closed,,2021-04-30T11:20:28Z,2021-04-30T15:11:17Z
+238,Fix slave can't execute publish command,closed,,2021-04-30T09:25:48Z,2021-04-30T14:00:15Z
+237,Fix uninitialized Rocksdb.level0_stop_writes_trigger (backport #236),closed,,2021-04-28T09:40:05Z,2021-04-28T09:45:49Z
+236,Fix uninitialized Rocksdb.level0_stop_writes_trigger,closed,,2021-04-27T08:33:03Z,2021-04-28T09:31:11Z
+235,Release 2.0.0,closed,,2021-04-23T14:11:54Z,2021-04-23T14:33:25Z
+234,Add pubsub_patterns into INFO command,closed,,2021-04-23T12:25:26Z,2021-04-23T12:45:35Z
+233,Replicas can empty db before full synchronization,closed,,2021-04-23T07:24:29Z,2021-04-23T10:52:00Z
+232,Use checkpoint to implement kvrocks backup,closed,,2021-04-23T03:18:04Z,2021-04-23T08:53:06Z
+231,Apply CI on all branch,closed,,2021-04-23T02:16:04Z,2021-04-23T02:44:33Z
+230,Fix rocksdb can't auto resume after no space error (backport #229),closed,,2021-04-23T02:12:58Z,2021-04-23T03:37:12Z
+229,Fix rocksdb can't auto resume after no space error,closed,,2021-04-22T10:53:15Z,2021-04-23T02:11:47Z
+228,Use never expires share link to allow users join the kvrocks community,closed,,2021-04-22T04:51:25Z,2021-04-22T05:15:38Z
+226,Upgrade rocksdb to latest tag v6.19.3,closed,,2021-04-21T05:46:35Z,2021-04-21T06:05:57Z
+224,Release 1.3.2,closed,,2021-04-20T03:56:35Z,2021-04-20T07:07:46Z
+222,Build and push docker image when tagging,closed,,2021-04-17T07:06:35Z,2021-04-19T10:25:16Z
+221,Fix get corruption writebatch data  after psync restart,closed,,2021-04-15T06:42:56Z,2021-04-15T11:59:37Z
+218,Fix typo in README.md,closed,,2021-04-12T13:10:26Z,2021-04-12T14:09:53Z
+217,Remove codis support,closed,,2021-04-12T09:14:43Z,2021-04-12T10:49:49Z
+216,New logo,closed,,2021-04-11T07:33:15Z,2021-04-12T13:01:52Z
+215,Slowlog omits args or argument string if too many or big,closed,,2021-04-09T06:41:59Z,2021-04-09T08:22:46Z
+214,Add log when cleaning checkpoint successfully,closed,,2021-03-31T13:12:48Z,2021-04-01T02:48:26Z
+213,Add qps and input/output kbps for INFO command,closed,,2021-03-29T02:38:03Z,2021-03-29T05:11:24Z
+212, Decrease the default value of the max total wal size to 16GiB,closed,,2021-03-27T07:16:24Z,2021-03-29T04:48:49Z
+211,Fix the SST file creation time maybe 0 in some unknown conditions,closed,,2021-03-25T12:05:49Z,2021-03-26T07:22:54Z
+210,Set log_size_for_flush for checkpoint,closed,,2021-03-25T03:20:28Z,2021-03-25T03:35:15Z
+208,Use checkpoint to implement data snapshot when full replication,closed,,2021-03-22T07:29:38Z,2021-03-22T07:52:31Z
+207,Fix compression algorithm typo,closed,,2021-03-22T07:28:06Z,2021-03-22T08:54:23Z
+206,Fix typo in kvrocks.conf,closed,,2021-03-19T11:41:29Z,2021-03-19T11:55:10Z
+205,Use checkpoint to implement data snapshot when full replication,closed,,2021-03-18T11:15:10Z,2021-03-22T07:10:05Z
+204,Fix incorrect used_db_size value ,closed,,2021-03-15T10:03:52Z,2021-03-16T10:46:57Z
+203,Change the CI target branch name from master to unstable,closed,,2021-03-10T13:29:22Z,2021-03-11T03:22:09Z
+202,Change master branch into unstable development branch,closed,,2021-03-10T03:33:33Z,2021-03-10T06:31:46Z
+201,Optimize TCP keepalive detection time,closed,,2021-03-10T03:15:12Z,2021-03-10T03:29:13Z
+200,Don't use extra port for replication,closed,,2021-03-09T10:52:22Z,2021-03-12T03:14:07Z
+199,Remove the python functional test cases,closed,,2021-03-07T11:30:22Z,2021-03-08T03:10:20Z
+197,Fix typo in README,closed,,2021-02-28T13:30:41Z,2021-03-04T03:15:36Z
+196,Fix typo in README,closed,,2021-02-28T13:18:58Z,None
+195,Add question template,closed,,2021-02-25T06:35:15Z,2021-02-25T09:20:08Z
+194,Feature/add flushbackup command,closed,,2021-02-24T03:20:59Z,2021-02-24T06:44:37Z
+193,Fix using the line as error msg which has freed,closed,,2021-02-23T11:00:32Z,2021-02-24T04:53:12Z
+192,FIX: check whether replication port is in use,closed,,2021-02-23T05:48:58Z,2021-02-23T06:38:12Z
+191,Support to set max total wal size for rocksdb,closed,,2021-02-20T11:19:55Z,2021-02-20T12:14:50Z
+189,Enable the socket option tcp keepalive and no delay by default,closed,,2021-02-20T05:23:07Z,2021-02-20T06:39:53Z
+188,Handle the query starting with \r\n,closed,,2021-02-19T07:30:14Z,2021-02-19T10:30:50Z
+187,Upgrade python setuptools,closed,,2021-02-18T09:41:14Z,2021-02-18T12:46:05Z
+186,Create feature_request.md,closed,,2021-02-18T08:13:42Z,2021-02-18T12:46:35Z
+185,Update version to 1.3.0,closed,,2021-02-08T10:48:10Z,2021-02-08T11:02:31Z
+184,Version 1.3.0,closed,,2021-02-08T08:37:30Z,2021-02-08T09:53:35Z
+183,Update documentation info in kvrocks.service,closed,,2021-02-07T14:28:50Z,None
+182,Update kvrocks.service,closed,,2021-02-07T14:06:32Z,2021-02-08T01:31:18Z
+181,Plant redis tcl tests into kvrocks,closed,,2021-02-07T12:25:59Z,2021-02-08T10:01:54Z
+180,Run unit tests in CI,closed,,2021-02-07T10:48:35Z,2021-02-07T11:53:02Z
+179,Implement DEBUG SLEEP command,closed,,2021-02-07T08:25:46Z,2021-02-07T12:04:58Z
+178,Fix: make slowlog-log-slower-than config to support -1 value,closed,,2021-02-07T04:01:26Z,2021-02-07T04:15:09Z
+177,Add kvrocks google group and slack channel,closed,,2021-02-05T06:31:43Z,2021-02-05T06:32:51Z
+176,Update license in README,closed,,2021-02-04T14:49:57Z,2021-02-05T01:47:32Z
+175,Fix reply content for pattern subscribers when publish message,closed,,2021-02-04T14:42:18Z,2021-02-05T07:00:09Z
+174,Fix subscribe and unsubscribe command and pattern mode,closed,,2021-02-04T14:38:49Z,2021-02-05T06:24:57Z
+173,Update License,closed,,2021-02-04T08:32:45Z,2021-02-04T08:44:25Z
+172,Fix some bugs of zset,closed,,2021-02-03T11:41:06Z,2021-02-03T12:39:18Z
+171,Fix smove command on non-set type key,closed,,2021-02-03T06:31:05Z,2021-02-03T08:02:53Z
+170,Fix some list bug,closed,,2021-02-03T06:12:12Z,2021-02-03T08:02:02Z
+169,MOD: improve the precision of the incrbyfloat/hincrbyfloat command to double,closed,,2021-02-02T15:41:07Z,2021-02-03T02:55:51Z
+168,Fix hincrby/hincrbyfloat on wrong value and float precision check,closed,,2021-02-02T15:03:53Z,2021-02-03T05:53:30Z
+167,Fix incrby/incrbyfloat on wrong value and float precision check,closed,,2021-02-02T15:02:32Z,2021-02-03T03:50:58Z
+165,Support msetnx command,closed,,2021-02-02T08:34:06Z,2021-02-02T09:17:56Z
+164,Fix setbit/getbit bit offset out of range,closed,,2021-02-02T08:32:42Z,2021-02-02T09:11:19Z
+163,Fix client setname command with special characters,closed,,2021-02-02T08:25:14Z,2021-02-02T08:40:48Z
+162,Compatible with redis protocol error handlers,closed,,2021-02-02T08:24:30Z,2021-02-02T08:39:22Z
+161,Don't store an empty key for setrange command,closed,,2021-02-02T03:52:41Z,2021-02-02T05:18:04Z
+160,FIX: setex did not allow 0 timeout,closed,,2021-01-29T08:06:06Z,2021-01-29T08:34:30Z
+159,FIX: enable cppcheck (remove performance check_type),closed,,2021-01-29T06:30:58Z,2021-01-29T09:59:41Z
+158,MOD: migrate the CI from travis to Github actions,closed,,2021-01-29T05:29:40Z,2021-01-29T06:25:06Z
+157,Fix list rewrites other types data,closed,,2021-01-28T15:37:07Z,2021-01-29T03:40:19Z
+156,Implement psetex command and handle negative expire time when set,closed,,2021-01-28T15:36:03Z,2021-01-29T05:56:29Z
+155,Support to set separate log directory,closed,,2021-01-28T15:35:39Z,2021-01-29T08:29:19Z
+154,Fix/compaction checker condition error,closed,,2021-01-26T01:51:12Z,2021-01-26T05:37:08Z
+153,FIX: typo in compaction checker,closed,,2021-01-25T07:49:25Z,2021-01-25T08:44:53Z
+152,MOD: push the docker image to the bitleak org instead of hulkdev,closed,,2021-01-24T04:44:36Z,2021-01-25T02:52:23Z
+149,FIX: lrem parse error (rpush command being wrongly added besides lrem),closed,,2020-12-23T11:51:37Z,2020-12-23T13:32:29Z
+146,FIX: typo,closed,,2020-12-21T10:11:56Z,2020-12-21T10:14:38Z
+142,Fix/ltrim,closed,,2020-12-18T07:23:58Z,2020-12-18T07:53:29Z
+141,FIX: gtest & gtest-devel was in epel-release,closed,,2020-12-15T06:25:00Z,2020-12-15T07:36:13Z
+140,FIX: rocksdb cmake error,closed,,2020-12-15T03:29:59Z,2020-12-15T04:51:29Z
+139,FIX: core (replication sst file crc check may use closed db ),closed,,2020-12-10T08:17:59Z,2020-12-10T10:21:36Z
+138,Add gTest related pkg to README,closed,,2020-12-10T04:42:45Z,2020-12-10T04:45:19Z
+137,MOD: upgrade rocksdb to latest tag v6.14.6,closed,,2020-12-02T03:49:21Z,2020-12-02T07:24:22Z
+136,FIX:  replication dead loop  (some seq might be lost  in the middle of wal …,closed,,2020-11-20T04:13:28Z,2020-11-20T04:51:56Z
+135,FIX: old pipeline cmd response should be cleared,closed,,2020-11-18T03:56:28Z,2020-11-18T04:35:44Z
+134,FIX: core (dynamicResizeBlockAndSST may use closed db and cf ),closed,,2020-11-17T10:46:23Z,2020-11-17T11:01:08Z
+133,FIX: core (compact may use closed db and cf ),closed,,2020-11-17T03:57:25Z,2020-11-17T05:37:54Z
+132,FIX: segmentation fault,closed,,2020-11-12T10:12:23Z,2020-11-12T10:36:04Z
+131,ADD: dynamic resize rocksdb.write_buffer_size,closed,,2020-11-10T06:22:40Z,2020-11-10T08:03:34Z
+130,FIX: disable compaction_checker_range when value is empty string,closed,,2020-10-28T03:01:12Z,2020-10-28T05:35:25Z
+129,FIX: hmget should not output empty string when hash key doesn't exist,closed,,2020-10-22T02:52:53Z,2020-10-22T03:23:08Z
+128,MOD: typo,closed,,2020-10-21T06:58:36Z,2020-10-21T07:21:10Z
+127,Feature/sirangebyvalue,closed,,2020-10-13T06:44:56Z,2020-10-13T07:25:34Z
+126,Fix hash tag calculation error,closed,,2020-09-28T08:33:39Z,2020-09-28T08:47:24Z
+125,FIX: impove the multi-bulk string function performance,closed,,2020-09-24T12:39:24Z,2020-09-25T06:39:05Z
+124,Feature/command role,closed,,2020-09-16T08:09:38Z,2020-09-16T09:00:10Z
+122,FIX: typo,closed,,2020-09-02T09:20:33Z,2020-09-02T09:33:46Z
+120,dynamic resize block and sst,closed,,2020-08-24T11:05:48Z,2020-09-03T08:03:25Z
+119,FIX: keep the double to string format consistent with Redis,closed,,2020-08-22T11:47:14Z,2020-08-24T02:41:08Z
+117,FIX: typo,closed,,2020-08-19T08:08:21Z,2020-08-19T08:22:15Z
+116, FIX: clean,closed,,2020-08-18T20:00:03Z,2020-08-19T02:32:56Z
+115,Update redis_geo.cc,closed,,2020-08-18T19:19:12Z,2021-02-20T11:14:07Z
+114,FIX: undefined reference in glog dependency,closed,,2020-08-12T05:21:17Z,None
+113,FIX: refetch and override  existing backup sst file if crc mismatch,closed,,2020-08-10T08:45:04Z,2020-08-11T14:36:25Z
+112,"FIX: shutdown asap (cancel backgroud compaction, etc...)",closed,,2020-08-06T10:48:28Z,2020-08-06T15:03:25Z
+111,MOD: make code more clearly,closed,,2020-08-05T10:42:09Z,2020-08-05T10:52:10Z
+110,Fix/code style,closed,,2020-08-05T10:39:31Z,None
+109,FIX:  should not output nil when member or value is empty,closed,,2020-08-04T09:43:54Z,2020-08-04T16:07:36Z
+108,Fix/empty string should not return nil,closed,,2020-08-04T06:24:54Z,None
+107,FIX: get command would return nil string when the value was empty,closed,,2020-08-04T05:42:41Z,2020-08-04T08:34:40Z
+106,FIX: get command would return nil string when the value was empty,closed,,2020-08-04T05:40:56Z,None
+105,ADD: add wal data in replication write batch error log,closed,,2020-07-29T09:59:15Z,2020-07-29T10:38:55Z
+104,ADD: large pipeline log,closed,,2020-07-28T07:34:31Z,2020-07-28T08:29:01Z
+103,Fix typo and add creation file listener,closed,,2020-07-26T06:58:04Z,2020-07-27T02:34:26Z
+102,Fix/find first and last key in ns,closed,,2020-07-23T06:02:19Z,2020-07-23T06:25:39Z
+101,FIX: compact pub/sub once per day,closed,,2020-07-17T06:16:37Z,2020-07-17T06:28:04Z
+100,FIX: GetUpdatesSince should not get data that is older than seq (seem…,closed,,2020-07-08T08:12:26Z,2020-07-08T11:40:21Z
+98,improve the compaction,closed,,2020-07-02T14:56:43Z,2020-07-16T05:36:41Z
+97,Feature/zset sortint mget,closed,,2020-06-30T08:00:41Z,2020-07-01T05:15:58Z
+94,FIX: add BEV_OPT_THREADSAFE option (monitor cmd will coredump when…,closed,,2020-06-08T06:17:48Z,2020-06-22T09:37:29Z
+93,Feature/bitmap cmds compatible with redis bitmap,closed,,2020-06-03T09:04:25Z,2020-06-06T12:08:03Z
+92,FIX: missing blocking key in response,closed,,2020-06-01T14:43:42Z,2020-06-02T02:09:57Z
+91,Fix/testcase,closed,,2020-05-27T12:49:51Z,2020-05-27T14:33:54Z
+90,"MOD: should return empty list when hscan,zscan,sscan is empty",closed,,2020-05-27T10:36:29Z,2020-05-27T11:08:34Z
+89,Fix/ignore case in namespace sub_command ,closed,,2020-05-20T03:47:07Z,2020-05-20T03:52:27Z
+88,FIX: add missing bitmap and sortedint typeName,closed,,2020-05-19T07:21:08Z,2020-05-19T07:24:01Z
+87,"FIX: when expired, should clear raw_value",closed,,2020-05-18T08:07:37Z,2020-05-18T08:20:17Z
+85,Fix/cmake pthread,closed,,2020-05-08T12:25:29Z,2020-05-09T01:59:31Z
+84,FIX: create backup and purge old backups at the same time may cause c…,closed,,2020-05-07T12:54:41Z,2020-05-07T15:03:52Z
+83,WIP: kvrocksrestore sets up Libevent for use with Pthreads locking an…,closed,,2020-05-07T03:08:01Z,None
+82,ADD: kvrocksrestore tool (restore backup_dir to db_dir),closed,,2020-05-06T10:13:41Z,2020-05-06T12:07:29Z
+80,"FIX: if fullsync and restorefrombackup failed, we should keep retry f…",closed,,2020-04-29T07:18:15Z,2020-04-30T06:09:38Z
+79,FIX: check sequence continuity before feed data to slave,closed,,2020-04-26T09:42:37Z,2020-04-26T10:30:19Z
+78,Add kvrocks icon,closed,,2020-04-17T08:18:17Z,2020-04-17T08:19:20Z
+77,ADD: license icon,closed,,2020-04-16T10:27:56Z,2020-04-17T02:09:42Z
+76,Fix/warning,closed,,2020-04-15T07:40:27Z,2020-04-15T08:37:53Z
+75,Fix/hscan and zscan should return field value,closed,,2020-04-15T03:28:48Z,2020-04-15T04:01:19Z
+74,MOD: refactor the command table with macro,closed,,2020-04-14T10:34:47Z,2020-04-15T02:22:21Z
+73,Refactor/minor code base,closed,,2020-04-13T07:33:23Z,2020-04-13T09:37:16Z
+72,FIX: config rocksdb.disable_auto_compactions didn't work in config file,closed,,2020-04-09T05:21:01Z,2020-04-09T06:06:09Z
+71,Refactor the redis string,closed,,2020-04-09T02:08:58Z,2020-04-09T06:01:28Z
+70,ADD: geo command,closed,,2020-04-01T10:22:22Z,2020-04-10T11:22:41Z
+69,FIX: Publish and FreeConnectionByID deadlock,closed,,2020-03-23T06:55:47Z,2020-03-23T08:00:08Z
+67,Enhancement/only generate version when needed,closed,,2020-03-19T08:55:56Z,2020-03-19T11:06:09Z
+65,ADD: rocksdb.disable_auto_compaction option,closed,,2020-03-17T03:04:41Z,2020-03-17T03:24:24Z
+61,FIX: wrong way to clean backup,closed,,2020-03-03T05:41:50Z,2020-03-03T06:30:00Z
+60,Fix/hash incrby size,closed,,2020-02-26T12:00:46Z,2020-02-27T03:54:13Z
+59,ADD: small hash compress to meta,closed,,2020-02-26T10:48:44Z,None
+58,Fix/hsetnx typo,closed,,2020-02-24T09:59:14Z,2020-02-24T10:13:30Z
+55,FIX: create backup at the same time may cause crash while the CreateNewBackupWithMetadata wasn't thread-safe call,closed,,2020-02-12T09:57:26Z,2020-02-12T10:14:31Z
+52,MOD: remove the limit of bulk number,closed,,2020-01-15T07:41:15Z,2020-01-15T07:52:47Z
+51,Fix/ttl less than one second,closed,,2020-01-10T07:35:18Z,2020-01-10T09:54:35Z
+50,MOD: remove unused logs when failed to execute the command,closed,,2019-12-24T08:13:41Z,2019-12-24T08:26:57Z
+49,ADD: info add disk usage,closed,,2019-12-09T11:00:42Z,2019-12-09T13:23:02Z
+47,FIX: warning,closed,,2019-12-06T10:11:36Z,2019-12-06T10:30:15Z
+46,Fix/replication thread restart,closed,,2019-12-05T03:23:11Z,2019-12-05T11:16:22Z
+45,"MOD: sscan,zscan  should not return error when key not found",closed,,2019-11-21T06:53:30Z,2019-11-21T07:05:55Z
+44,"FIX: max-repliction-mb multiple with const int would be cast into int, instead of int64",closed,,2019-11-21T03:10:14Z,2019-11-21T03:32:59Z
+43,MOD: allow user token to compact namespace,closed,,2019-11-20T09:55:48Z,2019-11-21T02:56:19Z
+42,FIX: dbsize scan and keys should scan the entire DB when the token is requirepass,closed,,2019-11-20T08:21:23Z,2019-11-20T10:57:01Z
+41,MOD: show db_size by namespace,closed,,2019-11-19T07:10:20Z,2019-11-19T07:21:49Z
+40,refactor the config code base and make it clearly,closed,,2019-11-12T10:39:17Z,2019-11-14T03:45:48Z
+39,Fix/wrong substr argument,closed,,2019-11-12T06:55:52Z,2019-11-12T07:10:02Z
+38,"FIX: codis support related cf  eslot_metadata, slot , should only be …",closed,,2019-11-08T09:18:41Z,2019-11-09T17:14:35Z
+37,ADD: Enhancement/kvrocks2redis support config db index,closed,,2019-11-08T07:38:02Z,2019-11-09T15:10:59Z
+36,Feature/add configurable items,closed,,2019-11-08T06:51:46Z,2019-11-08T07:46:38Z
+32,MOD: add slave-serve-stale-data to disallow the slave continue to serve when the master link was donw,closed,,2019-10-21T10:13:52Z,2019-10-22T02:22:10Z
+28,modify the comment of kvrocks.conf,closed,,2019-10-11T11:50:01Z,2019-10-11T12:07:31Z
+27,Feature/supports systemd,closed,,2019-10-10T07:15:51Z,2019-10-11T05:44:57Z
+26,FIX: slowlog/perflog didn't catch the cast exception,closed,,2019-10-08T08:13:18Z,2019-10-08T08:41:12Z
+25,ADD: support codis,closed,,2019-09-25T08:07:03Z,2019-11-08T08:08:52Z
+24,MOD: update the rocksdb to the latest version(v6.2.2),closed,,2019-09-11T08:22:38Z,2019-09-12T02:08:34Z
+23,MOD: use deleterange in flushdb,closed,,2019-09-10T10:07:25Z,2019-09-11T06:41:41Z
+22,DOC: add sortedint example,closed,,2019-09-06T09:23:02Z,2019-09-09T02:22:21Z
+21,Fix: cmake dependencies order,closed,,2019-09-06T07:24:25Z,2019-09-06T07:48:40Z
+20,MOD: remove submodule gflags and googletest,closed,,2019-09-05T10:01:00Z,2019-09-05T11:00:52Z
+19,Fix: unittest compile warning,closed,,2019-09-05T07:59:03Z,2019-09-05T10:59:28Z
+18,Add makefile,closed,,2019-09-05T05:42:26Z,2019-09-05T07:46:30Z
+17,Refactor: slow perf log command,closed,,2019-09-02T07:37:30Z,2019-09-03T03:28:53Z
+16,Feature/add sortedint data type,closed,,2019-08-30T03:38:35Z,2019-09-03T06:57:56Z
+15,FIX: index out of range in perflog get,closed,,2019-08-30T03:18:49Z,2019-08-30T03:19:57Z
+14,DOC: change dump command to unsupported state,closed,,2019-08-29T09:40:56Z,2019-08-29T09:56:16Z
+13,"FIX: typo, GetPerlog => GetPerfLog",closed,,2019-08-29T07:19:58Z,2019-08-29T10:25:19Z
+12, Feature/supports profiling rocksdb in flight,closed,,2019-08-29T02:56:30Z,2019-08-29T07:13:50Z
+11,FIX: empty requirepass shouldn't rewrite to config,closed,,2019-08-28T10:23:39Z,2019-08-28T10:47:10Z
+9,MOD: update dependency rocksdb to latest version,closed,,2019-08-22T09:58:04Z,2019-08-22T10:30:13Z
+8,ADD: cmd flushall,closed,,2019-08-22T08:56:51Z,2019-08-22T10:17:26Z
+7,ADD: command flushall,closed,,2019-08-22T06:58:57Z,None
+6,make kvrocks more friendly to beginner,closed,,2019-08-21T08:17:09Z,2019-08-22T05:25:00Z
+5,Fix/hscan when key not found,closed,,2019-08-21T03:42:03Z,2019-08-21T05:58:30Z
+1,Travis ci,closed,,2019-08-16T14:27:14Z,2019-08-16T14:45:26Z
