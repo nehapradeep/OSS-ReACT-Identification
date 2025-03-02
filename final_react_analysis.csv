@@ -18,3 +18,7 @@ kvrocks,ReACT-9,Does not meet criteria (Keyword 'how to request for access' not 
 kvrocks,ReACT-19,Does not meet criteria (Keyword 'flag newcomers' not found),No
 kvrocks,ReACT-33,Does not meet criteria (Keyword 'contribution guidelines' not found),No
 kvrocks,ReACT-84,Does not meet criteria (Keyword 'onboarding support' not found),No
+kvrocks,ReACT-63,Average modified-to-added lines ratio: 0.00. Average number of modified files per commit: 23.30. Average number of new files added: 7275.00. Total number of commits analyzed: 7510; Ratio compares behaviour of developer whether he is adding new files or modifying existing files.
+kvrocks,ReACT-64,Number of code files modified: 65. Number of documentation files modified: 80. Code-to-Documentation file ratio: 0.81. If ratio is high then developers are focused on coding and not documentation and if low then vise versa
+kvrocks,ReACT-78,Total number of commits analyzed: 7510. Number of commits involving code comment updates: 100. Percentage of commits with comment updates: 1.33%. Low emphasis on updating comments in the codebase.
+
