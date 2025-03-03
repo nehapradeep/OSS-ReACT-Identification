@@ -19,6 +19,7 @@ def save_analysis(react_name, outcome, output_file):
 df = pd.read_csv('pydrillerCSV/kvrocks/kvrock_commit_data.csv')
 print(df.head())
 
+# purva
 def analyze_modified_vs_new_files(df):
     df['new_files_in_commit'] = df['Added Lines'] > 0
     average_modified_files = df['Number of Modified Files'].mean()
@@ -28,6 +29,7 @@ def analyze_modified_vs_new_files(df):
 
     return average_modified_files, average_new_files, modified_to_new_ratio, total_commits
 
+# purva
 def analyze_code_vs_documentation(df):
     code_extensions = [
         '.cpp', '.cc', '.py', '.js', '.java', '.go', '.rb', '.php', '.cs', 
@@ -75,20 +77,17 @@ def analyze_code_vs_documentation(df):
 
     return code_file_count, doc_file_count, code_to_doc_ratio
 
+# purva
 def analyze_code_comments(df):
-    # Count the number of commits that involve comment updates
     comment_updates_count = 0
     total_commits = len(df)
     
     for index, row in df.iterrows():
-        # Check if the commit message contains the word "comment"
         if 'comment' in row['Commit Message'].lower():
             comment_updates_count += 1
 
-    # Calculate percentage of commits with comment updates
     percentage_comment_updates = (comment_updates_count / total_commits) * 100 if total_commits > 0 else 0
 
-    # Prepare the outcome string
     outcome_react78 = f"Total number of commits analyzed: {total_commits}. " \
                        f"Number of commits involving code comment updates: {comment_updates_count}. " \
                        f"Percentage of commits with comment updates: {percentage_comment_updates:.2f}%. "

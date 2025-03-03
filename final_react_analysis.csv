@@ -21,4 +21,7 @@ kvrocks,ReACT-84,Does not meet criteria (Keyword 'onboarding support' not found)
 kvrocks,ReACT-63,Average modified-to-added lines ratio: 0.00. Average number of modified files per commit: 23.30. Average number of new files added: 7275.00. Total number of commits analyzed: 7510; Ratio compares behaviour of developer whether he is adding new files or modifying existing files.
 kvrocks,ReACT-64,Number of code files modified: 65. Number of documentation files modified: 80. Code-to-Documentation file ratio: 0.81. If ratio is high then developers are focused on coding and not documentation and if low then vise versa
 kvrocks,ReACT-78,Total number of commits analyzed: 7510. Number of commits involving code comment updates: 100. Percentage of commits with comment updates: 1.33%. Low emphasis on updating comments in the codebase.
-
+kvrocks,ReACT-85,Total number of discussions analyzed: 6. Number of discussions involving in-person meetup announcements: 1. Percentage of meetups/announcements: 16.67%.,Yes
+kvrocks,ReACT-89,Total discussions: 6. Discussions encouraging newcomer freedom: 1. Percentage: 16.67%. ,Yes
+kvrocks,ReACT-91,"Total discussions: 4. Discussions with responses: 3. Quick responses (within 24 hours): 0. Percentage of quick responses: 0.00%. Average response time: 688 days, 9:32:25.333333",No
+kvrocks,ReACT-92,Total discussions: 4. Positive sentiments: 2. Negative sentiments: 0. Neutral sentiments: 2. Positive %: 50.00%. Negative %: 0.00%. Neutral %: 50.00%. Average sentiment score: 0.19,Yes
