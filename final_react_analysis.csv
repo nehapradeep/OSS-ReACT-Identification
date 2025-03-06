@@ -25,3 +25,25 @@ kvrocks,ReACT-85,Total number of discussions analyzed: 6. Number of discussions 
 kvrocks,ReACT-89,Total discussions: 6. Discussions encouraging newcomer freedom: 1. Percentage: 16.67%. ,Yes
 kvrocks,ReACT-91,"Total discussions: 4. Discussions with responses: 3. Quick responses (within 24 hours): 0. Percentage of quick responses: 0.00%. Average response time: 688 days, 9:32:25.333333",No
 kvrocks,ReACT-92,Total discussions: 4. Positive sentiments: 2. Negative sentiments: 0. Neutral sentiments: 2. Positive %: 50.00%. Negative %: 0.00%. Neutral %: 50.00%. Average sentiment score: 0.19,Yes
+kvrocks,ReACT-20,"The project facilitates communication through various channels, including a Zulip chat, a mailing list, and social media platforms like Medium, Twitter, and Zhihu.", Yes
+kvrocks,ReACT-24,There is no indication of established local groups in different countries within the provided resources.,No
+kvrocks,ReACT-25," The project maintains concise, updated, and accessible documentation, accessible through the official documentation link in the README.",Yes
+kvrocks,ReACT-29,There is no explicit documentation detailing the code structure within the README or linked resources.,No
+kvrocks,ReACT-31,"Coding guidelines are provided in the How to Contribute section, outlining code style and testing requirements.",Yes
+kvrocks,ReACT-34,The README and linked resources do not maintain a roster of available project leaders.,No
+kvrocks,ReACT-41,There is no mention of utilizing a distributed pair programming tool that supports defined roles between pairs in the README or linked resources.,No
+kvrocks,ReACT-42,"The project does not encourage the use of tools that support synchronous editing of source code, as per the available information.",No
+kvrocks,ReACT-46,"The communication channels listed do not include platforms that support both text and audio-based communication, such as Slack or Discord.",No
+kvrocks,ReACT-57,"The project fosters a sense of belonging within the community through various communication channels and encourages continual contributions, as detailed in the Community section.",Yes
+kvrocks,ReACT-48,"There is no information regarding scheduled regular brainstorming sessions to establish a shared vision for the project.",No
+kvrocks,ReACT-52,"The project encourages activities like reengineering, forward engineering, and corrective engineering through comprehensive documentation, including data structure and replication design details.",Yes
+kvrocks,ReACT-53,"The project is incubated by a large software foundation, specifically the Apache Software Foundation.",Yes
+kvrocks,ReACT-60,"The project promotes itself to increase visibility through social media profiles on Medium, Twitter, and Zhihu, and has garnered a significant number of stars on its GitHub repository.",Yes
+kvrocks,ReACT-5,Pull based development approach exists,Yes
+kvrocks,ReACT-6,Implemented GitHub Actions,Yes
+kvrocks,ReACT-17,Experienced contributors collaborated with mentees on addressing bugs or issues.,Yes
+kvrocks,ReACT-27,Contibutors provided context about what they had tried when reporting issues,Yes
+kvrocks,ReACT-30,Implemented GitHub Actions,Yes
+kvrocks,ReACT-58,Senior developers actively engage with and assist newcomers,Yes
+kvrocks,ReACT-61,Partially implemented - not satisfactory,No-Recommend
+kvrocks,ReACT-73,Static Analysis Linter Exists,Yes
