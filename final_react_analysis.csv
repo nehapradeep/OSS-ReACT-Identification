@@ -47,3 +47,12 @@ kvrocks,ReACT-30,Implemented GitHub Actions,Yes
 kvrocks,ReACT-58,Senior developers actively engage with and assist newcomers,Yes
 kvrocks,ReACT-61,Partially implemented - not satisfactory,No-Recommend
 kvrocks,ReACT-73,Static Analysis Linter Exists,Yes
+kvrocks,ReACT-93,Zulip chat and Mailing List are both available as communication channels.,Leverage Zulip for real-time discussions and use the Mailing List for formal updates and long-form communication.
+kvrocks,ReACT-95,"Contributing section is present, but detailed expectations and skill requirements are unclear.","Enhance the contributing section by providing explicit details about the skills, technologies, and expertise required for contributing to the project."
+kvrocks,ReACT-97,Tutorials and documentation are present in the project.,Ensure that the tutorials are linked properly and easily accessible for users to learn about the project.
+kvrocks,ReACT-98,The system setup process for newcomers is documented.,"Ensure that the setup instructions are simple, clear, and include all necessary dependencies to minimize friction."
+kvrocks,ReACT-102,No live FAQ section feature found in the project.,Add a live FAQ section with interactive capabilities to improve user engagement.
+kvrocks,ReACT-100,Processes and practices are documented within the project.,"Ensure that the documentation is comprehensive and up-to-date, including any new practices or processes."
+kvrocks,ReACT-77,"Mailing list is mentioned, but not encouraged.","Add a call-to-action encouraging contributors to use the mailing list for discussions, feedback, and project-related questions."
+kvrocks,ReACT-60,GitHub stars and social media links are present.,The README promotes visibility with both GitHub stars and social media links.
+kvrocks,ReACT-20,"The project communicates through various channels: Medium, Twitter, Mailing List, Zulip, WeChat.",No action required. The project already communicates through various channels.
