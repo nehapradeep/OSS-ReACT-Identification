@@ -47,7 +47,9 @@ kvrocks,ReACT-30,Implemented GitHub Actions,Yes
 kvrocks,ReACT-58,Senior developers actively engage with and assist newcomers,Yes
 kvrocks,ReACT-61,Partially implemented - not satisfactory,No-Recommend
 kvrocks,ReACT-73,Static Analysis Linter Exists,Yes
+kvrocks,ReACT-79,The README file provides some technical information, but it lacks clarity in terms of explicitly helping potential contributors evaluate if the project aligns with their domain expertise or technological interests.,Add a section that highlights the project's core technologies, its use cases, and which specific skill sets are most beneficial for contributing. This would help potential contributors assess if the project is a good fit for them.
 kvrocks,ReACT-93,Zulip chat and Mailing List are both available as communication channels.,Leverage Zulip for real-time discussions and use the Mailing List for formal updates and long-form communication.
+kvrocks,ReACT-94,The "How to Contribute" section exists but is not sufficiently highlighted for newcomers.,Improve the visibility of the contribution guidelines by creating a separate page dedicated to explaining how newcomers can contribute to the project, making it easier to access and follow.
 kvrocks,ReACT-95,"Contributing section is present, but detailed expectations and skill requirements are unclear.","Enhance the contributing section by providing explicit details about the skills, technologies, and expertise required for contributing to the project."
 kvrocks,ReACT-97,Tutorials and documentation are present in the project.,Ensure that the tutorials are linked properly and easily accessible for users to learn about the project.
 kvrocks,ReACT-98,The system setup process for newcomers is documented.,"Ensure that the setup instructions are simple, clear, and include all necessary dependencies to minimize friction."
