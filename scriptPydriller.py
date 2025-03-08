@@ -3,19 +3,21 @@ import os
 from pydriller import Repository
 
 # Define the repository URL
-repo_url = "https://github.com/apache/incubator-resilientdb"
+repo_url = "https://github.com/apache/kvrocks"
 
 # Define the CSV file name
-csv_filename = "resdb_commit_data.csv"
-readme_filename = "readme-resdb.md"
-license_filename = "license-resdb.txt"
-contributing_filename = "contributing-resdb.md"
+csv_filename = "pydrillerCSV/kvrocks/kvrock_commit_data.csv"
+readme_filename = "pydrillerCSV/kvrocks/readme-kvrocks.md"
+license_filename = "pydrillerCSV/kvrocks/license-kvrocks.txt"
+contributing_filename = "pydrillerCSV/kvrocks/contributing-kvrocks.md"
 
 # Initialize variables to store latest README, LICENSE, and CONTRIBUTING.md content
 latest_readme = None
 latest_license = None
 latest_contributing = None
 
+# Create necessary directories if they don't exist
+os.makedirs(os.path.dirname(csv_filename), exist_ok=True)
 
 # Open CSV file for writing
 with open(csv_filename, mode="w", newline="", encoding="utf-8") as csv_file:
@@ -28,7 +30,7 @@ with open(csv_filename, mode="w", newline="", encoding="utf-8") as csv_file:
     writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
     writer.writeheader()
 
-    main_branches = {'main', 'master'}
+    main_branches = {'main', 'master', 'unstable'}
 
     # Traverse the repository commits
     for commit in Repository(repo_url).traverse_commits():
@@ -40,7 +42,11 @@ with open(csv_filename, mode="w", newline="", encoding="utf-8") as csv_file:
             # Skip object files (e.g., .o, .obj), dependency files (.d), and other generated files
             if file.filename.endswith(('.o', '.obj', '.d', '.exe', '.bin', '.dll', '.so', '.class', '.jar')) or file.source_code is None:
                 continue
-                continue
+            
+            # Check if the file is a README.md file
+            if file.filename.lower() == "readme.md":
+                latest_readme = file.source_code if file.source_code else "No content"
+            
             # Check if the file is a LICENSE file
             if file.filename.lower() == "license" or file.filename.lower().startswith("license"):
                 latest_license = file.source_code if file.source_code else "No content"
@@ -85,3 +91,4 @@ print(f"Data successfully saved in {csv_filename}")
 print(f"Latest README saved in {readme_filename}")
 print(f"Latest LICENSE saved in {license_filename}")
 print(f"Latest CONTRIBUTING.md saved in {contributing_filename}")
+

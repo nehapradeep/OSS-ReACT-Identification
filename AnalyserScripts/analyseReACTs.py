@@ -1,8 +1,9 @@
 import csv
 import os
 import pandas as pd
+from datetime import datetime
 
-def analyze_react_metrics(csv_filename, project_name, output_file="final_react_analysis.csv"):
+def analyze_react_metrics(csv_filename, project_name, output_file="final_react_analysis_2.csv"):
     project_metrics = {
         "ReACT-11 Keep the project small and simple.": True,
         "ReACT-26 Conduct unit tests.": False,
@@ -76,7 +77,7 @@ def analyze_react_metrics(csv_filename, project_name, output_file="final_react_a
     
     print(f"Analysis saved to {output_file}")
 
-def analyze_file_extensions(file_path, react_number, project_name, output_file="final_react_analysis.csv"):
+def analyze_file_extensions(file_path, react_number, project_name, output_file="final_react_analysis_2.csv"):
     df = pd.read_csv(file_path)
     extension_counts = df["File Extension"].value_counts()
     extension_percentage = (extension_counts / extension_counts.sum()) * 100
@@ -98,7 +99,7 @@ def analyze_file_extensions(file_path, react_number, project_name, output_file="
     
     print(f"Analysis saved to {output_file}")
 
-def analyze_commit_messages(csv_filename, project_name, output_file="final_react_analysis.csv"):
+def analyze_commit_messages(csv_filename, project_name, output_file="final_react_analysis_2.csv"):
     project_metrics = {"ReACT-66 Perform adequate testing before integrating a feature": False}
     total_commits = 0
     revert_commits = 0
@@ -147,7 +148,7 @@ def analyze_commit_messages(csv_filename, project_name, output_file="final_react
 def main():
     project_name = "ResDB"
     input_csv = "resdb_commit_data2.csv"
-    output_csv = "final_react_analysis.csv"
+    output_csv = "final_react_analysis_2.csv"
     
     analyze_react_metrics(input_csv, project_name, output_csv)
     analyze_commit_messages(input_csv, project_name, output_csv)
@@ -159,8 +160,13 @@ def main():
     analyze_react_36(file_path)
     analyze_react_38_with_loc(file_path)
 
-csv_filename = "pydrillerCSV/celeborn_commit_data.csv"
-analyze_react_metrics(csv_filename)
+    project_path = 'OSS'
+    project_name = 'kvrocks'
+    pr_csv = os.path.join(project_path, "github_api", project_name, "pr.csv")
+    commit_csv = os.path.join(project_path, "pydrillerCSV", project_name, f"{project_name}_commit_data.csv")
+
+    csv_filename = "pydrillerCSV/celeborn_commit_data.csv"
+    analyze_react_metrics(csv_filename)
     
 if __name__ == "__main__":
     main()
@@ -290,6 +296,3 @@ def analyze_react_38_with_loc(file_path, min_commits=10, min_months_active=3, mi
     
     print(f"ReACT-38 Analysis saved to {output_file}")
     print(output_df)
-
-# Example usage
-

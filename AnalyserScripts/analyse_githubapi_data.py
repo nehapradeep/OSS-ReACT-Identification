@@ -29,7 +29,7 @@ def analyze_react_14(csv_filename, output_file="final_react_analysis.csv"):
     avg_merge_time = sum(pr_merge_times) / len(pr_merge_times) if pr_merge_times else None
     meets_criteria = avg_merge_time is not None and avg_merge_time <= 7 * 24 * 3600
     analysis = f"Meets criteria (Avg merge time: {avg_merge_time / 3600:.2f} hours)" if meets_criteria else f"Does not meet criteria (Avg merge time: {avg_merge_time / 3600:.2f} hours exceeds 7 days.)"
-    recommendation = yes if meets_criteria else "No"
+    recommendation = "Yes" if meets_criteria else "No"
     
     save_analysis("ReACT-14 Merge pull requests promptly.", analysis, recommendation, output_file)
 
@@ -77,7 +77,7 @@ def analyze_react_81(commit_csv_filename, output_file="final_react_analysis.csv"
     last_update = max(readme_updates) if readme_updates else None
     meets_criteria = last_update is not None and (datetime.now(last_update.tzinfo) - last_update).days <= 365
     analysis = f"Meets criteria (Last README update: {last_update})" if meets_criteria else "Does not meet criteria (README has not been updated in the last year.)"
-    recommendation = yes if meets_criteria else "No"
+    recommendation = "Yes" if meets_criteria else "No"
     
     save_analysis("ReACT-81 Keep knowledge up to date and findable.", analysis, recommendation, output_file)
 
@@ -108,7 +108,7 @@ def analyze_contributing_react(contrib_md_path, react, keyword, output_file):
             content = file.read().lower()
             meets_criteria = keyword in content
             analysis = f"Meets criteria (Found keyword: '{keyword}')" if meets_criteria else f"Does not meet criteria (Keyword '{keyword}' not found)"
-            recommendation = yes if meets_criteria else "No"
+            recommendation = "Yes" if meets_criteria else "No"
             save_analysis(react, analysis, recommendation, output_file)
     except FileNotFoundError:
         print(f"Error: CONTRIBUTING.md file not found at {contrib_md_path}")
