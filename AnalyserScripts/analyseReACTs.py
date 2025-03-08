@@ -3,7 +3,19 @@ import os
 import pandas as pd
 from datetime import datetime
 
-def analyze_react_metrics(csv_filename, project_name, output_file="final_react_analysis_2.csv"):
+# React 11
+# React 26
+# React 32
+# React 82
+# React 66
+# React 16
+# React 36
+
+# React 38
+
+from datetime import datetime
+
+def analyze_react_metrics(csv_filename, project_name, output_file="final_react_analysis_2_2.csv"):
     project_metrics = {
         "ReACT-11 Keep the project small and simple.": True,
         "ReACT-26 Conduct unit tests.": False,
@@ -54,7 +66,7 @@ def analyze_react_metrics(csv_filename, project_name, output_file="final_react_a
         
         for key in project_metrics:
             analysis = "Meets criteria"
-            recommendation = "Recommend"
+            recommendation = "Yes"
             if not project_metrics[key]:
                 analysis = "Does not meet criteria"
                 # Add specific explanation to Analysis
@@ -66,7 +78,7 @@ def analyze_react_metrics(csv_filename, project_name, output_file="final_react_a
                     analysis += f" (Comment ratio is {total_comment_lines / total_loc:.2f}, which is below the recommended threshold of 15%.)"
                 elif key == "ReACT-82 Have and enforce a code of conduct":
                     analysis += " (No code of conduct file found in the project.)"
-                recommendation = "Do not recommend"
+                recommendation = "No"
             
             writer.writerow({
                 "Project Name": project_name,
@@ -128,13 +140,13 @@ def analyze_commit_messages(csv_filename, project_name, output_file="final_react
         
         for key in project_metrics:
             analysis = "Meets criteria"
-            recommendation = "Recommend"
+            recommendation = "Yes"
             if not project_metrics[key]:
                 analysis = "Does not meet criteria"
                 # Add specific explanation to Analysis
                 if key == "ReACT-66 Perform adequate testing before integrating a feature":
                     analysis += " (More than 10% of commits are revert commits, indicating insufficient testing before integration.)"
-                recommendation = "Do not recommend"
+                recommendation = "No"
             
             writer.writerow({
                 "Project Name": project_name,
@@ -145,31 +157,7 @@ def analyze_commit_messages(csv_filename, project_name, output_file="final_react
     
     print(f"Analysis saved to {output_file}")
 
-def main():
-    project_name = "ResDB"
-    input_csv = "resdb_commit_data2.csv"
-    output_csv = "final_react_analysis_2.csv"
-    
-    analyze_react_metrics(input_csv, project_name, output_csv)
-    analyze_commit_messages(input_csv, project_name, output_csv)
-    analyze_file_extensions(input_csv, "ReACT-File Extension Analysis", project_name, output_csv)
-    file_path = "pydrillerCSV/celeborn_commit_data.csv"
-    react_number = "ReACT-16"
-    analyze_file_extensions(file_path, react_number)
-    analyze_react_16(file_path)
-    analyze_react_36(file_path)
-    analyze_react_38_with_loc(file_path)
 
-    project_path = 'OSS'
-    project_name = 'kvrocks'
-    pr_csv = os.path.join(project_path, "github_api", project_name, "pr.csv")
-    commit_csv = os.path.join(project_path, "pydrillerCSV", project_name, f"{project_name}_commit_data.csv")
-
-    csv_filename = "pydrillerCSV/celeborn_commit_data.csv"
-    analyze_react_metrics(csv_filename)
-    
-if __name__ == "__main__":
-    main()
 
 
 def analyze_react_16(file_path, output_file="react_commit_author.csv"):
@@ -211,12 +199,12 @@ def analyze_react_16(file_path, output_file="react_commit_author.csv"):
     output_data.to_csv(output_file, mode='a', index=False, header=not file_exists)
     print(f"ReACT-16 Analysis saved to {output_file}")
 
-def analyze_react_36(file_path, output_file="react_36_analysis.csv"):
+
+def analyze_react_36(file_path, project_name, output_file="final_react_analysis_2.csv"):
     """
     Analyze ReACT-36: Maintain a small number of core/active developers.
     """
     df = pd.read_csv(file_path)
-    print("Column Names:", df.columns.tolist())  
     df.columns = df.columns.str.strip()  # Removes spaces from column names
     if "Author Email" not in df.columns or "Committer Date" not in df.columns:
         print("Error: Required columns ('Author Email', 'Committer Date') not found in CSV.")
@@ -224,75 +212,98 @@ def analyze_react_36(file_path, output_file="react_36_analysis.csv"):
 
     total_commits = df.shape[0]
     commits_per_author = df["Author Email"].value_counts()
-    commit_percentages = (commits_per_author / total_commits) * 100
-    author_timelines = {}
-    for author in commits_per_author.index:
-        author_commits = df[df["Author Email"] == author]
-        first_commit = author_commits["Committer Date"].min()
-        latest_commit = author_commits["Committer Date"].max()
-        author_timelines[author] = (first_commit, latest_commit)
+    active_developers = (commits_per_author > (total_commits * 0.01)).sum()
+    
+    meets_criteria = active_developers <= 50
+    outcome = (f"Meets criteria (Active developers: {active_developers}, Threshold: 50)" 
+               if meets_criteria else 
+               f"Does not meet criteria (More than 50 active developers: {active_developers})")
+    recommendation = "Yes" if meets_criteria else "No"
 
     file_exists = os.path.isfile(output_file)
-    output_data = []
-    for author, commit_percentage in commit_percentages.items():
-        first_commit, latest_commit = author_timelines[author]
-        output_data.append({
-            "Author Email": author,
-            "Commit Percentage": f"{commit_percentage:.2f}%",
-            "First Commit Date": first_commit,
-            "Latest Commit Date": latest_commit
-        })
+    with open(output_file, mode="a", encoding="utf-8", newline="") as csv_file:
+        fieldnames = ["Project Name", "ReACT Name/Number", "Outcome", "Recommendation"]
+        writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+        if not file_exists or os.stat(output_file).st_size == 0:
+            writer.writeheader()
 
-    output_df = pd.DataFrame(output_data)
-    output_df.to_csv(output_file, mode='a', index=False, header=not file_exists)
+        writer.writerow({
+            "Project Name": project_name,
+            "ReACT Name/Number": "ReACT-36",
+            "Outcome": outcome,
+            "Recommendation": recommendation
+        })
     
     print(f"ReACT-36 Analysis saved to {output_file}")
-    print(output_df)
 
-def analyze_react_38_with_loc(file_path, min_commits=10, min_months_active=3, min_lines_of_code=1000, output_file="react_commit_author.csv"):
+def analyze_react_38_with_loc(file_path, project_name, min_commits=10, min_months_active=3, min_lines_of_code=1000, output_file="final_react_analysis_2.csv"):
     """
     Analyze ReACT-38: Foster contributions from experienced contributors.
-    Identify contributors who have been active for a significant amount of time,
-    made a sufficient number of commits, and contributed a significant amount of lines.
     """
     df = pd.read_csv(file_path)
-    df.columns = df.columns.str.strip()  # Removes spaces from column names
+    df.columns = df.columns.str.strip()
     if "Author Email" not in df.columns or "Committer Date" not in df.columns or "Total Lines Changed" not in df.columns:
         print("Error: Required columns ('Author Email', 'Committer Date', 'Total Lines Changed') not found in CSV.")
         return
+    
     commits_per_author = df["Author Email"].value_counts()
-
     contributor_lines_of_code = df.groupby("Author Email")["Total Lines Changed"].sum()
     experienced_contributors = commits_per_author[commits_per_author >= min_commits]
-
     experienced_contributors = experienced_contributors[contributor_lines_of_code[experienced_contributors.index] >= min_lines_of_code]
+    
     contributor_timelines = {}
     for author in experienced_contributors.index:
         author_commits = df[df["Author Email"] == author]
-        
         first_commit = pd.to_datetime(author_commits["Committer Date"]).min()
         latest_commit = pd.to_datetime(author_commits["Committer Date"]).max()
-
         months_active = (latest_commit.year - first_commit.year) * 12 + (latest_commit.month - first_commit.month)
         
         if months_active >= min_months_active:
-            contributor_timelines[author] = (commits_per_author[author], contributor_lines_of_code[author], first_commit, latest_commit)
-
+            contributor_timelines[author] = (commits_per_author[author], contributor_lines_of_code[author], months_active)
+    
+    experienced_contributor_count = len(contributor_timelines)
+    meets_criteria = experienced_contributor_count >= 5
+    outcome = (f"Meets criteria (Experienced contributors: {experienced_contributor_count}, Threshold: 5)" 
+               if meets_criteria else 
+               f"Does not meet criteria (Experienced contributors: {experienced_contributor_count}, Threshold: 5)")
+    recommendation = "Yes" if meets_criteria else "No"
+    
     file_exists = os.path.isfile(output_file)
-
-    output_data = []
-    for author, (commit_count, total_lines, first_commit, latest_commit) in contributor_timelines.items():
-        output_data.append({
-            "Author Email": author,
-            "Total Commits": commit_count,
-            "Total Lines Contributed": total_lines,
-            "First Commit Date": first_commit,
-            "Latest Commit Date": latest_commit,
-            "Months Active": (latest_commit.year - first_commit.year) * 12 + (latest_commit.month - first_commit.month)
+    with open(output_file, mode="a", encoding="utf-8", newline="") as csv_file:
+        fieldnames = ["Project Name", "ReACT Name/Number", "Outcome", "Recommendation"]
+        writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+        if not file_exists or os.stat(output_file).st_size == 0:
+            writer.writeheader()
+        
+        writer.writerow({
+            "Project Name": project_name,
+            "ReACT Name/Number": "ReACT-38",
+            "Outcome": outcome,
+            "Recommendation": recommendation
         })
-
-    output_df = pd.DataFrame(output_data)
-    output_df.to_csv(output_file, mode='a', index=False, header=not file_exists)
     
     print(f"ReACT-38 Analysis saved to {output_file}")
-    print(output_df)
+
+
+
+def main():
+    project_path = '/Users/nehapradeep/Desktop/UCDavis/Winter25/SE/OSS ReAct/OSS-ReACT-Identification/'
+    project_name = 'kvrocks'
+    input_csv = os.path.join(project_path, "pydrillerCSV", project_name, "kvrocks_commit_data.csv")
+    output_csv = "final_react_analysis_2.csv"
+    react_number = "ReACT-16"
+
+    analyze_react_metrics(input_csv, project_name, output_csv)
+    analyze_commit_messages(input_csv, project_name, output_csv)
+    analyze_file_extensions(input_csv, react_number, project_name, output_csv)
+    #analyze_file_extensions(input_csv, react_number)
+    analyze_react_16(input_csv)
+    analyze_react_36(input_csv,project_name)
+    analyze_react_38_with_loc(input_csv,project_name)
+    
+    #analyze_react_metrics(input_csv)
+
+
+    
+if __name__ == "__main__":
+    main()
