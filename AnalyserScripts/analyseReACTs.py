@@ -15,7 +15,7 @@ from datetime import datetime
 
 from datetime import datetime
 
-def analyze_react_metrics(csv_filename, project_name, output_file="final_react_analysis_2_2.csv"):
+def analyze_react_metrics(csv_filename, project_name, output_file="final_react_analysis.csv"):
     project_metrics = {
         "ReACT-11 Keep the project small and simple.": True,
         "ReACT-26 Conduct unit tests.": False,
@@ -89,7 +89,7 @@ def analyze_react_metrics(csv_filename, project_name, output_file="final_react_a
     
     print(f"Analysis saved to {output_file}")
 
-def analyze_file_extensions(file_path, react_number, project_name, output_file="final_react_analysis_2.csv"):
+def analyze_file_extensions(file_path, react_number, project_name, output_file="final_react_analysis.csv"):
     df = pd.read_csv(file_path)
     extension_counts = df["File Extension"].value_counts()
     extension_percentage = (extension_counts / extension_counts.sum()) * 100
@@ -111,7 +111,7 @@ def analyze_file_extensions(file_path, react_number, project_name, output_file="
     
     print(f"Analysis saved to {output_file}")
 
-def analyze_commit_messages(csv_filename, project_name, output_file="final_react_analysis_2.csv"):
+def analyze_commit_messages(csv_filename, project_name, output_file="final_react_analysis.csv"):
     project_metrics = {"ReACT-66 Perform adequate testing before integrating a feature": False}
     total_commits = 0
     revert_commits = 0
@@ -200,7 +200,7 @@ def analyze_react_16(file_path, output_file="react_commit_author.csv"):
     print(f"ReACT-16 Analysis saved to {output_file}")
 
 
-def analyze_react_36(file_path, project_name, output_file="final_react_analysis_2.csv"):
+def analyze_react_36(file_path, project_name, output_file="final_react_analysis.csv"):
     """
     Analyze ReACT-36: Maintain a small number of core/active developers.
     """
@@ -236,7 +236,7 @@ def analyze_react_36(file_path, project_name, output_file="final_react_analysis_
     
     print(f"ReACT-36 Analysis saved to {output_file}")
 
-def analyze_react_38_with_loc(file_path, project_name, min_commits=10, min_months_active=3, min_lines_of_code=1000, output_file="final_react_analysis_2.csv"):
+def analyze_react_38_with_loc(file_path, project_name, min_commits=10, min_months_active=3, min_lines_of_code=1000, output_file="final_react_analysis.csv"):
     """
     Analyze ReACT-38: Foster contributions from experienced contributors.
     """
@@ -290,7 +290,7 @@ def main():
     project_path = '/Users/nehapradeep/Desktop/UCDavis/Winter25/SE/OSS ReAct/OSS-ReACT-Identification/'
     project_name = 'kvrocks'
     input_csv = os.path.join(project_path, "pydrillerCSV", project_name, "kvrocks_commit_data.csv")
-    output_csv = "final_react_analysis_2.csv"
+    output_csv = "final_react_analysis.csv"
     react_number = "ReACT-16"
 
     analyze_react_metrics(input_csv, project_name, output_csv)
