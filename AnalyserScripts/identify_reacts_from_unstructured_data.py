@@ -52,7 +52,7 @@ with open("react_analysis_2.csv", "w", encoding='utf-8') as f:
             response = client.models.generate_content(
                 model="gemini-2.0-flash",
                 contents=[
-                    "Analyze the issue comments of a GitHub project and tell me in one word either yes or no if the project follows this recommendation: " + reacts[react],
+                    "Analyze the issue comments of a GitHub project and tell me in one word either yes or no if the project follows this recommendation, and give reason for your answer: " + reacts[react],
                     chunk
                 ]
             )
@@ -132,6 +132,3 @@ with open("react_analysis_2.csv", "a", encoding='utf-8') as f:
             f.write(react + "," + Issue_labels_reacts[react] + "," + response.text + "," + explanation.text + "\n")
 
 print("Labels ReACT analysis completed and saved!")
-
-
-
