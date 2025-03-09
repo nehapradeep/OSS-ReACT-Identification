@@ -18,9 +18,9 @@ kvrocks,ReACT-9,Does not meet criteria (Keyword 'how to request for access' not 
 kvrocks,ReACT-19,Does not meet criteria (Keyword 'flag newcomers' not found),No
 kvrocks,ReACT-33,Does not meet criteria (Keyword 'contribution guidelines' not found),No
 kvrocks,ReACT-84,Does not meet criteria (Keyword 'onboarding support' not found),No
-kvrocks,ReACT-63,Average modified-to-added lines ratio: 0.00. Average number of modified files per commit: 23.30. Average number of new files added: 7275.00. Total number of commits analyzed: 7510; Ratio compares behaviour of developer whether he is adding new files or modifying existing files.
-kvrocks,ReACT-64,Number of code files modified: 65. Number of documentation files modified: 80. Code-to-Documentation file ratio: 0.81. If ratio is high then developers are focused on coding and not documentation and if low then vise versa
-kvrocks,ReACT-78,Total number of commits analyzed: 7510. Number of commits involving code comment updates: 100. Percentage of commits with comment updates: 1.33%. Low emphasis on updating comments in the codebase.
+kvrocks,ReACT-63,Average modified-to-added lines ratio: 0.00. Average number of modified files per commit: 23.30. Average number of new files added: 7275.00. Total number of commits analyzed: 7510.,Yes
+kvrocks,ReACT-64,Number of code files modified: 65. Number of documentation files modified: 80. Code-to-Documentation file ratio: 0.81.,Yes
+kvrocks,ReACT-78,Total number of commits analyzed: 7510. Number of commits involving code comment updates: 100. Percentage of commits with comment updates: 1.33%. ,No
 kvrocks,ReACT-85,Total number of discussions analyzed: 6. Number of discussions involving in-person meetup announcements: 1. Percentage of meetups/announcements: 16.67%.,Yes
 kvrocks,ReACT-89,Total discussions: 6. Discussions encouraging newcomer freedom: 1. Percentage: 16.67%. ,Yes
 kvrocks,ReACT-91,"Total discussions: 4. Discussions with responses: 3. Quick responses (within 24 hours): 0. Percentage of quick responses: 0.00%. Average response time: 688 days, 9:32:25.333333",No
@@ -51,14 +51,14 @@ kvrocks,ReACT-86,Acknowledge all contributions of newcomers (comments),Yes
 kvrocks,ReACT-95,Show newcomers what is expected from them, where the difficulties lie Place this information somewhere that newcomers access early in their journey,No
 kvrocks,ReACT-73,Static Analysis Linter Exists,Yes
 kvrocks,ReACT-79,The README file provides some technical information, but it lacks clarity in terms of explicitly helping potential contributors evaluate if the project aligns with their domain expertise or technological interests.,Add a section that highlights the project's core technologies, its use cases, and which specific skill sets are most beneficial for contributing. This would help potential contributors assess if the project is a good fit for them.
-kvrocks,ReACT-93,Zulip chat and Mailing List are both available as communication channels.,Leverage Zulip for real-time discussions and use the Mailing List for formal updates and long-form communication.
-kvrocks,ReACT-94,The "How to Contribute" section exists but is not sufficiently highlighted for newcomers.,Improve the visibility of the contribution guidelines by creating a separate page dedicated to explaining how newcomers can contribute to the project, making it easier to access and follow.
-kvrocks,ReACT-95,"Contributing section is present, but detailed expectations and skill requirements are unclear.","Enhance the contributing section by providing explicit details about the skills, technologies, and expertise required for contributing to the project."
-kvrocks,ReACT-97,Tutorials and documentation are present in the project.,Ensure that the tutorials are linked properly and easily accessible for users to learn about the project.
-kvrocks,ReACT-98,The system setup process for newcomers is documented.,"Ensure that the setup instructions are simple, clear, and include all necessary dependencies to minimize friction."
-kvrocks,ReACT-102,No live FAQ section feature found in the project.,Add a live FAQ section with interactive capabilities to improve user engagement.
-kvrocks,ReACT-100,Processes and practices are documented within the project.,"Ensure that the documentation is comprehensive and up-to-date, including any new practices or processes."
-kvrocks,ReACT-77,"Mailing list is mentioned, but not encouraged.","Add a call-to-action encouraging contributors to use the mailing list for discussions, feedback, and project-related questions."
-kvrocks,ReACT-60,GitHub stars and social media links are present.,The README promotes visibility with both GitHub stars and social media links.
-kvrocks,ReACT-20,"The project communicates through various channels: Medium, Twitter, Mailing List, Zulip, WeChat.",No action required. The project already communicates through various channels.
+kvrocks,ReACT-93,Zulip chat and Mailing List are both available as communication channels.,Yes
+kvrocks,ReACT-94,The "How to Contribute" section exists but is not sufficiently highlighted for newcomers.,Yes
+kvrocks,ReACT-95,"Contributing section is present, but detailed expectations and skill requirements are unclear.",No
+kvrocks,ReACT-97,Tutorials and documentation are present in the project.,Yes
+kvrocks,ReACT-98,The system setup process for newcomers is documented.,Yes
+kvrocks,ReACT-102,No live FAQ section feature found in the project.,No
+kvrocks,ReACT-100,Processes and practices are documented within the project.,Yes
+kvrocks,ReACT-77,"Mailing list is mentioned, but not encouraged.",No
+kvrocks,ReACT-60,GitHub stars and social media links are present.,Yes
+kvrocks,ReACT-20,"The project communicates through various channels: Zulip, Mailing List, WeChat, Medium, Twitter.",Yes
 kvrocks,ReACT-103,Keep the community informed about decisions.,Yes

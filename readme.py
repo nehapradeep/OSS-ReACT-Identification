@@ -28,10 +28,10 @@ def analyze_react_102(input_csv_file, output_file):
                 break
         if faq_feature_found:
             outcome = "FAQ section feature found and integrated into the project."
-            recommendation = "Enhance the live FAQ section with real-time updates and user interactions."
+            recommendation = "Yes"
         else:
             outcome = "No live FAQ section feature found in the project."
-            recommendation = "Add a live FAQ section with interactive capabilities to improve user engagement."
+            recommendation = "No"
         
         save_analysis("ReACT-102", outcome, recommendation, output_file)
 
@@ -48,10 +48,10 @@ def analyze_react_100(input_csv_file, output_file):
                 break
         if documentation_found:
             outcome = "Processes and practices are documented within the project."
-            recommendation = "Ensure that the documentation is comprehensive and up-to-date, including any new practices or processes."
+            recommendation = "Yes"
         else:
             outcome = "No documentation of processes and practices found in the project."
-            recommendation = "Document the key processes and practices to enhance team collaboration and project transparency."
+            recommendation = "No"
         
         save_analysis("ReACT-100", outcome, recommendation, output_file)
 
@@ -71,16 +71,16 @@ def analyze_react_93(input_csv_file, output_file):
                 mailing_list_found = True        
         if zulip_found and mailing_list_found:
             outcome = "Zulip chat and Mailing List are both available as communication channels."
-            recommendation = "Leverage Zulip for real-time discussions and use the Mailing List for formal updates and long-form communication."
+            recommendation = "Yes"
         elif zulip_found:
             outcome = "Zulip chat is available as a local communication channel."
-            recommendation = "Promote the use of Zulip for community discussions and ensure visibility to newcomers."
+            recommendation = "Yes"
         elif mailing_list_found:
             outcome = "A Mailing List is available for communication."
-            recommendation = "Introduce real-time communication platforms, like Zulip, to complement the mailing list for faster and more interactive engagement."
+            recommendation = "Yes"
         else:
             outcome = "No clear local communication channels (like Zulip or chat platforms) found."
-            recommendation = "Create and promote real-time communication channels, such as Zulip or chat rooms, for better community engagement."
+            recommendation = "No"
         
         save_analysis("ReACT-93", outcome, recommendation, output_file)
 
@@ -101,13 +101,13 @@ def analyze_react_95(input_csv_file, output_file):
                 break        
         if contributing_found and expectations_found:
             outcome = "Expectations and required skills/technologies are documented, and the project has a clear contributing guide."
-            recommendation = "Ensure that the contributing guide clearly outlines the required skills, technologies, and level of expertise for newcomers."
+            recommendation = "Yes"
         elif contributing_found:
             outcome = "Contributing section is present, but detailed expectations and skill requirements are unclear."
-            recommendation = "Enhance the contributing section by providing explicit details about the skills, technologies, and expertise required for contributing to the project."
+            recommendation = "No"
         else:
             outcome = "No clear information on expectations, required skills, or technologies for newcomers found in the project."
-            recommendation = "Provide clear information on the skills, technologies, and level of expertise required for the project, and ensure it is easily accessible early in the documentation for newcomers."
+            recommendation = "No"
         
         save_analysis("ReACT-95", outcome, recommendation, output_file)
 
@@ -123,10 +123,10 @@ def analyze_react_97(input_csv_file, output_file):
                 break        
         if tutorials_found:
             outcome = "Tutorials and documentation are present in the project."
-            recommendation = "Ensure that the tutorials are linked properly and easily accessible for users to learn about the project."
+            recommendation = "Yes"
         else:
             outcome = "No tutorials or instructional documents found in the project."
-            recommendation = "Create and link different kinds of tutorials and documents, including video tutorials and guides to help newcomers understand the system."
+            recommendation = "No"
         
         save_analysis("ReACT-97", outcome, recommendation, output_file)
 
@@ -142,10 +142,10 @@ def analyze_react_98(input_csv_file, output_file):
                 break        
         if setup_found:
             outcome = "The system setup process for newcomers is documented."
-            recommendation = "Ensure that the setup instructions are simple, clear, and include all necessary dependencies to minimize friction."
+            recommendation = "Yes"
         else:
             outcome = "No clear instructions for newcomers to build the system locally found."
-            recommendation = "Provide easy-to-follow instructions for setting up the system locally, ensuring that all dependencies and tools are clearly defined."
+            recommendation = "No"
         
         save_analysis("ReACT-98", outcome, recommendation, output_file)
 
@@ -164,13 +164,13 @@ def analyze_react_77(input_csv_file, output_file):
                 mailing_list_encouraged = True        
         if mailing_list_found and mailing_list_encouraged:
             outcome = "Mailing list is mentioned and encouraged."
-            recommendation = "The README provides clear encouragement for contributors to use the mailing list for communication and involvement."
+            recommendation = "Yes"
         elif mailing_list_found:
             outcome = "Mailing list is mentioned, but not encouraged."
-            recommendation = "Add a call-to-action encouraging contributors to use the mailing list for discussions, feedback, and project-related questions."
+            recommendation = "No"
         else:
             outcome = "Mailing list is not mentioned."
-            recommendation = "Include a section that encourages contributors to join and use the mailing list for communication and development discussions."
+            recommendation = "No"
         
         save_analysis("ReACT-77", outcome, recommendation, output_file)
 
@@ -188,13 +188,13 @@ def analyze_react_60(input_csv_file, output_file):
                 social_media_links_found = True        
         if stars_found and social_media_links_found:
             outcome = "GitHub stars and social media links are present."
-            recommendation = "The README promotes visibility with both GitHub stars and social media links."
+            recommendation = "Yes"
         elif stars_found:
             outcome = "GitHub stars are present, but social media links are missing."
-            recommendation = "Include social media profile links (Twitter, LinkedIn, Medium) to increase the project's visibility."
+            recommendation = "No"
         else:
             outcome = "GitHub stars are not present."
-            recommendation = "Add the GitHub stars badge and include social media profile links (Twitter, LinkedIn, Medium) to promote the project."
+            recommendation = "No"
         
         save_analysis("ReACT-60", outcome, recommendation, output_file)
 
@@ -209,17 +209,17 @@ def analyze_react_53(input_csv_file, output_file):
                 incubated_found = True        
         if incubated_found:
             outcome = "The project is incubated by the Apache Software Foundation."
-            recommendation = "No action required. The project is already incubated by a large software foundation."
+            recommendation = "Yes"
         else:
             outcome = "The project is not incubated by a large software foundation."
-            recommendation = "Consider submitting the project to a large software foundation like Apache or Linux Foundation for incubation."
+            recommendation = "No"
         
         save_analysis("ReACT-53", outcome, recommendation, output_file)
 
 # purva
 def analyze_react_20(input_csv_file, output_file):
     with open(input_csv_file, mode='r', encoding='utf-8') as file:
-        reader = csv.DictReader(file)        
+        reader = csv.DictReader(file)
         communication_channels = []        
         for row in reader:
             content = row.get("Content", "").strip().lower()
@@ -236,10 +236,10 @@ def analyze_react_20(input_csv_file, output_file):
         communication_channels = list(set(communication_channels))        
         if len(communication_channels) >= 2:
             outcome = f"The project communicates through various channels: {', '.join(communication_channels)}."
-            recommendation = "No action required. The project already communicates through various channels."
+            recommendation = "Yes"
         else:
             outcome = "The project does not communicate through various channels."
-            recommendation = "Consider utilizing additional communication channels to enhance engagement and reach a wider audience."
+            recommendation = "No"
         
         save_analysis("ReACT-20", outcome, recommendation, output_file)
 

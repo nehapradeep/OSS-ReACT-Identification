@@ -160,43 +160,43 @@ def analyze_commit_messages(csv_filename, project_name, output_file="final_react
 
 
 
-def analyze_react_16(file_path, output_file="react_commit_author.csv"):
+def analyze_react_16(file_path, project_name, output_file="final_react_analysis.csv"):
     """
     Analyze ReACT-16: Identify the number of integrators (committers who merged pull requests)
     and track their expansion over time.
     """
     df = pd.read_csv(file_path)
-    print("Column Names:", df.columns.tolist())  
-
-    df.columns = df.columns.str.strip()  # Removes spaces from column names
-    if "Commit Message" not in df.columns:
-        print("Error: 'Commit Message' column not found in CSV.")
+    df.columns = df.columns.str.strip()
+    if "Is Merge Commit" not in df.columns or "Committer Email" not in df.columns or "Committer Date" not in df.columns:
+        print("Error: Required columns ('Is Merge Commit', 'Committer Email', 'Committer Date') not found in CSV.")
         return
-    merge_commits = df[df["Commit Message"].str.contains("Merge", case=False, na=False)]
-
+    merge_commits = df[df["Is Merge Commit"] == True]
     unique_integrators = merge_commits["Committer Email"].nunique()
     total_merges = merge_commits.shape[0]
-
     unique_committer_emails = merge_commits["Committer Email"].unique()
-
+    merge_commits["Committer Date"] = pd.to_datetime(merge_commits["Committer Date"])
     if not merge_commits.empty:
         earliest_merge = merge_commits["Committer Date"].min()
         latest_merge = merge_commits["Committer Date"].max()
     else:
         earliest_merge = latest_merge = "No merge commits found"
-
+    outcome = (f"Total Integrators: {unique_integrators}, Total Merge Commits: {total_merges}, "
+               f"Earliest Merge: {earliest_merge}, Latest Merge: {latest_merge}")
+    recommendation = "Yes" if unique_integrators > 0 else "No"
     file_exists = os.path.isfile(output_file)
-    output_data = pd.DataFrame({
-        "OSS Project": ["Celeborn"],
-        "ReACT number": ["ReACT-16"],
-        "Total Integrators": [unique_integrators],
-        "Total Merge Commits": [total_merges],
-        "Earliest Merge Date": [earliest_merge],
-        "Latest Merge Date": [latest_merge],
-        "Unique Committer Emails": [", ".join(unique_committer_emails)]
-    })
-
-    output_data.to_csv(output_file, mode='a', index=False, header=not file_exists)
+    with open(output_file, mode="a", encoding="utf-8", newline="") as csv_file:
+        fieldnames = ["Project Name", "ReACT Name/Number", "Outcome", "Recommendation"]
+        writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+        
+        if not file_exists or os.stat(output_file).st_size == 0:
+            writer.writeheader()
+        writer.writerow({
+            "Project Name": project_name,
+            "ReACT Name/Number": "ReACT-16",
+            "Outcome": outcome,
+            "Recommendation": recommendation
+        })
+    
     print(f"ReACT-16 Analysis saved to {output_file}")
 
 
@@ -297,7 +297,7 @@ def main():
     analyze_commit_messages(input_csv, project_name, output_csv)
     analyze_file_extensions(input_csv, react_number, project_name, output_csv)
     #analyze_file_extensions(input_csv, react_number)
-    analyze_react_16(input_csv)
+    analyze_react_16(input_csv,project_name)
     analyze_react_36(input_csv,project_name)
     analyze_react_38_with_loc(input_csv,project_name)
     
