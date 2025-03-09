@@ -40,4 +40,4 @@ def parse_txt_to_csv(input_file, output_file):
     print(f'CSV file "{output_file}" created successfully!')
 
 # Example usage
-parse_txt_to_csv('kvrocks/pr.txt', 'output.csv')
+parse_txt_to_csv('ResDB/pr.txt', 'pr.csv')

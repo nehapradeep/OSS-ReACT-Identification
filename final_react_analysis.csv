@@ -5,12 +5,6 @@ Liminal,ReACT-32 Promote code transparency. Keep the code as simple as possible,
 Liminal,ReACT-82 Have and enforce a code of conduct,Does not meet criteria (No code of conduct file found in the project.),Do not recommend
 Liminal,ReACT-66 Perform adequate testing before integrating a feature,Meets criteria,Recommend
 Liminal,ReACT-File Extension Analysis,py: 65.94%; md: 10.84%; yml: 6.73%; txt: 4.49%; sh: 3.64%; png: 2.79%; yaml: 1.39%; rst: 0.93%; in: 0.70%; gitignore: 0.54%; conf: 0.54%; bat: 0.31%; py~HEAD: 0.31%; gif: 0.23%; csv: 0.23%; json: 0.15%; cfg: 0.15%; toml: 0.08%,N/A
-ResDB,ReACT-11 Keep the project small and simple.,Meets criteria,Recommend
-ResDB,ReACT-26 Conduct unit tests.,Meets criteria,Recommend
-ResDB,ReACT-32 Promote code transparency. Keep the code as simple as possible,"Does not meet criteria (Comment ratio is 0.02, which is below the recommended threshold of 15%.)",Do not recommend
-ResDB,ReACT-82 Have and enforce a code of conduct,Meets criteria,Recommend
-ResDB,ReACT-66 Perform adequate testing before integrating a feature,Meets criteria,Recommend
-ResDB,ReACT-File Extension Analysis,pub: 29.22%; pri: 29.22%; cert: 26.97%; cpp: 4.57%; h: 2.96%; sh: 1.23%; md: 1.12%; txt: 0.95%; config: 0.80%; conf: 0.54%; proto: 0.48%; yml: 0.37%; py: 0.31%; js: 0.28%; json: 0.16%; png: 0.14%; BUILD: 0.12%; bzl: 0.09%; config_1: 0.04%; config_2: 0.04%; ts: 0.04%; bazelversion: 0.04%; yaml: 0.03%; gitignore: 0.03%; map: 0.03%; config_3: 0.03%; bazelrc: 0.03%; config_4: 0.03%; bazel: 0.02%; sol: 0.02%; out: 0.02%; swp: 0.01%; jpg: 0.01%; css: 0.01%; xml: 0.01%; rat-excludes: 0.01%; npmignore: 0.01%; markdown: 0.01%; pdf: 0.01%,N/A
 kvrocks,ReACT-14,Meets criteria (Avg merge time: 63.50 hours),Yes
 kvrocks,ReACT-62,Does not meet criteria (First commit date 2019-08-15 21:10:11+08:00 does not match repo creation month/year or insufficient contributions in first 2 months: 301),No
 kvrocks,ReACT-81,Meets criteria (Last README update: 2024-12-12 19:38:36+08:00),Yes
@@ -62,3 +56,18 @@ kvrocks,ReACT-77,"Mailing list is mentioned, but not encouraged.",No
 kvrocks,ReACT-60,GitHub stars and social media links are present.,Yes
 kvrocks,ReACT-20,"The project communicates through various channels: Zulip, Mailing List, WeChat, Medium, Twitter.",Yes
 kvrocks,ReACT-103,Keep the community informed about decisions.,Yes
+ResDB,ReACT-11 Keep the project small and simple.,Meets criteria,Yes
+ResDB,ReACT-26 Conduct unit tests.,Meets criteria,Yes
+ResDB,ReACT-32 Promote code transparency. Keep the code as simple as possible,"Does not meet criteria (Comment ratio is 0.02, which is below the recommended threshold of 15%.)",No
+ResDB,ReACT-82 Have and enforce a code of conduct,Meets criteria,Yes
+ResDB,ReACT-66 Perform adequate testing before integrating a feature,Meets criteria,Yes
+ResDB,ReACT-16,pub: 29.22%; pri: 29.22%; cert: 26.97%; cpp: 4.57%; h: 2.96%; sh: 1.23%; md: 1.12%; txt: 0.95%; config: 0.80%; conf: 0.54%; proto: 0.48%; yml: 0.37%; py: 0.31%; js: 0.28%; json: 0.16%; png: 0.14%; BUILD: 0.12%; bzl: 0.09%; config_1: 0.04%; config_2: 0.04%; ts: 0.04%; bazelversion: 0.04%; yaml: 0.03%; gitignore: 0.03%; map: 0.03%; config_3: 0.03%; bazelrc: 0.03%; config_4: 0.03%; bazel: 0.02%; sol: 0.02%; out: 0.02%; swp: 0.01%; jpg: 0.01%; css: 0.01%; xml: 0.01%; rat-excludes: 0.01%; npmignore: 0.01%; markdown: 0.01%; pdf: 0.01%,N/A
+ResDB,ReACT-16,"Total Integrators: 0, Total Merge Commits: 0, Earliest Merge: No merge commits found, Latest Merge: No merge commits found",No
+ResDB,ReACT-36,"Meets criteria (Active developers: 4, Threshold: 50)",Yes
+ResDB,ReACT-38,"Does not meet criteria (Experienced contributors: 4, Threshold: 5)",NoResDB,ReACT-14 Merge pull requests promptly.,Meets criteria (Avg merge time: 24.38 hours),Yes
+ResDB,ReACT-62 Encourage developers to start contributing to the project early.,Does not meet criteria (First commit date 2022-12-19 17:24:12+00:00 does not match repo creation month/year or insufficient contributions in first 2 months: 347),No
+ResDB,ReACT-81 Keep knowledge up to date and findable.,Meets criteria (Last README update: 2025-02-14 17:14:56+08:00),Yes
+ResDB,ReACT-9,Does not meet criteria (Keyword 'how to request for access' not found),No
+ResDB,ReACT-19,Does not meet criteria (Keyword 'flag newcomers' not found),No
+ResDB,ReACT-33,Does not meet criteria (Keyword 'contribution guidelines' not found),No
+ResDB,ReACT-84,Does not meet criteria (Keyword 'onboarding support' not found),No

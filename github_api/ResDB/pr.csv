@@ -1,0 +1,127 @@
+PR Number,Title,State,URL,Created At,Merged At
+173,Smart contract merge,closed,,2025-02-14T09:14:45Z,2025-02-14T09:14:57Z
+172,Smart contract merge,closed,,2025-02-14T07:53:26Z,2025-02-14T07:53:35Z
+171,Support SmartContract with Key-Value,closed,,2025-02-13T19:30:45Z,2025-02-14T07:45:09Z
+170,MemLens Database Specific Changes,open,,2025-02-12T11:42:38Z,None
+168,Fix ut,closed,,2025-01-06T06:53:16Z,2025-01-06T07:15:09Z
+167,add gcc,closed,,2025-01-06T05:10:09Z,2025-01-06T06:47:43Z
+166,Stable Fides Version,open,,2025-01-03T02:32:09Z,None
+165,Use custom Ports,closed,,2024-12-08T04:32:49Z,2024-12-08T04:35:41Z
+164,Integrate clangd Autocomplete Support into Bazel C++ Project,closed,,2024-11-09T08:33:46Z,None
+157,"Minor fixes to the Dockerfile, Entrypoint and Readme",closed,,2024-09-27T09:09:20Z,2024-09-27T18:36:03Z
+156,Sync with master,closed,,2024-09-27T08:20:21Z,2024-09-27T08:21:18Z
+154,[License]Add the missing license file,closed,,2024-08-01T04:11:17Z,2024-08-01T07:06:35Z
+153,Update CHANGELOG.md,closed,,2024-07-30T17:39:49Z,2024-07-31T05:38:47Z
+152,Update README.md,closed,,2024-07-27T20:42:22Z,2024-07-28T02:50:16Z
+151,Update .licenserc.yaml,closed,,2024-07-11T13:37:14Z,2024-07-12T06:51:46Z
+150,Add missing ASF headers and provide dev/check-license script,closed,,2024-07-11T12:41:19Z,2024-07-11T13:34:28Z
+145,Install,closed,,2024-06-23T07:53:31Z,2024-06-23T08:10:12Z
+143,Fix Apache License,closed,,2024-05-04T15:39:08Z,2024-05-04T17:13:15Z
+142,Fix Bug,closed,,2024-05-03T03:19:25Z,2024-05-03T03:55:28Z
+141,Added Resview to CHANGELOG,closed,,2024-04-16T22:42:46Z,2024-04-16T22:43:07Z
+140,add poe,closed,,2024-04-10T22:13:59Z,2024-04-10T22:39:42Z
+139,"""Fixed issue with data carryover between instances""",closed,,2024-04-02T23:01:17Z,2024-04-02T23:17:16Z
+138,ResView Branch,closed,,2024-03-30T17:47:20Z,2024-03-31T06:34:47Z
+137,update kv_operation.py route to bazel-out and update readme,closed,,2024-03-09T06:27:47Z,2024-03-09T07:17:16Z
+136,kv-service python api,closed,,2024-03-09T04:15:17Z,2024-03-09T05:27:33Z
+135,Fix incorrect comment intervals in Prometheus config,closed,,2024-03-07T10:28:16Z,2024-03-07T13:16:25Z
+133,add GetRequestFromReplica interface,closed,,2024-01-29T22:23:24Z,2024-01-29T22:44:39Z
+132,add bazel version,closed,,2024-01-07T11:42:17Z,2024-01-07T12:06:27Z
+131,Fix test,closed,,2024-01-02T15:10:15Z,None
+130,Use .asf.yaml to manage GitHub settings,closed,,2024-01-02T09:39:41Z,2024-01-02T12:33:25Z
+129,Update copyright date in NOTICE,closed,,2024-01-02T08:44:11Z,2024-01-02T09:12:01Z
+127,"""Added flags to enable/disable resview functions and faulty switches""",closed,,2023-12-25T23:58:11Z,2023-12-25T23:58:24Z
+126,Fix the failure memory order argument to atomic_compare_exchange_strong explicit,closed,,2023-12-20T20:18:55Z,2023-12-29T10:29:25Z
+124,change apache license,closed,,2023-12-01T22:37:18Z,2023-12-01T22:37:51Z
+123,add notice file,closed,,2023-12-01T22:28:15Z,2023-12-01T22:29:26Z
+122,change apache license,closed,,2023-12-01T22:03:47Z,2023-12-01T22:23:40Z
+121,License,closed,,2023-12-01T21:45:04Z,2023-12-01T22:01:30Z
+120,change license under service folder,closed,,2023-12-01T21:20:27Z,2023-12-01T21:40:49Z
+119,support old api command line,closed,,2023-11-30T20:44:17Z,2023-11-30T21:19:11Z
+118,Update CHANGELOG.md,closed,,2023-11-30T05:19:05Z,2023-11-30T05:41:51Z
+117,Support version based key-value service.,closed,,2023-11-29T23:06:57Z,2023-11-30T00:50:27Z
+116,Fixed light logo bug | removed nexres refs,closed,,2023-11-21T09:21:30Z,2023-11-21T11:28:32Z
+115,Updated loqo quality,closed,,2023-11-16T19:46:03Z,2023-11-16T23:35:07Z
+114,Updated logo,closed,,2023-11-16T04:43:44Z,2023-11-16T05:58:03Z
+112,Utxo api,closed,,2023-11-09T22:06:13Z,2023-11-09T23:19:09Z
+111,Change getvalues cmd type to getallvalues,closed,,2023-11-06T00:21:40Z,2023-11-06T01:10:18Z
+110,Modified Dockerfile to add entrypoint,closed,,2023-11-05T20:52:54Z,2023-11-05T22:18:04Z
+108,fix utxo start script,closed,,2023-11-03T22:12:16Z,2023-11-03T22:29:11Z
+106,disable local recovery,closed,,2023-11-02T17:01:07Z,2023-11-02T18:50:50Z
+102,Support Custom Configuration,closed,,2023-10-27T20:35:15Z,2023-10-28T20:42:39Z
+100,Hs,closed,,2023-10-27T16:38:48Z,2023-10-27T16:38:56Z
+99,Poe,closed,,2023-10-27T16:36:01Z,2023-10-27T16:36:08Z
+93,Deploy,closed,,2023-10-27T05:26:06Z,2023-10-27T16:39:58Z
+92,Grafna,closed,,2023-10-26T16:30:49Z,2023-10-26T18:34:21Z
+90,fix read permission,closed,,2023-10-14T20:50:35Z,2023-10-21T01:02:29Z
+89,Added build-push workflow,closed,,2023-10-13T23:32:10Z,2023-10-15T09:37:35Z
+86,Added Dockerfiles and readme update,closed,,2023-10-11T00:35:09Z,2023-10-11T05:55:17Z
+85,Poe,closed,,2023-10-09T20:30:45Z,None
+84,remove syslock,closed,,2023-10-04T00:12:13Z,2023-10-04T00:15:58Z
+83,Add files via upload,closed,,2023-10-03T18:53:37Z,2023-10-03T21:32:44Z
+82,Add files via upload,closed,,2023-10-03T18:52:56Z,2023-10-11T01:11:42Z
+81,add new,closed,,2023-10-02T22:58:41Z,None
+80,fix: kv service tools in performance test,closed,,2023-09-17T12:45:25Z,2023-09-17T16:48:18Z
+79,Update README.md,closed,,2023-09-06T22:10:17Z,2023-09-07T02:36:12Z
+78,Cjcchen patch 3,closed,,2023-09-01T05:16:39Z,2023-09-01T16:01:13Z
+77,Cjcchen patch 3,closed,,2023-08-31T07:45:39Z,2023-09-01T03:53:48Z
+76,viewchange changelog,closed,,2023-08-22T08:27:14Z,2023-08-22T08:36:57Z
+75,viewchange changelog,closed,,2023-08-22T07:59:46Z,2023-08-22T08:00:46Z
+74,fix typos,closed,,2023-08-22T07:46:54Z,2023-08-22T15:25:19Z
+73,add system info in local recovery,closed,,2023-08-21T19:44:37Z,2023-08-22T07:35:56Z
+72,View change,closed,,2023-08-19T17:45:29Z,2023-08-21T09:44:39Z
+71,Update README.md,closed,,2023-08-18T23:08:42Z,2023-08-19T00:42:49Z
+70,Update README.md,closed,,2023-08-18T22:29:03Z,None
+69,fixed typo at README.md,closed,,2023-08-18T20:06:41Z,2023-08-18T22:41:36Z
+68,Res local,closed,,2023-08-05T00:03:34Z,2023-08-05T16:05:58Z
+67,Doc,closed,,2023-06-07T22:30:42Z,2023-06-07T22:40:59Z
+66,change img path,closed,,2023-06-04T22:00:33Z,2023-06-04T22:15:39Z
+65,add png,closed,,2023-06-03T06:17:05Z,2023-06-03T20:05:57Z
+64,Resilient v2,closed,,2023-06-02T22:52:23Z,2023-06-03T02:21:55Z
+63,move out storage,closed,,2023-06-01T23:41:50Z,2023-06-02T02:46:47Z
+62,Resilient v2,closed,,2023-06-01T20:52:47Z,2023-06-01T21:31:18Z
+61,Add files via upload,closed,,2023-05-31T20:29:50Z,2023-06-01T05:37:58Z
+60,add pic in readme,closed,,2023-05-31T17:55:48Z,2023-05-31T18:50:32Z
+59,Resilient v2,closed,,2023-05-27T01:10:42Z,2023-05-31T17:50:14Z
+58,conceptual outline for quecc,closed,,2023-04-16T05:48:50Z,None
+57,Perf,closed,,2023-04-05T18:02:05Z,2023-04-05T18:03:10Z
+56,Aarch64,closed,,2023-04-05T04:55:52Z,2023-04-05T04:56:45Z
+55,Resilient v2,closed,,2023-04-04T01:57:13Z,2023-04-04T09:11:29Z
+54,Update README.md,closed,,2023-03-16T05:15:52Z,2023-03-16T05:24:29Z
+53,Update README.md,closed,,2023-03-15T05:10:59Z,2023-03-15T07:05:32Z
+52,Update deploy.sh,open,,2023-03-15T04:44:55Z,None
+51,Update deploy.sh,closed,,2023-03-15T02:13:30Z,2023-03-15T02:33:12Z
+50,Eurosys'23 branch,closed,,2023-03-14T16:19:32Z,None
+49,Update README.md,closed,,2023-03-13T05:58:31Z,2023-03-13T05:59:41Z
+48,Deployment,closed,,2023-03-13T05:02:10Z,2023-03-13T05:57:37Z
+47,Add doxygen comments to sdk client,closed,,2023-03-02T06:07:45Z,2023-03-02T07:43:26Z
+46,Fixed relative path issue,closed,,2023-03-01T02:50:02Z,2023-03-01T03:18:24Z
+45,Restructured doxygen directory to be within documents,closed,,2023-03-01T02:10:03Z,2023-03-01T02:25:28Z
+44,Utxo,closed,,2023-02-28T08:41:57Z,2023-02-28T08:49:01Z
+43,"Modified gh-pages action, added cname option",closed,,2023-02-27T22:50:02Z,2023-02-27T22:58:38Z
+42,Modified Doxyfile,closed,,2023-02-27T10:35:09Z,2023-02-27T11:08:20Z
+41,Fixed publish directory key,closed,,2023-02-27T09:07:33Z,2023-02-27T09:20:50Z
+40,Added doxyfile and github actions config,closed,,2023-02-27T03:03:27Z,2023-02-27T03:09:53Z
+39,Fix build pybind,closed,,2023-02-25T11:06:25Z,2023-02-27T03:02:14Z
+38,ifix optional,closed,,2023-02-23T20:56:23Z,2023-02-23T21:35:32Z
+36,Update CHANGELOG.md,closed,,2023-02-23T08:36:46Z,2023-02-23T09:32:44Z
+35,update kv client + kv server in application folder,closed,,2023-02-22T17:50:17Z,2023-02-22T18:13:07Z
+34,Update CHANGELOG.md,closed,,2023-02-22T17:48:33Z,2023-02-22T18:11:45Z
+33,SDK Full Release ,closed,,2023-02-22T02:06:04Z,2023-02-22T16:46:04Z
+32,Code of conduct,closed,,2023-02-11T21:47:40Z,2023-02-12T03:16:18Z
+31,Update README.md,closed,,2023-02-11T21:40:58Z,2023-02-12T03:15:31Z
+30,Update README.md,closed,,2023-02-10T20:05:00Z,2023-02-10T20:25:52Z
+29,Update README.md,closed,,2023-02-09T23:20:37Z,2023-02-09T23:21:27Z
+28,Smart contract,closed,,2023-01-23T13:26:14Z,2023-01-26T00:24:04Z
+27,Create LICENSE,closed,,2023-01-04T00:13:36Z,2023-01-04T00:13:44Z
+26,Geo pbft,closed,,2022-12-19T17:51:23Z,2022-12-19T17:52:10Z
+24,Remove Unnecessary Socket Connections (Already Tested on Oracle Cloud),closed,,2021-12-27T12:03:57Z,None
+23,Fix Input_thread Bugs and Semaphore Optimization (already passed test on Oracle Cloud),closed,,2021-12-15T06:59:08Z,2021-12-27T06:32:01Z
+22,Feature/queue integration,closed,,2021-12-02T00:40:49Z,None
+21,fix: dev: fixed the regular expression,closed,,2021-11-02T04:02:06Z,2021-12-27T06:33:00Z
+20,"attempt at resdb-singularity using singularity-compose, but the tport…",open,,2021-10-30T21:43:27Z,None
+19,Release v3,closed,,2021-09-30T18:04:05Z,2021-09-30T18:46:26Z
+16,Client Memory #11 and config file bug fixed,closed,,2021-04-14T01:55:36Z,2021-04-14T02:00:46Z
+14,Nanomsg Next Generation upgrade,closed,,2021-03-06T02:38:04Z,2021-03-06T02:39:11Z
+4,Gossip,closed,,2019-11-27T18:03:25Z,None
+2,Bug fix for handling multiple clients,closed,,2019-11-25T23:42:00Z,2019-11-26T01:51:45Z
