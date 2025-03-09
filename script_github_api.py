@@ -79,7 +79,32 @@ def get_file_path(owner, repo, file_path):
     url = f"https://api.github.com/repos/{owner}/{repo}/contents/{file_path}"
     response = requests.get(url, headers=headers)
     data = response.json()
-    with open(f'github_api/{repo}/{file_path}', "w", encoding="utf-8") as file:
+
+    # Ensure all parent directories exist
+    full_path = os.path.join('github_api', repo, file_path)
+    os.makedirs(os.path.dirname(full_path), exist_ok=True)
+
+    with open(full_path, "w", encoding="utf-8") as file:
+        if 'content' in data:
+            file_content = base64.b64decode(data["content"]).decode("utf-8")
+            file.write(file_content)
+        else:
+            file.write(f"File {file_path} not found in the repository.")
+
+def get_src_code_path(owner, repo, file_path):
+    url = f"https://api.github.com/repos/{owner}/{repo}/contents/{file_path}"
+    response = requests.get(url, headers=headers)
+    data = response.json()
+    
+    # Define a strict save directory (`github_api/{repo}/top_files/`)
+    save_dir = os.path.join('github_api', repo, 'top_files')
+    os.makedirs(save_dir, exist_ok=True)
+
+    # Extract filename from original path and save only in `top_files/`
+    filename = os.path.basename(file_path)  # Get file name without path
+    save_path = os.path.join(save_dir, filename)  # Save inside `top_files/`
+
+    with open(save_path, "w", encoding="utf-8") as file:
         if 'content' in data:
             file_content = base64.b64decode(data["content"]).decode("utf-8")
             file.write(file_content)
@@ -95,6 +120,36 @@ def get_discussions(owner, repo):
     url = f'https://api.github.com/repos/{owner}/{repo}/discussions'
     response = requests.get(url, headers=headers)
     return response.json()
+
+#pranav_start
+def get_top_source_files(owner, repo):
+    url = f'https://api.github.com/repos/{owner}/{repo}/git/trees/unstable?recursive=1'
+    response = requests.get(url, headers=headers)
+    response.raise_for_status()
+    tree = response.json().get('tree', [])
+    
+    source_files = [file['path'] for file in tree if file['path'].endswith(('.c', '.cpp', '.py', '.java', '.js', '.go'))]
+    file_lengths = []
+    
+    for file_path in source_files:
+        file_url = f'https://api.github.com/repos/{owner}/{repo}/contents/{file_path}'
+        file_response = requests.get(file_url, headers=headers)
+        file_data = file_response.json()
+        
+        if 'content' in file_data:
+            content = base64.b64decode(file_data['content']).decode('utf-8')
+            line_count = len(content.splitlines())
+            file_lengths.append((file_path, line_count))
+
+    file_lengths.sort(key=lambda x: x[1], reverse=True)
+    top_files = file_lengths[:max(1, len(file_lengths) // 10)]
+    
+    os.makedirs(f'github_api/{repo}/top_files', exist_ok=True)
+    for file_path, _ in top_files:
+        get_src_code_path(owner, repo, file_path)
+    
+    return top_files
+#pranav_end
 
 if __name__ == "__main__":
     for repo in repos:
@@ -112,14 +167,14 @@ if __name__ == "__main__":
                 if len(pr_comments) > 0:
                     f.write(f"Comments for PR {pr_number}: {pr_comments}\n")
             
-        # with open(f'github_api/{repo['repo']}/issue_comments.txt', 'w') as f:
-        #     issues = get_issues(repo['owner'], repo['repo'])
-        #     for issue in issues:
-        #         issue_number = issue['number']
-        #         issue_comments = get_issue_comments(repo['owner'], repo['repo'], issue_number)
-        #         # print(f"Comments for Issue {issue_number}: {issue_comments}")
-        #         if len(issue_comments) > 0:
-        #             f.write(f"Comments for Issue {issue_number}: {issue_comments}\n")
+        with open(f'github_api/{repo['repo']}/issue_comments.txt', 'w') as f:
+            issues = get_issues(repo['owner'], repo['repo'])
+            for issue in issues:
+                issue_number = issue['number']
+                issue_comments = get_issue_comments(repo['owner'], repo['repo'], issue_number)
+                # print(f"Comments for Issue {issue_number}: {issue_comments}")
+                if len(issue_comments) > 0:
+                    f.write(f"Comments for Issue {issue_number}: {issue_comments}\n")
 
         with open(f'github_api/{repo["repo"]}/issue_comments.txt', 'w', encoding="utf-8") as f:
             issues = get_issues(repo['owner'], repo['repo'])
@@ -132,6 +187,11 @@ if __name__ == "__main__":
                     f.write(f"Comments: {issue_comments}\n")
             
         with open(f'github_api/{repo["repo"]}/discussions.txt', 'w', encoding="utf-8") as f:
-            discussions = get_discussions(repo['owner'], repo['repo'])
+            discussions = get_discussions(repo['owner'], repo['repo'])    
             # print(f"Discussions: {discussions}")
             f.write(f"Discussions: {discussions}\n")
+
+        #pranav
+        top_files = get_top_source_files(repo['owner'], repo['repo'])
+        print(f"Top files: {top_files}")
+        
