@@ -4,8 +4,8 @@ import requests
 
 repos = [
     # {'owner': 'Kanaries', 'repo': 'pygwalker'},
-    # {'owner': 'apache', 'repo': 'incubator-resilientdb'},
-    {'owner': 'apache', 'repo': 'kvrocks'},
+    {'owner': 'apache', 'repo': 'incubator-resilientdb'},
+    #{'owner': 'apache', 'repo': 'kvrocks'},
     # {'owner': 'apache', 'repo': 'doris'},
     # {'owner': 'apache', 'repo': 'incubator-liminal'},
     # {'owner': 'apache', 'repo': 'celeborn'}
@@ -98,6 +98,7 @@ def get_src_code_path(owner, repo, file_path):
     
     # Define a strict save directory (`github_api/{repo}/top_files/`)
     save_dir = os.path.join('github_api', repo, 'top_files')
+    #save_dir = os.path.join('github_api', 'ResDB', 'top_files')
     os.makedirs(save_dir, exist_ok=True)
 
     # Extract filename from original path and save only in `top_files/`
@@ -123,7 +124,9 @@ def get_discussions(owner, repo):
 
 #pranav_start
 def get_top_source_files(owner, repo):
-    url = f'https://api.github.com/repos/{owner}/{repo}/git/trees/unstable?recursive=1'
+    # for kvrocks their main branch is "unstable"
+    #url = f'https://api.github.com/repos/{owner}/{repo}/git/trees/unstable?recursive=1'
+    url = f'https://api.github.com/repos/{owner}/{repo}/git/trees/master?recursive=1'
     response = requests.get(url, headers=headers)
     response.raise_for_status()
     tree = response.json().get('tree', [])
@@ -145,6 +148,7 @@ def get_top_source_files(owner, repo):
     top_files = file_lengths[:max(1, len(file_lengths) // 10)]
     
     os.makedirs(f'github_api/{repo}/top_files', exist_ok=True)
+    #os.makedirs(f'github_api/ResDB/top_files', exist_ok=True)
     for file_path, _ in top_files:
         get_src_code_path(owner, repo, file_path)
     
@@ -177,6 +181,7 @@ if __name__ == "__main__":
                     f.write(f"Comments for Issue {issue_number}: {issue_comments}\n")
 
         with open(f'github_api/{repo["repo"]}/issue_comments.txt', 'w', encoding="utf-8") as f:
+        #with open(f'github_api/ResDB/issue_comments.txt', 'w', encoding="utf-8") as f:
             issues = get_issues(repo['owner'], repo['repo'])
             for issue in issues:
                 issue_number = issue['number']

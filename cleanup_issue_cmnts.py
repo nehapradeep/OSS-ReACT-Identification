@@ -1,7 +1,18 @@
 import re
 
-input_file = "./github_api/kvrocks/issue_comments.txt"  # Update if needed
-output_file = "./github_api/kvrocks/issue_comments_cleaned.txt"
+repos = [
+    # {'owner': 'Kanaries', 'repo': 'pygwalker'},
+    {'owner': 'apache', 'repo': 'ResDB'},
+    #{'owner': 'apache', 'repo': 'kvrocks'},
+    # {'owner': 'apache', 'repo': 'doris'},
+    # {'owner': 'apache', 'repo': 'incubator-liminal'},
+    # {'owner': 'apache', 'repo': 'celeborn'}
+]
+
+repo = repos[0] 
+
+input_file = f'./github_api/{repo['repo']}/issue_comments.txt'  # Update if needed
+output_file = f'./github_api/{repo['repo']}/issue_comments_cleaned.txt'
 
 # Read the input file
 with open(input_file, "r", encoding="utf-8") as file:

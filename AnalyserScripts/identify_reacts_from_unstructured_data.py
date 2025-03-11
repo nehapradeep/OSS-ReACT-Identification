@@ -28,9 +28,9 @@ from google import genai
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY_2")
 client = genai.Client(api_key=GEMINI_API_KEY)
 
-project_name = "kvrocks"
+#project_name = "kvrocks"
 # project_name = "celeborn"
-# project_name = "ResDB"
+project_name = "ResDB"
 base_path = "../github_api"
 
 if GEMINI_API_KEY is None:
@@ -138,7 +138,7 @@ def PR_related_reacts():
     }
 
     # Providing all the PR related files to the Gemini API
-    pr_comments_file = list(upload_file_in_chunks(os.path.join(base_path, project_name, "pr_comments_cleaned.txt")))
+    pr_comments_file = list(upload_file_in_chunks(os.path.join(base_path, project_name, "pr_comments.txt")))
     pr_file = list(upload_file_in_chunks(os.path.join(base_path, project_name, "pr.txt")))
 
     # # Reopening Output file
@@ -286,7 +286,7 @@ def analyze_source_code_reacts():
 
             time.sleep(65)  # Avoid rate limits
 
-            explanation = client.models.generate_content(
+            explanation_response = client.models.generate_content(
                 model="gemini-2.0-flash",
                 contents=[
                     f"Provide a short, concise, and to-the-point 3-4 lines max explanation on why do you think that the project does or does not follow this recommendation: {source_code_reacts[react]} Directly start the output with explanation. Please give your answer in a paragraph style and not bullet points.",
@@ -302,9 +302,9 @@ def analyze_source_code_reacts():
             #explanation = response_parts[1] if len(response_parts) > 1 else "No explanation provided."
 
             # Remove commas from the explanation to keep CSV format intact
-            explanation = explanation.replace(",", " ")
+            explanation_text = explanation_response.text.strip().replace(",", " ")
             # Append row to CSV
-            writer.writerow([project_name, f"{react}: {source_code_reacts[react]}", explanation, yes_no])
+            writer.writerow([project_name, f"{react}: {source_code_reacts[react]}", explanation_text, yes_no])
             print(f"Saved: {project_name}, {react}, {yes_no}")
 
             time.sleep(65)  # Avoid rate limits
@@ -313,9 +313,9 @@ def analyze_source_code_reacts():
     print("Source code ReACT analysis completed and saved!")
 
 if __name__ == "__main__":
-    issue_comm_reacts()
-    PR_related_reacts()
-    issue_labels_related_reacts()
+    #issue_comm_reacts()
+    #PR_related_reacts()
+    #issue_labels_related_reacts()
     analyze_source_code_reacts()
 
 
