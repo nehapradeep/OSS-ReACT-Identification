@@ -78,6 +78,21 @@ def batch_chunks(chunks, batch_size=5):
     if batch:
         yield batch  # Send remaining chunks
 
+def save_analysis(react_name, outcome, recommendation, output_file):
+    with open(output_file, mode="a", encoding="utf-8", newline="") as csv_file:
+        fieldnames = ["Project Name", "ReACT Name/Number", "Outcome", "Recommendation"]
+        writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+        if not os.path.isfile(output_file) or os.stat(output_file).st_size == 0:
+            writer.writeheader()
+        writer.writerow({
+            "Project Name": project_name,
+            "ReACT Name/Number": react_name,
+            "Outcome": outcome,
+            "Recommendation": recommendation
+        })
+    
+    print(f"Analysis for {react_name} saved to {output_file}")
+
 def issue_comm_reacts():
     reacts = {
         "ReACT-17": "Encourage mentors to collaborate with mentees on addressing bugs or issues.",
@@ -92,40 +107,41 @@ def issue_comm_reacts():
 
     my_file = list(upload_file_in_chunks(os.path.join(base_path, project_name, "issue_comments_cleaned.txt")))
 
-    with open("../final_react_analysis.csv", "a", encoding='utf-8') as f:
-        writer = csv.writer(f)
-        for chunk in my_file:
-            issue_chunk_uploader = client.models.generate_content(
-                model="gemini-2.0-flash",
-                contents=[
-                    "Sharing the issue comments for the analysis in chunks, keep them in context for answering the following questions:",
-                    chunk
-                ]
-            )
-            print("Chunk upload done!")
-            time.sleep(65)  # Avoid rate limits
-        for react in reacts:
-            response = client.models.generate_content(
-                model="gemini-2.0-flash",
-                contents=[
-                    "Analyze all the issue comments chunks of a GitHub project and tell me in one word either yes or no if the project follows this recommendation: " + reacts[react]
-                    + "\n Also, Provide a short, concise and to-the-point 3-4 lines max explanation on why do you think that the project does or does not follow this recommendation. "
-                    "Please give you answer in a paragraph style and not bullet points"
-                ]
-            )
-            # print(react, reacts[react], response.text)
-            # f.write(react + "," + reacts[react] + "," + response.text + "\n")
-            # Extract the first word (YES/NO) and the explanation
-            response_text = response.text.strip()
-            response_parts = response_text.split(" ", 1)  # Split at first space
-            yes_no = response_parts[0] if response_parts else "UNKNOWN"
-            explanation = response_parts[1] if len(response_parts) > 1 else "No explanation provided."
+    for chunk in my_file:
+        issue_chunk_uploader = client.models.generate_content(
+            model="gemini-2.0-flash",
+            contents=[
+                "Sharing the issue comments for the analysis in chunks, keep them in context for answering the following questions:",
+                chunk
+            ]
+        )
+        print("Chunk upload done!")
+        time.sleep(65)  # Avoid rate limits
+    for react in reacts:
+        response = client.models.generate_content(
+            model="gemini-2.0-flash",
+            contents=[
+                "Analyze all the issue comments chunks provided earlier of a GitHub project and tell me in one word either yes or no if the project follows this recommendation: " + reacts[react]
+                + "\n Also, Provide a short, concise and to-the-point 3-4 lines max explanation on why do you think that the project does or does not follow this recommendation. "
+                "Please give you answer in a paragraph style and not bullet points"
+            ]
+        )
 
-            # Remove commas from the explanation to keep CSV format intact
-            explanation = explanation.replace(",", " ")
-            # Append row to CSV
-            writer.writerow([project_name, f"{react}: {reacts[react]}", explanation, yes_no])
-            print(f"Saved: {project_name}, {react}, {yes_no}")
+        # Extract the first word (YES/NO) and the explanation
+        response_text = response.text.strip()
+        response_parts = response_text.split(" ", 1)  # Split at first space
+        yes_no = response_parts[0] if response_parts else "UNKNOWN"
+        explanation = response_parts[1] if len(response_parts) > 1 else "No explanation provided."
+
+        # Remove commas from the explanation to keep CSV format intact
+        explanation = explanation.replace(",", " ")
+
+        react_combined = f"{react}: {reacts[react]}"  # Combine react ID and description
+
+        # Append row to CSV
+        save_analysis(react_combined, explanation, yes_no, "../final_react_analysis.csv")
+
+        print(f"Saved: {project_name}, {react}, {yes_no}")
 
 
 def PR_related_reacts():
@@ -142,43 +158,43 @@ def PR_related_reacts():
     pr_file = list(upload_file_in_chunks(os.path.join(base_path, project_name, "pr.txt")))
 
     # # Reopening Output file
-    with open("../final_react_analysis.csv", "a", encoding='utf-8') as f:
-        writer = csv.writer(f)
-        for pr_chunk, pr_comments_chunk in zip(pr_file, pr_comments_file):
-            pr_chunk_uploader = client.models.generate_content(
-                model="gemini-2.0-flash",
-                contents=[
-                    "Sharing the Pull Requests and Comments on it for the analysis in chunks, keep them in context for answering the following questions:",
-                    pr_comments_chunk,
-                    pr_chunk
-                ]
-            )
-            print("PR chunk upload done!")
-            time.sleep(65)  # Avoid rate limits
-        for react in PR_reacts:
-            # Storing a quick explanation from Gemini too
-            response = client.models.generate_content(
-                model="gemini-2.0-flash",
-                contents=[
-                    "Based on all the previously shared PR chunks, analyze whether the GitHub project follows this recommendation:"
-                    + PR_reacts[react] + "Give your answer in either Yes or No." + "\n Also, Provide a short, "
-                    "concise and to-the-point 3-4 lines max explanation on why do you think that the project does "
-                    "or does not follow this recommendation. Please give you answer in a paragraph style and not "
-                    "bullet points",
-                ]
-            )
-            # print(react, PR_reacts[react], response.text)
-            # f.write(react + "," + PR_reacts[react] + "," + response.text + "," + "\n")
-            response_text = response.text.strip()
-            response_parts = response_text.split(" ", 1)  # Split at first space
-            yes_no = response_parts[0] if response_parts else "UNKNOWN"
-            explanation = response_parts[1] if len(response_parts) > 1 else "No explanation provided."
+    for pr_chunk, pr_comments_chunk in zip(pr_file, pr_comments_file):
+        pr_chunk_uploader = client.models.generate_content(
+            model="gemini-2.0-flash",
+            contents=[
+                "Sharing the Pull Requests and Comments on it for the analysis in chunks, keep them in context for answering the following questions:",
+                pr_comments_chunk,
+                pr_chunk
+            ]
+        )
+        print("PR chunk upload done!")
+        time.sleep(65)  # Avoid rate limits
+    for react in PR_reacts:
+        # Storing a quick explanation from Gemini too
+        response = client.models.generate_content(
+            model="gemini-2.0-flash",
+            contents=[
+                "Based on all the previously shared PR chunks, analyze whether the GitHub project follows this recommendation:"
+                + PR_reacts[react] + "Give your answer in either Yes or No." + "\n Also, Provide a short, "
+                "concise and to-the-point 3-4 lines max explanation on why do you think that the project does "
+                "or does not follow this recommendation. Please give you answer in a paragraph style and not "
+                "bullet points",
+            ]
+        )
+        response_text = response.text.strip()
+        response_parts = response_text.split(" ", 1)  # Split at first space
+        yes_no = response_parts[0] if response_parts else "UNKNOWN"
+        explanation = response_parts[1] if len(response_parts) > 1 else "No explanation provided."
 
-            # Remove commas from the explanation to keep CSV format intact
-            explanation = explanation.replace(",", " ")
-            # Append row to CSV
-            writer.writerow([project_name, f"{react}: {PR_reacts[react]}", explanation, yes_no])
-            print(f"Saved: {project_name}, {react}, {yes_no}")
+        # Remove commas from the explanation to keep CSV format intact
+        explanation = explanation.replace(",", " ")
+
+        react_combined = f"{react}: {PR_reacts[react]}"  # Combine react ID and description
+
+        # Append row to CSV
+        save_analysis(react_combined, explanation, yes_no, "../final_react_analysis.csv")
+
+        print(f"Saved: {project_name}, {react}, {yes_no}")
 
     print("Hurray! done! PR ReACT analysis saved!")
 
@@ -193,8 +209,6 @@ def issue_labels_related_reacts():
     issue_comments_file = list(upload_file_in_chunks(os.path.join(base_path, project_name, "issue_comments_cleaned.txt")))
 
     # #pranav
-    with open("../final_react_analysis.csv", "a", encoding='utf-8') as f:
-        writer = csv.writer(f)
         # for batch in batch_chunks(stream_file_in_n_chunks("../github_api/kvrocks/issue_comments.txt")):
         #     response = client.models.generate_content(
         #         model="gemini-2.0-flash",
@@ -203,41 +217,44 @@ def issue_labels_related_reacts():
         #     print("Batch upload done!")
         #     time.sleep(65)  # Avoid rate limits
         
-        for chunk in issue_comments_file:
-            response = client.models.generate_content(
-                model="gemini-2.0-flash",
-                contents=[
-                    "Sharing the issue labels for the analysis in chunks, keep them in context for answering the following questions:",
-                    chunk
-                ]
-            )
-            print("Chunk upload done!")
-            time.sleep(65)  # Avoid rate limits
+    for chunk in issue_comments_file:
+        response = client.models.generate_content(
+            model="gemini-2.0-flash",
+            contents=[
+                "Sharing the issue labels for the analysis in chunks, keep them in context for answering the following questions:",
+                chunk
+            ]
+        )
+        print("Chunk upload done!")
+        time.sleep(65)  # Avoid rate limits
 
-        for react in Issue_labels_reacts:
-            response = client.models.generate_content(
-                model="gemini-2.0-flash",
-                contents=[
-                    "Based on all the previously shared issue comments, analyze whether the GitHub project follows this recommendation: '"
-                    + Issue_labels_reacts[react] + "'.\n\n"
-                    "Respond with 'Yes' or 'No' based on your analysis.\n"
-                    "Then, provide a short and concise 3-4 line explanation justifying your answer.\n"
-                    "Ensure the response is in paragraph format, not bullet points."
-                ]
-            )
-            # print(react, Issue_labels_reacts[react], response.text)
-            # f.write(react + "," + Issue_labels_reacts[react] + "," + response.text + "," + "\n")
-            response_text = response.text.strip()
-            response_parts = response_text.split(" ", 1)  # Split at first space
-            yes_no = response_parts[0] if response_parts else "UNKNOWN"
-            explanation = response_parts[1] if len(response_parts) > 1 else "No explanation provided."
+    for react in Issue_labels_reacts:
+        response = client.models.generate_content(
+            model="gemini-2.0-flash",
+            contents=[
+                "Based on all the previously shared issue comments, analyze whether the GitHub project follows this recommendation: '"
+                + Issue_labels_reacts[react] + "'.\n\n"
+                "Respond with 'Yes' or 'No' based on your analysis.\n"
+                "Then, provide a short and concise 3-4 line explanation justifying your answer.\n"
+                "Ensure the response is in paragraph format, not bullet points."
+            ]
+        )
+        # print(react, Issue_labels_reacts[react], response.text)
+        # f.write(react + "," + Issue_labels_reacts[react] + "," + response.text + "," + "\n")
+        response_text = response.text.strip()
+        response_parts = response_text.split(" ", 1)  # Split at first space
+        yes_no = response_parts[0] if response_parts else "UNKNOWN"
+        explanation = response_parts[1] if len(response_parts) > 1 else "No explanation provided."
 
-            # Remove commas from the explanation to keep CSV format intact
-            explanation = explanation.replace(",", " ")
-            # Append row to CSV
-            writer.writerow([project_name, f"{react}: {Issue_labels_reacts[react]}", explanation, yes_no])
-            print(f"Saved: {project_name}, {react}, {yes_no}")
-            time.sleep(65)
+        # Remove commas from the explanation to keep CSV format intact
+        explanation = explanation.replace(",", " ")
+
+        react_combined = f"{react}: {Issue_labels_reacts[react]}"  # Combine react ID and description
+
+        # Append row to CSV
+        save_analysis(react_combined, explanation, yes_no, "../final_react_analysis.csv")
+        print(f"Saved: {project_name}, {react}, {yes_no}")
+        time.sleep(65)
 
     print("Labels ReACTs analysis completed and saved!")
 
@@ -254,68 +271,68 @@ def analyze_source_code_reacts():
 
     source_code_dir = os.path.join(base_path, project_name, "top_files")
     source_files = [os.path.join(source_code_dir, file) for file in os.listdir(source_code_dir)]
-    with open("../final_react_analysis.csv", "a", encoding="utf-8") as f:
-        writer = csv.writer(f)
-        for react in source_code_reacts:
-            for file_path in source_files:
-                file_chunks = list(upload_file_in_chunks(file_path))
 
-                # for chunk in file_chunks:
-                #     response = client.models.generate_content(
-                #         model="gemini-2.0-flash",
-                #         contents=[
-                #             f"Analyze the following source code files and tell me in one word either yes or no if the project follows this recommendation: {source_code_reacts[react]}",
-                #             chunk
-                #         ]
-                #     )
-                src_files_upload = client.models.generate_content(
-                    model="gemini-2.0-flash",
-                    contents=[
-                        f"Sharing the source code files for the analysis, keep them in context for answering the following questions:",
-                        file_chunks
-                    ]
-                )
+    for react in source_code_reacts:
+        for file_path in source_files:
+            file_chunks = list(upload_file_in_chunks(file_path))
 
-            response = client.models.generate_content(
+            # for chunk in file_chunks:
+            #     response = client.models.generate_content(
+            #         model="gemini-2.0-flash",
+            #         contents=[
+            #             f"Analyze the following source code files and tell me in one word either yes or no if the project follows this recommendation: {source_code_reacts[react]}",
+            #             chunk
+            #         ]
+            #     )
+            src_files_upload = client.models.generate_content(
                 model="gemini-2.0-flash",
                 contents=[
-                    f"Analyze the following source code files and tell me in one word either yes or no if the project follows this recommendation: {source_code_reacts[react]}",
-                    file_chunks 
-                ]
-            )
-
-            time.sleep(65)  # Avoid rate limits
-
-            explanation_response = client.models.generate_content(
-                model="gemini-2.0-flash",
-                contents=[
-                    f"Provide a short, concise, and to-the-point 3-4 lines max explanation on why do you think that the project does or does not follow this recommendation: {source_code_reacts[react]} Directly start the output with explanation. Please give your answer in a paragraph style and not bullet points.",
+                    f"Sharing the source code files for the analysis, keep them in context for answering the following questions:",
                     file_chunks
                 ]
             )
 
-            # print(react, source_code_reacts[react], response.text, explanation.text)
-            # f.write(react + "," + source_code_reacts[react] + "," + response.text + "," + explanation.text + "\n")
-            response_text = response.text.strip()
-            response_parts = response_text.split(" ", 1)  # Split at first space
-            yes_no = response_parts[0] if response_parts else "UNKNOWN"
-            #explanation = response_parts[1] if len(response_parts) > 1 else "No explanation provided."
+        response = client.models.generate_content(
+            model="gemini-2.0-flash",
+            contents=[
+                f"Analyze the following source code files and tell me in one word either yes or no if the project follows this recommendation: {source_code_reacts[react]}",
+                file_chunks 
+            ]
+        )
 
-            # Remove commas from the explanation to keep CSV format intact
-            explanation_text = explanation_response.text.strip().replace(",", " ")
-            # Append row to CSV
-            writer.writerow([project_name, f"{react}: {source_code_reacts[react]}", explanation_text, yes_no])
-            print(f"Saved: {project_name}, {react}, {yes_no}")
+        time.sleep(65)  # Avoid rate limits
 
-            time.sleep(65)  # Avoid rate limits
+        explanation_response = client.models.generate_content(
+            model="gemini-2.0-flash",
+            contents=[
+                f"Provide a short, concise, and to-the-point 3-4 lines max explanation on why do you think that the project does or does not follow this recommendation: {source_code_reacts[react]} Directly start the output with explanation. Please give your answer in a paragraph style and not bullet points.",
+                file_chunks
+            ]
+        )
+
+        response_text = response.text.strip()
+        response_parts = response_text.split(" ", 1)  # Split at first space
+        yes_no = response_parts[0] if response_parts else "UNKNOWN"
+
+        # Remove commas from the explanation to keep CSV format intact
+        explanation_text = explanation_response.text.strip().replace(",", " ")
+
+        react_combined = f"{react}: {source_code_reacts[react]}"  # Combine react ID and description
+
+        # Append row to CSV
+        save_analysis(react_combined, explanation_text, yes_no, "../final_react_analysis.csv")
+        
+        print(f"Saved: {project_name}, {react}, {yes_no}")
+
+        time.sleep(65)  # Avoid rate limits
 
     
     print("Source code ReACT analysis completed and saved!")
 
 if __name__ == "__main__":
-    #issue_comm_reacts()
-    #PR_related_reacts()
-    #issue_labels_related_reacts()
+    issue_comm_reacts()
+    PR_related_reacts()
+    issue_labels_related_reacts()
     analyze_source_code_reacts()
 
 
