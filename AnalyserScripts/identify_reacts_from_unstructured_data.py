@@ -30,7 +30,8 @@ client = genai.Client(api_key=GEMINI_API_KEY)
 
 #project_name = "kvrocks"
 # project_name = "celeborn"
-project_name = "ResDB"
+# project_name = "ResDB"
+project_name = "openDAL"
 base_path = "../github_api"
 
 if GEMINI_API_KEY is None:
@@ -334,6 +335,8 @@ if __name__ == "__main__":
     PR_related_reacts()
     issue_labels_related_reacts()
     analyze_source_code_reacts()
+
+
 
 
 
