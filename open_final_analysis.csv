@@ -1,0 +1,29 @@
+Project Name,ReACT Name/Number,Outcome,Recommendation
+openDAL,ReACT-11 Keep the project small and simple.,Meets criteria,Recommend
+openDAL,ReACT-26 Conduct unit tests.,Meets criteria,Recommend
+openDAL,ReACT-32 Promote code transparency. Keep the code as simple as possible,"Does not meet criteria (Comment ratio is 0.06, which is below the recommended threshold of 15%.)",Do not recommend
+openDAL,ReACT-82 Have and enforce a code of conduct,Does not meet criteria (No code of conduct file found in the project.),Do not recommend
+openDAL,ReACT-66 Perform adequate testing before integrating a feature,Meets criteria,Recommend
+openDAL,ReACT-63,Average modified-to-added lines ratio: 0.00. Average number of modified files per commit: 45.15. Average number of new files added: 20766.00. Total number of commits analyzed: 22036.,Yes
+openDAL,ReACT-64,Number of code files modified: 29. Number of documentation files modified: 10. Code-to-Documentation file ratio: 2.90.,No
+openDAL,ReACT-78,Total number of commits analyzed: 22036. Number of commits involving code comment updates: 1530. Percentage of commits with comment updates: 6.94%. ,No
+openDAL,ReACT-11 Keep the project small and simple.,Meets criteria,Yes
+openDAL,ReACT-26 Conduct unit tests.,Meets criteria,Yes
+openDAL,ReACT-32 Promote code transparency. Keep the code as simple as possible,"Does not meet criteria (Comment ratio is 0.06, which is below the recommended threshold of 15%.)",No
+openDAL,ReACT-82 Have and enforce a code of conduct,Does not meet criteria (No code of conduct file found in the project.),No
+openDAL,ReACT-66 Perform adequate testing before integrating a feature,Meets criteria,Yes
+openDAL,ReACT-16,rs: 62.40%; md: 7.84%; toml: 7.66%; yml: 6.75%; lock: 3.10%; tsv: 2.18%; json: 1.85%; java: 1.34%; py: 0.75%; js: 0.51%; yaml: 0.49%; mdx: 0.48%; gitignore: 0.38%; xml: 0.36%; example: 0.32%; go: 0.26%; cpp: 0.26%; h: 0.22%; pyi: 0.22%; ts: 0.21%; txt: 0.18%; hs: 0.15%; mjs: 0.15%; sh: 0.15%; cabal: 0.14%; rb: 0.12%; zig: 0.11%; pem: 0.09%; ml: 0.09%; png: 0.07%; conf: 0.07%; c: 0.07%; css: 0.06%; swift: 0.06%; rockspec: 0.06%; hpp: 0.05%; mli: 0.05%; lua: 0.05%; svg: 0.04%; mod: 0.04%; editorconfig: 0.04%; csv: 0.04%; sum: 0.03%; php: 0.03%; feature: 0.03%; csproj: 0.03%; gemspec: 0.02%; properties: 0.02%; key: 0.02%; prettierignore: 0.02%; gitattributes: 0.02%; crt: 0.02%; j2: 0.02%; ipynb: 0.01%; sql: 0.01%; tsx: 0.01%; jinja2: 0.01%; opam: 0.01%; npmignore: 0.01%; zon: 0.01%; cs: 0.01%; cff: 0.01%; jsx: 0.01%; srl: 0.01%; imports: 0.01%; tldr: 0.01%; modulemap: 0.01%; bz2: 0.00%; ico: 0.00%; cjs: 0.00%; gz: 0.00%; zst: 0.00%; patch: 0.00%; local: 0.00%; tpl: 0.00%; node-version: 0.00%; sln: 0.00%; swift-format: 0.00%; yamlfmt: 0.00%; jpg: 0.00%; ocamlformat-ignore: 0.00%; ext: 0.00%; cmd: 0.00%; npmrc: 0.00%; rspec: 0.00%; pub: 0.00%; clang-format: 0.00%; work: 0.00%; rdf: 0.00%; ini: 0.00%; tool-versions: 0.00%; yardopts: 0.00%,N/A
+openDAL,ReACT-16,"Total Integrators: 0, Total Merge Commits: 0, Earliest Merge: No merge commits found, Latest Merge: No merge commits found",No
+openDAL,ReACT-36,"Meets criteria (Active developers: 8, Threshold: 50)",Yes
+openDAL,ReACT-38,"Meets criteria (Experienced contributors: 37, Threshold: 5)",Yes
+openDAL,ReACT-14 Merge pull requests promptly.,Meets criteria (Avg merge time: 9.07 hours),Yes
+openDAL,ReACT-62 Encourage developers to start contributing to the project early.,Does not meet criteria (First commit date 2022-02-14 13:24:32+08:00 does not match repo creation month/year or insufficient contributions in first 2 months: 2542),No
+openDAL,ReACT-81 Keep knowledge up to date and findable.,Meets criteria (Last README update: 2025-03-08 23:54:33+08:00),Yes
+openDAL,ReACT-9,Does not meet criteria (Keyword 'how to request for access' not found),No
+openDAL,ReACT-19,Does not meet criteria (Keyword 'flag newcomers' not found),No
+openDAL,ReACT-33,Does not meet criteria (Keyword 'contribution guidelines' not found),No
+openDAL,ReACT-84,Does not meet criteria (Keyword 'onboarding support' not found),No
+openDAL,ReACT-85,Total number of discussions analyzed: 0. Number of discussions involving in-person meetup announcements: 0. Percentage of meetups/announcements: 0.00%.,No
+openDAL,ReACT-89,Total discussions: 0. Discussions encouraging newcomer freedom: 0. Percentage: 0.00%. ,No
+openDAL,ReACT-91,No valid discussions found in the given time period.,N/A
+openDAL,ReACT-92,No valid discussions found in the given time period.,N/A
