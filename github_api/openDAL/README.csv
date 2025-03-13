@@ -1,0 +1,56 @@
+Level,Header,Content
+1,Apache OpenDAL™: *One Layer, All Storage.*, [![](https://img.shields.io/github/discussions/apache/opendal)](https://github.com/apache/opendal/discussions) [![](https://img.shields.io/discord/1081052318650339399?logo=discord&label=discord)](https://opendal.apache.org/discord)
+2,For *ANY* languages,
+3,Name,Release,Docs,Used By
+3,Rust Core, [![Rust Core Image]][Rust Core Link], [![Docs Release]][Rust Core Release Docs] [![Docs Dev]][Rust Core Dev Docs], [![Rust Core Users Image]][Rust Core Users]
+3,C Binding, -, [![Docs Dev]][C Binding Dev Docs], [![C Binding Users Image]][C Binding Users]
+3,Cpp Binding, -, [![Docs Dev]][Cpp Binding Dev Docs], -
+3,D Binding, -, -, -
+3,Dart Binding, -, -, -
+3,Dotnet Binding, -, -, -
+3,Go Binding, [![Go Binding Image]][Go Binding Link], [![Docs Release]][Go Release Docs], -
+3,Haskell Binding, -, -, -
+3,Java Binding, [![Java Binding Image]][Java Binding Link], [![Docs Release]][Java Binding Release Docs] [![Docs Dev]][Java Binding Dev Docs], [![Java Binding Users Image]][Java Binding Users]
+3,Lua Binding, -, -, -
+3,Node.js Binding, [![Node.js Binding Image]][Node.js Binding Link], [![Docs Dev]][Node.js Binding Dev Docs], -
+3,Ocaml Binding, -, -, -
+3,PHP Binding, -, -, -
+3,Python Binding, [![Python Binding Image]][Python Binding Link], [![Docs Dev]][Python Binding Dev Docs], [![Python Binding Users Image]][Python Binding Users]
+3,Ruby Binding, -, -, -
+3,Swift Binding, -, -, -
+3,Zig Binding, -, -, -
+2,For *ANY* methods,
+3,Name,Description,Release
+3,oay, Access data via API Gateway, [![oay image]][oay crate]
+3,oli, Access data via Command Line (alternative to s3cmd, s3cli, azcopy), [![oli image]][oli crate]
+3,ofs, Access data via POSIX file system API (alternative to s3fs), [![ofs image]][ofs crate]
+2,For *ANY* integrations,
+3,Name,Description,Release,Docs
+3,dav-server-opendalfs, a [dav-server-rs] implementation using opendal., [![dav-server image]][dav-server crate], [![Docs Release]][dav-server release docs] [![Docs Dev]][dav-server dev docs]
+3,object_store_opendal, an [object_store] implementation using opendal., [![object_store image]][object_store crate], [![Docs Release]][object_store release docs] [![Docs Dev]][object_store dev docs]
+3,fuse3_opendal, Access data via integrations to [fuse3], [![fuse3 image]][fuse3 crate], [![Docs Release]][fuse3 release docs] [![Docs Dev]][fuse3 dev docs]
+3,virtiofs_opendal, Access data via integrations to [vhost-user-backend], [![virtiofs image]][virtiofs crate], [![Docs Release]][virtiofs release docs] [![Docs Dev]][virtiofs dev docs]
+3,unftp-sbe-opendal, an [unftp] storage backend implementation using opendal., [![unftp-sbe image]][unftp-sbe crate], [![Docs Release]][unftp-sbe release docs] [![Docs Dev]][unftp-sbe dev docs]
+3,parquet_opendal, Provides [`parquet`](https://crates.io/crates/parquet) efficient IO utilities, [![parquet image]][parquet crate], [![Docs Release]][parquet release docs] [![Docs Dev]][parquet dev docs]
+2,For *ANY* services,
+3,Type,Services
+3,Standard Storage Protocols, ftp http [sftp] [webdav]
+3,Object Storage Services, [azblob] [cos] [gcs] [obs] [oss] [s3] [b2] [openstack_swift] [upyun] [vercel_blob]
+3,File Storage Services, fs [alluxio] [azdls] [azfile] [compfs] [dbfs] [gridfs] [hdfs] [hdfs_native] [ipfs] [webhdfs]
+3,Consumer Cloud Storage Service, [aliyun_drive] [gdrive] [onedrive] [dropbox] [icloud] [koofr] [pcloud] [seafile] [yandex_disk]
+3,Key-Value Storage Services, [cacache] [cloudflare_kv] [dashmap] memory [etcd] [foundationdb] [persy] [redis] [rocksdb] [sled] [redb] [tikv] [atomicserver]
+3,Database Storage Services, [d1] [mongodb] [mysql] [postgresql] [sqlite] [surrealdb]
+3,Cache Storage Services, [ghac] [memcached] [mini_moka] [moka] [vercel_artifacts]
+3,Git Based Storage Services, [huggingface]
+2,Examples, The examples are available at [here](./examples/).
+2,Documentation, The documentation is available at <https://opendal.apache.org>.
+2,Contribute, OpenDAL is an active open-source project. We are always open to people who want to use it or contribute to it. Here are some ways to go.
+3,Start with, [Contributing Guide](CONTRIBUTING.md)
+3,Submit, [Issues](https://github.com/apache/opendal/issues/new) for bug report or feature requests
+3,Start, [Discussions](https://github.com/apache/opendal/discussions/new?category=q-a) for questions or ideas
+3,Talk to community directly at, [Discord](https://opendal.apache.org/discord)
+3,Report security vulnerabilities to, [private mailing list](mailto:private@opendal.apache.org)
+2,Branding, The first and most prominent mentions must use the full form: **Apache OpenDAL™** of the name for any individual usage (webpage, handout, slides, etc.) Depending on the context and writing style, you should use the full form of the name sufficiently often to ensure that readers clearly understand the association of both the OpenDAL project and the OpenDAL software product to the ASF as the parent organization.
+3,For more details, see the, [Apache Product Name Usage Guide](https://www.apache.org/foundation/marks/guide)
+2,License and Trademarks, Licensed under the Apache License, Version 2.0: <http://www.apache.org/licenses/LICENSE-2.0>
+3,Apache OpenDAL, OpenDAL, and Apache are either registered trademarks or trademarks of the Apache Software Foundation.

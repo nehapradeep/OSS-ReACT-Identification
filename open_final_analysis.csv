@@ -27,3 +27,15 @@ openDAL,ReACT-85,Total number of discussions analyzed: 0. Number of discussions 
 openDAL,ReACT-89,Total discussions: 0. Discussions encouraging newcomer freedom: 0. Percentage: 0.00%. ,No
 openDAL,ReACT-91,No valid discussions found in the given time period.,N/A
 openDAL,ReACT-92,No valid discussions found in the given time period.,N/A
+openDAL,ReACT-93,A Mailing List is available for communication.,Yes
+openDAL,ReACT-95,"No clear information on expectations, required skills, or technologies for newcomers found in the project.",No
+openDAL,ReACT-97,Tutorials and documentation are present in the project.,Yes
+openDAL,ReACT-98,No clear instructions for newcomers to build the system locally found.,No
+openDAL,ReACT-102,No live FAQ section feature found in the project.,No
+openDAL,ReACT-100,Processes and practices are documented within the project.,Yes
+openDAL,ReACT-77,"Mailing list is mentioned, but not encouraged.",No
+openDAL,ReACT-60,GitHub stars are not present.,No
+openDAL,ReACT-20,"The project communicates through various channels: Discord, Mailing List, Twitter.",Yes
+openDAL,ReACT-6,"Implemented GitHub Actions", Yes
+openDAL,ReACT-30,"Implemented GitHub Actions", Yes
+openDAL,ReACT-73,"Static Analysis Linter exists", Yes
