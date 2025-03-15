@@ -1,256 +1,190 @@
-import csv
+import re
 import os
 
-def save_analysis(react_name, outcome, recommendation, output_file):
-    with open(output_file, mode="a", encoding="utf-8", newline="") as csv_file:
-        fieldnames = ["Project Name", "ReACT Name/Number", "Outcome", "Recommendation"]
-        writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
-        if not os.path.isfile(output_file) or os.stat(output_file).st_size == 0:
-            writer.writeheader()
-        writer.writerow({
-            "Project Name": 'kvrocks',
-            "ReACT Name/Number": react_name,
-            "Outcome": outcome,
-            "Recommendation": recommendation
-        })
+# def save_analysis(react_code, outcome, recommendation, output_file):
+#     with open(output_file, mode='a', encoding='utf-8') as file:
+#         file.write(f"{react_code},{outcome},{recommendation}\n")
+def save_analysis(react_name, outcome, recommendation, output_file, project_name='kvrocks'):
+    file_exists = os.path.isfile(output_file)
+    with open(output_file, mode="a", encoding="utf-8") as md_file:
+        if not file_exists or os.stat(output_file).st_size == 0:
+            md_file.write("Project Name,ReACT Name/Number,Outcome,Recommendation\n")        
+        md_file.write(f"{project_name},{react_name},{outcome},{recommendation}\n")
     
     print(f"Analysis for {react_name} saved to {output_file}")
 
-# purva
-def analyze_react_102(input_csv_file, output_file):
-    with open(input_csv_file, mode='r', encoding='utf-8') as file:
-        reader = csv.DictReader(file)
-        faq_feature_found = False
-        for row in reader:
-            content = row.get("Content", "").lower()
-            if "faq" in content:
-                faq_feature_found = True
-                break
-        if faq_feature_found:
-            outcome = "FAQ section feature found and integrated into the project."
-            recommendation = "Yes"
-        else:
-            outcome = "No live FAQ section feature found in the project."
-            recommendation = "No"
-        
-        save_analysis("ReACT-102", outcome, recommendation, output_file)
+#purva
+def analyze_react_100(readme_content, output_file):
+    documentation_keywords = ["document", "process", "practice", "documentation"]
+    documentation_found = any(keyword in readme_content.lower() for keyword in documentation_keywords)
+    
+    if documentation_found:
+        outcome = "Processes and practices are documented within the project."
+        recommendation = "Yes"
+    else:
+        outcome = "No documentation of processes and practices found in the project."
+        recommendation = "No"
+    
+    save_analysis("ReACT-100", outcome, recommendation, output_file)
 
-# purva
-def analyze_react_100(input_csv_file, output_file):
-    with open(input_csv_file, mode='r', encoding='utf-8') as file:
-        reader = csv.DictReader(file)
-        
-        documentation_found = False
-        for row in reader:
-            content = row.get("Content", "").lower()
-            if any(keyword in content for keyword in ["document", "process", "practice"]):
-                documentation_found = True
-                break
-        if documentation_found:
-            outcome = "Processes and practices are documented within the project."
-            recommendation = "Yes"
-        else:
-            outcome = "No documentation of processes and practices found in the project."
-            recommendation = "No"
-        
-        save_analysis("ReACT-100", outcome, recommendation, output_file)
+#purva
+def analyze_react_93(readme_content, output_file):
+    zulip_found = "zulip" in readme_content.lower()
+    mailing_list_found = "mailing list" in readme_content.lower()
 
-# purva
-def analyze_react_93(input_csv_file, output_file):
-    with open(input_csv_file, mode='r', encoding='utf-8') as file:
-        reader = csv.DictReader(file)
-        
-        zulip_found = False
-        mailing_list_found = False
-        for row in reader:
-            header = row.get("Header", "").strip().lower()
-            content = row.get("Content", "").strip().lower()
-            if "zulip" in header or "zulip" in content:
-                zulip_found = True
-            if "mailing list" in header or "mailing list" in content:
-                mailing_list_found = True        
-        if zulip_found and mailing_list_found:
-            outcome = "Zulip chat and Mailing List are both available as communication channels."
-            recommendation = "Yes"
-        elif zulip_found:
-            outcome = "Zulip chat is available as a local communication channel."
-            recommendation = "Yes"
-        elif mailing_list_found:
-            outcome = "A Mailing List is available for communication."
-            recommendation = "Yes"
-        else:
-            outcome = "No clear local communication channels (like Zulip or chat platforms) found."
-            recommendation = "No"
-        
-        save_analysis("ReACT-93", outcome, recommendation, output_file)
+    if zulip_found and mailing_list_found:
+        outcome = "Zulip chat and Mailing List are both available as communication channels."
+        recommendation = "Yes"
+    elif zulip_found:
+        outcome = "Zulip chat is available as a communication channel."
+        recommendation = "Yes"
+    elif mailing_list_found:
+        outcome = "A Mailing List is available for communication."
+        recommendation = "Yes"
+    else:
+        outcome = "No clear communication channels (like Zulip or chat platforms) found."
+        recommendation = "No"
+    
+    save_analysis("ReACT-93", outcome, recommendation, output_file)
 
-# purva
-def analyze_react_95(input_csv_file, output_file):
-    with open(input_csv_file, mode='r', encoding='utf-8') as file:
-        reader = csv.DictReader(file)
-        
-        expectations_found = False
-        contributing_found = False
-        for row in reader:
-            header = row.get("Header", "").strip().lower()
-            content = row.get("Content", "").strip().lower()
-            if "contributing" in header:
-                contributing_found = True                
-            if any(keyword in content for keyword in ["expectations", "technologies", "skills", "programming languages", "requirements", "difficulty"]):
-                expectations_found = True
-                break        
-        if contributing_found and expectations_found:
-            outcome = "Expectations and required skills/technologies are documented, and the project has a clear contributing guide."
-            recommendation = "Yes"
-        elif contributing_found:
-            outcome = "Contributing section is present, but detailed expectations and skill requirements are unclear."
-            recommendation = "No"
-        else:
-            outcome = "No clear information on expectations, required skills, or technologies for newcomers found in the project."
-            recommendation = "No"
-        
-        save_analysis("ReACT-95", outcome, recommendation, output_file)
+#purva
+def analyze_react_77(readme_content, output_file):
+    mailing_list_found = "mailing list" in readme_content.lower()
+    mailing_list_encouraged = bool(re.search(r"(subscribe|join the mailing list)", readme_content, re.IGNORECASE))
 
-# purva
-def analyze_react_97(input_csv_file, output_file):
-    with open(input_csv_file, mode='r', encoding='utf-8') as file:
-        reader = csv.DictReader(file)
-        tutorials_found = False
-        for row in reader:
-            content = row.get("Content", "").lower()
-            if any(keyword in content for keyword in ["tutorial", "guide", "document", "video", "website"]):
-                tutorials_found = True
-                break        
-        if tutorials_found:
-            outcome = "Tutorials and documentation are present in the project."
-            recommendation = "Yes"
-        else:
-            outcome = "No tutorials or instructional documents found in the project."
-            recommendation = "No"
-        
-        save_analysis("ReACT-97", outcome, recommendation, output_file)
+    if mailing_list_found and mailing_list_encouraged:
+        outcome = "Mailing list is mentioned and encouraged."
+        recommendation = "Yes"
+    elif mailing_list_found:
+        outcome = "Mailing list is mentioned, but not encouraged."
+        recommendation = "No"
+    else:
+        outcome = "Mailing list is not mentioned."
+        recommendation = "No"
+    
+    save_analysis("ReACT-77", outcome, recommendation, output_file)
 
-# purva
-def analyze_react_98(input_csv_file, output_file):
-    with open(input_csv_file, mode='r', encoding='utf-8') as file:
-        reader = csv.DictReader(file)
-        setup_found = False        
-        for row in reader:
-            content = row.get("Content", "").lower()
-            if any(keyword in content for keyword in ["build", "setup", "install"]):
-                setup_found = True
-                break        
-        if setup_found:
-            outcome = "The system setup process for newcomers is documented."
-            recommendation = "Yes"
-        else:
-            outcome = "No clear instructions for newcomers to build the system locally found."
-            recommendation = "No"
-        
-        save_analysis("ReACT-98", outcome, recommendation, output_file)
+#purva
+def analyze_react_60(readme_content, output_file):
+    stars_found = "github stars" in readme_content.lower()
+    social_media_links_found = any(link in readme_content.lower() for link in ["twitter", "medium", "linkedin"])
 
-# purva
-def analyze_react_77(input_csv_file, output_file):
-    with open(input_csv_file, mode='r', encoding='utf-8') as file:
-        reader = csv.DictReader(file)
-        mailing_list_found = False
-        mailing_list_encouraged = False        
-        for row in reader:
-            header = row.get("Header", "").strip().lower()
-            content = row.get("Content", "").strip().lower()
-            if "mailing list" in header or "mailing list" in content:
-                mailing_list_found = True            
-            if "subscribe" in header or "subscribe" in content or "join the mailing list" in content:
-                mailing_list_encouraged = True        
-        if mailing_list_found and mailing_list_encouraged:
-            outcome = "Mailing list is mentioned and encouraged."
-            recommendation = "Yes"
-        elif mailing_list_found:
-            outcome = "Mailing list is mentioned, but not encouraged."
-            recommendation = "No"
-        else:
-            outcome = "Mailing list is not mentioned."
-            recommendation = "No"
-        
-        save_analysis("ReACT-77", outcome, recommendation, output_file)
+    if stars_found and social_media_links_found:
+        outcome = "GitHub stars and social media links are present."
+        recommendation = "Yes"
+    elif stars_found:
+        outcome = "GitHub stars are present, but social media links are missing."
+        recommendation = "No"
+    else:
+        outcome = "GitHub stars are not present."
+        recommendation = "No"
+    
+    save_analysis("ReACT-60", outcome, recommendation, output_file)
 
-# purva
-def analyze_react_60(input_csv_file, output_file):
-    with open(input_csv_file, mode='r', encoding='utf-8') as file:
-        reader = csv.DictReader(file)
-        stars_found = False
-        social_media_links_found = False        
-        for row in reader:
-            content = row.get("Content", "").strip().lower()  
-            if "github stars" in content:
-                stars_found = True            
-            if "twitter" in content or "medium" in content or "linkedin" in content:
-                social_media_links_found = True        
-        if stars_found and social_media_links_found:
-            outcome = "GitHub stars and social media links are present."
-            recommendation = "Yes"
-        elif stars_found:
-            outcome = "GitHub stars are present, but social media links are missing."
-            recommendation = "No"
-        else:
-            outcome = "GitHub stars are not present."
-            recommendation = "No"
-        
-        save_analysis("ReACT-60", outcome, recommendation, output_file)
+#purva
+def analyze_react_53(readme_content, output_file):
+    incubated_found = "apache software foundation" in readme_content.lower()
 
-# purva
-def analyze_react_53(input_csv_file, output_file):
-    with open(input_csv_file, mode='r', encoding='utf-8') as file:
-        reader = csv.DictReader(file)        
-        incubated_found = False        
-        for row in reader:
-            content = row.get("Content", "").strip().lower()            
-            if "apache software foundation" in content or "apache kvrocks" in content:
-                incubated_found = True        
-        if incubated_found:
-            outcome = "The project is incubated by the Apache Software Foundation."
-            recommendation = "Yes"
-        else:
-            outcome = "The project is not incubated by a large software foundation."
-            recommendation = "No"
-        
-        save_analysis("ReACT-53", outcome, recommendation, output_file)
+    if incubated_found:
+        outcome = "The project is incubated by the Apache Software Foundation."
+        recommendation = "Yes"
+    else:
+        outcome = "The project is not incubated by a large software foundation."
+        recommendation = "No"
+    
+    save_analysis("ReACT-53", outcome, recommendation, output_file)
 
-# purva
-def analyze_react_20(input_csv_file, output_file):
-    with open(input_csv_file, mode='r', encoding='utf-8') as file:
-        reader = csv.DictReader(file)
-        communication_channels = []        
-        for row in reader:
-            content = row.get("Content", "").strip().lower()
-            if "zulipchat" in content:
-                communication_channels.append("Zulip")
-            if "mailing list" in content or "dev@kvrocks.apache.org" in content:
-                communication_channels.append("Mailing List")
-            if "medium" in content:
-                communication_channels.append("Medium")
-            if "twitter" in content or "x" in content:
-                communication_channels.append("Twitter")
-            if "wechat" in content:
-                communication_channels.append("WeChat")        
-        communication_channels = list(set(communication_channels))        
-        if len(communication_channels) >= 2:
-            outcome = f"The project communicates through various channels: {', '.join(communication_channels)}."
-            recommendation = "Yes"
-        else:
-            outcome = "The project does not communicate through various channels."
-            recommendation = "No"
-        
-        save_analysis("ReACT-20", outcome, recommendation, output_file)
+#purva
+def analyze_react_20(readme_content, output_file):
+    communication_channels = []
+    if "zulip" in readme_content.lower():
+        communication_channels.append("Zulip")
+    if "discord" in readme_content.lower():
+        communication_channels.append("Discord")
+    if "mailing list" in readme_content.lower():
+        communication_channels.append("Mailing List")
+    if "Slack" in readme_content.lower():
+        communication_channels.append("slack")
+    if "twitter" in readme_content.lower() or "x" in readme_content.lower():
+        communication_channels.append("Twitter")
+    if "wechat" in readme_content.lower():
+        communication_channels.append("WeChat")
 
-input_csv_file = 'github_api/ResDB/README.csv'
-output_file = 'final_react_analysis.csv'
-analyze_react_93(input_csv_file, output_file)
-analyze_react_95(input_csv_file, output_file)
-analyze_react_97(input_csv_file, output_file)
-analyze_react_98(input_csv_file, output_file)
-analyze_react_102(input_csv_file, output_file)
-analyze_react_100(input_csv_file, output_file)
-analyze_react_77(input_csv_file, output_file)
-analyze_react_60(input_csv_file, output_file)
-analyze_react_20(input_csv_file, output_file)
+    if len(set(communication_channels)) >= 2:
+        outcome = f"The project communicates through various channels: {', '.join(set(communication_channels))}."
+        recommendation = "Yes"
+    else:
+        outcome = "The project does not communicate through various channels."
+        recommendation = "No"
+    
+    save_analysis("ReACT-20", outcome, recommendation, output_file)
+
+#purva
+def analyze_react_97(readme_content, output_file):
+    license_found = "apache license" in readme_content.lower()
+
+    if license_found:
+        outcome = "The project is licensed under the Apache License."
+        recommendation = "Yes"
+    else:
+        outcome = "The project license is not mentioned or not Apache License."
+        recommendation = "No"
+    
+    save_analysis("ReACT-97", outcome, recommendation, output_file)
+
+#purva
+def analyze_react_98(readme_content, output_file):
+    build_instructions_found = any(keyword in readme_content.lower() for keyword in ["build", "run", "docker", "./x.py"])
+
+    if build_instructions_found:
+        outcome = "Clear build and run instructions are provided."
+        recommendation = "Yes"
+    else:
+        outcome = "No clear build and run instructions are provided."
+        recommendation = "No"
+    
+    save_analysis("ReACT-98", outcome, recommendation, output_file)
+
+#purva
+def analyze_react_95(readme_content, output_file):
+    contribution_found = "contributing" in readme_content.lower()
+
+    if contribution_found:
+        outcome = "Contribution guidelines are clearly mentioned."
+        recommendation = "Yes"
+    else:
+        outcome = "Contribution guidelines are not mentioned."
+        recommendation = "No"
+    
+    save_analysis("ReACT-95", outcome, recommendation, output_file)
+
+#purva
+def analyze_react_102(readme_content, output_file):
+    security_found = any(keyword in readme_content.lower() for keyword in ["security", "vulnerability", "secure", "security considerations"])
+
+    if security_found:
+        outcome = "Security considerations are documented."
+        recommendation = "Yes"
+    else:
+        outcome = "Security considerations are not documented."
+        recommendation = "No"
+    
+    save_analysis("ReACT-102", outcome, recommendation, output_file)
+
+if __name__ == "__main__":
+    readme_file = "github_api/kvrocks/README.md"
+    output_file = "final_react_analysis.csv"
+    with open(readme_file, "r", encoding="utf-8") as file:
+        readme_content = file.read()
+    analyze_react_100(readme_content, output_file)
+    analyze_react_93(readme_content, output_file)
+    analyze_react_77(readme_content, output_file)
+    analyze_react_60(readme_content, output_file)
+    analyze_react_53(readme_content, output_file)
+    analyze_react_20(readme_content, output_file)
+    analyze_react_97(readme_content, output_file)
+    analyze_react_98(readme_content, output_file)
+    analyze_react_95(readme_content, output_file)
+    analyze_react_102(readme_content, output_file)
+
+    print(f"Analysis completed. Results saved to {output_file}.")
