@@ -6,10 +6,10 @@ repos = [
     # {'owner': 'Kanaries', 'repo': 'pygwalker'},
     #{'owner': 'apache', 'repo': 'incubator-resilientdb'},
     #{'owner': 'apache', 'repo': 'kvrocks'},
-    {'owner': 'apache', 'repo': 'openDAL'},
+    #{'owner': 'apache', 'repo': 'openDAL'},
     # {'owner': 'apache', 'repo': 'doris'},
     # {'owner': 'apache', 'repo': 'incubator-liminal'},
-    # {'owner': 'apache', 'repo': 'celeborn'}
+    {'owner': 'apache', 'repo': 'celeborn'}
 ]
 token = None or os.environ['GITHUB_TOKEN']
 
@@ -183,16 +183,16 @@ if __name__ == "__main__":
         #         if len(issue_comments) > 0:
         #             f.write(f"Comments for Issue {issue_number}: {issue_comments}\n")
 
-        # with open(f'github_api/{repo["repo"]}/issue_comments.txt', 'w', encoding="utf-8") as f:
-        # #with open(f'github_api/ResDB/issue_comments.txt', 'w', encoding="utf-8") as f:
-        #     issues = get_issues(repo['owner'], repo['repo'])
-        #     for issue in issues:
-        #         issue_number = issue['number']
-        #         issue_labels = [label['name'] for label in issue.get('labels', [])]
-        #         issue_comments = get_issue_comments(repo['owner'], repo['repo'], issue_number)
-        #         f.write(f"Issue #{issue_number}: Labels: {', '.join(issue_labels) if issue_labels else 'No Labels'}\n")
-        #         if issue_comments:
-        #             f.write(f"Comments: {issue_comments}\n")
+        with open(f'github_api/{repo["repo"]}/issue_comments.txt', 'w', encoding="utf-8") as f:
+        #with open(f'github_api/ResDB/issue_comments.txt', 'w', encoding="utf-8") as f:
+            issues = get_issues(repo['owner'], repo['repo'])
+            for issue in issues:
+                issue_number = issue['number']
+                issue_labels = [label['name'] for label in issue.get('labels', [])]
+                issue_comments = get_issue_comments(repo['owner'], repo['repo'], issue_number)
+                f.write(f"Issue #{issue_number}: Labels: {', '.join(issue_labels) if issue_labels else 'No Labels'}\n")
+                if issue_comments:
+                    f.write(f"Comments: {issue_comments}\n")
             
         # with open(f'github_api/{repo["repo"]}/discussions.txt', 'w', encoding="utf-8") as f:
         #     discussions = get_discussions(repo['owner'], repo['repo'])    

@@ -25,13 +25,13 @@ import csv
 
 from google import genai
 
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY_2")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 client = genai.Client(api_key=GEMINI_API_KEY)
 
 #project_name = "kvrocks"
-# project_name = "celeborn"
+project_name = "celeborn"
 # project_name = "ResDB"
-project_name = "openDAL"
+#project_name = "openDAL"
 base_path = "../github_api"
 
 if GEMINI_API_KEY is None:
@@ -155,7 +155,7 @@ def PR_related_reacts():
     }
 
     # Providing all the PR related files to the Gemini API
-    pr_comments_file = list(upload_file_in_chunks(os.path.join(base_path, project_name, "pr_comments.txt")))
+    pr_comments_file = list(upload_file_in_chunks(os.path.join(base_path, project_name, "pr_comments_cleaned.txt")))
     pr_file = list(upload_file_in_chunks(os.path.join(base_path, project_name, "pr.txt")))
 
     # # Reopening Output file
@@ -273,55 +273,51 @@ def analyze_source_code_reacts():
     source_code_dir = os.path.join(base_path, project_name, "top_files")
     source_files = [os.path.join(source_code_dir, file) for file in os.listdir(source_code_dir)]
 
+    for file_path in source_files:
+        file_chunks = list(upload_file_in_chunks(file_path))
+
+        # for chunk in file_chunks:
+        #     response = client.models.generate_content(
+        #         model="gemini-2.0-flash",
+        #         contents=[
+        #             f"Analyze the following source code files and tell me in one word either yes or no if the project follows this recommendation: {source_code_reacts[react]}",
+        #             chunk
+        #         ]
+        #     )
+        src_files_upload = client.models.generate_content(
+            model="gemini-2.0-flash",
+            contents=[
+                f"Sharing the source code files in chunks for the analysis, keep them in context for answering the following questions:",
+                file_chunks
+            ]
+        )
+        print("Chunk upload done!")
+        time.sleep(65)  # Avoid rate limits
+
     for react in source_code_reacts:
-        for file_path in source_files:
-            file_chunks = list(upload_file_in_chunks(file_path))
-
-            # for chunk in file_chunks:
-            #     response = client.models.generate_content(
-            #         model="gemini-2.0-flash",
-            #         contents=[
-            #             f"Analyze the following source code files and tell me in one word either yes or no if the project follows this recommendation: {source_code_reacts[react]}",
-            #             chunk
-            #         ]
-            #     )
-            src_files_upload = client.models.generate_content(
-                model="gemini-2.0-flash",
-                contents=[
-                    f"Sharing the source code files for the analysis, keep them in context for answering the following questions:",
-                    file_chunks
-                ]
-            )
-
         response = client.models.generate_content(
             model="gemini-2.0-flash",
             contents=[
-                f"Analyze the following source code files and tell me in one word either yes or no if the project follows this recommendation: {source_code_reacts[react]}",
-                file_chunks 
-            ]
-        )
-
-        time.sleep(65)  # Avoid rate limits
-
-        explanation_response = client.models.generate_content(
-            model="gemini-2.0-flash",
-            contents=[
-                f"Provide a short, concise, and to-the-point 3-4 lines max explanation on why do you think that the project does or does not follow this recommendation: {source_code_reacts[react]} Directly start the output with explanation. Please give your answer in a paragraph style and not bullet points.",
-                file_chunks
+                "Respond with 'Yes' or 'No' based on your analysis.\n"
+                "Based on all the previously shared issue comments, analyze whether the GitHub project follows this recommendation: '"
+                + source_code_reacts[react] + "'.\n"
+                "Then, provide a short and concise 3-4 line explanation justifying your answer.\n"
+                "Ensure the response is in paragraph format, not bullet points."
             ]
         )
 
         response_text = response.text.strip()
         response_parts = response_text.split(" ", 1)  # Split at first space
         yes_no = response_parts[0] if response_parts else "UNKNOWN"
+        explanation = response_parts[1] if len(response_parts) > 1 else "No explanation provided."
 
         # Remove commas from the explanation to keep CSV format intact
-        explanation_text = explanation_response.text.strip().replace(",", " ")
+        explanation = explanation.replace(",", " ")
 
         react_combined = f"{react}: {source_code_reacts[react]}"  # Combine react ID and description
 
         # Append row to CSV
-        save_analysis(react_combined, explanation_text, yes_no, "../final_react_analysis.csv")
+        save_analysis(react_combined, explanation, yes_no, "../final_react_analysis.csv")
         
         print(f"Saved: {project_name}, {react}, {yes_no}")
 
