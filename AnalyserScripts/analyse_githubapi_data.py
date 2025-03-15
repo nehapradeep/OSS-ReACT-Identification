@@ -12,7 +12,7 @@ from datetime import datetime, timedelta
 
 
 #neha
-def analyze_react_14(csv_filename, output_file="final_react_analysis.csv"):
+def analyze_react_14(csv_filename, output_file="../final_react_analysis.csv"):
     pr_merge_times = []
     
     with open(csv_filename, mode="r", encoding="utf-8") as csv_file:
@@ -35,7 +35,7 @@ def analyze_react_14(csv_filename, output_file="final_react_analysis.csv"):
 
 
 #neha
-def analyze_react_62(csv_filename, repo_creation_date, output_file="final_react_analysis.csv"):
+def analyze_react_62(csv_filename, repo_creation_date, output_file="../final_react_analysis.csv"):
     commit_timestamps = []
     
     with open(csv_filename, mode="r", encoding="utf-8") as csv_file:
@@ -63,7 +63,7 @@ def analyze_react_62(csv_filename, repo_creation_date, output_file="final_react_
     save_analysis("ReACT-62 Encourage developers to start contributing to the project early.", analysis, recommendation, output_file)
 
 #neha
-def analyze_react_81(commit_csv_filename, output_file="final_react_analysis.csv"):
+def analyze_react_81(commit_csv_filename, output_file="../final_react_analysis.csv"):
     readme_updates = []
     
     with open(commit_csv_filename, mode="r", encoding="utf-8") as csv_file:
@@ -82,22 +82,22 @@ def analyze_react_81(commit_csv_filename, output_file="final_react_analysis.csv"
     save_analysis("ReACT-81 Keep knowledge up to date and findable.", analysis, recommendation, output_file)
 
 #neha
-def analyze_react_9(contrib_md_path, output_file="final_react_analysis.csv"):
+def analyze_react_9(contrib_md_path, output_file="../final_react_analysis.csv"):
     keyword = "how to request for access"
     analyze_contributing_react(contrib_md_path, "ReACT-9", keyword, output_file)
 
 #neha
-def analyze_react_19(contrib_md_path, output_file="final_react_analysis.csv"):
+def analyze_react_19(contrib_md_path, output_file="../final_react_analysis.csv"):
     keyword = "flag newcomers"
     analyze_contributing_react(contrib_md_path, "ReACT-19", keyword, output_file)
 
 #neha
-def analyze_react_33(contrib_md_path, output_file="final_react_analysis.csv"):
+def analyze_react_33(contrib_md_path, output_file="../final_react_analysis.csv"):
     keyword = "contribution guidelines"
     analyze_contributing_react(contrib_md_path, "ReACT-33", keyword, output_file)
 
 #neha
-def analyze_react_84(contrib_md_path, output_file="final_react_analysis.csv"):
+def analyze_react_84(contrib_md_path, output_file="../final_react_analysis.csv"):
     keyword = "onboarding support"
     analyze_contributing_react(contrib_md_path, "ReACT-84", keyword, output_file)
 
@@ -129,12 +129,12 @@ def save_analysis(react_name, outcome, recommendation, output_file):
     
     print(f"Analysis for {react_name} saved to {output_file}")
 
-project_path = '/Users/nehapradeep/Desktop/UCDavis/Winter25/SE/OSS ReAct/OSS-ReACT-Identification/'
-project_name = 'kvrocks'
+project_path = '../'
+project_name = 'celeborn'
 pr_csv = os.path.join(project_path, "github_api", project_name, "pr.csv")
 commit_csv = os.path.join(project_path, "pydrillerCSV", project_name, f"{project_name}_commit_data.csv")
 contrib_md = os.path.join(project_path, "github_api", project_name, "CONTRIBUTING.md")
-repo_creation_date = "2023-01-15T00:00:00Z"
+repo_creation_date = "2021-12-10T00:00:00Z"
 
 analyze_react_14(pr_csv)
 analyze_react_62(commit_csv, repo_creation_date)

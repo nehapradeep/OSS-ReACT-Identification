@@ -4,6 +4,9 @@ import os
 from datetime import datetime, timedelta
 from textblob import TextBlob
 
+#project_name = 'kvrocks'
+project_name = 'celeborn'
+
 # purva
 def analyze_in_person_interactions(discussions, output_file="final_react_analysis.csv"):
     meetup_keywords = ['meetup', 'event', 'in-person', 'gathering', 'conference', 'announced']
@@ -168,7 +171,7 @@ def analyze_sentiment_and_save(discussions, output_file):
             recommendation = "N/A"
         
         writer.writerow([
-            'kvrocks',
+            project_name,
             'ReACT-92',
             outcome,
             recommendation
@@ -182,7 +185,7 @@ def save_analysis(react_name, outcome, recommendation, output_file):
         if not os.path.isfile(output_file) or os.stat(output_file).st_size == 0:
             writer.writeheader()
         writer.writerow({
-            "Project Name": 'kvrocks',
+            "Project Name": project_name,
             "ReACT Name/Number": react_name,
             "Outcome": outcome,
             "Recommendation": recommendation
@@ -190,7 +193,7 @@ def save_analysis(react_name, outcome, recommendation, output_file):
     
     print(f"Analysis for {react_name} saved to {output_file}")
 
-csv_file = 'github_api/kvrocks/discussions.csv'
+csv_file = 'github_api/celeborn/discussions.csv'
 output_file = 'final_react_analysis.csv'
 
 try:

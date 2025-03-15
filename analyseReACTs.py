@@ -91,8 +91,14 @@ def analyze_file_extensions(file_path, react_number, project_name, output_file="
         
         writer.writerow({
             "Project Name": project_name,
-            "ReACT Name/Number": react_number,
+            "ReACT Name/Number": "ReACT-3: Utilize a common programming language",
             "Outcome": outcome_str,
+            "Recommendation": "N/A"
+        })
+        writer.writerow({
+            "Project Name": project_name,
+            "ReACT Name/Number": "ReACT-65: Maintain the current project platform; refrain from altering it. (if available on github, ReACT is satisfied)",
+            "Outcome": "Meets criteria",
             "Recommendation": "N/A"
         })
     
@@ -145,9 +151,9 @@ def analyze_commit_messages(csv_filename, project_name, output_file="final_react
     print(f"Analysis saved to {output_file}")
 
 def main():
-    project_name = "ResDB"
-    input_csv = "resdb_commit_data2.csv"
-    output_csv = "final_react_analysis.csv"
+    project_name = "celeborn"
+    input_csv = "./pydrillerCSV/celeborn/celeborn_commit_data.csv"
+    output_csv = "./final_react_analysis.csv"
     
     analyze_react_metrics(input_csv, project_name, output_csv)
     analyze_commit_messages(input_csv, project_name, output_csv)

@@ -104,8 +104,14 @@ def analyze_file_extensions(file_path, react_number, project_name, output_file="
         
         writer.writerow({
             "Project Name": project_name,
-            "ReACT Name/Number": react_number,
+            "ReACT Name/Number": "ReACT-3: Utilize a common programming language",
             "Outcome": outcome_str,
+            "Recommendation": "N/A"
+        })
+        writer.writerow({
+            "Project Name": project_name,
+            "ReACT Name/Number": "ReACT-65: Maintain the current project platform; refrain from altering it. (if available on github, ReACT is satisfied)",
+            "Outcome": "Meets criteria",
             "Recommendation": "N/A"
         })
     
@@ -236,7 +242,7 @@ def analyze_react_36(file_path, project_name, output_file="final_react_analysis.
     
     print(f"ReACT-36 Analysis saved to {output_file}")
 
-def analyze_react_38_with_loc(file_path, project_name, min_commits=10, min_months_active=3, min_lines_of_code=1000, output_file="final_react_analysis.csv"):
+def analyze_react_38_with_loc(file_path, project_name, min_commits=10, min_months_active=3, min_lines_of_code=1000, output_file="../final_react_analysis.csv"):
     """
     Analyze ReACT-38: Foster contributions from experienced contributors.
     """
@@ -287,10 +293,10 @@ def analyze_react_38_with_loc(file_path, project_name, min_commits=10, min_month
 
 
 def main():
-    project_path = '/Users/nehapradeep/Desktop/UCDavis/Winter25/SE/OSS ReAct/OSS-ReACT-Identification/'
-    project_name = 'kvrocks'
-    input_csv = os.path.join(project_path, "pydrillerCSV", project_name, "kvrocks_commit_data.csv")
-    output_csv = "final_react_analysis.csv"
+    project_path = '../'
+    project_name = 'celeborn'
+    input_csv = os.path.join(project_path, "pydrillerCSV", project_name, "celeborn_commit_data.csv")
+    output_csv = "../final_react_analysis.csv"
     react_number = "ReACT-16"
 
     analyze_react_metrics(input_csv, project_name, output_csv)
