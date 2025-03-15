@@ -17,7 +17,7 @@ def save_analysis(react_name, outcome, recommendation, output_file):
     
     print(f"Analysis for {react_name} saved to {output_file}")
 
-df = pd.read_csv('pydrillerCSV/kvrocks/kvrocks_commit_data.csv')
+df = pd.read_csv('pydrillerCSV/ResDB/resdb_commit_data.csv')
 print(df.head())
 
 # purva

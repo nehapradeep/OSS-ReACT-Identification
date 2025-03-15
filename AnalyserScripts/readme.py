@@ -243,7 +243,7 @@ def analyze_react_20(input_csv_file, output_file):
         
         save_analysis("ReACT-20", outcome, recommendation, output_file)
 
-input_csv_file = 'github_api/kvrocks/README.csv'
+input_csv_file = 'github_api/ResDB/README.csv'
 output_file = 'final_react_analysis.csv'
 analyze_react_93(input_csv_file, output_file)
 analyze_react_95(input_csv_file, output_file)
