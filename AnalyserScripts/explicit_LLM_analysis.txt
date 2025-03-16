@@ -1,0 +1,20 @@
+Explicitly give this prompt and README.md file to a LLM for analysis
+
+1. Find all the links and summarize the content in each link in the readme file
+2. What is there in the "How to Contribute" link
+3. Identify if the following reacts from the readme.md file and tell me in one word either yes or no if the project follows this recommendation, and give reason for your answer:
+
+ReACT-20: Communicate through various channels or mediums.
+ReACT-24: Establish local groups in each country. (Check for area info)
+ReACT-25: Maintain concise, updated, accessible documentation. (Or documentation link in README)
+ReACT-29: Document the code structure: Clearly document the way that the code is organized
+ReACT-31: Offer coding guidelines.
+ReACT-34: Maintain a roster of available project leaders.
+ReACT-41: Utilize a distributed pair programming tool that supports defined roles between the pairs. (Check for mention in Readme; otherwise recommend directly)
+ReACT-42: Encourage developers to utilize tools that support synchronous editing of source code. (Same as ReACT-41)
+ReACT-46: Utilize a communication channel that supports both text and audio-based communication. (Link to Slack/Discord)
+ReACT-57: Create an environment and culture that fosters a sense of belonging within the community. Implement mechanisms that encourage and enable newcomers to progress toward the center of the community through continual contributions. (Link to Slack/Discord, same as ReACT-46)
+ReACT-48: Schedule regular brainstorming sessions to establish a shared vision for the project. (Link to calendar invite/call)
+ReACT-52: Encourage developers to perform Reengineering, Forward Engineering and Corrective Engineering Activities (Documentation)
+ReACT-53: Have the project incubated by large software foundation.
+ReACT-60: Promote the Project (Increase Visibility) (Social media profile links/No of stars to the repo)
