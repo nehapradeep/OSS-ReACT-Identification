@@ -1,0 +1,308 @@
+PR #20829: dataZoom inside with option pinned 'start' 'end' (State: open)
+URL: https://github.com/apache/echarts/pull/20829
+Created at: 2025-03-15T07:38:26Z, Merged at: None
+================================================================================
+PR #20827: fix 20813 for custom charts added an option to use legend by category… (State: open)
+URL: https://github.com/apache/echarts/pull/20827
+Created at: 2025-03-14T09:30:53Z, Merged at: None
+================================================================================
+PR #20815: Fix(tooltip): added container prop for tooltip placement (State: open)
+URL: https://github.com/apache/echarts/pull/20815
+Created at: 2025-03-10T13:33:20Z, Merged at: None
+================================================================================
+PR #20814: fix(dataZoom): restrict range on brushEnd (State: open)
+URL: https://github.com/apache/echarts/pull/20814
+Created at: 2025-03-10T10:08:36Z, Merged at: None
+================================================================================
+PR #20800: fix(title): title text style width type should not include string #20799 (State: closed)
+URL: https://github.com/apache/echarts/pull/20800
+Created at: 2025-03-03T11:30:47Z, Merged at: 2025-03-10T06:09:26Z
+================================================================================
+PR #20792: feat(i18n): Add Norwegian Bokmål (nb-NO) translation (State: closed)
+URL: https://github.com/apache/echarts/pull/20792
+Created at: 2025-02-26T10:16:28Z, Merged at: 2025-02-28T08:33:52Z
+================================================================================
+PR #20782: feat(marker): markPoint markLine markArea add z2 option to support change level (State: closed)
+URL: https://github.com/apache/echarts/pull/20782
+Created at: 2025-02-23T11:50:44Z, Merged at: 2025-03-13T08:34:20Z
+================================================================================
+PR #20777: fix(axis):null value item on category axis should be able to show tooltip (State: open)
+URL: https://github.com/apache/echarts/pull/20777
+Created at: 2025-02-21T10:13:13Z, Merged at: None
+================================================================================
+PR #20760: fix(svg): remove SVG support check in `getSvgDataURL` (State: open)
+URL: https://github.com/apache/echarts/pull/20760
+Created at: 2025-02-17T02:15:36Z, Merged at: None
+================================================================================
+PR #20754: chore(deps-dev): bump rollup from 2.34.2 to 2.79.2 (State: closed)
+URL: https://github.com/apache/echarts/pull/20754
+Created at: 2025-02-12T15:25:16Z, Merged at: 2025-02-13T03:22:48Z
+================================================================================
+PR #20753: chore(deps-dev): bump esbuild from 0.8.39 to 0.25.0 (State: closed)
+URL: https://github.com/apache/echarts/pull/20753
+Created at: 2025-02-12T14:03:36Z, Merged at: None
+================================================================================
+PR #20740: Labels are now rendered independently of symbols, ensuring consistent display even when symbol: 'none'. (State: open)
+URL: https://github.com/apache/echarts/pull/20740
+Created at: 2025-02-08T14:43:18Z, Merged at: None
+================================================================================
+PR #20727: Added missing period for consistency and readability (State: closed)
+URL: https://github.com/apache/echarts/pull/20727
+Created at: 2025-01-31T15:54:37Z, Merged at: 2025-02-01T07:51:48Z
+================================================================================
+PR #20724: feat(bar): provide more options for emphasis focus ('stack', … (State: open)
+URL: https://github.com/apache/echarts/pull/20724
+Created at: 2025-01-29T13:28:26Z, Merged at: None
+================================================================================
+PR #20718: fix(datazoom): prevent bar and scatter chart overflowing the graph . … (State: open)
+URL: https://github.com/apache/echarts/pull/20718
+Created at: 2025-01-24T17:56:10Z, Merged at: None
+================================================================================
+PR #20717: feat(theme): support design token (State: open)
+URL: https://github.com/apache/echarts/pull/20717
+Created at: 2025-01-24T11:06:41Z, Merged at: None
+================================================================================
+PR #20710: fix(tooltip): Changing tooltip trigger from axis to item doesn't refresh the displayed tooltip (State: open)
+URL: https://github.com/apache/echarts/pull/20710
+Created at: 2025-01-22T09:56:36Z, Merged at: None
+================================================================================
+PR #20705: [Feature] Add dynamic theme switching support (State: closed)
+URL: https://github.com/apache/echarts/pull/20705
+Created at: 2025-01-21T08:50:44Z, Merged at: 2025-01-23T11:36:44Z
+================================================================================
+PR #20703: feat(visualMap): able to set the 'dimension' to an array (State: open)
+URL: https://github.com/apache/echarts/pull/20703
+Created at: 2025-01-20T10:28:37Z, Merged at: None
+================================================================================
+PR #20702: feat: support auto computing dark mode (State: open)
+URL: https://github.com/apache/echarts/pull/20702
+Created at: 2025-01-20T08:09:56Z, Merged at: None
+================================================================================
+PR #20699: fix(heatmap): fix labels not in calendar range are unexpectedly displayed (State: closed)
+URL: https://github.com/apache/echarts/pull/20699
+Created at: 2025-01-18T07:46:49Z, Merged at: 2025-01-21T09:09:00Z
+================================================================================
+PR #20689: fix(dataZoom): data zoom length should take the handle icon width into account (State: open)
+URL: https://github.com/apache/echarts/pull/20689
+Created at: 2025-01-15T10:56:57Z, Merged at: None
+================================================================================
+PR #20682: fix(series): mismatched dimension index when canOmitUnusedDimensions is true (State: closed)
+URL: https://github.com/apache/echarts/pull/20682
+Created at: 2025-01-13T10:33:11Z, Merged at: 2025-03-06T12:06:41Z
+================================================================================
+PR #20677: feat(radar): Radar series tooltip support dimensionIndex (State: open)
+URL: https://github.com/apache/echarts/pull/20677
+Created at: 2025-01-10T14:20:18Z, Merged at: None
+================================================================================
+PR #20676: test: visual test support compare with a PR id (State: closed)
+URL: https://github.com/apache/echarts/pull/20676
+Created at: 2025-01-10T09:06:27Z, Merged at: 2025-01-16T06:42:04Z
+================================================================================
+PR #20669: chore: merge master into v6 (State: closed)
+URL: https://github.com/apache/echarts/pull/20669
+Created at: 2025-01-09T07:29:04Z, Merged at: 2025-01-09T07:32:26Z
+================================================================================
+PR #20660: feat(dataZoom): Add 'no-function-keys' option to RoamController and InsideZoomModel (State: open)
+URL: https://github.com/apache/echarts/pull/20660
+Created at: 2025-01-08T02:03:48Z, Merged at: None
+================================================================================
+PR #20641: fix(line): Line Charts do not work when lte is set to null  (State: closed)
+URL: https://github.com/apache/echarts/pull/20641
+Created at: 2025-01-02T10:24:10Z, Merged at: None
+================================================================================
+PR #20639: chore: update NOTICE year to 2025 (State: closed)
+URL: https://github.com/apache/echarts/pull/20639
+Created at: 2025-01-02T02:39:09Z, Merged at: 2025-01-02T02:40:24Z
+================================================================================
+PR #20638: chore(workflow): add package.json (State: closed)
+URL: https://github.com/apache/echarts/pull/20638
+Created at: 2025-01-02T01:04:06Z, Merged at: 2025-01-02T02:37:57Z
+================================================================================
+PR #20627: Merge v5.6.0 release into master (State: closed)
+URL: https://github.com/apache/echarts/pull/20627
+Created at: 2024-12-28T07:40:13Z, Merged at: 2024-12-30T09:48:21Z
+================================================================================
+PR #20622: feat(tooltip): add support for rich text styles in tooltip.textStyle (State: open)
+URL: https://github.com/apache/echarts/pull/20622
+Created at: 2024-12-26T11:54:27Z, Merged at: None
+================================================================================
+PR #20620: fix(markline): click markline will cause the first column to be selected (State: open)
+URL: https://github.com/apache/echarts/pull/20620
+Created at: 2024-12-25T12:21:05Z, Merged at: None
+================================================================================
+PR #20615: Fixed the problem that the rich style does not take effect when tooltip is in renderMode=richText (State: closed)
+URL: https://github.com/apache/echarts/pull/20615
+Created at: 2024-12-23T13:00:16Z, Merged at: None
+================================================================================
+PR #20582: fix(bar): polar bar should update roundCap when changes #20567 (State: open)
+URL: https://github.com/apache/echarts/pull/20582
+Created at: 2024-12-12T09:11:33Z, Merged at: None
+================================================================================
+PR #20566: feat(map): support `regions[].silent` and update map data in tests (State: closed)
+URL: https://github.com/apache/echarts/pull/20566
+Created at: 2024-12-06T10:09:37Z, Merged at: 2024-12-10T04:20:28Z
+================================================================================
+PR #20564: feat(geo): support styling region in original GeoJSON data (State: closed)
+URL: https://github.com/apache/echarts/pull/20564
+Created at: 2024-12-06T05:57:49Z, Merged at: 2024-12-06T07:56:20Z
+================================================================================
+PR #20563: fix(line): Ensure null check to avoid `Cannot set properties of null (setting 'hoverState')` error (State: open)
+URL: https://github.com/apache/echarts/pull/20563
+Created at: 2024-12-05T16:48:15Z, Merged at: None
+================================================================================
+PR #20562: fix(legend): symbolRotate for legend is neither inherited nor being set  (State: open)
+URL: https://github.com/apache/echarts/pull/20562
+Created at: 2024-12-05T12:18:56Z, Merged at: None
+================================================================================
+PR #20561: feat(geo): support styling region in original GeoJSON data (State: closed)
+URL: https://github.com/apache/echarts/pull/20561
+Created at: 2024-12-05T05:44:40Z, Merged at: 2024-12-05T14:42:34Z
+================================================================================
+PR #20557: fix(pictorial): fix zero value flipping for different axes (State: closed)
+URL: https://github.com/apache/echarts/pull/20557
+Created at: 2024-12-04T09:42:31Z, Merged at: 2024-12-04T10:51:30Z
+================================================================================
+PR #20556: Release v5.6.0 (State: closed)
+URL: https://github.com/apache/echarts/pull/20556
+Created at: 2024-12-04T05:09:27Z, Merged at: 2024-12-11T09:31:57Z
+================================================================================
+PR #20551: fix(visualMap): fix cursor is still pointer when `selectedMode` is disabled (State: closed)
+URL: https://github.com/apache/echarts/pull/20551
+Created at: 2024-11-28T12:47:16Z, Merged at: 2024-11-29T06:15:36Z
+================================================================================
+PR #20542: feat(grid): enhance `grid.containLabel` (State: open)
+URL: https://github.com/apache/echarts/pull/20542
+Created at: 2024-11-27T06:11:24Z, Merged at: None
+================================================================================
+PR #20541: fix(log): barMinHeight not work with startvalue greater than 10 (State: open)
+URL: https://github.com/apache/echarts/pull/20541
+Created at: 2024-11-26T12:25:03Z, Merged at: None
+================================================================================
+PR #20535: Merge master branch into release for v5.5.2 (State: closed)
+URL: https://github.com/apache/echarts/pull/20535
+Created at: 2024-11-23T02:21:20Z, Merged at: 2024-11-26T12:51:33Z
+================================================================================
+PR #20534: fix(data): fix potential NPE in the `SeriesData#rawIndexOf` function (State: closed)
+URL: https://github.com/apache/echarts/pull/20534
+Created at: 2024-11-23T02:04:21Z, Merged at: 2024-11-24T06:03:56Z
+================================================================================
+PR #20524: fix(AxisPointer): Correct alignment for rich text tooltip labels (State: open)
+URL: https://github.com/apache/echarts/pull/20524
+Created at: 2024-11-19T11:04:04Z, Merged at: None
+================================================================================
+PR #20522: feat: Chord charts (State: open)
+URL: https://github.com/apache/echarts/pull/20522
+Created at: 2024-11-18T10:16:14Z, Merged at: None
+================================================================================
+PR #20517: fix(graph): zooming a Force Graph with layoutAnimation false breaks edges (State: open)
+URL: https://github.com/apache/echarts/pull/20517
+Created at: 2024-11-14T12:18:43Z, Merged at: None
+================================================================================
+PR #20509: chore: revert ts version (State: closed)
+URL: https://github.com/apache/echarts/pull/20509
+Created at: 2024-11-13T06:18:15Z, Merged at: 2024-11-15T06:30:38Z
+================================================================================
+PR #20497: feat(line): define line pieces interface (State: open)
+URL: https://github.com/apache/echarts/pull/20497
+Created at: 2024-11-11T07:47:23Z, Merged at: None
+================================================================================
+PR #20496: fix-18151: When using pictorialbar, the y-axis cannot adapt, resulting in some column charts being offset (State: open)
+URL: https://github.com/apache/echarts/pull/20496
+Created at: 2024-11-11T07:26:12Z, Merged at: None
+================================================================================
+PR #20495: fix(scale): #20265 when dataZomm.filterMode is “empty” or ‘none’， the line graph is scaled to only one category, it is not filtered correctly (State: open)
+URL: https://github.com/apache/echarts/pull/20495
+Created at: 2024-11-10T12:42:48Z, Merged at: None
+================================================================================
+PR #20492: feat(calendar): add `silent` option for `dayLabel`/`monthLabel`/`yearLabel` (State: closed)
+URL: https://github.com/apache/echarts/pull/20492
+Created at: 2024-11-09T08:31:53Z, Merged at: 2024-11-15T07:05:35Z
+================================================================================
+PR #20491: fix(type): markLine `symbolOffset` can be a 2d array for both symbols (State: closed)
+URL: https://github.com/apache/echarts/pull/20491
+Created at: 2024-11-09T07:50:29Z, Merged at: 2024-11-15T06:51:38Z
+================================================================================
+PR #20485: Relax tslib requirement specifier (State: closed)
+URL: https://github.com/apache/echarts/pull/20485
+Created at: 2024-11-07T09:31:56Z, Merged at: 2024-11-08T07:32:45Z
+================================================================================
+PR #20484: test(aria): fix test case of #20218 (State: closed)
+URL: https://github.com/apache/echarts/pull/20484
+Created at: 2024-11-07T09:22:18Z, Merged at: 2024-11-25T00:46:09Z
+================================================================================
+PR #20482: fix 17936:Legend event monitoring problem (State: open)
+URL: https://github.com/apache/echarts/pull/20482
+Created at: 2024-11-07T07:54:27Z, Merged at: None
+================================================================================
+PR #20476: feat(label): enforce labelLayout for all state (State: open)
+URL: https://github.com/apache/echarts/pull/20476
+Created at: 2024-11-06T01:31:18Z, Merged at: None
+================================================================================
+PR #20465: fix(bar): fix borderColor hides bar color with large data (State: closed)
+URL: https://github.com/apache/echarts/pull/20465
+Created at: 2024-10-30T22:29:03Z, Merged at: 2024-11-14T08:58:44Z
+================================================================================
+PR #20458: DataZoom refresh (State: open)
+URL: https://github.com/apache/echarts/pull/20458
+Created at: 2024-10-29T05:27:18Z, Merged at: None
+================================================================================
+PR #20453: Add types export for nodeNext moduleResolution (State: open)
+URL: https://github.com/apache/echarts/pull/20453
+Created at: 2024-10-25T03:05:21Z, Merged at: None
+================================================================================
+PR #20447: feat(custom): support disableTooltip for custom series (State: open)
+URL: https://github.com/apache/echarts/pull/20447
+Created at: 2024-10-24T07:42:50Z, Merged at: None
+================================================================================
+PR #20436: fix(Axis): xAxis axisTick custom interval funciton work error with boundaryGap false (State: open)
+URL: https://github.com/apache/echarts/pull/20436
+Created at: 2024-10-22T03:06:51Z, Merged at: None
+================================================================================
+PR #20435: fix(tooltip): fix potential NPE when setting option with `notMerge` strategy (State: closed)
+URL: https://github.com/apache/echarts/pull/20435
+Created at: 2024-10-21T11:44:10Z, Merged at: 2024-10-23T07:20:59Z
+================================================================================
+PR #20426: feat(autoRotate): implements autoRotate and build (State: closed)
+URL: https://github.com/apache/echarts/pull/20426
+Created at: 2024-10-15T12:53:17Z, Merged at: None
+================================================================================
+PR #20407: chore(deps): bump cookie and socket.io in /test/runTest (State: closed)
+URL: https://github.com/apache/echarts/pull/20407
+Created at: 2024-10-11T03:29:35Z, Merged at: None
+================================================================================
+PR #20402: feat(custom): support compoundPath in custom series renderItem (State: closed)
+URL: https://github.com/apache/echarts/pull/20402
+Created at: 2024-10-10T08:06:18Z, Merged at: 2024-10-16T07:31:54Z
+================================================================================
+PR #20399: feat(sunburst): add new emphasis focus strategy `'relative'` for highlighting ancestor and descendant nodes (State: closed)
+URL: https://github.com/apache/echarts/pull/20399
+Created at: 2024-10-09T10:55:18Z, Merged at: 2024-10-10T03:39:15Z
+================================================================================
+PR #20398: fix(tooltip): Tooltip textStyle lineHeight does not work in default  (State: closed)
+URL: https://github.com/apache/echarts/pull/20398
+Created at: 2024-10-08T12:10:02Z, Merged at: 2024-10-30T10:48:42Z
+================================================================================
+PR #20396: fix(theme): fix legend page text color in dark mode (State: closed)
+URL: https://github.com/apache/echarts/pull/20396
+Created at: 2024-10-08T03:03:20Z, Merged at: 2024-10-08T08:27:29Z
+================================================================================
+PR #20380: fix(sankey): avoid throwing errors when the `links` / `nodes` / `levels` option is undefined (State: closed)
+URL: https://github.com/apache/echarts/pull/20380
+Created at: 2024-09-28T09:05:40Z, Merged at: 2024-09-29T02:39:54Z
+================================================================================
+PR #20378: add tooltip for axis label (State: closed)
+URL: https://github.com/apache/echarts/pull/20378
+Created at: 2024-09-27T05:54:50Z, Merged at: None
+================================================================================
+PR #20370: fix(polar): fix unexpected clipping in polar coordinate (State: closed)
+URL: https://github.com/apache/echarts/pull/20370
+Created at: 2024-09-24T11:14:54Z, Merged at: 2024-09-26T02:12:08Z
+================================================================================
+PR #20368: chore(deps-dev): bump rollup from 2.34.2 to 3.29.5 (State: closed)
+URL: https://github.com/apache/echarts/pull/20368
+Created at: 2024-09-24T07:51:16Z, Merged at: None
+================================================================================
+PR #20365: Next (State: closed)
+URL: https://github.com/apache/echarts/pull/20365
+Created at: 2024-09-24T01:58:59Z, Merged at: None
+================================================================================

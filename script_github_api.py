@@ -1,6 +1,7 @@
 import base64
 import os
 import requests
+from datetime import datetime, timedelta
 
 repos = [
     # {'owner': 'Kanaries', 'repo': 'pygwalker'},
@@ -9,7 +10,11 @@ repos = [
     #{'owner': 'apache', 'repo': 'openDAL'},
     # {'owner': 'apache', 'repo': 'doris'},
     # {'owner': 'apache', 'repo': 'incubator-liminal'},
-    {'owner': 'apache', 'repo': 'celeborn'}
+    #{'owner': 'apache', 'repo': 'celeborn'}
+    #{'owner': 'apache', 'repo': 'superset'},
+    #{'owner': 'apache', 'repo': 'echarts'},
+    {'owner': 'apache', 'repo': 'spark'}
+
 ]
 token = None or os.environ['GITHUB_TOKEN']
 
@@ -17,6 +22,14 @@ token = None or os.environ['GITHUB_TOKEN']
 headers = {
     'Authorization': f'token {token}'
 }
+
+import requests
+
+response = requests.get("https://api.github.com/rate_limit")
+print(response.json())
+
+# Get the date 6 months ago
+six_months_ago = (datetime.utcnow() - timedelta(days=180)).isoformat() + "Z"
 
 def get_pull_requests(owner, repo):
     url = f'https://api.github.com/repos/{owner}/{repo}/pulls?q=is%3Apr+is%3Aclosed+is%3Aopen'
@@ -35,7 +48,9 @@ def get_pull_requests(owner, repo):
         if not prs:
             break  # Stop when there are no more PRs
         
-        all_prs.extend(prs)
+        # Filter issues by created_at timestamp
+        filtered_prs = [pr for pr in prs if pr["created_at"] >= six_months_ago]
+        all_prs.extend(filtered_prs)
         params["page"] += 1
         
     with open(f'github_api/{repo}/pr.txt', "w", encoding="utf-8") as file:
@@ -71,8 +86,12 @@ def get_issues(owner, repo):
         if not issues:
             break
         
-        all_issues.extend(issues)
+        # Filter issues by created_at timestamp
+        filtered_issues = [issue for issue in issues if issue["created_at"] >= six_months_ago]
+        all_issues.extend(filtered_issues)
         params["page"] += 1
+        if len(issues) < 100:
+            break
     
     return all_issues
 
@@ -127,9 +146,9 @@ def get_discussions(owner, repo):
 def get_top_source_files(owner, repo):
     # for kvrocks their main branch is "unstable"
     #url = f'https://api.github.com/repos/{owner}/{repo}/git/trees/unstable?recursive=1'
-    #url = f'https://api.github.com/repos/{owner}/{repo}/git/trees/master?recursive=1'
+    url = f'https://api.github.com/repos/{owner}/{repo}/git/trees/master?recursive=1'
     # It's "main" for openDAL
-    url = f'https://api.github.com/repos/{owner}/{repo}/git/trees/main?recursive=1'
+    #url = f'https://api.github.com/repos/{owner}/{repo}/git/trees/main?recursive=1'
     response = requests.get(url, headers=headers)
     response.raise_for_status()
     tree = response.json().get('tree', [])
@@ -162,28 +181,19 @@ if __name__ == "__main__":
     for repo in repos:
         os.makedirs(os.path.join('github_api',repo['repo']), exist_ok=True)
         print(f"Processing repo: {repo['owner']}/{repo['repo']}")
-        # get_file_path(repo['owner'], repo['repo'], 'README.md')
-        # get_file_path(repo['owner'], repo['repo'], 'CONTRIBUTING.md')
-        # get_file_path(repo['owner'], repo['repo'], 'LICENSE')
-        # pull_requests = get_pull_requests(repo['owner'], repo['repo'])
-        # with open(f'github_api/{repo["repo"]}/pr_comments.txt', 'w', encoding="utf-8") as f:
-        #     for pr in pull_requests:
-        #         pr_number = pr['number']
-        #         pr_comments = get_pull_request_comments(repo['owner'], repo['repo'], pr_number)
-        #         # print(f"Comments for PR {pr_number}: {pr_comments}")
-        #         if len(pr_comments) > 0:
-        #             f.write(f"Comments for PR {pr_number}: {pr_comments}\n")
-            
-        # with open(f'github_api/{repo['repo']}/issue_comments.txt', 'w') as f:
-        #     issues = get_issues(repo['owner'], repo['repo'])
-        #     for issue in issues:
-        #         issue_number = issue['number']
-        #         issue_comments = get_issue_comments(repo['owner'], repo['repo'], issue_number)
-        #         # print(f"Comments for Issue {issue_number}: {issue_comments}")
-        #         if len(issue_comments) > 0:
-        #             f.write(f"Comments for Issue {issue_number}: {issue_comments}\n")
+        get_file_path(repo['owner'], repo['repo'], 'README.md')
+        get_file_path(repo['owner'], repo['repo'], 'CONTRIBUTING.md')
+        get_file_path(repo['owner'], repo['repo'], 'LICENSE')
+        pull_requests = get_pull_requests(repo['owner'], repo['repo'])
+        with open(f'github_api/{repo["repo"]}/pr_comments.txt', 'w', encoding="utf-8") as f:
+            for pr in pull_requests:
+                pr_number = pr['number']
+                pr_comments = get_pull_request_comments(repo['owner'], repo['repo'], pr_number)
+                # print(f"Comments for PR {pr_number}: {pr_comments}")
+                if len(pr_comments) > 0:
+                    f.write(f"Comments for PR {pr_number}: {pr_comments}\n")
 
-        with open(f'github_api/{repo["repo"]}/issue_comments.txt', 'w', encoding="utf-8") as f:
+        with open(f'github_api/{repo["repo"]}/issue_comments.txt', 'w', encoding="utf-8", errors="ignore") as f:
         #with open(f'github_api/ResDB/issue_comments.txt', 'w', encoding="utf-8") as f:
             issues = get_issues(repo['owner'], repo['repo'])
             for issue in issues:
@@ -194,10 +204,10 @@ if __name__ == "__main__":
                 if issue_comments:
                     f.write(f"Comments: {issue_comments}\n")
             
-        # with open(f'github_api/{repo["repo"]}/discussions.txt', 'w', encoding="utf-8") as f:
-        #     discussions = get_discussions(repo['owner'], repo['repo'])    
-        #     # print(f"Discussions: {discussions}")
-        #     f.write(f"Discussions: {discussions}\n")
+        with open(f'github_api/{repo["repo"]}/discussions.txt', 'w', encoding="utf-8") as f:
+            discussions = get_discussions(repo['owner'], repo['repo'])    
+            # print(f"Discussions: {discussions}")
+            f.write(f"Discussions: {discussions}\n")
 
         #pranav
         top_files = get_top_source_files(repo['owner'], repo['repo'])
