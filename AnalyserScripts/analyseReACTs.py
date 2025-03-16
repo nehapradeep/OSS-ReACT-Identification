@@ -15,7 +15,7 @@ from datetime import datetime
 
 from datetime import datetime
 
-def analyze_react_metrics(csv_filename, project_name, output_file="final_react_analysis.csv"):
+def analyze_react_metrics(csv_filename, project_name, output_file="../final_react_analysis.csv"):
     project_metrics = {
         "ReACT-11 Keep the project small and simple.": True,
         "ReACT-26 Conduct unit tests.": False,
@@ -89,7 +89,7 @@ def analyze_react_metrics(csv_filename, project_name, output_file="final_react_a
     
     print(f"Analysis saved to {output_file}")
 
-def analyze_file_extensions(file_path, react_number, project_name, output_file="final_react_analysis.csv"):
+def analyze_file_extensions(file_path, react_number, project_name, output_file="../final_react_analysis.csv"):
     df = pd.read_csv(file_path)
     extension_counts = df["File Extension"].value_counts()
     extension_percentage = (extension_counts / extension_counts.sum()) * 100
@@ -117,7 +117,7 @@ def analyze_file_extensions(file_path, react_number, project_name, output_file="
     
     print(f"Analysis saved to {output_file}")
 
-def analyze_commit_messages(csv_filename, project_name, output_file="final_react_analysis.csv"):
+def analyze_commit_messages(csv_filename, project_name, output_file="../final_react_analysis.csv"):
     project_metrics = {"ReACT-66 Perform adequate testing before integrating a feature": False}
     total_commits = 0
     revert_commits = 0
@@ -166,7 +166,7 @@ def analyze_commit_messages(csv_filename, project_name, output_file="final_react
 
 
 
-def analyze_react_16(file_path, project_name, output_file="final_react_analysis.csv"):
+def analyze_react_16(file_path, project_name, output_file="../final_react_analysis.csv"):
     """
     Analyze ReACT-16: Identify the number of integrators (committers who merged pull requests)
     and track their expansion over time.
@@ -206,7 +206,7 @@ def analyze_react_16(file_path, project_name, output_file="final_react_analysis.
     print(f"ReACT-16 Analysis saved to {output_file}")
 
 
-def analyze_react_36(file_path, project_name, output_file="final_react_analysis.csv"):
+def analyze_react_36(file_path, project_name, output_file="../final_react_analysis.csv"):
     """
     Analyze ReACT-36: Maintain a small number of core/active developers.
     """
@@ -294,8 +294,8 @@ def analyze_react_38_with_loc(file_path, project_name, min_commits=10, min_month
 
 def main():
     project_path = '../'
-    project_name = 'celeborn'
-    input_csv = os.path.join(project_path, "pydrillerCSV", project_name, "celeborn_commit_data.csv")
+    project_name = 'pygwalker'
+    input_csv = os.path.join(project_path, "pydrillerCSV", project_name, "pygwalker_commit_data.csv")
     output_csv = "../final_react_analysis.csv"
     react_number = "ReACT-16"
 

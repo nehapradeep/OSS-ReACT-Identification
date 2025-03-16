@@ -130,11 +130,11 @@ def save_analysis(react_name, outcome, recommendation, output_file):
     print(f"Analysis for {react_name} saved to {output_file}")
 
 project_path = '../'
-project_name = 'celeborn'
+project_name = 'pygwalker'
 pr_csv = os.path.join(project_path, "github_api", project_name, "pr.csv")
 commit_csv = os.path.join(project_path, "pydrillerCSV", project_name, f"{project_name}_commit_data.csv")
 contrib_md = os.path.join(project_path, "github_api", project_name, "CONTRIBUTING.md")
-repo_creation_date = "2021-12-10T00:00:00Z"
+repo_creation_date = "2023-02-16T05:17:24Z"
 
 analyze_react_14(pr_csv)
 analyze_react_62(commit_csv, repo_creation_date)

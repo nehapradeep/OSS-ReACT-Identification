@@ -1,0 +1,63 @@
+preview version: 0.4.9.14a1
+
+Hi, posting from my above content here:\r\n\r\n> I want to make some changes to the root README; including marimo in places where open in Google Colab and Kaggle links are provided. This will be a link to the marimo.cloud/marimo.new with a slug link; basically a marimo notebook running on the browser (made possible using [WASM ](https://marimo.io/blog/newsletter-2)+ Pyodide; relevant [marimo blog](https://marimo.io/blog/pyodide)) - will this be appreciated? Do let me know.\r\nAlso want to contribute to the docs usage for marimo here; like how it exists for jupyter (streamlit, gradio, etc.) - https://docs.kanaries.net/pygwalker/api-reference/jupyter
+
+That makes sense to me. Thank you!
+
+@IanMayo can you pls review this PR?\r\n
+
+This is an unnecessary modification, you are not sure whether the front-end app is using this variable based on `/_stcore/_pygwalker/comm` or `_stcore/_pygwalker/comm`.\r\n\r\n
+
+Not only `pandas_parser.py`,  you can search globally for "dataset_tpye", and typo these.
+
+I found 9 cases.\r\n\r\n<img width="1502" alt="image" src="https://github.com/user-attachments/assets/df8135fb-f373-4266-bd4e-8749557e6caa">\r\n
+
+open new pr to typo: https://github.com/Kanaries/pygwalker/pull/643
+
+@thebranflakes , Thanks for your Pull Request! We have carefully reviewed it. While we understand your approach aims to simplify the code, we prefer to keep the current implementation for the following reasons:\r\n\r\n1. The current version has better readability and maintainability. Using dynamic imports may decrease code readability and IDE support.\r\n2. Dynamic code execution poses potential security risks, which we aim to avoid as much as possible.\r\n3. Although your implementation is more concise, the performance impact is negligible, so we prioritize readability and security.\r\n\r\nThank you again for your contribution! If you have any other suggestions or questions, feel free to continue the discussion. We greatly value community feedback.
+
+Hi @thomasbs17 , thanks for your PR.\r\n\r\nHere are some suggestions for this PR.\r\n\r\n1. use `window.location.pathname` to get path name, just use the path, no need to specify host.\r\n2. The source of baseUrl is: `pygwalker/communications/streamlit_comm.py`- `BASE_URL_PATH`. `BASE_URL_PATH` include `server.baseUrlPath`, `window.location.pathname` also included `server.baseUrlPath`. So you need to remove `server.baseUrlPath` in `BASE_URL_PATH`.\r\n3. Since streamlit may exist multiple page applications, `window.location.pathname` may not be accurate enough, you can refer way of streamlit: `getPossibleBaseUris`, try to get multiple possible URLs, and add a ping action on the pygwalker side. use this action to test the correct api path before communicating.
+
+It seems that only need to try invoke `navigator.clipboard.writeText(content)` and judge whether there is any errors.\r\n\r\nI think there may be no need to judge `permissionStatus` and browser type.\r\n\r\n
+
+> It seems that only need to try invoke `navigator.clipboard.writeText(content)` and judge whether there is any errors.\r\n> \r\n> I think there may be no need to judge `permissionStatus` and browser type.\r\n\r\nIn some Chromium based browser, e.g. Microsoft Edge in the picture below, there is permission settings for websites and these settings are just corresponds to the PermissionName for Chromium. Thus I infer that there is still need to check the browser and user permission?\r\n![图片](https://github.com/Kanaries/pygwalker/assets/67158072/c39f83f5-ccb4-405a-ae16-f8362376fee2)\r\n
+
+I tried the isChromium function and found that it returns false under Chrome 124.0.6367.119. \r\njust use `await navigator.clipboard.writeText` should be nice in both firefox and chomium.
+
+LGTM
+
+Thanks for the PR, but I don\
+
+```python\r\nbool(lambda: None) # True\r\n```\r\n\r\nYou can consider writing like this:\r\n\r\n```python\r\nif env not in env_display_map:\r\n    raise ValueError(f"Unsupported environment: {env}")\r\n```
+
+Decimal.nan will be parsed as Nan in the json string. Some front-end components are not suitable for Nan.\r\n\r\n
+
+\r\nhttps://github.com/Kanaries/pygwalker/assets/22167673/fc06e61f-2bc6-4b8d-94f0-3da0862bbcb3\r\n\r\n
+
+Considering the importance of maintaining backward compatibility and adhering to Pythonic naming conventions, here\
+
+#### ️✅ There are no secrets present in this pull request anymore.\n\nIf these secrets were true positive and are still valid, we highly recommend you to revoke them.\nOnce a secret has been leaked into a git repository, you should consider it compromised, even if it was deleted immediately.\nFind [here](https://docs.gitguardian.com/platform/remediate/remediate-incidents) more information about risks.\n\n---\n\n<sup><sub>🦉 [GitGuardian](https://dashboard.gitguardian.com/auth/login/?utm_medium=checkruns&amp;utm_source=github&amp;utm_campaign=cr1) detects secrets in your source code to help developers and security teams secure the modern development process. You are seeing this because you or someone else with access to this repository has authorized GitGuardian to scan your pull request.<br/><br/>Our GitHub checks need improvements? [Share your feedbacks](https://050127dayho.typeform.com/to/KmeAPTMk)!</sup></sub>\n
+
+Referencing to the issue #145 
+
+After the project refactoring, perhaps it will be easier for developers to participate in the development of pygwalker.😄
+
+After I finish test code, merge this PR into the main branch.
+
+Good idea. Seeing your code made me realize that this part of the code is not so easy to extend.\r\n\r\nAfter #130  is merged into the main branch, can you reorganize this PR based on the new main branch?\r\n\r\nThank you very much.
+
+@longxiaofei Done. Please review.
+
+@longxiaofei Done 😃 
+
+@rentruewang  Can you merge three commits into one? It will be clearer that way. Thanks♪(･ω･)ﾉ\r\n\r\nIf there are too many conflicts, I have a simple and rough suggestion.\r\n1. copy current code\r\n2. delete your local branch`git branch -D modin`\r\n3. `git checkout <latest main branch>`\r\n4. create modin branch base the latest main branch `git checkout -b modin`\r\n5. paste code and create commit `feat: added modin.pandas support`\r\n6. push your remote branch `git push -f origin modin`
+
+Merged in #79 
+
+One thing I forget is that I deleted the graphic-walker.iife.js in the **templates** folder. Should I need to restore it?\r\n我删了templates文件夹里的graphic-walker.iife.js，当时我觉得这是gwalker编译后的产物，需要我恢复它吗？
+
+the latest commit fixed `.` in field names, but the problem with `\\t` still exists.
+
+Thanks!
+
+Merged to main branch.\n\nThanks a lot for the first contribution to this repo!

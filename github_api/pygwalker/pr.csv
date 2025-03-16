@@ -1,0 +1,404 @@
+PR Number,Title,State,URL,Created At,Merged At
+668,Add Kanaries Doc link to missing api key cloud error.,closed,,2024-12-06T21:02:56Z,2024-12-30T13:34:04Z
+662,README spelling correction,closed,,2024-11-23T16:18:41Z,2024-11-27T12:57:10Z
+661,feat: dispaly in repl,open,,2024-11-22T07:11:46Z,None
+659,"Improve: Code readability, python linter score, FAIR4RS score",open,,2024-11-19T15:44:52Z,None
+657,feat:add some  chinese readme,open,,2024-11-08T09:33:02Z,None
+656,Document panel-graphic-walker,closed,,2024-11-06T17:18:36Z,2024-11-08T08:54:21Z
+655,Add marimo example,closed,,2024-11-06T11:29:28Z,2024-11-08T08:59:49Z
+653,docs: add marimo usage to README,closed,,2024-11-06T04:04:52Z,2024-11-08T08:57:41Z
+652,Update README.md,closed,,2024-11-05T07:28:57Z,2024-11-06T08:55:24Z
+651,feat: support common anywidget,closed,,2024-10-31T02:20:53Z,2024-10-31T02:39:41Z
+649,fix: marimo component encoding,closed,,2024-10-29T04:11:44Z,2024-10-29T05:21:11Z
+647,feat: support marimo poc version,closed,,2024-10-24T03:36:40Z,2024-10-26T14:42:13Z
+646,Updated Readme.md file,closed,,2024-10-23T14:05:17Z,None
+643,"chore: typo ""dataset_tpye""",closed,,2024-10-15T10:30:14Z,2024-10-15T10:43:37Z
+642,Updated the bash script in test-init.sh,open,,2024-10-15T06:22:38Z,None
+641,chore: updated a typo in test_data_parsers.py,closed,,2024-10-12T14:39:14Z,2024-10-15T10:25:35Z
+637,fix: streamlit component,closed,,2024-10-02T07:05:28Z,2024-10-02T07:18:00Z
+636,fix: mssql dialect map,closed,,2024-10-01T07:21:58Z,2024-10-01T07:35:20Z
+635,Updated the streamlit_comm.py file to only remove the trailing slash.,closed,,2024-09-30T08:24:48Z,None
+634,Updated the typo in polars_parser.py,closed,,2024-09-30T08:14:41Z,None
+632,fix: exp.Subquery alias,closed,,2024-09-27T04:46:26Z,2024-09-27T05:12:27Z
+623,chore: update test-init.sh,closed,,2024-09-23T06:49:22Z,2024-09-27T07:21:30Z
+620,feat: compress all data in html,closed,,2024-09-19T09:58:55Z,2024-09-19T11:05:32Z
+613,chore: bump to v0.4.9.8,closed,,2024-08-29T02:29:37Z,2024-08-29T02:52:21Z
+612,fix: remove duplicate dsl parser,closed,,2024-08-29T02:13:12Z,2024-08-29T02:27:00Z
+609,feat: adjust ui style,closed,,2024-08-23T08:07:33Z,2024-08-23T08:38:46Z
+608,feat: adjust ui style,closed,,2024-08-23T06:01:59Z,2024-08-23T06:18:10Z
+607,feat: support table component in streamlit,closed,,2024-08-21T03:41:14Z,2024-08-21T03:54:14Z
+606,fix: rendering in streamlit,closed,,2024-08-15T03:45:04Z,2024-08-15T06:32:57Z
+603,chore: bump to v0.4.9.4,closed,,2024-08-01T05:55:19Z,2024-08-01T06:10:47Z
+602,feat: component api support poi chart,closed,,2024-07-31T08:55:27Z,2024-07-31T09:10:23Z
+601,chore: update gw_dsl_parser version,closed,,2024-07-31T08:08:40Z,2024-07-31T08:25:02Z
+600,fix: disable kernel computation in JupyterConvert,closed,,2024-07-31T02:22:18Z,2024-07-31T02:42:21Z
+599,fix: manually invoke display_preview_on_jupyter,closed,,2024-07-30T08:56:06Z,2024-07-30T09:27:41Z
+598,feat: support streamlit custom component,closed,,2024-07-30T08:04:57Z,2024-07-30T08:36:23Z
+594,feat: new tips for data limit,closed,,2024-07-25T07:40:30Z,2024-07-25T07:55:24Z
+593,feat: add component api,closed,,2024-07-24T07:27:51Z,2024-07-24T07:58:56Z
+592,fix: error spec of ChartPreviewApp,closed,,2024-07-24T03:52:15Z,2024-07-24T04:07:20Z
+591,chore: update duckdb version,closed,,2024-07-07T01:20:36Z,2024-07-07T01:42:40Z
+588,fix: polars test case,closed,,2024-07-02T01:36:00Z,2024-07-02T01:48:14Z
+587,fix: polars test case,closed,,2024-07-02T01:26:37Z,None
+586,feat: add pygwalker web api tips in streamlit,closed,,2024-07-01T12:48:08Z,2024-07-07T01:15:40Z
+585,feat: add pygwalker web api tips in streamlit,closed,,2024-07-01T05:24:47Z,None
+584,chore: bump to v0.4.9,closed,,2024-06-27T03:53:58Z,2024-06-27T04:39:10Z
+583,feat: add dev mode for app,closed,,2024-06-27T01:01:51Z,2024-06-27T03:24:31Z
+582,feat: update graphic-walker version,closed,,2024-06-20T05:05:02Z,2024-06-20T05:23:54Z
+581,feat: modify render preview,closed,,2024-06-20T03:50:56Z,2024-06-20T04:45:13Z
+579,feat: adjust the position of copy tips,closed,,2024-06-19T07:52:15Z,2024-06-19T12:29:05Z
+578,chore: temporarily specify the numpy version,closed,,2024-06-18T08:48:35Z,2024-06-18T09:01:50Z
+574,fix: modify document of appearance param,closed,,2024-06-12T05:06:40Z,2024-06-12T05:24:43Z
+572,chore: refactor _get_data_parser to use a loop for dynamic imports,closed,,2024-06-10T00:25:00Z,None
+566,chore: bump to v0.4.8.9,closed,,2024-06-01T01:19:05Z,2024-06-01T02:29:20Z
+565,fix: wrong api url when deployment custom proxy server,closed,,2024-05-31T15:24:20Z,2024-05-31T15:40:19Z
+563,bug fix to retrieve specs on URLs with path,closed,,2024-05-31T09:39:33Z,None
+562,fix: convert regex sql to postgres,closed,,2024-05-29T13:40:31Z,2024-05-29T13:56:03Z
+560,feat: add iso time unit,closed,,2024-05-29T07:38:27Z,2024-05-29T08:01:29Z
+558,feat: add web_server mode,closed,,2024-05-24T05:43:07Z,2024-05-24T06:02:41Z
+554,chore: bump to v0.4.8.5,closed,,2024-05-17T10:30:43Z,2024-05-17T10:51:09Z
+553,"fix: fix dialect sql(mysql, postgres)",closed,,2024-05-17T10:12:17Z,2024-05-17T10:29:22Z
+550,feat: add global param max_data_length,closed,,2024-05-13T15:03:19Z,2024-05-14T01:54:58Z
+549,feat: add global param max_data_length,closed,,2024-05-13T12:32:33Z,None
+548,feat: add global param max_data_length,closed,,2024-05-13T10:04:47Z,None
+547,chore: update version of dsl_parser,closed,,2024-05-13T09:06:15Z,2024-05-13T09:58:18Z
+543,"fix: ""Copy to Clipboard"" in different browser",closed,,2024-05-09T01:16:22Z,2024-05-09T02:51:24Z
+541,feat: update graphic-walker version,closed,,2024-05-07T09:52:05Z,2024-05-07T10:03:55Z
+540,fix: parse source code in jupyter,closed,,2024-05-07T03:48:45Z,2024-05-07T04:13:15Z
+539,fix: snowflake client return undefined,closed,,2024-05-06T04:53:52Z,2024-05-06T05:06:53Z
+537,chore: update ci script,closed,,2024-04-28T09:01:04Z,2024-04-28T09:13:10Z
+536,feat: update graphic-walker version,closed,,2024-04-28T08:35:42Z,2024-04-28T08:47:47Z
+535,fix: viewer container size base on the root iframe in streamlit,closed,,2024-04-28T08:14:11Z,2024-04-28T08:27:55Z
+534,chore: update python version in ci,closed,,2024-04-26T08:45:47Z,2024-04-26T08:59:33Z
+533,doc: update gradio demo,closed,,2024-04-26T04:19:59Z,2024-04-26T11:06:27Z
+530,fix: params name error,closed,,2024-04-16T07:15:32Z,2024-04-16T07:23:01Z
+529,fix: params name error,closed,,2024-04-16T06:59:12Z,None
+527,fix: raise error when cancel appearance,closed,,2024-04-15T10:04:47Z,2024-04-15T10:18:04Z
+525,chore: bump to v0.4.8,closed,,2024-04-12T13:03:24Z,2024-04-12T13:10:08Z
+524,chore: modify tips when no api key,closed,,2024-04-12T11:57:41Z,2024-04-12T12:58:19Z
+523,feat: update graphic-walker version,closed,,2024-04-12T11:39:45Z,2024-04-12T11:56:22Z
+522,doc: update example code,closed,,2024-04-12T11:09:53Z,2024-04-12T11:15:47Z
+521,feat: collect error log,closed,,2024-04-12T11:01:08Z,2024-04-12T11:07:36Z
+520,feat: optimize the feature of saving & merge button,closed,,2024-04-12T09:42:54Z,2024-04-12T10:54:17Z
+517,chore: update duckdb version,closed,,2024-04-11T12:09:22Z,2024-04-11T12:15:03Z
+515,feat: add red point when spec changed,closed,,2024-04-09T09:53:13Z,2024-04-09T12:55:22Z
+514,feat: add red point when spec changed,closed,,2024-04-09T09:51:21Z,None
+513,feat: add red point when spec changed,closed,,2024-04-09T09:24:29Z,None
+512,chore: code style,closed,,2024-04-03T10:37:44Z,2024-04-03T10:42:40Z
+511,chore: update graphic walker to 0.4.58,closed,,2024-04-03T07:50:42Z,2024-04-03T08:15:15Z
+509,refactor: redesign APIs,closed,,2024-04-01T12:44:38Z,2024-04-02T06:44:52Z
+506,doc: update expired links,closed,,2024-03-30T11:01:31Z,2024-03-30T11:07:36Z
+504,feat: support chat feature,closed,,2024-03-29T05:29:43Z,2024-03-29T05:36:16Z
+503,doc: remove expired links,closed,,2024-03-28T01:19:42Z,2024-03-28T01:24:25Z
+501,refactor: deprecated function name,closed,,2024-03-27T07:39:07Z,2024-03-27T07:49:45Z
+499,doc: remove expired links,closed,,2024-03-27T01:21:06Z,2024-03-27T01:26:05Z
+498,fix: parse array field in mysql,closed,,2024-03-26T09:52:22Z,2024-03-26T09:59:17Z
+497,feat: update feature for uploading chart to cloud,closed,,2024-03-26T09:01:26Z,2024-03-26T09:11:40Z
+494,fix: StrictVersion was removed in python3.12,closed,,2024-03-23T02:43:59Z,2024-03-23T02:52:08Z
+492,chore: update version of pypa/gh-action-pypi-publish,closed,,2024-03-20T15:57:25Z,2024-03-20T15:57:36Z
+490,chore: bump to v0.4.8a4,closed,,2024-03-20T12:58:07Z,2024-03-20T12:58:13Z
+489,fix: update graphic walker to 0.4.56,closed,,2024-03-20T12:35:43Z,2024-03-20T12:48:42Z
+485,fix: temporarily fix bugs of pure chart rendering in streamlit,closed,,2024-03-15T10:45:04Z,2024-03-15T10:49:58Z
+484,feat: modify height of walker ui,closed,,2024-03-15T02:33:52Z,2024-03-15T03:54:59Z
+483,feat: support vega spec,closed,,2024-03-14T09:38:33Z,2024-03-14T09:48:45Z
+482,refactor: modify type of field_specs,closed,,2024-03-13T14:40:08Z,2024-03-13T15:01:48Z
+481,fix: change dict in place,closed,,2024-03-13T14:16:34Z,2024-03-13T14:31:40Z
+480,feat: add new html apis,closed,,2024-03-13T14:02:42Z,2024-03-13T14:08:40Z
+478,doc: add dash example,closed,,2024-03-13T08:39:03Z,2024-03-13T08:47:20Z
+477,feat: support custom ask callback function,closed,,2024-03-11T09:24:07Z,2024-03-11T09:31:49Z
+474,chore: bump to v0.4.7,closed,,2024-03-08T09:45:07Z,2024-03-08T13:07:50Z
+473,chore: bump to v0.4.7a8,closed,,2024-03-08T07:51:12Z,2024-03-08T07:56:55Z
+472,refactor: use spec_io_mode instead of debug parameter,closed,,2024-03-08T07:28:59Z,2024-03-08T07:39:07Z
+471,feat: add new api to_chart_html,closed,,2024-03-08T07:02:21Z,2024-03-08T07:12:07Z
+470,feat: add new api to_chart_html,closed,,2024-03-08T06:52:38Z,None
+469,feat: add new api to_chart_html,closed,,2024-03-08T06:39:25Z,None
+468,feat: update graphic-walker version,closed,,2024-03-08T01:46:58Z,2024-03-08T02:20:03Z
+465,feat: add new api in jupyter,closed,,2024-03-06T10:26:57Z,2024-03-06T10:37:43Z
+464,feat: add new api in jupyter,closed,,2024-03-06T10:15:45Z,None
+463,Improved error handling,closed,,2024-03-05T16:38:47Z,None
+462,fix: set default width to None in streamlit,closed,,2024-03-05T06:53:14Z,2024-03-05T07:07:21Z
+461,feat: cloud calculate,closed,,2024-03-05T06:36:49Z,2024-03-05T06:44:52Z
+460,fix: use utc timezone when using js calculate,closed,,2024-03-05T04:57:11Z,2024-03-05T05:07:15Z
+459,fix: use utc timezone when using js calculate,closed,,2024-03-05T04:36:49Z,None
+457,feat: update graphic-walker version,closed,,2024-03-04T08:41:49Z,2024-03-04T08:57:21Z
+453,optimized gradio server hack function,closed,,2024-03-01T16:04:47Z,None
+452,feat: using batch api when query cloud dataset,closed,,2024-03-01T13:07:40Z,2024-03-01T13:24:13Z
+451,refactor: remove deprecated parameters,closed,,2024-03-01T03:44:08Z,2024-03-01T04:13:16Z
+450,implementation of secrets module,closed,,2024-02-29T19:35:07Z,None
+449,feat: add buttons to switch theme,closed,,2024-02-29T09:04:00Z,2024-02-29T09:29:06Z
+446,feat: modify position of tips,closed,,2024-02-29T01:28:36Z,2024-02-29T01:40:26Z
+445,environment display mapping error handling,closed,,2024-02-28T21:50:20Z,None
+443,fix: the UI style changes when system theme changes,closed,,2024-02-28T02:05:35Z,2024-02-28T02:30:30Z
+442,fix: ui style in dark,closed,,2024-02-27T10:15:19Z,2024-02-27T10:23:39Z
+441,docs: add examples,closed,,2024-02-26T00:52:47Z,2024-02-26T01:12:03Z
+440,feat: auto switches to kernel calculate base on data size,closed,,2024-02-22T05:45:32Z,2024-02-22T05:57:46Z
+439,feat: auto switches to kernel calculate base on data size,closed,,2024-02-22T05:35:56Z,None
+438,feat: update duckdb version,closed,,2024-02-22T01:05:45Z,2024-02-22T01:20:19Z
+437,feat: update duckdb version,closed,,2024-02-21T07:46:42Z,None
+435,enhancing metricsChart class initialization,closed,,2024-02-12T17:17:20Z,None
+434,chore: bump to v0.4.6,closed,,2024-02-08T06:12:52Z,2024-02-08T06:12:59Z
+433,feat: update graphic-walker version,closed,,2024-02-08T05:53:50Z,2024-02-08T06:04:04Z
+432,refactor: modify param name,closed,,2024-02-08T02:39:17Z,2024-02-08T02:46:16Z
+431,refactor: modify param name,closed,,2024-02-08T02:12:56Z,None
+430,feat: loaded init_streamlit_comm implicitly,closed,,2024-02-07T03:04:53Z,2024-02-07T03:15:45Z
+428,feat: streamlining data aggregation in cohort_matrix,closed,,2024-02-06T15:25:36Z,None
+426,feat: optimize the memory usage of generating html,closed,,2024-02-06T03:59:54Z,2024-02-06T04:08:33Z
+425,Simplified JSON encoder for handling Decimal types,closed,,2024-02-05T16:01:23Z,None
+422,chore: bump to v0.4.5,closed,,2024-02-02T14:42:29Z,2024-02-02T14:42:37Z
+421,chore: bump to v0.4.6,closed,,2024-02-02T14:38:08Z,2024-02-02T14:38:55Z
+420,feat: add new param: default_tab,closed,,2024-02-02T13:59:42Z,2024-02-02T14:09:39Z
+418,feat: update graphic-walker version,closed,,2024-02-02T10:48:29Z,2024-02-02T10:56:32Z
+416,feat: optimize communication with http,closed,,2024-02-02T09:54:02Z,2024-02-02T10:10:28Z
+415,feat: streamlit add new component: filter renderer,closed,,2024-02-02T07:28:45Z,2024-02-02T07:47:56Z
+413,feat: update graphic-walker version,closed,,2024-01-30T15:20:01Z,2024-01-30T15:20:11Z
+412,feat: add data profiling,closed,,2024-01-30T01:52:24Z,2024-01-30T02:31:10Z
+411,feat: optimize communication in jupyter,closed,,2024-01-29T14:10:58Z,2024-01-30T01:30:48Z
+410,feat: add new render mode,closed,,2024-01-29T10:43:41Z,2024-01-29T10:54:09Z
+409,feat: kanaries_key as an instance variable,closed,,2024-01-25T14:25:40Z,2024-01-25T14:32:49Z
+408,chore: bump to v0.4.4,closed,,2024-01-25T08:42:31Z,2024-01-25T09:09:54Z
+407,chore: bump to v0.4.4,closed,,2024-01-25T08:35:20Z,None
+405,fix: cache streamlit html,closed,,2024-01-25T03:50:31Z,2024-01-25T03:57:52Z
+403,chore: bump to v0.4.3,closed,,2024-01-23T14:05:02Z,2024-01-23T14:13:15Z
+402,feat: add default timezone && update graphic-walker version,closed,,2024-01-23T13:53:23Z,2024-01-23T14:02:53Z
+401,simplification of default parameter,closed,,2024-01-22T15:26:41Z,None
+399,feat: use new time offset config,closed,,2024-01-19T03:14:02Z,2024-01-19T03:37:11Z
+398,Update track.py,closed,,2024-01-17T15:40:25Z,None
+397,chore: bump to v0.4.2,closed,,2024-01-17T09:38:30Z,2024-01-17T09:48:21Z
+396,fix: data painter may not work when using kernel calculate,closed,,2024-01-17T04:47:52Z,2024-01-17T06:17:27Z
+394,chore: Update docstring about tracking,closed,,2024-01-15T09:20:14Z,2024-01-17T02:14:04Z
+393,release: 0.4.1,closed,,2024-01-14T07:46:46Z,2024-01-14T08:28:35Z
+391,chore: bump to v0.4.0,closed,,2024-01-11T08:33:31Z,2024-01-11T08:40:11Z
+390,feat: cancel infer string to temporal,closed,,2024-01-11T08:09:26Z,2024-01-11T08:26:32Z
+387,feat: add calculation field,closed,,2024-01-09T04:08:25Z,2024-01-09T05:08:46Z
+386,feat: adding tips when returned datas too large,closed,,2024-01-08T08:12:07Z,2024-01-08T08:21:45Z
+385,refactor: move other init communication code out of pygwalker class,closed,,2024-01-08T01:52:40Z,2024-01-08T02:06:13Z
+384,refactor: move other initialization communication code out of pygwalk…,closed,,2024-01-08T01:50:41Z,None
+383,feat: modify upload chart to dashboard,closed,,2024-01-05T08:51:45Z,2024-01-05T08:58:35Z
+382,feat: recover to_html api,closed,,2024-01-05T01:12:50Z,2024-01-05T01:19:36Z
+378,feat: StreamlitRenderer._get_html add cache,closed,,2024-01-02T08:37:05Z,2024-01-02T08:44:57Z
+377,chore: bump to v0.3.20,closed,,2023-12-29T09:34:57Z,2023-12-29T09:42:52Z
+376,feat: metrics chart add new chart,closed,,2023-12-29T08:46:48Z,2023-12-29T08:54:31Z
+375,feat: data parser add new param: infer_number_to_dimension,closed,,2023-12-29T01:58:52Z,2023-12-29T02:08:55Z
+374,feat: add login-cli to set kanaries token,closed,,2023-12-28T07:43:28Z,2023-12-28T07:50:20Z
+373,chore: update method(track_event) annotation,closed,,2023-12-28T02:30:01Z,2023-12-28T02:41:25Z
+372,feat: add metrics chart feature,closed,,2023-12-26T07:42:30Z,2023-12-26T07:57:31Z
+369,chore: bump to v0.3.19,closed,,2023-12-22T10:53:30Z,2023-12-22T11:00:05Z
+367,chore: bump to v0.3.19a4,closed,,2023-12-22T01:47:34Z,2023-12-22T01:53:53Z
+366,feat: connector add optional params: engine_params,closed,,2023-12-21T03:13:02Z,2023-12-21T03:23:08Z
+365,feat: data parser add new param: infer_string_to_date,closed,,2023-12-21T02:32:23Z,2023-12-21T03:06:06Z
+364,fix: dark mode bug && jupyter communication bug,closed,,2023-12-20T06:13:57Z,2023-12-20T06:20:53Z
+363,feat: add tips when init graphic-walker ui,closed,,2023-12-20T05:16:56Z,2023-12-20T05:28:29Z
+362,feat: auto add filter field when data painter saved,closed,,2023-12-20T02:10:18Z,2023-12-20T02:17:16Z
+361,feat: StreamlitRenderer add show_cloud_tool param,closed,,2023-12-19T13:15:48Z,2023-12-19T13:25:53Z
+360,feat: add data painter feature,closed,,2023-12-19T12:07:32Z,2023-12-19T13:11:39Z
+357,chore: bump to v0.3.18,closed,,2023-12-14T15:05:18Z,2023-12-14T15:14:10Z
+356,"fix: bugs of adapting config, filter, dark",closed,,2023-12-14T13:38:59Z,2023-12-14T13:45:24Z
+355,chore: bump to v0.3.18a4,closed,,2023-12-14T03:00:22Z,2023-12-14T03:09:37Z
+354,feat: add kanaries_track,closed,,2023-12-13T08:25:18Z,2023-12-13T08:46:08Z
+352,feat: modify cloud features,closed,,2023-12-12T06:15:58Z,2023-12-12T06:50:37Z
+351,fix: temproray fix cloud dataset can't parse object type,closed,,2023-12-12T01:37:54Z,2023-12-12T01:47:22Z
+350,feat: add share url tips after uploading chart,closed,,2023-12-11T10:35:55Z,2023-12-11T10:45:10Z
+349,fix: Decimal(nan) cannot be serialized normally,closed,,2023-12-11T09:59:30Z,2023-12-11T10:33:11Z
+347,feat: add upload chart to cloud,closed,,2023-12-10T03:38:23Z,2023-12-10T03:45:23Z
+344,chore: bump to v0.3.17,closed,,2023-12-06T11:21:26Z,2023-12-06T11:49:15Z
+343,fix: fix bugs of removing fid encode,closed,,2023-12-06T06:48:20Z,2023-12-06T07:02:20Z
+340,feat:  file type of the uploaded file dataset from csv to parquet,closed,,2023-12-01T07:52:13Z,2023-12-01T08:00:22Z
+339,feat: remove encoding field name,closed,,2023-12-01T04:27:45Z,2023-12-01T05:53:27Z
+338,feat: delete share cloud charts feature,closed,,2023-11-30T13:45:53Z,2023-11-30T14:04:24Z
+337,feat: add cloud dataset create and explore,closed,,2023-11-30T13:11:38Z,2023-11-30T13:32:55Z
+336,fix: add workflow field when invoke upload_spec_to_cloud,closed,,2023-11-30T02:21:13Z,2023-11-30T02:28:45Z
+335,feat: modify display_chart from png to canvas,closed,,2023-11-29T15:18:30Z,2023-11-29T15:25:56Z
+334,feat: add kaggle tips,closed,,2023-11-29T09:57:45Z,2023-11-29T12:22:59Z
+332,fix: add export config field and kaggle preview style,closed,,2023-11-29T05:50:39Z,2023-11-29T06:01:10Z
+331,feat: display preview when save and run all in kaggle,closed,,2023-11-29T03:14:43Z,2023-11-29T03:33:54Z
+330,feat: use new preview base graphc-walker canvas,closed,,2023-11-29T02:47:10Z,2023-11-29T03:03:53Z
+329,feat: raise error when use incorrect view sql,closed,,2023-11-27T08:29:50Z,2023-11-27T08:38:30Z
+328,chore: bump to v0.3.16,closed,,2023-11-24T10:53:59Z,2023-11-24T11:15:40Z
+327,fix: read ksf config failed when not set token and remove log print,closed,,2023-11-24T08:40:47Z,2023-11-24T08:48:18Z
+326,chore: bump to v0.3.16a1,closed,,2023-11-24T02:30:50Z,2023-11-24T02:51:18Z
+325,fix: temproal timezone bugs,closed,,2023-11-24T01:50:22Z,2023-11-24T02:28:51Z
+322,fix: fid_fname_map some fields cannot be mapped ,closed,,2023-11-16T08:06:51Z,2023-11-16T08:17:45Z
+321,feat: add export dataframe tool,closed,,2023-11-16T07:31:21Z,2023-11-16T07:40:54Z
+320,fix: pure renderer params bugs in streamlit,closed,,2023-11-14T09:52:42Z,2023-11-14T10:00:28Z
+318,feat: modify request way of ask-viz api,closed,,2023-11-14T07:17:01Z,2023-11-14T07:27:16Z
+317,chore: bump to v0.3.13,closed,,2023-11-13T15:29:44Z,2023-11-13T15:50:59Z
+316,fix: filter bugs in connector and duckdb && add chart exists tips when create shared chart,closed,,2023-11-13T15:14:34Z,2023-11-13T15:26:08Z
+315,fix: modify IGlobalStore to VizSpecStore,closed,,2023-11-13T06:15:49Z,2023-11-13T08:21:47Z
+314,chore: bump to v0.3.12,closed,,2023-11-11T01:55:16Z,2023-11-11T02:06:46Z
+313,chore: bump to v0.3.12,closed,,2023-11-11T01:50:42Z,None
+312,fix: fix timestamp field to sql bugs,closed,,2023-11-10T16:47:07Z,2023-11-10T17:15:53Z
+309,feat: hide cloud tips when privacy is offline,closed,,2023-11-08T04:00:15Z,2023-11-08T04:19:27Z
+308,feat: update graphic-walker to 0.4.25,closed,,2023-11-08T03:15:23Z,2023-11-08T03:30:17Z
+306,fix: streamlit api - get_streamlit_html,closed,,2023-11-07T08:47:05Z,2023-11-07T09:14:42Z
+304,chore: bump to v0.3.10,closed,,2023-11-03T09:26:34Z,2023-11-03T09:42:41Z
+303,feat: add upload cloud spec tips when spec params is none,closed,,2023-11-03T06:12:52Z,2023-11-03T06:54:24Z
+302,chore: bump to v0.3.10a4,closed,,2023-11-02T12:38:35Z,2023-11-02T12:50:18Z
+301,feat: cancel log of update version,closed,,2023-11-02T12:26:28Z,2023-11-02T12:35:11Z
+300,feat: avoid kanaries_token being rendered directly on the html,closed,,2023-11-02T12:10:22Z,2023-11-02T12:20:32Z
+299,feat: add track collector,closed,,2023-11-02T11:43:46Z,2023-11-02T11:58:43Z
+298,refacotr: split fucntion from create_cloud_graphic_walker,closed,,2023-11-02T07:54:00Z,2023-11-02T08:55:43Z
+297,refactor: streamlit module,closed,,2023-11-02T06:16:50Z,2023-11-02T06:47:53Z
+296,feat: add new feature walk_on_cloud,closed,,2023-11-02T02:42:03Z,2023-11-02T02:51:36Z
+292,chore: bump to v0.3.10a3,closed,,2023-10-30T08:58:14Z,2023-10-30T09:23:21Z
+291,fix: communications can't work when gradio reload,closed,,2023-10-30T07:16:09Z,2023-10-30T07:24:04Z
+290,feat: avoid read config files from affecting the main feature,closed,,2023-10-30T07:03:22Z,2023-10-30T07:13:26Z
+289,feat: add communication on gradio(pre-demo),closed,,2023-10-29T08:37:04Z,2023-10-29T08:50:07Z
+288,chore: bump to v0.3.10a1,closed,,2023-10-27T10:24:14Z,2023-10-27T11:11:55Z
+287,feat: modify cloud server tips,closed,,2023-10-27T09:47:59Z,2023-10-27T10:17:49Z
+286,feat: store local user id,closed,,2023-10-27T05:59:39Z,2023-10-27T06:14:31Z
+285,refactor: pygwalker config utils,closed,,2023-10-27T05:10:02Z,2023-10-27T05:23:10Z
+280,feat: add cloud config file read and write,closed,,2023-10-24T07:25:28Z,2023-10-24T07:42:49Z
+279,feat: add vizgpt feature(temporary),closed,,2023-10-23T02:01:04Z,2023-10-23T02:08:41Z
+275,chore: bump to v0.3.9,closed,,2023-10-18T12:00:20Z,2023-10-18T12:08:12Z
+273,chore: bump to v0.3.8,closed,,2023-10-17T09:30:44Z,2023-10-17T09:39:31Z
+272,feat: convert datetime to number for millisecond timestamp,closed,,2023-10-17T09:09:59Z,2023-10-17T09:21:52Z
+271,fix: connector date range bug,closed,,2023-10-16T07:08:20Z,2023-10-16T11:38:01Z
+269,chore: bump to v0.3.8a7,closed,,2023-10-13T10:35:51Z,2023-10-13T10:42:55Z
+268,fix: temporal range bug,closed,,2023-10-13T06:38:27Z,2023-10-13T10:13:04Z
+267,feat: pure_renderer support to switch explore mode in streamlit,closed,,2023-10-13T06:23:47Z,2023-10-13T06:35:26Z
+265,feat: streamlit add pre-filters feature,closed,,2023-10-11T08:50:29Z,2023-10-11T10:09:48Z
+264,feat: update grpahic-walker,closed,,2023-10-11T08:13:18Z,2023-10-11T08:29:45Z
+263,fix: adjust returned value of StreamlitRenderer,closed,,2023-10-10T02:57:33Z,2023-10-10T03:05:42Z
+262, feat: size of chart remains the same as size of html,closed,,2023-10-09T08:03:51Z,2023-10-09T08:13:37Z
+261,feat: modify single chart renderer in streamlit,closed,,2023-10-09T05:55:52Z,2023-10-09T06:26:55Z
+260,chore: bump to v0.3.8a4,closed,,2023-10-07T09:06:29Z,2023-10-07T09:07:02Z
+259,feat: update grpahic-walker to support fold feature,closed,,2023-10-07T08:49:47Z,2023-10-07T09:00:03Z
+258,feat: streamlit support renderer mode of graphic-walker,closed,,2023-10-07T08:37:23Z,2023-10-07T08:45:49Z
+255,fix: streamlit base url,closed,,2023-10-03T06:07:58Z,2023-10-03T06:15:23Z
+253,refactor: use shadcn components,closed,,2023-09-30T02:39:15Z,2023-09-30T07:21:19Z
+251,chore: bump to v0.3.8a2,closed,,2023-09-28T14:10:10Z,2023-09-28T14:20:13Z
+250,chore: lazy load gw_dsl_parser module,closed,,2023-09-28T13:54:30Z,2023-09-28T14:07:43Z
+249,fix: DatabaseDataParser parse sub_query,closed,,2023-09-28T05:47:52Z,2023-09-28T09:24:36Z
+246,fix: DatabaseDataParser format_sql,closed,,2023-09-27T03:28:22Z,2023-09-27T03:48:29Z
+245,fix: fix date feature bugs,closed,,2023-09-27T01:56:56Z,2023-09-27T02:20:55Z
+244,fix: temporary fix for sqlglot conversion error,closed,,2023-09-26T13:39:16Z,2023-09-26T13:54:42Z
+243,fix: communication is not established when render geo chart,closed,,2023-09-26T07:09:01Z,2023-09-26T12:55:46Z
+241,fix: format sql in database parser,closed,,2023-09-25T14:19:12Z,2023-09-25T15:12:45Z
+238,chore: add new optional dependency,closed,,2023-09-23T00:08:08Z,2023-09-23T01:10:40Z
+237,fix: snowflake connection data types,closed,,2023-09-22T23:24:57Z,2023-09-22T23:55:13Z
+236,fix: missing error cases for temporal type infer,closed,,2023-09-22T19:37:03Z,None
+235,chore: bump to v0.3.7,closed,,2023-09-22T08:57:52Z,2023-09-22T08:58:06Z
+234,chore: bump to v0.3.7a5,closed,,2023-09-22T08:33:08Z,2023-09-22T08:40:15Z
+233,feat: support database connector,closed,,2023-09-22T08:17:19Z,2023-09-22T08:30:37Z
+231,chore: bump to v0.3.7a2,closed,,2023-09-20T15:37:31Z,2023-09-20T15:37:49Z
+230,chore: bump to v0.3.7a1,closed,,2023-09-20T15:05:25Z,2023-09-20T15:12:15Z
+229,chore: bump to v0.3.7a0,closed,,2023-09-20T12:57:07Z,2023-09-20T13:04:21Z
+228,feat: support communications on streamlit,closed,,2023-09-20T12:37:22Z,2023-09-20T12:48:52Z
+227,feat: remove format temporal field,closed,,2023-09-20T12:18:17Z,2023-09-20T12:25:11Z
+226,doc: update readme,closed,,2023-09-15T15:38:52Z,2023-09-15T15:38:59Z
+225,chore: bump to v0.3.6,closed,,2023-09-15T02:37:19Z,2023-09-15T02:48:33Z
+223,fix: react render cause dnd not work,closed,,2023-09-14T09:25:39Z,2023-09-14T10:03:57Z
+222,feat: add drill function on the temporal field,closed,,2023-09-14T08:56:36Z,2023-09-14T09:21:49Z
+220,refactor: delete auth-wrapper lib,closed,,2023-09-12T06:36:04Z,2023-09-12T06:36:59Z
+219,feat: use new dsl_parser,closed,,2023-09-12T05:20:07Z,2023-09-12T06:09:32Z
+218,feat: adjust inferred field type,closed,,2023-09-06T04:01:21Z,2023-09-06T05:07:25Z
+216,chore: bump to v0.3.5,closed,,2023-09-01T08:34:34Z,2023-09-01T08:42:26Z
+215,feat: share charts beta version,closed,,2023-09-01T07:13:17Z,2023-09-01T07:46:54Z
+214,chore: update readme && default params,closed,,2023-08-30T09:46:15Z,2023-08-30T12:00:49Z
+213,refactor: compress wasm,closed,,2023-08-29T14:58:55Z,2023-08-29T15:31:54Z
+209,chore: bump to v0.3.4,closed,,2023-08-24T08:39:28Z,2023-08-24T08:39:43Z
+206,fix: version is empty when export code,closed,,2023-08-23T08:38:36Z,2023-08-23T09:21:12Z
+205,feat: auto fill new field in old chart config,closed,,2023-08-23T07:37:41Z,2023-08-23T08:15:59Z
+202,chore: bump to v0.3.3,closed,,2023-08-17T10:20:51Z,2023-08-17T10:54:49Z
+200,feat: support dataframe of spark,closed,,2023-08-15T09:53:02Z,2023-08-15T10:01:35Z
+199,chore: bump to v0.3.2,closed,,2023-08-10T12:06:48Z,2023-08-10T12:07:06Z
+198,chore: bump to v0.3.2a,closed,,2023-08-10T10:48:06Z,2023-08-10T11:29:09Z
+197,chore: bump to v0.3.1,closed,,2023-08-10T02:53:47Z,2023-08-10T02:54:20Z
+195,chore: modify pypi authors,closed,,2023-08-09T05:10:06Z,2023-08-09T05:10:21Z
+194,chore: bump to v0.3.0,closed,,2023-08-08T10:32:25Z,2023-08-08T10:33:05Z
+193,chore: bump to v0.3.0a1,closed,,2023-08-08T09:54:05Z,2023-08-08T10:02:25Z
+191,doc: update slack url,closed,,2023-08-04T06:44:15Z,2023-08-04T06:44:47Z
+190,chore: bump to v0.2.2,closed,,2023-08-03T14:13:14Z,2023-08-03T14:38:39Z
+186,feat: upgrade graphic-walker,closed,,2023-07-28T05:15:59Z,2023-07-28T05:16:20Z
+185,refactor data parser,closed,,2023-07-28T03:07:19Z,2023-07-28T03:27:10Z
+183,chore: bump to v0.2.0,closed,,2023-07-24T14:25:56Z,2023-07-25T02:59:48Z
+182,refactor: app index.tsx code,closed,,2023-07-24T13:58:22Z,2023-07-24T14:10:40Z
+181,fix: preview default show first chart,closed,,2023-07-22T00:50:13Z,2023-07-22T00:50:23Z
+180,chore: bump to v0.2.0a5,closed,,2023-07-21T10:22:57Z,2023-07-21T11:10:16Z
+177,fix: communication data type bug,closed,,2023-07-20T09:58:05Z,2023-07-20T09:58:13Z
+176,chore: bump to v0.2.0a4,closed,,2023-07-20T08:04:56Z,2023-07-20T08:16:26Z
+175,chore: bump to v0.2.0a3,closed,,2023-07-18T07:20:05Z,2023-07-18T07:51:14Z
+174,chore: bump to v0.2.0a2,closed,,2023-07-14T10:19:12Z,2023-07-14T10:20:45Z
+173,chore: bump to v0.2.0a2,closed,,2023-07-14T10:03:13Z,None
+172,feat: improve dispaly and save chart,closed,,2023-07-14T09:43:09Z,2023-07-14T09:56:55Z
+169,feat: add tips on start,closed,,2023-07-12T07:16:45Z,2023-07-12T07:17:13Z
+168,feat: add display chart by invoke function,closed,,2023-07-12T03:59:33Z,2023-07-12T04:15:26Z
+167,feat: remove iframe in preview html,closed,,2023-07-11T14:34:20Z,None
+166,fix: communication kernel,closed,,2023-07-11T10:13:07Z,2023-07-11T10:13:15Z
+165,chore: bump to v0.2.0a1,closed,,2023-07-11T07:44:44Z,2023-07-11T09:41:01Z
+164,feat: sendMsg add timeout param & modify cloud function show,closed,,2023-07-11T07:12:15Z,2023-07-11T07:14:23Z
+163,extract code of tool & fix dependencies version,closed,,2023-07-11T07:04:05Z,2023-07-11T07:04:20Z
+162,feat: preview chart when no kernel,closed,,2023-07-11T06:32:31Z,2023-07-11T06:33:08Z
+158,doc: modify contact information,closed,,2023-07-07T03:40:04Z,2023-07-07T03:41:04Z
+157,fix: export config bug,closed,,2023-07-05T12:29:09Z,2023-07-05T14:15:43Z
+156,feat: add the adaptation of different jupyter,closed,,2023-07-05T08:43:39Z,2023-07-05T09:35:51Z
+155,add feature that save config to json file ,closed,,2023-07-05T05:54:38Z,2023-07-05T06:01:28Z
+153,fix: invoke code & communication & ci,closed,,2023-07-04T07:31:47Z,2023-07-04T07:48:44Z
+148,feat: use new communication on jupyter,closed,,2023-07-01T09:06:19Z,2023-07-01T09:33:04Z
+147,fix: streamlit large data limit,closed,,2023-07-01T09:03:37Z,2023-07-01T09:04:38Z
+146,#145 doc: fix typos,closed,,2023-06-28T09:28:03Z,2023-06-30T07:26:10Z
+144,fix: types & lint issues,closed,,2023-06-25T15:57:59Z,2023-06-30T01:26:48Z
+143,chore: bump to v0.1.11,closed,,2023-06-25T11:33:42Z,2023-06-25T11:34:34Z
+142,Feat: add custom data parser ,closed,,2023-06-25T10:24:53Z,2023-06-25T11:21:56Z
+140,refactor: refactor check_update,closed,,2023-06-25T03:30:35Z,2023-06-25T03:55:53Z
+138,refactor: refactor pygwalker,closed,,2023-06-22T11:54:01Z,2023-06-23T00:48:57Z
+136,chore: bump to v0.1.10,closed,,2023-06-20T07:23:40Z,2023-06-20T07:25:47Z
+135,feat: modify get_formated_spec_params_code max_line,closed,,2023-06-20T05:59:05Z,2023-06-20T06:11:47Z
+134,feat: add modin test,closed,,2023-06-19T15:09:13Z,2023-06-20T03:01:04Z
+133,fix: fix to_html bug,closed,,2023-06-19T14:14:47Z,2023-06-19T14:55:27Z
+131,Added modin.🐼 suppport.,closed,,2023-06-17T06:41:44Z,2023-06-19T13:53:12Z
+130,style: adjust gwalker_props.py code style,closed,,2023-06-15T08:23:21Z,2023-06-15T10:42:47Z
+129,feat: Also added modin.🐼 support.,closed,,2023-06-13T15:53:14Z,None
+128,fix: remove data restrictions for non-Jupyter env,closed,,2023-06-12T08:55:38Z,2023-06-14T05:29:37Z
+121,[Release] v0.1.9.1,closed,,2023-05-31T12:09:03Z,2023-05-31T12:29:20Z
+120,[fix] fix format invoke code and 'undefine' id,closed,,2023-05-31T12:03:52Z,2023-05-31T12:06:15Z
+116,[Release] v0.1.9,closed,,2023-05-25T13:45:22Z,2023-05-25T15:06:16Z
+115,refactor: remove submodule dependencies: graphic-walker && udpate auth-wrapper version,closed,,2023-05-25T13:34:05Z,2023-05-25T13:40:18Z
+114,[Feat] Add multi ways to upload and download chart,closed,,2023-05-15T02:37:52Z,2023-05-24T07:01:31Z
+113,[Release] v0.1.8,closed,,2023-05-12T04:06:36Z,2023-05-12T06:47:13Z
+109,[Feat]: Support multiple ways to pass parameter 'spec',closed,,2023-05-10T02:28:58Z,None
+108,[Chore] Bump GW version to v0.3.5,closed,,2023-05-09T10:29:10Z,2023-05-12T04:06:06Z
+106,[Feat]: Tunnel with Jupyter Comms,closed,,2023-05-08T07:15:03Z,None
+105,[Feat-Dev] Synchronously load data to browser,closed,,2023-05-05T03:32:42Z,2023-05-05T03:33:05Z
+104,[Feat] Synchronously load data to browser,closed,,2023-04-28T01:41:32Z,2023-05-08T07:24:30Z
+102,[Workflow]: Upload Packages to Artifacts when Running Publish PyPI,closed,,2023-04-23T05:51:20Z,2023-04-23T06:05:29Z
+100,workflow:Publish PyPI,closed,,2023-04-21T06:31:06Z,2023-04-21T06:50:02Z
+99,[Feat]: Allows to serialize all Python classes with __str__ method,closed,,2023-04-17T17:30:58Z,2023-04-18T15:02:35Z
+96,[Feat] Support specifying field meta as an argument,closed,,2023-04-09T19:13:29Z,2023-04-18T15:02:12Z
+95,[Feat] Support configuring user-wide privacy policy,closed,,2023-04-06T17:38:26Z,2023-04-10T02:19:51Z
+93,fix: wrong download script,closed,,2023-03-31T09:07:35Z,2023-03-31T11:12:37Z
+89,fix: update gw to main,closed,,2023-03-26T18:35:00Z,2023-03-26T18:41:02Z
+88,B fix 02,closed,,2023-03-26T18:14:36Z,2023-03-26T18:23:34Z
+87,[Feat]: Support Plotly Dash enviroment,closed,,2023-03-20T10:44:54Z,None
+84,Feat export code,closed,,2023-03-16T18:27:18Z,None
+82,Add DataCamp Workspace to list of supported environments,closed,,2023-03-16T08:58:15Z,2023-03-16T12:56:46Z
+79,[Refactor] Build pygwalker-app from an independent package,closed,,2023-03-13T07:58:52Z,2023-03-13T09:17:55Z
+77,build[0.1.4.10]:bump graphic-walker to 0.2.15,closed,,2023-03-12T13:34:31Z,2023-03-12T13:41:20Z
+75,test: Add automated build tests,closed,,2023-03-10T01:54:20Z,None
+74,[Feat]: Support Streamlit enviroment and make Jupyter and Streamlit optional,closed,,2023-03-09T06:48:16Z,2023-03-09T19:04:54Z
+73,[Feat] Support exporting and importing UI specifications in code,closed,,2023-03-08T17:17:46Z,None
+67,[Refactor]: build web app in pygwalker only,closed,,2023-03-06T17:34:36Z,2023-03-06T17:35:03Z
+66,[Feat]: Support Specified Dark Theme,closed,,2023-03-06T16:38:26Z,2023-03-06T16:40:24Z
+61,[Refactor]: Build Widget in pygwalker instead of graphic-walker,closed,,2023-03-05T14:20:50Z,None
+57,[Feat]: Support Polars DataFrame and make Pandas and Polars optional,closed,,2023-03-02T15:45:05Z,2023-03-03T17:40:39Z
+53,[Feat]: Support Aggregation and DnD for non-position channels.,closed,,2023-02-28T15:23:22Z,2023-03-01T03:45:55Z
+52,[Doc] Update screenshots with new UI themes,closed,,2023-02-28T14:34:58Z,2023-02-28T14:37:16Z
+51,[Fix]: Unexpectly displays Unicode characters as hex digits,closed,,2023-02-28T07:38:28Z,2023-02-28T09:37:53Z
+48,[Feat]: Support different themes including dark theme,closed,,2023-02-27T19:34:15Z,2023-02-27T19:55:00Z
+46,fix: slack link,closed,,2023-02-27T14:55:00Z,2023-02-27T15:04:47Z
+45,"Revert ""[Feat]: Dump dataSource in tight mode to reduce .ipynb file size.""",closed,,2023-02-27T14:19:40Z,2023-02-27T14:19:48Z
+44,[Feat]: Dump dataSource in tight mode to reduce .ipynb file size.,closed,,2023-02-27T12:17:38Z,2023-02-27T12:29:30Z
+38,[Feat]: Allow editing meta-info of data at any time,closed,,2023-02-24T18:37:35Z,2023-02-24T18:53:23Z
+35,[Fix]: Encoding error with non-string column names,closed,,2023-02-23T19:31:46Z,2023-02-24T21:51:22Z
+34,[Fix]: Temporal locales and format,closed,,2023-02-23T18:52:20Z,2023-02-23T18:58:35Z
+31,[Fix]: JSON.parse errors when DataFrame contains special characters,closed,,2023-02-22T19:45:10Z,2023-02-22T19:53:27Z
+30,[Fix]:Vega-Lite error with special chars in field id,closed,,2023-02-22T18:23:03Z,2023-02-22T19:04:54Z
+25,[Feat]: Added to_html API to pygwalker,closed,,2023-02-22T10:46:53Z,2023-02-22T12:47:09Z
+19,[Feat]: Support using in Databricks Notebooks,closed,,2023-02-21T20:17:34Z,2023-02-21T20:24:54Z
+14,Correct typo,closed,,2023-02-21T07:48:56Z,2023-02-21T07:58:40Z
+9,[windows]Open templates in utf8 encoding,closed,,2023-02-20T17:52:33Z,2023-02-20T18:11:11Z
+7,[Docs]Support more envs,closed,,2023-02-20T15:05:20Z,2023-02-20T15:05:45Z
+6,[Feat]: Change JS module format to support Kaggle Notebooks,closed,,2023-02-20T10:20:38Z,2023-02-20T10:32:09Z
+5,[Fix]:issue of parsing nan,closed,,2023-02-20T10:15:52Z,2023-02-20T10:16:36Z
+3,Update README.md,closed,,2023-02-18T01:07:07Z,2023-02-18T12:45:46Z
+2,[Fix] binder deps,closed,,2023-02-18T00:13:19Z,2023-02-18T00:18:06Z

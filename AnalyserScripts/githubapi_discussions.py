@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 from textblob import TextBlob
 
 #project_name = 'kvrocks'
-project_name = 'celeborn'
+project_name = 'pygwalker'
 
 # purva
 def analyze_in_person_interactions(discussions, output_file="final_react_analysis.csv"):

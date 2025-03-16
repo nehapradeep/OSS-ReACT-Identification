@@ -1,7 +1,7 @@
 import re
 import os
 
-project_name = 'celeborn'
+project_name = 'pygwalker'
 
 # def save_analysis(react_code, outcome, recommendation, output_file):
 #     with open(output_file, mode='a', encoding='utf-8') as file:

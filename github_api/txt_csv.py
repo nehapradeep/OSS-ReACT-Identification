@@ -40,4 +40,4 @@ def parse_txt_to_csv(input_file, output_file):
     print(f'CSV file "{output_file}" created successfully!')
 
 # Example usage
-parse_txt_to_csv('celeborn/pr.txt', 'pr.csv')
+parse_txt_to_csv('pygwalker/pr.txt', 'pygwalker/pr.csv')

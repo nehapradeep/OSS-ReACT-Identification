@@ -34,9 +34,9 @@ GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 client = genai.Client(api_key=GEMINI_API_KEY)
 
 #project_name = "kvrocks"
-#project_name = "celeborn"
-#project_name = "ResDB"
-project_name = "openDAL"
+project_name = "pygwalker"
+# project_name = "ResDB"
+#project_name = "openDAL"
 base_path = "../github_api"
 
 if GEMINI_API_KEY is None:
@@ -111,29 +111,33 @@ def issue_comm_reacts():
         "ReACT-103": "Keep the community informed about decisions."
     }
 
-    my_file = list(upload_file_in_chunks(os.path.join(base_path, project_name, "issue_comments_cleaned.txt")))
-
-    for chunk in my_file:
-        issue_chunk_uploader = client.models.generate_content(
-            model="gemini-2.0-flash",
-            contents=[
-                "Sharing the issue comments for the analysis in chunks, keep them in context for answering the following questions:",
-                chunk
-            ]
-        )
-        print("Chunk upload done!")
-        time.sleep(65)  # Avoid rate limits
+    my_file = list(upload_file_in_chunks(os.path.join(base_path, project_name, "issue_comments.txt")))
+    chunk = "".join(my_file)
+    # for chunk in my_file:
+    #     issue_chunk_uploader = client.models.generate_content(
+    #         model="gemini-2.0-flash",
+    #         contents=[
+    #             "Sharing the issue comments for the analysis in chunks, keep them in context for answering the following questions:",
+    #             chunk,
+    #         ]
+    #     )
+    #     print("Chunk upload done!")
     for react in reacts:
+        time.sleep(10)
         response = client.models.generate_content(
             model="gemini-2.0-flash",
             contents=[
+                "Sharing the issue comments for the analysis in chunks, keep them in context for answering the following questions:",
+                chunk,
                 "Analyze all the issue comments chunks provided earlier of a GitHub project and tell me in one word either yes or no if the project follows this recommendation: " + reacts[react]
                 + "\n Also, Provide a short, concise and to-the-point 3-4 lines max explanation on why do you think that the project does or does not follow this recommendation. "
                 "Please give you answer in a paragraph style and not bullet points"
+                "Give your answer in this format: [Yes/No] <space> [Your explanation]"
             ]
         )
+    # time.sleep(10)  # Avoid rate limits
 
-        # Extract the first word (YES/NO) and the explanation
+    # Extract the first word (YES/NO) and the explanation
         response_text = response.text.strip()
         response_parts = response_text.split(" ", 1)  # Split at first space
         yes_no = response_parts[0] if response_parts else "UNKNOWN"
@@ -160,31 +164,35 @@ def PR_related_reacts():
     }
 
     # Providing all the PR related files to the Gemini API
-    pr_comments_file = list(upload_file_in_chunks(os.path.join(base_path, project_name, "pr_comments_cleaned.txt")))
-    pr_file = list(upload_file_in_chunks(os.path.join(base_path, project_name, "pr.txt")))
+    pr_comments_file = "".join(list(upload_file_in_chunks(os.path.join(base_path, project_name, "pr_comments.txt"))))
+    pr_file = "".join(list(upload_file_in_chunks(os.path.join(base_path, project_name, "pr.txt"))))
 
     # # Reopening Output file
-    for pr_chunk, pr_comments_chunk in zip(pr_file, pr_comments_file):
-        pr_chunk_uploader = client.models.generate_content(
-            model="gemini-2.0-flash",
-            contents=[
-                "Sharing the Pull Requests and Comments on it for the analysis in chunks, keep them in context for answering the following questions:",
-                pr_comments_chunk,
-                pr_chunk
-            ]
-        )
-        print("PR chunk upload done!")
-        time.sleep(65)  # Avoid rate limits
+    # for pr_chunk, pr_comments_chunk in zip(pr_file, pr_comments_file):
+    #     pr_chunk_uploader = client.models.generate_content(
+    #         model="gemini-2.0-flash",
+    #         contents=[
+    #             "Sharing the Pull Requests and Comments on it for the analysis in chunks, keep them in context for answering the following questions:",
+    #             pr_comments_chunk,
+    #             pr_chunk
+    #         ]
+    #     )
+    #     print("PR chunk upload done!")
+    #     time.sleep(65)  # Avoid rate limits
     for react in PR_reacts:
         # Storing a quick explanation from Gemini too
         response = client.models.generate_content(
             model="gemini-2.0-flash",
             contents=[
+                "Sharing the Pull Requests and Comments on it for the analysis in chunks, keep them in context for answering the following questions:",
+                pr_comments_file,
+                pr_file,
                 "Based on all the previously shared PR chunks, analyze whether the GitHub project follows this recommendation:"
                 + PR_reacts[react] + "Give your answer in either Yes or No." + "\n Also, Provide a short, "
                 "concise and to-the-point 3-4 lines max explanation on why do you think that the project does "
                 "or does not follow this recommendation. Please give you answer in a paragraph style and not "
-                "bullet points",
+                "bullet points"
+                "Give your answer in this format: [Yes/No] <space> [Your explanation]"
             ]
         )
         response_text = response.text.strip()
@@ -212,7 +220,7 @@ def issue_labels_related_reacts():
         "ReACT-99": "Keep the issue list clean and triaged.(From Issue tags : check if significant tags are present)"
     }
 
-    issue_comments_file = list(upload_file_in_chunks(os.path.join(base_path, project_name, "issue_comments_cleaned.txt")))
+    issue_comments_file = "".join(list(upload_file_in_chunks(os.path.join(base_path, project_name, "issue_comments.txt"))))
 
     # #pranav
         # for batch in batch_chunks(stream_file_in_n_chunks("../github_api/kvrocks/issue_comments.txt")):
@@ -223,26 +231,29 @@ def issue_labels_related_reacts():
         #     print("Batch upload done!")
         #     time.sleep(65)  # Avoid rate limits
         
-    for chunk in issue_comments_file:
-        response = client.models.generate_content(
-            model="gemini-2.0-flash",
-            contents=[
-                "Sharing the issue labels for the analysis in chunks, keep them in context for answering the following questions:",
-                chunk
-            ]
-        )
-        print("Chunk upload done!")
-        time.sleep(65)  # Avoid rate limits
+    # for chunk in issue_comments_file:
+    #     response = client.models.generate_content(
+    #         model="gemini-2.0-flash",
+    #         contents=[
+    #             "Sharing the issue labels for the analysis in chunks, keep them in context for answering the following questions:",
+    #             chunk
+    #         ]
+    #     )
+    #     print("Chunk upload done!")
+    #     time.sleep(65)  # Avoid rate limits
 
     for react in Issue_labels_reacts:
         response = client.models.generate_content(
             model="gemini-2.0-flash",
             contents=[
+                "Sharing the issue comments for the analysis in chunks, keep them in context for answering the following questions:",
+                issue_comments_file,
                 "Based on all the previously shared issue comments, analyze whether the GitHub project follows this recommendation: '"
                 + Issue_labels_reacts[react] + "'.\n\n"
                 "Respond with 'Yes' or 'No' based on your analysis.\n"
                 "Then, provide a short and concise 3-4 line explanation justifying your answer.\n"
                 "Ensure the response is in paragraph format, not bullet points."
+                "Give your answer in this format: [Yes/No] <space> [Your explanation]"
             ]
         )
         # print(react, Issue_labels_reacts[react], response.text)
@@ -303,11 +314,14 @@ def analyze_source_code_reacts():
         response = client.models.generate_content(
             model="gemini-2.0-flash",
             contents=[
+                f"Sharing the source code files in chunks for the analysis, keep them in context for answering the following questions:",
+                "".join(source_files),
                 "Respond with 'Yes' or 'No' based on your analysis.\n"
                 "Based on all the previously shared issue comments, analyze whether the GitHub project follows this recommendation: '"
                 + source_code_reacts[react] + "'.\n"
-                "Then, provide a short and concise 3-4 line explanation justifying your answer.\n"
+                "provide a short and concise 3-4 line explanation justifying your answer.\n"
                 "Ensure the response is in paragraph format, not bullet points."
+                "Give your answer in this format: [Yes/No] <space> [Your explanation]"
             ]
         )
 
