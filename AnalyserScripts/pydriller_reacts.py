@@ -2,6 +2,8 @@ import pandas as pd
 import csv
 import os
 
+project_name = 'celeborn'
+
 def save_analysis(react_name, outcome, recommendation, output_file):
     with open(output_file, mode="a", encoding="utf-8", newline="") as csv_file:
         fieldnames = ["Project Name", "ReACT Name/Number", "Outcome", "Recommendation"]
@@ -9,7 +11,7 @@ def save_analysis(react_name, outcome, recommendation, output_file):
         if not os.path.isfile(output_file) or os.stat(output_file).st_size == 0:
             writer.writeheader()
         writer.writerow({
-            "Project Name": 'kvrocks',
+            "Project Name": project_name,
             "ReACT Name/Number": react_name,
             "Outcome": outcome,
             "Recommendation": recommendation
@@ -17,7 +19,7 @@ def save_analysis(react_name, outcome, recommendation, output_file):
     
     print(f"Analysis for {react_name} saved to {output_file}")
 
-df = pd.read_csv('pydrillerCSV/ResDB/resdb_commit_data.csv')
+df = pd.read_csv(os.path.join('pydrillerCSV', project_name, f"{project_name}_commit_data.csv"))
 print(df.head())
 
 # purva

@@ -1,10 +1,12 @@
 import re
 import os
 
+project_name = 'celeborn'
+
 # def save_analysis(react_code, outcome, recommendation, output_file):
 #     with open(output_file, mode='a', encoding='utf-8') as file:
 #         file.write(f"{react_code},{outcome},{recommendation}\n")
-def save_analysis(react_name, outcome, recommendation, output_file, project_name='kvrocks'):
+def save_analysis(react_name, outcome, recommendation, output_file, project_name=project_name):
     file_exists = os.path.isfile(output_file)
     with open(output_file, mode="a", encoding="utf-8") as md_file:
         if not file_exists or os.stat(output_file).st_size == 0:
@@ -172,7 +174,7 @@ def analyze_react_102(readme_content, output_file):
     save_analysis("ReACT-102", outcome, recommendation, output_file)
 
 if __name__ == "__main__":
-    readme_file = "github_api/kvrocks/README.md"
+    readme_file = os.path.join("github_api", project_name, "README.md")
     output_file = "final_react_analysis.csv"
     with open(readme_file, "r", encoding="utf-8") as file:
         readme_content = file.read()
