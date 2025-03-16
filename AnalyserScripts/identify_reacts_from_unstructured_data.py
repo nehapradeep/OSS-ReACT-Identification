@@ -19,6 +19,11 @@
 # ReACT-72,
 # ReACT-74,
 
+# ReACT-85: Use opportunities for in-person interaction (Announcements about meet ups and their timestamp)
+# ReACT-89: Grant the newcomer freedom: Encourage and allow them to express opinions, propose changes, and share personal viewpoints to foster a comfortable environment.
+# ReACT-91: Be quick to respond to the newcomer: (timestamp)
+# ReACT-92: Be kind and make newcomers feel part of the team (Sentiment Analysis)
+
 import os
 import time
 import csv
@@ -29,9 +34,9 @@ GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 client = genai.Client(api_key=GEMINI_API_KEY)
 
 #project_name = "kvrocks"
-project_name = "celeborn"
-# project_name = "ResDB"
-#project_name = "openDAL"
+#project_name = "celeborn"
+#project_name = "ResDB"
+project_name = "openDAL"
 base_path = "../github_api"
 
 if GEMINI_API_KEY is None:
@@ -326,11 +331,63 @@ def analyze_source_code_reacts():
     
     print("Source code ReACT analysis completed and saved!")
 
+def discussion_related_reacts():
+    discussion_reacts = {
+        "ReACT-85": "Use opportunities for in-person interaction (Check for Announcements about meet ups and their timestamp)",
+        "ReACT-89": "Grant the newcomer freedom: Encourage and allow them to express opinions, propose changes, and share personal viewpoints to foster a comfortable environment.",
+        "ReACT-91": "Be quick to respond to the newcomer: (check for quick responses in the discussion comments)",
+        "ReACT-92": "Be kind and make newcomers feel part of the team (Sentiment Analysis of the discussion comments)"
+    }
+
+    discussion_path = os.path.join(base_path, project_name, "discussions.txt")
+    discussion_file = list(upload_file_in_chunks(discussion_path))
+
+    for chunk in discussion_file:
+        diss_uploader = client.models.generate_content(
+            model="gemini-2.0-flash",
+            contents=[
+                "Sharing the discussions file for the analysis in chunks, keep them in context for answering the following questions:",
+                chunk
+            ]
+        )
+        print("Chunk upload done!")
+        time.sleep(65)  # Avoid rate limits
+
+    for react in discussion_reacts:
+        response = client.models.generate_content(
+            model="gemini-2.0-flash",
+            contents=[
+                "Based on all the previously shared Discussion file chunks, analyze whether the GitHub project follows this recommendation: '"
+                + discussion_reacts[react] + "'.\n"
+                "Respond with 'Yes' or 'No' based on your analysis.\n"
+                "Then, provide a short and concise 3-4 line explanation justifying your answer.\n"
+                "Ensure that the response is in paragraph format, not bullet points."
+            ]
+        )
+
+        response_text = response.text.strip()
+        response_parts = response_text.split(" ", 1)  # Split at first space
+        yes_no = response_parts[0] if response_parts else "UNKNOWN"
+        explanation = response_parts[1] if len(response_parts) > 1 else "No explanation provided."
+
+        # Remove commas from the explanation to keep CSV format intact
+        explanation = explanation.replace(",", " ")
+
+        react_combined = f"{react}: {discussion_reacts[react]}"  # Combine react ID and description
+
+        # Append row to CSV
+        save_analysis(react_combined, explanation, yes_no, "../final_react_analysis.csv")
+        print(f"Saved: {project_name}, {react}, {yes_no}")
+        time.sleep(65)
+
+
+
 if __name__ == "__main__":
-    issue_comm_reacts()
-    PR_related_reacts()
-    issue_labels_related_reacts()
-    analyze_source_code_reacts()
+    # issue_comm_reacts()
+    # PR_related_reacts()
+    # issue_labels_related_reacts()
+    # analyze_source_code_reacts()
+    discussion_related_reacts()
 
 
 
