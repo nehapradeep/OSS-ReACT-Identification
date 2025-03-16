@@ -1,0 +1,1576 @@
+PR #7225: test: added unit tests for NacosRegistryServiceImple (State: open)
+URL: https://github.com/apache/incubator-seata/pull/7225
+Created at: 2025-03-16T21:22:01Z, Merged at: None
+================================================================================
+PR #7224: optimize/optimize changeGlobalStatus interface of console (State: open)
+URL: https://github.com/apache/incubator-seata/pull/7224
+Created at: 2025-03-16T04:47:27Z, Merged at: None
+================================================================================
+PR #7223: feature: Apply Spotless with Palantir Java Format (State: open)
+URL: https://github.com/apache/incubator-seata/pull/7223
+Created at: 2025-03-15T15:10:05Z, Merged at: None
+================================================================================
+PR #7222: optimize: in raft mode add the vgroup field to global lock (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7222
+Created at: 2025-03-15T07:17:19Z, Merged at: 2025-03-16T12:25:12Z
+================================================================================
+PR #7221: test: add UT for gRPC Encoder/Decoder (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7221
+Created at: 2025-03-14T07:33:55Z, Merged at: 2025-03-15T13:08:13Z
+================================================================================
+PR #7219: optimize: optimize sql parsing logic (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7219
+Created at: 2025-03-13T11:25:27Z, Merged at: 2025-03-14T08:33:24Z
+================================================================================
+PR #7218: bugfix:NotSupportExc can't be thrown out in some cases (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7218
+Created at: 2025-03-13T10:52:58Z, Merged at: None
+================================================================================
+PR #7215: optimize: intercept non-leader write requests of the console trx operation (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7215
+Created at: 2025-03-12T15:30:19Z, Merged at: 2025-03-15T06:26:29Z
+================================================================================
+PR #7214: optimize: upgrade jackson dependency to 2.18.3 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7214
+Created at: 2025-03-12T13:10:36Z, Merged at: 2025-03-14T04:53:40Z
+================================================================================
+PR #7213: feature: support kingbase xa mode (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7213
+Created at: 2025-03-12T06:18:11Z, Merged at: 2025-03-15T13:17:17Z
+================================================================================
+PR #7203: test: add UT for DM/kingbase/oscar sqlparser (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7203
+Created at: 2025-03-11T09:07:35Z, Merged at: 2025-03-13T01:10:29Z
+================================================================================
+PR #7202: optimize: upgrade protobuf version from 3.25.4 to 3.25.5 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7202
+Created at: 2025-03-11T05:47:48Z, Merged at: 2025-03-12T01:23:12Z
+================================================================================
+PR #7200: Revert "refactor: refactor the `Result` Class (#7176)" (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7200
+Created at: 2025-03-10T13:22:43Z, Merged at: 2025-03-10T13:37:06Z
+================================================================================
+PR #7199: test: add some UT cases for client processor (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7199
+Created at: 2025-03-10T02:11:36Z, Merged at: 2025-03-10T03:19:48Z
+================================================================================
+PR #7197: test: add some UT cases for config module (State: open)
+URL: https://github.com/apache/incubator-seata/pull/7197
+Created at: 2025-03-09T09:44:16Z, Merged at: None
+================================================================================
+PR #7194: optimize: skip the proxy of AbstractRoutingDataSource (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7194
+Created at: 2025-03-06T03:44:21Z, Merged at: 2025-03-06T06:16:40Z
+================================================================================
+PR #7193: optimize: automatically skipping proxy for datasource of type Abstrac… (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7193
+Created at: 2025-03-06T03:29:32Z, Merged at: None
+================================================================================
+PR #7191: (WIP)bugfix:Fix problems while using etcd3 as registry (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7191
+Created at: 2025-03-04T06:15:03Z, Merged at: None
+================================================================================
+PR #7189: test: fix the runtime exception in the saga test case (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7189
+Created at: 2025-02-28T08:22:52Z, Merged at: 2025-03-03T04:09:31Z
+================================================================================
+PR #7188: bugfix: Fix missing branchType in BusinessActionContext (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7188
+Created at: 2025-02-28T05:11:05Z, Merged at: 2025-03-03T05:39:55Z
+================================================================================
+PR #7187: optimize: add dependency-check-maven plugin to detect potential vulnerabilities (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7187
+Created at: 2025-02-28T03:54:55Z, Merged at: 2025-03-08T13:17:57Z
+================================================================================
+PR #7184: optimize: using subqueries to reduce the retrieval of invalid content data. (State: open)
+URL: https://github.com/apache/incubator-seata/pull/7184
+Created at: 2025-02-25T11:36:57Z, Merged at: None
+================================================================================
+PR #7183: feature: client discovers raft nodes through the naming server (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7183
+Created at: 2025-02-25T05:51:06Z, Merged at: 2025-03-09T01:37:36Z
+================================================================================
+PR #7182: optimize:  use the ip of the peerId as the host of the raft node (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7182
+Created at: 2025-02-24T09:59:58Z, Merged at: 2025-02-25T01:36:44Z
+================================================================================
+PR #7181: feature:  raft implements domain name resolution and selects peerId (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7181
+Created at: 2025-02-24T09:38:13Z, Merged at: 2025-02-25T01:22:02Z
+================================================================================
+PR #7179: optimize: Use shared `EventLoop` for TM and RM clients to reduce thread overhead and improve performance (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7179
+Created at: 2025-02-23T08:25:12Z, Merged at: 2025-03-04T02:14:17Z
+================================================================================
+PR #7176: refactor: refactor the `Result` Class (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7176
+Created at: 2025-02-22T05:07:58Z, Merged at: 2025-03-09T01:56:30Z
+================================================================================
+PR #7175: optimize: fix 2.3.0 UT (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7175
+Created at: 2025-02-20T12:33:53Z, Merged at: 2025-02-20T12:34:18Z
+================================================================================
+PR #7174: [WIP]feature:[loom] replace the usages of synchronized with ReentrantLock at saga module (State: open)
+URL: https://github.com/apache/incubator-seata/pull/7174
+Created at: 2025-02-20T12:16:38Z, Merged at: None
+================================================================================
+PR #7172: optimize: fix 2.3.0 UT and update NOTICE (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7172
+Created at: 2025-02-20T08:45:10Z, Merged at: 2025-02-20T08:47:54Z
+================================================================================
+PR #7171: feature:support `EpollEventLoopGroup` in client (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7171
+Created at: 2025-02-19T09:41:46Z, Merged at: 2025-02-19T10:02:14Z
+================================================================================
+PR #7170: optimize: optimize seata client I/O processing by adjusting thread count (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7170
+Created at: 2025-02-19T06:06:08Z, Merged at: 2025-02-19T08:20:49Z
+================================================================================
+PR #7167: test: Refactored tests in DurationUtilTest to simplify and use parameterized unit testing (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7167
+Created at: 2025-02-18T05:14:40Z, Merged at: 2025-02-19T08:56:12Z
+================================================================================
+PR #7164: feature:Transfer global timeout and branch transaction begin time (State: open)
+URL: https://github.com/apache/incubator-seata/pull/7164
+Created at: 2025-02-13T09:37:28Z, Merged at: None
+================================================================================
+PR #7162: optimize: Throwing IOException in sendSyncRequest  (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7162
+Created at: 2025-02-13T01:29:11Z, Merged at: 2025-02-24T02:58:45Z
+================================================================================
+PR #7160: test: Refactored tests in LowerCaseLinkHashMapTest to use parameterized unit testing (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7160
+Created at: 2025-02-12T19:00:54Z, Merged at: 2025-02-15T10:02:24Z
+================================================================================
+PR #7157: feature: migrate the console to the naming server (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7157
+Created at: 2025-02-11T07:14:11Z, Merged at: 2025-02-24T06:57:21Z
+================================================================================
+PR #7156: compatible version (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7156
+Created at: 2025-02-11T04:04:52Z, Merged at: None
+================================================================================
+PR #7155: reactor: refactor the code that does not comply with license requirements (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7155
+Created at: 2025-02-11T02:45:06Z, Merged at: 2025-02-11T02:56:55Z
+================================================================================
+PR #7154: optimize: remove unused dependencies (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7154
+Created at: 2025-02-11T02:38:14Z, Merged at: 2025-02-11T02:38:26Z
+================================================================================
+PR #7153: optimize: upgrade tomcat-embed to 9.0.98 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7153
+Created at: 2025-02-11T02:34:14Z, Merged at: 2025-02-11T02:34:33Z
+================================================================================
+PR #7152: optimize: remove org.eclipse.jetty dependency (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7152
+Created at: 2025-02-11T02:29:11Z, Merged at: 2025-02-11T02:29:32Z
+================================================================================
+PR #7151: optimize: upgrade xstream to 1.4.21 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7151
+Created at: 2025-02-11T02:24:43Z, Merged at: 2025-02-11T02:25:14Z
+================================================================================
+PR #7150: bugfix: The time difference between the raft node and the follower node cannot synchronize data. (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7150
+Created at: 2025-02-10T08:30:10Z, Merged at: 2025-02-10T08:51:26Z
+================================================================================
+PR #7149: optimize:Fix abnormal character display issues in ./distribution/NOTICE.md (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7149
+Created at: 2025-02-10T03:52:55Z, Merged at: 2025-02-10T06:23:02Z
+================================================================================
+PR #7147: feature: Raft config center v2 (State: open)
+URL: https://github.com/apache/incubator-seata/pull/7147
+Created at: 2025-02-09T07:39:51Z, Merged at: None
+================================================================================
+PR #7145: reactor: refactor the code that does not comply with license requirements (State: open)
+URL: https://github.com/apache/incubator-seata/pull/7145
+Created at: 2025-02-08T16:15:35Z, Merged at: None
+================================================================================
+PR #7143: feature: raft config center v2 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7143
+Created at: 2025-02-08T12:51:55Z, Merged at: None
+================================================================================
+PR #7142: optimize: upgrade commons-compress to 1.27.1 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7142
+Created at: 2025-02-08T10:44:11Z, Merged at: 2025-02-10T03:30:51Z
+================================================================================
+PR #7141: optimize: remove unused dependencies (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7141
+Created at: 2025-02-08T02:55:33Z, Merged at: 2025-02-08T05:59:53Z
+================================================================================
+PR #7139: optimize: upgrade xstream to 1.4.21 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7139
+Created at: 2025-02-07T11:18:14Z, Merged at: 2025-02-08T01:33:41Z
+================================================================================
+PR #7138: optimize: remove org.eclipse.jetty dependency (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7138
+Created at: 2025-02-07T11:15:39Z, Merged at: 2025-02-08T01:59:07Z
+================================================================================
+PR #7135: bugfix: treating a unique index conflict during rollback as a dirty write (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7135
+Created at: 2025-02-05T09:45:31Z, Merged at: 2025-02-06T07:47:51Z
+================================================================================
+PR #7134: optimize: upgrade tomcat-embed to 9.0.98 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7134
+Created at: 2025-02-04T15:14:24Z, Merged at: 2025-02-05T03:31:07Z
+================================================================================
+PR #7133: feature: Implement scheduled handling for end status transaction (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7133
+Created at: 2025-01-31T05:39:15Z, Merged at: 2025-02-18T05:36:47Z
+================================================================================
+PR #7131: optimize:Remove org.codehaus.jackson dependency (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7131
+Created at: 2025-01-23T07:47:57Z, Merged at: 2025-01-23T08:05:38Z
+================================================================================
+PR #7130: optimize:Expose some keepalive-related configuration for Druid, Hikari, and DBCP (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7130
+Created at: 2025-01-23T06:39:16Z, Merged at: 2025-02-12T09:07:18Z
+================================================================================
+PR #7127: bugfix: fix branchType server decode error (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7127
+Created at: 2025-01-21T07:29:01Z, Merged at: 2025-01-21T07:34:33Z
+================================================================================
+PR #7124: bugfix: GlobalTransactionScanner.afterPropertiesSet need do scanner check (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7124
+Created at: 2025-01-21T01:27:28Z, Merged at: 2025-01-22T07:56:06Z
+================================================================================
+PR #7119: bugfix: conflictingBeanDefinitionException  (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7119
+Created at: 2025-01-16T11:27:57Z, Merged at: 2025-01-16T11:29:46Z
+================================================================================
+PR #7117: bugfix: prefix: [seata.server.raft.ssl] should not be null (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7117
+Created at: 2025-01-16T06:11:19Z, Merged at: 2025-01-16T07:12:04Z
+================================================================================
+PR #7116: bugfix: prefix: [seata.server.raft.ssl] should not be null (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7116
+Created at: 2025-01-16T03:00:40Z, Merged at: 2025-01-16T08:21:59Z
+================================================================================
+PR #7114: feature: support raft mode registry to namingserver (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7114
+Created at: 2025-01-15T15:22:31Z, Merged at: 2025-02-24T06:43:38Z
+================================================================================
+PR #7112: bugfix: remove the condition that IPv6 must start with fe80: (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7112
+Created at: 2025-01-15T07:55:35Z, Merged at: 2025-01-16T03:22:50Z
+================================================================================
+PR #7107: bugfix: the issue of incorrect annotation retrieval from the proxy object (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7107
+Created at: 2025-01-13T09:11:37Z, Merged at: 2025-01-21T06:00:11Z
+================================================================================
+PR #7106: 修复tcc模式下，当业务对象为代理对象时，解析注解失败问题。 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7106
+Created at: 2025-01-13T09:07:54Z, Merged at: None
+================================================================================
+PR #7104: bugfix: impl of supportsSourceType is not defined (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7104
+Created at: 2025-01-11T14:09:29Z, Merged at: 2025-01-12T07:18:22Z
+================================================================================
+PR #7102: bugfix: modify XA mode pre commit transaction from commit phase to before close phase (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7102
+Created at: 2025-01-11T04:27:06Z, Merged at: 2025-02-15T10:01:24Z
+================================================================================
+PR #7101: optimize: add tcc dependency spring-tx (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7101
+Created at: 2025-01-10T08:46:00Z, Merged at: 2025-01-10T08:46:34Z
+================================================================================
+PR #7098: test: expand unit test coverage for the [cmmon] module. (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7098
+Created at: 2025-01-08T14:01:30Z, Merged at: 2025-01-13T02:57:50Z
+================================================================================
+PR #7095: optimize:  support fast fail when channel disconnect after message sent  for RemotingClient (State: open)
+URL: https://github.com/apache/incubator-seata/pull/7095
+Created at: 2025-01-04T12:01:15Z, Merged at: None
+================================================================================
+PR #7093: optimize: add a test workflow for JDK 21 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7093
+Created at: 2025-01-03T02:38:14Z, Merged at: 2025-01-03T03:09:16Z
+================================================================================
+PR #7092: test: fix the issue of NacosMockTest failing to run (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7092
+Created at: 2025-01-03T01:35:40Z, Merged at: 2025-01-03T01:59:47Z
+================================================================================
+PR #7089: optimize: support instance registration to the registry center (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7089
+Created at: 2025-01-02T03:30:21Z, Merged at: 2025-01-03T07:26:47Z
+================================================================================
+PR #7088: optimize: expand english abbreviations to full words (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7088
+Created at: 2025-01-01T10:22:12Z, Merged at: 2025-01-03T03:38:04Z
+================================================================================
+PR #7085: test:add unit test for seata spring starter module (State: open)
+URL: https://github.com/apache/incubator-seata/pull/7085
+Created at: 2024-12-29T12:57:30Z, Merged at: None
+================================================================================
+PR #7084: optimize:fix grpc complie fail ut (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7084
+Created at: 2024-12-28T09:45:20Z, Merged at: 2024-12-28T09:46:22Z
+================================================================================
+PR #7083: optimize: fix tm context conflict ut (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7083
+Created at: 2024-12-28T08:20:12Z, Merged at: 2024-12-28T08:21:17Z
+================================================================================
+PR #7080: optimize: fix context conflict ut (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7080
+Created at: 2024-12-27T03:27:26Z, Merged at: 2024-12-27T03:28:07Z
+================================================================================
+PR #7079: optimize: fix 2.3.0 ut (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7079
+Created at: 2024-12-26T13:01:35Z, Merged at: 2024-12-26T13:02:02Z
+================================================================================
+PR #7075: optimize: fast fail when channel is null (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7075
+Created at: 2024-12-25T07:44:25Z, Merged at: 2024-12-26T01:17:36Z
+================================================================================
+PR #7073: feature:[loom] replace the usages of synchronized with ReentrantLock (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7073
+Created at: 2024-12-23T10:50:44Z, Merged at: 2025-01-17T08:06:46Z
+================================================================================
+PR #7072: optimize: caching the ConsistentHashSelector to avoid remapping when select every time. (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7072
+Created at: 2024-12-23T10:09:25Z, Merged at: 2025-03-07T02:10:19Z
+================================================================================
+PR #7071: 如果是读写分离，在用aop设置主库的时候，会走这里，需要重新设置resourceId (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7071
+Created at: 2024-12-23T04:18:25Z, Merged at: None
+================================================================================
+PR #7070: optimize: fix changes (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7070
+Created at: 2024-12-23T03:14:59Z, Merged at: 2024-12-23T05:41:48Z
+================================================================================
+PR #7069: feature: Raft cluster mode supports address translation (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7069
+Created at: 2024-12-23T02:44:15Z, Merged at: 2024-12-30T08:59:52Z
+================================================================================
+PR #7067: 2.3.0 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7067
+Created at: 2024-12-20T15:49:32Z, Merged at: None
+================================================================================
+PR #7066: optimize: fix changes (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7066
+Created at: 2024-12-20T15:49:14Z, Merged at: 2024-12-31T05:52:04Z
+================================================================================
+PR #7065: optimize: modify the version to 2.4.0-SNAPSHOT (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7065
+Created at: 2024-12-20T07:47:35Z, Merged at: 2024-12-21T15:40:46Z
+================================================================================
+PR #7064: optimize: remove unnecessary null checks (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7064
+Created at: 2024-12-19T07:45:46Z, Merged at: 2025-02-22T16:35:48Z
+================================================================================
+PR #7062: optimize: fix changes (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7062
+Created at: 2024-12-18T19:18:59Z, Merged at: 2024-12-19T06:00:51Z
+================================================================================
+PR #7061: optimize: fix changes (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7061
+Created at: 2024-12-18T12:38:20Z, Merged at: 2024-12-18T12:39:17Z
+================================================================================
+PR #7060: optimize:  UPDATE changes AND version (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7060
+Created at: 2024-12-17T08:26:32Z, Merged at: 2024-12-17T08:32:17Z
+================================================================================
+PR #7059: optimize: update notice and LICENSE (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7059
+Created at: 2024-12-16T12:15:25Z, Merged at: 2024-12-16T15:48:53Z
+================================================================================
+PR #7054: optimize: In file mode when the lock cannot be acquired output the holder's xid. (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7054
+Created at: 2024-12-10T02:22:15Z, Merged at: 2024-12-10T02:49:14Z
+================================================================================
+PR #7051: optimize: add namingserver jib (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7051
+Created at: 2024-12-09T00:12:49Z, Merged at: 2024-12-10T08:05:30Z
+================================================================================
+PR #7049: optimize: optimize deserialization efficiency (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7049
+Created at: 2024-12-05T02:15:00Z, Merged at: 2024-12-05T03:52:51Z
+================================================================================
+PR #7046: optimize: remove the dependency conflict for spring-webmvc (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7046
+Created at: 2024-12-04T02:27:09Z, Merged at: 2024-12-04T03:52:33Z
+================================================================================
+PR #7044: bugfix: fix tablemeta refresh after closed (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7044
+Created at: 2024-12-03T08:46:02Z, Merged at: 2024-12-04T01:23:43Z
+================================================================================
+PR #7043: optimize:  finish rollback if sendResult/msg not found (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7043
+Created at: 2024-12-03T08:15:53Z, Merged at: 2024-12-05T02:20:04Z
+================================================================================
+PR #7040: optimize: alter the print info in ConfigurationFactory.java when load ExtConfiguration (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7040
+Created at: 2024-12-01T10:51:39Z, Merged at: 2024-12-01T16:03:21Z
+================================================================================
+PR #7038: feature: add fury serializer support (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7038
+Created at: 2024-11-30T08:27:10Z, Merged at: 2025-01-09T08:10:16Z
+================================================================================
+PR #7037: feature: add fury undolog parser support (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7037
+Created at: 2024-11-30T08:22:59Z, Merged at: 2025-01-03T02:23:09Z
+================================================================================
+PR #7033: optimize: add the decompression size limit (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7033
+Created at: 2024-11-29T05:38:30Z, Merged at: 2024-11-29T09:15:58Z
+================================================================================
+PR #7032: optimize: add jdbc class isolation loader for different versions (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7032
+Created at: 2024-11-29T03:32:31Z, Merged at: 2024-11-29T05:57:50Z
+================================================================================
+PR #7031: optimize: optimize Raft SSL configuration items (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7031
+Created at: 2024-11-29T03:01:14Z, Merged at: 2024-11-29T05:42:46Z
+================================================================================
+PR #7030: test: add some test case. (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7030
+Created at: 2024-11-28T10:58:16Z, Merged at: 2024-11-28T12:31:54Z
+================================================================================
+PR #7028: optimize: add mysql to docker image (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7028
+Created at: 2024-11-26T17:01:47Z, Merged at: 2024-11-27T08:48:50Z
+================================================================================
+PR #7027: optimize: raft mode maintains the reload logic consistent with the file (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7027
+Created at: 2024-11-26T09:10:46Z, Merged at: 2024-11-27T06:13:06Z
+================================================================================
+PR #7025: bugfix: fix vGroupMappingManager is NOT init (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7025
+Created at: 2024-11-22T05:39:01Z, Merged at: 2024-11-22T06:04:12Z
+================================================================================
+PR #7024: feature: add console transaction control (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7024
+Created at: 2024-11-22T04:19:26Z, Merged at: 2025-02-07T08:53:53Z
+================================================================================
+PR #7023: optimize: fail fast, when all server channel not available (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7023
+Created at: 2024-11-22T02:34:29Z, Merged at: 2024-11-25T06:33:41Z
+================================================================================
+PR #7022: bugfix: modify the properties in the raft application file (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7022
+Created at: 2024-11-21T07:47:26Z, Merged at: 2024-11-21T08:02:20Z
+================================================================================
+PR #7019: optimize: compatible with macOS 10.15 compilation (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7019
+Created at: 2024-11-20T06:40:15Z, Merged at: None
+================================================================================
+PR #7018: test: improve unit test coverage of seata-tm moudle (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7018
+Created at: 2024-11-20T01:31:19Z, Merged at: 2024-11-22T01:23:56Z
+================================================================================
+PR #7017: reactor: remove dependency on seata-server module (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7017
+Created at: 2024-11-19T15:10:45Z, Merged at: 2024-11-28T05:02:23Z
+================================================================================
+PR #7012: optimize: When the number of primary keys exceeds 1000, use union to concatenate the SQL #6957 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7012
+Created at: 2024-11-18T10:43:52Z, Merged at: 2024-12-25T07:01:11Z
+================================================================================
+PR #7011: optimize: When the number of primary keys exceeds 1000, use union to concatenate the SQL #6957 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7011
+Created at: 2024-11-18T09:31:55Z, Merged at: None
+================================================================================
+PR #7010: bugfix:fix error while the "context" is key word in DM8 when delete undolog (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7010
+Created at: 2024-11-18T07:41:15Z, Merged at: 2024-11-19T02:43:18Z
+================================================================================
+PR #7007: optimize: fix the CI build issue on the ARM64 platform (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7007
+Created at: 2024-11-18T03:39:10Z, Merged at: 2024-11-18T05:35:49Z
+================================================================================
+PR #7005: bugfix: fix the Raft NPE issue caused by two-phase concurrency (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7005
+Created at: 2024-11-15T07:49:11Z, Merged at: 2024-11-18T05:43:03Z
+================================================================================
+PR #7002: optimize: optimize lock release logic in AT transaction mode (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7002
+Created at: 2024-11-14T13:06:52Z, Merged at: 2024-11-15T01:24:17Z
+================================================================================
+PR #7001: optimize: optimize transaction metrics (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/7001
+Created at: 2024-11-14T12:48:59Z, Merged at: 2024-11-17T05:12:51Z
+================================================================================
+PR #7000: optimize : support multi-version codec & fix not returning client registration failure msg (State: open)
+URL: https://github.com/apache/incubator-seata/pull/7000
+Created at: 2024-11-14T10:47:20Z, Merged at: None
+================================================================================
+PR #6998: optimize : skip sending some request if client-version is v0 (State: open)
+URL: https://github.com/apache/incubator-seata/pull/6998
+Created at: 2024-11-14T02:49:45Z, Merged at: None
+================================================================================
+PR #6996: optimize: optimize lock release logic in AT transaction mode (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6996
+Created at: 2024-11-11T11:47:26Z, Merged at: 2024-11-15T01:32:25Z
+================================================================================
+PR #6995: optimize: upgrade outdate npmjs dependencies (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6995
+Created at: 2024-11-11T03:39:53Z, Merged at: 2024-11-11T04:27:59Z
+================================================================================
+PR #6994: bugfix: fix the problem of building undoLog exception when update join does not update data (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6994
+Created at: 2024-11-10T16:38:11Z, Merged at: 2024-11-11T06:38:54Z
+================================================================================
+PR #6993: optimize: optimize transaction metrics (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6993
+Created at: 2024-11-10T15:53:23Z, Merged at: 2024-11-14T04:04:29Z
+================================================================================
+PR #6992: feature: add grpc serializer (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6992
+Created at: 2024-11-10T07:24:09Z, Merged at: 2024-11-10T13:02:07Z
+================================================================================
+PR #6991: optimize: gRPC serialization default to Protobuf (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6991
+Created at: 2024-11-09T18:03:58Z, Merged at: 2024-11-10T04:29:30Z
+================================================================================
+PR #6988: optimize: delete unnecessary cached data (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6988
+Created at: 2024-11-07T02:02:13Z, Merged at: None
+================================================================================
+PR #6987: optimize: When the number of primary keys exceeds 1000, use union to concatenate the SQL #6957 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6987
+Created at: 2024-11-07T01:41:30Z, Merged at: None
+================================================================================
+PR #6986: bugfix: fix statemachine cache object (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6986
+Created at: 2024-11-06T13:46:26Z, Merged at: None
+================================================================================
+PR #6984: bugfix: support building docker image on openjdk23 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6984
+Created at: 2024-11-06T02:39:11Z, Merged at: 2024-11-06T03:26:31Z
+================================================================================
+PR #6983: [WIP]feature:[loom] replace the usages of synchronized with ReentrantLock (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6983
+Created at: 2024-11-05T13:47:31Z, Merged at: None
+================================================================================
+PR #6974: feature: add fastjson2 undolog parser (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6974
+Created at: 2024-11-02T11:21:01Z, Merged at: 2024-11-04T01:33:59Z
+================================================================================
+PR #6973: feature: support saga annotation (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6973
+Created at: 2024-11-02T07:27:47Z, Merged at: 2024-12-01T17:24:01Z
+================================================================================
+PR #6959: optimize: modify seata-http-jakarta's name and description in pom.xml (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6959
+Created at: 2024-10-29T05:49:58Z, Merged at: 2024-10-29T06:43:48Z
+================================================================================
+PR #6954: feature: support raft configuration center (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6954
+Created at: 2024-10-27T05:10:41Z, Merged at: 2024-10-27T05:14:37Z
+================================================================================
+PR #6953: Revert "feature: support raft configuration center" (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6953
+Created at: 2024-10-27T04:58:06Z, Merged at: 2024-10-27T04:59:17Z
+================================================================================
+PR #6952: Add `seata-solon-plugin` adaptation (draft) (State: open)
+URL: https://github.com/apache/incubator-seata/pull/6952
+Created at: 2024-10-25T13:13:29Z, Merged at: None
+================================================================================
+PR #6950: optimize: remove JVM parameter app.id (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6950
+Created at: 2024-10-25T09:09:31Z, Merged at: 2024-10-26T02:56:22Z
+================================================================================
+PR #6948: bugfix: fix the CI build issue on the ARM64 platform (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6948
+Created at: 2024-10-25T03:51:15Z, Merged at: 2024-10-26T02:57:47Z
+================================================================================
+PR #6947: bugfix: fix npe for nacos registry when look up address (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6947
+Created at: 2024-10-24T11:11:15Z, Merged at: 2024-10-25T05:24:12Z
+================================================================================
+PR #6945: bugfix: fix NacosRegistry lookup behavior transactionServiceGroup is empty causing NPE (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6945
+Created at: 2024-10-24T03:44:41Z, Merged at: 2024-10-24T07:19:52Z
+================================================================================
+PR #6943: bugfix: fix ConcurrentModificationException in SessionConverter.convertBranchSession (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6943
+Created at: 2024-10-23T03:27:30Z, Merged at: 2024-10-24T07:05:42Z
+================================================================================
+PR #6938: optimize: update online chat information in README.md (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6938
+Created at: 2024-10-21T03:56:30Z, Merged at: 2024-10-23T01:49:43Z
+================================================================================
+PR #6936: 增加自我描述 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6936
+Created at: 2024-10-19T08:39:53Z, Merged at: None
+================================================================================
+PR #6932: bugfix: Lock contention failure in file & Raft mode did not exit (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6932
+Created at: 2024-10-18T09:18:24Z, Merged at: 2024-10-18T14:56:10Z
+================================================================================
+PR #6928: bugfix: resolve issue in Raft model a follower's crash may lead to the continued use of expired tokens (#6925) (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6928
+Created at: 2024-10-16T04:35:53Z, Merged at: None
+================================================================================
+PR #6927: optimize: expand unit test coverage for the [rocketmq] module. (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6927
+Created at: 2024-10-15T11:27:29Z, Merged at: 2024-10-23T10:24:10Z
+================================================================================
+PR #6926: feature: support ssl communication for raft nodes (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6926
+Created at: 2024-10-15T09:22:06Z, Merged at: 2024-11-28T12:54:46Z
+================================================================================
+PR #6925: bugfix: resolve issue in Raft model a follower's crash may lead to the continued use of expired tokens (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6925
+Created at: 2024-10-15T01:22:16Z, Merged at: 2024-10-15T09:19:10Z
+================================================================================
+PR #6924: feature: add double token support for console and raft registry api (State: open)
+URL: https://github.com/apache/incubator-seata/pull/6924
+Created at: 2024-10-14T18:36:24Z, Merged at: None
+================================================================================
+PR #6923: bugfix: Enhance 401 Error Handling by Refreshing Token in acquireClusterMetaData Method (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6923
+Created at: 2024-10-14T15:54:10Z, Merged at: 2024-10-17T09:58:20Z
+================================================================================
+PR #6920: feat: Add parallelized health check mechanism for Raft nodes (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6920
+Created at: 2024-10-12T11:15:13Z, Merged at: None
+================================================================================
+PR #6918: optimize:Use the openjdk image of eclipse-temurin as the base image (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6918
+Created at: 2024-10-12T08:17:22Z, Merged at: 2024-10-14T09:00:35Z
+================================================================================
+PR #6913: feature: add double token support for seata netty communication authentication (State: open)
+URL: https://github.com/apache/incubator-seata/pull/6913
+Created at: 2024-10-10T19:26:33Z, Merged at: None
+================================================================================
+PR #6911: optimize: fix some typos in project (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6911
+Created at: 2024-10-10T06:47:12Z, Merged at: 2024-10-12T07:46:14Z
+================================================================================
+PR #6910: 2.1.0 Code Change Statistics (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6910
+Created at: 2024-10-10T01:27:59Z, Merged at: None
+================================================================================
+PR #6907: bugfix: fix the issue of Codecov not generating reports (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6907
+Created at: 2024-10-09T09:02:19Z, Merged at: 2024-10-10T01:31:46Z
+================================================================================
+PR #6906: optimize: h2 dependency adds test scope (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6906
+Created at: 2024-10-09T08:08:25Z, Merged at: 2024-10-10T10:17:12Z
+================================================================================
+PR #6905: optimize: remove incompatible licenses at build time (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6905
+Created at: 2024-10-09T06:17:06Z, Merged at: 2024-10-12T02:08:51Z
+================================================================================
+PR #6904: feature: add fastjson2 serializer support (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6904
+Created at: 2024-10-08T13:57:51Z, Merged at: 2024-10-31T02:49:21Z
+================================================================================
+PR #6903: optimize: avoid dead loop logging during cache plan refresh exceptions. (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6903
+Created at: 2024-10-08T08:11:26Z, Merged at: 2024-10-08T08:58:00Z
+================================================================================
+PR #6902: optimize: optimize readme docs (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6902
+Created at: 2024-10-07T15:20:13Z, Merged at: 2024-10-08T02:14:09Z
+================================================================================
+PR #6899: bugfix: fix file.conf read failed after package (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6899
+Created at: 2024-10-03T05:37:14Z, Merged at: 2024-10-08T02:10:44Z
+================================================================================
+PR #6898: optimize: upgrade npmjs version in saga module (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6898
+Created at: 2024-09-30T06:08:31Z, Merged at: 2024-09-30T07:01:17Z
+================================================================================
+PR #6896: optimize: optimize raftsnapshot read (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6896
+Created at: 2024-09-29T17:13:34Z, Merged at: 2024-09-30T02:48:13Z
+================================================================================
+PR #6893: Fix issue like PR #6702 in snapshot module. (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6893
+Created at: 2024-09-29T04:14:50Z, Merged at: None
+================================================================================
+PR #6892: optimize: upgrade npmjs version (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6892
+Created at: 2024-09-29T02:39:19Z, Merged at: 2024-09-29T03:08:29Z
+================================================================================
+PR #6891: optimize: add StateType Enum (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6891
+Created at: 2024-09-28T16:29:23Z, Merged at: 2024-11-29T02:16:16Z
+================================================================================
+PR #6890: bugfix: DesignerJson to StandardJson: SubStateMachine CompensateState cannot be recognized  (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6890
+Created at: 2024-09-28T14:30:24Z, Merged at: 2024-10-08T06:20:20Z
+================================================================================
+PR #6889: optimize: Correct word spelling errors (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6889
+Created at: 2024-09-28T14:23:59Z, Merged at: 2024-09-30T03:01:00Z
+================================================================================
+PR #6883: optimize: removed write only object (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6883
+Created at: 2024-09-27T12:10:41Z, Merged at: 2024-09-30T06:39:31Z
+================================================================================
+PR #6881: feature: support grpc protocol (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6881
+Created at: 2024-09-26T14:25:36Z, Merged at: 2024-10-05T05:14:21Z
+================================================================================
+PR #6879: optimize: Log args mismatch (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6879
+Created at: 2024-09-25T20:26:43Z, Merged at: 2024-10-08T08:58:16Z
+================================================================================
+PR #6878: feature: support double token for seata authentication and support raft ssl communication (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6878
+Created at: 2024-09-25T17:15:57Z, Merged at: 2024-10-30T13:11:12Z
+================================================================================
+PR #6876: feature: support kingbase (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6876
+Created at: 2024-09-24T09:44:34Z, Merged at: 2024-09-29T09:25:09Z
+================================================================================
+PR #6874: optimize: modify the version to 2.3.0-SNAPSHOT (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6874
+Created at: 2024-09-22T15:52:14Z, Merged at: 2024-09-23T01:21:42Z
+================================================================================
+PR #6873: bugfix: DesignerJson to StandardJson: SubStateMachine CompensateState cannot be recognized (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6873
+Created at: 2024-09-21T03:49:06Z, Merged at: None
+================================================================================
+PR #6872: optimize: sync 2.2.0 to 2.x branch (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6872
+Created at: 2024-09-20T16:16:27Z, Merged at: 2024-09-21T13:39:19Z
+================================================================================
+PR #6869: test: add test for seata-core (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6869
+Created at: 2024-09-19T11:11:45Z, Merged at: 2024-11-30T13:39:37Z
+================================================================================
+PR #6867: optimize: update notice.md and LICENSE (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6867
+Created at: 2024-09-19T10:11:24Z, Merged at: 2024-09-19T10:13:24Z
+================================================================================
+PR #6866: optimize: windows and macos do not start container (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6866
+Created at: 2024-09-18T14:47:38Z, Merged at: 2024-09-19T05:36:48Z
+================================================================================
+PR #6864: feature: support shentong database (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6864
+Created at: 2024-09-18T06:50:11Z, Merged at: 2024-10-11T07:16:11Z
+================================================================================
+PR #6863: optimize: update NOTICE.md (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6863
+Created at: 2024-09-18T05:39:35Z, Merged at: 2024-09-18T05:46:10Z
+================================================================================
+PR #6861: feature: Namingserver watch support http2 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6861
+Created at: 2024-09-17T11:33:15Z, Merged at: 2024-10-29T14:44:24Z
+================================================================================
+PR #6859: bugfix: duplicated dependency #6857 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6859
+Created at: 2024-09-16T13:52:06Z, Merged at: 2024-09-16T14:23:34Z
+================================================================================
+PR #6858: bugfix: duplicated dependency #6857 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6858
+Created at: 2024-09-16T13:47:42Z, Merged at: None
+================================================================================
+PR #6855: bugfix: after scaling down a Raft cluster, the metadata still contains the removed node (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6855
+Created at: 2024-09-14T06:53:27Z, Merged at: 2024-09-16T08:31:26Z
+================================================================================
+PR #6852: optimize: raft metadata api (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6852
+Created at: 2024-09-14T01:41:38Z, Merged at: 2024-09-14T13:51:01Z
+================================================================================
+PR #6850: bugfix: raft mode is backward compatible with version 2.0 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6850
+Created at: 2024-09-13T08:51:45Z, Merged at: 2024-09-13T09:10:45Z
+================================================================================
+PR #6845: bugfix: rocksDB opens the same file multiple times (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6845
+Created at: 2024-09-12T02:25:34Z, Merged at: 2024-09-12T03:02:07Z
+================================================================================
+PR #6843: bugfix: Fix 403 error when sending a POST request from the console (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6843
+Created at: 2024-09-11T05:20:19Z, Merged at: 2024-09-11T07:27:20Z
+================================================================================
+PR #6841: optimize: update the LICENSE and NOTICE files and standardize dependency versions (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6841
+Created at: 2024-09-11T02:00:43Z, Merged at: 2024-09-16T08:32:00Z
+================================================================================
+PR #6840: bugfix:  Unsafe deserialization in processorYaml.java #6839 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6840
+Created at: 2024-09-10T15:46:02Z, Merged at: 2024-09-11T02:22:43Z
+================================================================================
+PR #6838: Improve test coverage by  ignore compatible module (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6838
+Created at: 2024-09-10T12:31:55Z, Merged at: None
+================================================================================
+PR #6836: optimize: add independent nacos for the CI process. (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6836
+Created at: 2024-09-09T11:42:21Z, Merged at: 2024-09-10T09:34:40Z
+================================================================================
+PR #6835: bugfix: fix post method in HttpClientUtil (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6835
+Created at: 2024-09-09T09:50:52Z, Merged at: 2024-09-10T01:37:57Z
+================================================================================
+PR #6833: bugfix: SQLIntegrityConstraintViolationException capture incorrectly when inserting a globallock (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6833
+Created at: 2024-09-09T03:49:14Z, Merged at: 2024-09-11T01:30:27Z
+================================================================================
+PR #6831: optimize: use curator instead of zkclient in registry model (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6831
+Created at: 2024-09-08T13:37:09Z, Merged at: 2024-09-12T08:16:42Z
+================================================================================
+PR #6830: feature: support raft configuration center (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6830
+Created at: 2024-09-08T12:28:58Z, Merged at: 2024-10-27T04:31:37Z
+================================================================================
+PR #6828: optimize: spring boot compatible with file.conf and registry.conf  (#6811) (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6828
+Created at: 2024-09-07T13:02:22Z, Merged at: 2024-12-24T14:48:27Z
+================================================================================
+PR #6827: optimize: rename namingserver registry type (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6827
+Created at: 2024-09-07T12:47:31Z, Merged at: 2024-09-09T05:51:17Z
+================================================================================
+PR #6826: optimize: remove the branch registration operation of the XA read-only transaction (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6826
+Created at: 2024-09-07T11:52:38Z, Merged at: 2024-09-21T14:10:13Z
+================================================================================
+PR #6825: bugfix: the issue where connection held during the first phase of PostgreSQL cannot be rollback (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6825
+Created at: 2024-09-07T06:01:10Z, Merged at: 2024-09-09T06:21:30Z
+================================================================================
+PR #6824: Fix bug in https://github.com/apache/incubator-seata/issues/6814 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6824
+Created at: 2024-09-07T05:31:28Z, Merged at: None
+================================================================================
+PR #6823: optimize: fix typo (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6823
+Created at: 2024-09-07T03:54:10Z, Merged at: 2024-09-11T02:30:42Z
+================================================================================
+PR #6821:  test: Improve the test case (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6821
+Created at: 2024-09-06T00:59:21Z, Merged at: 2024-09-06T06:27:47Z
+================================================================================
+PR #6820: bugfix:Fix file path error in the Dockerfile (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6820
+Created at: 2024-09-05T08:18:02Z, Merged at: 2024-09-05T08:59:53Z
+================================================================================
+PR #6819: optimize: merge the packaging processes of namingserver and seata-server (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6819
+Created at: 2024-09-05T07:07:14Z, Merged at: 2024-09-09T06:17:55Z
+================================================================================
+PR #6817: bugfix: fix namingserver changVgroup failed (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6817
+Created at: 2024-09-05T02:47:11Z, Merged at: 2024-09-06T07:21:38Z
+================================================================================
+PR #6816: bugfix:Fix NPE when getting branchType in a non-global transaction context (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6816
+Created at: 2024-09-05T02:37:28Z, Merged at: 2024-09-05T05:36:03Z
+================================================================================
+PR #6812: bugfix: change group and node offline status are not pushed in real time (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6812
+Created at: 2024-09-04T05:39:58Z, Merged at: 2024-09-04T07:02:46Z
+================================================================================
+PR #6809: test CodeQL (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6809
+Created at: 2024-09-03T14:39:57Z, Merged at: None
+================================================================================
+PR #6808: optimize: change version to 2.2.0-SNAPSHOT (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6808
+Created at: 2024-09-03T05:56:25Z, Merged at: 2024-09-04T03:13:33Z
+================================================================================
+PR #6807: optimize: splitting MergedWarpMessage enhances the server parallel processing capability (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6807
+Created at: 2024-09-03T01:45:18Z, Merged at: 2024-10-31T06:03:45Z
+================================================================================
+PR #6806: optimize: avoid dead loop logging during cache plan refresh exceptions (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6806
+Created at: 2024-09-02T10:37:45Z, Merged at: 2024-09-03T03:40:23Z
+================================================================================
+PR #6803: optimize: compilation and packaging for the ARM64 architecture (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6803
+Created at: 2024-09-01T08:52:47Z, Merged at: 2024-09-13T02:25:30Z
+================================================================================
+PR #6802: [BUG]fix "Connect to nodejs.org:443" (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6802
+Created at: 2024-09-01T04:11:44Z, Merged at: None
+================================================================================
+PR #6801: feature: seata-server support http protocol (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6801
+Created at: 2024-08-31T16:03:38Z, Merged at: 2024-10-27T05:05:08Z
+================================================================================
+PR #6800: optimize: optimize database driver cannot found message (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6800
+Created at: 2024-08-31T08:38:34Z, Merged at: 2024-08-31T14:46:01Z
+================================================================================
+PR #6797: optimize: fall back to any of available cluster address when query cluster address is empty (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6797
+Created at: 2024-08-29T06:49:51Z, Merged at: 2024-08-30T03:28:03Z
+================================================================================
+PR #6795: optimize: optimize the initialization logic for server meta (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6795
+Created at: 2024-08-29T00:36:13Z, Merged at: 2024-09-02T01:56:16Z
+================================================================================
+PR #6794: optimize: optimize NacosMockTest UT case (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6794
+Created at: 2024-08-28T07:33:24Z, Merged at: 2024-08-30T01:23:03Z
+================================================================================
+PR #6793: optimize: fix npmjs conflicts (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6793
+Created at: 2024-08-28T04:35:50Z, Merged at: 2024-08-28T06:15:52Z
+================================================================================
+PR #6791: optimize: optimize database  driver cannot found message(#6760) (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6791
+Created at: 2024-08-27T16:29:46Z, Merged at: None
+================================================================================
+PR #6787: optimize: upgrade elliptic to 6.5.7 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6787
+Created at: 2024-08-27T05:43:58Z, Merged at: 2024-08-27T08:23:41Z
+================================================================================
+PR #6786: bugfix: fix prometheus fail to return seata metrics data when using Nacos (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6786
+Created at: 2024-08-27T03:28:35Z, Merged at: 2024-09-11T01:31:46Z
+================================================================================
+PR #6784: optimize: upgrade axios to 1.7.4 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6784
+Created at: 2024-08-27T02:56:03Z, Merged at: 2024-08-27T03:21:10Z
+================================================================================
+PR #6783: optimize: rename the server naming/v1 api to vgroup/v1 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6783
+Created at: 2024-08-26T15:34:02Z, Merged at: 2024-08-28T01:11:39Z
+================================================================================
+PR #6781: bugfix: the issue where the TC occasionally fails to go offline from the NamingServer (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6781
+Created at: 2024-08-25T15:58:39Z, Merged at: 2024-08-26T13:11:13Z
+================================================================================
+PR #6780: optimize: optimize the reflection operation in class `SerializerServiceLoader` (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6780
+Created at: 2024-08-25T14:02:35Z, Merged at: 2024-08-26T03:49:39Z
+================================================================================
+PR #6779: optimize: use curator instead of zkclient in config model (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6779
+Created at: 2024-08-25T04:46:11Z, Merged at: 2024-09-12T03:22:00Z
+================================================================================
+PR #6778: bugfix: fix the naming server node having a term of 0 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6778
+Created at: 2024-08-24T14:33:23Z, Merged at: 2024-08-25T05:33:23Z
+================================================================================
+PR #6777: [WIP]test: increate the code coverage of the rm-datasource module (State: open)
+URL: https://github.com/apache/incubator-seata/pull/6777
+Created at: 2024-08-23T18:04:50Z, Merged at: None
+================================================================================
+PR #6773: test: fix the wrong code coverage from codecov icon in default branch (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6773
+Created at: 2024-08-21T15:02:59Z, Merged at: 2024-08-23T17:47:17Z
+================================================================================
+PR #6770: optimize: automatic deletion of namingserver vgroup through Caffeine map (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6770
+Created at: 2024-08-19T23:59:05Z, Merged at: 2024-08-23T16:08:17Z
+================================================================================
+PR #6769: bugfix: fix tcc dead lock (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6769
+Created at: 2024-08-19T15:34:32Z, Merged at: 2024-08-22T09:44:30Z
+================================================================================
+PR #6768: optimize: report the tcc fence transaction isolation level (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6768
+Created at: 2024-08-19T14:58:39Z, Merged at: 2024-08-22T09:20:08Z
+================================================================================
+PR #6766: feature: add TCC three-phase hooks (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6766
+Created at: 2024-08-19T08:17:51Z, Merged at: 2024-09-02T06:21:35Z
+================================================================================
+PR #6765: bugfix: Resolve MySQL Driver Loading Issue (#6760) (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6765
+Created at: 2024-08-18T12:14:06Z, Merged at: 2024-08-25T14:43:19Z
+================================================================================
+PR #6764: test: add Apollo mock test case (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6764
+Created at: 2024-08-18T11:54:08Z, Merged at: 2024-08-28T08:36:00Z
+================================================================================
+PR #6763: optimize: optimize NacosConfiguration singleton reload (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6763
+Created at: 2024-08-18T07:29:01Z, Merged at: 2024-08-18T16:30:41Z
+================================================================================
+PR #6761: optimize: the namingserver code to improve readability (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6761
+Created at: 2024-08-17T07:07:25Z, Merged at: 2024-08-18T14:35:07Z
+================================================================================
+PR #6759: bugfix: fix the error of active refresh failure of cross-database table metadata (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6759
+Created at: 2024-08-15T14:34:38Z, Merged at: 2024-09-03T03:01:01Z
+================================================================================
+PR #6757: bugfix: the bug where multiple nodes cannot be retrieved from the naming server (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6757
+Created at: 2024-08-15T07:18:51Z, Merged at: 2024-08-17T06:54:19Z
+================================================================================
+PR #6756: feature: add single server rate limit (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6756
+Created at: 2024-08-14T13:13:52Z, Merged at: 2025-01-22T14:34:35Z
+================================================================================
+PR #6755: optimize: optimize namingserver  (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6755
+Created at: 2024-08-14T00:12:18Z, Merged at: 2024-08-15T06:58:15Z
+================================================================================
+PR #6754: feature: support grpc protocol (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6754
+Created at: 2024-08-14T00:08:35Z, Merged at: None
+================================================================================
+PR #6753: docs: optimize `README.md` sentence spaces (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6753
+Created at: 2024-08-13T20:49:07Z, Merged at: 2024-08-31T14:48:51Z
+================================================================================
+PR #6752: test: Improve the test case coverage of [metrics] module to 70% (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6752
+Created at: 2024-08-13T11:33:34Z, Merged at: 2024-08-31T14:47:25Z
+================================================================================
+PR #6750: test: increase spring autoconfigure module unit test coverage (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6750
+Created at: 2024-08-13T04:16:53Z, Merged at: 2024-08-19T07:39:31Z
+================================================================================
+PR #6749: optimize: optimize WebSecurityConfig csrf (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6749
+Created at: 2024-08-13T03:26:11Z, Merged at: 2024-09-02T01:45:15Z
+================================================================================
+PR #6748: optimize: optimize ConsistentHashLoadBalance Algorithm (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6748
+Created at: 2024-08-13T03:14:10Z, Merged at: 2024-08-13T15:41:31Z
+================================================================================
+PR #6747: optimize: optimize fastjson deserialization (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6747
+Created at: 2024-08-13T02:54:57Z, Merged at: 2024-08-13T03:39:58Z
+================================================================================
+PR #6746: optimize: optimize compatible dependencies (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6746
+Created at: 2024-08-12T17:01:14Z, Merged at: 2024-08-13T02:48:04Z
+================================================================================
+PR #6745: optimize: fix node-gyp build error on arm64 and macos (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6745
+Created at: 2024-08-12T16:23:12Z, Merged at: 2024-08-13T02:09:09Z
+================================================================================
+PR #6743: optimize: upgrade npmjs version in saga (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6743
+Created at: 2024-08-11T12:26:30Z, Merged at: 2024-08-11T15:48:34Z
+================================================================================
+PR #6742: optimize: upgrade npmjs version in console (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6742
+Created at: 2024-08-11T11:37:17Z, Merged at: 2024-08-11T16:07:55Z
+================================================================================
+PR #6741: optimize: upgrade tomcat-embed-core to 9.0.90 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6741
+Created at: 2024-08-11T10:11:11Z, Merged at: 2024-08-12T07:21:03Z
+================================================================================
+PR #6732: optimize: add the default console and security config on application.examle.yml (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6732
+Created at: 2024-08-05T15:43:23Z, Merged at: 2024-08-09T15:10:54Z
+================================================================================
+PR #6728: bugfix: Support serialization for dm.jdbc.driver.DmdbTimestamp (#6701) (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6728
+Created at: 2024-08-03T10:53:18Z, Merged at: 2024-08-11T16:05:59Z
+================================================================================
+PR #6727: optimize: deserialize performance optimize (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6727
+Created at: 2024-08-03T10:43:41Z, Merged at: 2024-08-06T03:17:58Z
+================================================================================
+PR #6722: optimize: Extract datasource proxy metadata (State: open)
+URL: https://github.com/apache/incubator-seata/pull/6722
+Created at: 2024-08-02T08:08:51Z, Merged at: None
+================================================================================
+PR #6717: bugfix: fix dameng on update column will not rollback (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6717
+Created at: 2024-08-01T11:05:35Z, Merged at: None
+================================================================================
+PR #6716: bugfix: fix dameng delete undo fail (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6716
+Created at: 2024-08-01T09:39:51Z, Merged at: 2024-08-01T12:55:05Z
+================================================================================
+PR #6715: bugfix: fix dameng rollback info un compress fail (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6715
+Created at: 2024-08-01T09:03:12Z, Merged at: 2024-08-01T09:19:19Z
+================================================================================
+PR #6714: bugfix: fix dameng delete undo fail (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6714
+Created at: 2024-08-01T08:41:02Z, Merged at: 2024-08-01T09:18:09Z
+================================================================================
+PR #6712: bugfix: fix dameng rollback info un compress fail (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6712
+Created at: 2024-08-01T08:29:38Z, Merged at: None
+================================================================================
+PR #6711: bugfix: fix dameng rollback info un compress fail (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6711
+Created at: 2024-08-01T08:07:28Z, Merged at: 2024-08-01T08:40:14Z
+================================================================================
+PR #6710: bugfix: fix dameng rollback info un compress fail (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6710
+Created at: 2024-08-01T08:00:07Z, Merged at: None
+================================================================================
+PR #6707: bugfix: fix readonly branch commit errors in Oracle XA transactions.  (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6707
+Created at: 2024-07-29T14:07:24Z, Merged at: 2024-07-30T02:37:23Z
+================================================================================
+PR #6706: bugfix: add three tcc fence interceptors to fix tcc fence deadlock ex… (State: open)
+URL: https://github.com/apache/incubator-seata/pull/6706
+Created at: 2024-07-29T02:32:19Z, Merged at: None
+================================================================================
+PR #6704: optimize: fix javadoc version incompatibility issue (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6704
+Created at: 2024-07-27T17:25:26Z, Merged at: 2024-07-27T17:28:40Z
+================================================================================
+PR #6702: optimize: optimize Raft deserialization (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6702
+Created at: 2024-07-26T13:56:35Z, Merged at: 2024-07-27T15:27:03Z
+================================================================================
+PR #6700: optimize : remove sdk version checking  (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6700
+Created at: 2024-07-25T09:32:11Z, Merged at: 2024-07-25T13:32:23Z
+================================================================================
+PR #6697: bugfix: v0 ByteBuf should not decode by super class (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6697
+Created at: 2024-07-24T09:33:26Z, Merged at: 2024-07-25T08:12:49Z
+================================================================================
+PR #6695: test : old version(< 0.7.1) client test case for multi-version protocol  (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6695
+Created at: 2024-07-24T09:17:00Z, Merged at: 2024-07-30T07:12:34Z
+================================================================================
+PR #6692: optimize: fix node-gyp build error on arm64 and macos (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6692
+Created at: 2024-07-23T12:51:27Z, Merged at: 2024-07-24T03:43:49Z
+================================================================================
+PR #6691: optimize: add release notes (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6691
+Created at: 2024-07-23T12:06:33Z, Merged at: 2024-07-23T12:07:04Z
+================================================================================
+PR #6688: optimize: delete static code built on the frontend (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6688
+Created at: 2024-07-20T16:35:40Z, Merged at: 2024-07-20T16:41:56Z
+================================================================================
+PR #6687: optimize: delete static code built on the frontend (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6687
+Created at: 2024-07-20T10:41:39Z, Merged at: 2024-07-22T14:05:20Z
+================================================================================
+PR #6684: 在edas 3.5.x版本下ClientFilter、ServerFilter需分开实现 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6684
+Created at: 2024-07-19T02:12:16Z, Merged at: None
+================================================================================
+PR #6678: bugfix: Fixed that the same record has different lowkeys due to mixed case of table names (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6678
+Created at: 2024-07-15T13:36:17Z, Merged at: 2024-07-16T14:40:10Z
+================================================================================
+PR #6677: optimize: add license header for SPI file (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6677
+Created at: 2024-07-13T16:33:25Z, Merged at: 2024-07-13T16:33:48Z
+================================================================================
+PR #6676: bugfix: fix hsf ConsumerModel convert error (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6676
+Created at: 2024-07-13T16:30:38Z, Merged at: 2024-07-13T16:30:58Z
+================================================================================
+PR #6675: bugfix: fix Alibaba Dubbo convert error (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6675
+Created at: 2024-07-13T16:27:12Z, Merged at: 2024-07-13T16:27:50Z
+================================================================================
+PR #6674: optimize: update source license (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6674
+Created at: 2024-07-13T16:21:24Z, Merged at: 2024-07-13T16:21:58Z
+================================================================================
+PR #6673: optimize: add license header for spring config file (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6673
+Created at: 2024-07-13T16:17:44Z, Merged at: 2024-07-13T16:18:16Z
+================================================================================
+PR #6672: optimize: update front-end license (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6672
+Created at: 2024-07-13T16:11:58Z, Merged at: 2024-07-13T16:12:23Z
+================================================================================
+PR #6671: optimize: optimize multiple licenses and remove license urls (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6671
+Created at: 2024-07-13T16:05:32Z, Merged at: 2024-07-13T16:08:39Z
+================================================================================
+PR #6670: optimize: add license header for proto file (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6670
+Created at: 2024-07-13T15:58:40Z, Merged at: 2024-07-13T16:00:31Z
+================================================================================
+PR #6668: bugfix: thread safety issue when adding and removing instances (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6668
+Created at: 2024-07-12T08:11:25Z, Merged at: 2024-07-13T06:07:42Z
+================================================================================
+PR #6667: optimize: namingserver log output (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6667
+Created at: 2024-07-12T06:00:51Z, Merged at: 2024-07-12T06:37:24Z
+================================================================================
+PR #6666: optimize: add ExceptionUtil class for unwarp error msg (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6666
+Created at: 2024-07-12T03:53:23Z, Merged at: 2024-07-12T08:15:02Z
+================================================================================
+PR #6663: bugfix: fix cache scheduled refresh issue (#6661) (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6663
+Created at: 2024-07-10T02:05:42Z, Merged at: 2024-07-10T05:40:34Z
+================================================================================
+PR #6661: bugfix: fix cache scheduled refresh issue. (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6661
+Created at: 2024-07-09T06:17:01Z, Merged at: 2024-07-09T07:52:53Z
+================================================================================
+PR #6658: feat: try sonar cloud (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6658
+Created at: 2024-07-08T13:50:18Z, Merged at: None
+================================================================================
+PR #6656: optimize: update source license (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6656
+Created at: 2024-07-08T03:49:02Z, Merged at: 2024-07-09T03:13:01Z
+================================================================================
+PR #6655: optimize: update front-end license (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6655
+Created at: 2024-07-08T03:33:17Z, Merged at: 2024-07-08T05:59:40Z
+================================================================================
+PR #6654: optimize: add namingserver distribution (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6654
+Created at: 2024-07-08T01:07:16Z, Merged at: 2024-07-12T03:49:53Z
+================================================================================
+PR #6653: optimize: optimize multiple licenses and remove license urls (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6653
+Created at: 2024-07-07T16:48:07Z, Merged at: 2024-07-08T02:32:09Z
+================================================================================
+PR #6652: optimize: add license header for spring config file (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6652
+Created at: 2024-07-07T12:44:02Z, Merged at: 2024-07-09T03:12:19Z
+================================================================================
+PR #6651: optimize: add license header for proto file (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6651
+Created at: 2024-07-07T12:17:30Z, Merged at: 2024-07-07T22:57:01Z
+================================================================================
+PR #6650: optimize: add license header for SPI file (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6650
+Created at: 2024-07-07T11:58:19Z, Merged at: 2024-07-07T22:55:48Z
+================================================================================
+PR #6649: optimize: add license header (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6649
+Created at: 2024-07-07T11:03:59Z, Merged at: 2024-07-07T12:50:03Z
+================================================================================
+PR #6648: optimize:add license header (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6648
+Created at: 2024-07-07T10:50:24Z, Merged at: 2024-07-07T12:48:50Z
+================================================================================
+PR #6647: test: improve the test case coverage of saga module to 70% (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6647
+Created at: 2024-07-06T09:16:28Z, Merged at: 2024-07-06T14:05:36Z
+================================================================================
+PR #6646: fix(6509): improve the test case coverage of saga module to 70% (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6646
+Created at: 2024-07-06T04:23:41Z, Merged at: None
+================================================================================
+PR #6645: fix(6509): improve the test case coverage of saga module to 70% (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6645
+Created at: 2024-07-06T04:01:33Z, Merged at: None
+================================================================================
+PR #6642: bugfix: codecov token not found (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6642
+Created at: 2024-07-04T08:55:08Z, Merged at: 2024-07-04T09:19:07Z
+================================================================================
+PR #6640: optimize: modify codecov version (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6640
+Created at: 2024-07-03T12:30:31Z, Merged at: 2024-07-04T08:09:42Z
+================================================================================
+PR #6636: Fix stack overflow issue (State: open)
+URL: https://github.com/apache/incubator-seata/pull/6636
+Created at: 2024-06-28T09:47:52Z, Merged at: None
+================================================================================
+PR #6634: optimize: select channel handles based on protocol versions (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6634
+Created at: 2024-06-27T02:58:00Z, Merged at: 2024-07-01T07:34:44Z
+================================================================================
+PR #6632: bugfix: fix hsf ConsumerModel convert error (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6632
+Created at: 2024-06-26T06:48:57Z, Merged at: 2024-06-26T09:32:41Z
+================================================================================
+PR #6629: bugfix: fix readonly branch commit errors in Oracle XA transactions. (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6629
+Created at: 2024-06-24T03:36:00Z, Merged at: None
+================================================================================
+PR #6628: bugfix: fix Alibaba Dubbo convert error (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6628
+Created at: 2024-06-23T14:29:31Z, Merged at: 2024-06-24T12:39:02Z
+================================================================================
+PR #6627: bugfix: fix the issue of xaEnded not being reset (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6627
+Created at: 2024-06-22T16:42:01Z, Merged at: 2024-06-26T09:45:21Z
+================================================================================
+PR #6626: bugfix: fix hsf ConsumerModel convert error (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6626
+Created at: 2024-06-22T10:13:59Z, Merged at: 2024-06-25T05:58:21Z
+================================================================================
+PR #6624: bugfix: fix Alibaba Dubbo convert error (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6624
+Created at: 2024-06-21T06:27:50Z, Merged at: 2024-06-21T16:13:50Z
+================================================================================
+PR #6621: optimize:  archive 2.1 version change log (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6621
+Created at: 2024-06-20T03:34:04Z, Merged at: 2024-06-21T02:02:02Z
+================================================================================
+PR #6613: optimize: add release notes and change version to 2.1.0 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6613
+Created at: 2024-06-14T13:11:03Z, Merged at: 2024-06-15T09:10:14Z
+================================================================================
+PR #6610: optimize: revise the notice file (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6610
+Created at: 2024-06-13T03:14:37Z, Merged at: 2024-06-13T04:32:47Z
+================================================================================
+PR #6609: optimize: revise the notice file (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6609
+Created at: 2024-06-12T17:09:12Z, Merged at: 2024-06-13T02:13:05Z
+================================================================================
+PR #6608: test: Improve the test case coverage of [sqlparser] module to 70% (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6608
+Created at: 2024-06-12T08:02:13Z, Merged at: 2024-07-12T10:14:13Z
+================================================================================
+PR #6605: optimize: revised the license and notice (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6605
+Created at: 2024-06-09T15:20:53Z, Merged at: 2024-06-10T13:11:15Z
+================================================================================
+PR #6602: 2.1.0 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6602
+Created at: 2024-06-06T08:32:08Z, Merged at: None
+================================================================================
+PR #6599: optimize: add release notes and change version to 2.1.0 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6599
+Created at: 2024-06-04T02:54:52Z, Merged at: 2024-06-04T02:55:38Z
+================================================================================
+PR #6597: optimize: remove binary from source code (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6597
+Created at: 2024-06-03T08:44:01Z, Merged at: 2024-06-04T02:11:16Z
+================================================================================
+PR #6592: bugfix:fix @Async annotation not working. (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6592
+Created at: 2024-05-30T08:05:26Z, Merged at: 2024-06-20T02:31:48Z
+================================================================================
+PR #6585: optimize: optimize compatible module pom.xml (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6585
+Created at: 2024-05-27T17:23:12Z, Merged at: 2024-05-28T07:44:24Z
+================================================================================
+PR #6583: optimize: optimize the default compilation to be independent of the Git Env (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6583
+Created at: 2024-05-27T12:17:05Z, Merged at: 2024-05-27T15:10:15Z
+================================================================================
+PR #6581: optimize: add release notes and change version to 2.1.0 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6581
+Created at: 2024-05-26T14:03:56Z, Merged at: 2024-05-28T10:51:29Z
+================================================================================
+PR #6580: feature：seata benchmark (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6580
+Created at: 2024-05-25T10:16:20Z, Merged at: None
+================================================================================
+PR #6578: optimize: registry.conf supplemented raft configuration (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6578
+Created at: 2024-05-24T08:42:58Z, Merged at: 2024-05-24T09:18:22Z
+================================================================================
+PR #6576: optimize: remove oracle datatype parser (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6576
+Created at: 2024-05-24T08:01:18Z, Merged at: 2024-05-24T09:07:00Z
+================================================================================
+PR #6575: bugfix: io.seata ActionInterceptorHandler use org.apache.seata BusinessActionContextParameter (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6575
+Created at: 2024-05-23T15:32:14Z, Merged at: 2024-05-24T06:53:11Z
+================================================================================
+PR #6572: optimize: add release notes and change version to 2.1.0 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6572
+Created at: 2024-05-23T03:01:44Z, Merged at: 2024-05-23T03:02:02Z
+================================================================================
+PR #6571: infra: prepare delete tag v2.1.0 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6571
+Created at: 2024-05-23T02:24:51Z, Merged at: 2024-05-23T02:29:41Z
+================================================================================
+PR #6570: optimize: add notice file to binary (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6570
+Created at: 2024-05-22T15:08:29Z, Merged at: 2024-05-23T01:38:10Z
+================================================================================
+PR #6569: bugfix: fix when doing global rollback ,may cause an endless loop (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6569
+Created at: 2024-05-22T05:09:21Z, Merged at: None
+================================================================================
+PR #6567: version: change version to 2.1.0 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6567
+Created at: 2024-05-21T10:31:22Z, Merged at: 2024-05-21T10:45:07Z
+================================================================================
+PR #6566: optimize: add support for configuring exposeProxy in GlobalTransactionScanner (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6566
+Created at: 2024-05-21T08:30:22Z, Merged at: 2024-07-02T02:10:53Z
+================================================================================
+PR #6565: test: fix testCompensationStateMachine fail (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6565
+Created at: 2024-05-21T08:08:53Z, Merged at: 2024-05-21T10:15:39Z
+================================================================================
+PR #6560: test : fix mock-server test, do not shutdown in Runtime.getRuntime().addShutdownHook (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6560
+Created at: 2024-05-20T02:40:47Z, Merged at: 2024-05-20T09:22:41Z
+================================================================================
+PR #6558: optimize: remove mysql-connector-java from pom.xml (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6558
+Created at: 2024-05-18T08:31:17Z, Merged at: 2024-05-18T09:02:36Z
+================================================================================
+PR #6557: sync 2.x to 2.1.0 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6557
+Created at: 2024-05-17T03:06:14Z, Merged at: 2024-05-17T03:06:33Z
+================================================================================
+PR #6555: bugfix: fix businessActionContext not compatible with io.seata (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6555
+Created at: 2024-05-16T14:31:01Z, Merged at: 2024-05-16T16:23:24Z
+================================================================================
+PR #6554: bugfix: unfixed serializer (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6554
+Created at: 2024-05-16T12:52:56Z, Merged at: 2024-05-16T15:00:13Z
+================================================================================
+PR #6553: bugfix: fix saga "cannot matching status" (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6553
+Created at: 2024-05-16T12:02:56Z, Merged at: 2024-05-16T12:52:45Z
+================================================================================
+PR #6551: bug: setting up a Raft cluster using domain, the listening request port is error (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6551
+Created at: 2024-05-16T04:04:07Z, Merged at: 2024-06-26T09:58:40Z
+================================================================================
+PR #6550: optimize: optimize workflow and UT (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6550
+Created at: 2024-05-16T01:53:38Z, Merged at: 2024-05-16T02:35:06Z
+================================================================================
+PR #6549: optimize: macos workflow support arm testing (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6549
+Created at: 2024-05-15T12:27:55Z, Merged at: 2024-05-16T01:51:46Z
+================================================================================
+PR #6548: optimize: upgrade the byte-buddy version to 1.14.15 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6548
+Created at: 2024-05-15T07:43:19Z, Merged at: 2024-05-15T12:16:52Z
+================================================================================
+PR #6547: bugfix: Corrected an issue in the Seata AT mode where, upon multiple … (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6547
+Created at: 2024-05-14T10:35:13Z, Merged at: None
+================================================================================
+PR #6545: test: fix TestConfigCustomSPI compatibility test fail (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6545
+Created at: 2024-05-14T04:01:14Z, Merged at: 2024-05-14T05:37:16Z
+================================================================================
+PR #6543: optimize: upgrade the byte-buddy version to 1.14.15 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6543
+Created at: 2024-05-14T03:37:39Z, Merged at: None
+================================================================================
+PR #6541: version: change version to 2.1.0 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6541
+Created at: 2024-05-14T02:58:44Z, Merged at: 2024-05-21T07:21:12Z
+================================================================================
+PR #6540: optimize: exclude com.google.guava:listenablefuture (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6540
+Created at: 2024-05-13T07:07:28Z, Merged at: 2024-05-14T02:25:05Z
+================================================================================
+PR #6539: optimize: add subcomponents license (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6539
+Created at: 2024-05-13T05:50:11Z, Merged at: 2024-05-13T06:03:33Z
+================================================================================
+PR #6538: feature：init Namingserver server (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6538
+Created at: 2024-05-13T04:51:08Z, Merged at: 2024-07-30T07:47:11Z
+================================================================================
+PR #6537: feature: init Namingserver (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6537
+Created at: 2024-05-13T04:49:09Z, Merged at: 2024-07-05T01:15:48Z
+================================================================================
+PR #6536: feature: init namingserver client (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6536
+Created at: 2024-05-13T04:47:34Z, Merged at: 2024-08-13T15:56:44Z
+================================================================================
+PR #6534: optimize: send async response (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6534
+Created at: 2024-05-12T08:30:17Z, Merged at: 2024-06-20T08:09:25Z
+================================================================================
+PR #6533: test: Increase [integration-tx-api] module test case coverage (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6533
+Created at: 2024-05-12T08:23:40Z, Merged at: 2024-07-29T09:40:25Z
+================================================================================
+PR #6529: optimize: optimize release maven plugin (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6529
+Created at: 2024-05-11T04:59:25Z, Merged at: 2024-05-11T09:34:30Z
+================================================================================
+PR #6524: fix(6502): supplement the store unit test cases in the [core] module. (State: open)
+URL: https://github.com/apache/incubator-seata/pull/6524
+Created at: 2024-05-07T14:25:37Z, Merged at: None
+================================================================================
+PR #6523: optimize: upgrade alibaba/druid version  to 1.2.20 (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6523
+Created at: 2024-05-06T09:52:23Z, Merged at: 2024-06-26T10:13:44Z
+================================================================================
+PR #6521: optimize: optimize kotlin-maven-plugin (State: open)
+URL: https://github.com/apache/incubator-seata/pull/6521
+Created at: 2024-05-06T04:16:46Z, Merged at: None
+================================================================================
+PR #6519: fix(6509): improve the test case coverage of saga module to 70% (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6519
+Created at: 2024-05-05T06:21:10Z, Merged at: None
+================================================================================
+PR #6518: optimize: optimize ConfigurationCache proxy method (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6518
+Created at: 2024-05-01T15:52:51Z, Merged at: 2024-05-06T05:39:33Z
+================================================================================
+PR #6516: optimize: optimize code format (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6516
+Created at: 2024-04-30T07:22:59Z, Merged at: 2024-05-01T16:01:36Z
+================================================================================
+PR #6511: bugfix: the failure of rollbacking back of the delete SQL at AT mode when using SQLServer (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6511
+Created at: 2024-04-28T17:02:20Z, Merged at: 2024-09-11T02:01:44Z
+================================================================================
+PR #6499: optimize: split the task thread pool for committing and rollbacking statuses (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6499
+Created at: 2024-04-26T03:43:30Z, Merged at: 2024-06-20T09:44:11Z
+================================================================================
+PR #6497: fix(6495): [seata.tcc] should not be null (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6497
+Created at: 2024-04-23T13:12:59Z, Merged at: 2024-04-24T01:13:36Z
+================================================================================
+PR #6496: bugfix: fix XA rollback on commit failure (#6492) (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6496
+Created at: 2024-04-23T12:29:15Z, Merged at: 2024-04-24T01:57:21Z
+================================================================================
+PR #6493: bugfix: fix SQLServer-related SQL error when using database of SQLServer (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6493
+Created at: 2024-04-22T17:57:53Z, Merged at: 2024-04-26T03:32:53Z
+================================================================================
+PR #6487: optimize: seata plugin jackson parser package name (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6487
+Created at: 2024-04-19T04:07:22Z, Merged at: 2024-04-22T07:37:30Z
+================================================================================
+PR #6484: test: fix FileConfigurationTest and MockServerTest fail (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6484
+Created at: 2024-04-18T02:04:39Z, Merged at: 2024-04-22T07:35:56Z
+================================================================================
+PR #6483: bugfix: undolog rollback info more than 64MB (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6483
+Created at: 2024-04-17T09:46:35Z, Merged at: 2024-07-31T08:32:58Z
+================================================================================
+PR #6477: bugfix: fix SQLServer-related SQL error when using database of SQLServer (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6477
+Created at: 2024-04-14T03:04:29Z, Merged at: None
+================================================================================
+PR #6475: bugfix: fix the failure of @BusinessActionContextParamete annotation … (State: open)
+URL: https://github.com/apache/incubator-seata/pull/6475
+Created at: 2024-04-10T18:46:55Z, Merged at: None
+================================================================================
+PR #6473: Hotfix tcc context param (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6473
+Created at: 2024-04-08T16:59:35Z, Merged at: None
+================================================================================
+PR #6469: bugfix: sqlserver lock_table missing status placeholder (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6469
+Created at: 2024-04-07T09:10:40Z, Merged at: 2024-04-08T06:52:30Z
+================================================================================
+PR #6466: test: support Redis integration testing (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6466
+Created at: 2024-04-07T02:48:22Z, Merged at: 2024-04-17T14:20:50Z
+================================================================================
+PR #6465: bugfix: fix saga mode replay context lost start in 2.x (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6465
+Created at: 2024-04-06T13:24:35Z, Merged at: 2024-04-06T14:44:09Z
+================================================================================
+PR #6464: Update 2.x.md (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6464
+Created at: 2024-04-05T19:52:22Z, Merged at: None
+================================================================================
+PR #6463: Update 2.x.md (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6463
+Created at: 2024-04-05T19:51:20Z, Merged at: None
+================================================================================
+PR #6458: optimize: add null value check for MAC address (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6458
+Created at: 2024-04-02T07:27:04Z, Merged at: 2024-04-23T02:44:50Z
+================================================================================
+PR #6456: test: adjust the test cases related to dynamic configuration (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6456
+Created at: 2024-04-01T06:28:14Z, Merged at: 2024-04-08T15:23:11Z
+================================================================================
+PR #6442: optimize: clarify if conditions (State: closed)
+URL: https://github.com/apache/incubator-seata/pull/6442
+Created at: 2024-03-23T19:42:56Z, Merged at: 2024-04-08T02:20:40Z
+================================================================================

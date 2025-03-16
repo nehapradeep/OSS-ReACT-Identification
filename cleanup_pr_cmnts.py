@@ -1,7 +1,8 @@
 import re
 
 repos = [
-    {'owner': 'Kanaries', 'repo': 'pygwalker'}
+    # {'owner': 'Kanaries', 'repo': 'pygwalker'}
+    {'owner': 'apache', 'repo': 'incubator-seata'}
     #{'owner': 'apache', 'repo': 'ResDB'},
     #{'owner': 'apache', 'repo': 'kvrocks'},
     # {'owner': 'apache', 'repo': 'doris'},

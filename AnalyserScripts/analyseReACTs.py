@@ -14,6 +14,7 @@ from datetime import datetime
 # React 38
 
 from datetime import datetime
+csv.field_size_limit(1000000)
 
 def analyze_react_metrics(csv_filename, project_name, output_file="../final_react_analysis.csv"):
     project_metrics = {
@@ -294,8 +295,8 @@ def analyze_react_38_with_loc(file_path, project_name, min_commits=10, min_month
 
 def main():
     project_path = '../'
-    project_name = 'pygwalker'
-    input_csv = os.path.join(project_path, "pydrillerCSV", project_name, "pygwalker_commit_data.csv")
+    project_name = 'seata'
+    input_csv = os.path.join(project_path, "pydrillerCSV", project_name, "seata_commit_data.csv")
     output_csv = "../final_react_analysis.csv"
     react_number = "ReACT-16"
 
