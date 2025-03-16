@@ -1,0 +1,1 @@
+File client/src/test/java/org/apache/rocketmq/client/consumer/DefaultLitePullConsumerTest.java not found in the repository.

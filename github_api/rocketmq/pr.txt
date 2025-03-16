@@ -1,0 +1,940 @@
+PR #9252: [ISSUE apache#9249]延迟消息，投递失败，投递设置的开始offset有误修改 (State: open)
+URL: https://github.com/apache/rocketmq/pull/9252
+Created at: 2025-03-16T11:35:20Z, Merged at: None
+================================================================================
+PR #9251: Optimized ConsumerOffsetManager for Faster Topic & Group Lookups (State: open)
+URL: https://github.com/apache/rocketmq/pull/9251
+Created at: 2025-03-16T08:14:30Z, Merged at: None
+================================================================================
+PR #9250: Fix unstable test: BrokerOuterAPITest.test_needRegister_timeout (State: open)
+URL: https://github.com/apache/rocketmq/pull/9250
+Created at: 2025-03-15T14:44:15Z, Merged at: None
+================================================================================
+PR #9247: [ISSUE #9246] Support init offset mode in PopConsumerService (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9247
+Created at: 2025-03-14T11:47:45Z, Merged at: 2025-03-15T07:02:07Z
+================================================================================
+PR #9245: [ISSUE #9244] Avoid writing dirty data in consumption mode (State: open)
+URL: https://github.com/apache/rocketmq/pull/9245
+Created at: 2025-03-14T07:05:37Z, Merged at: None
+================================================================================
+PR #9243: 4.9.6 (State: open)
+URL: https://github.com/apache/rocketmq/pull/9243
+Created at: 2025-03-14T04:00:06Z, Merged at: None
+================================================================================
+PR #9242: [ISSUE #9241] RocksDBConsumeQueueStore do not need to update storeCheckPoint (State: open)
+URL: https://github.com/apache/rocketmq/pull/9242
+Created at: 2025-03-13T11:58:02Z, Merged at: None
+================================================================================
+PR #9239: fix master-slave sync issue in Dledger mode (State: open)
+URL: https://github.com/apache/rocketmq/pull/9239
+Created at: 2025-03-13T02:34:58Z, Merged at: None
+================================================================================
+PR #9238: Update NOTICE (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9238
+Created at: 2025-03-12T09:10:52Z, Merged at: 2025-03-13T07:57:44Z
+================================================================================
+PR #9236: [ISSUE #9235] fix: response codes do not match (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9236
+Created at: 2025-03-11T08:43:42Z, Merged at: None
+================================================================================
+PR #9234: [ISSUE #9233] Query message in tiered storage may fail for the first correct index file was not selected (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9234
+Created at: 2025-03-11T02:34:58Z, Merged at: 2025-03-13T09:02:58Z
+================================================================================
+PR #9232: [maven-release-plugin] prepare for next development iteration (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9232
+Created at: 2025-03-08T06:11:45Z, Merged at: 2025-03-08T09:20:49Z
+================================================================================
+PR #9231: [maven-release-plugin] prepare release rocketmq-all-5.3.2 (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9231
+Created at: 2025-03-07T08:28:56Z, Merged at: 2025-03-08T06:07:17Z
+================================================================================
+PR #9230: [ISSUE #9227] Release rocketmq-all-5.3.2 (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9230
+Created at: 2025-03-07T08:21:24Z, Merged at: None
+================================================================================
+PR #9228: [ISSUE #9227] Prepare to release Apache RocketMQ 5.3.2 (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9228
+Created at: 2025-03-06T02:56:56Z, Merged at: 2025-03-07T07:45:26Z
+================================================================================
+PR #9226: Add test to test the exception branch (State: open)
+URL: https://github.com/apache/rocketmq/pull/9226
+Created at: 2025-03-05T07:48:17Z, Merged at: None
+================================================================================
+PR #9224: [ISSUE #9223] Pop consumer example add the default NamesrvAddr (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9224
+Created at: 2025-03-04T08:59:10Z, Merged at: 2025-03-07T05:47:35Z
+================================================================================
+PR #9222: [ISSUE #9221] Extract some common code in BrokerPathConfigHelper (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9222
+Created at: 2025-03-03T14:53:39Z, Merged at: 2025-03-04T07:20:28Z
+================================================================================
+PR #9218: [ISSUE #9217] Fix broker's inflight and available message counts incorrect when the pop consumer service is enabled (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9218
+Created at: 2025-03-03T03:46:31Z, Merged at: 2025-03-03T06:24:02Z
+================================================================================
+PR #9214: [ISSUE #9213] Fix get the earliest time error when data is clean up in tiered storage (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9214
+Created at: 2025-02-28T03:41:14Z, Merged at: 2025-03-03T01:58:06Z
+================================================================================
+PR #9212: [ISSUE #8589] Optimize RocksDB CQ shutdown when using DoubleWriteCQ (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9212
+Created at: 2025-02-28T03:13:09Z, Merged at: 2025-02-28T06:19:38Z
+================================================================================
+PR #9211: Revert "[ISSUE #9176] Fix pop message header missing fields when enable ACL 2.0" (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9211
+Created at: 2025-02-27T11:22:58Z, Merged at: 2025-02-28T01:52:46Z
+================================================================================
+PR #9210: Support for ibm J9 (State: open)
+URL: https://github.com/apache/rocketmq/pull/9210
+Created at: 2025-02-27T03:17:31Z, Merged at: None
+================================================================================
+PR #9207: [ISSUE #9206] Fix slave sync topic sub in rocksdb ha (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9207
+Created at: 2025-02-26T01:59:29Z, Merged at: 2025-02-26T03:27:40Z
+================================================================================
+PR #9204: [ISSUE #9203] Replace numbers with static variables defined in RequestCode (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9204
+Created at: 2025-02-24T08:55:17Z, Merged at: 2025-02-25T00:09:53Z
+================================================================================
+PR #9202: [ISSUE #9201] cleanup dead code patterns and improve readability and maintainability. (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9202
+Created at: 2025-02-23T13:38:16Z, Merged at: 2025-02-24T00:44:36Z
+================================================================================
+PR #9197: [ISSUE #9196] Broker return pop stats when receive notification (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9197
+Created at: 2025-02-20T09:44:42Z, Merged at: 2025-03-03T03:35:03Z
+================================================================================
+PR #9194: [ISSUE #9193]Optimized get sequential message lock logic (State: open)
+URL: https://github.com/apache/rocketmq/pull/9194
+Created at: 2025-02-19T12:33:43Z, Merged at: None
+================================================================================
+PR #9192: [ISSUE #9191] Provide the ability to replace the remoting layer implementation for Proxy and Broker (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9192
+Created at: 2025-02-19T09:52:42Z, Merged at: 2025-02-24T04:27:30Z
+================================================================================
+PR #9189: [ISSUE #9188] Use fastjson2 in org/apache/rocketmq/broker/config/v1 (State: open)
+URL: https://github.com/apache/rocketmq/pull/9189
+Created at: 2025-02-17T13:03:41Z, Merged at: None
+================================================================================
+PR #9186: [ISSUE #9187] The request should be rejected if the queueOffset equals maxOffset when changing the invisible time (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9186
+Created at: 2025-02-17T08:23:43Z, Merged at: 2025-02-19T09:24:50Z
+================================================================================
+PR #9185: [ISSUE #9184] Optimize QueueLockManager#tryLock method in Pop (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9185
+Created at: 2025-02-16T15:22:34Z, Merged at: 2025-03-07T05:46:52Z
+================================================================================
+PR #9183: [ISSUE #9182] Fix NameServer will be not ready forever when set needWaitForService to true (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9183
+Created at: 2025-02-14T10:01:26Z, Merged at: 2025-02-17T03:38:51Z
+================================================================================
+PR #9180: [ISSUE #9181] update fastjson version (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9180
+Created at: 2025-02-12T08:00:03Z, Merged at: 2025-02-13T02:04:51Z
+================================================================================
+PR #9179: [ISSUE #9176] Fix pop message header missing fields when enable ACL 2.0 (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9179
+Created at: 2025-02-12T06:06:52Z, Merged at: 2025-02-21T06:17:03Z
+================================================================================
+PR #9178: [ISSUE #9177] Fix unstable tests in AdaptiveLockTest.testAdaptiveLock  (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9178
+Created at: 2025-02-12T05:33:49Z, Merged at: 2025-02-12T08:44:34Z
+================================================================================
+PR #9175: [ISSUE #9174] Add a collection of predefined Groups and common che… (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9175
+Created at: 2025-02-11T11:58:50Z, Merged at: 2025-02-12T07:38:42Z
+================================================================================
+PR #9173: [ISSUE #9172] Clean pull offset and reset offset when delete subscription group (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9173
+Created at: 2025-02-11T07:56:54Z, Merged at: 2025-02-12T11:09:55Z
+================================================================================
+PR #9168: Restrict the list version workflow to be executed only in the main repository (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9168
+Created at: 2025-02-08T14:44:04Z, Merged at: 2025-02-10T00:28:39Z
+================================================================================
+PR #9165: [ISSUE #9164] Add producer stats manager (State: open)
+URL: https://github.com/apache/rocketmq/pull/9165
+Created at: 2025-02-04T17:42:51Z, Merged at: None
+================================================================================
+PR #9163: [ISSUE #9127] remove dependency io.github.aliyunmq:rocketmq-grpc-nett… (State: open)
+URL: https://github.com/apache/rocketmq/pull/9163
+Created at: 2025-01-28T11:14:27Z, Merged at: None
+================================================================================
+PR #9162: [ISSUE#9097] Add new command to check async task status in broker. (State: open)
+URL: https://github.com/apache/rocketmq/pull/9162
+Created at: 2025-01-27T03:29:09Z, Merged at: None
+================================================================================
+PR #9161: fix test (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9161
+Created at: 2025-01-25T09:24:22Z, Merged at: None
+================================================================================
+PR #9159: [ISSUE#9160] Ensure the requestCode increments sequentially (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9159
+Created at: 2025-01-24T14:34:35Z, Merged at: 2025-01-28T02:08:00Z
+================================================================================
+PR #9158: [ISSUE #9155][2025-01-23] update doc Deployment Context (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9158
+Created at: 2025-01-24T04:28:20Z, Merged at: 2025-01-28T02:08:32Z
+================================================================================
+PR #9157: [ISSUE #9156] Use fastjson2 in AclUtils#getAclRPCHook (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9157
+Created at: 2025-01-23T13:54:54Z, Merged at: 2025-02-10T02:40:59Z
+================================================================================
+PR #9153: [ISSUE #9152] Broker getConsumeStats supports inputting multiple topics (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9153
+Created at: 2025-01-22T03:25:08Z, Merged at: 2025-02-05T06:41:54Z
+================================================================================
+PR #9150: [ISSUE #9149]Assign offset in offsetTable even if the subscription key not exist. (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9150
+Created at: 2025-01-21T03:55:23Z, Merged at: 2025-02-06T08:48:31Z
+================================================================================
+PR #9148: [ISSUE #9147] Remove unused code (State: open)
+URL: https://github.com/apache/rocketmq/pull/9148
+Created at: 2025-01-20T03:25:07Z, Merged at: None
+================================================================================
+PR #9142: [ISSUE #9141] [RIP-75] Supports timer message on RocksDB (State: open)
+URL: https://github.com/apache/rocketmq/pull/9142
+Created at: 2025-01-17T04:18:21Z, Merged at: None
+================================================================================
+PR #9140: [ISSUE #9102] Fix bazel ci (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9140
+Created at: 2025-01-16T06:02:49Z, Merged at: None
+================================================================================
+PR #9137: [ISSUE #8997] Ensure there is an opportunity to send a retry message when broker no response (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9137
+Created at: 2025-01-16T02:09:18Z, Merged at: 2025-03-10T08:03:11Z
+================================================================================
+PR #9135: 6398: adding a small change (State: open)
+URL: https://github.com/apache/rocketmq/pull/9135
+Created at: 2025-01-15T07:58:47Z, Merged at: None
+================================================================================
+PR #9134: [ISSUE #9133] Credentials enhancement (State: open)
+URL: https://github.com/apache/rocketmq/pull/9134
+Created at: 2025-01-15T07:53:44Z, Merged at: None
+================================================================================
+PR #9131: [Enhancement] Load balancing cache in POP consumption mode (State: open)
+URL: https://github.com/apache/rocketmq/pull/9131
+Created at: 2025-01-14T14:37:53Z, Merged at: None
+================================================================================
+PR #9129: [ISSUE #9128] Fix NPE when gRPC client ack message immediately after changing proxy (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9129
+Created at: 2025-01-14T07:02:01Z, Merged at: 2025-01-14T08:01:28Z
+================================================================================
+PR #9126: [ISSUE #9125]Fix: array out-of-bounds exceptions caused by messages not present (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9126
+Created at: 2025-01-11T14:05:48Z, Merged at: None
+================================================================================
+PR #9124: fix(comment): correct typos in ConsumeQueueExt class. (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9124
+Created at: 2025-01-11T10:12:37Z, Merged at: 2025-01-15T06:51:09Z
+================================================================================
+PR #9122: [ISSUE #9121] Fix CRC32 Check Failing When Value is 0 (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9122
+Created at: 2025-01-10T08:10:45Z, Merged at: 2025-01-11T02:27:46Z
+================================================================================
+PR #9120: [ISSUE #9119] Invoke async should handle raw exception instead of CompletionException (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9120
+Created at: 2025-01-10T07:08:42Z, Merged at: 2025-01-17T03:44:32Z
+================================================================================
+PR #9116: [ISSUE #9115] Optimize the broker's reverse notification for consumerId change (State: open)
+URL: https://github.com/apache/rocketmq/pull/9116
+Created at: 2025-01-09T05:01:19Z, Merged at: None
+================================================================================
+PR #9114: [ISSUE #9111] Support export broker RocksDB Config to json file (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9114
+Created at: 2025-01-08T12:58:28Z, Merged at: 2025-01-14T02:29:40Z
+================================================================================
+PR #9113: [ISSUE #9112] Speedup revive scan in Pop Consumption and support server side reset offset (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9113
+Created at: 2025-01-08T09:01:18Z, Merged at: 2025-01-08T15:00:22Z
+================================================================================
+PR #9109: [ISSUE #9108] Refactor ColdDataCgCtrService#getColdDataFlowCtrInfo (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9109
+Created at: 2025-01-05T13:37:30Z, Merged at: 2025-01-08T09:14:59Z
+================================================================================
+PR #9107: [ISSUE #9106] Fix revive backoff retry not effective in Pop Consumption based on rocksdb (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9107
+Created at: 2025-01-05T13:07:42Z, Merged at: 2025-01-06T02:03:34Z
+================================================================================
+PR #9104: [ISSUE #9081] Remove redundant get (State: open)
+URL: https://github.com/apache/rocketmq/pull/9104
+Created at: 2025-01-04T06:50:12Z, Merged at: None
+================================================================================
+PR #9103: [ISSUE #9102] Fix bazel-compile (ubuntu-latest) ci run failure (State: open)
+URL: https://github.com/apache/rocketmq/pull/9103
+Created at: 2025-01-04T05:01:43Z, Merged at: None
+================================================================================
+PR #9101: [ISSUE #9105] Fix the issue of duplicate consumption in LMQ (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9101
+Created at: 2025-01-03T09:36:15Z, Merged at: 2025-01-06T02:51:59Z
+================================================================================
+PR #9100: [ISSUE #9025] [RIP-73] Modify Pop Consumption rocksdb init config (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9100
+Created at: 2025-01-03T08:37:29Z, Merged at: 2025-01-03T11:39:35Z
+================================================================================
+PR #9096: [ISSUE #4570] fix: Docker usage may occur error in volume mapping params, simple fix (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9096
+Created at: 2025-01-02T08:49:37Z, Merged at: 2025-01-14T12:22:30Z
+================================================================================
+PR #9095: [ISSUE #4570] Use docker to start RocketMq (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9095
+Created at: 2025-01-02T08:40:36Z, Merged at: None
+================================================================================
+PR #9094: [ISSUE #8895] Fix NPE when broker shutdown and optimize the log (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9094
+Created at: 2025-01-02T05:58:30Z, Merged at: 2025-01-14T06:50:57Z
+================================================================================
+PR #9087: [ISSUE #9025] [RIP-73] Fix reset offset not effective in Pop Consumption (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9087
+Created at: 2024-12-30T07:28:26Z, Merged at: 2024-12-30T12:05:20Z
+================================================================================
+PR #9086: [ISSUE #9080] Not hold final message store config in fetcher (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9086
+Created at: 2024-12-27T07:11:22Z, Merged at: 2024-12-30T07:21:26Z
+================================================================================
+PR #9085: fix use bufferSize not msgSize in dledger recover (State: open)
+URL: https://github.com/apache/rocketmq/pull/9085
+Created at: 2024-12-26T12:43:56Z, Merged at: None
+================================================================================
+PR #9079: [ISSUE #9080] Fix tranfer logic when get large messages from cache in tiered storage (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9079
+Created at: 2024-12-25T12:33:34Z, Merged at: 2024-12-26T06:49:00Z
+================================================================================
+PR #9076: [ISSUE #9075] Avoid message type validate in message sync scenario (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9076
+Created at: 2024-12-23T08:46:26Z, Merged at: 2024-12-25T09:57:47Z
+================================================================================
+PR #9073: [ISSUE 9072]Fix the permission check for retry topic to get topic route. (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9073
+Created at: 2024-12-20T06:29:52Z, Merged at: 2024-12-20T07:39:46Z
+================================================================================
+PR #9071: [ISSUE #9069] Fix the IndexFile ConcurrentModificationException in tiered storage (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9071
+Created at: 2024-12-20T03:34:21Z, Merged at: 2024-12-25T09:02:06Z
+================================================================================
+PR #9068: [ISSUE #9019] feat: make check expired message interval configurable to reduce the consuming thread block time (State: open)
+URL: https://github.com/apache/rocketmq/pull/9068
+Created at: 2024-12-19T12:38:31Z, Merged at: None
+================================================================================
+PR #9067: [ISSUE #8974] add feature switch of recalling, disable by default. (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9067
+Created at: 2024-12-19T10:57:36Z, Merged at: 2024-12-27T05:56:09Z
+================================================================================
+PR #9062: [ISSUE #9064] Optimize transaction message callback check logic (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9062
+Created at: 2024-12-18T04:34:55Z, Merged at: 2025-01-08T09:25:05Z
+================================================================================
+PR #9060: [ISSUE #9059] Support reset offset for lite pull consumer (State: open)
+URL: https://github.com/apache/rocketmq/pull/9060
+Created at: 2024-12-17T11:54:59Z, Merged at: None
+================================================================================
+PR #9058: [ISSUE #9044]Supplemental checks that are missing from the UpdateSubGroup&UpdateSubGroupList  operation (State: open)
+URL: https://github.com/apache/rocketmq/pull/9058
+Created at: 2024-12-16T14:35:16Z, Merged at: None
+================================================================================
+PR #9055: [ISSUE #9054]Optimize log print when client consume message in pop mode (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9055
+Created at: 2024-12-14T15:08:09Z, Merged at: 2024-12-15T02:34:09Z
+================================================================================
+PR #9051: [ISSUE #9050] Fix repeat response code (State: open)
+URL: https://github.com/apache/rocketmq/pull/9051
+Created at: 2024-12-12T07:57:43Z, Merged at: None
+================================================================================
+PR #9049: [ISSUE #9047] reduce some methods cognitive complexity and optimize code format to meet sonar lint requirements. (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9049
+Created at: 2024-12-12T07:41:05Z, Merged at: None
+================================================================================
+PR #9048: [ISSUE #9025] [RIP-73] Pop Consumption Improvement Based on RocksDB (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9048
+Created at: 2024-12-12T06:35:49Z, Merged at: 2024-12-20T12:37:25Z
+================================================================================
+PR #9043: [ISSUE #9039]Improve Code Readability for Name Server Address Management (State: open)
+URL: https://github.com/apache/rocketmq/pull/9043
+Created at: 2024-12-10T09:10:22Z, Merged at: None
+================================================================================
+PR #9041: [ISSUE #9042] Update createTimerMessageStore call with new parameter (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9041
+Created at: 2024-12-09T11:45:53Z, Merged at: 2024-12-10T06:40:27Z
+================================================================================
+PR #9040: [ISSUE #9039]Improve Code Readability for Name Server Address Management (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9040
+Created at: 2024-12-09T09:40:20Z, Merged at: None
+================================================================================
+PR #9037: reduce duplicate calls (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9037
+Created at: 2024-12-08T03:08:18Z, Merged at: 2024-12-09T06:32:37Z
+================================================================================
+PR #9036: reduce duplicate calls (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9036
+Created at: 2024-12-07T15:51:28Z, Merged at: None
+================================================================================
+PR #9034: refactor(LmqBrokerStatsManager): Refactor Redundant Code in LmqBrokerStatsManager (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9034
+Created at: 2024-12-06T17:34:04Z, Merged at: 2024-12-07T09:59:46Z
+================================================================================
+PR #9032: CreateFlushConsumeQueueService for loadAndStartConsumerServiceOnly (State: open)
+URL: https://github.com/apache/rocketmq/pull/9032
+Created at: 2024-12-06T08:41:02Z, Merged at: None
+================================================================================
+PR #9027: [ISSUE #9028]Adjust some error code for SYSTEM_ERROR (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9027
+Created at: 2024-12-05T09:21:59Z, Merged at: 2024-12-14T02:08:55Z
+================================================================================
+PR #9026: CreateFlushConsumeQueueService for loadAndStartConsumerServiceOnly (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9026
+Created at: 2024-12-05T07:54:45Z, Merged at: None
+================================================================================
+PR #9022: [ISSUE #9021] Correct the error message of acl command (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9022
+Created at: 2024-12-04T15:31:50Z, Merged at: 2024-12-10T06:41:07Z
+================================================================================
+PR #9020: [ISSUE #9019] feat: make check expired message interval configurable to reduce the consuming thread block time (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9020
+Created at: 2024-12-04T03:59:42Z, Merged at: None
+================================================================================
+PR #9018: Bump org.springframework:spring-core from 5.3.27 to 6.1.14 (State: open)
+URL: https://github.com/apache/rocketmq/pull/9018
+Created at: 2024-12-02T21:34:32Z, Merged at: None
+================================================================================
+PR #9017: [ISSUE #9014] Fix clusterAclConfigVersion command execution failed (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9017
+Created at: 2024-12-02T10:56:46Z, Merged at: 2024-12-03T01:56:41Z
+================================================================================
+PR #9016: [ISSUE #9015] Sync SysFlag and message body inflation status; allow omit of message body (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9016
+Created at: 2024-12-02T10:55:24Z, Merged at: 2024-12-05T07:06:35Z
+================================================================================
+PR #9013: [ISSUE #9012]Optimize RemotingTimeoutException message to print (State: open)
+URL: https://github.com/apache/rocketmq/pull/9013
+Created at: 2024-11-30T05:47:19Z, Merged at: None
+================================================================================
+PR #9010: [ISSUE #9009] Optimize message accumulation display and Metrics in DefaultPullConsumer (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9010
+Created at: 2024-11-29T08:16:31Z, Merged at: 2024-11-29T09:18:49Z
+================================================================================
+PR #9008: [ISSUE #9007] Fix client connection local ip is null in RemotingClient (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9008
+Created at: 2024-11-29T08:00:51Z, Merged at: 2024-12-02T07:13:05Z
+================================================================================
+PR #9003: [ISSUE #9002]when bytebuffer is not enough, do not throw exception (State: closed)
+URL: https://github.com/apache/rocketmq/pull/9003
+Created at: 2024-11-29T01:44:53Z, Merged at: 2024-12-19T03:44:32Z
+================================================================================
+PR #8999: [ISSUE #8998] No retry is required when the remaining time reaches zero (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8999
+Created at: 2024-11-28T09:24:23Z, Merged at: 2025-01-06T02:23:48Z
+================================================================================
+PR #8996: [ISSUE #8995] Fix pull consumers can't be found when querying consumers (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8996
+Created at: 2024-11-28T06:45:42Z, Merged at: None
+================================================================================
+PR #8994:     feat[consumer]: support custom thread pool, providing the possibility for different consumers to reuse thread pools (State: open)
+URL: https://github.com/apache/rocketmq/pull/8994
+Created at: 2024-11-28T05:20:26Z, Merged at: None
+================================================================================
+PR #8993: just a little bit cleanup. (State: open)
+URL: https://github.com/apache/rocketmq/pull/8993
+Created at: 2024-11-27T10:57:47Z, Merged at: None
+================================================================================
+PR #8992: [ISSUE #8991] prepareHeartbeatData should not be set by default subscriptionDataSet data (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8992
+Created at: 2024-11-27T09:06:51Z, Merged at: 2024-11-28T02:31:23Z
+================================================================================
+PR #8989: [ISSUE #8988] Support dispatchBehindMilliseconds (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8989
+Created at: 2024-11-26T08:56:07Z, Merged at: 2024-12-10T12:05:44Z
+================================================================================
+PR #8986: [ISSUE #8984] Fix the broker switch enableMixedMessageType doesn't work (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8986
+Created at: 2024-11-26T03:22:37Z, Merged at: 2024-12-02T02:01:51Z
+================================================================================
+PR #8985: [ISSUE #8982] Dynamically install latest Go version for e2e pipeline (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8985
+Created at: 2024-11-26T00:49:53Z, Merged at: 2024-11-26T03:37:46Z
+================================================================================
+PR #8983: [ISSEU #6426] Fix slave broker SubscriptionGroupConfig and MessageRequestMode updating atomically (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8983
+Created at: 2024-11-25T12:17:07Z, Merged at: 2025-01-13T06:45:20Z
+================================================================================
+PR #8981: [ISSUE #8460] Set default broker name when revive found ack without broker name field (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8981
+Created at: 2024-11-25T09:33:47Z, Merged at: 2024-11-25T11:24:43Z
+================================================================================
+PR #8980: [ISSUE #8979] Add configurable switch for timer message retry logic  (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8980
+Created at: 2024-11-25T06:32:30Z, Merged at: 2024-12-05T09:49:04Z
+================================================================================
+PR #8977: [ISSUE #8976] Modify file segment construct method (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8977
+Created at: 2024-11-23T07:19:16Z, Merged at: 2024-11-26T06:16:38Z
+================================================================================
+PR #8975: [ISSUE #8974] Support recalling of delay message (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8975
+Created at: 2024-11-22T06:26:54Z, Merged at: 2024-12-09T08:56:12Z
+================================================================================
+PR #8973: [ISSUE #8972] Adding the EnableLmqStats option allows monitoring of LMQ statistics at runtime (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8973
+Created at: 2024-11-22T02:40:51Z, Merged at: 2024-11-22T04:57:38Z
+================================================================================
+PR #8971: [ISSUE #8970] Remove redundant heartbeats (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8971
+Created at: 2024-11-21T11:25:54Z, Merged at: 2024-12-10T06:54:43Z
+================================================================================
+PR #8969: [ISSUE #8968] Introduce the clearRetryTopicWhenDeleteTopic option to enable precise external deletion of topics (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8969
+Created at: 2024-11-21T08:56:44Z, Merged at: 2024-11-27T08:19:06Z
+================================================================================
+PR #8967: [ISSUE #8966] Feat: add remote address information to acl perm error (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8967
+Created at: 2024-11-21T08:08:50Z, Merged at: 2024-12-02T02:04:17Z
+================================================================================
+PR #8965: [ISSUE #8955] Fix message buffer not release and dispatch thread exit in tiered storage (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8965
+Created at: 2024-11-21T07:12:59Z, Merged at: 2024-11-22T03:02:50Z
+================================================================================
+PR #8964: [ISSUE #8963] Fix code36 request sent to ns (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8964
+Created at: 2024-11-20T12:54:34Z, Merged at: 2024-11-27T06:43:45Z
+================================================================================
+PR #8962: [ISSUE #8961] Automatic recognition of address scheme in Topic Route by host (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8962
+Created at: 2024-11-20T09:33:59Z, Merged at: 2024-11-22T07:34:37Z
+================================================================================
+PR #8958: [ISSUE #8957] Remove excess traffic and fix cache inconsistencies (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8958
+Created at: 2024-11-20T05:16:06Z, Merged at: 2024-12-25T06:38:57Z
+================================================================================
+PR #8956: fix: avoid memory overhead when there is large number of LMQ CQ (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8956
+Created at: 2024-11-20T03:27:31Z, Merged at: 2024-11-20T06:55:31Z
+================================================================================
+PR #8954: [ISSUE #8953] Improve IO for asynchronous delivery processes (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8954
+Created at: 2024-11-19T06:07:05Z, Merged at: 2024-11-20T03:13:12Z
+================================================================================
+PR #8951: [ISSUE #8950] Remove Redundant nullcheck of configPath (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8951
+Created at: 2024-11-18T08:16:41Z, Merged at: 2024-12-02T02:03:16Z
+================================================================================
+PR #8949: [ISSUE #8947] Notify pop request before calculate consumer lag (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8949
+Created at: 2024-11-18T07:45:41Z, Merged at: 2024-11-20T06:57:35Z
+================================================================================
+PR #8946: [#ISSUE 8945] Remove unnecessary operations from the critical section (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8946
+Created at: 2024-11-18T05:22:46Z, Merged at: 2024-11-18T08:46:35Z
+================================================================================
+PR #8944: [#ISSUE 8927] DLedger support lmq (State: open)
+URL: https://github.com/apache/rocketmq/pull/8944
+Created at: 2024-11-18T02:41:56Z, Merged at: None
+================================================================================
+PR #8943: [ISSUE #8942] Add incGroupAckNums and incGroupCkNums to LmqBrokerStatsManager (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8943
+Created at: 2024-11-16T10:42:23Z, Merged at: 2024-11-18T06:23:00Z
+================================================================================
+PR #8941: [ISSUE #8940] Fix incorrect path for exportMetadataInRocksDBCommand (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8941
+Created at: 2024-11-16T10:09:21Z, Merged at: 2024-11-18T09:25:20Z
+================================================================================
+PR #8939: [ISSUE #8829] Support for Persisting LMQ Consumer Offsets in Config V1 Using RocksDB (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8939
+Created at: 2024-11-16T09:14:59Z, Merged at: 2024-11-18T06:30:01Z
+================================================================================
+PR #8936: [ISSUE #8935] Fix behind metrics unit error in timer message store (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8936
+Created at: 2024-11-15T08:44:21Z, Merged at: 2024-11-19T09:35:10Z
+================================================================================
+PR #8934: [ISSUE #8933] feat: DefaultPullConsumer add balance switch. (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8934
+Created at: 2024-11-15T07:28:48Z, Merged at: 2024-11-20T06:58:30Z
+================================================================================
+PR #8930: [ISSUE #8929] Proxy adds message body empty check when send in grpc protocol (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8930
+Created at: 2024-11-15T02:42:43Z, Merged at: 2024-11-21T08:40:49Z
+================================================================================
+PR #8928: [ISSUE #8927] DLedger support LMQ (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8928
+Created at: 2024-11-15T01:51:27Z, Merged at: None
+================================================================================
+PR #8926: [ISSUE #8925]Fix the bug of update user for ACL 2.0 (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8926
+Created at: 2024-11-14T11:51:02Z, Merged at: 2024-11-15T02:35:37Z
+================================================================================
+PR #8923: [ISSUE #8912] Rebalancing logic shift in POP consumption mode (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8923
+Created at: 2024-11-14T08:47:21Z, Merged at: None
+================================================================================
+PR #8922: [ISSUE #8921] Add isWakeCommitWhenPutMessage  for AIO (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8922
+Created at: 2024-11-14T08:04:11Z, Merged at: 2024-11-14T11:42:25Z
+================================================================================
+PR #8919: [ISSUE #8917]Topic route return none permission message queues for gRPC client  (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8919
+Created at: 2024-11-14T02:48:48Z, Merged at: 2024-11-14T11:24:19Z
+================================================================================
+PR #8918: [ISSUE #8917]Topic route return none permission message queues for gRPC client (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8918
+Created at: 2024-11-14T02:38:20Z, Merged at: None
+================================================================================
+PR #8916: [ISSUE #8877] Refactor lock in ReceiptHandleGroup  to make the lock can be properly released when future can not be completed. (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8916
+Created at: 2024-11-13T12:45:47Z, Merged at: 2024-11-21T09:53:46Z
+================================================================================
+PR #8915: fix: multiple patches during long running tests for LMQ over RocksDB (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8915
+Created at: 2024-11-13T11:38:48Z, Merged at: 2024-12-02T02:07:54Z
+================================================================================
+PR #8910: [ISSUE #8909] Move nullcheck ahead (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8910
+Created at: 2024-11-12T10:04:55Z, Merged at: 2024-11-16T01:07:55Z
+================================================================================
+PR #8907: [ISSUE #8906] Handle string toUpperCase outside the loop (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8907
+Created at: 2024-11-11T07:09:28Z, Merged at: 2024-11-12T11:29:22Z
+================================================================================
+PR #8905: fixed typo of RocketMQ_Example.md (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8905
+Created at: 2024-11-09T12:32:26Z, Merged at: 2024-11-11T02:00:27Z
+================================================================================
+PR #8902: [ISSUE #8901] Add more test coverage for RpcClientImpl (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8902
+Created at: 2024-11-07T14:22:14Z, Merged at: 2024-11-18T02:19:49Z
+================================================================================
+PR #8897: [#8859] Fix duplicate mapped file in mutil commitlog store path mode. (State: open)
+URL: https://github.com/apache/rocketmq/pull/8897
+Created at: 2024-11-06T13:19:40Z, Merged at: None
+================================================================================
+PR #8896: Override recoverOffsetTable for kvCq store (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8896
+Created at: 2024-11-06T11:21:43Z, Merged at: None
+================================================================================
+PR #8893: feat: make code compile in Java 9+ (State: open)
+URL: https://github.com/apache/rocketmq/pull/8893
+Created at: 2024-11-05T13:52:53Z, Merged at: None
+================================================================================
+PR #8891: [ISSUE #8829] Keep data version while reload and XXXConfigManagerV2 turns off sync (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8891
+Created at: 2024-11-05T09:40:03Z, Merged at: 2024-11-06T02:12:25Z
+================================================================================
+PR #8890: [ISSUE #8889] handle namespace outside the loop (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8890
+Created at: 2024-11-05T08:47:44Z, Merged at: 2024-11-08T01:03:10Z
+================================================================================
+PR #8886: [ISSUE #8885] Resolve the issue of inaccurate CK number statistics (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8886
+Created at: 2024-11-01T09:45:22Z, Merged at: 2024-11-06T02:15:43Z
+================================================================================
+PR #8884: 1 (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8884
+Created at: 2024-11-01T09:26:16Z, Merged at: None
+================================================================================
+PR #8883: [ISSUE #8882]Change the compare method for acl signature to improve the security. (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8883
+Created at: 2024-11-01T09:20:05Z, Merged at: 2024-11-07T11:04:55Z
+================================================================================
+PR #8880: [ISSUE #8879] reduce seach key times in method,to import performance (State: open)
+URL: https://github.com/apache/rocketmq/pull/8880
+Created at: 2024-10-30T16:49:56Z, Merged at: None
+================================================================================
+PR #8876: [ISSUE #8875] Fix HAConnection leak (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8876
+Created at: 2024-10-30T03:10:26Z, Merged at: 2024-10-30T08:42:30Z
+================================================================================
+PR #8874: Revert "fix RequestCode overflowed issues:8868 (#8871)" (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8874
+Created at: 2024-10-30T02:34:36Z, Merged at: 2024-10-30T06:20:00Z
+================================================================================
+PR #8873: [ISSUE #8892] Add test cases to config manager v2 (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8873
+Created at: 2024-10-29T11:00:38Z, Merged at: 2024-10-29T12:07:49Z
+================================================================================
+PR #8872: update LanguageCode (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8872
+Created at: 2024-10-29T10:01:39Z, Merged at: 2024-10-29T11:07:14Z
+================================================================================
+PR #8871: fix RequestCode overflowed issues:8868 (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8871
+Created at: 2024-10-29T08:45:54Z, Merged at: 2024-10-29T11:44:20Z
+================================================================================
+PR #8862: [ISSUE #8599] Throw exception when receiving GO_AWAY twice to close channel. (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8862
+Created at: 2024-10-25T08:00:09Z, Merged at: 2024-11-14T06:07:21Z
+================================================================================
+PR #8857: [ISSUE #8829]feat: add test case to RocksDBConsumeQueueOffsetTable (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8857
+Created at: 2024-10-23T05:35:44Z, Merged at: 2024-10-23T11:17:05Z
+================================================================================
+PR #8856: [ISSUE #8829] feat: provide ConfigManagerV2 to make best uses of RocksDB (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8856
+Created at: 2024-10-23T03:16:11Z, Merged at: 2024-10-28T02:00:34Z
+================================================================================
+PR #8855: [ISSUE #8854]refactor(proxy): refactor proxy server with spi (State: open)
+URL: https://github.com/apache/rocketmq/pull/8855
+Created at: 2024-10-22T17:29:40Z, Merged at: None
+================================================================================
+PR #8853: [ISSUE #8852] Add more test coverage for ClientMetadata (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8853
+Created at: 2024-10-22T12:20:32Z, Merged at: 2024-10-28T08:32:58Z
+================================================================================
+PR #8851: [ISSUE #8850] Use correct log method (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8851
+Created at: 2024-10-22T11:28:24Z, Merged at: 2024-10-23T01:57:35Z
+================================================================================
+PR #8849: [ISSUE #8848] Fix log typo (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8849
+Created at: 2024-10-22T11:14:31Z, Merged at: 2024-10-23T00:29:35Z
+================================================================================
+PR #8847: fix: registerProducer should not be affected by concurrent scanNotAct… (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8847
+Created at: 2024-10-21T03:58:08Z, Merged at: 2024-10-23T01:37:17Z
+================================================================================
+PR #8844: [ISSUE #8843] Optimize the Rebalance algorithm in POP consumption mode (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8844
+Created at: 2024-10-21T02:01:36Z, Merged at: None
+================================================================================
+PR #8842: Support LMQ dispatch in case if Consume Queue Store is RocksDB-based (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8842
+Created at: 2024-10-18T11:08:31Z, Merged at: 2024-10-23T01:56:37Z
+================================================================================
+PR #8841: fix: make ConsumeQueueStore bottom most compression type configurable (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8841
+Created at: 2024-10-18T06:53:34Z, Merged at: 2024-10-18T08:50:14Z
+================================================================================
+PR #8840: fix: remove unnecessary synchronized to improve concurrency (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8840
+Created at: 2024-10-18T03:25:48Z, Merged at: 2024-10-21T01:25:55Z
+================================================================================
+PR #8838: [ISSUE #8837] Remove netty codec threads for better performance (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8838
+Created at: 2024-10-17T09:42:06Z, Merged at: None
+================================================================================
+PR #8836: [ISSUE #8835]When ck is in the buffer, incomplete ack will lead to message duplication. (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8836
+Created at: 2024-10-17T08:29:47Z, Merged at: 2024-10-17T11:16:15Z
+================================================================================
+PR #8834: [ISSUE #8833] Update netty-all version to 4.1.114 to fix CVE-2023-34462 (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8834
+Created at: 2024-10-17T07:24:36Z, Merged at: 2024-10-21T05:37:43Z
+================================================================================
+PR #8832: [ISSUE #8833] Update netty version to 4.1.114 to fix CVE-2023-34462 (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8832
+Created at: 2024-10-17T07:14:46Z, Merged at: 2024-10-21T05:40:49Z
+================================================================================
+PR #8830: fix: atomic flush incorrect use and clean up code (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8830
+Created at: 2024-10-17T02:20:16Z, Merged at: 2024-10-18T06:30:38Z
+================================================================================
+PR #8825: [ISSUE #8824] Fix IllegalStateException caused by logical errors (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8825
+Created at: 2024-10-15T14:28:21Z, Merged at: 2024-10-16T03:00:51Z
+================================================================================
+PR #8823: [ISSUE #8822] Double write cq, reduce unnecessary switches (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8823
+Created at: 2024-10-15T06:25:39Z, Merged at: 2024-10-29T11:09:35Z
+================================================================================
+PR #8821: fix variables match annotation (@RocketMQResource) (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8821
+Created at: 2024-10-14T11:08:17Z, Merged at: 2024-10-18T01:18:41Z
+================================================================================
+PR #8817: [ISSUE #8816] Fix log typo. (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8817
+Created at: 2024-10-12T01:51:34Z, Merged at: 2024-10-14T01:13:17Z
+================================================================================
+PR #8815: [ISSUE #8814] Add more test coverage for ControllerClosure (State: open)
+URL: https://github.com/apache/rocketmq/pull/8815
+Created at: 2024-10-11T13:50:49Z, Merged at: None
+================================================================================
+PR #8812: [ISSUE #8810] Fix independent execution of e2e and benchmark deployments (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8812
+Created at: 2024-10-11T02:44:44Z, Merged at: 2024-10-11T08:43:07Z
+================================================================================
+PR #8809: [ISSUE #8808] Resolve unsupported 'UseBiasedLocking' VM Option for JDK21 (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8809
+Created at: 2024-10-10T13:54:19Z, Merged at: 2024-11-06T11:30:18Z
+================================================================================
+PR #8807: [ISSUE #8806] Fix autoBatch bug when connecting multiple RocketMQ clusters. (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8807
+Created at: 2024-10-10T12:33:20Z, Merged at: 2024-10-11T07:29:18Z
+================================================================================
+PR #8805: [ISSUE #8804] clean offset when remove group offset (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8805
+Created at: 2024-10-10T00:27:13Z, Merged at: 2024-10-10T01:53:06Z
+================================================================================
+PR #8803: [ISSUE #8802] Update controller design.md (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8803
+Created at: 2024-10-09T12:55:30Z, Merged at: 2024-10-10T01:48:30Z
+================================================================================
+PR #8800: [ISSUE #8764] Implement consume lag estimation in cq rocksdb store (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8800
+Created at: 2024-10-09T09:28:09Z, Merged at: 2024-10-15T06:14:31Z
+================================================================================
+PR #8799: [ISSUE #8798] Fix typo (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8799
+Created at: 2024-10-09T01:17:20Z, Merged at: 2024-10-10T01:52:46Z
+================================================================================
+PR #8797: [ISSUE #8796] Add more test coverage for PopLongPollingService (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8797
+Created at: 2024-10-08T14:34:23Z, Merged at: 2024-10-09T01:58:52Z
+================================================================================
+PR #8795: Zyh_ict_pr (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8795
+Created at: 2024-10-08T13:43:43Z, Merged at: None
+================================================================================
+PR #8793: first commet (State: open)
+URL: https://github.com/apache/rocketmq/pull/8793
+Created at: 2024-10-08T11:52:03Z, Merged at: None
+================================================================================
+PR #8792: [ISSUE #8790] Add Utils for put header to Metadata to avoid duplicate data (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8792
+Created at: 2024-10-08T10:51:54Z, Merged at: 2024-10-09T02:37:20Z
+================================================================================
+PR #8791: [ISSUE #8790] Add Utils for put header to gRPC Metadata to avoid duplicate data. (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8791
+Created at: 2024-10-08T10:46:37Z, Merged at: None
+================================================================================
+PR #8788: [ISSUE #8697]feat:When starting the broker and nameserver, the xmx, xms, and xmn p… (State: open)
+URL: https://github.com/apache/rocketmq/pull/8788
+Created at: 2024-10-08T05:49:33Z, Merged at: None
+================================================================================
+PR #8787: [ISSUE #8786] Fix doc typo (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8787
+Created at: 2024-10-06T05:03:44Z, Merged at: 2024-10-08T09:42:23Z
+================================================================================
+PR #8785: [ISSUE #8784] PrintMessageSubCommand support lmq (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8785
+Created at: 2024-10-06T03:56:05Z, Merged at: 2024-10-09T01:58:06Z
+================================================================================
+PR #8783: [ISSUE #8782] Fix log typo (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8783
+Created at: 2024-10-04T09:11:57Z, Merged at: 2024-10-05T02:09:08Z
+================================================================================
+PR #8781: Bump commons-io:commons-io from 2.7 to 2.14.0 (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8781
+Created at: 2024-10-03T18:47:37Z, Merged at: 2024-10-05T02:08:54Z
+================================================================================
+PR #8778: [ISSUE #8777] enhance error log when when can't connect to namesrv addrs (State: open)
+URL: https://github.com/apache/rocketmq/pull/8778
+Created at: 2024-09-30T10:22:59Z, Merged at: None
+================================================================================
+PR #8774: [ISSUE #8772] Remove lock mq step in broadcasting mode rebalancing (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8774
+Created at: 2024-09-29T09:57:09Z, Merged at: 2024-10-23T02:29:56Z
+================================================================================
+PR #8773: [ISSUE #8772] Remove lock mq step in broadcasting mode rebalancing (State: open)
+URL: https://github.com/apache/rocketmq/pull/8773
+Created at: 2024-09-29T09:50:13Z, Merged at: None
+================================================================================
+PR #8770: [ISSUE #8769] Fix doc typo (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8770
+Created at: 2024-09-28T13:48:20Z, Merged at: 2024-09-29T01:54:15Z
+================================================================================
+PR #8766: [ISSUE #8765] fix low performance of delay message when enable rocksdb consume queue (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8766
+Created at: 2024-09-27T09:09:33Z, Merged at: 2024-11-20T03:10:01Z
+================================================================================
+PR #8763: [ISUUE #8762] Fix dLedger lock granularity issue causing LMQ message loss (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8763
+Created at: 2024-09-27T07:59:04Z, Merged at: None
+================================================================================
+PR #8761: Update performance benchmark test tool (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8761
+Created at: 2024-09-27T07:49:52Z, Merged at: 2024-09-27T09:46:39Z
+================================================================================
+PR #8759: Test the performance benchmark pipeline execution status (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8759
+Created at: 2024-09-27T03:46:25Z, Merged at: 2024-09-27T06:13:08Z
+================================================================================
+PR #8757: [ISSUE #8756] fix broker logback config, gzip the archive files. (State: open)
+URL: https://github.com/apache/rocketmq/pull/8757
+Created at: 2024-09-26T08:10:24Z, Merged at: None
+================================================================================
+PR #8754: [ISSUE #8753]ConsumeQueue minOffset did not update when the corresponding CommitLog files were all deleted (State: open)
+URL: https://github.com/apache/rocketmq/pull/8754
+Created at: 2024-09-26T03:39:04Z, Merged at: None
+================================================================================
+PR #8750: [maven-release-plugin] prepare for next development iteration (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8750
+Created at: 2024-09-25T15:31:56Z, Merged at: 2024-09-26T01:33:52Z
+================================================================================
+PR #8749: [maven-release-plugin] prepare release rocketmq-all-5.3.1 (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8749
+Created at: 2024-09-25T13:22:20Z, Merged at: 2024-09-25T15:24:56Z
+================================================================================
+PR #8748: [ISSUE #8747] Fix PR E2E artifact download issue (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8748
+Created at: 2024-09-25T03:17:53Z, Merged at: 2024-09-25T06:54:26Z
+================================================================================
+PR #8746: [ISSUE #8755] batch send support compression (State: open)
+URL: https://github.com/apache/rocketmq/pull/8746
+Created at: 2024-09-25T03:11:31Z, Merged at: None
+================================================================================
+PR #8744: [ISSUE #8743] Modify the brokerAddrTable and brokerVersionTable in MQClientInstance to Concurrent HashMap. (State: open)
+URL: https://github.com/apache/rocketmq/pull/8744
+Created at: 2024-09-24T08:46:33Z, Merged at: None
+================================================================================
+PR #8741: [ISSUE #8742] Enhance unit test retry mechanism to trigger on PR submission (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8741
+Created at: 2024-09-24T08:06:57Z, Merged at: 2024-09-25T02:08:42Z
+================================================================================
+PR #8739: [ISSUE #8698] Remove batch write in kv cq store and update rocksdb cq check tool (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8739
+Created at: 2024-09-24T07:49:56Z, Merged at: 2024-09-25T11:32:47Z
+================================================================================
+PR #8738: [ISSUE #8740] fix rocksDBConfigToJson command (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8738
+Created at: 2024-09-24T07:43:05Z, Merged at: 2024-09-25T02:14:39Z
+================================================================================
+PR #8737: [ISSUE #8736] fix searchOffset corner case in rocksdb consume queue (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8737
+Created at: 2024-09-24T02:35:56Z, Merged at: 2024-09-29T07:10:06Z
+================================================================================
+PR #8734: [ISSUE #8733] Add a performance benchmark testing pipeline (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8734
+Created at: 2024-09-23T15:09:15Z, Merged at: 2024-10-05T02:07:01Z
+================================================================================
+PR #8732: [ISSUE #8731] Prepare to release Apache RocketMQ 5.3.1 (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8732
+Created at: 2024-09-23T11:59:50Z, Merged at: 2024-09-25T12:56:33Z
+================================================================================
+PR #8729: [ISSUE #8728] Add more test coverage for TopicQueueMappingCleanService (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8729
+Created at: 2024-09-22T16:04:16Z, Merged at: 2025-01-16T05:54:04Z
+================================================================================
+PR #8727: [ISSUE #8780] Implement asynchronous storage of ack/ck messages in pop consume to enhance performance (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8727
+Created at: 2024-09-21T14:19:31Z, Merged at: 2024-10-16T05:39:27Z
+================================================================================
+PR #8726: [ISSUE #8725]clean DefaultMQPushConsumer after start fail (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8726
+Created at: 2024-09-21T08:20:32Z, Merged at: 2024-10-30T12:08:28Z
+================================================================================
+PR #8721: [ISSUE #8720] Support disable netty server worker group by config (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8721
+Created at: 2024-09-20T03:52:12Z, Merged at: 2024-09-20T09:19:23Z
+================================================================================
+PR #8717: [ISSUE #8718] Fix flaky CreateAndUpdateTopicIT (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8717
+Created at: 2024-09-19T09:41:04Z, Merged at: 2024-09-20T05:53:37Z
+================================================================================
+PR #8713: [ISSUE #8712] Set namesrvAddrChoosed to null if choosed addr is not exist. (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8713
+Created at: 2024-09-19T03:07:26Z, Merged at: 2024-09-23T04:28:42Z
+================================================================================
+PR #8710: [ISSUE #8671]  Replace channel.attr() set() and get() with RemotingHelper (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8710
+Created at: 2024-09-18T13:02:32Z, Merged at: 2024-09-19T09:27:49Z
+================================================================================
+PR #8709: #8509 lmq offset sync master to slave  (State: open)
+URL: https://github.com/apache/rocketmq/pull/8709
+Created at: 2024-09-18T10:40:10Z, Merged at: None
+================================================================================
+PR #8708: [ISSUE #8707] Fix artifact download failure in CI after action upgrade (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8708
+Created at: 2024-09-18T10:11:42Z, Merged at: 2024-09-19T05:50:05Z
+================================================================================
+PR #8706: [ISSUE #8705] Make MQClientAPIFactory shutdown async (State: closed)
+URL: https://github.com/apache/rocketmq/pull/8706
+Created at: 2024-09-18T07:47:23Z, Merged at: 2024-09-19T12:13:13Z
+================================================================================

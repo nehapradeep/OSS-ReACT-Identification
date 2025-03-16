@@ -1,0 +1,708 @@
+PR #13106: Add bearer auth configuration for http webhook (State: open)
+URL: https://github.com/apache/skywalking/pull/13106
+Created at: 2025-03-16T13:06:37Z, Merged at: None
+================================================================================
+PR #13105: chore(ci): Bump changed-files action version (State: closed)
+URL: https://github.com/apache/skywalking/pull/13105
+Created at: 2025-03-16T09:13:00Z, Merged at: None
+================================================================================
+PR #13104: chore(ci): Bump changed-files action version (State: closed)
+URL: https://github.com/apache/skywalking/pull/13104
+Created at: 2025-03-16T09:02:14Z, Merged at: None
+================================================================================
+PR #13103: Fix the issue of missing Last Ping data. (State: open)
+URL: https://github.com/apache/skywalking/pull/13103
+Created at: 2025-03-15T15:31:40Z, Merged at: None
+================================================================================
+PR #13102: Skip persisting metrics/record data that have been expired (State: closed)
+URL: https://github.com/apache/skywalking/pull/13102
+Created at: 2025-03-13T12:09:21Z, Merged at: 2025-03-14T04:13:38Z
+================================================================================
+PR #13101: Including the original OAP config into profile exporter tool (State: closed)
+URL: https://github.com/apache/skywalking/pull/13101
+Created at: 2025-03-13T04:05:17Z, Merged at: 2025-03-14T08:53:34Z
+================================================================================
+PR #13099: Remove banyandb config from data-generator and profile-exporter's application.yml (State: closed)
+URL: https://github.com/apache/skywalking/pull/13099
+Created at: 2025-03-12T13:50:53Z, Merged at: 2025-03-12T14:40:37Z
+================================================================================
+PR #13098: Update banyandb.md (State: closed)
+URL: https://github.com/apache/skywalking/pull/13098
+Created at: 2025-03-12T12:34:13Z, Merged at: 2025-03-12T13:20:38Z
+================================================================================
+PR #13097: BanyanDB: Separate the storage configuration to an independent file: `bydb.yaml`. (State: closed)
+URL: https://github.com/apache/skywalking/pull/13097
+Created at: 2025-03-12T07:15:49Z, Merged at: 2025-03-12T09:20:10Z
+================================================================================
+PR #13096: Bump Armeria to 1.32.0 and some transitive dependencies (State: closed)
+URL: https://github.com/apache/skywalking/pull/13096
+Created at: 2025-03-12T03:17:54Z, Merged at: 2025-03-12T12:29:16Z
+================================================================================
+PR #13094: Add more model installation log info for OAP storage initialization. (State: closed)
+URL: https://github.com/apache/skywalking/pull/13094
+Created at: 2025-03-10T02:13:32Z, Merged at: 2025-03-10T03:01:32Z
+================================================================================
+PR #13090: Add a component ID for Virtual thread executor (State: closed)
+URL: https://github.com/apache/skywalking/pull/13090
+Created at: 2025-03-08T13:50:58Z, Merged at: 2025-03-08T14:58:06Z
+================================================================================
+PR #13079: Fix deadlink in elasticsearch.md (State: closed)
+URL: https://github.com/apache/skywalking/pull/13079
+Created at: 2025-03-04T13:47:39Z, Merged at: 2025-03-04T13:49:51Z
+================================================================================
+PR #13077: BanyanDB: fix alarm query result without sort. (State: closed)
+URL: https://github.com/apache/skywalking/pull/13077
+Created at: 2025-03-04T05:39:15Z, Merged at: 2025-03-04T06:33:49Z
+================================================================================
+PR #13075: Exclude x from link check (State: closed)
+URL: https://github.com/apache/skywalking/pull/13075
+Created at: 2025-03-03T11:35:46Z, Merged at: 2025-03-03T11:58:40Z
+================================================================================
+PR #13074: Add go agent so11y dashboard (State: closed)
+URL: https://github.com/apache/skywalking/pull/13074
+Created at: 2025-03-03T04:16:53Z, Merged at: 2025-03-04T13:44:24Z
+================================================================================
+PR #13073: Allow calling `lang.groovy.GString` in DSL (State: closed)
+URL: https://github.com/apache/skywalking/pull/13073
+Created at: 2025-02-28T09:30:04Z, Merged at: 2025-02-28T10:33:57Z
+================================================================================
+PR #13071: BanyanDB client wrapper support property complex query. (State: closed)
+URL: https://github.com/apache/skywalking/pull/13071
+Created at: 2025-02-28T05:53:40Z, Merged at: 2025-02-28T06:24:31Z
+================================================================================
+PR #13068: Optimize metrics cache loading when trace latency greater than cache timeout (State: closed)
+URL: https://github.com/apache/skywalking/pull/13068
+Created at: 2025-02-26T01:39:32Z, Merged at: 2025-02-26T08:26:40Z
+================================================================================
+PR #13067: Bump up data collect protocol (State: closed)
+URL: https://github.com/apache/skywalking/pull/13067
+Created at: 2025-02-25T13:02:39Z, Merged at: 2025-02-25T13:45:46Z
+================================================================================
+PR #13065: Sync UI (State: closed)
+URL: https://github.com/apache/skywalking/pull/13065
+Created at: 2025-02-24T09:00:44Z, Merged at: 2025-02-24T09:08:13Z
+================================================================================
+PR #13062: count watermark circuit break/recover in the query time window (State: closed)
+URL: https://github.com/apache/skywalking/pull/13062
+Created at: 2025-02-21T07:02:21Z, Merged at: 2025-02-21T07:57:29Z
+================================================================================
+PR #13059: Add more clear logs when oap-cluster-internal data format is inconcsistent (State: closed)
+URL: https://github.com/apache/skywalking/pull/13059
+Created at: 2025-02-21T03:53:37Z, Merged at: 2025-02-21T04:41:08Z
+================================================================================
+PR #13055: [TEST] SkyPredictor E2E stable (State: closed)
+URL: https://github.com/apache/skywalking/pull/13055
+Created at: 2025-02-21T02:14:25Z, Merged at: 2025-02-21T14:22:35Z
+================================================================================
+PR #13053: Check index bound before getting data from `RemoteData` to avoid `IndexOutOfBoundsException` (State: closed)
+URL: https://github.com/apache/skywalking/pull/13053
+Created at: 2025-02-20T14:29:49Z, Merged at: None
+================================================================================
+PR #13052: Bump up UI (State: closed)
+URL: https://github.com/apache/skywalking/pull/13052
+Created at: 2025-02-20T10:11:13Z, Merged at: None
+================================================================================
+PR #13051: Sync UI (State: closed)
+URL: https://github.com/apache/skywalking/pull/13051
+Created at: 2025-02-20T09:00:32Z, Merged at: 2025-02-20T11:01:16Z
+================================================================================
+PR #13050: Sync UI (State: closed)
+URL: https://github.com/apache/skywalking/pull/13050
+Created at: 2025-02-20T08:42:33Z, Merged at: None
+================================================================================
+PR #13049: Bump up nodejs to v22.14.0 for the latest UI(booster-ui) compiling. (State: closed)
+URL: https://github.com/apache/skywalking/pull/13049
+Created at: 2025-02-20T06:13:00Z, Merged at: 2025-02-20T07:37:59Z
+================================================================================
+PR #13047: Add SkyPredictor project to E2E Testing alarm with baseline (State: closed)
+URL: https://github.com/apache/skywalking/pull/13047
+Created at: 2025-02-19T12:46:24Z, Merged at: 2025-02-20T08:42:03Z
+================================================================================
+PR #13045: Prevent traffic metrics inconsistent between in-memory and database server. (State: closed)
+URL: https://github.com/apache/skywalking/pull/13045
+Created at: 2025-02-19T09:39:46Z, Merged at: 2025-02-19T10:26:08Z
+================================================================================
+PR #13043: Update Baseline changelog and configuration documentation (State: closed)
+URL: https://github.com/apache/skywalking/pull/13043
+Created at: 2025-02-18T14:21:39Z, Merged at: 2025-02-18T14:25:28Z
+================================================================================
+PR #13041: Move `metrics-baseline` into `ai-pipeline` module (State: closed)
+URL: https://github.com/apache/skywalking/pull/13041
+Created at: 2025-02-18T07:39:14Z, Merged at: 2025-02-18T12:16:14Z
+================================================================================
+PR #13040: Add baseline doc and point to SkyPredictor project (State: closed)
+URL: https://github.com/apache/skywalking/pull/13040
+Created at: 2025-02-17T16:24:46Z, Merged at: 2025-02-18T13:31:48Z
+================================================================================
+PR #13034: Update browser perf data calculate strategy (State: closed)
+URL: https://github.com/apache/skywalking/pull/13034
+Created at: 2025-02-13T08:03:07Z, Merged at: 2025-02-13T08:36:07Z
+================================================================================
+PR #13031: Polish the browser doc for client-js 1.0 (State: closed)
+URL: https://github.com/apache/skywalking/pull/13031
+Created at: 2025-02-13T06:09:56Z, Merged at: 2025-02-13T06:18:57Z
+================================================================================
+PR #13028: Add `Get Alarm Runtime Status` API. (State: closed)
+URL: https://github.com/apache/skywalking/pull/13028
+Created at: 2025-02-12T08:38:08Z, Merged at: 2025-02-12T15:22:48Z
+================================================================================
+PR #13027: Bump up netty to 4.11.118 and a bunch of GHA to fix CVE-2025-24970 (State: closed)
+URL: https://github.com/apache/skywalking/pull/13027
+Created at: 2025-02-12T03:07:42Z, Merged at: 2025-02-12T04:46:26Z
+================================================================================
+PR #13024: Baseline: Support query baseline with MQE and use in the Alarm Rule. (State: closed)
+URL: https://github.com/apache/skywalking/pull/13024
+Created at: 2025-02-10T07:28:03Z, Merged at: 2025-02-10T12:35:31Z
+================================================================================
+PR #13020: Update BanyanDB in e2e (State: closed)
+URL: https://github.com/apache/skywalking/pull/13020
+Created at: 2025-02-06T06:28:10Z, Merged at: 2025-02-06T07:09:33Z
+================================================================================
+PR #13019: fix: Envoy logs conversion error (State: closed)
+URL: https://github.com/apache/skywalking/pull/13019
+Created at: 2025-02-05T07:15:31Z, Merged at: 2025-02-05T07:58:36Z
+================================================================================
+PR #13018: Remove `meter.md` doc, because `mal.md` has covered all the content. (State: closed)
+URL: https://github.com/apache/skywalking/pull/13018
+Created at: 2025-02-03T15:19:37Z, Merged at: 2025-02-03T15:53:36Z
+================================================================================
+PR #13017: Fix the UI doc and relative screenshots. (State: closed)
+URL: https://github.com/apache/skywalking/pull/13017
+Created at: 2025-02-02T14:00:30Z, Merged at: 2025-02-02T14:06:55Z
+================================================================================
+PR #13016: Bump BanyanDB in e2e (State: closed)
+URL: https://github.com/apache/skywalking/pull/13016
+Created at: 2025-02-02T08:31:03Z, Merged at: 2025-02-04T04:09:03Z
+================================================================================
+PR #13015: Add `Get Node List in the Cluster` API (State: closed)
+URL: https://github.com/apache/skywalking/pull/13015
+Created at: 2025-02-01T06:35:52Z, Merged at: 2025-02-01T08:28:10Z
+================================================================================
+PR #13014: Predicted value level declaration in baseline module (State: closed)
+URL: https://github.com/apache/skywalking/pull/13014
+Created at: 2025-01-27T08:55:50Z, Merged at: 2025-01-27T11:13:24Z
+================================================================================
+PR #13009: Adapt new Browser data upload protocol (State: closed)
+URL: https://github.com/apache/skywalking/pull/13009
+Created at: 2025-01-24T02:58:32Z, Merged at: 2025-01-24T06:41:31Z
+================================================================================
+PR #13007: Adapt query supported metrics names in Baseline (State: closed)
+URL: https://github.com/apache/skywalking/pull/13007
+Created at: 2025-01-23T04:03:36Z, Merged at: 2025-01-23T05:37:34Z
+================================================================================
+PR #13005: BaseLine proto: Add query baseline supported metrics names. (State: closed)
+URL: https://github.com/apache/skywalking/pull/13005
+Created at: 2025-01-22T08:53:20Z, Merged at: 2025-01-22T09:51:06Z
+================================================================================
+PR #12999: Fix parameters for Browser Protocol (State: closed)
+URL: https://github.com/apache/skywalking/pull/12999
+Created at: 2025-01-21T09:28:40Z, Merged at: 2025-01-21T09:34:14Z
+================================================================================
+PR #12996: docs: update browser protocol (State: closed)
+URL: https://github.com/apache/skywalking/pull/12996
+Created at: 2025-01-21T08:47:44Z, Merged at: 2025-01-21T09:04:10Z
+================================================================================
+PR #12991: Add Baseline module for support alarm module query predict metrics value (State: closed)
+URL: https://github.com/apache/skywalking/pull/12991
+Created at: 2025-01-17T09:35:44Z, Merged at: 2025-01-17T12:01:10Z
+================================================================================
+PR #12981: OAP self observability: Add watermark circuit break/recover metrics. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12981
+Created at: 2025-01-16T07:09:37Z, Merged at: 2025-01-16T12:32:02Z
+================================================================================
+PR #12980: Fix missing limit in UI template query (State: closed)
+URL: https://github.com/apache/skywalking/pull/12980
+Created at: 2025-01-16T05:28:39Z, Merged at: 2025-01-16T06:00:55Z
+================================================================================
+PR #12978: Fix Ruby component IDs in change logs. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12978
+Created at: 2025-01-15T15:42:53Z, Merged at: 2025-01-15T15:48:15Z
+================================================================================
+PR #12977: Update component IDs for Ruby (State: closed)
+URL: https://github.com/apache/skywalking/pull/12977
+Created at: 2025-01-15T14:46:57Z, Merged at: 2025-01-15T15:32:40Z
+================================================================================
+PR #12974: OAP Self observability: Add JVM heap and direct memory used metrics. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12974
+Created at: 2025-01-15T08:56:49Z, Merged at: 2025-01-15T11:06:46Z
+================================================================================
+PR #12973: Fix bugs and enhance RESOURCE EXHAUSTED: Watermark exceeded logs. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12973
+Created at: 2025-01-15T06:58:05Z, Merged at: 2025-01-15T08:09:33Z
+================================================================================
+PR #12967: chore: set default log level in docker to INFO (State: closed)
+URL: https://github.com/apache/skywalking/pull/12967
+Created at: 2025-01-14T14:31:03Z, Merged at: 2025-01-14T16:03:20Z
+================================================================================
+PR #12965: MQE: Support `&&(and)`, `||(or)` bool operators. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12965
+Created at: 2025-01-14T07:29:51Z, Merged at: 2025-01-14T08:22:30Z
+================================================================================
+PR #12963: Make eBPF Off CPU Profiling more stable (State: closed)
+URL: https://github.com/apache/skywalking/pull/12963
+Created at: 2025-01-13T12:09:43Z, Merged at: 2025-01-13T12:43:02Z
+================================================================================
+PR #12962: Sync UI (State: closed)
+URL: https://github.com/apache/skywalking/pull/12962
+Created at: 2025-01-13T09:32:01Z, Merged at: 2025-01-13T09:51:53Z
+================================================================================
+PR #12961: Make bydb depdendencies file checked and consistent. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12961
+Created at: 2025-01-13T08:17:54Z, Merged at: 2025-01-13T09:47:16Z
+================================================================================
+PR #12959: BanyanDB: Add support for compatibility checks based on API version (State: closed)
+URL: https://github.com/apache/skywalking/pull/12959
+Created at: 2025-01-12T12:20:08Z, Merged at: 2025-01-12T13:34:51Z
+================================================================================
+PR #12956: Bump up BanyanDB to support getting APIVersion (State: closed)
+URL: https://github.com/apache/skywalking/pull/12956
+Created at: 2025-01-12T04:22:33Z, Merged at: None
+================================================================================
+PR #12953: Add circuit-breaking mechanism (State: closed)
+URL: https://github.com/apache/skywalking/pull/12953
+Created at: 2025-01-10T10:01:54Z, Merged at: 2025-01-10T15:49:06Z
+================================================================================
+PR #12948: Support new browser metrics upload API (State: closed)
+URL: https://github.com/apache/skywalking/pull/12948
+Created at: 2025-01-09T12:22:26Z, Merged at: 2025-01-09T13:52:20Z
+================================================================================
+PR #12944: Remove redundant code (State: closed)
+URL: https://github.com/apache/skywalking/pull/12944
+Created at: 2025-01-09T08:52:30Z, Merged at: 2025-01-10T05:26:55Z
+================================================================================
+PR #12940: Support `labelAvg` function in the OAL engine (State: closed)
+URL: https://github.com/apache/skywalking/pull/12940
+Created at: 2025-01-08T10:18:49Z, Merged at: 2025-01-08T12:56:07Z
+================================================================================
+PR #12937: MQE: Support `top_n_of` function for merging multiple metrics topn query. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12937
+Created at: 2025-01-08T03:08:23Z, Merged at: 2025-01-08T04:53:34Z
+================================================================================
+PR #12936: Support BanyanDB's new property (State: closed)
+URL: https://github.com/apache/skywalking/pull/12936
+Created at: 2025-01-07T13:02:05Z, Merged at: 2025-01-08T03:56:45Z
+================================================================================
+PR #12935: Fix typo in documentation (State: closed)
+URL: https://github.com/apache/skywalking/pull/12935
+Created at: 2025-01-07T08:26:02Z, Merged at: 2025-01-07T08:51:05Z
+================================================================================
+PR #12934: Update browser protocol (State: closed)
+URL: https://github.com/apache/skywalking/pull/12934
+Created at: 2025-01-07T07:29:40Z, Merged at: 2025-01-07T07:32:24Z
+================================================================================
+PR #12930: Add more comments for IndexMode (State: closed)
+URL: https://github.com/apache/skywalking/pull/12930
+Created at: 2025-01-05T01:37:13Z, Merged at: 2025-01-05T03:01:17Z
+================================================================================
+PR #12929: Fix wrong index mode declarations (State: closed)
+URL: https://github.com/apache/skywalking/pull/12929
+Created at: 2025-01-05T00:48:33Z, Merged at: 2025-01-05T01:26:20Z
+================================================================================
+PR #12928: BanyanDB: Add installation check for `storageOnly = true` columns. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12928
+Created at: 2025-01-04T15:37:49Z, Merged at: None
+================================================================================
+PR #12927: Fix `AvgHistogramPercentileFunction` doesn't have proper field definition for `ranks`. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12927
+Created at: 2025-01-04T13:08:01Z, Merged at: 2025-01-04T14:38:34Z
+================================================================================
+PR #12923: Fix chore. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12923
+Created at: 2025-01-02T09:26:29Z, Merged at: 2025-01-02T09:34:59Z
+================================================================================
+PR #12922: Add `bydb.dependencies.properties` config file (State: closed)
+URL: https://github.com/apache/skywalking/pull/12922
+Created at: 2025-01-02T07:29:19Z, Merged at: 2025-01-02T08:56:54Z
+================================================================================
+PR #12921: Storage e2e: make topn result more predictable (State: closed)
+URL: https://github.com/apache/skywalking/pull/12921
+Created at: 2025-01-02T03:27:07Z, Merged at: 2025-01-02T04:12:26Z
+================================================================================
+PR #12918: Adapt Alarm and MQE CLI query in the E2E (State: closed)
+URL: https://github.com/apache/skywalking/pull/12918
+Created at: 2024-12-31T08:41:16Z, Merged at: 2025-01-01T13:07:42Z
+================================================================================
+PR #12911: Polish words in storage docs. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12911
+Created at: 2024-12-30T13:26:07Z, Merged at: 2024-12-30T13:29:43Z
+================================================================================
+PR #12910: Alarm: Support store and query the metrics snapshot when the alarm is triggered (State: closed)
+URL: https://github.com/apache/skywalking/pull/12910
+Created at: 2024-12-30T02:19:46Z, Merged at: 2024-12-30T02:57:00Z
+================================================================================
+PR #12909: [Breaking Change] Remove H2 as storage option permanently. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12909
+Created at: 2024-12-29T15:24:15Z, Merged at: 2024-12-30T13:07:21Z
+================================================================================
+PR #12906: Add component ID for Caffeine (State: closed)
+URL: https://github.com/apache/skywalking/pull/12906
+Created at: 2024-12-28T07:14:30Z, Merged at: 2024-12-28T08:34:26Z
+================================================================================
+PR #12903: [BREAKING CHANGE] Simplified the release process (State: closed)
+URL: https://github.com/apache/skywalking/pull/12903
+Created at: 2024-12-27T02:14:49Z, Merged at: 2024-12-27T06:30:42Z
+================================================================================
+PR #12900: Add Ruby component IDs (State: closed)
+URL: https://github.com/apache/skywalking/pull/12900
+Created at: 2024-12-26T09:46:38Z, Merged at: 2024-12-26T10:55:57Z
+================================================================================
+PR #12899: Add protection for dynamic config change propagate chain. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12899
+Created at: 2024-12-26T09:18:38Z, Merged at: 2024-12-26T10:08:05Z
+================================================================================
+PR #12898: Update bydb in e2e (State: closed)
+URL: https://github.com/apache/skywalking/pull/12898
+Created at: 2024-12-25T11:34:37Z, Merged at: 2024-12-25T12:18:48Z
+================================================================================
+PR #12897: Synchronize UI module code (State: closed)
+URL: https://github.com/apache/skywalking/pull/12897
+Created at: 2024-12-23T15:57:01Z, Merged at: 2024-12-24T00:57:07Z
+================================================================================
+PR #12896: test: Remove unused Python imports (State: closed)
+URL: https://github.com/apache/skywalking/pull/12896
+Created at: 2024-12-23T12:26:45Z, Merged at: 2024-12-23T13:32:32Z
+================================================================================
+PR #12895: Add ITVersion for helping management the versions in IT (State: closed)
+URL: https://github.com/apache/skywalking/pull/12895
+Created at: 2024-12-23T10:54:19Z, Merged at: 2024-12-23T12:49:10Z
+================================================================================
+PR #12888: Bump up DB commit to lower e2e/IT CPU costs (State: closed)
+URL: https://github.com/apache/skywalking/pull/12888
+Created at: 2024-12-22T01:34:15Z, Merged at: 2024-12-23T07:11:13Z
+================================================================================
+PR #12884: Fix `ServerStatusService.statusWatchers` concurrent modification. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12884
+Created at: 2024-12-20T06:07:17Z, Merged at: 2024-12-20T12:45:01Z
+================================================================================
+PR #12879: Add IT for BanyanDB schema install and update. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12879
+Created at: 2024-12-18T08:10:00Z, Merged at: 2024-12-18T08:59:35Z
+================================================================================
+PR #12852: Add Status APIs docs. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12852
+Created at: 2024-12-12T06:32:46Z, Merged at: 2024-12-12T06:39:21Z
+================================================================================
+PR #12851: Merge Status APIs into API menu (State: closed)
+URL: https://github.com/apache/skywalking/pull/12851
+Created at: 2024-12-12T05:51:00Z, Merged at: 2024-12-12T05:55:01Z
+================================================================================
+PR #12847: Support `Get Effective TTL Configurations` API. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12847
+Created at: 2024-12-11T12:51:55Z, Merged at: 2024-12-12T01:51:48Z
+================================================================================
+PR #12846: Bump up BanyanDB and Rover in e2e (State: closed)
+URL: https://github.com/apache/skywalking/pull/12846
+Created at: 2024-12-11T01:23:18Z, Merged at: 2024-12-11T02:09:53Z
+================================================================================
+PR #12845: Bump up actions/cache to v4 (State: closed)
+URL: https://github.com/apache/skywalking/pull/12845
+Created at: 2024-12-10T00:47:05Z, Merged at: 2024-12-10T02:29:50Z
+================================================================================
+PR #12843: Sync UI (State: closed)
+URL: https://github.com/apache/skywalking/pull/12843
+Created at: 2024-12-09T09:19:38Z, Merged at: 2024-12-09T09:23:39Z
+================================================================================
+PR #12842: Update Async Profiler doc (State: closed)
+URL: https://github.com/apache/skywalking/pull/12842
+Created at: 2024-12-09T08:37:40Z, Merged at: 2024-12-09T08:53:49Z
+================================================================================
+PR #12840: Remove one unused method. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12840
+Created at: 2024-12-09T01:36:09Z, Merged at: 2024-12-09T02:31:38Z
+================================================================================
+PR #12829: Rename BanyanDB native TTL doc to Progressive TTL (State: closed)
+URL: https://github.com/apache/skywalking/pull/12829
+Created at: 2024-12-05T05:56:11Z, Merged at: 2024-12-05T06:06:57Z
+================================================================================
+PR #12827: Update SW_STORAGE_ES_RESPONSE_TIMEOUT default value in docs (State: closed)
+URL: https://github.com/apache/skywalking/pull/12827
+Created at: 2024-12-04T10:11:35Z, Merged at: 2024-12-04T10:16:00Z
+================================================================================
+PR #12825: Sync UI (State: closed)
+URL: https://github.com/apache/skywalking/pull/12825
+Created at: 2024-12-04T02:51:40Z, Merged at: 2024-12-04T02:58:00Z
+================================================================================
+PR #12824: Bump up UI (State: closed)
+URL: https://github.com/apache/skywalking/pull/12824
+Created at: 2024-12-03T12:03:54Z, Merged at: 2024-12-03T12:09:43Z
+================================================================================
+PR #12823: BanyanDB: Support `@EnableSort` on the column to enable sorting for `IndexRule` and set the default to false. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12823
+Created at: 2024-12-03T09:07:51Z, Merged at: 2024-12-03T09:46:33Z
+================================================================================
+PR #12822: Pin github file to commit (State: closed)
+URL: https://github.com/apache/skywalking/pull/12822
+Created at: 2024-12-03T07:17:43Z, Merged at: 2024-12-03T07:52:38Z
+================================================================================
+PR #12821: fix async profiler task query && Bump up UI (State: closed)
+URL: https://github.com/apache/skywalking/pull/12821
+Created at: 2024-12-03T05:45:30Z, Merged at: 2024-12-03T09:09:01Z
+================================================================================
+PR #12816: feat: Replace timestamps with Duration in async profiler query && Add AsyncProfiling widget (State: closed)
+URL: https://github.com/apache/skywalking/pull/12816
+Created at: 2024-11-30T08:57:44Z, Merged at: 2024-12-02T06:13:28Z
+================================================================================
+PR #12814: Improve component-libraries documentation (State: closed)
+URL: https://github.com/apache/skywalking/pull/12814
+Created at: 2024-11-29T15:52:27Z, Merged at: 2024-11-29T17:20:22Z
+================================================================================
+PR #12808: BanyanDB: Support update the Schema when OAP starting. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12808
+Created at: 2024-11-28T05:52:40Z, Merged at: 2024-12-02T04:49:20Z
+================================================================================
+PR #12793: Sync UI (State: closed)
+URL: https://github.com/apache/skywalking/pull/12793
+Created at: 2024-11-23T13:09:25Z, Merged at: 2024-11-23T13:20:07Z
+================================================================================
+PR #12792: Update banyandb doc (State: closed)
+URL: https://github.com/apache/skywalking/pull/12792
+Created at: 2024-11-23T07:35:17Z, Merged at: 2024-11-23T11:46:16Z
+================================================================================
+PR #12790: Introduce index mode and refactor banyandb group settings  (State: closed)
+URL: https://github.com/apache/skywalking/pull/12790
+Created at: 2024-11-22T03:35:00Z, Merged at: 2024-11-22T05:11:31Z
+================================================================================
+PR #12782: Add `doc_values` for fields that need to be sorted or aggregated in ElasticSearch, and disable all others. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12782
+Created at: 2024-11-20T12:09:17Z, Merged at: 2024-11-24T04:17:16Z
+================================================================================
+PR #12780: BanyanDB: Support update the Group settings when OAP starting. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12780
+Created at: 2024-11-20T02:31:02Z, Merged at: 2024-11-20T03:29:50Z
+================================================================================
+PR #12778: Add gRPC to Component Libraries (State: closed)
+URL: https://github.com/apache/skywalking/pull/12778
+Created at: 2024-11-18T02:41:29Z, Merged at: 2024-11-18T06:16:37Z
+================================================================================
+PR #12777: Feat/better async profiler parser (State: closed)
+URL: https://github.com/apache/skywalking/pull/12777
+Created at: 2024-11-15T05:30:00Z, Merged at: 2024-11-18T11:42:40Z
+================================================================================
+PR #12770: Bump up netty to 4.1.115 (State: closed)
+URL: https://github.com/apache/skywalking/pull/12770
+Created at: 2024-11-13T07:25:03Z, Merged at: 2024-11-14T07:05:41Z
+================================================================================
+PR #12768: Adapt the new metadata standardization in Istio 1.24 (State: closed)
+URL: https://github.com/apache/skywalking/pull/12768
+Created at: 2024-11-13T05:54:26Z, Merged at: 2024-11-13T06:41:51Z
+================================================================================
+PR #12762: Polish mesh data dispatcher: don't generate Instance/Endpoint metrics if they are empty. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12762
+Created at: 2024-11-12T06:36:48Z, Merged at: 2024-11-12T07:11:00Z
+================================================================================
+PR #12758: UI-templates: topN widget add related trace type and dashboard. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12758
+Created at: 2024-11-08T03:35:47Z, Merged at: 2024-11-08T05:50:27Z
+================================================================================
+PR #12753: Support adding additional attr[0-5] for endpoint level metrics. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12753
+Created at: 2024-11-06T03:26:31Z, Merged at: 2024-11-06T04:51:26Z
+================================================================================
+PR #12752: Use shaded async-profiler in e2e (State: closed)
+URL: https://github.com/apache/skywalking/pull/12752
+Created at: 2024-11-05T12:37:38Z, Merged at: 2024-11-05T13:30:16Z
+================================================================================
+PR #12749: Add batch settings and fix trace query bug (State: closed)
+URL: https://github.com/apache/skywalking/pull/12749
+Created at: 2024-11-05T03:20:46Z, Merged at: 2024-11-05T04:05:32Z
+================================================================================
+PR #12743: The index type `BanyanDB.IndexRule.IndexType#TREE` is removed (State: closed)
+URL: https://github.com/apache/skywalking/pull/12743
+Created at: 2024-11-03T14:52:07Z, Merged at: 2024-11-04T00:54:51Z
+================================================================================
+PR #12738: Add naming control for `EndpointDependencyBuilder`. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12738
+Created at: 2024-11-01T08:03:19Z, Merged at: 2024-11-01T10:19:19Z
+================================================================================
+PR #12737: Add metrics value owner for metrics topN query result (State: closed)
+URL: https://github.com/apache/skywalking/pull/12737
+Created at: 2024-11-01T06:46:55Z, Merged at: 2024-11-01T07:30:42Z
+================================================================================
+PR #12731: Fix artifacts in `upload-artifact@v4` are immutable (State: closed)
+URL: https://github.com/apache/skywalking/pull/12731
+Created at: 2024-10-31T07:19:07Z, Merged at: 2024-10-31T08:22:23Z
+================================================================================
+PR #12730: TopN query attrs filter support not equal. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12730
+Created at: 2024-10-30T07:39:11Z, Merged at: 2024-10-30T09:22:55Z
+================================================================================
+PR #12728: Add more attrs for Service metrics (State: closed)
+URL: https://github.com/apache/skywalking/pull/12728
+Created at: 2024-10-29T05:59:39Z, Merged at: 2024-10-29T07:07:53Z
+================================================================================
+PR #12727: Optimize  the error message when decorator names conflict. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12727
+Created at: 2024-10-28T01:01:29Z, Merged at: 2024-10-28T01:42:17Z
+================================================================================
+PR #12726: Reduce Kubernetes metrics calculate in the MQE and Add global widget in Kubernetes Dashboard (State: closed)
+URL: https://github.com/apache/skywalking/pull/12726
+Created at: 2024-10-26T09:08:30Z, Merged at: 2024-10-26T11:18:44Z
+================================================================================
+PR #12724: Sync UI and fix apdex topn order (State: closed)
+URL: https://github.com/apache/skywalking/pull/12724
+Created at: 2024-10-24T08:01:31Z, Merged at: 2024-10-24T10:47:58Z
+================================================================================
+PR #12721: Add service global topN widget on `General-Root` and `Mesh-Root` dashboard. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12721
+Created at: 2024-10-24T02:51:57Z, Merged at: 2024-10-24T03:50:05Z
+================================================================================
+PR #12720: Revert "Add time unit in so11y latency metrics" (State: closed)
+URL: https://github.com/apache/skywalking/pull/12720
+Created at: 2024-10-24T02:15:38Z, Merged at: 2024-10-24T05:28:25Z
+================================================================================
+PR #12719: Add time unit in so11y latency metrics (State: closed)
+URL: https://github.com/apache/skywalking/pull/12719
+Created at: 2024-10-23T07:58:35Z, Merged at: 2024-10-23T09:25:16Z
+================================================================================
+PR #12718: Support adding additional attr[0-4] for service level metrics. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12718
+Created at: 2024-10-23T03:17:25Z, Merged at: 2024-10-23T08:02:06Z
+================================================================================
+PR #12716: ss (State: closed)
+URL: https://github.com/apache/skywalking/pull/12716
+Created at: 2024-10-22T03:50:31Z, Merged at: None
+================================================================================
+PR #12711: Sync UI (State: closed)
+URL: https://github.com/apache/skywalking/pull/12711
+Created at: 2024-10-18T06:54:53Z, Merged at: 2024-10-18T07:51:13Z
+================================================================================
+PR #12703: Support the endpoint list widget query with duration parameter. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12703
+Created at: 2024-10-17T02:40:01Z, Merged at: 2024-10-17T02:52:04Z
+================================================================================
+PR #12700: Add Component ID for the GoZero framework (State: closed)
+URL: https://github.com/apache/skywalking/pull/12700
+Created at: 2024-10-16T03:33:34Z, Merged at: 2024-10-16T08:29:38Z
+================================================================================
+PR #12699: Add Component ID for the GoZero framework (State: closed)
+URL: https://github.com/apache/skywalking/pull/12699
+Created at: 2024-10-16T03:28:14Z, Merged at: None
+================================================================================
+PR #12696: Add support Kong monitoring (State: closed)
+URL: https://github.com/apache/skywalking/pull/12696
+Created at: 2024-10-13T16:47:48Z, Merged at: 2024-10-17T02:09:11Z
+================================================================================
+PR #12693: support query endpoint list with time range (State: closed)
+URL: https://github.com/apache/skywalking/pull/12693
+Created at: 2024-10-12T00:45:56Z, Merged at: 2024-10-15T07:17:12Z
+================================================================================
+PR #12692: Polish eBPF so11y metrics and add error count for query metrics (State: closed)
+URL: https://github.com/apache/skywalking/pull/12692
+Created at: 2024-10-11T13:38:18Z, Merged at: 2024-10-11T14:49:08Z
+================================================================================
+PR #12688: Bump up Apache commons-io to 2.17.0 (State: closed)
+URL: https://github.com/apache/skywalking/pull/12688
+Created at: 2024-10-09T14:25:54Z, Merged at: 2024-10-10T00:48:56Z
+================================================================================
+PR #12687: Add GraphQL metrics dashboard (State: closed)
+URL: https://github.com/apache/skywalking/pull/12687
+Created at: 2024-10-09T14:20:21Z, Merged at: 2024-10-09T14:54:32Z
+================================================================================
+PR #12683: Add self observability metrics for GraphQL query (State: closed)
+URL: https://github.com/apache/skywalking/pull/12683
+Created at: 2024-10-08T09:49:14Z, Merged at: 2024-10-08T12:26:21Z
+================================================================================
+PR #12682: Fix checking OTEL DataPointFlags (State: closed)
+URL: https://github.com/apache/skywalking/pull/12682
+Created at: 2024-10-08T09:41:11Z, Merged at: 2024-10-08T12:59:43Z
+================================================================================
+PR #12681: Reduce the count of process index and adding time range when query process index (State: closed)
+URL: https://github.com/apache/skywalking/pull/12681
+Created at: 2024-10-08T09:40:46Z, Merged at: 2024-10-08T14:10:37Z
+================================================================================
+PR #12680: Fix OTLP metrics incorrectly processed when the datapoint flag is `FLAG_NO_RECORDED_VALUE`. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12680
+Created at: 2024-10-08T07:21:07Z, Merged at: 2024-10-08T08:05:23Z
+================================================================================
+PR #12676: docs: add go-agent to log-agent-native doc (State: closed)
+URL: https://github.com/apache/skywalking/pull/12676
+Created at: 2024-10-08T02:42:08Z, Merged at: 2024-10-08T04:58:12Z
+================================================================================
+PR #12671: Support async profiler feature (State: closed)
+URL: https://github.com/apache/skywalking/pull/12671
+Created at: 2024-09-29T15:15:00Z, Merged at: 2024-10-31T15:09:56Z
+================================================================================
+PR #12669: Released 10.1.0 and start 10.2.0 iteration. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12669
+Created at: 2024-09-29T13:19:39Z, Merged at: 2024-09-29T14:44:25Z
+================================================================================
+PR #12667: Sync UI (State: closed)
+URL: https://github.com/apache/skywalking/pull/12667
+Created at: 2024-09-29T07:21:49Z, Merged at: 2024-09-29T07:43:49Z
+================================================================================
+PR #12665: Support query Alarm message Tag for auto-complete. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12665
+Created at: 2024-09-29T02:18:33Z, Merged at: 2024-09-29T03:00:48Z
+================================================================================
+PR #12663: Introduce BanyanDB 0.7 client (State: closed)
+URL: https://github.com/apache/skywalking/pull/12663
+Created at: 2024-09-28T15:20:58Z, Merged at: 2024-09-28T16:27:41Z
+================================================================================
+PR #12660: PromQL service: support round brackets operator. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12660
+Created at: 2024-09-27T13:20:09Z, Merged at: 2024-09-27T13:56:05Z
+================================================================================
+PR #12659: Flatten ci-friendly revision when deploy (State: closed)
+URL: https://github.com/apache/skywalking/pull/12659
+Created at: 2024-09-27T07:58:13Z, Merged at: 2024-09-27T09:06:40Z
+================================================================================
+PR #12656: Support to analysis the ztunnel mTLS security policy (State: closed)
+URL: https://github.com/apache/skywalking/pull/12656
+Created at: 2024-09-27T07:01:51Z, Merged at: 2024-09-27T08:09:40Z
+================================================================================
+PR #12652: Optimize `network_address_alias` table to reduce the number of the index. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12652
+Created at: 2024-09-27T01:33:24Z, Merged at: 2024-09-27T03:48:48Z
+================================================================================
+PR #12651: BanyanDB: use `TimestampRange` to improve "events" query for BanyanDB. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12651
+Created at: 2024-09-27T01:02:26Z, Merged at: 2024-09-27T02:02:21Z
+================================================================================
+PR #12649: PromQL service: fix operators result missing `rangeExpression` flag. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12649
+Created at: 2024-09-26T07:15:46Z, Merged at: 2024-09-26T07:59:03Z
+================================================================================
+PR #12648: Highlight 10.1 as `A Version of PERFORMANCE` (State: closed)
+URL: https://github.com/apache/skywalking/pull/12648
+Created at: 2024-09-26T05:49:48Z, Merged at: 2024-09-26T05:51:54Z
+================================================================================
+PR #12645: Improve the performance of OTEL metrics handler. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12645
+Created at: 2024-09-25T07:36:20Z, Merged at: 2024-09-25T10:29:01Z
+================================================================================
+PR #12644: PromQL service: query API support RFC3399 time format. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12644
+Created at: 2024-09-25T03:56:05Z, Merged at: 2024-09-25T05:48:08Z
+================================================================================
+PR #12642: Add doc to start next iteration (State: closed)
+URL: https://github.com/apache/skywalking/pull/12642
+Created at: 2024-09-24T13:58:00Z, Merged at: 2024-09-24T14:16:28Z
+================================================================================
+PR #12640: Use CI-friendly revision to set the project version (State: closed)
+URL: https://github.com/apache/skywalking/pull/12640
+Created at: 2024-09-24T07:30:35Z, Merged at: 2024-09-24T09:53:14Z
+================================================================================
+PR #12639: BanyanDB: support TLS connection and configuration. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12639
+Created at: 2024-09-24T07:20:07Z, Merged at: 2024-09-24T08:24:17Z
+================================================================================
+PR #12633: BanyanDB: support using native term searching for `keyword` in query `findEndpoint` and `getAlarm`. (State: closed)
+URL: https://github.com/apache/skywalking/pull/12633
+Created at: 2024-09-23T08:46:56Z, Merged at: 2024-09-24T06:57:38Z
+================================================================================
+PR #12631: Bump up protobuf java dependencies to 3.25.5 (State: closed)
+URL: https://github.com/apache/skywalking/pull/12631
+Created at: 2024-09-23T01:32:19Z, Merged at: 2024-09-23T03:39:43Z
+================================================================================
+PR #12630: Fix SWIP filename (State: closed)
+URL: https://github.com/apache/skywalking/pull/12630
+Created at: 2024-09-20T11:18:52Z, Merged at: 2024-09-20T11:36:07Z
+================================================================================
+PR #12628: chore: clean codes (State: closed)
+URL: https://github.com/apache/skywalking/pull/12628
+Created at: 2024-09-20T00:48:25Z, Merged at: 2024-09-20T01:40:18Z
+================================================================================
+PR #12624: feat:update component-libraries.yml  GoFrame 5022 (State: closed)
+URL: https://github.com/apache/skywalking/pull/12624
+Created at: 2024-09-18T11:28:36Z, Merged at: 2024-09-18T16:11:06Z
+================================================================================
