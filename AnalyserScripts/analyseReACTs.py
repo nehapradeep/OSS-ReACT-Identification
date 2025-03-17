@@ -310,7 +310,7 @@ def main(project_name):
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print("Usage: python script.py <project_name>")
+        print("Usage: python3 AnalyserScripts/analyseReACTs.py <project_name>")
         sys.exit(1)
     
     project_name = sys.argv[1]

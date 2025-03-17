@@ -1,5 +1,7 @@
 import csv
 import re
+import sys
+import os
 
 def parse_txt_to_csv(input_file, output_file):
     with open(input_file, 'r', encoding='utf-8') as file:
@@ -40,4 +42,17 @@ def parse_txt_to_csv(input_file, output_file):
     print(f'CSV file "{output_file}" created successfully!')
 
 # Example usage
-parse_txt_to_csv('superset/pr.txt', 'superset/pr.csv')
+def main(project_name):
+    # Define paths dynamically based on the project name
+    txt_path = os.path.join("github_api", project_name, "pr.txt")
+    csv_path = os.path.join("github_api", project_name, "pr.csv")
+    
+    parse_txt_to_csv(txt_path, csv_path)
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: python github_api/txt_csv.py <project_name>")
+        sys.exit(1)
+    
+    project_name = sys.argv[1]
+    main(project_name)

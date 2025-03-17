@@ -1,12 +1,12 @@
 import re
 import os
+import sys
 
-project_name = 'pygwalker'
 
 # def save_analysis(react_code, outcome, recommendation, output_file):
 #     with open(output_file, mode='a', encoding='utf-8') as file:
 #         file.write(f"{react_code},{outcome},{recommendation}\n")
-def save_analysis(react_name, outcome, recommendation, output_file, project_name=project_name):
+def save_analysis(react_name, outcome, recommendation, output_file, project_name):
     file_exists = os.path.isfile(output_file)
     with open(output_file, mode="a", encoding="utf-8") as md_file:
         if not file_exists or os.stat(output_file).st_size == 0:
@@ -15,8 +15,8 @@ def save_analysis(react_name, outcome, recommendation, output_file, project_name
     
     print(f"Analysis for {react_name} saved to {output_file}")
 
-#purva
-def analyze_react_100(readme_content, output_file):
+
+def analyze_react_100(readme_content, output_file, project_name):
     documentation_keywords = ["document", "process", "practice", "documentation"]
     documentation_found = any(keyword in readme_content.lower() for keyword in documentation_keywords)
     
@@ -27,10 +27,10 @@ def analyze_react_100(readme_content, output_file):
         outcome = "No documentation of processes and practices found in the project."
         recommendation = "No"
     
-    save_analysis("ReACT-100", outcome, recommendation, output_file)
+    save_analysis("ReACT-100", outcome, recommendation, output_file, project_name)
 
-#purva
-def analyze_react_93(readme_content, output_file):
+
+def analyze_react_93(readme_content, output_file, project_name):
     zulip_found = "zulip" in readme_content.lower()
     mailing_list_found = "mailing list" in readme_content.lower()
 
@@ -47,10 +47,10 @@ def analyze_react_93(readme_content, output_file):
         outcome = "No clear communication channels (like Zulip or chat platforms) found."
         recommendation = "No"
     
-    save_analysis("ReACT-93", outcome, recommendation, output_file)
+    save_analysis("ReACT-93", outcome, recommendation, output_file, project_name)
 
-#purva
-def analyze_react_77(readme_content, output_file):
+
+def analyze_react_77(readme_content, output_file, project_name):
     mailing_list_found = "mailing list" in readme_content.lower()
     mailing_list_encouraged = bool(re.search(r"(subscribe|join the mailing list)", readme_content, re.IGNORECASE))
 
@@ -64,10 +64,10 @@ def analyze_react_77(readme_content, output_file):
         outcome = "Mailing list is not mentioned."
         recommendation = "No"
     
-    save_analysis("ReACT-77", outcome, recommendation, output_file)
+    save_analysis("ReACT-77", outcome, recommendation, output_file, project_name)
 
-#purva
-def analyze_react_60(readme_content, output_file):
+
+def analyze_react_60(readme_content, output_file, project_name):
     stars_found = "github stars" in readme_content.lower()
     social_media_links_found = any(link in readme_content.lower() for link in ["twitter", "medium", "linkedin"])
 
@@ -81,10 +81,10 @@ def analyze_react_60(readme_content, output_file):
         outcome = "GitHub stars are not present."
         recommendation = "No"
     
-    save_analysis("ReACT-60", outcome, recommendation, output_file)
+    save_analysis("ReACT-60", outcome, recommendation, output_file, project_name)
 
-#purva
-def analyze_react_53(readme_content, output_file):
+
+def analyze_react_53(readme_content, output_file, project_name):
     incubated_found = "apache software foundation" in readme_content.lower()
 
     if incubated_found:
@@ -94,10 +94,10 @@ def analyze_react_53(readme_content, output_file):
         outcome = "The project is not incubated by a large software foundation."
         recommendation = "No"
     
-    save_analysis("ReACT-53", outcome, recommendation, output_file)
+    save_analysis("ReACT-53", outcome, recommendation, output_file, project_name)
 
-#purva
-def analyze_react_20(readme_content, output_file):
+
+def analyze_react_20(readme_content, output_file, project_name):
     communication_channels = []
     if "zulip" in readme_content.lower():
         communication_channels.append("Zulip")
@@ -119,10 +119,10 @@ def analyze_react_20(readme_content, output_file):
         outcome = "The project does not communicate through various channels."
         recommendation = "No"
     
-    save_analysis("ReACT-20", outcome, recommendation, output_file)
+    save_analysis("ReACT-20", outcome, recommendation, output_file, project_name)
 
-#purva
-def analyze_react_97(readme_content, output_file):
+
+def analyze_react_97(readme_content, output_file, project_name):
     license_found = "apache license" in readme_content.lower()
 
     if license_found:
@@ -132,10 +132,10 @@ def analyze_react_97(readme_content, output_file):
         outcome = "The project license is not mentioned or not Apache License."
         recommendation = "No"
     
-    save_analysis("ReACT-97", outcome, recommendation, output_file)
+    save_analysis("ReACT-97", outcome, recommendation, output_file, project_name)
 
-#purva
-def analyze_react_98(readme_content, output_file):
+
+def analyze_react_98(readme_content, output_file, project_name):
     build_instructions_found = any(keyword in readme_content.lower() for keyword in ["build", "run", "docker", "./x.py"])
 
     if build_instructions_found:
@@ -145,10 +145,10 @@ def analyze_react_98(readme_content, output_file):
         outcome = "No clear build and run instructions are provided."
         recommendation = "No"
     
-    save_analysis("ReACT-98", outcome, recommendation, output_file)
+    save_analysis("ReACT-98", outcome, recommendation, output_file, project_name)
 
-#purva
-def analyze_react_95(readme_content, output_file):
+
+def analyze_react_95(readme_content, output_file, project_name):
     contribution_found = "contributing" in readme_content.lower()
 
     if contribution_found:
@@ -158,10 +158,10 @@ def analyze_react_95(readme_content, output_file):
         outcome = "Contribution guidelines are not mentioned."
         recommendation = "No"
     
-    save_analysis("ReACT-95", outcome, recommendation, output_file)
+    save_analysis("ReACT-95", outcome, recommendation, output_file, project_name)
 
-#purva
-def analyze_react_102(readme_content, output_file):
+
+def analyze_react_102(readme_content, output_file, project_name):
     security_found = any(keyword in readme_content.lower() for keyword in ["security", "vulnerability", "secure", "security considerations"])
 
     if security_found:
@@ -171,22 +171,32 @@ def analyze_react_102(readme_content, output_file):
         outcome = "Security considerations are not documented."
         recommendation = "No"
     
-    save_analysis("ReACT-102", outcome, recommendation, output_file)
+    save_analysis("ReACT-102", outcome, recommendation, output_file, project_name)
 
-if __name__ == "__main__":
+def main(project_name):
     readme_file = os.path.join("github_api", project_name, "README.md")
     output_file = "final_react_analysis.csv"
+    
     with open(readme_file, "r", encoding="utf-8") as file:
         readme_content = file.read()
-    analyze_react_100(readme_content, output_file)
-    analyze_react_93(readme_content, output_file)
-    analyze_react_77(readme_content, output_file)
-    analyze_react_60(readme_content, output_file)
-    analyze_react_53(readme_content, output_file)
-    analyze_react_20(readme_content, output_file)
-    analyze_react_97(readme_content, output_file)
-    analyze_react_98(readme_content, output_file)
-    analyze_react_95(readme_content, output_file)
-    analyze_react_102(readme_content, output_file)
-
+    
+    analyze_react_100(readme_content, output_file, project_name)
+    analyze_react_93(readme_content, output_file, project_name)
+    analyze_react_77(readme_content, output_file, project_name)
+    analyze_react_60(readme_content, output_file, project_name)
+    analyze_react_53(readme_content, output_file, project_name)
+    analyze_react_20(readme_content, output_file, project_name)
+    analyze_react_97(readme_content, output_file, project_name)
+    analyze_react_98(readme_content, output_file, project_name)
+    analyze_react_95(readme_content, output_file, project_name)
+    analyze_react_102(readme_content, output_file, project_name)
+    
     print(f"Analysis completed. Results saved to {output_file}.")
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: python script.py <project_name>")
+        sys.exit(1)
+    
+    project_name = sys.argv[1]
+    main(project_name)
