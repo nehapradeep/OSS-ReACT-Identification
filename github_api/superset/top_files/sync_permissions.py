@@ -1,1 +1,0 @@
-File superset/commands/database/sync_permissions.py not found in the repository.

@@ -1,1 +1,0 @@
-File superset-frontend/plugins/legacy-plugin-chart-rose/src/Rose.js not found in the repository.

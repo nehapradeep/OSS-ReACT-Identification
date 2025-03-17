@@ -330,104 +330,208 @@ Based",,,
 openDAL,ReACT-92: Be kind and make newcomers feel part of the team (Sentiment Analysis of the discussion comments),on the discussions  there are instances of frustration and direct criticism  particularly regarding PR review processes and code quality. While not overtly hostile  the tone isn't consistently encouraging or welcoming to newcomers  and could be interpreted as critical. This suggests that while not intentionally unkind  the project doesn't always prioritize creating a welcoming and supportive environment for new contributors.,"No
 
 Based",,,
-pygwalker,ReACT-11 Keep the project small and simple.,Meets criteria,Yes
-pygwalker,ReACT-26 Conduct unit tests.,Meets criteria,Yes
-pygwalker,ReACT-32 Promote code transparency. Keep the code as simple as possible,"Does not meet criteria (Comment ratio is 0.05, which is below the recommended threshold of 15%.)",No
-pygwalker,ReACT-82 Have and enforce a code of conduct,Does not meet criteria (No code of conduct file found in the project.),No
-pygwalker,ReACT-66 Perform adequate testing before integrating a feature,Meets criteria,Yes
-pygwalker,ReACT-3: Utilize a common programming language,py: 52.27%; tsx: 13.54%; md: 7.55%; ts: 6.26%; toml: 4.58%; json: 4.42%; lock: 3.83%; yml: 1.78%; html: 1.73%; ipynb: 1.29%; js: 1.08%; gitignore: 0.49%; sh: 0.49%; gitmodules: 0.22%; in: 0.16%; css: 0.16%; tgz: 0.11%; pylintrc: 0.05%,N/A
-pygwalker,"ReACT-65: Maintain the current project platform; refrain from altering it. (if available on github, ReACT is satisfied)",Meets criteria,N/A
-pygwalker,ReACT-16,"Total Integrators: 0, Total Merge Commits: 0, Earliest Merge: No merge commits found, Latest Merge: No merge commits found",No
-pygwalker,ReACT-36,"Meets criteria (Active developers: 4, Threshold: 50)",Yes
-pygwalker,ReACT-38,"Does not meet criteria (Experienced contributors: 2, Threshold: 5)",No
-pygwalker,ReACT-63,Average modified-to-added lines ratio: 0.00. Average number of modified files per commit: 6.88. Average number of new files added: 1793.00. Total number of commits analyzed: 1857.,Yes
-pygwalker,ReACT-64,Number of code files modified: 0. Number of documentation files modified: 3. Code-to-Documentation file ratio: 0.00.,Yes
-pygwalker,ReACT-78,Total number of commits analyzed: 1857. Number of commits involving code comment updates: 2. Percentage of commits with comment updates: 0.11%. ,No
-pygwalker,ReACT-100,Processes and practices are documented within the project.,Yes
-pygwalker,ReACT-93,No clear communication channels (like Zulip or chat platforms) found.,No
-pygwalker,ReACT-77,Mailing list is not mentioned.,No
-pygwalker,ReACT-60,GitHub stars are not present.,No
-pygwalker,ReACT-53,The project is not incubated by a large software foundation.,No
-pygwalker,ReACT-20,The project communicates through various channels: Discord, Twitter.,Yes
-pygwalker,ReACT-97,The project is licensed under the Apache License.,Yes
-pygwalker,ReACT-98,Clear build and run instructions are provided.,Yes
-pygwalker,ReACT-95,Contribution guidelines are not mentioned.,No
-pygwalker,ReACT-102,Security considerations are not documented.,No
-pygwalker,ReACT-14 Merge pull requests promptly.,Meets criteria (Avg merge time: 7.41 hours),Yes
-pygwalker,ReACT-62 Encourage developers to start contributing to the project early.,"Meets criteria (Repo created: 2023-02-16 05:17:24+08:00, First commit: 2023-02-17 02:37:34+08:00, Contributions in first 2 months: 193)",Yes
-pygwalker,ReACT-81 Keep knowledge up to date and findable.,Meets criteria (Last README update: 2025-01-07 13:59:59+08:00),Yes
-pygwalker,ReACT-9,Does not meet criteria (Keyword 'how to request for access' not found),No
-pygwalker,ReACT-19,Does not meet criteria (Keyword 'flag newcomers' not found),No
-pygwalker,ReACT-33,Does not meet criteria (Keyword 'contribution guidelines' not found),No
-pygwalker,ReACT-84,Does not meet criteria (Keyword 'onboarding support' not found),No
-pygwalker,ReACT-17: Encourage mentors to collaborate with mentees on addressing bugs or issues.,The comments demonstrate active engagement from project members (like ObservedObserver and longxiaofei) who provide guidance  investigate bugs reported by users  and offer solutions or workarounds. They also actively communicate about the state of issues and planned fixes  indicating a collaborative environment where project members mentor users through their problems. This mentoring is further evidenced by contributors like longxiaofei reproducing bugs and offering support to users like ewagner70.,Yes.
-pygwalker,"ReACT-27: As a newcomer, explain what you've tried when asking for help, and use the provided template. (Check for good-first-issue labels)",The provided issue comments do not consistently demonstrate newcomers explaining their attempts or using a template when asking for help. There's no visible enforcement or encouragement of this practice  nor evidence of good-first-issue labels prompting such behavior.,No
-pygwalker,ReACT-58: Encourage senior developers to answer questions of newcomers,Senior developers  including members of the core team like ObservedObserver and longxiaofei  actively engage in answering user questions and providing guidance  addressing concerns ranging from usage in specific environments like Databricks to clarifying the project's design philosophy and future plans. This suggests a culture of mentorship and support for newcomers.,Yes
-pygwalker,ReACT-61: Make the tasks technically interesting,The comments suggest a focus on technical challenges and improvements. There's discussion of integrating with different chart libraries  optimizing performance in Databricks  addressing memory growth issues  and adding features based on user feedback  suggesting a technically engaging development process.,Yes
-pygwalker,ReACT-67: Clearly communicate unresolved issues to the developers,The comments demonstrate clear communication of unresolved issues to the developers. Users report bugs  feature requests  and limitations encountered while using the project  and developers acknowledge these issues  provide updates on their investigation or resolution  and offer workarounds when possible. This indicates a healthy feedback loop and open communication regarding unresolved issues.,Yes
-pygwalker,ReACT-86: Acknowledge all contributions of newcomers (comments),"The comments show that project members  particularly ""longxiaofei"" and ""ObservedObserver""  actively respond to user inquiries and feedback  acknowledging their contributions and providing solutions or explanations. They address user concerns  investigate bugs  and express gratitude for the input  suggesting a welcoming environment for newcomers.",Yes
-pygwalker,"ReACT-95: Set expectations and needs early: Show newcomers what is expected from them, where the difficulties lie, and what skills and level of expertise they need to have (what programming languages and technologies are used by the project, etc.). Place this information somewhere that newcomers access early in their journey (check issue comments under: Issue tag: “good first issue”)","The provided issue comments don't show explicit efforts to set expectations or needs early for newcomers. While some comments offer technical guidance  there's no consistent practice of outlining required skills  project technologies  or potential difficulties specifically for ""good first issue"" contributors. The focus is more on addressing specific issues rather than proactively onboarding new developers.",No
-pygwalker,ReACT-103: Keep the community informed about decisions.,The project demonstrates keeping the community informed about decisions through regular updates and responses to user feedback. Contributors and members of the project actively provide explanations for design choices  bug fixes  and future plans. The project also addresses user concerns  limitations  and actively seeks to resolve issues in a collaborative manner.,Yes
-pygwalker,ReACT-5: Utilize a pull-based development approach (Check if multiple pull requests are being made by different contributors).,"The provided data shows numerous pull requests submitted by various contributors  including ""Haleshot "" ""akshayka "" ""vignesh1507 "" ""thomasbs17 "" ""BHznJNs "" ""Viddesh1 "" and ""rentruewang "" alongside contributions from organization members like ""islxyqwe "" ""longxiaofei "" and ""ObservedObserver."" This indicates a pull-based development model where external contributors and team members alike propose changes through pull requests  which are then reviewed and potentially merged. The variety of contributors suggests an open and collaborative environment.",Yes.
-pygwalker,ReACT-8: Engage in code revision/Perform frequent code reviews.(Check for frequency of PRs),The provided data shows a high frequency of pull requests  indicating that the project engages in frequent code revisions. Furthermore  comments on various PRs demonstrate code review activities  with contributors and members providing feedback  suggestions  and identifying potential issues in the code. This indicates that code reviews are part of their development process.,Yes.
-pygwalker,ReACT-10: Offer job support to the newcomer.(Check for comments on PRs),"The provided data does not show explicit job support offered to newcomers. While there's active engagement and code review  the focus is primarily on code quality  functionality  and project guidelines. Mentions of ""first-good-issue"" suggest guidance  but direct job support isn't evident.",No
-pygwalker,ReACT-22: Encourage newcomers to share their work for increased exposure. (Check for comments on PRs),"The project demonstrates encouraging newcomers by thanking them for their contributions and offering guidance. For example  in PR 450  the member acknowledges the contribution and suggests checking issues with the ""first-good-issue"" label for guidance and the project also shows appreciation and collaboration in several other PR comments  indicating a welcoming attitude.",Yes
-pygwalker,ReACT-21: Assign newcomers small and interesting tasks.(From Issue tags : find tags related to good first issue),"The provided issue comments do not contain any explicit references to tags like ""good first issue"" or any other indicators that the project actively assigns small  interesting tasks to newcomers. The comments mainly focus on bug fixes  feature requests  usage questions  and integration challenges. There is no clear evidence of a structured effort to onboard newcomers with targeted tasks.",No.
-pygwalker,ReACT-23: Tag tasks based on their complexity level.(From Issue tags : find tags related to complexity level),The provided issue comments do not show any evidence of tasks being tagged based on their complexity level. There is no discussion or mention of tags related to complexity  nor are there any examples of such tags being used. The comments primarily focus on bug fixes  feature requests  and general usage questions.,No
-pygwalker,ReACT-99: Keep the issue list clean and triaged.(From Issue tags : check if significant tags are present),The provided issue comments do not include issue tags or explicit information about issue triage processes. While there are responses and investigations into reported issues  the data lacks evidence of a systematic approach to tagging  categorizing  or prioritizing issues to keep the list clean and well-managed. Therefore  it cannot be confirmed that the project actively follows this recommendation.,No
-pygwalker,"ReACT-69: Improve Inheritance in the source code (Remove implicit polymorphism, introduce generalization, Facilitate Subclassing, Use override over inheritance, Improve interface compliance)",There is no specific analysis of the source code in the context of inheritance  polymorphism  or subclassing. The files are mostly related to API endpoints  webserver setup  and component definitions. Therefore  there is no indication about following or not following the inheritance-related recommendations.,No
-pygwalker,"ReACT-70: Improve encapsulation in the source code (Minimize public interface, remove unnecessary public variables)",The analysis of the provided files doesn't reveal explicit efforts to improve encapsulation by minimizing the public interface or removing unnecessary public variables. While the code appears structured  there's no clear indication of access modifiers or design patterns specifically aimed at stricter encapsulation. Further code inspection and review of design principles applied would be needed to confirm encapsulation improvements.,No
-pygwalker,ReACT-71: Improve exception handling in the source code,The provided files do not contain explicit information about improvements to exception handling. Analysis of the code chunks is not sufficient to determine exception handling quality. Without code examples demonstrating error handling strategies or recent improvements  it's impossible to confirm.,No
-pygwalker,ReACT-72: Improve naming in the source code,The provided code snippets don't offer enough context to assess naming conventions comprehensively. Analyzing naming effectively would require examining variable names  function names  class names  and more across a larger portion of the codebase. Therefore  a conclusive judgment on naming quality based on these files alone is not possible.,No
+pygwalker,ReACT-11 Keep the project small and simple.,Meets criteria,Yes,,,
+pygwalker,ReACT-26 Conduct unit tests.,Meets criteria,Yes,,,
+pygwalker,ReACT-32 Promote code transparency. Keep the code as simple as possible,"Does not meet criteria (Comment ratio is 0.05, which is below the recommended threshold of 15%.)",No,,,
+pygwalker,ReACT-82 Have and enforce a code of conduct,Does not meet criteria (No code of conduct file found in the project.),No,,,
+pygwalker,ReACT-66 Perform adequate testing before integrating a feature,Meets criteria,Yes,,,
+pygwalker,ReACT-3: Utilize a common programming language,py: 52.27%; tsx: 13.54%; md: 7.55%; ts: 6.26%; toml: 4.58%; json: 4.42%; lock: 3.83%; yml: 1.78%; html: 1.73%; ipynb: 1.29%; js: 1.08%; gitignore: 0.49%; sh: 0.49%; gitmodules: 0.22%; in: 0.16%; css: 0.16%; tgz: 0.11%; pylintrc: 0.05%,N/A,,,
+pygwalker,"ReACT-65: Maintain the current project platform; refrain from altering it. (if available on github, ReACT is satisfied)",Meets criteria,N/A,,,
+pygwalker,ReACT-16,"Total Integrators: 0, Total Merge Commits: 0, Earliest Merge: No merge commits found, Latest Merge: No merge commits found",No,,,
+pygwalker,ReACT-36,"Meets criteria (Active developers: 4, Threshold: 50)",Yes,,,
+pygwalker,ReACT-38,"Does not meet criteria (Experienced contributors: 2, Threshold: 5)",No,,,
+pygwalker,ReACT-63,Average modified-to-added lines ratio: 0.00. Average number of modified files per commit: 6.88. Average number of new files added: 1793.00. Total number of commits analyzed: 1857.,Yes,,,
+pygwalker,ReACT-64,Number of code files modified: 0. Number of documentation files modified: 3. Code-to-Documentation file ratio: 0.00.,Yes,,,
+pygwalker,ReACT-78,Total number of commits analyzed: 1857. Number of commits involving code comment updates: 2. Percentage of commits with comment updates: 0.11%. ,No,,,
+pygwalker,ReACT-100,Processes and practices are documented within the project.,Yes,,,
+pygwalker,ReACT-93,No clear communication channels (like Zulip or chat platforms) found.,No,,,
+pygwalker,ReACT-77,Mailing list is not mentioned.,No,,,
+pygwalker,ReACT-60,GitHub stars are not present.,No,,,
+pygwalker,ReACT-53,The project is not incubated by a large software foundation.,No,,,
+pygwalker,ReACT-20,The project communicates through various channels: Discord, Twitter.,Yes,,
+pygwalker,ReACT-97,The project is licensed under the Apache License.,Yes,,,
+pygwalker,ReACT-98,Clear build and run instructions are provided.,Yes,,,
+pygwalker,ReACT-95,Contribution guidelines are not mentioned.,No,,,
+pygwalker,ReACT-102,Security considerations are not documented.,No,,,
+pygwalker,ReACT-14 Merge pull requests promptly.,Meets criteria (Avg merge time: 7.41 hours),Yes,,,
+pygwalker,ReACT-62 Encourage developers to start contributing to the project early.,"Meets criteria (Repo created: 2023-02-16 05:17:24+08:00, First commit: 2023-02-17 02:37:34+08:00, Contributions in first 2 months: 193)",Yes,,,
+pygwalker,ReACT-81 Keep knowledge up to date and findable.,Meets criteria (Last README update: 2025-01-07 13:59:59+08:00),Yes,,,
+pygwalker,ReACT-9,Does not meet criteria (Keyword 'how to request for access' not found),No,,,
+pygwalker,ReACT-19,Does not meet criteria (Keyword 'flag newcomers' not found),No,,,
+pygwalker,ReACT-33,Does not meet criteria (Keyword 'contribution guidelines' not found),No,,,
+pygwalker,ReACT-84,Does not meet criteria (Keyword 'onboarding support' not found),No,,,
+pygwalker,ReACT-17: Encourage mentors to collaborate with mentees on addressing bugs or issues.,The comments demonstrate active engagement from project members (like ObservedObserver and longxiaofei) who provide guidance  investigate bugs reported by users  and offer solutions or workarounds. They also actively communicate about the state of issues and planned fixes  indicating a collaborative environment where project members mentor users through their problems. This mentoring is further evidenced by contributors like longxiaofei reproducing bugs and offering support to users like ewagner70.,Yes.,,,
+pygwalker,"ReACT-27: As a newcomer, explain what you've tried when asking for help, and use the provided template. (Check for good-first-issue labels)",The provided issue comments do not consistently demonstrate newcomers explaining their attempts or using a template when asking for help. There's no visible enforcement or encouragement of this practice  nor evidence of good-first-issue labels prompting such behavior.,No,,,
+pygwalker,ReACT-58: Encourage senior developers to answer questions of newcomers,Senior developers  including members of the core team like ObservedObserver and longxiaofei  actively engage in answering user questions and providing guidance  addressing concerns ranging from usage in specific environments like Databricks to clarifying the project's design philosophy and future plans. This suggests a culture of mentorship and support for newcomers.,Yes,,,
+pygwalker,ReACT-61: Make the tasks technically interesting,The comments suggest a focus on technical challenges and improvements. There's discussion of integrating with different chart libraries  optimizing performance in Databricks  addressing memory growth issues  and adding features based on user feedback  suggesting a technically engaging development process.,Yes,,,
+pygwalker,ReACT-67: Clearly communicate unresolved issues to the developers,The comments demonstrate clear communication of unresolved issues to the developers. Users report bugs  feature requests  and limitations encountered while using the project  and developers acknowledge these issues  provide updates on their investigation or resolution  and offer workarounds when possible. This indicates a healthy feedback loop and open communication regarding unresolved issues.,Yes,,,
+pygwalker,ReACT-86: Acknowledge all contributions of newcomers (comments),"The comments show that project members  particularly ""longxiaofei"" and ""ObservedObserver""  actively respond to user inquiries and feedback  acknowledging their contributions and providing solutions or explanations. They address user concerns  investigate bugs  and express gratitude for the input  suggesting a welcoming environment for newcomers.",Yes,,,
+pygwalker,"ReACT-95: Set expectations and needs early: Show newcomers what is expected from them, where the difficulties lie, and what skills and level of expertise they need to have (what programming languages and technologies are used by the project, etc.). Place this information somewhere that newcomers access early in their journey (check issue comments under: Issue tag: “good first issue”)","The provided issue comments don't show explicit efforts to set expectations or needs early for newcomers. While some comments offer technical guidance  there's no consistent practice of outlining required skills  project technologies  or potential difficulties specifically for ""good first issue"" contributors. The focus is more on addressing specific issues rather than proactively onboarding new developers.",No,,,
+pygwalker,ReACT-103: Keep the community informed about decisions.,The project demonstrates keeping the community informed about decisions through regular updates and responses to user feedback. Contributors and members of the project actively provide explanations for design choices  bug fixes  and future plans. The project also addresses user concerns  limitations  and actively seeks to resolve issues in a collaborative manner.,Yes,,,
+pygwalker,ReACT-5: Utilize a pull-based development approach (Check if multiple pull requests are being made by different contributors).,"The provided data shows numerous pull requests submitted by various contributors  including ""Haleshot "" ""akshayka "" ""vignesh1507 "" ""thomasbs17 "" ""BHznJNs "" ""Viddesh1 "" and ""rentruewang "" alongside contributions from organization members like ""islxyqwe "" ""longxiaofei "" and ""ObservedObserver."" This indicates a pull-based development model where external contributors and team members alike propose changes through pull requests  which are then reviewed and potentially merged. The variety of contributors suggests an open and collaborative environment.",Yes.,,,
+pygwalker,ReACT-8: Engage in code revision/Perform frequent code reviews.(Check for frequency of PRs),The provided data shows a high frequency of pull requests  indicating that the project engages in frequent code revisions. Furthermore  comments on various PRs demonstrate code review activities  with contributors and members providing feedback  suggestions  and identifying potential issues in the code. This indicates that code reviews are part of their development process.,Yes.,,,
+pygwalker,ReACT-10: Offer job support to the newcomer.(Check for comments on PRs),"The provided data does not show explicit job support offered to newcomers. While there's active engagement and code review  the focus is primarily on code quality  functionality  and project guidelines. Mentions of ""first-good-issue"" suggest guidance  but direct job support isn't evident.",No,,,
+pygwalker,ReACT-22: Encourage newcomers to share their work for increased exposure. (Check for comments on PRs),"The project demonstrates encouraging newcomers by thanking them for their contributions and offering guidance. For example  in PR 450  the member acknowledges the contribution and suggests checking issues with the ""first-good-issue"" label for guidance and the project also shows appreciation and collaboration in several other PR comments  indicating a welcoming attitude.",Yes,,,
+pygwalker,ReACT-21: Assign newcomers small and interesting tasks.(From Issue tags : find tags related to good first issue),"The provided issue comments do not contain any explicit references to tags like ""good first issue"" or any other indicators that the project actively assigns small  interesting tasks to newcomers. The comments mainly focus on bug fixes  feature requests  usage questions  and integration challenges. There is no clear evidence of a structured effort to onboard newcomers with targeted tasks.",No.,,,
+pygwalker,ReACT-23: Tag tasks based on their complexity level.(From Issue tags : find tags related to complexity level),The provided issue comments do not show any evidence of tasks being tagged based on their complexity level. There is no discussion or mention of tags related to complexity  nor are there any examples of such tags being used. The comments primarily focus on bug fixes  feature requests  and general usage questions.,No,,,
+pygwalker,ReACT-99: Keep the issue list clean and triaged.(From Issue tags : check if significant tags are present),The provided issue comments do not include issue tags or explicit information about issue triage processes. While there are responses and investigations into reported issues  the data lacks evidence of a systematic approach to tagging  categorizing  or prioritizing issues to keep the list clean and well-managed. Therefore  it cannot be confirmed that the project actively follows this recommendation.,No,,,
+pygwalker,"ReACT-69: Improve Inheritance in the source code (Remove implicit polymorphism, introduce generalization, Facilitate Subclassing, Use override over inheritance, Improve interface compliance)",There is no specific analysis of the source code in the context of inheritance  polymorphism  or subclassing. The files are mostly related to API endpoints  webserver setup  and component definitions. Therefore  there is no indication about following or not following the inheritance-related recommendations.,No,,,
+pygwalker,"ReACT-70: Improve encapsulation in the source code (Minimize public interface, remove unnecessary public variables)",The analysis of the provided files doesn't reveal explicit efforts to improve encapsulation by minimizing the public interface or removing unnecessary public variables. While the code appears structured  there's no clear indication of access modifiers or design patterns specifically aimed at stricter encapsulation. Further code inspection and review of design principles applied would be needed to confirm encapsulation improvements.,No,,,
+pygwalker,ReACT-71: Improve exception handling in the source code,The provided files do not contain explicit information about improvements to exception handling. Analysis of the code chunks is not sufficient to determine exception handling quality. Without code examples demonstrating error handling strategies or recent improvements  it's impossible to confirm.,No,,,
+pygwalker,ReACT-72: Improve naming in the source code,The provided code snippets don't offer enough context to assess naming conventions comprehensively. Analyzing naming effectively would require examining variable names  function names  class names  and more across a larger portion of the codebase. Therefore  a conclusive judgment on naming quality based on these files alone is not possible.,No,,,
 pygwalker,"ReACT-74: Improve Modularization (Modularize API, Improve organization of test directory, Remove unneeded packages)",The provided file list shows attempts at modularization through the separation of concerns into different files (streamlit.py  webserver.py  api.py  component.py  base.py). However  whether the degree of modularization is sufficient or if unneeded packages exist requires deeper analysis than the file names alone provide. There is no indication to confirm the complete removal of unneeded packages.,Nospark,ReACT-81 Keep knowledge up to date and findable.,Meets criteria (Last README update: 2025-03-02 17:45:12-08:00),Yes
-spark,ReACT-9,Does not meet criteria (Keyword 'how to request for access' not found),No
-spark,ReACT-19,Does not meet criteria (Keyword 'flag newcomers' not found),No
-spark,ReACT-33,Does not meet criteria (Keyword 'contribution guidelines' not found),No
-spark,ReACT-84,Does not meet criteria (Keyword 'onboarding support' not found),No
-spark,ReACT-100,Processes and practices are documented within the project.,Yes
-spark,ReACT-93,No clear communication channels (like Zulip or chat platforms) found.,No
-spark,ReACT-77,Mailing list is not mentioned.,No
-spark,ReACT-60,GitHub stars are not present.,No
-spark,ReACT-53,The project is not incubated by a large software foundation.,No
-spark,ReACT-20,The project does not communicate through various channels.,No
-spark,ReACT-97,The project license is not mentioned or not Apache License.,No
-spark,ReACT-98,Clear build and run instructions are provided.,Yes
-spark,ReACT-95,Contribution guidelines are clearly mentioned.,Yes
-spark,ReACT-102,Security considerations are not documented.,No
-dubbo,ReACT-11 Keep the project small and simple.,Meets criteria,Yes
-dubbo,ReACT-26 Conduct unit tests.,Meets criteria,Yes
-dubbo,ReACT-32 Promote code transparency. Keep the code as simple as possible,"Does not meet criteria (Comment ratio is 0.03, which is below the recommended threshold of 15%.)",No
-dubbo,ReACT-82 Have and enforce a code of conduct,Does not meet criteria (No code of conduct file found in the project.),No
-dubbo,ReACT-66 Perform adequate testing before integrating a feature,Meets criteria,Yes
-dubbo,ReACT-3: Utilize a common programming language,java: 62.02%; xml: 30.47%; yml: 2.27%; groovy: 0.85%; artifacts: 0.51%; md: 0.37%; imports: 0.27%; factories: 0.27%; proto: 0.24%; mustache: 0.24%; ArgumentResolver: 0.14%; ReflectionTypeDescriberRegistrar: 0.10%; properties: 0.10%; xsd: 0.10%; pem: 0.10%; key: 0.10%; editorconfig: 0.07%; ArgumentConverter: 0.07%; ClientStreamFactory: 0.07%; Validation: 0.07%; ParamConverterProvider: 0.07%; yaml: 0.07%; gitignore: 0.07%; cmd: 0.07%; allowlist: 0.07%; HeaderFilter: 0.07%; ParameterNameReader: 0.07%; BaseCommand: 0.07%; ScopeModelInitializer: 0.07%; HttpMessageEncoderFactory: 0.07%; html: 0.07%; Serialization: 0.03%; ResourceDescriberRegistrar: 0.03%; Processor: 0.03%; RequestHandlerMapping: 0.03%; Http3ServerTransportListenerFactory: 0.03%; ChannelAddressAccessor: 0.03%; blockedlist: 0.03%; cache: 0.03%; HttpBinder: 0.03%; BuiltinServiceDetector: 0.03%; ProxyDescriberRegistrar: 0.03%; Protocol: 0.03%; HttpMessageAdapterFactory: 0.03%; RequestMappingResolver: 0.03%; RestExtensionAdapter: 0.03%; JsonUtil: 0.03%; RestExtension: 0.03%; OpenAPIExtension: 0.03%; HttpMessageDecoderFactory: 0.03%; WebSocketServerTransportListenerFactory: 0.03%; Filter: 0.03%; ExceptionHandler: 0.03%; json: 0.03%; Authenticator: 0.03%; RestClientFactory: 0.03%,N/A
-dubbo,"ReACT-65: Maintain the current project platform; refrain from altering it. (if available on github, ReACT is satisfied)",Meets criteria,N/A
-dubbo,ReACT-16,"Total Integrators: 0, Total Merge Commits: 0, Earliest Merge: No merge commits found, Latest Merge: No merge commits found",No
-dubbo,ReACT-36,"Meets criteria (Active developers: 11, Threshold: 50)",Yes
-dubbo,ReACT-38,"Meets criteria (Experienced contributors: 7, Threshold: 5)",Yes
-dubbo,ReACT-100,Processes and practices are documented within the project.,Yes
-dubbo,ReACT-93,A Mailing List is available for communication.,Yes
-dubbo,ReACT-77,Mailing list is mentioned, but not encouraged.,No
-dubbo,ReACT-60,GitHub stars are not present.,No
-dubbo,ReACT-53,The project is not incubated by a large software foundation.,No
-dubbo,ReACT-20,The project communicates through various channels: Twitter, WeChat, Mailing List.,Yes
-dubbo,ReACT-97,The project is licensed under the Apache License.,Yes
-dubbo,ReACT-98,Clear build and run instructions are provided.,Yes
-dubbo,ReACT-95,Contribution guidelines are clearly mentioned.,Yes
-dubbo,ReACT-102,Security considerations are documented.,Yes
-dubbo,ReACT-14 Merge pull requests promptly.,Meets criteria (Avg merge time: 111.10 hours),Yes
-dubbo,ReACT-62 Encourage developers to start contributing to the project early.,Does not meet criteria (First commit date 2024-03-18 10:20:17+08:00 does not match repo creation month/year or insufficient contributions in first 2 months: 0),No
-dubbo,ReACT-81 Keep knowledge up to date and findable.,Meets criteria (Last README update: 2025-03-12 03:45:29+02:00),Yes
-dubbo,ReACT-9,Does not meet criteria (Keyword 'how to request for access' not found),No
-dubbo,ReACT-19,Does not meet criteria (Keyword 'flag newcomers' not found),No
-dubbo,ReACT-33,Does not meet criteria (Keyword 'contribution guidelines' not found),No
-dubbo,ReACT-84,Does not meet criteria (Keyword 'onboarding support' not found),No
-seata,ReACT-11 Keep the project small and simple.,Meets criteria,Yes
-seata,ReACT-26 Conduct unit tests.,Meets criteria,Yes
-seata,ReACT-32 Promote code transparency. Keep the code as simple as possible,"Does not meet criteria (Comment ratio is 0.04, which is below the recommended threshold of 15%.)",No
-seata,ReACT-82 Have and enforce a code of conduct,Meets criteria,Yes
-seata,ReACT-66 Perform adequate testing before integrating a feature,Meets criteria,Yes
-seata,ReACT-3: Utilize a common programming language,java: 73.74%; md: 7.66%; xml: 7.34%; conf: 1.64%; yml: 1.09%; proto: 0.77%; json: 0.76%; js: 0.67%; sql: 0.58%; properties: 0.50%; ts: 0.46%; txt: 0.41%; sh: 0.35%; tsx: 0.24%; yaml: 0.19%; css: 0.17%; RegistryProvider: 0.16%; lua: 0.15%; ConfigurationProvider: 0.14%; factories: 0.13%; gitignore: 0.13%; png: 0.11%; scss: 0.10%; ttf: 0.08%; woff: 0.08%; Serializer: 0.08%; SQLOperateRecognizerHolder: 0.08%; Compressor: 0.08%; Filter: 0.07%; Hello: 0.07%; ResourceManager: 0.07%; py: 0.06%; bat: 0.06%; example: 0.06%; kt: 0.06%; AbstractRMHandler: 0.06%; html: 0.06%; RemotingParser: 0.05%; jpeg: 0.05%; woff2: 0.04%; EscapeHandler: 0.04%; StateHandlerInterceptor: 0.04%; LoadBalance: 0.04%; UndoLogParser: 0.04%; SQLRecognizerFactory: 0.04%; UndoExecutorHolder: 0.04%; TableMetaCache: 0.04%; UndoLogManager: 0.04%; imports: 0.04%; InsertExecutor: 0.04%; InterfaceParser: 0.04%; LogStoreSqls: 0.04%; LockStoreSql: 0.04%; SessionManager: 0.04%; LockManager: 0.03%; DistributedLocker: 0.03%; AbstractCore: 0.03%; ico: 0.03%; DbTypeParser: 0.03%; JsonParser: 0.03%; ContextCore: 0.02%; Exporter: 0.02%; eot: 0.02%; RegisterCheckAuthHandler: 0.02%; StateRouterInterceptor: 0.02%; DataSourceProvider: 0.02%; babelrc: 0.02%; def: 0.02%; RegisterResourceParser: 0.02%; RPCFilter: 0.02%; less: 0.02%; LoaderTestSPI: 0.02%; template: 0.02%; editorconfig: 0.02%; Registry: 0.02%; cmd: 0.02%; AuthSigner: 0.02%; Codec: 0.02%; TransactionManager: 0.01%; DataSourceGenerator: 0.01%; MD: 0.01%; eslintignore: 0.01%; TargetClassParser: 0.01%; Hello1: 0.01%; gitattributes: 0.01%; eslintrc: 0.01%; Processor: 0.01%; KeywordChecker: 0.01%; ExtConfigurationProvider: 0.01%; Hello2: 0.01%; ScannerChecker: 0.01%; RpcHook: 0.01%; FileConfig: 0.01%; JacksonSerializer: 0.01%; Rule: 0.01%; helmignore: 0.01%; prettierignore: 0.01%; tokens: 0.01%; RateLimiter: 0.01%; prettierrc: 0.01%; map: 0.01%; DistributedLockSql: 0.01%; VGroupMappingStoreManager: 0.01%; tpl: 0.01%; g4: 0.01%; interp: 0.01%; LogStore: 0.00%; LockStore: 0.00%; TransactionStoreManager: 0.00%; data: 0.00%; Locker: 0.00%; config: 0.00%; svg: 0.00%; ConfigStoreManagerProvider: 0.00%,N/A
-seata,"ReACT-65: Maintain the current project platform; refrain from altering it. (if available on github, ReACT is satisfied)",Meets criteria,N/A
-seata,ReACT-16,"Total Integrators: 0, Total Merge Commits: 0, Earliest Merge: No merge commits found, Latest Merge: No merge commits found",No
-seata,ReACT-36,"Meets criteria (Active developers: 17, Threshold: 50)",Yes
-seata,ReACT-38,"Meets criteria (Experienced contributors: 57, Threshold: 5)",Yes
+spark,ReACT-9,Does not meet criteria (Keyword 'how to request for access' not found),No,,,
+spark,ReACT-19,Does not meet criteria (Keyword 'flag newcomers' not found),No,,,
+spark,ReACT-33,Does not meet criteria (Keyword 'contribution guidelines' not found),No,,,
+spark,ReACT-84,Does not meet criteria (Keyword 'onboarding support' not found),No,,,
+spark,ReACT-100,Processes and practices are documented within the project.,Yes,,,
+spark,ReACT-93,No clear communication channels (like Zulip or chat platforms) found.,No,,,
+spark,ReACT-77,Mailing list is not mentioned.,No,,,
+spark,ReACT-60,GitHub stars are not present.,No,,,
+spark,ReACT-53,The project is not incubated by a large software foundation.,No,,,
+spark,ReACT-20,The project does not communicate through various channels.,No,,,
+spark,ReACT-97,The project license is not mentioned or not Apache License.,No,,,
+spark,ReACT-98,Clear build and run instructions are provided.,Yes,,,
+spark,ReACT-95,Contribution guidelines are clearly mentioned.,Yes,,,
+spark,ReACT-102,Security considerations are not documented.,No,,,
+dubbo,ReACT-11 Keep the project small and simple.,Meets criteria,Yes,,,
+dubbo,ReACT-26 Conduct unit tests.,Meets criteria,Yes,,,
+dubbo,ReACT-32 Promote code transparency. Keep the code as simple as possible,"Does not meet criteria (Comment ratio is 0.03, which is below the recommended threshold of 15%.)",No,,,
+dubbo,ReACT-82 Have and enforce a code of conduct,Does not meet criteria (No code of conduct file found in the project.),No,,,
+dubbo,ReACT-66 Perform adequate testing before integrating a feature,Meets criteria,Yes,,,
+dubbo,ReACT-3: Utilize a common programming language,java: 62.02%; xml: 30.47%; yml: 2.27%; groovy: 0.85%; artifacts: 0.51%; md: 0.37%; imports: 0.27%; factories: 0.27%; proto: 0.24%; mustache: 0.24%; ArgumentResolver: 0.14%; ReflectionTypeDescriberRegistrar: 0.10%; properties: 0.10%; xsd: 0.10%; pem: 0.10%; key: 0.10%; editorconfig: 0.07%; ArgumentConverter: 0.07%; ClientStreamFactory: 0.07%; Validation: 0.07%; ParamConverterProvider: 0.07%; yaml: 0.07%; gitignore: 0.07%; cmd: 0.07%; allowlist: 0.07%; HeaderFilter: 0.07%; ParameterNameReader: 0.07%; BaseCommand: 0.07%; ScopeModelInitializer: 0.07%; HttpMessageEncoderFactory: 0.07%; html: 0.07%; Serialization: 0.03%; ResourceDescriberRegistrar: 0.03%; Processor: 0.03%; RequestHandlerMapping: 0.03%; Http3ServerTransportListenerFactory: 0.03%; ChannelAddressAccessor: 0.03%; blockedlist: 0.03%; cache: 0.03%; HttpBinder: 0.03%; BuiltinServiceDetector: 0.03%; ProxyDescriberRegistrar: 0.03%; Protocol: 0.03%; HttpMessageAdapterFactory: 0.03%; RequestMappingResolver: 0.03%; RestExtensionAdapter: 0.03%; JsonUtil: 0.03%; RestExtension: 0.03%; OpenAPIExtension: 0.03%; HttpMessageDecoderFactory: 0.03%; WebSocketServerTransportListenerFactory: 0.03%; Filter: 0.03%; ExceptionHandler: 0.03%; json: 0.03%; Authenticator: 0.03%; RestClientFactory: 0.03%,N/A,,,
+dubbo,"ReACT-65: Maintain the current project platform; refrain from altering it. (if available on github, ReACT is satisfied)",Meets criteria,N/A,,,
+dubbo,ReACT-16,"Total Integrators: 0, Total Merge Commits: 0, Earliest Merge: No merge commits found, Latest Merge: No merge commits found",No,,,
+dubbo,ReACT-36,"Meets criteria (Active developers: 11, Threshold: 50)",Yes,,,
+dubbo,ReACT-38,"Meets criteria (Experienced contributors: 7, Threshold: 5)",Yes,,,
+dubbo,ReACT-100,Processes and practices are documented within the project.,Yes,,,
+dubbo,ReACT-93,A Mailing List is available for communication.,Yes,,,
+dubbo,ReACT-77,Mailing list is mentioned, but not encouraged.,No,,
+dubbo,ReACT-60,GitHub stars are not present.,No,,,
+dubbo,ReACT-53,The project is not incubated by a large software foundation.,No,,,
+dubbo,ReACT-20,The project communicates through various channels: Twitter, WeChat, Mailing List.,Yes,
+dubbo,ReACT-97,The project is licensed under the Apache License.,Yes,,,
+dubbo,ReACT-98,Clear build and run instructions are provided.,Yes,,,
+dubbo,ReACT-95,Contribution guidelines are clearly mentioned.,Yes,,,
+dubbo,ReACT-102,Security considerations are documented.,Yes,,,
+dubbo,ReACT-14 Merge pull requests promptly.,Meets criteria (Avg merge time: 111.10 hours),Yes,,,
+dubbo,ReACT-62 Encourage developers to start contributing to the project early.,Does not meet criteria (First commit date 2024-03-18 10:20:17+08:00 does not match repo creation month/year or insufficient contributions in first 2 months: 0),No,,,
+dubbo,ReACT-81 Keep knowledge up to date and findable.,Meets criteria (Last README update: 2025-03-12 03:45:29+02:00),Yes,,,
+dubbo,ReACT-9,Does not meet criteria (Keyword 'how to request for access' not found),No,,,
+dubbo,ReACT-19,Does not meet criteria (Keyword 'flag newcomers' not found),No,,,
+dubbo,ReACT-33,Does not meet criteria (Keyword 'contribution guidelines' not found),No,,,
+dubbo,ReACT-84,Does not meet criteria (Keyword 'onboarding support' not found),No,,,
+seata,ReACT-11 Keep the project small and simple.,Meets criteria,Yes,,,
+seata,ReACT-26 Conduct unit tests.,Meets criteria,Yes,,,
+seata,ReACT-32 Promote code transparency. Keep the code as simple as possible,"Does not meet criteria (Comment ratio is 0.04, which is below the recommended threshold of 15%.)",No,,,
+seata,ReACT-82 Have and enforce a code of conduct,Meets criteria,Yes,,,
+seata,ReACT-66 Perform adequate testing before integrating a feature,Meets criteria,Yes,,,
+seata,ReACT-3: Utilize a common programming language,java: 73.74%; md: 7.66%; xml: 7.34%; conf: 1.64%; yml: 1.09%; proto: 0.77%; json: 0.76%; js: 0.67%; sql: 0.58%; properties: 0.50%; ts: 0.46%; txt: 0.41%; sh: 0.35%; tsx: 0.24%; yaml: 0.19%; css: 0.17%; RegistryProvider: 0.16%; lua: 0.15%; ConfigurationProvider: 0.14%; factories: 0.13%; gitignore: 0.13%; png: 0.11%; scss: 0.10%; ttf: 0.08%; woff: 0.08%; Serializer: 0.08%; SQLOperateRecognizerHolder: 0.08%; Compressor: 0.08%; Filter: 0.07%; Hello: 0.07%; ResourceManager: 0.07%; py: 0.06%; bat: 0.06%; example: 0.06%; kt: 0.06%; AbstractRMHandler: 0.06%; html: 0.06%; RemotingParser: 0.05%; jpeg: 0.05%; woff2: 0.04%; EscapeHandler: 0.04%; StateHandlerInterceptor: 0.04%; LoadBalance: 0.04%; UndoLogParser: 0.04%; SQLRecognizerFactory: 0.04%; UndoExecutorHolder: 0.04%; TableMetaCache: 0.04%; UndoLogManager: 0.04%; imports: 0.04%; InsertExecutor: 0.04%; InterfaceParser: 0.04%; LogStoreSqls: 0.04%; LockStoreSql: 0.04%; SessionManager: 0.04%; LockManager: 0.03%; DistributedLocker: 0.03%; AbstractCore: 0.03%; ico: 0.03%; DbTypeParser: 0.03%; JsonParser: 0.03%; ContextCore: 0.02%; Exporter: 0.02%; eot: 0.02%; RegisterCheckAuthHandler: 0.02%; StateRouterInterceptor: 0.02%; DataSourceProvider: 0.02%; babelrc: 0.02%; def: 0.02%; RegisterResourceParser: 0.02%; RPCFilter: 0.02%; less: 0.02%; LoaderTestSPI: 0.02%; template: 0.02%; editorconfig: 0.02%; Registry: 0.02%; cmd: 0.02%; AuthSigner: 0.02%; Codec: 0.02%; TransactionManager: 0.01%; DataSourceGenerator: 0.01%; MD: 0.01%; eslintignore: 0.01%; TargetClassParser: 0.01%; Hello1: 0.01%; gitattributes: 0.01%; eslintrc: 0.01%; Processor: 0.01%; KeywordChecker: 0.01%; ExtConfigurationProvider: 0.01%; Hello2: 0.01%; ScannerChecker: 0.01%; RpcHook: 0.01%; FileConfig: 0.01%; JacksonSerializer: 0.01%; Rule: 0.01%; helmignore: 0.01%; prettierignore: 0.01%; tokens: 0.01%; RateLimiter: 0.01%; prettierrc: 0.01%; map: 0.01%; DistributedLockSql: 0.01%; VGroupMappingStoreManager: 0.01%; tpl: 0.01%; g4: 0.01%; interp: 0.01%; LogStore: 0.00%; LockStore: 0.00%; TransactionStoreManager: 0.00%; data: 0.00%; Locker: 0.00%; config: 0.00%; svg: 0.00%; ConfigStoreManagerProvider: 0.00%,N/A,,,
+seata,"ReACT-65: Maintain the current project platform; refrain from altering it. (if available on github, ReACT is satisfied)",Meets criteria,N/A,,,
+seata,ReACT-16,"Total Integrators: 0, Total Merge Commits: 0, Earliest Merge: No merge commits found, Latest Merge: No merge commits found",No,,,
+seata,ReACT-36,"Meets criteria (Active developers: 17, Threshold: 50)",Yes,,,
+seata,ReACT-38,"Meets criteria (Experienced contributors: 57, Threshold: 5)",Yes,,,
+superset,ReACT-17: Encourage mentors to collaborate with mentees on addressing bugs or issues.,on the provided issue comment chunks  **yes**  the project appears to follow the recommendation. Mentors actively engage with mentees in debugging and problem-solving  evident through collaborative discussions  guidance on fixing issues  and direct involvement in resolving identified bugs. This supportive environment promotes learning and effective issue resolution.,Based,,,
+superset,"ReACT-27: As a newcomer, explain what you've tried when asking for help, and use the provided template. (Check for good-first-issue labels)","on the provided information  there's no clear evidence of newcomers consistently explaining their attempts or utilizing a specific template when seeking help. While some interactions show effort to assist  the consistent application of the recommended practice  especially within ""good first issue"" contexts  isn't demonstrably present.","No.
+
+Based",,,
+superset,ReACT-58: Encourage senior developers to answer questions of newcomers,on the provided issue comments  there isn't clear evidence of senior developers actively stepping in to guide newcomers. While there might be helpful responses  it's difficult to definitively say that senior members are prioritizing mentoring new contributors within the issue discussions  suggesting a lack of active encouragement in the project.,"no
+
+Based",,,
+superset,ReACT-61: Make the tasks technically interesting,"provide the issue comment chunks you are referring to. I need the content of those comments to analyze them and determine whether the tasks discussed are technically interesting. Once you provide the data  I will be able to answer with a ""yes"" or ""no"" and a short explanation.",Please,,,
+superset,ReACT-67: Clearly communicate unresolved issues to the developers,"provide the issue comment chunks you are referring to. I need the text of the comments to analyze them and determine if unresolved issues are clearly communicated to the developers. Once you provide the comments  I will give you a ""yes"" or ""no"" answer and a brief explanation.",Please,,,
+superset,ReACT-86: Acknowledge all contributions of newcomers (comments),"on the provided issue comments  there isn't consistent acknowledgement of contributions from newcomers. While some comments receive replies  it's not a universal practice  indicating that the project doesn't systematically acknowledge all newcomer contributions. A more proactive and inclusive approach would involve acknowledging each contribution  even with a simple ""thank you"" or acknowledgement of their effort.","No
+
+Based",,,
+superset,"ReACT-95: Set expectations and needs early: Show newcomers what is expected from them, where the difficulties lie, and what skills and level of expertise they need to have (what programming languages and technologies are used by the project, etc.). Place this information somewhere that newcomers access early in their journey (check issue comments under: Issue tag: “good first issue”)","on a review of the provided issue comments  the answer is: **No**.
+
+The issue comments associated with the ""good first issue"" tag do not consistently provide clear expectations for newcomers. While some offer guidance on the specific task  they generally lack comprehensive information about the project's technologies  required skill levels  or potential challenges a contributor might face. Thus  newcomers are not adequately informed upfront about what they need to succeed.",Based,,,
+superset,ReACT-103: Keep the community informed about decisions.,"I need the ""issue comments chunks provided earlier"" to answer your question. I don't have access to past conversations or external websites  including GitHub repositories  unless you provide the text directly.
+
+Once you give me the issue comments  I will analyze them and respond with either ""yes"" or ""no"" and the concise explanation.","Okay,",,,
+superset,ReACT-5: Utilize a pull-based development approach (Check if multiple pull requests are being made by different contributors).,The provided PR chunks show multiple pull requests from different contributors  indicating a pull-based development approach. Contributors propose changes through pull requests  which are then reviewed and merged by maintainers. This workflow allows for collaborative development and code review before integration into the main codebase.,Yes.,,,
+superset,ReACT-8: Engage in code revision/Perform frequent code reviews.(Check for frequency of PRs),"on the PR chunks provided  it's difficult to definitively say ""Yes"" or ""No"" without knowing the overall project history. However  assuming the chunks are representative  the frequency of PRs suggests active development and engagement in code changes. However  based on the code provided  the project does not follow the recommended practices for code revision.
+
+Therefore  based on the provided information  the answer is **No**.",Based,,,
+superset,ReACT-10: Offer job support to the newcomer.(Check for comments on PRs),Based on the provided PR chunks  there's no evidence of explicit job support offered to newcomers. The comments focus on code review  suggestions for improvement  and ensuring code quality. There's no mention of mentorship  career advice  or help finding relevant job opportunities within or outside the project.,No.,,,
+superset,ReACT-22: Encourage newcomers to share their work for increased exposure. (Check for comments on PRs),on the provided PR chunks  there are instances of encouraging comments on PRs. These comments often provide feedback  suggest improvements  and thank contributors for their work. This positive and collaborative environment fosters a sense of community and encourages newcomers to share their work  aligning with the recommendation to increase exposure and participation.,"Yes.
+
+Based",,,
+superset,ReACT-21: Assign newcomers small and interesting tasks.(From Issue tags : find tags related to good first issue),"on the analysis of provided issue comments  the project doesn't consistently demonstrate a focus on assigning small and interesting tasks to newcomers  specifically identified through ""good first issue"" tags. The comments suggest a broader range of issue types and varying levels of complexity  and there isn't clear evidence of prioritizing beginner-friendly contributions. While some issues *might* be suitable for newcomers  the data doesn't confirm a dedicated strategy for onboarding beginners.","No
+
+Based",,,
+superset,ReACT-23: Tag tasks based on their complexity level.(From Issue tags : find tags related to complexity level),"on the provided issue comments  there's no explicit mention or consistent use of tags directly indicating the complexity level of tasks. While some labels like ""enhancement"" or ""bug"" might implicitly suggest complexity  they don't serve as a direct and standardized way to categorize tasks by their difficulty or effort required for completion. The analysis didn't reveal tags specifically designed to address or categorize complexity levels.","No.
+
+Based",,,
+superset,ReACT-99: Keep the issue list clean and triaged.(From Issue tags : check if significant tags are present),on the provided comments  there's a general lack of consistent tagging and issue prioritization. Many issues remain untriaged for extended periods  and the comments often highlight the need for better organization and clear assignment of responsibility. This suggests that the issue list is not consistently kept clean and triaged  and significant tags are not reliably present for effective filtering and management.,"No.
+
+Based",,,
+superset,ReACT-14 Merge pull requests promptly.,Meets criteria (Avg merge time: 7.41 hours),Yes,,,
+superset,ReACT-62 Encourage developers to start contributing to the project early.,"Meets criteria (Repo created: 2023-02-16 05:17:24+08:00, First commit: 2023-02-17 02:37:34+08:00, Contributions in first 2 months: 193)",Yes,,,
+superset,ReACT-81 Keep knowledge up to date and findable.,Meets criteria (Last README update: 2025-01-07 13:59:59+08:00),Yes,,,
+superset,ReACT-9,Does not meet criteria (Keyword 'how to request for access' not found),No,,,
+superset,ReACT-19,Does not meet criteria (Keyword 'flag newcomers' not found),No,,,
+superset,ReACT-33,Does not meet criteria (Keyword 'contribution guidelines' not found),No,,,
+superset,ReACT-84,Does not meet criteria (Keyword 'onboarding support' not found),No,,,
+superset,ReACT-11 Keep the project small and simple.,"Does not meet criteria (Total LOC is 1374381, which exceeds the recommended limit of 1 million.)",No,,,
+superset,ReACT-26 Conduct unit tests.,Meets criteria,Yes,,,
+superset,ReACT-32 Promote code transparency. Keep the code as simple as possible,"Does not meet criteria (Comment ratio is 0.11, which is below the recommended threshold of 15%.)",No,,,
+superset,ReACT-82 Have and enforce a code of conduct,Meets criteria,Yes,,,
+superset,ReACT-66 Perform adequate testing before integrating a feature,Meets criteria,Yes,,,
+superset,ReACT-3: Utilize a common programming language,py: 27.03%; tsx: 25.19%; ts: 12.91%; json: 9.31%; yml: 3.29%; jsx: 3.19%; js: 2.88%; geojson: 2.80%; md: 2.36%; txt: 2.14%; mdx: 2.09%; yaml: 1.65%; po: 1.14%; lock: 1.01%; toml: 0.64%; sh: 0.49%; png: 0.46%; svg: 0.28%; nvmrc: 0.14%; in: 0.12%; gitignore: 0.11%; erb: 0.11%; html: 0.10%; less: 0.07%; pot: 0.07%; ipynb: 0.07%; from_local_tarball: 0.04%; env: 0.04%; rat-excludes: 0.04%; dockerignore: 0.04%; prettierignore: 0.03%; gitattributes: 0.03%; htaccess: 0.01%; conf: 0.01%; from_svn_tarball: 0.01%; css: 0.01%; gif: 0.01%; snap: 0.01%; make_tarball: 0.01%; example: 0.01%; eslintrc: 0.01%; csv: 0.01%,N/A,,,
+superset,"ReACT-65: Maintain the current project platform; refrain from altering it. (if available on github, ReACT is satisfied)",Meets criteria,N/A,,,
+superset,ReACT-16,"Total Integrators: 0, Total Merge Commits: 0, Earliest Merge: No merge commits found, Latest Merge: No merge commits found",No,,,
+superset,ReACT-36,"Meets criteria (Active developers: 19, Threshold: 50)",Yes,,,
+superset,ReACT-38,"Meets criteria (Experienced contributors: 23, Threshold: 5)",Yes,,,
+superset,ReACT-63,Average modified-to-added lines ratio: 0.01. Average number of modified files per commit: 77.95. Average number of new files added: 6821.00. Total number of commits analyzed: 7238.,Yes,,,
+superset,ReACT-64,Number of code files modified: 20. Number of documentation files modified: 0. Code-to-Documentation file ratio: inf.,No,,,
+superset,ReACT-78,Total number of commits analyzed: 7238. Number of commits involving code comment updates: 23. Percentage of commits with comment updates: 0.32%. ,No,,,
+superset,ReACT-100,Processes and practices are documented within the project.,Yes,,,
+superset,ReACT-93,A Mailing List is available for communication.,Yes,,,
+superset,ReACT-77,Mailing list is mentioned and encouraged.,Yes,,,
+superset,ReACT-60,GitHub stars are not present.,No,,,
+superset,ReACT-53,The project is incubated by the Apache Software Foundation.,Yes,,,
+superset,ReACT-20,The project communicates through various channels: Twitter, Mailing List.,Yes,,
+superset,ReACT-97,The project is licensed under the Apache License.,Yes,,,
+superset,ReACT-98,Clear build and run instructions are provided.,Yes,,,
+superset,ReACT-95,Contribution guidelines are clearly mentioned.,Yes,,,
+superset,ReACT-102,Security considerations are documented.,Yes,,,
+superset,"ReACT-69: Improve Inheritance in the source code (Remove implicit polymorphism, introduce generalization, Facilitate Subclassing, Use override over inheritance, Improve interface compliance)",on the overall discussion  there were no explicit recommendations or changes directly addressing improvements to inheritance as outlined. While there might have been refactoring  the specific focus areas (e.g.  error handling  performance) did not necessitate or result in changes impacting inheritance patterns. Therefore  the project did not demonstrably follow the stated recommendation.,"No
+
+Based",,,
+superset,"ReACT-70: Improve encapsulation in the source code (Minimize public interface, remove unnecessary public variables)",on previous comments  there are discussions and suggestions about reducing the public API surface  making fields private  and avoiding unnecessary public variables. These recommendations point towards efforts to improve encapsulation. However  the presence of these discussions suggests that the project may not fully adhere to the principle of minimizing public interface at all times  necessitating improvements.,"No
+
+Based",,,
+superset,ReACT-71: Improve exception handling in the source code,on previous comments  there's no indication of specific actions taken to improve exception handling. While some discussions touched on error scenarios  there weren't clear plans or implementations focused on refining how exceptions are caught  handled  or propagated. The focus seemed more on addressing immediate bug fixes rather than systematically improving exception management.,"No
+
+Based",,,
+superset,ReACT-72: Improve naming in the source code,on the comments  there are discussions about unclear names and suggestions to rename variables and functions for better readability and understanding. Several comments directly point out the need for improved clarity in naming  implying that the current naming conventions are not optimal. This indicates that the project has room for improvement regarding naming in the source code.,"No
+
+Based",,,
+superset,"ReACT-74: Improve Modularization (Modularize API, Improve organization of test directory, Remove unneeded packages)",on the prior discussions  there's evidence of ongoing efforts to improve modularity  specifically related to API components and test directory organization. However  there's also persistent discussion about dependency bloat and the need to remove unneeded packages  indicating that the project hasn't fully achieved this aspect of modularization yet. Thus  the project is working on it  but the recommendation is not fully followed.,"No.
+
+Based",,,
+superset,ReACT-85: Use opportunities for in-person interaction (Check for Announcements about meet ups and their timestamp),on the provided discussions  there's no explicit mention or evidence of organized in-person meetups or announcements regarding such events. The discussions primarily focus on project contributions  code reviews  and technical questions  lacking any indication of promoting or facilitating physical gatherings among contributors. Therefore  the project does not appear to actively encourage or utilize opportunities for in-person interaction based on the shared data.,"No
+
+Based",,,
+superset,"ReACT-89: Grant the newcomer freedom: Encourage and allow them to express opinions, propose changes, and share personal viewpoints to foster a comfortable environment.",on the discussion files  there's no explicit mention or observable evidence of actively encouraging newcomers to freely express opinions or propose changes. While some participants might be open to feedback  there isn't a structured approach or explicit encouragement for newcomers to share personal viewpoints or challenge existing ideas. The focus seems to be more on specific tasks and technical aspects rather than fostering an environment of free expression.,"No
+
+Based",,,
+superset,ReACT-91: Be quick to respond to the newcomer: (check for quick responses in the discussion comments),on the provided discussions  there's no clear evidence of consistently quick responses to newcomers. While some interactions show replies  the promptness isn't a defining characteristic. Many questions and issues remain unanswered or are addressed with a significant delay. This suggests the project doesn't prioritize immediate engagement with new contributors.,"No
+
+Based",,,
+superset,ReACT-92: Be kind and make newcomers feel part of the team (Sentiment Analysis of the discussion comments),on the provided discussions  there's evidence of occasional impatience or frustration directed toward newer users or those asking seemingly basic questions. While not overtly hostile  the tone in some instances lacks the welcoming and supportive qualities that would consistently make newcomers feel valued and part of the team. Therefore  the project does not consistently achieve a sentiment reflecting kindness and inclusivity.,No.,,,
+superset,ReACT-20,"Checking for multiple communication channels (e.g., Slack, Discord, Mailing List).",No,,,
+superset,ReACT-24,No mention of local groups in different regions.,No,,,
+superset,ReACT-25,A documentation link is provided in the README.,Yes,,,
+superset,ReACT-29,Checking if the README includes code structure documentation.,No,,,
+superset,ReACT-31,No explicit mention of coding guidelines.,No,,,
+superset,ReACT-34,No roster of project leaders is found.,No,,,
+superset,ReACT-41,No mention of distributed pair programming tools.,No,,,
+superset,ReACT-42,No reference to synchronous editing tools.,No,,,
+superset,ReACT-46,Checking for Slack/Discord communication channels.,No,,,
+superset,ReACT-57,Checking for community engagement mechanisms.,No,,,
+superset,ReACT-48,No mention of scheduled brainstorming sessions.,No,,,
+superset,ReACT-52,No reference to documentation on engineering activities.,No,,,
+superset,ReACT-53,No mention of software foundation incubation.,No,,,
+superset,ReACT-60,Checking for social media presence or repository stars.,No,,,
