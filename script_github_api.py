@@ -13,7 +13,8 @@ repos = [
     #{'owner': 'apache', 'repo': 'celeborn'}
     #{'owner': 'apache', 'repo': 'superset'},
     #{'owner': 'apache', 'repo': 'echarts'},
-    {'owner': 'apache', 'repo': 'spark'}
+    # {'owner': 'apache', 'repo': 'spark'}
+    {'owner': 'apache', 'repo': 'airflow'}
 
 ]
 token = None or os.environ['GITHUB_TOKEN']
@@ -146,7 +147,7 @@ def get_discussions(owner, repo):
 def get_top_source_files(owner, repo):
     # for kvrocks their main branch is "unstable"
     #url = f'https://api.github.com/repos/{owner}/{repo}/git/trees/unstable?recursive=1'
-    url = f'https://api.github.com/repos/{owner}/{repo}/git/trees/master?recursive=1'
+    url = f'https://api.github.com/repos/{owner}/{repo}/git/trees/main?recursive=1'
     # It's "main" for openDAL
     #url = f'https://api.github.com/repos/{owner}/{repo}/git/trees/main?recursive=1'
     response = requests.get(url, headers=headers)
@@ -181,33 +182,33 @@ if __name__ == "__main__":
     for repo in repos:
         os.makedirs(os.path.join('github_api',repo['repo']), exist_ok=True)
         print(f"Processing repo: {repo['owner']}/{repo['repo']}")
-        get_file_path(repo['owner'], repo['repo'], 'README.md')
-        get_file_path(repo['owner'], repo['repo'], 'CONTRIBUTING.md')
-        get_file_path(repo['owner'], repo['repo'], 'LICENSE')
-        pull_requests = get_pull_requests(repo['owner'], repo['repo'])
-        with open(f'github_api/{repo["repo"]}/pr_comments.txt', 'w', encoding="utf-8") as f:
-            for pr in pull_requests:
-                pr_number = pr['number']
-                pr_comments = get_pull_request_comments(repo['owner'], repo['repo'], pr_number)
-                # print(f"Comments for PR {pr_number}: {pr_comments}")
-                if len(pr_comments) > 0:
-                    f.write(f"Comments for PR {pr_number}: {pr_comments}\n")
+        # get_file_path(repo['owner'], repo['repo'], 'README.md')
+        # get_file_path(repo['owner'], repo['repo'], 'CONTRIBUTING.md')
+        # get_file_path(repo['owner'], repo['repo'], 'LICENSE')
+        # pull_requests = get_pull_requests(repo['owner'], repo['repo'])
+        # with open(f'github_api/{repo["repo"]}/pr_comments.txt', 'w', encoding="utf-8") as f:
+        #     for pr in pull_requests:
+        #         pr_number = pr['number']
+        #         pr_comments = get_pull_request_comments(repo['owner'], repo['repo'], pr_number)
+        #         # print(f"Comments for PR {pr_number}: {pr_comments}")
+        #         if len(pr_comments) > 0:
+        #             f.write(f"Comments for PR {pr_number}: {pr_comments}\n")
 
-        with open(f'github_api/{repo["repo"]}/issue_comments.txt', 'w', encoding="utf-8", errors="ignore") as f:
-        #with open(f'github_api/ResDB/issue_comments.txt', 'w', encoding="utf-8") as f:
-            issues = get_issues(repo['owner'], repo['repo'])
-            for issue in issues:
-                issue_number = issue['number']
-                issue_labels = [label['name'] for label in issue.get('labels', [])]
-                issue_comments = get_issue_comments(repo['owner'], repo['repo'], issue_number)
-                f.write(f"Issue #{issue_number}: Labels: {', '.join(issue_labels) if issue_labels else 'No Labels'}\n")
-                if issue_comments:
-                    f.write(f"Comments: {issue_comments}\n")
+        # with open(f'github_api/{repo["repo"]}/issue_comments.txt', 'w', encoding="utf-8", errors="ignore") as f:
+        # #with open(f'github_api/ResDB/issue_comments.txt', 'w', encoding="utf-8") as f:
+        #     issues = get_issues(repo['owner'], repo['repo'])
+        #     for issue in issues:
+        #         issue_number = issue['number']
+        #         issue_labels = [label['name'] for label in issue.get('labels', [])]
+        #         issue_comments = get_issue_comments(repo['owner'], repo['repo'], issue_number)
+        #         f.write(f"Issue #{issue_number}: Labels: {', '.join(issue_labels) if issue_labels else 'No Labels'}\n")
+        #         if issue_comments:
+        #             f.write(f"Comments: {issue_comments}\n")
             
-        with open(f'github_api/{repo["repo"]}/discussions.txt', 'w', encoding="utf-8") as f:
-            discussions = get_discussions(repo['owner'], repo['repo'])    
-            # print(f"Discussions: {discussions}")
-            f.write(f"Discussions: {discussions}\n")
+        # with open(f'github_api/{repo["repo"]}/discussions.txt', 'w', encoding="utf-8") as f:
+        #     discussions = get_discussions(repo['owner'], repo['repo'])    
+        #     # print(f"Discussions: {discussions}")
+        #     f.write(f"Discussions: {discussions}\n")
 
         #pranav
         top_files = get_top_source_files(repo['owner'], repo['repo'])

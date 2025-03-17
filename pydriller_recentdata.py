@@ -7,7 +7,7 @@ from pydriller import Repository
 repo_url = "https://github.com/apache/echarts"
 
 # Define the time window (last 1 year)
-one_year_ago = datetime.now(timezone.utc) - timedelta(days=365)
+one_year_ago = datetime.now(timezone.utc) - timedelta(days=180)
 
 # Define file paths
 csv_filename = "pydrillerCSV/echarts/echarts_commit_data_2.csv"

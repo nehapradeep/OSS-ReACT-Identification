@@ -3,13 +3,13 @@ import os
 from pydriller import Repository
 
 # Define the repository URL
-repo_url = "https://github.com/Kanaries/pygwalker"
+repo_url = "https://github.com/apache/kafka"
 
 # Define the CSV file name
-csv_filename = "pydrillerCSV/pygwalker/pygwalker_commit_data.csv"
-readme_filename = "pydrillerCSV/pygwalker/readme-pygwalker.md"
-license_filename = "pydrillerCSV/pygwalker/license-pygwalker.txt"
-contributing_filename = "pydrillerCSV/pygwalker/contributing-pygwalker.md"
+csv_filename = "pydrillerCSV/kafka/kafka_commit_data.csv"
+readme_filename = "pydrillerCSV/kafka/readme-kafka.md"
+license_filename = "pydrillerCSV/kafka/license-kafka.txt"
+contributing_filename = "pydrillerCSV/kafka/contributing-kafka.md"
 
 # Initialize variables to store latest README, LICENSE, and CONTRIBUTING.md content
 latest_readme = None

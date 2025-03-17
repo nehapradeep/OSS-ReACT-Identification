@@ -2,7 +2,7 @@ import pandas as pd
 import csv
 import os
 
-project_name = 'pygwalker'
+project_name = 'pulsar'
 
 def save_analysis(react_name, outcome, recommendation, output_file):
     with open(output_file, mode="a", encoding="utf-8", newline="") as csv_file:

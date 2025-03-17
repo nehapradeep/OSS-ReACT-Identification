@@ -813,3 +813,16 @@ flink,ReACT-9,Does not meet criteria (Keyword 'how to request for access' not fo
 flink,ReACT-19,Does not meet criteria (Keyword 'flag newcomers' not found),No
 flink,ReACT-33,Does not meet criteria (Keyword 'contribution guidelines' not found),No
 flink,ReACT-84,Does not meet criteria (Keyword 'onboarding support' not found),No
+pulsar,ReACT-11 Keep the project small and simple.,Meets criteria,Yes
+pulsar,ReACT-26 Conduct unit tests.,Meets criteria,Yes
+pulsar,ReACT-32 Promote code transparency. Keep the code as simple as possible,"Does not meet criteria (Comment ratio is 0.04, which is below the recommended threshold of 15%.)",No
+pulsar,ReACT-82 Have and enforce a code of conduct,Does not meet criteria (No code of conduct file found in the project.),No
+pulsar,ReACT-66 Perform adequate testing before integrating a feature,Meets criteria,Yes
+pulsar,ReACT-3: Utilize a common programming language,java: 73.87%; xml: 17.96%; txt: 2.34%; md: 1.80%; conf: 1.02%; yaml: 0.96%; sh: 0.54%; sum: 0.24%; mod: 0.24%; cmd: 0.18%; proto: 0.18%; yml: 0.12%; ClientBuilder: 0.12%; RuntimeDelegate: 0.12%; MD: 0.06%; patch: 0.06%; json: 0.06%; gitignore: 0.06%; properties: 0.06%,N/A
+pulsar,"ReACT-65: Maintain the current project platform; refrain from altering it. (if available on github, ReACT is satisfied)",Meets criteria,N/A
+pulsar,ReACT-16,"Total Integrators: 0, Total Merge Commits: 0, Earliest Merge: No merge commits found, Latest Merge: No merge commits found",No
+pulsar,ReACT-36,"Meets criteria (Active developers: 14, Threshold: 50)",Yes
+pulsar,ReACT-38,"Meets criteria (Experienced contributors: 11, Threshold: 5)",Yes
+pulsar,ReACT-63,Average modified-to-added lines ratio: 0.01. Average number of modified files per commit: 24.12. Average number of new files added: 1638.00. Total number of commits analyzed: 1686.,Yes
+pulsar,ReACT-64,Number of code files modified: 11. Number of documentation files modified: 0. Code-to-Documentation file ratio: inf.,No
+pulsar,ReACT-78,Total number of commits analyzed: 1686. Number of commits involving code comment updates: 1. Percentage of commits with comment updates: 0.06%. ,No

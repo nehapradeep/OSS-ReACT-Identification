@@ -1,0 +1,1956 @@
+PR #24081: [fix][broker] Fix broker is not able to schedule producer-creation task after failure (State: open)
+URL: https://github.com/apache/pulsar/pull/24081
+Created at: 2025-03-14T23:47:20Z, Merged at: None
+================================================================================
+PR #24080: [fix][broker] Fix Metadata event synchronizer should not fail with bad version (State: open)
+URL: https://github.com/apache/pulsar/pull/24080
+Created at: 2025-03-14T20:02:31Z, Merged at: None
+================================================================================
+PR #24079: [fix][broker] Fix NPE while publishing Metadata-Event with not init producer (State: open)
+URL: https://github.com/apache/pulsar/pull/24079
+Created at: 2025-03-14T19:00:22Z, Merged at: None
+================================================================================
+PR #24077: [fix] Bring GitHub Discussions back by enabling discussions in .asf.yaml (State: closed)
+URL: https://github.com/apache/pulsar/pull/24077
+Created at: 2025-03-14T15:41:25Z, Merged at: 2025-03-14T15:43:01Z
+================================================================================
+PR #24076: [improve] PIP-404: Introduce per ledger properties (State: open)
+URL: https://github.com/apache/pulsar/pull/24076
+Created at: 2025-03-13T14:51:23Z, Merged at: None
+================================================================================
+PR #24074: Bump golang.org/x/net from 0.33.0 to 0.36.0 in /pulsar-function-go/examples (State: open)
+URL: https://github.com/apache/pulsar/pull/24074
+Created at: 2025-03-13T01:44:03Z, Merged at: None
+================================================================================
+PR #24073: [improve][broker]Optimize message expiration rate repeated update issues (State: open)
+URL: https://github.com/apache/pulsar/pull/24073
+Created at: 2025-03-12T09:59:09Z, Merged at: None
+================================================================================
+PR #24072: [fix][broker] Pattern subscription doesn't work when the pattern excludes the topic domain. (State: closed)
+URL: https://github.com/apache/pulsar/pull/24072
+Created at: 2025-03-12T07:32:11Z, Merged at: 2025-03-14T00:16:54Z
+================================================================================
+PR #24071: [fix][client] PIP-409 retry/dead letter topic producer config don't take effect. (State: closed)
+URL: https://github.com/apache/pulsar/pull/24071
+Created at: 2025-03-12T07:25:18Z, Merged at: 2025-03-14T09:51:45Z
+================================================================================
+PR #24069: [improve][broker]clean up duplicate code and fix typo (State: open)
+URL: https://github.com/apache/pulsar/pull/24069
+Created at: 2025-03-11T16:11:58Z, Merged at: None
+================================================================================
+PR #24067: [fix][broker] http metric endpoint get compaction latency stats always be 0 (State: closed)
+URL: https://github.com/apache/pulsar/pull/24067
+Created at: 2025-03-10T08:33:44Z, Merged at: 2025-03-14T08:01:07Z
+================================================================================
+PR #24066: [fix][broker] Typo correction: from backlogQuotaDefaultLimitByte to backlogQuotaDefaultLimitBytes (State: closed)
+URL: https://github.com/apache/pulsar/pull/24066
+Created at: 2025-03-08T01:33:22Z, Merged at: 2025-03-10T16:20:44Z
+================================================================================
+PR #24065: [fix][monitor] Set correct content-type for metrics endpoints in Pulsar for Prometheus 3.x compatibility (State: closed)
+URL: https://github.com/apache/pulsar/pull/24065
+Created at: 2025-03-07T23:46:38Z, Merged at: None
+================================================================================
+PR #24064: [improve][broker] Optimize ThresholdShedder with improved boundary checks and parameter reuse (State: closed)
+URL: https://github.com/apache/pulsar/pull/24064
+Created at: 2025-03-07T08:02:09Z, Merged at: 2025-03-13T09:59:22Z
+================================================================================
+PR #24063: [fix][broker]Fix failed consumption after loaded up a terminated topic (State: closed)
+URL: https://github.com/apache/pulsar/pull/24063
+Created at: 2025-03-07T03:17:22Z, Merged at: 2025-03-13T04:42:46Z
+================================================================================
+PR #24061: [fix][client] Fix building broken batched message when publishing (State: closed)
+URL: https://github.com/apache/pulsar/pull/24061
+Created at: 2025-03-06T18:21:20Z, Merged at: 2025-03-14T21:14:12Z
+================================================================================
+PR #24060: [improve][monitor] Add version=0.0.4 to /metrics content type for Prometheus 3.x compatibility (State: closed)
+URL: https://github.com/apache/pulsar/pull/24060
+Created at: 2025-03-05T17:20:28Z, Merged at: 2025-03-06T07:33:43Z
+================================================================================
+PR #24059: [fix][client] Copy eventTime to retry letter topic and DLQ messages (State: closed)
+URL: https://github.com/apache/pulsar/pull/24059
+Created at: 2025-03-05T13:21:42Z, Merged at: 2025-03-05T19:26:16Z
+================================================================================
+PR #24058: [fix][ml] Avoid NPE when getCurrentLedger() returns null (State: closed)
+URL: https://github.com/apache/pulsar/pull/24058
+Created at: 2025-03-05T12:55:34Z, Merged at: None
+================================================================================
+PR #24056: [fix][test] Update partitioned topic subscription assertions in IncrementPartitionsTest (State: closed)
+URL: https://github.com/apache/pulsar/pull/24056
+Created at: 2025-03-05T10:18:49Z, Merged at: 2025-03-12T02:01:49Z
+================================================================================
+PR #24055: [fix] Avoid negative estimated entry count (State: closed)
+URL: https://github.com/apache/pulsar/pull/24055
+Created at: 2025-03-05T07:30:25Z, Merged at: 2025-03-07T04:58:34Z
+================================================================================
+PR #24054: [fix][ml] Corrected pulsar_storage_size metric to not multiply offloaded storage by the write quorum (State: closed)
+URL: https://github.com/apache/pulsar/pull/24054
+Created at: 2025-03-04T16:59:49Z, Merged at: 2025-03-14T10:39:32Z
+================================================================================
+PR #24050: Fix Compilation Errors, Add Kotlin Support & Update Documentation (State: closed)
+URL: https://github.com/apache/pulsar/pull/24050
+Created at: 2025-03-04T09:59:31Z, Merged at: None
+================================================================================
+PR #24049: [improve] Upgrade Netty to 4.1.119.Final (State: closed)
+URL: https://github.com/apache/pulsar/pull/24049
+Created at: 2025-03-04T07:41:01Z, Merged at: 2025-03-04T11:18:49Z
+================================================================================
+PR #24048: [fix][broker] Fix UnsupportedOperationException while setting subscription level dispatch rate policy (State: open)
+URL: https://github.com/apache/pulsar/pull/24048
+Created at: 2025-03-04T05:11:09Z, Merged at: None
+================================================================================
+PR #24045: [improve][broker]Delete unnecessary calls (State: open)
+URL: https://github.com/apache/pulsar/pull/24045
+Created at: 2025-03-03T16:25:34Z, Merged at: None
+================================================================================
+PR #24042: [fix][test] Fix flaky PrometheusMetricsTest.testBrokerMetrics (State: closed)
+URL: https://github.com/apache/pulsar/pull/24042
+Created at: 2025-03-01T19:08:15Z, Merged at: 2025-03-14T07:22:16Z
+================================================================================
+PR #24040: [fix][doc] Workaround Go Yaml issue go-yaml/yaml#789 in docker-compose example (State: closed)
+URL: https://github.com/apache/pulsar/pull/24040
+Created at: 2025-02-28T19:52:39Z, Merged at: 2025-03-03T19:05:58Z
+================================================================================
+PR #24037: [fix][broker][branch-3.0] Backport missed CompactedTopicImpl deadlock fixes #20697 and #20984 to branch 3.0 (State: open)
+URL: https://github.com/apache/pulsar/pull/24037
+Created at: 2025-02-28T12:27:24Z, Merged at: None
+================================================================================
+PR #24035: [fix][broker] fix delay queue sequence issue. (State: closed)
+URL: https://github.com/apache/pulsar/pull/24035
+Created at: 2025-02-28T07:45:22Z, Merged at: 2025-03-03T02:50:30Z
+================================================================================
+PR #24033: [cleanup][misc] Add override annotation (State: closed)
+URL: https://github.com/apache/pulsar/pull/24033
+Created at: 2025-02-27T16:20:55Z, Merged at: 2025-02-28T08:43:47Z
+================================================================================
+PR #24032: [fix][broker] Fix missing validation when setting retention policy on topic level (State: closed)
+URL: https://github.com/apache/pulsar/pull/24032
+Created at: 2025-02-27T06:14:42Z, Merged at: 2025-03-03T01:42:59Z
+================================================================================
+PR #24031: [WIP][fix][offload] Fix classloading issue when using tiered storage (State: open)
+URL: https://github.com/apache/pulsar/pull/24031
+Created at: 2025-02-26T11:38:57Z, Merged at: None
+================================================================================
+PR #24028: [improve]  PIP-410: Introduce pending publish buffer usage metrics (State: open)
+URL: https://github.com/apache/pulsar/pull/24028
+Created at: 2025-02-26T07:15:59Z, Merged at: None
+================================================================================
+PR #24027: [improve][broker] Clean up config changes without a PIP since the 4.0 LTS (State: open)
+URL: https://github.com/apache/pulsar/pull/24027
+Created at: 2025-02-26T06:58:48Z, Merged at: None
+================================================================================
+PR #24025: [improve] [broker] Separate offload read and write thread pool (State: closed)
+URL: https://github.com/apache/pulsar/pull/24025
+Created at: 2025-02-25T19:19:27Z, Merged at: 2025-02-26T03:27:35Z
+================================================================================
+PR #24023: [fix][doc] fix doc related to chunk message feature. (State: closed)
+URL: https://github.com/apache/pulsar/pull/24023
+Created at: 2025-02-25T08:18:39Z, Merged at: 2025-02-26T07:41:27Z
+================================================================================
+PR #24022: [improve][pip] PIP-409: support producer configuration for retry/dead letter topic producer (State: closed)
+URL: https://github.com/apache/pulsar/pull/24022
+Created at: 2025-02-25T07:28:06Z, Merged at: 2025-02-28T09:00:48Z
+================================================================================
+PR #24020: [improve][client] PIP-409: support producer configuration for retry/dead letter topic producer (State: closed)
+URL: https://github.com/apache/pulsar/pull/24020
+Created at: 2025-02-25T03:40:05Z, Merged at: 2025-03-06T08:41:34Z
+================================================================================
+PR #24019: [fix][test]Fix flaky test V1_ProducerConsumerTest.testConcurrentConsumerReceiveWhileReconnect (State: closed)
+URL: https://github.com/apache/pulsar/pull/24019
+Created at: 2025-02-24T13:56:21Z, Merged at: 2025-02-25T06:48:55Z
+================================================================================
+PR #24015: [fix][client] diable chunk feature for retry/dead letter producer. (State: closed)
+URL: https://github.com/apache/pulsar/pull/24015
+Created at: 2025-02-24T09:02:27Z, Merged at: None
+================================================================================
+PR #24014: [fix][broker] Fix BucketDelayedDeliveryTracker thread safety (State: closed)
+URL: https://github.com/apache/pulsar/pull/24014
+Created at: 2025-02-24T06:29:48Z, Merged at: 2025-02-25T06:51:19Z
+================================================================================
+PR #24012: [fix][broker] PIP-322 Fix issue with rate limiters where rates can exceed limits initially and consumption pauses until token balance is positive (State: closed)
+URL: https://github.com/apache/pulsar/pull/24012
+Created at: 2025-02-21T15:41:33Z, Merged at: 2025-02-25T09:30:49Z
+================================================================================
+PR #24011: [fix][test] Fix flaky test OneWayReplicatorUsingGlobalZKTest.testConfigReplicationStartAt (State: closed)
+URL: https://github.com/apache/pulsar/pull/24011
+Created at: 2025-02-21T03:57:56Z, Merged at: 2025-02-25T06:49:33Z
+================================================================================
+PR #24008: [fix][broker] Fix NPE during active consumer is disconnected (State: closed)
+URL: https://github.com/apache/pulsar/pull/24008
+Created at: 2025-02-20T07:16:04Z, Merged at: 2025-02-20T11:28:18Z
+================================================================================
+PR #24006: [fix][broker] fix broker identifying incorrect stuck topic (State: closed)
+URL: https://github.com/apache/pulsar/pull/24006
+Created at: 2025-02-20T00:31:57Z, Merged at: 2025-02-20T09:46:47Z
+================================================================================
+PR #24004: [improve][ci] Upgrade Gradle Develocity Maven Extension to 1.23.1 (State: closed)
+URL: https://github.com/apache/pulsar/pull/24004
+Created at: 2025-02-19T13:36:02Z, Merged at: 2025-02-22T08:27:10Z
+================================================================================
+PR #24003: [improve][test] Upgrade Testcontainers to 1.20.4 and docker-java to 3.4.0 (State: closed)
+URL: https://github.com/apache/pulsar/pull/24003
+Created at: 2025-02-19T13:29:27Z, Merged at: 2025-02-20T01:34:56Z
+================================================================================
+PR #24002: [fix][broker] Rate-Limiter fails with a huge spike in a traffic, and publish/consume stuck for a longer time (State: closed)
+URL: https://github.com/apache/pulsar/pull/24002
+Created at: 2025-02-19T08:34:17Z, Merged at: None
+================================================================================
+PR #24000: [fix] Used unshaded netty buffer classes in pulsar-client shading test (State: open)
+URL: https://github.com/apache/pulsar/pull/24000
+Created at: 2025-02-18T22:04:32Z, Merged at: None
+================================================================================
+PR #23998: [fix][test] Fix flaky test MetadataStoreTest.emptyStoreTest (State: closed)
+URL: https://github.com/apache/pulsar/pull/23998
+Created at: 2025-02-17T18:29:41Z, Merged at: 2025-02-18T06:22:07Z
+================================================================================
+PR #23997: [improve][pip] PIP-408 add maxRetryRequestTimes in ClientConfigurationData and remove duplicate retry logic (State: open)
+URL: https://github.com/apache/pulsar/pull/23997
+Created at: 2025-02-17T15:20:33Z, Merged at: None
+================================================================================
+PR #23996: [improve][meta] Simplify getting parent path in ZKMetadataStore without using java.io.File (State: closed)
+URL: https://github.com/apache/pulsar/pull/23996
+Created at: 2025-02-17T12:18:26Z, Merged at: 2025-02-18T07:11:26Z
+================================================================================
+PR #23995: [improve][meta] Stop election operations when LeaderElectionImpl gets closed (State: open)
+URL: https://github.com/apache/pulsar/pull/23995
+Created at: 2025-02-17T12:14:13Z, Merged at: None
+================================================================================
+PR #23994: [revert] "[improve][ml] Do not switch thread to execute asyncAddEntry's core logic (#23940)" (State: closed)
+URL: https://github.com/apache/pulsar/pull/23994
+Created at: 2025-02-17T11:19:25Z, Merged at: 2025-02-17T15:48:48Z
+================================================================================
+PR #23992: [fix][build] Add develops for buildtools (State: closed)
+URL: https://github.com/apache/pulsar/pull/23992
+Created at: 2025-02-17T04:54:24Z, Merged at: 2025-02-17T06:46:45Z
+================================================================================
+PR #23989: [fix][client] add maxRetryRequestTimes in ClientConfigurationData and remove Duplicate retry logic (State: open)
+URL: https://github.com/apache/pulsar/pull/23989
+Created at: 2025-02-15T14:45:50Z, Merged at: None
+================================================================================
+PR #23988: [fix][meta] Fix ephemeral handling of ZK nodes and fix MockZooKeeper ephemeral and ZK stat handling (State: closed)
+URL: https://github.com/apache/pulsar/pull/23988
+Created at: 2025-02-14T15:40:03Z, Merged at: 2025-02-17T16:54:43Z
+================================================================================
+PR #23986: [fix][test] fix flaky testNegativeAcksWithBackoff when batch enabled. (State: closed)
+URL: https://github.com/apache/pulsar/pull/23986
+Created at: 2025-02-14T09:31:41Z, Merged at: 2025-02-14T11:18:07Z
+================================================================================
+PR #23985: [fix] fix for code scanning alert no. 48: Uncontrolled data used in path expression (State: closed)
+URL: https://github.com/apache/pulsar/pull/23985
+Created at: 2025-02-14T02:54:23Z, Merged at: 2025-02-14T16:54:59Z
+================================================================================
+PR #23984: [fix][meta] Fix ephemeral Zookeeper put which creates a persistent znode (State: closed)
+URL: https://github.com/apache/pulsar/pull/23984
+Created at: 2025-02-13T21:20:10Z, Merged at: 2025-02-14T10:52:13Z
+================================================================================
+PR #23983: [improve][broker] Don't call ManagedLedger#asyncAddEntry in Netty I/O thread (State: open)
+URL: https://github.com/apache/pulsar/pull/23983
+Created at: 2025-02-13T12:21:51Z, Merged at: None
+================================================================================
+PR #23981: [improve][proxy] Make keep-alive interval configurable in Pulsar Proxy (State: closed)
+URL: https://github.com/apache/pulsar/pull/23981
+Created at: 2025-02-13T11:02:37Z, Merged at: 2025-02-14T06:56:41Z
+================================================================================
+PR #23980: [fix][broker] Consumer stuck when delete subscription __compaction failed (State: open)
+URL: https://github.com/apache/pulsar/pull/23980
+Created at: 2025-02-13T09:29:59Z, Merged at: None
+================================================================================
+PR #23979: [fix][io] Fix pulsar-io:pom not found (State: closed)
+URL: https://github.com/apache/pulsar/pull/23979
+Created at: 2025-02-13T09:02:08Z, Merged at: 2025-02-13T17:50:53Z
+================================================================================
+PR #23978: [improve][cli] Support additional msg metadata for V1 topic on peek message cmd (State: closed)
+URL: https://github.com/apache/pulsar/pull/23978
+Created at: 2025-02-13T08:01:50Z, Merged at: 2025-02-25T06:52:08Z
+================================================================================
+PR #23977: [fix][broker] pattern regex error in PulsarLedgerManager cause zk data notification can not execute (State: open)
+URL: https://github.com/apache/pulsar/pull/23977
+Created at: 2025-02-13T07:13:53Z, Merged at: None
+================================================================================
+PR #23976: [fix] Potential fix for code scanning alert no. 22: HTTP response splitting (State: closed)
+URL: https://github.com/apache/pulsar/pull/23976
+Created at: 2025-02-13T05:20:30Z, Merged at: 2025-02-13T15:56:13Z
+================================================================================
+PR #23975: [fix][broker] Add expire check for replicator (State: closed)
+URL: https://github.com/apache/pulsar/pull/23975
+Created at: 2025-02-13T04:33:19Z, Merged at: 2025-02-28T15:20:03Z
+================================================================================
+PR #23974: [improve][broker] Support showing client ip address in client stats while using reverse proxy (State: closed)
+URL: https://github.com/apache/pulsar/pull/23974
+Created at: 2025-02-12T23:01:34Z, Merged at: 2025-03-05T06:37:12Z
+================================================================================
+PR #23973: [fix] Bump org.eclipse.jetty:jetty-server from 10.0.22 to 10.0.24 in /pulsar-io/solr (State: closed)
+URL: https://github.com/apache/pulsar/pull/23973
+Created at: 2025-02-12T22:39:35Z, Merged at: 2025-02-13T01:04:27Z
+================================================================================
+PR #23971: [fix][client] Fix memory leak in ClientCnx.newLookup when there's TooManyRequestsException (State: closed)
+URL: https://github.com/apache/pulsar/pull/23971
+Created at: 2025-02-12T16:25:28Z, Merged at: 2025-02-12T23:29:54Z
+================================================================================
+PR #23970: [improve][ci] Skip "OWASP dependency check" when data wasn't found in cache (State: closed)
+URL: https://github.com/apache/pulsar/pull/23970
+Created at: 2025-02-12T14:31:03Z, Merged at: 2025-02-12T19:57:08Z
+================================================================================
+PR #23969: [improve][client] Update TypedMessageBuilder deliverAfter and deliverAt api comment (State: closed)
+URL: https://github.com/apache/pulsar/pull/23969
+Created at: 2025-02-12T13:13:15Z, Merged at: 2025-02-13T05:29:58Z
+================================================================================
+PR #23967: [fix][client] Fix memory leak when message size exceeds max message size and batching is enabled (State: closed)
+URL: https://github.com/apache/pulsar/pull/23967
+Created at: 2025-02-12T11:35:12Z, Merged at: 2025-02-12T23:33:55Z
+================================================================================
+PR #23966: [fix][build] Upgrade json-smart to 2.5.2 (State: closed)
+URL: https://github.com/apache/pulsar/pull/23966
+Created at: 2025-02-12T09:53:45Z, Merged at: 2025-02-12T15:06:21Z
+================================================================================
+PR #23965: [fix][sec] Upgrade to Netty 4.1.118 (State: closed)
+URL: https://github.com/apache/pulsar/pull/23965
+Created at: 2025-02-11T18:24:07Z, Merged at: 2025-02-11T20:37:09Z
+================================================================================
+PR #23964: [fix] Use Alpine 3.21 in base image (State: closed)
+URL: https://github.com/apache/pulsar/pull/23964
+Created at: 2025-02-11T18:13:42Z, Merged at: 2025-02-11T20:57:27Z
+================================================================================
+PR #23962: [improve][ml] Use lock-free queue in InflightReadsLimiter since there's no concurrent access  (State: closed)
+URL: https://github.com/apache/pulsar/pull/23962
+Created at: 2025-02-11T16:12:57Z, Merged at: 2025-02-25T11:08:33Z
+================================================================================
+PR #23961: [fix] Fix branch 3.0 build failure (State: closed)
+URL: https://github.com/apache/pulsar/pull/23961
+Created at: 2025-02-11T15:11:51Z, Merged at: None
+================================================================================
+PR #23960: [fix][ml] Fix memory leaks in ManagedCursorInfo and ManagedLedgerInfo decompression and compression (State: closed)
+URL: https://github.com/apache/pulsar/pull/23960
+Created at: 2025-02-11T14:28:41Z, Merged at: 2025-02-11T21:39:13Z
+================================================================================
+PR #23959: [improve][fn] Provide a way to set Pulsar client memory limit in Pulsar Function (State: open)
+URL: https://github.com/apache/pulsar/pull/23959
+Created at: 2025-02-11T13:46:35Z, Merged at: None
+================================================================================
+PR #23958: [fix][ml] Fix deadlock in PendingReadsManager (State: closed)
+URL: https://github.com/apache/pulsar/pull/23958
+Created at: 2025-02-11T11:30:42Z, Merged at: 2025-02-11T15:14:18Z
+================================================================================
+PR #23957: [improve][broker] Avoid PersistentReplicator.expireMessages logic compute backlog twice (State: closed)
+URL: https://github.com/apache/pulsar/pull/23957
+Created at: 2025-02-11T04:01:52Z, Merged at: 2025-02-11T23:30:02Z
+================================================================================
+PR #23956: [WIP][improve][ci] Enable Netty leak detection in CI and make leaks fail the build (State: open)
+URL: https://github.com/apache/pulsar/pull/23956
+Created at: 2025-02-10T19:59:41Z, Merged at: None
+================================================================================
+PR #23955: [fix][ml] Fix memory leak due to duplicated RangeCache value retain operations  (State: closed)
+URL: https://github.com/apache/pulsar/pull/23955
+Created at: 2025-02-10T14:03:44Z, Merged at: 2025-02-10T18:17:54Z
+================================================================================
+PR #23954: [improve][io] Support Protobuf schema for Kafka source connector (State: open)
+URL: https://github.com/apache/pulsar/pull/23954
+Created at: 2025-02-10T00:31:59Z, Merged at: None
+================================================================================
+PR #23951: [fix] [ml] incorrect non-durable cursor's backlog due to concurrently trimming ledger and non-durable cursor creation (State: closed)
+URL: https://github.com/apache/pulsar/pull/23951
+Created at: 2025-02-08T09:36:28Z, Merged at: 2025-02-11T03:03:39Z
+================================================================================
+PR #23950: [improve][pip] PIP-407 Add a newMessage API to create a message with a schema and transaction (State: closed)
+URL: https://github.com/apache/pulsar/pull/23950
+Created at: 2025-02-07T17:13:48Z, Merged at: 2025-02-28T09:17:01Z
+================================================================================
+PR #23947: [feat][client] Support forward proxy for the ZTS server in pulsar-client-auth-athenz (State: closed)
+URL: https://github.com/apache/pulsar/pull/23947
+Created at: 2025-02-07T10:20:09Z, Merged at: 2025-02-08T10:03:29Z
+================================================================================
+PR #23946: [improve][broker] PIP-406: Introduce metrics related to dispatch throttled events (State: open)
+URL: https://github.com/apache/pulsar/pull/23946
+Created at: 2025-02-07T09:29:08Z, Merged at: None
+================================================================================
+PR #23945: [improve][pip] PIP-406: Introduce metrics related to dispatch throttled events (State: open)
+URL: https://github.com/apache/pulsar/pull/23945
+Created at: 2025-02-07T09:22:19Z, Merged at: None
+================================================================================
+PR #23943: [fix] [client] call redeliver 1 msg but did 2 msgs (State: closed)
+URL: https://github.com/apache/pulsar/pull/23943
+Created at: 2025-02-07T07:00:59Z, Merged at: 2025-02-10T01:44:07Z
+================================================================================
+PR #23942: [improve][client]  PIP-407 Add newMessage with schema and transactions (State: open)
+URL: https://github.com/apache/pulsar/pull/23942
+Created at: 2025-02-06T21:31:46Z, Merged at: None
+================================================================================
+PR #23940: [improve][ml] Do not switch thread to execute asyncAddEntry's core logic (State: closed)
+URL: https://github.com/apache/pulsar/pull/23940
+Created at: 2025-02-06T12:57:38Z, Merged at: 2025-02-10T03:19:33Z
+================================================================================
+PR #23939: [improve][broker] Avoid logging errors when there is a connection issue during subscription. (State: closed)
+URL: https://github.com/apache/pulsar/pull/23939
+Created at: 2025-02-06T10:15:03Z, Merged at: 2025-02-06T13:03:10Z
+================================================================================
+PR #23938: [improve][broker] Avoid printing log for IncompatibleSchemaException in ServerCnx (State: closed)
+URL: https://github.com/apache/pulsar/pull/23938
+Created at: 2025-02-06T10:00:10Z, Merged at: 2025-02-07T01:48:47Z
+================================================================================
+PR #23935: [improve][client] Avoid logging errors for retriable errors when creating producer (State: closed)
+URL: https://github.com/apache/pulsar/pull/23935
+Created at: 2025-02-06T04:13:13Z, Merged at: 2025-02-06T10:52:09Z
+================================================================================
+PR #23933: [improve][offload] Skip tiered-storage deployment (State: closed)
+URL: https://github.com/apache/pulsar/pull/23933
+Created at: 2025-02-06T03:56:59Z, Merged at: 2025-02-09T15:25:03Z
+================================================================================
+PR #23932: [improve][io] Allow skipping connector deployment (State: closed)
+URL: https://github.com/apache/pulsar/pull/23932
+Created at: 2025-02-06T03:35:52Z, Merged at: 2025-02-08T05:18:46Z
+================================================================================
+PR #23931: [improve] [broker] Make the estimated entry size more accurate (State: closed)
+URL: https://github.com/apache/pulsar/pull/23931
+Created at: 2025-02-05T13:56:27Z, Merged at: 2025-02-25T04:57:17Z
+================================================================================
+PR #23930: [fix][broker] Fix rate limiter token bucket and clock consistency issues causing excessive throttling and connection timeouts (State: closed)
+URL: https://github.com/apache/pulsar/pull/23930
+Created at: 2025-02-05T13:18:13Z, Merged at: 2025-02-08T17:01:07Z
+================================================================================
+PR #23929: [improve][broker] Don't print error logs for ProducerBusyException (State: closed)
+URL: https://github.com/apache/pulsar/pull/23929
+Created at: 2025-02-05T10:38:35Z, Merged at: 2025-02-06T02:07:16Z
+================================================================================
+PR #23928: [improve][broker] Do not print error logs for NotFound or Conflict errors when using the Admin API (State: closed)
+URL: https://github.com/apache/pulsar/pull/23928
+Created at: 2025-02-05T10:02:14Z, Merged at: 2025-02-06T09:56:57Z
+================================================================================
+PR #23927: [fix] [common] Fix RawMessageImpl.getProperties() failed when the message metadata contains the same key but with different values (State: closed)
+URL: https://github.com/apache/pulsar/pull/23927
+Created at: 2025-02-05T03:23:05Z, Merged at: 2025-03-11T12:13:06Z
+================================================================================
+PR #23926: [fix] [common] Fix RawMessageImpl.getProperties() failed when the message metadata contains the same key but with different values (State: closed)
+URL: https://github.com/apache/pulsar/pull/23926
+Created at: 2025-02-05T03:10:37Z, Merged at: None
+================================================================================
+PR #23924: [fix][client] Replace String with WebTarget in authenticationStage (State: open)
+URL: https://github.com/apache/pulsar/pull/23924
+Created at: 2025-02-05T01:56:08Z, Merged at: None
+================================================================================
+PR #23919: [fix][broker] Fix seeking by timestamp can be reset the cursor position to earliest (State: closed)
+URL: https://github.com/apache/pulsar/pull/23919
+Created at: 2025-02-02T15:18:56Z, Merged at: 2025-02-11T06:25:14Z
+================================================================================
+PR #23918: [improve][broker]Optimize InMemoryDelayedDeliveryTracker by maintaining state (State: open)
+URL: https://github.com/apache/pulsar/pull/23918
+Created at: 2025-02-02T12:47:22Z, Merged at: None
+================================================================================
+PR #23915: [improve][broker] Refactor a private method to eliminate an unnecessary parameter (State: closed)
+URL: https://github.com/apache/pulsar/pull/23915
+Created at: 2025-01-31T08:57:10Z, Merged at: 2025-02-11T06:52:09Z
+================================================================================
+PR #23914: [fix] Initialize UrlServiceProvider before trying to use transaction coordinator (State: closed)
+URL: https://github.com/apache/pulsar/pull/23914
+Created at: 2025-01-30T22:32:37Z, Merged at: 2025-01-31T02:23:37Z
+================================================================================
+PR #23911: [fix] Avoid NPE when closing an uninitialized SameAuthParamsLookupAutoClusterFailover (State: closed)
+URL: https://github.com/apache/pulsar/pull/23911
+Created at: 2025-01-29T21:17:04Z, Merged at: 2025-01-30T02:28:40Z
+================================================================================
+PR #23909: [fix][ci] Configure Docker data-root to /mnt/docker to avoid running out of disk space (State: closed)
+URL: https://github.com/apache/pulsar/pull/23909
+Created at: 2025-01-29T14:21:52Z, Merged at: 2025-01-29T17:33:40Z
+================================================================================
+PR #23907: [improve][broker] Implementing delayed message cancellation in pulsar (State: open)
+URL: https://github.com/apache/pulsar/pull/23907
+Created at: 2025-01-29T03:58:57Z, Merged at: None
+================================================================================
+PR #23905: [improve][client] Implement HTTP client using javax.ws.rs (State: open)
+URL: https://github.com/apache/pulsar/pull/23905
+Created at: 2025-01-28T17:28:50Z, Merged at: None
+================================================================================
+PR #23904: [improve][broker] Refactor a private method to eliminate an unnecessary parameter (State: closed)
+URL: https://github.com/apache/pulsar/pull/23904
+Created at: 2025-01-28T09:23:04Z, Merged at: None
+================================================================================
+PR #23903: [fix][broker Fix bug in RangeCache where different instance of the key wouldn't ever match (State: closed)
+URL: https://github.com/apache/pulsar/pull/23903
+Created at: 2025-01-28T00:31:48Z, Merged at: 2025-01-28T23:23:52Z
+================================================================================
+PR #23902: [fix][meta] Fix ephemeral Zookeeper put which creates a persistent znode (State: closed)
+URL: https://github.com/apache/pulsar/pull/23902
+Created at: 2025-01-27T20:15:00Z, Merged at: None
+================================================================================
+PR #23901: [fix][broker] Make InflightReadsLimiter asynchronous and apply it for replay queue reads (State: closed)
+URL: https://github.com/apache/pulsar/pull/23901
+Created at: 2025-01-27T19:51:35Z, Merged at: 2025-01-29T20:11:57Z
+================================================================================
+PR #23899: [fix] Bump org.apache.solr:solr-core from 8.11.3 to 9.8.0 in /pulsar-io/solr (State: closed)
+URL: https://github.com/apache/pulsar/pull/23899
+Created at: 2025-01-27T17:23:38Z, Merged at: 2025-02-12T22:38:45Z
+================================================================================
+PR #23898: [fix][build] Use amazoncorretto:21-alpine3.20 JDK build for Alpine 3.20 (State: closed)
+URL: https://github.com/apache/pulsar/pull/23898
+Created at: 2025-01-27T06:45:38Z, Merged at: 2025-01-27T09:07:51Z
+================================================================================
+PR #23896: [improve][client] PIP-405 Enhanced Dynamic Handling of Selective Consumers in MultiTopicConsumers (State: open)
+URL: https://github.com/apache/pulsar/pull/23896
+Created at: 2025-01-25T08:42:50Z, Merged at: None
+================================================================================
+PR #23895: [improve][pip] PIP-405: Enhanced Dynamic Handling of Selective Consumers in MultiTopicConsumers (State: open)
+URL: https://github.com/apache/pulsar/pull/23895
+Created at: 2025-01-25T08:35:09Z, Merged at: None
+================================================================================
+PR #23894: [fix][broker] Apply dispatcherMaxReadSizeBytes also for replay reads for Shared and Key_Shared subscriptions (State: closed)
+URL: https://github.com/apache/pulsar/pull/23894
+Created at: 2025-01-24T22:03:10Z, Merged at: 2025-01-27T06:10:54Z
+================================================================================
+PR #23893: [fix][test] Fix flaky DelayedDeliveryTest.testEnableTopicDelayedDelivery (State: closed)
+URL: https://github.com/apache/pulsar/pull/23893
+Created at: 2025-01-24T20:37:37Z, Merged at: 2025-01-28T22:17:22Z
+================================================================================
+PR #23892: [improve][test] Support decorating topic, subscription, dispatcher, ManagedLedger and ManagedCursors instances in tests (State: closed)
+URL: https://github.com/apache/pulsar/pull/23892
+Created at: 2025-01-24T17:24:33Z, Merged at: 2025-01-25T08:59:01Z
+================================================================================
+PR #23888: [improve][ml]Set default value of managedLedgerPersistIndividualAckAsLongArray to true (State: closed)
+URL: https://github.com/apache/pulsar/pull/23888
+Created at: 2025-01-24T08:01:44Z, Merged at: 2025-01-24T11:51:50Z
+================================================================================
+PR #23886: [fix][client] Fix LoadManagerReport not found (State: closed)
+URL: https://github.com/apache/pulsar/pull/23886
+Created at: 2025-01-23T10:41:59Z, Merged at: 2025-01-24T18:44:16Z
+================================================================================
+PR #23884: [fix][broker] Closed topics won't be removed from the cache (State: closed)
+URL: https://github.com/apache/pulsar/pull/23884
+Created at: 2025-01-23T09:12:06Z, Merged at: 2025-02-06T02:14:28Z
+================================================================================
+PR #23883: [improve][ci] Increase Maven max heap size to 2048M and tune GCLockerRetryAllocationCount (State: closed)
+URL: https://github.com/apache/pulsar/pull/23883
+Created at: 2025-01-23T08:43:09Z, Merged at: 2025-01-23T11:40:04Z
+================================================================================
+PR #23881: [improve][fn] Set default tenant and namespace for ListFunctions cmd (State: closed)
+URL: https://github.com/apache/pulsar/pull/23881
+Created at: 2025-01-23T03:08:33Z, Merged at: 2025-01-24T04:11:00Z
+================================================================================
+PR #23878: [improve][broker] Support values up to 2^32 in ConcurrentBitmapSortedLongPairSet (State: closed)
+URL: https://github.com/apache/pulsar/pull/23878
+Created at: 2025-01-22T17:33:45Z, Merged at: 2025-01-23T14:02:45Z
+================================================================================
+PR #23876: [fix][test] Fix quiet time implementation in BrokerTestUtil.receiveMessages (State: closed)
+URL: https://github.com/apache/pulsar/pull/23876
+Created at: 2025-01-22T08:02:08Z, Merged at: 2025-01-23T06:48:47Z
+================================================================================
+PR #23875: [improve][test] Add solution to PulsarMockBookKeeper for intercepting reads (State: closed)
+URL: https://github.com/apache/pulsar/pull/23875
+Created at: 2025-01-22T07:54:01Z, Merged at: 2025-01-23T06:36:40Z
+================================================================================
+PR #23874: [fix][broker] PIP-379 Key_Shared implementation race condition causing out-of-order message delivery (State: closed)
+URL: https://github.com/apache/pulsar/pull/23874
+Created at: 2025-01-21T14:50:41Z, Merged at: 2025-01-23T10:21:45Z
+================================================================================
+PR #23871: [feat][misc] upgrade oxia java client to 0.5.0 (State: closed)
+URL: https://github.com/apache/pulsar/pull/23871
+Created at: 2025-01-20T23:54:22Z, Merged at: 2025-01-21T02:12:04Z
+================================================================================
+PR #23869: [fix][broker] Fix repeatedly acquired pending reads quota (State: closed)
+URL: https://github.com/apache/pulsar/pull/23869
+Created at: 2025-01-20T14:19:15Z, Merged at: 2025-01-27T19:26:32Z
+================================================================================
+PR #23864: [improve][broker] Improve Consumer.equals performance (State: closed)
+URL: https://github.com/apache/pulsar/pull/23864
+Created at: 2025-01-18T00:36:08Z, Merged at: 2025-01-20T18:42:51Z
+================================================================================
+PR #23863: [improve] Upgrade to Netty 4.1.117.Final (State: closed)
+URL: https://github.com/apache/pulsar/pull/23863
+Created at: 2025-01-17T19:59:50Z, Merged at: 2025-01-20T17:39:54Z
+================================================================================
+PR #23862: [improve][broker] Remove spamming logs for customized managed ledger (State: closed)
+URL: https://github.com/apache/pulsar/pull/23862
+Created at: 2025-01-17T13:47:00Z, Merged at: 2025-01-20T14:08:08Z
+================================================================================
+PR #23861: [fix] Bump golang.org/x/net from 0.23.0 to 0.33.0 in /pulsar-function-go (State: closed)
+URL: https://github.com/apache/pulsar/pull/23861
+Created at: 2025-01-17T12:12:14Z, Merged at: 2025-02-12T01:09:51Z
+================================================================================
+PR #23860: [improve][fn] Implement pip 401: Support set batching configurations for Pulsar Functions&Sources (State: closed)
+URL: https://github.com/apache/pulsar/pull/23860
+Created at: 2025-01-17T09:33:20Z, Merged at: 2025-03-12T05:56:42Z
+================================================================================
+PR #23859: [fix][client] fix retry topic with exclusive mode. (State: closed)
+URL: https://github.com/apache/pulsar/pull/23859
+Created at: 2025-01-17T06:39:21Z, Merged at: 2025-02-18T09:59:52Z
+================================================================================
+PR #23858: [improve][ci] Make semantic pr title required for merging (State: open)
+URL: https://github.com/apache/pulsar/pull/23858
+Created at: 2025-01-17T03:55:05Z, Merged at: None
+================================================================================
+PR #23857: [fix][test] Add reconsumeLater call in RetryTopicTest#testRetryTopicWithMultiTopic. (State: closed)
+URL: https://github.com/apache/pulsar/pull/23857
+Created at: 2025-01-17T03:19:45Z, Merged at: 2025-01-17T07:57:24Z
+================================================================================
+PR #23855: [fix][broker] Revert "[fix][broker] Cancel possible pending replay read in cancelPendingRead (#23384)" (State: closed)
+URL: https://github.com/apache/pulsar/pull/23855
+Created at: 2025-01-16T20:14:02Z, Merged at: 2025-01-17T06:08:45Z
+================================================================================
+PR #23854: [fix][broker] Fix deadlock in Key_Shared PIP-379 implementation (State: closed)
+URL: https://github.com/apache/pulsar/pull/23854
+Created at: 2025-01-15T22:10:55Z, Merged at: 2025-01-16T11:53:56Z
+================================================================================
+PR #23853: [fix][client] Orphan producer when concurrently calling producer closing and reconnection (State: closed)
+URL: https://github.com/apache/pulsar/pull/23853
+Created at: 2025-01-15T13:50:53Z, Merged at: 2025-01-17T06:48:46Z
+================================================================================
+PR #23852: [fix][test]Fix flaky test testTopicUnloadAfterSessionRebuild (State: closed)
+URL: https://github.com/apache/pulsar/pull/23852
+Created at: 2025-01-15T02:52:15Z, Merged at: 2025-01-16T08:40:31Z
+================================================================================
+PR #23851: [improve][ci] Publish build scans to develocity.apache.org (State: closed)
+URL: https://github.com/apache/pulsar/pull/23851
+Created at: 2025-01-14T21:51:14Z, Merged at: 2025-01-16T11:41:12Z
+================================================================================
+PR #23847: [fix][misc] Honor dynamic log levels in log4j2.yaml (State: closed)
+URL: https://github.com/apache/pulsar/pull/23847
+Created at: 2025-01-14T10:20:21Z, Merged at: 2025-01-14T14:39:15Z
+================================================================================
+PR #23846: [improve] Support overriding java.net.preferIPv4Stack with OPTS (State: closed)
+URL: https://github.com/apache/pulsar/pull/23846
+Created at: 2025-01-14T07:33:02Z, Merged at: 2025-01-14T12:38:23Z
+================================================================================
+PR #23844: [improve][fn]: Added logLevel to change the log level of Function/Source/Sink Pod/Process to desired Level  (State: open)
+URL: https://github.com/apache/pulsar/pull/23844
+Created at: 2025-01-13T11:34:06Z, Merged at: None
+================================================================================
+PR #23842: [fix][broker] Continue using the next provider for http authentication if one fails (State: closed)
+URL: https://github.com/apache/pulsar/pull/23842
+Created at: 2025-01-13T04:26:49Z, Merged at: 2025-01-14T08:30:44Z
+================================================================================
+PR #23841: [fix] [broker] Fix acknowledgeCumulativeAsync block when ackReceipt is enabled (State: closed)
+URL: https://github.com/apache/pulsar/pull/23841
+Created at: 2025-01-12T07:44:45Z, Merged at: 2025-01-14T02:41:59Z
+================================================================================
+PR #23839: [improve][broker] Reduce unnecessary REPLICATED_SUBSCRIPTION_SNAPSHOT_REQUEST (State: closed)
+URL: https://github.com/apache/pulsar/pull/23839
+Created at: 2025-01-10T12:21:40Z, Merged at: 2025-01-13T04:06:36Z
+================================================================================
+PR #23837: [improve][pip] PIP-404: Introduce per ledger properties (State: open)
+URL: https://github.com/apache/pulsar/pull/23837
+Created at: 2025-01-10T04:27:54Z, Merged at: None
+================================================================================
+PR #23833: [fix][broker] Fix possible mark delete NPE when batch index ack is enabled (State: closed)
+URL: https://github.com/apache/pulsar/pull/23833
+Created at: 2025-01-09T14:01:41Z, Merged at: 2025-01-14T08:58:11Z
+================================================================================
+PR #23832: [fix][broker] Remove blocking calls from internalGetPartitionedStats (State: closed)
+URL: https://github.com/apache/pulsar/pull/23832
+Created at: 2025-01-09T12:30:34Z, Merged at: 2025-01-13T02:39:02Z
+================================================================================
+PR #23831: [fix][misc]: ignore deleted ledger when tear down cluster (State: open)
+URL: https://github.com/apache/pulsar/pull/23831
+Created at: 2025-01-09T10:31:20Z, Merged at: None
+================================================================================
+PR #23830: [fix][client] Client interceptors close method not called after producer/consumer/reader close (State: open)
+URL: https://github.com/apache/pulsar/pull/23830
+Created at: 2025-01-09T07:51:38Z, Merged at: None
+================================================================================
+PR #23829: [improve][fn] Add API endpoint for function-worker for liveness check with configurable flag (State: open)
+URL: https://github.com/apache/pulsar/pull/23829
+Created at: 2025-01-09T06:19:42Z, Merged at: None
+================================================================================
+PR #23828: [fix][test]: naming conventions (State: closed)
+URL: https://github.com/apache/pulsar/pull/23828
+Created at: 2025-01-09T02:37:19Z, Merged at: None
+================================================================================
+PR #23826: [improve][broker][branch-3.3] Optimize PersistentTopic.getLastDispatchablePosition (#22707) (State: closed)
+URL: https://github.com/apache/pulsar/pull/23826
+Created at: 2025-01-08T13:31:29Z, Merged at: 2025-01-08T18:15:56Z
+================================================================================
+PR #23824: [fix][client] Prevent retry topic and dead letter topic producer leaks when sending of message fails (State: closed)
+URL: https://github.com/apache/pulsar/pull/23824
+Created at: 2025-01-08T13:00:36Z, Merged at: 2025-01-09T19:10:49Z
+================================================================================
+PR #23823: [fix][test] Remove useless test code (State: closed)
+URL: https://github.com/apache/pulsar/pull/23823
+Created at: 2025-01-08T03:23:16Z, Merged at: 2025-01-08T20:05:22Z
+================================================================================
+PR #23822: test ci (State: closed)
+URL: https://github.com/apache/pulsar/pull/23822
+Created at: 2025-01-07T16:35:40Z, Merged at: None
+================================================================================
+PR #23820: [fix][fn] change async function time get (State: closed)
+URL: https://github.com/apache/pulsar/pull/23820
+Created at: 2025-01-07T15:05:49Z, Merged at: None
+================================================================================
+PR #23819: [fix] [bk] Add configuration parameters related to the maximum compaction duration to the bookkeeper.conf (State: open)
+URL: https://github.com/apache/pulsar/pull/23819
+Created at: 2025-01-07T11:07:01Z, Merged at: None
+================================================================================
+PR #23817: [fix][broker] Remove failed OpAddEntry from pendingAddEntries (State: closed)
+URL: https://github.com/apache/pulsar/pull/23817
+Created at: 2025-01-06T15:12:17Z, Merged at: 2025-01-07T16:34:45Z
+================================================================================
+PR #23815: [fix][broker] Ensure existing subscriptions use the initial replication policy (State: closed)
+URL: https://github.com/apache/pulsar/pull/23815
+Created at: 2025-01-06T03:53:50Z, Merged at: None
+================================================================================
+PR #23814: [Fix][client]Fix status html endpoint (State: closed)
+URL: https://github.com/apache/pulsar/pull/23814
+Created at: 2025-01-05T19:12:30Z, Merged at: None
+================================================================================
+PR #23813: [improve] Upgrade to Netty 4.1.116.Final and io_uring to 0.0.26.Final (State: closed)
+URL: https://github.com/apache/pulsar/pull/23813
+Created at: 2025-01-05T12:02:04Z, Merged at: 2025-01-05T18:51:08Z
+================================================================================
+PR #23811: [fix][fn] Record Pulsar Function processing time properly for asynchronous functions (State: closed)
+URL: https://github.com/apache/pulsar/pull/23811
+Created at: 2025-01-04T09:51:57Z, Merged at: 2025-01-28T16:03:11Z
+================================================================================
+PR #23810: [improve][ci] Move ZkSessionExpireTest to flaky group to unblock CI (State: closed)
+URL: https://github.com/apache/pulsar/pull/23810
+Created at: 2025-01-03T18:47:51Z, Merged at: 2025-01-03T21:50:07Z
+================================================================================
+PR #23808: [improve][client] Add schema cache to improve performance (State: closed)
+URL: https://github.com/apache/pulsar/pull/23808
+Created at: 2025-01-03T16:46:14Z, Merged at: None
+================================================================================
+PR #23806: [improve][broker] Add additional configuration items to control the type of auto-creation of retry-topic and DLQ-topic (State: open)
+URL: https://github.com/apache/pulsar/pull/23806
+Created at: 2025-01-03T10:25:49Z, Merged at: None
+================================================================================
+PR #23804: [improve][client] PIP-393: Support configuring NegativeAckPrecisionBitCnt while building consumer. (State: closed)
+URL: https://github.com/apache/pulsar/pull/23804
+Created at: 2025-01-03T01:58:51Z, Merged at: 2025-01-03T09:56:33Z
+================================================================================
+PR #23803: [fix] [ml] fix key_shared mode delivery are order out order after a consumers reconnection (State: open)
+URL: https://github.com/apache/pulsar/pull/23803
+Created at: 2025-01-02T11:00:22Z, Merged at: None
+================================================================================
+PR #23802: [fix] [broker] Fix items in dispatcher.recentlyJoinedConsumers are out-of-order, which may cause a delivery stuck (State: closed)
+URL: https://github.com/apache/pulsar/pull/23802
+Created at: 2025-01-02T10:56:44Z, Merged at: 2025-01-03T08:11:43Z
+================================================================================
+PR #23801: [fix][client][branch-3.0] Fix compatibility between kerberos and tls (State: closed)
+URL: https://github.com/apache/pulsar/pull/23801
+Created at: 2025-01-02T09:35:58Z, Merged at: 2025-01-03T02:33:56Z
+================================================================================
+PR #23798: [fix][client] Fix compatibility between kerberos and tls (State: closed)
+URL: https://github.com/apache/pulsar/pull/23798
+Created at: 2024-12-31T11:53:29Z, Merged at: 2025-01-02T08:16:08Z
+================================================================================
+PR #23797: [fix][broker] Continue using the next provider for authentication if one fails (State: closed)
+URL: https://github.com/apache/pulsar/pull/23797
+Created at: 2024-12-31T09:45:13Z, Merged at: 2025-01-02T07:14:12Z
+================================================================================
+PR #23796: [fix][broker] Fix incorrect blockedConsumerOnUnackedMsgs value when maxUnackedMessagesPerConsumer is 1 (State: closed)
+URL: https://github.com/apache/pulsar/pull/23796
+Created at: 2024-12-31T06:42:33Z, Merged at: 2025-02-14T09:56:46Z
+================================================================================
+PR #23795: [fix] [broker] Msg delivery is stuck due to items in the collection recentlyJoinedConsumers are out-of-order (State: closed)
+URL: https://github.com/apache/pulsar/pull/23795
+Created at: 2024-12-31T05:04:09Z, Merged at: 2025-01-02T07:54:35Z
+================================================================================
+PR #23794: [improve][client] Enhance dynamic topic subscription management in PatternMultiTopicsConsumer (State: open)
+URL: https://github.com/apache/pulsar/pull/23794
+Created at: 2024-12-30T13:24:02Z, Merged at: None
+================================================================================
+PR #23793: [improve][pip] PIP-401: Support set batching configurations for Pulsar Functions&Sources (State: closed)
+URL: https://github.com/apache/pulsar/pull/23793
+Created at: 2024-12-30T08:39:27Z, Merged at: 2025-01-09T04:40:10Z
+================================================================================
+PR #23791: [fix][client] Cannot access message data inside ProducerInterceptor#onSendAcknowledgement (State: closed)
+URL: https://github.com/apache/pulsar/pull/23791
+Created at: 2024-12-27T10:17:36Z, Merged at: 2024-12-30T18:25:09Z
+================================================================================
+PR #23790: [improve][pip] PIP-400: Support namespace-level configuration of migratedClusterUrl in blue-green migration feature (State: open)
+URL: https://github.com/apache/pulsar/pull/23790
+Created at: 2024-12-27T10:07:59Z, Merged at: None
+================================================================================
+PR #23789: [fix][pip] PIP-399: Fix Metric Name for Delayed Queue (State: closed)
+URL: https://github.com/apache/pulsar/pull/23789
+Created at: 2024-12-27T09:13:49Z, Merged at: 2025-01-13T06:14:32Z
+================================================================================
+PR #23788: [improve][broker] Support namespace-level configuration of migratedClusterUrl in blue-green migration feature (State: open)
+URL: https://github.com/apache/pulsar/pull/23788
+Created at: 2024-12-27T09:02:15Z, Merged at: None
+================================================================================
+PR #23787: [Bug][pulsar-function]Pulsar Function processing time doesn't get properly recorded for asynchronous functions (State: closed)
+URL: https://github.com/apache/pulsar/pull/23787
+Created at: 2024-12-26T13:20:17Z, Merged at: None
+================================================================================
+PR #23786: [fix][broker] topic policy deadlock block metadata thread. (State: closed)
+URL: https://github.com/apache/pulsar/pull/23786
+Created at: 2024-12-26T09:08:42Z, Merged at: 2024-12-30T15:57:28Z
+================================================================================
+PR #23785: [improve][broker] Add dedicated partition configuration for system topics to reduce resource usage (State: open)
+URL: https://github.com/apache/pulsar/pull/23785
+Created at: 2024-12-26T07:55:30Z, Merged at: None
+================================================================================
+PR #23784: [fix][admin] Fix exception thrown in getMessageId method (State: closed)
+URL: https://github.com/apache/pulsar/pull/23784
+Created at: 2024-12-26T06:54:36Z, Merged at: 2025-01-03T18:04:24Z
+================================================================================
+PR #23782: [fix][broker] Fix pulsar.replicated.subscription checks (State: closed)
+URL: https://github.com/apache/pulsar/pull/23782
+Created at: 2024-12-26T04:43:12Z, Merged at: 2024-12-31T02:15:41Z
+================================================================================
+PR #23781: [fix][broker] Fix enableReplicatedSubscriptions (State: closed)
+URL: https://github.com/apache/pulsar/pull/23781
+Created at: 2024-12-25T09:10:58Z, Merged at: 2024-12-27T11:19:03Z
+================================================================================
+PR #23780: [improve][broker] Improve SystemTopicBasedTopicPoliciesService reader to reduce GC pressure (State: closed)
+URL: https://github.com/apache/pulsar/pull/23780
+Created at: 2024-12-25T08:50:07Z, Merged at: 2025-01-03T08:35:39Z
+================================================================================
+PR #23779: [improve][txn] Improve Reader in TransactionBuffer to reduce GC pressure (State: closed)
+URL: https://github.com/apache/pulsar/pull/23779
+Created at: 2024-12-25T08:33:21Z, Merged at: 2025-01-03T08:39:55Z
+================================================================================
+PR #23777: [Enhancement] Cache Schema instances for classes in a weak reference cache since creating an instance could be CPU intensive (State: open)
+URL: https://github.com/apache/pulsar/pull/23777
+Created at: 2024-12-24T14:13:50Z, Merged at: None
+================================================================================
+PR #23776: [improve][ml] Optimize BlobStoreManagedLedgerOffloader.getOffloadPolicies (State: closed)
+URL: https://github.com/apache/pulsar/pull/23776
+Created at: 2024-12-24T07:17:26Z, Merged at: 2024-12-25T06:37:15Z
+================================================================================
+PR #23775: [WIP][improve][ml] Make offloader threshold config dynamic (State: closed)
+URL: https://github.com/apache/pulsar/pull/23775
+Created at: 2024-12-24T06:37:17Z, Merged at: None
+================================================================================
+PR #23774: [improve][broker] Improve the extensibility of the TopicBundleAssignmentStrategy interface class (#23773) (State: closed)
+URL: https://github.com/apache/pulsar/pull/23774
+Created at: 2024-12-24T06:07:01Z, Merged at: None
+================================================================================
+PR #23772: [fix][ml] Topic load timeout due to ml data ledger future never finishes (State: closed)
+URL: https://github.com/apache/pulsar/pull/23772
+Created at: 2024-12-23T16:11:52Z, Merged at: 2024-12-25T06:14:01Z
+================================================================================
+PR #23770: [improve][pip] PIP-398: Subscription replication on the broker, namespace and topic levels (State: open)
+URL: https://github.com/apache/pulsar/pull/23770
+Created at: 2024-12-23T08:01:04Z, Merged at: None
+================================================================================
+PR #23769: [improvement][broker]Add replicate all subscription state switch on the broker side. (State: open)
+URL: https://github.com/apache/pulsar/pull/23769
+Created at: 2024-12-21T11:42:46Z, Merged at: None
+================================================================================
+PR #23767: [fix][broker] System topic should not be migrated during blue-green cluster migration (State: closed)
+URL: https://github.com/apache/pulsar/pull/23767
+Created at: 2024-12-20T12:10:00Z, Merged at: 2024-12-21T13:32:33Z
+================================================================================
+PR #23766: [fix][admin] Fix exception loss in getMessageId method (State: closed)
+URL: https://github.com/apache/pulsar/pull/23766
+Created at: 2024-12-20T10:08:48Z, Merged at: 2024-12-21T11:20:57Z
+================================================================================
+PR #23764: [fix][broker] Fix bug causing loss of migrated information when setting other localPolicies in namespace (State: closed)
+URL: https://github.com/apache/pulsar/pull/23764
+Created at: 2024-12-20T08:19:14Z, Merged at: 2024-12-20T12:04:24Z
+================================================================================
+PR #23762: [fix] Fix issues with Pulsar Alpine docker image stability: remove glibc-compat  (State: closed)
+URL: https://github.com/apache/pulsar/pull/23762
+Created at: 2024-12-19T20:22:38Z, Merged at: 2024-12-21T08:41:37Z
+================================================================================
+PR #23761: [Fix][Client] Fix pending message not complete when closeAsync (State: closed)
+URL: https://github.com/apache/pulsar/pull/23761
+Created at: 2024-12-19T18:12:21Z, Merged at: 2024-12-20T11:17:14Z
+================================================================================
+PR #23759: [fix] [ml] Fix cursor metadata compatability issue when switching the config unackedRangesOpenCacheSetEnabled (State: closed)
+URL: https://github.com/apache/pulsar/pull/23759
+Created at: 2024-12-19T10:18:15Z, Merged at: 2025-01-20T01:48:53Z
+================================================================================
+PR #23758: [fix][doc]Correcting spelling mistakes in the pulsar-broker module (State: closed)
+URL: https://github.com/apache/pulsar/pull/23758
+Created at: 2024-12-19T09:19:26Z, Merged at: None
+================================================================================
+PR #23757: [improve][client] Make replicateSubscriptionState nullable (State: closed)
+URL: https://github.com/apache/pulsar/pull/23757
+Created at: 2024-12-19T09:08:02Z, Merged at: 2024-12-20T12:58:03Z
+================================================================================
+PR #23756: [improve][monitor] Upgrade OTel to 1.45.0 (State: closed)
+URL: https://github.com/apache/pulsar/pull/23756
+Created at: 2024-12-19T04:55:22Z, Merged at: 2024-12-20T09:30:38Z
+================================================================================
+PR #23755: [fix][broker] Fix typo in `buildMetadataForCompactedLedger` (State: closed)
+URL: https://github.com/apache/pulsar/pull/23755
+Created at: 2024-12-19T02:59:37Z, Merged at: 2024-12-19T08:23:34Z
+================================================================================
+PR #23753: [fix][client] Fix enableRetry for consumers using legacy topic naming where cluster name is included (State: closed)
+URL: https://github.com/apache/pulsar/pull/23753
+Created at: 2024-12-18T09:28:28Z, Merged at: 2024-12-20T12:19:16Z
+================================================================================
+PR #23752: [improve] Upgrade lombok to 1.18.36 (State: closed)
+URL: https://github.com/apache/pulsar/pull/23752
+Created at: 2024-12-18T07:22:58Z, Merged at: 2024-12-18T09:17:24Z
+================================================================================
+PR #23751: [feat]PIP-410: Add a metric to track publish buffer usage. (State: open)
+URL: https://github.com/apache/pulsar/pull/23751
+Created at: 2024-12-18T06:52:45Z, Merged at: None
+================================================================================
+PR #23747: [fix][test] Fix flaky KeySharedSubscriptionTest.testNoKeySendAndReceiveWithHashRangeAutoSplitStickyKeyConsumerSelector (State: closed)
+URL: https://github.com/apache/pulsar/pull/23747
+Created at: 2024-12-17T13:25:27Z, Merged at: 2024-12-20T11:39:05Z
+================================================================================
+PR #23743: [fix][sec] Upgrade golang.org/x/crypto from 0.21.0 to 0.31.0 in pulsar-function-go (State: closed)
+URL: https://github.com/apache/pulsar/pull/23743
+Created at: 2024-12-17T08:53:13Z, Merged at: 2024-12-17T10:39:25Z
+================================================================================
+PR #23738: [fix] [client] Fix memory leak when publishing encountered a corner case error (State: closed)
+URL: https://github.com/apache/pulsar/pull/23738
+Created at: 2024-12-16T12:38:56Z, Merged at: 2024-12-20T02:59:04Z
+================================================================================
+PR #23737: [fix][sec] Bump golang.org/x/crypto from 0.21.0 to 0.31.0 in /pulsar-function-go/examples (State: closed)
+URL: https://github.com/apache/pulsar/pull/23737
+Created at: 2024-12-16T11:52:42Z, Merged at: None
+================================================================================
+PR #23734: [improve][fn] Improve closing of producers in Pulsar Functions ProducerCache invalidation (State: closed)
+URL: https://github.com/apache/pulsar/pull/23734
+Created at: 2024-12-16T10:38:04Z, Merged at: 2024-12-17T16:34:33Z
+================================================================================
+PR #23732: [fix][sec] Upgrade async-http-client to 2.12.4 to address CVE-2024-53990 (State: closed)
+URL: https://github.com/apache/pulsar/pull/23732
+Created at: 2024-12-16T07:24:09Z, Merged at: 2024-12-16T11:51:28Z
+================================================================================
+PR #23731: [fix][sec] Bump async-http-client to 2.12.4 to address CVE-2024-53990 (State: closed)
+URL: https://github.com/apache/pulsar/pull/23731
+Created at: 2024-12-16T02:32:20Z, Merged at: None
+================================================================================
+PR #23730: [fix][admin] Verify is policies read only before revoke permissions on topic (State: closed)
+URL: https://github.com/apache/pulsar/pull/23730
+Created at: 2024-12-13T17:18:27Z, Merged at: 2024-12-17T03:38:13Z
+================================================================================
+PR #23725: [fix][sec] Mitigate CVE-2024-53990 by disabling AsyncHttpClient CookieStore (State: closed)
+URL: https://github.com/apache/pulsar/pull/23725
+Created at: 2024-12-12T23:14:14Z, Merged at: 2024-12-13T13:13:00Z
+================================================================================
+PR #23724: Bump org.asynchttpclient:async-http-client from 2.12.1 to 3.0.1 (State: closed)
+URL: https://github.com/apache/pulsar/pull/23724
+Created at: 2024-12-12T22:22:49Z, Merged at: None
+================================================================================
+PR #23721: [improve] [test] Add more test for the case that client receives a SendError, which relates to the PR #23038 (State: closed)
+URL: https://github.com/apache/pulsar/pull/23721
+Created at: 2024-12-12T10:31:25Z, Merged at: 2024-12-16T02:11:59Z
+================================================================================
+PR #23720: [fix] [broker] fix NPE when calculating a topic's backlogQuota (State: closed)
+URL: https://github.com/apache/pulsar/pull/23720
+Created at: 2024-12-12T10:09:15Z, Merged at: 2024-12-13T03:36:09Z
+================================================================================
+PR #23719: [fix] [broker] Fix config replicationStartAt does not work when set it to earliest (State: closed)
+URL: https://github.com/apache/pulsar/pull/23719
+Created at: 2024-12-12T08:26:01Z, Merged at: 2024-12-13T01:42:17Z
+================================================================================
+PR #23718: [fix][client] Make DeadLetterPolicy & KeySharedPolicy serializable (State: closed)
+URL: https://github.com/apache/pulsar/pull/23718
+Created at: 2024-12-12T04:15:25Z, Merged at: 2024-12-24T06:41:42Z
+================================================================================
+PR #23716: [improve][pip] PIP-397: Support topic-level migration from blue cluster to green cluster (State: closed)
+URL: https://github.com/apache/pulsar/pull/23716
+Created at: 2024-12-12T02:48:07Z, Merged at: None
+================================================================================
+PR #23714: [improve][broker] Support topic-level migration from blue cluster to green cluster (State: closed)
+URL: https://github.com/apache/pulsar/pull/23714
+Created at: 2024-12-11T11:46:23Z, Merged at: None
+================================================================================
+PR #23713: [fix][client] Fix wrong start message id when it's a chunked message id (State: closed)
+URL: https://github.com/apache/pulsar/pull/23713
+Created at: 2024-12-11T11:13:59Z, Merged at: 2024-12-13T06:38:04Z
+================================================================================
+PR #23712: [fix][broker] PIP-399: Fix Metric Name for Delayed Queue (State: closed)
+URL: https://github.com/apache/pulsar/pull/23712
+Created at: 2024-12-11T08:44:41Z, Merged at: 2025-01-14T09:40:15Z
+================================================================================
+PR #23709: [improve][admin] Opt-out of topic-existence check (State: closed)
+URL: https://github.com/apache/pulsar/pull/23709
+Created at: 2024-12-10T18:41:55Z, Merged at: 2024-12-11T12:57:48Z
+================================================================================
+PR #23708: [improve][fn] Improve implementation for maxPendingAsyncRequests async concurrency limit when return type is CompletableFuture<Void> (State: closed)
+URL: https://github.com/apache/pulsar/pull/23708
+Created at: 2024-12-10T17:58:54Z, Merged at: 2024-12-17T16:33:25Z
+================================================================================
+PR #23698: [improve][client] Print consumer stats log if prefetched messages are not zero (State: closed)
+URL: https://github.com/apache/pulsar/pull/23698
+Created at: 2024-12-09T22:19:21Z, Merged at: 2024-12-12T13:32:20Z
+================================================================================
+PR #23697: [fix][broker] Geo Replication lost messages or frequently fails due to Deduplication is not appropriate for Geo-Replication (State: closed)
+URL: https://github.com/apache/pulsar/pull/23697
+Created at: 2024-12-09T16:55:28Z, Merged at: 2025-02-21T04:30:22Z
+================================================================================
+PR #23695: [fix][broker] Correct the 'connected' status in topic stats of multi-partition topic for geo replication (State: open)
+URL: https://github.com/apache/pulsar/pull/23695
+Created at: 2024-12-09T07:29:41Z, Merged at: None
+================================================================================
+PR #23693: [fix][client] Fix reader message filtering issue during blue-green cluster switch (State: closed)
+URL: https://github.com/apache/pulsar/pull/23693
+Created at: 2024-12-09T03:29:18Z, Merged at: 2024-12-20T12:05:09Z
+================================================================================
+PR #23692: [fix][broker] fix aging subscription accidentally when expiration time not arrive  (State: closed)
+URL: https://github.com/apache/pulsar/pull/23692
+Created at: 2024-12-08T17:52:34Z, Merged at: None
+================================================================================
+PR #23691: [fix][common] TopicName: Throw IllegalArgumentException if localName is whitespace only (State: closed)
+URL: https://github.com/apache/pulsar/pull/23691
+Created at: 2024-12-08T08:45:38Z, Merged at: 2024-12-17T06:23:13Z
+================================================================================
+PR #23689: [fix][cli] Fix set-retention with >2GB size value for topic policy (State: closed)
+URL: https://github.com/apache/pulsar/pull/23689
+Created at: 2024-12-06T22:50:48Z, Merged at: 2024-12-07T11:11:11Z
+================================================================================
+PR #23688: [fix][cli] Fix set topic retention policy failed (State: closed)
+URL: https://github.com/apache/pulsar/pull/23688
+Created at: 2024-12-06T18:15:48Z, Merged at: 2024-12-06T22:27:00Z
+================================================================================
+PR #23687: [fix][doc] Refine ClientBuilder#memoryLimit and ConsumerBuilder#autoScaledReceiverQueueSizeEnabled javadoc (State: closed)
+URL: https://github.com/apache/pulsar/pull/23687
+Created at: 2024-12-06T09:04:53Z, Merged at: 2024-12-13T18:14:15Z
+================================================================================
+PR #23686: [fix][broker] Fix the retry mechanism in `MetadataCache#readModifyUpdateOrCreate` (State: closed)
+URL: https://github.com/apache/pulsar/pull/23686
+Created at: 2024-12-06T05:18:22Z, Merged at: 2024-12-14T06:49:11Z
+================================================================================
+PR #23685: [improve][io] Bump io.lettuce:lettuce-core from 5.0.2.RELEASE to 6.5.1.RELEASE in /pulsar-io/redis (State: closed)
+URL: https://github.com/apache/pulsar/pull/23685
+Created at: 2024-12-05T20:11:29Z, Merged at: 2024-12-06T18:14:06Z
+================================================================================
+PR #23684: [fix][sec] Bump commons-io version to 2.18.0 (State: closed)
+URL: https://github.com/apache/pulsar/pull/23684
+Created at: 2024-12-05T18:56:16Z, Merged at: 2024-12-06T23:22:18Z
+================================================================================
+PR #23683: [fix][broker] Catch exception for entry payload interceptor processor (State: closed)
+URL: https://github.com/apache/pulsar/pull/23683
+Created at: 2024-12-05T05:16:44Z, Merged at: 2024-12-08T10:28:55Z
+================================================================================
+PR #23681: [improve][client]Add logging for message size exceeding the configured threshold before throwing exception (State: open)
+URL: https://github.com/apache/pulsar/pull/23681
+Created at: 2024-12-04T12:47:45Z, Merged at: None
+================================================================================
+PR #23680: [fix][admin] Listen partitioned topic creation event (State: closed)
+URL: https://github.com/apache/pulsar/pull/23680
+Created at: 2024-12-04T10:07:55Z, Merged at: 2024-12-08T14:26:52Z
+================================================================================
+PR #23679: [bug][conf] Add a return carriage to the config to avoid parsing issues (State: closed)
+URL: https://github.com/apache/pulsar/pull/23679
+Created at: 2024-12-04T09:43:46Z, Merged at: None
+================================================================================
+PR #23676: [fix][broker] Invoke custom BrokerInterceptor's `onFilter` method if it's defined (State: closed)
+URL: https://github.com/apache/pulsar/pull/23676
+Created at: 2024-12-03T14:14:11Z, Merged at: 2024-12-04T10:13:51Z
+================================================================================
+PR #23675: [fix][broker] support missing cluster level fine-granted permissions (State: closed)
+URL: https://github.com/apache/pulsar/pull/23675
+Created at: 2024-12-03T12:33:26Z, Merged at: 2024-12-04T02:16:21Z
+================================================================================
+PR #23672: [fix][ml] The readPosition is greater than the lastPosition (State: closed)
+URL: https://github.com/apache/pulsar/pull/23672
+Created at: 2024-12-03T07:38:53Z, Merged at: None
+================================================================================
+PR #23671: [fix] [broker] Add consumer name for subscription stats (State: closed)
+URL: https://github.com/apache/pulsar/pull/23671
+Created at: 2024-12-03T06:16:30Z, Merged at: 2024-12-04T02:01:45Z
+================================================================================
+PR #23669: [improve][io] Bump io.lettuce:lettuce-core from 5.0.2.RELEASE to 6.5.0.RELEASE in /pulsar-io/redis (State: closed)
+URL: https://github.com/apache/pulsar/pull/23669
+Created at: 2024-12-02T20:03:41Z, Merged at: None
+================================================================================
+PR #23667: [improve] Install coreutils in docker image to improve compatibility (State: closed)
+URL: https://github.com/apache/pulsar/pull/23667
+Created at: 2024-12-02T08:59:59Z, Merged at: 2024-12-02T15:21:32Z
+================================================================================
+PR #23666: [fix][test]: Flaky-test: GetPartitionMetadataMultiBrokerTest.testCompatibilityDifferentBrokersForNonPersistentTopic (State: closed)
+URL: https://github.com/apache/pulsar/pull/23666
+Created at: 2024-12-02T06:46:53Z, Merged at: 2025-01-03T08:42:02Z
+================================================================================
+PR #23665: [improve] Add comment to emphasize using `;` as separator in `metadataServiceUri`. (State: open)
+URL: https://github.com/apache/pulsar/pull/23665
+Created at: 2024-12-02T02:06:03Z, Merged at: None
+================================================================================
+PR #23663: [feat][broker] Implement allowBrokerOperationAsync in PulsarAuthorizationProvider to avoid exception thrown (State: closed)
+URL: https://github.com/apache/pulsar/pull/23663
+Created at: 2024-11-29T14:35:23Z, Merged at: 2024-11-29T17:17:17Z
+================================================================================
+PR #23660: [fix][broker] support missing tenant level fine-granted permissions (State: closed)
+URL: https://github.com/apache/pulsar/pull/23660
+Created at: 2024-11-29T08:35:39Z, Merged at: 2024-11-29T14:30:16Z
+================================================================================
+PR #23659: [improve][pip] PIP-396: Align WindowFunction's WindowContext with BaseContext (State: closed)
+URL: https://github.com/apache/pulsar/pull/23659
+Created at: 2024-11-29T02:19:31Z, Merged at: 2025-03-13T01:26:57Z
+================================================================================
+PR #23658: [fix][admin][branch-2.10] getMessageIdByTimestamp cannot redirect (State: open)
+URL: https://github.com/apache/pulsar/pull/23658
+Created at: 2024-11-29T02:11:31Z, Merged at: None
+================================================================================
+PR #23657: [fix][broker] Revert "[improve][client] Add log when can't add message to the container (State: closed)
+URL: https://github.com/apache/pulsar/pull/23657
+Created at: 2024-11-29T01:58:28Z, Merged at: 2024-11-29T06:00:16Z
+================================================================================
+PR #23656: [improve] Upgrade OpenTelemetry library to 1.44.1 version (State: closed)
+URL: https://github.com/apache/pulsar/pull/23656
+Created at: 2024-11-28T19:26:03Z, Merged at: 2024-11-29T09:05:29Z
+================================================================================
+PR #23655: [fix][build] Fix error "Element encoding is not allowed here" in pom.xml (State: closed)
+URL: https://github.com/apache/pulsar/pull/23655
+Created at: 2024-11-28T19:05:05Z, Merged at: 2024-11-29T02:57:58Z
+================================================================================
+PR #23653: [improve] Upgrade oxia-java to 0.4.10 and fix closing of OxiaMetadataStore (State: closed)
+URL: https://github.com/apache/pulsar/pull/23653
+Created at: 2024-11-28T12:49:05Z, Merged at: 2024-11-28T16:01:17Z
+================================================================================
+PR #23652: [improve][log] Print ZK path if write to ZK fails due to data being too large to persist (State: closed)
+URL: https://github.com/apache/pulsar/pull/23652
+Created at: 2024-11-28T10:57:52Z, Merged at: 2024-12-30T02:40:37Z
+================================================================================
+PR #23651: [fix][client] Fix deadlock of NegativeAcksTracker (State: closed)
+URL: https://github.com/apache/pulsar/pull/23651
+Created at: 2024-11-28T08:44:40Z, Merged at: 2024-11-28T14:58:24Z
+================================================================================
+PR #23649: [improve] [proxy] PIP-395: Add Proxy configuration to support configurable response headers for http reverse-proxy (State: closed)
+URL: https://github.com/apache/pulsar/pull/23649
+Created at: 2024-11-28T01:41:16Z, Merged at: 2025-02-14T00:10:14Z
+================================================================================
+PR #23648: [improve] [pip] PIP-395: Add Proxy configuration to support configurable response headers for http reverse-proxy (State: closed)
+URL: https://github.com/apache/pulsar/pull/23648
+Created at: 2024-11-28T01:10:27Z, Merged at: 2025-02-14T00:09:38Z
+================================================================================
+PR #23647: [improve][client] Reduce unshaded dependencies and shading warnings in shaded Java client modules (State: closed)
+URL: https://github.com/apache/pulsar/pull/23647
+Created at: 2024-11-27T22:44:38Z, Merged at: 2024-11-29T09:17:08Z
+================================================================================
+PR #23646: [fix][client] Remove javax.ws.rs-api dependency from client side (State: closed)
+URL: https://github.com/apache/pulsar/pull/23646
+Created at: 2024-11-27T13:29:05Z, Merged at: None
+================================================================================
+PR #23645: [improve][client] Replace NameUtil#generateRandomName with RandomStringUtils#randomAlphanumeric (State: closed)
+URL: https://github.com/apache/pulsar/pull/23645
+Created at: 2024-11-27T12:13:26Z, Merged at: 2024-11-29T02:59:20Z
+================================================================================
+PR #23644: [fix][client] Fixed an issue where a cert chain could not be used in TLS authentication (State: closed)
+URL: https://github.com/apache/pulsar/pull/23644
+Created at: 2024-11-27T04:18:45Z, Merged at: 2024-11-27T20:35:08Z
+================================================================================
+PR #23642: [fix][broker] fix null lookup result when brokers are starting (State: closed)
+URL: https://github.com/apache/pulsar/pull/23642
+Created at: 2024-11-26T13:02:40Z, Merged at: 2024-11-27T20:38:15Z
+================================================================================
+PR #23641: [fix][misc] Class conflict during jetcd-core-shaded shading process (State: closed)
+URL: https://github.com/apache/pulsar/pull/23641
+Created at: 2024-11-26T10:44:29Z, Merged at: 2024-11-26T21:09:21Z
+================================================================================
+PR #23640: [improve][broker] Reduce memory occupation of InMemoryRedeliveryTracker. (State: closed)
+URL: https://github.com/apache/pulsar/pull/23640
+Created at: 2024-11-26T08:44:22Z, Merged at: 2024-11-27T13:47:19Z
+================================================================================
+PR #23639: [cleanup][build] skip generating pom.xml.versionsBackup (State: closed)
+URL: https://github.com/apache/pulsar/pull/23639
+Created at: 2024-11-26T03:22:06Z, Merged at: 2024-11-27T07:33:32Z
+================================================================================
+PR #23638: [fix][ws] Implement missing http header data functions in AuthenticationDataSubscription (State: closed)
+URL: https://github.com/apache/pulsar/pull/23638
+Created at: 2024-11-26T01:56:00Z, Merged at: 2024-11-26T20:43:36Z
+================================================================================
+PR #23637: [fix][broker]: support missing broker level fine-granted permissions (State: closed)
+URL: https://github.com/apache/pulsar/pull/23637
+Created at: 2024-11-25T10:00:50Z, Merged at: 2024-11-29T08:30:48Z
+================================================================================
+PR #23636: [fix][perf] fix performanceConsumer log error throughput (State: closed)
+URL: https://github.com/apache/pulsar/pull/23636
+Created at: 2024-11-25T07:37:14Z, Merged at: None
+================================================================================
+PR #23634: [improve][broker] If there is a deadlock in the service, the probe should return a failure because the service may be unavailable (State: open)
+URL: https://github.com/apache/pulsar/pull/23634
+Created at: 2024-11-24T04:34:47Z, Merged at: None
+================================================================================
+PR #23633: [improve][test] Reduce OneWayReplicatorUsingGlobalZKTest.testRemoveCluster execution time (State: closed)
+URL: https://github.com/apache/pulsar/pull/23633
+Created at: 2024-11-23T21:51:51Z, Merged at: 2024-11-25T15:00:06Z
+================================================================================
+PR #23632: [fix][client] Make protobuf-java dependency optional in java client libraries (State: closed)
+URL: https://github.com/apache/pulsar/pull/23632
+Created at: 2024-11-22T18:01:41Z, Merged at: 2024-11-27T22:46:06Z
+================================================================================
+PR #23628: [fix][fn] Align WindowContext with BaseContext (State: closed)
+URL: https://github.com/apache/pulsar/pull/23628
+Created at: 2024-11-22T08:21:09Z, Merged at: 2024-11-25T15:02:23Z
+================================================================================
+PR #23627: [improve][broker] Skip auto-creation for topics with "-partition-" suffix missing a valid partition number (State: open)
+URL: https://github.com/apache/pulsar/pull/23627
+Created at: 2024-11-22T03:25:42Z, Merged at: None
+================================================================================
+PR #23626: [improve][broker] Skip unloading when bundle throughput is zero (ExtensibleLoadManagerImpl only) (State: closed)
+URL: https://github.com/apache/pulsar/pull/23626
+Created at: 2024-11-21T23:26:19Z, Merged at: 2024-11-22T16:49:07Z
+================================================================================
+PR #23624: [fix][client] fix incomingMessageSize and client memory usage is negative (State: closed)
+URL: https://github.com/apache/pulsar/pull/23624
+Created at: 2024-11-21T07:54:33Z, Merged at: 2024-11-22T01:51:03Z
+================================================================================
+PR #23621: [improve][broker] TopicStats specify serialized field name (State: open)
+URL: https://github.com/apache/pulsar/pull/23621
+Created at: 2024-11-21T06:01:58Z, Merged at: None
+================================================================================
+PR #23620: [feat][broker] Prevent auto-creation of topics using legacy cluster-based naming scheme (State: closed)
+URL: https://github.com/apache/pulsar/pull/23620
+Created at: 2024-11-21T04:21:55Z, Merged at: 2025-01-02T07:16:25Z
+================================================================================
+PR #23619: [improve][broker] Decouple pulsar_storage_backlog_age_seconds metric with backlogQuota check (State: closed)
+URL: https://github.com/apache/pulsar/pull/23619
+Created at: 2024-11-21T03:29:33Z, Merged at: 2024-11-28T13:44:15Z
+================================================================================
+PR #23618: [fix][fn] ack messages for window function when its result is null (State: closed)
+URL: https://github.com/apache/pulsar/pull/23618
+Created at: 2024-11-21T03:01:00Z, Merged at: 2024-11-22T01:05:01Z
+================================================================================
+PR #23615: [fix][broker] Skip to persist cursor info if it failed by cursor closed (State: closed)
+URL: https://github.com/apache/pulsar/pull/23615
+Created at: 2024-11-20T16:54:25Z, Merged at: 2024-12-31T07:32:13Z
+================================================================================
+PR #23613: [improve] Improve logic for enabling Netty leak detection (State: closed)
+URL: https://github.com/apache/pulsar/pull/23613
+Created at: 2024-11-20T14:28:58Z, Merged at: 2024-11-21T08:13:23Z
+================================================================================
+PR #23612: [improve] Use single buffer for metrics when noUnsafe use (State: closed)
+URL: https://github.com/apache/pulsar/pull/23612
+Created at: 2024-11-19T10:15:23Z, Merged at: 2024-11-27T21:55:10Z
+================================================================================
+PR #23611: [improve][broker] Reduce memory occupation of the delayed message queue (State: closed)
+URL: https://github.com/apache/pulsar/pull/23611
+Created at: 2024-11-19T08:20:06Z, Merged at: 2024-11-22T06:10:05Z
+================================================================================
+PR #23610: [fix][client] Initializing client-authentication using configured auth params (State: closed)
+URL: https://github.com/apache/pulsar/pull/23610
+Created at: 2024-11-19T07:53:40Z, Merged at: 2024-11-26T21:20:51Z
+================================================================================
+PR #23609: [improve][ml] Avoid repetitive nested lock for isMessageDeleted in ManagedCursorImpl (State: closed)
+URL: https://github.com/apache/pulsar/pull/23609
+Created at: 2024-11-18T13:18:32Z, Merged at: 2024-11-19T16:24:46Z
+================================================================================
+PR #23608: [improve] [pip] PIP-394 Add two interfaces CursorMetadataSerializerProvider and CursorMetadataDeSerializerProvider to support newer or customized cursor metadata serializations (State: open)
+URL: https://github.com/apache/pulsar/pull/23608
+Created at: 2024-11-18T11:29:54Z, Merged at: None
+================================================================================
+PR #23607: [feat][misc] Upgrade oxia version to 0.4.9 (State: closed)
+URL: https://github.com/apache/pulsar/pull/23607
+Created at: 2024-11-18T10:55:07Z, Merged at: 2024-11-19T05:38:30Z
+================================================================================
+PR #23604: [fix][misc] Unable to connect an etcd metastore with recent releases due to jetc-core sharding problem (State: closed)
+URL: https://github.com/apache/pulsar/pull/23604
+Created at: 2024-11-15T14:55:15Z, Merged at: 2024-11-16T18:45:13Z
+================================================================================
+PR #23602: [fix][broker] Fix failed TokenAuthenticatedProducerConsumerTest (State: closed)
+URL: https://github.com/apache/pulsar/pull/23602
+Created at: 2024-11-15T09:05:13Z, Merged at: 2024-11-18T02:18:30Z
+================================================================================
+PR #23601: [improve][pip] PIP-393: Improve performance of Negative Acknowledgement (State: closed)
+URL: https://github.com/apache/pulsar/pull/23601
+Created at: 2024-11-15T07:53:00Z, Merged at: 2024-12-05T08:55:38Z
+================================================================================
+PR #23600: [improve][client] PIP-393: Improve performance of Negative Acknowledgement (State: closed)
+URL: https://github.com/apache/pulsar/pull/23600
+Created at: 2024-11-14T08:58:23Z, Merged at: 2025-01-02T17:58:56Z
+================================================================================
+PR #23598: [improve][test] Clarify method signatures in Bookkeeper mock client (State: closed)
+URL: https://github.com/apache/pulsar/pull/23598
+Created at: 2024-11-13T14:52:11Z, Merged at: 2024-11-14T10:27:11Z
+================================================================================
+PR #23596: [fix][sec] Upgrade to Netty 4.1.115.Final to address CVE-2024-47535 (State: closed)
+URL: https://github.com/apache/pulsar/pull/23596
+Created at: 2024-11-13T08:38:51Z, Merged at: 2024-11-13T09:54:39Z
+================================================================================
+PR #23595: Bump io.netty:netty-common from 4.1.104.Final to 4.1.115.Final in /buildtools (State: closed)
+URL: https://github.com/apache/pulsar/pull/23595
+Created at: 2024-11-12T19:58:23Z, Merged at: None
+================================================================================
+PR #23594: [fix] [broker] No longer allow creating subscription that contains slash (State: open)
+URL: https://github.com/apache/pulsar/pull/23594
+Created at: 2024-11-12T15:51:49Z, Merged at: None
+================================================================================
+PR #23593: [fix][client] The partitionedProducer maxPendingMessages always is 0 (State: closed)
+URL: https://github.com/apache/pulsar/pull/23593
+Created at: 2024-11-12T14:10:52Z, Merged at: 2024-11-13T10:25:11Z
+================================================================================
+PR #23592: [feat][pip] PIP-402: Role Anonymizer for Pulsar Logging (State: open)
+URL: https://github.com/apache/pulsar/pull/23592
+Created at: 2024-11-12T13:36:43Z, Merged at: None
+================================================================================
+PR #23591: [improve][offload] Use filesystemURI as the storage path (State: closed)
+URL: https://github.com/apache/pulsar/pull/23591
+Created at: 2024-11-12T10:05:13Z, Merged at: 2024-11-18T02:09:26Z
+================================================================================
+PR #23590: Enabling DNS retryOnTimeout with TCP in DnsNameResolver (State: closed)
+URL: https://github.com/apache/pulsar/pull/23590
+Created at: 2024-11-12T02:24:31Z, Merged at: 2024-11-13T21:07:02Z
+================================================================================
+PR #23589: [improve][broker] Exclude system topics from namespace level publish and dispatch rate limiting (State: closed)
+URL: https://github.com/apache/pulsar/pull/23589
+Created at: 2024-11-11T15:35:33Z, Merged at: 2024-11-12T09:34:07Z
+================================================================================
+PR #23585: [improve][misc] Disable OTel by default when running the pulsar-perf tool (State: closed)
+URL: https://github.com/apache/pulsar/pull/23585
+Created at: 2024-11-11T08:50:07Z, Merged at: 2024-11-27T20:34:07Z
+================================================================================
+PR #23584: [improve][broker] PIP-392: Add configuration to enable consistent hashing to select active consumer for partitioned topic (State: closed)
+URL: https://github.com/apache/pulsar/pull/23584
+Created at: 2024-11-11T08:36:13Z, Merged at: 2024-11-21T02:59:56Z
+================================================================================
+PR #23583: [improve][pip] PIP-392: Enable consistent hashing to select active consumer in partitioned topic for failover subscription (State: closed)
+URL: https://github.com/apache/pulsar/pull/23583
+Created at: 2024-11-11T08:29:11Z, Merged at: 2024-11-20T13:00:32Z
+================================================================================
+PR #23582: [improve] [broker] replace HashMap with inner implementation ConcurrentLongLongPairHashMap in Negative Ack Tracker. (State: closed)
+URL: https://github.com/apache/pulsar/pull/23582
+Created at: 2024-11-11T08:15:12Z, Merged at: 2024-11-13T09:51:55Z
+================================================================================
+PR #23581: [fix][sec] Upgrade Zookeeper to 3.9.3 to address CVE-2024-51504 (State: closed)
+URL: https://github.com/apache/pulsar/pull/23581
+Created at: 2024-11-10T23:00:41Z, Merged at: 2024-11-12T03:09:14Z
+================================================================================
+PR #23580: [improve][broker][branch-3.3] re-elect the channel owner if no channel owner is found (#23516) (State: closed)
+URL: https://github.com/apache/pulsar/pull/23580
+Created at: 2024-11-09T01:07:28Z, Merged at: 2024-11-12T17:32:27Z
+================================================================================
+PR #23579: [fix][broker] Broker is failing to create non-durable sub if topic is fenced (State: closed)
+URL: https://github.com/apache/pulsar/pull/23579
+Created at: 2024-11-09T01:00:19Z, Merged at: 2024-11-11T20:26:06Z
+================================================================================
+PR #23578: [fix][client] fix the beforeConsume() method earlier hit with message listener (State: closed)
+URL: https://github.com/apache/pulsar/pull/23578
+Created at: 2024-11-07T19:45:41Z, Merged at: 2024-11-08T02:59:06Z
+================================================================================
+PR #23577: [fix][client] Fix DLQ producer name conflicts when there are same name consumers (State: closed)
+URL: https://github.com/apache/pulsar/pull/23577
+Created at: 2024-11-07T12:31:57Z, Merged at: 2024-11-25T02:39:29Z
+================================================================================
+PR #23576: [improve][ml] Optimization method getNumberOfEntries (State: open)
+URL: https://github.com/apache/pulsar/pull/23576
+Created at: 2024-11-07T10:19:51Z, Merged at: None
+================================================================================
+PR #23575: [improve][ci] Fix github CI (State: closed)
+URL: https://github.com/apache/pulsar/pull/23575
+Created at: 2024-11-07T07:44:44Z, Merged at: None
+================================================================================
+PR #23568: [improve][consumer] Optimizing Exception Handling and Logging in `MultiTopicsConsumerImpl` (State: open)
+URL: https://github.com/apache/pulsar/pull/23568
+Created at: 2024-11-06T13:24:47Z, Merged at: None
+================================================================================
+PR #23567: [improve][pip] PIP-391: Enable batch index ACK by default (State: closed)
+URL: https://github.com/apache/pulsar/pull/23567
+Created at: 2024-11-06T12:39:52Z, Merged at: 2024-11-14T04:40:53Z
+================================================================================
+PR #23566: [fix][test]Flaky-test: SchemaServiceTest.testSchemaRegistryMetrics (State: closed)
+URL: https://github.com/apache/pulsar/pull/23566
+Created at: 2024-11-06T08:30:52Z, Merged at: 2024-11-06T11:41:32Z
+================================================================================
+PR #23565: [improve][pip] PIP-390 Improve the reusability of Pulsar test code and best practice for unit and integration tests for Pulsar (State: open)
+URL: https://github.com/apache/pulsar/pull/23565
+Created at: 2024-11-05T22:31:47Z, Merged at: None
+================================================================================
+PR #23564: Try to reproduce issue with nondurable consumers impacting topic migr… (State: closed)
+URL: https://github.com/apache/pulsar/pull/23564
+Created at: 2024-11-05T22:14:56Z, Merged at: None
+================================================================================
+PR #23563: [improve][admin] Print error log if handle http response fails (State: closed)
+URL: https://github.com/apache/pulsar/pull/23563
+Created at: 2024-11-05T09:50:27Z, Merged at: 2024-11-06T01:37:22Z
+================================================================================
+PR #23562: [improve][broker]Restrict the creation of topics with "-partition--x" (State: closed)
+URL: https://github.com/apache/pulsar/pull/23562
+Created at: 2024-11-05T08:33:28Z, Merged at: None
+================================================================================
+PR #23561: [improve][broker] Support cleanup `replication cluster` and `allowed cluster` when cluster metadata teardown (State: closed)
+URL: https://github.com/apache/pulsar/pull/23561
+Created at: 2024-11-05T06:17:07Z, Merged at: 2024-11-12T08:59:47Z
+================================================================================
+PR #23560: [fix][client] Fix race-condition causing doReconsumeLater to hang when creating retryLetterProducer has failed (State: closed)
+URL: https://github.com/apache/pulsar/pull/23560
+Created at: 2024-11-05T03:01:21Z, Merged at: 2024-11-29T14:56:03Z
+================================================================================
+PR #23556: [fix] [admin] Fix lookup get a null result if uses proxy (State: closed)
+URL: https://github.com/apache/pulsar/pull/23556
+Created at: 2024-11-04T12:09:46Z, Merged at: 2024-11-05T08:36:28Z
+================================================================================
+PR #23552: [fix][test] Fix DeadLetterTopicTest.testDeadLetterTopicWithInitialSubscriptionAndMultiConsumers (State: closed)
+URL: https://github.com/apache/pulsar/pull/23552
+Created at: 2024-11-04T11:11:17Z, Merged at: 2024-11-06T12:56:57Z
+================================================================================
+PR #23551: [fix][txn] fix concurrent error cause txn stuck in TransactionBufferHandlerImpl#endTxn (State: open)
+URL: https://github.com/apache/pulsar/pull/23551
+Created at: 2024-11-04T08:33:27Z, Merged at: None
+================================================================================
+PR #23549: [improve][broker] PIP-380: Support-setting-up-specific-namespaces-to-skipping-the-load-shedding (State: open)
+URL: https://github.com/apache/pulsar/pull/23549
+Created at: 2024-11-04T07:38:31Z, Merged at: None
+================================================================================
+PR #23548: [fix][broker] Increase readBuffer size for bookkeeper.DLOutputStream (State: closed)
+URL: https://github.com/apache/pulsar/pull/23548
+Created at: 2024-11-04T07:14:45Z, Merged at: 2024-11-05T00:19:23Z
+================================================================================
+PR #23546: [fix][test] Fix SimpleProducerConsumerTest.testMultiTopicsConsumerImplPauseForManualSubscription (State: closed)
+URL: https://github.com/apache/pulsar/pull/23546
+Created at: 2024-11-03T11:12:09Z, Merged at: 2024-11-06T03:24:08Z
+================================================================================
+PR #23545: [fix][client] Add logging when lib disabled sni even after passing proxy-url (State: closed)
+URL: https://github.com/apache/pulsar/pull/23545
+Created at: 2024-11-02T00:04:20Z, Merged at: 2024-11-06T15:12:16Z
+================================================================================
+PR #23544: [fix][broker] fix logging with correct error message while loading the topic (State: closed)
+URL: https://github.com/apache/pulsar/pull/23544
+Created at: 2024-11-01T23:42:31Z, Merged at: 2024-11-05T20:40:16Z
+================================================================================
+PR #23540: [improve][test] Disable OTel autoconfigured exporters in tests (State: closed)
+URL: https://github.com/apache/pulsar/pull/23540
+Created at: 2024-11-01T14:40:47Z, Merged at: 2024-11-02T09:12:55Z
+================================================================================
+PR #23538: [improve][io] Support update subscription position for sink connector (State: closed)
+URL: https://github.com/apache/pulsar/pull/23538
+Created at: 2024-11-01T08:09:46Z, Merged at: 2024-11-05T03:40:39Z
+================================================================================
+PR #23536: [improve][test] Split tests module  (State: open)
+URL: https://github.com/apache/pulsar/pull/23536
+Created at: 2024-11-01T01:12:24Z, Merged at: None
+================================================================================
+PR #23535: [fix][broker] Fix print cluster migration state response (State: closed)
+URL: https://github.com/apache/pulsar/pull/23535
+Created at: 2024-10-31T22:32:16Z, Merged at: 2024-11-01T20:16:30Z
+================================================================================
+PR #23534: [fix][broker] Fix Broker migration NPE while broker tls url not configured (State: closed)
+URL: https://github.com/apache/pulsar/pull/23534
+Created at: 2024-10-31T22:23:03Z, Merged at: 2024-11-01T10:47:17Z
+================================================================================
+PR #23532: [fix][sec] Replace bcprov-jdk15on dependency with bcprov-jdk18-on (State: closed)
+URL: https://github.com/apache/pulsar/pull/23532
+Created at: 2024-10-30T16:02:51Z, Merged at: 2024-10-31T04:22:20Z
+================================================================================
+PR #23531: [fix][test] Fix SimpleProducerConsumerTest.testMultiTopicsConsumerImplPauseForManualSubscription  (State: closed)
+URL: https://github.com/apache/pulsar/pull/23531
+Created at: 2024-10-30T13:56:12Z, Merged at: None
+================================================================================
+PR #23530: [fix][broker] Fix currently client retries until operation timeout if the topic does not exist (State: closed)
+URL: https://github.com/apache/pulsar/pull/23530
+Created at: 2024-10-30T09:09:48Z, Merged at: 2024-11-06T09:01:34Z
+================================================================================
+PR #23527: [improve][build] Use apache@33 as parent pom (State: closed)
+URL: https://github.com/apache/pulsar/pull/23527
+Created at: 2024-10-29T10:03:42Z, Merged at: None
+================================================================================
+PR #23526: [improve][pip] PIP-389: Add Producer config compressMinMsgBodySize to improve compression performance (State: closed)
+URL: https://github.com/apache/pulsar/pull/23526
+Created at: 2024-10-29T09:09:49Z, Merged at: 2024-11-28T11:33:21Z
+================================================================================
+PR #23525: [improve][client][PIP-389] Add a producer config to improve compression performance (State: closed)
+URL: https://github.com/apache/pulsar/pull/23525
+Created at: 2024-10-29T08:34:33Z, Merged at: 2025-02-17T02:16:49Z
+================================================================================
+PR #23524: [fix][broker] Fix reading entries failed due to max in-flight reading (State: closed)
+URL: https://github.com/apache/pulsar/pull/23524
+Created at: 2024-10-28T13:39:38Z, Merged at: None
+================================================================================
+PR #23523: [fix][broker] Correct the 'connected' status in topic stats of multi-partition topic for geo replication (State: closed)
+URL: https://github.com/apache/pulsar/pull/23523
+Created at: 2024-10-28T09:49:23Z, Merged at: None
+================================================================================
+PR #23522: [fix] [broker] Fix race-condition causing repeated delete topic (State: closed)
+URL: https://github.com/apache/pulsar/pull/23522
+Created at: 2024-10-28T08:47:50Z, Merged at: 2024-10-29T08:01:58Z
+================================================================================
+PR #23521: [fix][broker] Correct the 'connected' status in topic stats of multi-partition topic for geo replication (State: closed)
+URL: https://github.com/apache/pulsar/pull/23521
+Created at: 2024-10-28T08:19:41Z, Merged at: None
+================================================================================
+PR #23520: [improve][broker] Make cluster metadata teardown command support metadata config path (State: closed)
+URL: https://github.com/apache/pulsar/pull/23520
+Created at: 2024-10-28T01:43:21Z, Merged at: 2024-10-29T09:44:12Z
+================================================================================
+PR #23518: [fix][test] Fix ManagedCursorTest.testForceCursorRecovery (State: closed)
+URL: https://github.com/apache/pulsar/pull/23518
+Created at: 2024-10-27T13:54:14Z, Merged at: 2024-11-05T10:16:55Z
+================================================================================
+PR #23517: [fix][broker][branch-3.3] Fix namespace unload might be blocked too long with extensible load manager (#23433) (State: closed)
+URL: https://github.com/apache/pulsar/pull/23517
+Created at: 2024-10-25T23:40:58Z, Merged at: 2024-10-28T15:25:41Z
+================================================================================
+PR #23516: [improve][broker] re-elect the channel owner if no channel owner is found (State: closed)
+URL: https://github.com/apache/pulsar/pull/23516
+Created at: 2024-10-25T21:13:04Z, Merged at: 2024-10-28T17:56:58Z
+================================================================================
+PR #23515: [fix][broker] Fix ownership loss (State: closed)
+URL: https://github.com/apache/pulsar/pull/23515
+Created at: 2024-10-25T18:23:41Z, Merged at: 2024-11-07T03:49:28Z
+================================================================================
+PR #23510: [fix][broker][branch-3.3] timeout when broker registry hangs and monitor broker registry (ExtensibleLoadManagerImpl only) (#23382) (State: closed)
+URL: https://github.com/apache/pulsar/pull/23510
+Created at: 2024-10-23T22:13:04Z, Merged at: 2024-10-25T04:28:23Z
+================================================================================
+PR #23508: [fix][client] Fix the javadoc for startMessageIdInclusive (State: closed)
+URL: https://github.com/apache/pulsar/pull/23508
+Created at: 2024-10-23T14:58:50Z, Merged at: 2024-10-30T14:15:00Z
+================================================================================
+PR #23507: [fix][broker][branch-3.3] Fix the broker registering might be blocked for long time (#23371) (State: closed)
+URL: https://github.com/apache/pulsar/pull/23507
+Created at: 2024-10-23T12:47:38Z, Merged at: 2024-10-23T18:06:15Z
+================================================================================
+PR #23502: [fix][client] Fix Reader.hasMessageAvailable return wrong value after seeking by timestamp with startMessageIdInclusive (State: closed)
+URL: https://github.com/apache/pulsar/pull/23502
+Created at: 2024-10-22T15:40:09Z, Merged at: 2024-10-24T09:34:31Z
+================================================================================
+PR #23500: feat(authz): support tenants related granularity operation (State: closed)
+URL: https://github.com/apache/pulsar/pull/23500
+Created at: 2024-10-22T14:51:09Z, Merged at: None
+================================================================================
+PR #23499: [fix][client] Fix producer/consumer stop to reconnect or Pub/Sub due to IO thread race-condition  (State: closed)
+URL: https://github.com/apache/pulsar/pull/23499
+Created at: 2024-10-22T14:15:35Z, Merged at: 2024-10-23T11:04:34Z
+================================================================================
+PR #23497: [fix][standalone] correctly delete bookie registration znode (State: closed)
+URL: https://github.com/apache/pulsar/pull/23497
+Created at: 2024-10-22T04:13:39Z, Merged at: 2024-10-25T03:24:57Z
+================================================================================
+PR #23496: [fix][broker][branch-3.3] Fix unloadNamespaceBundlesGracefully can be stuck with extensible load manager  (#23349) (State: closed)
+URL: https://github.com/apache/pulsar/pull/23496
+Created at: 2024-10-22T03:40:45Z, Merged at: 2024-10-23T11:25:22Z
+================================================================================
+PR #23495: [fix][broker] Fix consumer receive individual acknowledged messages from compacted topic after reconnection (State: open)
+URL: https://github.com/apache/pulsar/pull/23495
+Created at: 2024-10-21T15:48:14Z, Merged at: None
+================================================================================
+PR #23492: [fix][test] Fix running ClusterMetadataSetupTest in IDE (State: closed)
+URL: https://github.com/apache/pulsar/pull/23492
+Created at: 2024-10-21T13:16:00Z, Merged at: 2024-10-21T20:36:57Z
+================================================================================
+PR #23489: [fix] [proxy] Fix pattern consumer does not work when using Proxy (State: closed)
+URL: https://github.com/apache/pulsar/pull/23489
+Created at: 2024-10-21T08:08:15Z, Merged at: 2024-10-21T12:32:35Z
+================================================================================
+PR #23488: [fix][broker] Don't allow creating a non-persistent partitioned topic with '-partition-' in name (State: open)
+URL: https://github.com/apache/pulsar/pull/23488
+Created at: 2024-10-21T08:05:35Z, Merged at: None
+================================================================================
+PR #23487: [fix][broker] unsynchronize TableViewLoadDataStoreImpl (State: open)
+URL: https://github.com/apache/pulsar/pull/23487
+Created at: 2024-10-20T20:16:09Z, Merged at: None
+================================================================================
+PR #23486: [fix][test] Prevent OOM in test by not spying invocations in SimpleProducerConsumerTest (State: closed)
+URL: https://github.com/apache/pulsar/pull/23486
+Created at: 2024-10-19T19:48:55Z, Merged at: 2024-10-21T03:08:46Z
+================================================================================
+PR #23484: [improve][monitor] Upgrade OTel to 1.41.0 (State: closed)
+URL: https://github.com/apache/pulsar/pull/23484
+Created at: 2024-10-18T16:28:28Z, Merged at: 2024-10-18T18:24:25Z
+================================================================================
+PR #23483: [fix][test] Fix memory leak via OTel shutdown hooks in tests (State: closed)
+URL: https://github.com/apache/pulsar/pull/23483
+Created at: 2024-10-18T15:57:00Z, Merged at: 2024-10-18T18:24:07Z
+================================================================================
+PR #23481: [improve][io] Upgrade Spring version to 6.1.14 in IO Connectors (State: closed)
+URL: https://github.com/apache/pulsar/pull/23481
+Created at: 2024-10-18T11:07:25Z, Merged at: 2024-10-18T19:21:18Z
+================================================================================
+PR #23479: [feat][monitor] Add offloader stats grafana dashboard (State: closed)
+URL: https://github.com/apache/pulsar/pull/23479
+Created at: 2024-10-17T12:13:53Z, Merged at: 2024-10-18T06:47:51Z
+================================================================================
+PR #23478: [fix][ci] Temporarily move OneWayReplicatorTestBase tests to flaky group to unblock CI (State: closed)
+URL: https://github.com/apache/pulsar/pull/23478
+Created at: 2024-10-17T12:01:27Z, Merged at: 2024-10-17T14:08:56Z
+================================================================================
+PR #23473: [improve][test] Added message properties tests for batch and non-batch messages (State: closed)
+URL: https://github.com/apache/pulsar/pull/23473
+Created at: 2024-10-17T05:00:30Z, Merged at: 2024-10-18T11:31:48Z
+================================================================================
+PR #23471: [feat][meta] Bump oxia java version from 0.4.5 to 0.4.7 (State: closed)
+URL: https://github.com/apache/pulsar/pull/23471
+Created at: 2024-10-17T04:09:11Z, Merged at: 2024-10-17T12:44:00Z
+================================================================================
+PR #23470: [fix][ml] Fix races in ledger initialization timeout handling (State: open)
+URL: https://github.com/apache/pulsar/pull/23470
+Created at: 2024-10-16T19:28:27Z, Merged at: None
+================================================================================
+PR #23468: [fix][client] Prevent embedding protobuf-java class files in pulsar-client-admin and pulsar-client-all (State: closed)
+URL: https://github.com/apache/pulsar/pull/23468
+Created at: 2024-10-16T09:42:54Z, Merged at: 2024-10-17T18:07:38Z
+================================================================================
+PR #23465: [improve][build] Upgrade os-maven-plugin to support RISC-V 64 (State: closed)
+URL: https://github.com/apache/pulsar/pull/23465
+Created at: 2024-10-16T07:22:21Z, Merged at: 2024-10-16T16:23:58Z
+================================================================================
+PR #23464: [improve][ci] Prevent git force push to more recent maintenance branches (State: closed)
+URL: https://github.com/apache/pulsar/pull/23464
+Created at: 2024-10-16T03:59:10Z, Merged at: 2024-10-16T05:15:54Z
+================================================================================
+PR #23463: [fix][sql][branch-3.0] Fix LICENSE (State: closed)
+URL: https://github.com/apache/pulsar/pull/23463
+Created at: 2024-10-16T03:37:23Z, Merged at: 2024-10-16T05:15:17Z
+================================================================================
+PR #23462: [improve] [pip] PIP-387: Modify interface TopicCompactionService to support cancelling an in-progress compaction task (State: open)
+URL: https://github.com/apache/pulsar/pull/23462
+Created at: 2024-10-15T17:46:59Z, Merged at: None
+================================================================================
+PR #23461: [fix][client][branch-3.0] Use dedicated executor for requests in BinaryProtoLookupService (#23378) (State: closed)
+URL: https://github.com/apache/pulsar/pull/23461
+Created at: 2024-10-15T16:20:30Z, Merged at: 2024-10-16T07:26:37Z
+================================================================================
+PR #23459: [improve][io] Upgrade Spring version to 6.1.13 in IO Connectors (State: closed)
+URL: https://github.com/apache/pulsar/pull/23459
+Created at: 2024-10-15T04:46:51Z, Merged at: 2024-10-15T13:08:22Z
+================================================================================
+PR #23458: [fix][broker] Do not record as a topic load failure for the requested broker is not the owner (State: closed)
+URL: https://github.com/apache/pulsar/pull/23458
+Created at: 2024-10-14T23:43:58Z, Merged at: None
+================================================================================
+PR #23456: [fix][test] Address flaky GetPartitionMetadataMultiBrokerTest (State: closed)
+URL: https://github.com/apache/pulsar/pull/23456
+Created at: 2024-10-14T08:39:46Z, Merged at: 2024-10-14T11:09:25Z
+================================================================================
+PR #23452: [fix][client] Fix the javadoc for ConsumerBuilder.isAckReceiptEnabled (State: closed)
+URL: https://github.com/apache/pulsar/pull/23452
+Created at: 2024-10-14T07:45:59Z, Merged at: 2024-10-14T10:19:19Z
+================================================================================
+PR #23450: [improve][build] Drop deprecated pulsar-client-1x and pulsar-client-2x-shaded modules (State: closed)
+URL: https://github.com/apache/pulsar/pull/23450
+Created at: 2024-10-13T18:29:23Z, Merged at: 2024-10-14T04:38:58Z
+================================================================================
+PR #23449: [fix][broker] Key_Shared subscription: Reject consumers with incompatible policy (State: closed)
+URL: https://github.com/apache/pulsar/pull/23449
+Created at: 2024-10-13T12:59:25Z, Merged at: 2024-10-21T21:32:31Z
+================================================================================
+PR #23448: [fix][build] Add basic support for vscode-java and Eclipse IDE (State: closed)
+URL: https://github.com/apache/pulsar/pull/23448
+Created at: 2024-10-12T18:53:08Z, Merged at: 2024-10-14T09:03:57Z
+================================================================================
+PR #23447: [improve][broker][PIP-379] Improve hash collision handling by restoring consumer when other leaves (State: closed)
+URL: https://github.com/apache/pulsar/pull/23447
+Created at: 2024-10-12T15:45:03Z, Merged at: 2024-10-14T06:52:31Z
+================================================================================
+PR #23446: [improve][cli] Add compactor type option for compaction tool (State: closed)
+URL: https://github.com/apache/pulsar/pull/23446
+Created at: 2024-10-12T13:35:23Z, Merged at: 2024-10-13T17:09:02Z
+================================================================================
+PR #23442: [fix][build] Set project version to 4.1.0-SNAPSHOT (State: closed)
+URL: https://github.com/apache/pulsar/pull/23442
+Created at: 2024-10-11T15:19:45Z, Merged at: 2024-10-14T16:54:55Z
+================================================================================
+PR #23441: [improve][broker][PIP-379] Don't replace a consumer when there's a collision (State: closed)
+URL: https://github.com/apache/pulsar/pull/23441
+Created at: 2024-10-11T15:07:37Z, Merged at: 2024-10-11T17:54:52Z
+================================================================================
+PR #23440: [fix][build] Remove duplicate dependencies in pom.xml (State: closed)
+URL: https://github.com/apache/pulsar/pull/23440
+Created at: 2024-10-11T14:39:49Z, Merged at: 2024-10-11T16:36:26Z
+================================================================================
+PR #23438: [fix][broker] normalize path (State: closed)
+URL: https://github.com/apache/pulsar/pull/23438
+Created at: 2024-10-11T09:50:31Z, Merged at: 2024-10-11T15:42:39Z
+================================================================================
+PR #23437: [fix][test] Fix flaky test ManagedLedgerTest.testDeleteCurrentLedgerWhenItIsClosed (State: closed)
+URL: https://github.com/apache/pulsar/pull/23437
+Created at: 2024-10-11T09:17:00Z, Merged at: 2024-10-13T14:56:56Z
+================================================================================
+PR #23434: [improve][broker] Add log to track issue when `handleGetTopicsOfNamespace` (State: closed)
+URL: https://github.com/apache/pulsar/pull/23434
+Created at: 2024-10-10T13:35:25Z, Merged at: 2024-10-14T11:19:05Z
+================================================================================
+PR #23433: [fix][broker] Fix namespace unload might be blocked too long with extensible load manager (State: closed)
+URL: https://github.com/apache/pulsar/pull/23433
+Created at: 2024-10-10T10:59:24Z, Merged at: 2024-10-10T16:14:27Z
+================================================================================
+PR #23431: [fix][ci] Pin aquasecurity/trivy-action@0.26.0 since master is broken (State: closed)
+URL: https://github.com/apache/pulsar/pull/23431
+Created at: 2024-10-10T04:50:12Z, Merged at: 2024-10-10T06:37:05Z
+================================================================================
+PR #23430: [improve][client] Increase default Java client connectionMaxIdleSeconds to 60 seconds (State: closed)
+URL: https://github.com/apache/pulsar/pull/23430
+Created at: 2024-10-10T04:23:29Z, Merged at: 2024-10-10T10:18:44Z
+================================================================================
+PR #23429: [improve][broker][PIP-379] Add observability stats for "draining hashes" (State: closed)
+URL: https://github.com/apache/pulsar/pull/23429
+Created at: 2024-10-10T03:37:06Z, Merged at: 2024-10-10T09:46:43Z
+================================================================================
+PR #23428: [fix][broker] Allow broker to handle non-recoverable schema error only if SchemaLedgerForceRecovery flag is enabled (State: closed)
+URL: https://github.com/apache/pulsar/pull/23428
+Created at: 2024-10-09T20:13:57Z, Merged at: 2024-10-10T19:30:16Z
+================================================================================
+PR #23427: [improve][pip] PIP-386: Add resetIncludeHead in CommandSubscribe for startMessageIdInclusive implementation (State: open)
+URL: https://github.com/apache/pulsar/pull/23427
+Created at: 2024-10-09T13:02:08Z, Merged at: None
+================================================================================
+PR #23426: [fix][ml][PIP-327] fix recover from ledger when ledgerForceRecovery is true (State: closed)
+URL: https://github.com/apache/pulsar/pull/23426
+Created at: 2024-10-09T08:47:45Z, Merged at: 2024-10-09T14:17:27Z
+================================================================================
+PR #23424: [improve][broker] PIP-379: Enable the use of the classic implementation of Key_Shared / Shared with feature flag (State: closed)
+URL: https://github.com/apache/pulsar/pull/23424
+Created at: 2024-10-09T04:15:22Z, Merged at: 2024-10-09T05:38:14Z
+================================================================================
+PR #23423: [improve][broker] PIP-379: Snapshot hash range assignments only in AUTO_SPLIT ordered mode (State: closed)
+URL: https://github.com/apache/pulsar/pull/23423
+Created at: 2024-10-08T22:11:28Z, Merged at: 2024-10-08T23:34:21Z
+================================================================================
+PR #23419: [fix][sql][branch-3.0] Fix long decimal compatibility in Trino 368. (State: closed)
+URL: https://github.com/apache/pulsar/pull/23419
+Created at: 2024-10-08T13:48:16Z, Merged at: 2024-10-08T17:32:23Z
+================================================================================
+PR #23418: [fix][ml] Remove unnecessary return in ManagedLedgerImpl (State: closed)
+URL: https://github.com/apache/pulsar/pull/23418
+Created at: 2024-10-08T11:46:02Z, Merged at: 2024-10-08T18:52:47Z
+================================================================================
+PR #23415: [fix][broker] Fix typos in pulsar-broker and tiered-storage. (State: closed)
+URL: https://github.com/apache/pulsar/pull/23415
+Created at: 2024-10-08T09:44:55Z, Merged at: 2024-10-09T04:29:14Z
+================================================================================
+PR #23414: [improve][ci] Move some flaky ExtensibleLoadManager tests to flaky group until they are fixed (State: closed)
+URL: https://github.com/apache/pulsar/pull/23414
+Created at: 2024-10-08T09:44:51Z, Merged at: 2024-10-08T12:40:38Z
+================================================================================
+PR #23411: [fix][sec] Drop hdfs2 support, Upgrade hadoop3 to 3.4.0 and dnsjava to 3.6.2 to address CVE-2024-25638 (State: closed)
+URL: https://github.com/apache/pulsar/pull/23411
+Created at: 2024-10-08T08:42:50Z, Merged at: 2024-10-11T16:22:35Z
+================================================================================
+PR #23410: [improve][build] Update maven-wrapper (mvnw) to recent stable version 3.3.2 (State: closed)
+URL: https://github.com/apache/pulsar/pull/23410
+Created at: 2024-10-08T07:55:10Z, Merged at: 2024-10-08T10:28:16Z
+================================================================================
+PR #23407: [improve][functions]Adding boolean in contextImpl.java to check partitioned topic present or not. (State: open)
+URL: https://github.com/apache/pulsar/pull/23407
+Created at: 2024-10-07T17:44:45Z, Merged at: None
+================================================================================
+PR #23405: [improve][misc] Upgrade Jetty to 9.4.56.v20240826 (State: closed)
+URL: https://github.com/apache/pulsar/pull/23405
+Created at: 2024-10-07T06:48:41Z, Merged at: 2024-10-07T12:44:47Z
+================================================================================
+PR #23401: [fix][client] Add more info while throwing reader creation exception (State: closed)
+URL: https://github.com/apache/pulsar/pull/23401
+Created at: 2024-10-04T19:10:55Z, Merged at: 2024-10-04T23:09:48Z
+================================================================================
+PR #23399: [fix][broker] Fix delivery-test with unnecessary invocation-count (State: closed)
+URL: https://github.com/apache/pulsar/pull/23399
+Created at: 2024-10-04T18:13:10Z, Merged at: 2024-10-04T23:10:00Z
+================================================================================
+PR #23398: [improve][pip] PIP-385 Add rate limit semantics to pulsar protocol and Java Client (State: open)
+URL: https://github.com/apache/pulsar/pull/23398
+Created at: 2024-10-04T13:41:40Z, Merged at: None
+================================================================================
+PR #23397: [improve][ci] Continue Pulsar CI build even when Trivy scanner fails (State: closed)
+URL: https://github.com/apache/pulsar/pull/23397
+Created at: 2024-10-04T13:15:44Z, Merged at: 2024-10-04T15:14:43Z
+================================================================================
+PR #23395: [fix][broker] Fix Broker was failing to create producer with broken schema ledger (State: closed)
+URL: https://github.com/apache/pulsar/pull/23395
+Created at: 2024-10-03T23:43:03Z, Merged at: 2024-10-04T17:51:46Z
+================================================================================
+PR #23394: [fix][sec] Upgrade Avro to 1.11.4 to address CVE-2024-47561 (State: closed)
+URL: https://github.com/apache/pulsar/pull/23394
+Created at: 2024-10-03T20:40:05Z, Merged at: 2024-10-03T23:15:47Z
+================================================================================
+PR #23393: [fix] Bump commons-io:commons-io from 2.8.0 to 2.14.0 (State: closed)
+URL: https://github.com/apache/pulsar/pull/23393
+Created at: 2024-10-03T18:50:39Z, Merged at: 2024-10-03T23:12:06Z
+================================================================================
+PR #23390: [improve][broker] Add error logs and retry if the broker failed to register itself for metadata node deletion (State: closed)
+URL: https://github.com/apache/pulsar/pull/23390
+Created at: 2024-10-02T11:03:29Z, Merged at: None
+================================================================================
+PR #23387: [improve][pip] Improve PIP process and voting timeline (State: closed)
+URL: https://github.com/apache/pulsar/pull/23387
+Created at: 2024-10-01T23:39:37Z, Merged at: 2024-10-02T00:03:52Z
+================================================================================
+PR #23386: [improve][broker/proxy] Optionally prevent role/originalPrincipal logging (State: open)
+URL: https://github.com/apache/pulsar/pull/23386
+Created at: 2024-10-01T19:48:59Z, Merged at: None
+================================================================================
+PR #23384: [fix][broker] Cancel possible pending replay read in cancelPendingRead (State: closed)
+URL: https://github.com/apache/pulsar/pull/23384
+Created at: 2024-10-01T08:43:33Z, Merged at: 2024-10-01T19:54:32Z
+================================================================================
+PR #23382: [fix][broker] timeout when broker registry hangs and monitor broker registry (ExtensibleLoadManagerImpl only) (State: closed)
+URL: https://github.com/apache/pulsar/pull/23382
+Created at: 2024-10-01T02:31:47Z, Merged at: 2024-10-03T19:50:11Z
+================================================================================
+PR #23381: [improve][broker] check system topic is used before configuring system topic (ExtensibleLoadManagerImpl only) (State: closed)
+URL: https://github.com/apache/pulsar/pull/23381
+Created at: 2024-09-30T22:46:54Z, Merged at: 2024-10-01T01:45:23Z
+================================================================================
+PR #23380: [improve][client]: add --streaming option to topics partitioned-stats-internal (State: open)
+URL: https://github.com/apache/pulsar/pull/23380
+Created at: 2024-09-30T16:40:02Z, Merged at: None
+================================================================================
+PR #23378: [fix][client] Use dedicated executor for requests in BinaryProtoLookupService (State: closed)
+URL: https://github.com/apache/pulsar/pull/23378
+Created at: 2024-09-30T13:46:16Z, Merged at: 2024-10-15T13:41:27Z
+================================================================================
+PR #23377: [improve] Upgrade Pulsar Python client in docker image to 3.5.0 (State: closed)
+URL: https://github.com/apache/pulsar/pull/23377
+Created at: 2024-09-30T10:57:07Z, Merged at: 2024-09-30T14:10:15Z
+================================================================================
+PR #23376: [fix] EXPERIMENT: Switch to use minideb base image to fix glibc compatibility issues (State: closed)
+URL: https://github.com/apache/pulsar/pull/23376
+Created at: 2024-09-30T10:51:57Z, Merged at: None
+================================================================================
+PR #23375: [improve] Configure Rocksdb to use musl libc flavor of the native library (State: closed)
+URL: https://github.com/apache/pulsar/pull/23375
+Created at: 2024-09-30T06:08:36Z, Merged at: 2024-10-02T03:46:52Z
+================================================================================
+PR #23374: [fix] Remove gcompat from the Alpine based image since real glibc is installed (State: closed)
+URL: https://github.com/apache/pulsar/pull/23374
+Created at: 2024-09-30T05:46:49Z, Merged at: None
+================================================================================
+PR #23373: [improve][ci] Switch to Java 21 as default JVM version for CI (State: closed)
+URL: https://github.com/apache/pulsar/pull/23373
+Created at: 2024-09-29T16:57:27Z, Merged at: 2024-09-30T04:09:04Z
+================================================================================
+PR #23372: [improve][broker] PIP-383: Support granting/revoking permissions for multiple topics (State: closed)
+URL: https://github.com/apache/pulsar/pull/23372
+Created at: 2024-09-29T11:21:24Z, Merged at: 2024-10-10T10:37:27Z
+================================================================================
+PR #23371: [fix][broker] Fix the broker registering might be blocked for long time (State: closed)
+URL: https://github.com/apache/pulsar/pull/23371
+Created at: 2024-09-29T07:55:54Z, Merged at: 2024-09-30T06:20:33Z
+================================================================================
+PR #23370: [fix][cli] Remove deprecated "-client" JVM arg (State: closed)
+URL: https://github.com/apache/pulsar/pull/23370
+Created at: 2024-09-29T07:54:49Z, Merged at: 2024-09-29T11:16:55Z
+================================================================================
+PR #23369: [fix][test] Fix ReplicatorRateLimiterTest (State: closed)
+URL: https://github.com/apache/pulsar/pull/23369
+Created at: 2024-09-29T03:47:21Z, Merged at: 2024-09-29T07:13:38Z
+================================================================================
+PR #23368: [fix][ml] Managed ledger should recover after open ledger failed (State: closed)
+URL: https://github.com/apache/pulsar/pull/23368
+Created at: 2024-09-29T01:31:21Z, Merged at: 2024-09-29T03:16:33Z
+================================================================================
+PR #23367: [fix][build] Disable flaky test BrokerRegistryIntegrationTest (State: closed)
+URL: https://github.com/apache/pulsar/pull/23367
+Created at: 2024-09-28T14:22:34Z, Merged at: 2024-09-28T17:10:54Z
+================================================================================
+PR #23366: [fix] EXPERIMENT: Switch docker base image to avoid mixing musl & glibc libraries at runtime (State: closed)
+URL: https://github.com/apache/pulsar/pull/23366
+Created at: 2024-09-28T14:16:51Z, Merged at: None
+================================================================================
+PR #23364: [fix][misc] Log Conscrypt security provider initialization warnings at debug level (State: closed)
+URL: https://github.com/apache/pulsar/pull/23364
+Created at: 2024-09-28T10:55:45Z, Merged at: 2024-09-29T03:28:06Z
+================================================================================
+PR #23363: [improve] PIP-384: ManagedLedger interface decoupling (State: closed)
+URL: https://github.com/apache/pulsar/pull/23363
+Created at: 2024-09-27T18:06:16Z, Merged at: 2024-10-07T15:37:55Z
+================================================================================
+PR #23362: [improve] Install openssl in the docker image to fix compatibility with Apache Pulsar Helm chart (State: closed)
+URL: https://github.com/apache/pulsar/pull/23362
+Created at: 2024-09-27T16:16:40Z, Merged at: 2024-09-29T17:09:54Z
+================================================================================
+PR #23361: [fix][alpine] thread stack size (State: closed)
+URL: https://github.com/apache/pulsar/pull/23361
+Created at: 2024-09-27T15:08:15Z, Merged at: None
+================================================================================
+PR #23360: [fix] [broker] topics failed to delete after remove cluster from replicated clusters set and caused OOM (State: closed)
+URL: https://github.com/apache/pulsar/pull/23360
+Created at: 2024-09-27T09:15:02Z, Merged at: 2024-10-14T04:50:02Z
+================================================================================
+PR #23359: [fix][broker] Fix the broker registery cannot recover from the metadata node deletion (State: closed)
+URL: https://github.com/apache/pulsar/pull/23359
+Created at: 2024-09-26T17:58:23Z, Merged at: 2024-09-27T11:49:02Z
+================================================================================
+PR #23358: [fix][sec][branch-3.3] Upgrade protobuf-java to 3.25.5 (#23356) (State: closed)
+URL: https://github.com/apache/pulsar/pull/23358
+Created at: 2024-09-26T16:21:08Z, Merged at: 2024-10-03T15:42:54Z
+================================================================================
+PR #23357: [fix][sec][branch-3.0] Upgrade protobuf-java to 3.25.5 (#23356) (State: closed)
+URL: https://github.com/apache/pulsar/pull/23357
+Created at: 2024-09-26T16:17:45Z, Merged at: 2024-10-03T15:43:11Z
+================================================================================
+PR #23356: [fix][sec] Upgrade protobuf-java to 3.25.5 (State: closed)
+URL: https://github.com/apache/pulsar/pull/23356
+Created at: 2024-09-26T15:01:30Z, Merged at: 2024-10-03T15:42:35Z
+================================================================================
+PR #23355: [improve][PIP] PIP-383: Support granting/revoking permissions for multiple topics (State: closed)
+URL: https://github.com/apache/pulsar/pull/23355
+Created at: 2024-09-26T14:00:32Z, Merged at: 2024-10-08T11:22:31Z
+================================================================================
+PR #23354: [improve][schema]Improve the getSchema() method in SchemaRegistryServiceImpl.java  (State: open)
+URL: https://github.com/apache/pulsar/pull/23354
+Created at: 2024-09-26T06:49:43Z, Merged at: None
+================================================================================
+PR #23353: [fix] [broker] Fix incorrect stat sub.msgBacklogNoDelayed if enabled delayedDeliveryFixedDelayDetectionLookahead (State: open)
+URL: https://github.com/apache/pulsar/pull/23353
+Created at: 2024-09-26T05:28:25Z, Merged at: None
+================================================================================
+PR #23352: [improve][broker] PIP-379: Key_Shared Draining Hashes for Improved Message Ordering (State: closed)
+URL: https://github.com/apache/pulsar/pull/23352
+Created at: 2024-09-25T16:34:56Z, Merged at: 2024-10-08T14:03:13Z
+================================================================================
+PR #23351: [improve] [pip] PIP-382: Add a label named reason for topic_load_failed_total (State: open)
+URL: https://github.com/apache/pulsar/pull/23351
+Created at: 2024-09-25T16:08:54Z, Merged at: None
+================================================================================
+PR #23349: [fix][broker] Fix unloadNamespaceBundlesGracefully can be stuck with extensible load manager  (State: closed)
+URL: https://github.com/apache/pulsar/pull/23349
+Created at: 2024-09-25T05:16:45Z, Merged at: 2024-09-27T09:33:29Z
+================================================================================
+PR #23347: [fix][cli] Fix Pulsar-Client CLI to print metadata of message including encryption metadata (State: closed)
+URL: https://github.com/apache/pulsar/pull/23347
+Created at: 2024-09-24T22:53:56Z, Merged at: 2024-09-25T22:30:55Z
+================================================================================
+PR #23346: [fix][cli] Fix Pulsar-Client to allow consume encrypted messages with appropriate crypto-failure-action (State: closed)
+URL: https://github.com/apache/pulsar/pull/23346
+Created at: 2024-09-24T22:51:52Z, Merged at: 2024-09-25T21:01:08Z
+================================================================================
+PR #23345: [fix][client] Fix failover consumer-listener stuck with cumulative ack and epoch time (State: closed)
+URL: https://github.com/apache/pulsar/pull/23345
+Created at: 2024-09-24T22:40:51Z, Merged at: 2024-10-02T17:12:49Z
+================================================================================
+PR #23344: [improve][schema] Improve Incompatible Schema Exception error message in ServerCnx.java (State: closed)
+URL: https://github.com/apache/pulsar/pull/23344
+Created at: 2024-09-24T11:03:29Z, Merged at: 2024-09-25T14:45:13Z
+================================================================================
+PR #23343: [fix][broker] Avoid introducing delay when there are delayed messages or marker messages (State: closed)
+URL: https://github.com/apache/pulsar/pull/23343
+Created at: 2024-09-24T10:38:35Z, Merged at: 2024-09-25T05:28:21Z
+================================================================================
+PR #23342: [fix][build] Remove io.grpc.netty relocation (State: closed)
+URL: https://github.com/apache/pulsar/pull/23342
+Created at: 2024-09-24T10:29:09Z, Merged at: None
+================================================================================
+PR #23340: [fix] Key_Shared mode consumption latency when low traffic (State: closed)
+URL: https://github.com/apache/pulsar/pull/23340
+Created at: 2024-09-23T16:27:55Z, Merged at: 2024-09-23T19:50:01Z
+================================================================================
+PR #23338: [fix][sec] Upgrade vertx to 4.5.10 to address CVE-2024-8391 (State: closed)
+URL: https://github.com/apache/pulsar/pull/23338
+Created at: 2024-09-23T11:33:10Z, Merged at: 2024-09-23T13:37:33Z
+================================================================================
+PR #23337: [fix][build] Fix problem where git.commit.id.abbrev is missing in image tagging (State: closed)
+URL: https://github.com/apache/pulsar/pull/23337
+Created at: 2024-09-23T08:58:05Z, Merged at: 2024-09-23T12:00:53Z
+================================================================================
+PR #23336: [fix][client] Fix ArrayIndexOutOfBoundsException when using SameAuthParamsLookupAutoClusterFailover (State: open)
+URL: https://github.com/apache/pulsar/pull/23336
+Created at: 2024-09-23T08:31:20Z, Merged at: None
+================================================================================
+PR #23335: [improve][build] Use eclipse-temurin:17 image instead of apt installation (State: closed)
+URL: https://github.com/apache/pulsar/pull/23335
+Created at: 2024-09-23T08:11:51Z, Merged at: None
+================================================================================
+PR #23334: [Draft] [fix] [broker] Do not record a bundle-unloading into the topic load failed metrics (State: open)
+URL: https://github.com/apache/pulsar/pull/23334
+Created at: 2024-09-23T08:10:33Z, Merged at: None
+================================================================================
+PR #23331: [fix][broker] fix broker may lost rack information (State: closed)
+URL: https://github.com/apache/pulsar/pull/23331
+Created at: 2024-09-23T03:51:48Z, Merged at: 2025-02-14T23:30:56Z
+================================================================================
+PR #23329: [improve][broker] Remove ConcurrentOpenHashMap and ConcurrentOpenHashSet (State: closed)
+URL: https://github.com/apache/pulsar/pull/23329
+Created at: 2024-09-21T12:14:35Z, Merged at: 2024-09-23T02:44:48Z
+================================================================================
+PR #23328: [improve][pip] PIP-381: Handle large PositionInfo state (State: closed)
+URL: https://github.com/apache/pulsar/pull/23328
+Created at: 2024-09-20T23:33:54Z, Merged at: 2024-10-01T22:37:43Z
+================================================================================
+PR #23327: [fix][broker] Fix out-of-order issues with ConsistentHashingStickyKeyConsumerSelector (State: closed)
+URL: https://github.com/apache/pulsar/pull/23327
+Created at: 2024-09-20T10:16:40Z, Merged at: 2024-10-02T08:13:36Z
+================================================================================
+PR #23326: [fix][broker] Fix topic policies cannot be queried with extensible load manager (State: closed)
+URL: https://github.com/apache/pulsar/pull/23326
+Created at: 2024-09-20T06:52:26Z, Merged at: 2024-09-20T10:40:54Z
+================================================================================
+PR #23322: [improve][broker] Replace ConcurrentOpenHashMap with ConcurrentHashMap in Topic classes (State: closed)
+URL: https://github.com/apache/pulsar/pull/23322
+Created at: 2024-09-19T12:28:06Z, Merged at: 2024-09-21T11:48:21Z
+================================================================================
+PR #23320: [improve][broker] Replace ConcurrentOpenHashMap with ConcurrentHashMap in BrokerService (State: closed)
+URL: https://github.com/apache/pulsar/pull/23320
+Created at: 2024-09-19T10:04:26Z, Merged at: 2024-09-21T07:02:24Z
+================================================================================
+PR #23319: [improve][broker] PIP-376: Make topic policies service pluggable (State: closed)
+URL: https://github.com/apache/pulsar/pull/23319
+Created at: 2024-09-19T09:07:27Z, Merged at: 2024-09-19T14:33:33Z
+================================================================================
+PR #23318: [fix][io] Upgrade mssql server docker tag in DebeziumMsSqlContainer (State: closed)
+URL: https://github.com/apache/pulsar/pull/23318
+Created at: 2024-09-19T04:11:24Z, Merged at: 2024-09-19T06:45:46Z
+================================================================================
