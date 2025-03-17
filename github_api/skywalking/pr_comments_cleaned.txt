@@ -1,0 +1,165 @@
+BTW, we were facing https://semgrep.dev/blog/2025/popular-github-action-tj-actionschanged-files-is-compromised/ .\r\n\r\nThe ASF Infra asked us to use `dorny/paths-filter`. Wait for @kezhenxu94 to adjust our CI. Before that, most UTs and e2e tests would not run.
+
+@mrproliu It seems you missed this in original change. Please recheck and confirm.
+
+We are waiting for @kezhenxu94 to fix a GHA plugin security concern. CI would not run until then.
+
+We need a flag for this. Because in ttl e2e, the expired data is injected intentionally, and e2e watch whether removing works.
+
+Could you add an e2e to this to avoid breaking? We usually forgot to upgrade this when adding new internal services.
+
+BTW, do we have go application in showcase?
+
+> BTW, do we have go application in showcase?\r\n\r\nYes. The rating service is a Go application that has agent enhancement. We should update it to the latest version in the showcase. @CodePrometheus 
+
+> How does it have to do if we don\
+
+> I means metrics generate by OAL from trace segment analyse, endpoint high latency caused trace segment finish delayed, finaly caused metrics persistent delay.\r\n\r\nI think this is caused by traces reported after finished. Nothing related to OAL or some OAP mechanism.
+
+> Metrics cache may also loaded by MetricsPersistentWorker#loadFromStorage before persistent.\r\nThis problem also exist in other storage modules, not just JDBC implmation.\r\n\r\nI am not following. It is loaded when it is absent in the cache. So?
+
+> > Metrics cache may also loaded by MetricsPersistentWorker#loadFromStorage before persistent.\r\n> > This problem also exist in other storage modules, not just JDBC implmation.\r\n> \r\n> I am not following. It is loaded when it is absent in the cache. So?\r\n\r\nIf metrics is in cache, storage module then do prepareBatchUpdate or storage module do prepareBatchInsert, `prepareBatchInsert` may cause duplicate primary key error.\r\n\r\nHere is a timeline explain above:\r\n\r\n**11:25:10**\r\ngateway report `/test` segment, oap analyse segment and generate related metrics with id 20250226115_xxx and load it into cache.\r\n\r\n**11:25:20**\r\ngateway `/test` called again, but for some reason, it hung for 70S.\r\n\r\n**11:26:30**\r\ngateway `/test` endpoint returned and agent report segment to oap.\r\noap metrics cache created in **11:25:10** expired  currently, then prepareBatchInsert called with id 20250226115_xxx, it caused the Unique index or primary key violation.
+
+We should not directly accepting incompatible data, as we are not sure how much impact this could lead to.\r\n\r\nI am thinking about whether there is a better and more friendly solution.
+
+fyi @kezhenxu94 This is the bug we faced this afternoon at demo env. The database somehow lost the one-time write, and the cache does not expire, until reaches TTL(days later).
+
+I have also initialized some website changes to highlight AI relative features. @mrproliu After all these changes(module merging, SkyPredictor doc and released), we should prepare a blog to introduce the e2e setup.
+
+A new menu item should be added.
+
+Later, an OSS implementation will be here, https://github.com/SkyAPM/SkyPredictor
+
+It seems new server has issues, wait for @hanahmily recheck.
+
+> It seems new server has issues, wait for @hanahmily recheck.\r\n\r\nI have confirmed, something bad happened at DB server side.\r\n- BanyanDB logs\r\n```\r\ncreated by github.com/apache/skywalking-banyandb/banyand/stream.(*tsTable).startLoop in goroutine 47557\r\n\t/home/runner/work/skywalking-banyandb/skywalking-banyandb/banyand/stream/tstable.go:117 +0x158\r\n\r\ngoroutine 47589 gp=0xc0054f8fc0 m=nil [select, 1 minutes]:\r\nruntime.gopark(0xc00076ff20?, 0x3?, 0x7d?, 0x3?, 0xc00076feca?)\r\n\t/opt/hostedtoolcache/go/1.23.5/x64/src/runtime/proc.go:424 +0xce fp=0xc00f9e0d58 sp=0xc00f9e0d38 pc=0x4758ee\r\nruntime.selectgo(0xc00f9e0f20, 0xc00076fec4, 0xc00076ffc8?, 0x0, 0x14a9c60?, 0x1)\r\n\t/opt/hostedtoolcache/go/1.23.5/x64/src/runtime/select.go:335 +0x7a5 fp=0xc00f9e0e80 sp=0xc00f9e0d58 pc=0x451365\r\ngithub.com/apache/skywalking-banyandb/banyand/stream.(*tsTable).flusherLoop(0xc00f308800, 0xc005276e00, 0xc005276e70, 0xc005078380, 0xc0050783f0, 0x1820584f5d5239dc)\r\n\t/home/runner/work/skywalking-banyandb/skywalking-banyandb/banyand/stream/flusher.go:37 +0x293 fp=0xc00f9e0fa0 sp=0xc00f9e0e80 pc=0xfb8833\r\ngithub.com/apache/skywalking-banyandb/banyand/stream.(*tsTable).startLoop.gowrap2()\r\n\t/home/runner/work/skywalking-banyandb/skywalking-banyandb/banyand/stream/tstable.go:118 +0x34 fp=0xc00f9e0fe0 sp=0xc00f9e0fa0 pc=0xfd5dd4\r\nruntime.goexit({})\r\n\t/opt/hostedtoolcache/go/1.23.5/x64/src/runtime/asm_amd64.s:1700 +0x1 fp=0xc00f9e0fe8 sp=0xc00f9e0fe0 pc=0x47dc81\r\ncreated by github.com/apache/skywalking-banyandb/banyand/stream.(*tsTable).startLoop in goroutine 47557\r\n\t/home/runner/work/skywalking-banyandb/skywalking-banyandb/banyand/stream/tstable.go:118 +0x1e6\r\n```\r\n\r\n- OAP logs\r\n```\r\n2025-02-02 08:56:23,497 org.apache.skywalking.oap.query.zipkin.handler.ZipkinQueryExceptionHandler 41 [armeria-eventloop-epoll-8-8] ERROR [] - fail to query stream\r\njava.io.IOException: fail to query stream\r\n\tat org.apache.skywalking.oap.server.storage.plugin.banyandb.BanyanDBStorageClient.query(BanyanDBStorageClient.java:188) ~[storage-banyandb-plugin-10.2.0-SNAPSHOT.jar:10.2.0-SNAPSHOT]\r\n\tat org.apache.skywalking.oap.server.storage.plugin.banyandb.stream.AbstractBanyanDBDAO.query(AbstractBanyanDBDAO.java:88) ~[storage-banyandb-plugin-10.2.0-SNAPSHOT.jar:10.2.0-SNAPSHOT]\r\n\tat org.apache.skywalking.oap.server.storage.plugin.banyandb.stream.AbstractBanyanDBDAO.queryDebuggable(AbstractBanyanDBDAO.java:111) ~[storage-banyandb-plugin-10.2.0-SNAPSHOT.jar:10.2.0-SNAPSHOT]\r\n\tat org.apache.skywalking.oap.server.storage.plugin.banyandb.BanyanDBZipkinQueryDAO.getTraces(BanyanDBZipkinQueryDAO.java:265) ~[storage-banyandb-plugin-10.2.0-SNAPSHOT.jar:10.2.0-SNAPSHOT]\r\n\tat org.apache.skywalking.oap.server.storage.plugin.banyandb.BanyanDBZipkinQueryDAO.getTraces(BanyanDBZipkinQueryDAO.java:200) ~[storage-banyandb-plugin-10.2.0-SNAPSHOT.jar:10.2.0-SNAPSHOT]\r\n\tat org.apache.skywalking.oap.server.core.storage.query.IZipkinQueryDAO.getTracesDebuggable(IZipkinQueryDAO.java:47) ~[server-core-10.2.0-SNAPSHOT.jar:10.2.0-SNAPSHOT]\r\n\tat org.apache.skywalking.oap.query.zipkin.handler.ZipkinQueryHandler.getTraces(ZipkinQueryHandler.java:244) ~[zipkin-query-plugin-10.2.0-SNAPSHOT.jar:10.2.0-SNAPSHOT]\r\n\tat com.linecorp.armeria.internal.server.annotation.DefaultAnnotatedService.invoke(DefaultAnnotatedService.java:417) ~[armeria-1.29.3.jar:?]\r\n\tat com.linecorp.armeria.internal.server.annotation.DefaultAnnotatedService.lambda$serve1$8(DefaultAnnotatedService.java:386) ~[armeria-1.29.3.jar:?]\r\n\tat java.util.concurrent.CompletableFuture$UniApply.tryFire(Unknown Source) ~[?:?]\r\n\tat java.util.concurrent.CompletableFuture$Completion.run(Unknown Source) ~[?:?]\r\n\tat com.linecorp.armeria.common.DefaultContextAwareRunnable.run(DefaultContextAwareRunnable.java:45) ~[armeria-1.29.3.jar:?]\r\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[?:?]\r\n\tat java.util.concurrent.FutureTask.run(Unknown Source) ~[?:?]\r\n\tat java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) ~[?:?]\r\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[?:?]\r\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[?:?]\r\n\tat io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.115.Final.jar:4.1.115.Final]\r\n\tat java.lang.Thread.run(Unknown Source) [?:?]\r\n```
+
+Can you change the `INP avg` metric to `INP percentile`? @mrproliu  I think some users are having a very fast experience, and some are having a very slow experience. Bimodal distributions like this are very common when measuring  user interaction times. Using an average can mislead.
+
+> Can you change the `INP avg` metric to `INP percentile`? @mrproliu I think some users are having a very fast experience, and some are having a very slow experience. Bimodal distributions like this are very common when measuring user interaction times. Using an average can mislead.\r\n\r\nDone. Here is the update.\r\n![image](https://github.com/user-attachments/assets/fcf5b0ac-cafa-4d69-a62b-ceadd431a45b)\r\n
+
+@Fine0830 We will fire 10.2 release after Chines new year when BanyanDB 0.8 is ready.\nYou could consider your client js release date accordingly.
+
+```\r\n2025-01-12 20:14:20,264 org.apache.skywalking.oap.server.storage.plugin.banyandb.BanyanDBStorageClient 94 [main] INFO  [] - BanyanDB server API version: 0.8, revision: 362d68e\r\n2025-01-12 20:14:20,265 org.apache.skywalking.oap.server.starter.OAPServerBootstrap 64 [main] ERROR [] - [10.2.0-SNAPSHOT-d12c6b5] Incompatible BanyanDB server API version: 0.8. But accepted versions: 0.9\r\norg.apache.skywalking.oap.server.library.module.ModuleStartException: Incompatible BanyanDB server API version: 0.8. But accepted versions: 0.9\r\n\tat org.apache.skywalking.oap.server.storage.plugin.banyandb.BanyanDBStorageProvider.start(BanyanDBStorageProvider.java:221) ~[classes/:?]\r\n\tat org.apache.skywalking.oap.server.library.module.BootstrapFlow.start(BootstrapFlow.java:46) ~[classes/:?]\r\n\tat org.apache.skywalking.oap.server.library.module.ModuleManager.init(ModuleManager.java:75) ~[classes/:?]\r\n```\r\n\r\nThis will be the typical error logs when incompatible.
+
+I will do this and add implemention for the API version check.
+
+Once e2e passed, feel free to close this. I will bump up dependencies in my implementation.
+
+@Fine0830 About the labels are related to static resources, and we have seen in some other cases, there are many labels as well, could you add label filter on-demand(an extra input box)?
+
+@mrproliu Are the value absent of first two of line two widgets expected?
+
+> Yeah, OAP have filter the zero value before calculate.\r\n\r\nIs it filtered out by receiver codes?
+
+> > Yeah, OAP have filter the zero value before calculate.\n> \n> \n> \n> Is it filtered out by receiver codes?\n\nYes, it filter by oal. 
+
+> @Fine0830 About the labels are related to static resources, and we have seen in some other cases, there are many labels as well, could you add label filter on-demand(an extra input box)?\r\n\r\nCurrently, clicking on the legend label allows to select the metrics we want to display.
+
+Is this PR ready?
+
+@wankai123 please check, especially for now added alerting snapshots.
+
+Many H2 relative e2e will fail. Wait for fixing.
+
+mysql and pg are being considered, I actually want to do that after some discussions.
+
+Benchmark details\r\n\r\n<img width="1528" alt="image" src="https://github.com/user-attachments/assets/2ca22dd8-f97b-40c4-acbc-a806d7efdc19" />\r\n
+
+@hanahmily e2e failing, please check. It seems metadata query has issues.
+
+One TODO, we need to update the TTL doc to indicate the default setup in core module is no longer affecting the BanyanDB storage. \r\n\r\nAnd BanyanDB should have its own dedicated advanced setup in the OAP document. This has been tracked by https://github.com/apache/skywalking/issues/12632.
+
+Unlike what is suggested in https://github.com/apache/skywalking/issues/12741, I use `@ElasticSearch.EnableDocValues` for those fields that need this feature to **opt in**, because most of the fields won’t require this feature.
+
+Please note, we are better to verify what is the impact to existing(last version) indices? Does Elasticsearch and our storage implementation support to change this config automatically when upgrade.
+
+We support modifying index/template mapping actually, just run a test on the same ES server from the previous commit (master branch) and then upgrade to this branch, the existing indices\
+
+OK, this seems good enough not breaking anything once we added all necessary annotations.
+
+Please update License(source) to remove the part of code copy.
+
+> Please update License(source) to remove the part of code copy.\r\n\r\nThere are still some codes copied from async-profiler. I changed the license and marked those classes.
+
+Please fix CI and dependency check.
+
+@kezhenxu94 Is this better and follow your expectations?
+
+> @kezhenxu94 Is this better and follow your expectations?\n\nI have some review comments pending and will continue when I get some time
+
+ww
+
+Please format your PR title and content. This is not how we work.
+
+Is go agent side PR opened? Could you attach here?
+
+[Pull Request](https://github.com/apache/skywalking-go/pull/209)\r\n\r\nGoZero framework plugin support.But there are still some features that need to be improved, such as logging request and response data.
+
+BTW, GoZero seems a server side framework, you may need to add logo to UI side to make sure the icon shows up correctly in the topology.
+
+Why nginx error and datastore reachable are two values rather than two graphs?
+
+And about instance page and endpoint page, do we need the widget so wide? Are they going to have many labels or some other reasons?
+
+> Why nginx error and datastore reachable are two values rather than two graphs?\r\n\r\nkong_datastore_reachable express whether kong can access the database (1 means true and 0 means false), and I want to express a total value for Nginx error, so I use Card for both metrics.\r\n
+
+> And about instance page and endpoint page, do we need the widget so wide? Are they going to have many labels or some other reasons?\r\n\r\nThere are multiple labels for Shared memory usage and worker lua VM usage, no other special reason, the width is increased for the convenience of display.
+
+> > Why nginx error and datastore reachable are two values rather than two graphs?\n> \n> \n> \n> kong_datastore_reachable express whether kong can access the database (1 means true and 0 means false), and I want to express a total value for Nginx error, so I use Card for both metrics.\n> \n> \n\nPlease use mqe to convert the value to connectivity status.\nI think it is possible, right? @wankai123 
+
+And as it is a value status, we could make its height lower and at the top of the page?
+
+@Fine0830 Could you add a new `Value Mappings` to the `Card` widget? Then @CodePrometheus could use this to leverage response(0, 1 or any other things) to a readable string text.
+
+> @Fine0830 Could you add a new `Value Mappings` to the `Card` widget? Then @CodePrometheus could use this to leverage response(0, 1 or any other things) to a readable string text.\r\n\r\nSure. Will do this.
+
+Update results\r\n\r\n<img width="1483" alt="kong-1" src="https://github.com/user-attachments/assets/7e0b524f-7077-4d68-9290-b7b7cc977a30">\r\n<img width="1489" alt="kong-2" src="https://github.com/user-attachments/assets/baa7fb6d-db63-40db-b13d-e4ae43e8c0f3">\r\n
+
+No problem, I will Sync UI then.
+
+> No problem, I will Sync UI then.\r\n\r\nAbout Value Mappings option, is 1:1(`string` to `string`) translation mapping good enough? Or do we need `set`(range or collection of multiple values):`text`?
+
+> > No problem, I will Sync UI then.\r\n> \r\n> About Value Mappings option, is 1:1(`string` to `string`) translation mapping good enough? Or do we need `set`(range or collection of multiple values):`text`?\r\n\r\nGood question, maybe in the future we may not face simple 0/1, the former is more direct and easier to understand, while the latter is more flexible.
+
+@Fine0830 Could you consider fixed value, collection and range as map functions?
+
+> @Fine0830 Could you consider fixed value, collection and range as map functions?\r\n\r\nCan [the current pr](https://github.com/apache/skywalking-booster-ui/pull/419) resolve this issue? It can customize keys and values.
+
+Update results\r\n<img width="1489" alt="kong-1" src="https://github.com/user-attachments/assets/cce1b35b-8013-4f78-bd64-35aef92a10ce">\r\n<img width="1491" alt="kong-2" src="https://github.com/user-attachments/assets/6fd119c5-14eb-425b-b48a-36ad8ccc4be1">\r\n
+
+@CodePrometheus You could sync the submodule and update the configuration. Tip, add UI change to the changelogs.
+
+How you tested Kong deployment in k8s, and whether hierarchy thing works?
+
+Update results\r\n<img width="1059" alt="kong-3" src="https://github.com/user-attachments/assets/bd555422-e106-4795-a595-ecb74fda57e0">\r\n
+
+It is good to see this is tested. Will you update this to showcase later?
+
+fyi @apache/skywalking-committers We are open endpoint keep alive due to r3 is stable and restful APIs are not our concern to cause high cardinal number issues.
+
+We should add this to so11y dashboard.
+
+You seem to miss the changelog update.
+
+The proto changes seem very concern. As those things are never merged. You should not be able to update those submodules.
+
+<img width="325" alt="image" src="https://github.com/user-attachments/assets/7be04626-ea04-4243-8328-84ddc1c7c0cd">\r\n\r\nAbout docs, you should write `Bundled async-profiler` docs, refer to https://skywalking.apache.org/docs/main/next/en/setup/backend/backend-trace-profiling/. And update the menu to point to this new doc.
+
+2 comments of mine are still not addressed, you can merge this as you wish but make sure to address later or explain why they can’t be addressed:\r\n\r\n1. https://github.com/apache/skywalking/pull/12671#discussion_r1823722484\r\n2. https://github.com/apache/skywalking/pull/12671#discussion_r1823741165
+
+> 2 comments of mine are still not addressed, you can merge this as you wish but make sure to address later or explain why they can’t be addressed:\r\n> \r\n> 1. [Support async profiler feature\xa0#12671 (comment)](https://github.com/apache/skywalking/pull/12671#discussion_r1823722484)\r\n> 2. [Support async profiler feature\xa0#12671 (comment)](https://github.com/apache/skywalking/pull/12671#discussion_r1823741165)\r\n\r\n@zhengziyi0117 Please address this in a new pull request. We need to make this 100% ready, because this will be in SkyWalking next major feature release.
+
+fyi @weixiang1862 
+
+Whoo, this seems an important one! @kezhenxu94 
+
+@weixiang1862 Could you fix the code style?
+
+This is the perf test result of a single node k8s monitoring:\r\n\r\n| metrics (avg)            | before | after |\r\n| ------------------------ | ------ | ----- |\r\n| cpu                      | 19     | 16    |\r\n| gc count                 | 16     | 1     |\r\n| gc time                  | 38.8   | 5.1   |\r\n| otel metrics latency P50 | 125    | 8     |\r\n| otel metrics latency P90 | 333.3  | 22.5  |\r\n| otel metrics latency P99 | 666.6  | 166.6 |\r\n
+
+@wankai123 Could you please update showcase with latest OAP and BanyanDB? \nThis should be helpful for gc and CPU costs in the demo env.
+
+More info can be found https://maven.apache.org/maven-ci-friendly.html
+
+You should follow PR template to update changes.md

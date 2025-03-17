@@ -1,0 +1,78 @@
+PR Number,Title,State,URL,Created At,Merged At
+20829,dataZoom inside with option pinned 'start' 'end',open,,2025-03-15T07:38:26Z,None
+20827,fix 20813 for custom charts added an option to use legend by category…,open,,2025-03-14T09:30:53Z,None
+20815,Fix(tooltip): added container prop for tooltip placement,open,,2025-03-10T13:33:20Z,None
+20814,fix(dataZoom): restrict range on brushEnd,open,,2025-03-10T10:08:36Z,None
+20800,fix(title): title text style width type should not include string #20799,closed,,2025-03-03T11:30:47Z,2025-03-10T06:09:26Z
+20792,feat(i18n): Add Norwegian Bokmål (nb-NO) translation,closed,,2025-02-26T10:16:28Z,2025-02-28T08:33:52Z
+20782,feat(marker): markPoint markLine markArea add z2 option to support change level,closed,,2025-02-23T11:50:44Z,2025-03-13T08:34:20Z
+20777,fix(axis):null value item on category axis should be able to show tooltip,open,,2025-02-21T10:13:13Z,None
+20760,fix(svg): remove SVG support check in `getSvgDataURL`,open,,2025-02-17T02:15:36Z,None
+20754,chore(deps-dev): bump rollup from 2.34.2 to 2.79.2,closed,,2025-02-12T15:25:16Z,2025-02-13T03:22:48Z
+20753,chore(deps-dev): bump esbuild from 0.8.39 to 0.25.0,closed,,2025-02-12T14:03:36Z,None
+20740,"Labels are now rendered independently of symbols, ensuring consistent display even when symbol: 'none'.",open,,2025-02-08T14:43:18Z,None
+20727,Added missing period for consistency and readability,closed,,2025-01-31T15:54:37Z,2025-02-01T07:51:48Z
+20724,"feat(bar): provide more options for emphasis focus ('stack', …",open,,2025-01-29T13:28:26Z,None
+20718,fix(datazoom): prevent bar and scatter chart overflowing the graph . …,open,,2025-01-24T17:56:10Z,None
+20717,feat(theme): support design token,open,,2025-01-24T11:06:41Z,None
+20710,fix(tooltip): Changing tooltip trigger from axis to item doesn't refresh the displayed tooltip,open,,2025-01-22T09:56:36Z,None
+20705,[Feature] Add dynamic theme switching support,closed,,2025-01-21T08:50:44Z,2025-01-23T11:36:44Z
+20703,feat(visualMap): able to set the 'dimension' to an array,open,,2025-01-20T10:28:37Z,None
+20702,feat: support auto computing dark mode,open,,2025-01-20T08:09:56Z,None
+20699,fix(heatmap): fix labels not in calendar range are unexpectedly displayed,closed,,2025-01-18T07:46:49Z,2025-01-21T09:09:00Z
+20689,fix(dataZoom): data zoom length should take the handle icon width into account,open,,2025-01-15T10:56:57Z,None
+20682,fix(series): mismatched dimension index when canOmitUnusedDimensions is true,closed,,2025-01-13T10:33:11Z,2025-03-06T12:06:41Z
+20677,feat(radar): Radar series tooltip support dimensionIndex,open,,2025-01-10T14:20:18Z,None
+20676,test: visual test support compare with a PR id,closed,,2025-01-10T09:06:27Z,2025-01-16T06:42:04Z
+20669,chore: merge master into v6,closed,,2025-01-09T07:29:04Z,2025-01-09T07:32:26Z
+20660,feat(dataZoom): Add 'no-function-keys' option to RoamController and InsideZoomModel,open,,2025-01-08T02:03:48Z,None
+20641,fix(line): Line Charts do not work when lte is set to null ,closed,,2025-01-02T10:24:10Z,None
+20639,chore: update NOTICE year to 2025,closed,,2025-01-02T02:39:09Z,2025-01-02T02:40:24Z
+20638,chore(workflow): add package.json,closed,,2025-01-02T01:04:06Z,2025-01-02T02:37:57Z
+20627,Merge v5.6.0 release into master,closed,,2024-12-28T07:40:13Z,2024-12-30T09:48:21Z
+20622,feat(tooltip): add support for rich text styles in tooltip.textStyle,open,,2024-12-26T11:54:27Z,None
+20620,fix(markline): click markline will cause the first column to be selected,open,,2024-12-25T12:21:05Z,None
+20615,Fixed the problem that the rich style does not take effect when tooltip is in renderMode=richText,closed,,2024-12-23T13:00:16Z,None
+20582,fix(bar): polar bar should update roundCap when changes #20567,open,,2024-12-12T09:11:33Z,None
+20566,feat(map): support `regions[].silent` and update map data in tests,closed,,2024-12-06T10:09:37Z,2024-12-10T04:20:28Z
+20564,feat(geo): support styling region in original GeoJSON data,closed,,2024-12-06T05:57:49Z,2024-12-06T07:56:20Z
+20563,fix(line): Ensure null check to avoid `Cannot set properties of null (setting 'hoverState')` error,open,,2024-12-05T16:48:15Z,None
+20562,fix(legend): symbolRotate for legend is neither inherited nor being set ,open,,2024-12-05T12:18:56Z,None
+20561,feat(geo): support styling region in original GeoJSON data,closed,,2024-12-05T05:44:40Z,2024-12-05T14:42:34Z
+20557,fix(pictorial): fix zero value flipping for different axes,closed,,2024-12-04T09:42:31Z,2024-12-04T10:51:30Z
+20556,Release v5.6.0,closed,,2024-12-04T05:09:27Z,2024-12-11T09:31:57Z
+20551,fix(visualMap): fix cursor is still pointer when `selectedMode` is disabled,closed,,2024-11-28T12:47:16Z,2024-11-29T06:15:36Z
+20542,feat(grid): enhance `grid.containLabel`,open,,2024-11-27T06:11:24Z,None
+20541,fix(log): barMinHeight not work with startvalue greater than 10,open,,2024-11-26T12:25:03Z,None
+20535,Merge master branch into release for v5.5.2,closed,,2024-11-23T02:21:20Z,2024-11-26T12:51:33Z
+20534,fix(data): fix potential NPE in the `SeriesData#rawIndexOf` function,closed,,2024-11-23T02:04:21Z,2024-11-24T06:03:56Z
+20524,fix(AxisPointer): Correct alignment for rich text tooltip labels,open,,2024-11-19T11:04:04Z,None
+20522,feat: Chord charts,open,,2024-11-18T10:16:14Z,None
+20517,fix(graph): zooming a Force Graph with layoutAnimation false breaks edges,open,,2024-11-14T12:18:43Z,None
+20509,chore: revert ts version,closed,,2024-11-13T06:18:15Z,2024-11-15T06:30:38Z
+20497,feat(line): define line pieces interface,open,,2024-11-11T07:47:23Z,None
+20496,"fix-18151: When using pictorialbar, the y-axis cannot adapt, resulting in some column charts being offset",open,,2024-11-11T07:26:12Z,None
+20495,"fix(scale): #20265 when dataZomm.filterMode is “empty” or ‘none’， the line graph is scaled to only one category, it is not filtered correctly",open,,2024-11-10T12:42:48Z,None
+20492,feat(calendar): add `silent` option for `dayLabel`/`monthLabel`/`yearLabel`,closed,,2024-11-09T08:31:53Z,2024-11-15T07:05:35Z
+20491,fix(type): markLine `symbolOffset` can be a 2d array for both symbols,closed,,2024-11-09T07:50:29Z,2024-11-15T06:51:38Z
+20485,Relax tslib requirement specifier,closed,,2024-11-07T09:31:56Z,2024-11-08T07:32:45Z
+20484,test(aria): fix test case of #20218,closed,,2024-11-07T09:22:18Z,2024-11-25T00:46:09Z
+20482,fix 17936:Legend event monitoring problem,open,,2024-11-07T07:54:27Z,None
+20476,feat(label): enforce labelLayout for all state,open,,2024-11-06T01:31:18Z,None
+20465,fix(bar): fix borderColor hides bar color with large data,closed,,2024-10-30T22:29:03Z,2024-11-14T08:58:44Z
+20458,DataZoom refresh,open,,2024-10-29T05:27:18Z,None
+20453,Add types export for nodeNext moduleResolution,open,,2024-10-25T03:05:21Z,None
+20447,feat(custom): support disableTooltip for custom series,open,,2024-10-24T07:42:50Z,None
+20436,fix(Axis): xAxis axisTick custom interval funciton work error with boundaryGap false,open,,2024-10-22T03:06:51Z,None
+20435,fix(tooltip): fix potential NPE when setting option with `notMerge` strategy,closed,,2024-10-21T11:44:10Z,2024-10-23T07:20:59Z
+20426,feat(autoRotate): implements autoRotate and build,closed,,2024-10-15T12:53:17Z,None
+20407,chore(deps): bump cookie and socket.io in /test/runTest,closed,,2024-10-11T03:29:35Z,None
+20402,feat(custom): support compoundPath in custom series renderItem,closed,,2024-10-10T08:06:18Z,2024-10-16T07:31:54Z
+20399,feat(sunburst): add new emphasis focus strategy `'relative'` for highlighting ancestor and descendant nodes,closed,,2024-10-09T10:55:18Z,2024-10-10T03:39:15Z
+20398,fix(tooltip): Tooltip textStyle lineHeight does not work in default ,closed,,2024-10-08T12:10:02Z,2024-10-30T10:48:42Z
+20396,fix(theme): fix legend page text color in dark mode,closed,,2024-10-08T03:03:20Z,2024-10-08T08:27:29Z
+20380,fix(sankey): avoid throwing errors when the `links` / `nodes` / `levels` option is undefined,closed,,2024-09-28T09:05:40Z,2024-09-29T02:39:54Z
+20378,add tooltip for axis label,closed,,2024-09-27T05:54:50Z,None
+20370,fix(polar): fix unexpected clipping in polar coordinate,closed,,2024-09-24T11:14:54Z,2024-09-26T02:12:08Z
+20368,chore(deps-dev): bump rollup from 2.34.2 to 3.29.5,closed,,2024-09-24T07:51:16Z,None
+20365,Next,closed,,2024-09-24T01:58:59Z,None

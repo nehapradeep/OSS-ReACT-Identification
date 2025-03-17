@@ -1,0 +1,444 @@
+Issue #13106: Labels: backend, feature, enhancement
+BTW, we were facing https://semgrep.dev/blog/2025/popular-github-action-tj-actionschanged-files-is-compromised/ .\r\n\r\nThe ASF Infra asked us to use `dorny/paths-filter`. Wait for @kezhenxu94 to adjust our CI. Before that, most UTs and e2e tests would not run.
+Issue #13105: Labels: No Labels
+Issue #13104: Labels: CI settings
+Issue #13103: Labels: bug
+@mrproliu It seems you missed this in original change. Please recheck and confirm.
+Issue #13102: Labels: No Labels
+We need a flag for this. Because in ttl e2e, the expired data is injected intentionally, and e2e watch whether removing works.
+Issue #13101: Labels: enhancement
+Could you add an e2e to this to avoid breaking? We usually forgot to upgrade this when adding new internal services.
+Issue #13099: Labels: bug
+Issue #13098: Labels: chore
+Issue #13097: Labels: feature
+Issue #13096: Labels: No Labels
+Issue #13095: Labels: backend, feature
+How do you set this token? It is not good practice to keep that in a yaml file.
+Issue #13094: Labels: feature, enhancement
+Issue #13093: Labels: backend, feature
+Another option is, we determine this automatically through time range. This is a kind of trade off, the good part is, this is transparent for UI and query, but the experience of the query is different. Query cold data is much slower compared with warm/hot data.
+Issue #13092: Labels: backend, feature, database
+Issue #13090: Labels: No Labels
+Issue #13088: Labels: feature
+Issue #13085: Labels: bug
+Issue #13083: Labels: No Labels
+Which versions(oap and BanyanDB) are you using?
+Issue #13079: Labels: documentation
+Issue #13078: Labels: backend, enhancement
+Issue #13077: Labels: bug
+Issue #13076: Labels: feature, database
+Issue #13075: Labels: CI settings
+Issue #13074: Labels: so11y, enhancement
+BTW, do we have go application in showcase?
+Issue #13073: Labels: backend, feature, metrics
+> How does it have to do if we don\
+Issue #13072: Labels: backend, feature, database
+Issue #13071: Labels: enhancement
+Issue #13068: Labels: backend, enhancement
+> I means metrics generate by OAL from trace segment analyse, endpoint high latency caused trace segment finish delayed, finaly caused metrics persistent delay.\r\n\r\nI think this is caused by traces reported after finished. Nothing related to OAL or some OAP mechanism.
+Issue #13067: Labels: submodule update
+Issue #13065: Labels: UI, submodule update
+Issue #13063: Labels: feature
+Issue #13062: Labels: UI
+Issue #13060: Labels: question, docker
+What do you mean? I saw a healthy check configuration in the master branch script.\n\nhttps://github.com/apache/skywalking/blob/master/docker/docker-compose.yml#L55-L59
+Issue #13059: Labels: chore
+Issue #13057: Labels: bug
+Issue #13056: Labels: question, python
+@tunbb do you have a proxy or gateway between the python agent and OAP?
+Issue #13055: Labels: test, ecosystem
+Issue #13053: Labels: No Labels
+We should not directly accepting incompatible data, as we are not sure how much impact this could lead to.\r\n\r\nI am thinking about whether there is a better and more friendly solution.
+Issue #13052: Labels: No Labels
+Issue #13051: Labels: UI, submodule update
+Issue #13050: Labels: No Labels
+Issue #13049: Labels: CI settings, dependencies
+Issue #13047: Labels: test
+Issue #13045: Labels: core feature, enhancement
+fyi @kezhenxu94 This is the bug we faced this afternoon at demo env. The database somehow lost the one-time write, and the cache does not expire, until reaches TTL(days later).
+Issue #13043: Labels: documentation
+Issue #13041: Labels: chore
+Issue #13040: Labels: documentation
+I have also initialized some website changes to highlight AI relative features. @mrproliu After all these changes(module merging, SkyPredictor doc and released), we should prepare a blog to introduce the e2e setup.
+Issue #13037: Labels: feature, database
+Please assign this task to me
+Issue #13035: Labels: feature, database
+Issue #13034: Labels: Client JS
+Issue #13032: Labels: bug
+Issue #13031: Labels: documentation
+Issue #13030: Labels: feature, python
+Done @kezhenxu94 \nhttps://github.com/apache/skywalking-python/pull/366
+Issue #13028: Labels: backend, enhancement
+A new menu item should be added.
+Issue #13027: Labels: CI settings, dependencies
+Issue #13025: Labels: feature
+Issue #13024: Labels: backend, enhancement
+Later, an OSS implementation will be here, https://github.com/SkyAPM/SkyPredictor
+Issue #13022: Labels: feature
+Issue #13021: Labels: feature, Rover
+On second thought, I think we could add a flag to support these two modes. The default could be as same as the current status.
+Issue #13020: Labels: test
+Issue #13019: Labels: backend, enhancement
+Issue #13018: Labels: documentation
+Issue #13017: Labels: documentation
+Issue #13016: Labels: test
+It seems new server has issues, wait for @hanahmily recheck.
+Issue #13015: Labels: backend
+Issue #13014: Labels: documentation
+Issue #13012: Labels: feature
+Issue #13010: Labels: backend, feature
+Issue #13009: Labels: protocol, enhancement
+Can you change the `INP avg` metric to `INP percentile`? @mrproliu  I think some users are having a very fast experience, and some are having a very slow experience. Bimodal distributions like this are very common when measuring  user interaction times. Using an average can mislead.
+Issue #13008: Labels: backend, feature, so11y
+Issue #13007: Labels: enhancement
+Issue #13006: Labels: backend, feature, so11y
+Issue #13005: Labels: backend, enhancement
+Issue #13004: Labels: question, agent, python
+Please share all the package versions (requirements.txt if you have one), and make a minimal reproducible demo, pasting part of your private repo doesn’t help
+Issue #13002: Labels: feature
+Issue #12999: Labels: bug
+Issue #12997: Labels: feature
+Issue #12996: Labels: documentation
+Issue #12992: Labels: bug
+Issue #12991: Labels: backend, enhancement
+Issue #12990: Labels: No Labels
+Issue #12989: Labels: No Labels
+Issue #12988: Labels: No Labels
+Issue #12985: Labels: bug
+version:\nskywalking server : 10.1.0-d28dfea\nphp skywalking_agent: v0.8.0\n\nIs it because of compatibility issues with the version?
+Issue #12984: Labels: question
+Please follow the previous one. It is a QA.
+Issue #12982: Labels: bug
+Issue #12981: Labels: so11y, enhancement
+Issue #12980: Labels: bug, backend
+Issue #12979: Labels: question, agent, php
+You use `standalone` reporter_type, you have to start a standalone worker and set `standalone_socket_path`, maybe you want to use `grpc` reporter_type?
+Issue #12978: Labels: documentation, backend, chore
+Issue #12977: Labels: documentation
+Issue #12976: Labels: backend, feature, so11y
+Issue #12975: Labels: bug
+Please use English if you want to report something, or you want to fix it.
+Issue #12974: Labels: so11y, enhancement
+Issue #12973: Labels: backend
+Issue #12971: Labels: bug
+Issue #12970: Labels: feature, database, helm
+Yes I am willing to submit a pull request on my own!
+Issue #12969: Labels: feature, database
+Issue #12967: Labels: docker
+Issue #12965: Labels: backend, feature
+Issue #12964: Labels: documentation, feature, database
+Issue #12963: Labels: test
+Issue #12962: Labels: UI, submodule update
+Issue #12961: Labels: documentation, backend, chore
+Issue #12959: Labels: backend, feature
+```\r\n2025-01-12 20:14:20,264 org.apache.skywalking.oap.server.storage.plugin.banyandb.BanyanDBStorageClient 94 [main] INFO  [] - BanyanDB server API version: 0.8, revision: 362d68e\r\n2025-01-12 20:14:20,265 org.apache.skywalking.oap.server.starter.OAPServerBootstrap 64 [main] ERROR [] - [10.2.0-SNAPSHOT-d12c6b5] Incompatible BanyanDB server API version: 0.8. But accepted versions: 0.9\r\norg.apache.skywalking.oap.server.library.module.ModuleStartException: Incompatible BanyanDB server API version: 0.8. But accepted versions: 0.9\r\n\tat org.apache.skywalking.oap.server.storage.plugin.banyandb.BanyanDBStorageProvider.start(BanyanDBStorageProvider.java:221) ~[classes/:?]\r\n\tat org.apache.skywalking.oap.server.library.module.BootstrapFlow.start(BootstrapFlow.java:46) ~[classes/:?]\r\n\tat org.apache.skywalking.oap.server.library.module.ModuleManager.init(ModuleManager.java:75) ~[classes/:?]\r\n```\r\n\r\nThis will be the typical error logs when incompatible.
+Issue #12957: Labels: bug
+Issue #12956: Labels: dependencies
+I will do this and add implemention for the API version check.
+Issue #12955: Labels: feature, test
+Hello, this one looks very interesting, can I try it?
+Issue #12953: Labels: core feature, backend, feature
+Issue #12950: Labels: bug
+SkyWalking Booster UI is now running. OAP service at http://10.251.28.217:12800 and Booster UI at http://localhost:8080\r\n\r\n
+Issue #12949: Labels: UI, feature
+Issue #12948: Labels: agent, backend, UI, Client JS
+@Fine0830 About the labels are related to static resources, and we have seen in some other cases, there are many labels as well, could you add label filter on-demand(an extra input box)?
+Issue #12946: Labels: bug
+Issue #12944: Labels: chore
+Issue #12941: Labels: bug
+I can\
+Issue #12940: Labels: backend, metrics
+Issue #12938: Labels: backend, feature
+API version check added through https://github.com/apache/skywalking/pull/12959
+Issue #12937: Labels: backend, feature
+Issue #12936: Labels: dependencies
+Issue #12935: Labels: documentation
+Issue #12934: Labels: documentation
+Issue #12933: Labels: bug, agent, plugin, java
+Please reach Pulsar about its plugin issue.\nWe accepted their codes, they maintained this part.
+Issue #12931: Labels: UI, enhancement, database
+Issue #12930: Labels: documentation
+Issue #12929: Labels: bug, backend
+Issue #12928: Labels: backend, enhancement
+Issue #12927: Labels: bug, backend, database
+Issue #12923: Labels: chore
+Issue #12922: Labels: dependencies
+Issue #12921: Labels: test, chore
+Issue #12920: Labels: feature, database
+Issue #12919: Labels: backend, feature
+This is done through https://github.com/apache/skywalking/pull/12936
+Issue #12918: Labels: test
+Is this PR ready?
+Issue #12916: Labels: bug
+Issue #12915: Labels: backend, feature
+Issue #12914: Labels: feature, database
+Hi, you could start with testing. This is not an easy work, unless you have been familiar witb new DB.
+Issue #12913: Labels: feature, database
+Issue #12911: Labels: documentation
+Issue #12910: Labels: backend, feature
+Issue #12909: Labels: backend
+Many H2 relative e2e will fail. Wait for fixing.
+Issue #12906: Labels: documentation
+Issue #12903: Labels: No Labels
+Issue #12901: Labels: bug, agent, enhancement, java
+Issue #12900: Labels: documentation, ruby
+Issue #12899: Labels: backend, enhancement
+Issue #12898: Labels: test
+Benchmark details\r\n\r\n<img width="1528" alt="image" src="https://github.com/user-attachments/assets/2ca22dd8-f97b-40c4-acbc-a806d7efdc19" />\r\n
+Issue #12897: Labels: UI, submodule update
+Issue #12896: Labels: test
+Issue #12895: Labels: enhancement
+Issue #12894: Labels: enhancement, database
+Issue #12893: Labels: feature, database
+Issue #12892: Labels: test, database
+Issue #12890: Labels: feature
+Issue #12889: Labels: bug
+Issue #12888: Labels: test
+@hanahmily e2e failing, please check. It seems metadata query has issues.
+Issue #12886: Labels: bug
+Issue #12884: Labels: bug, backend
+Issue #12883: Labels: bug, duplicate, rejected
+Same as https://github.com/apache/skywalking/issues/12881
+Issue #12882: Labels: bug, agent, go
+@alexwn Are you going to submit a pull request to add this?\r\n\r\nI can see the status code tag is set, but no status is set.\r\nhttps://github.com/apache/skywalking-go/blob/988702ef41b9d9075ff060b5bba54d97a94fab9c/plugins/http/server_intercepter.go#L61
+Issue #12881: Labels: bug, rejected
+9.4 is too old, we are not debugging its issue anymore. The latest release is 10.1.0. We are working forward to 10.2.0 only.
+Issue #12880: Labels: bug, UI
+@Fine0830 Could you check the codes? We should not consider `User` as a new point to continue the topology queries.
+Issue #12879: Labels: test, database
+Issue #12877: Labels: enhancement, database
+Issue #12876: Labels: feature, database
+@hanahmily Please update this issue to create a new one for 0.9(s3 backup and store), and I should be able to close this one now.
+Issue #12875: Labels: feature, database
+Issue #12874: Labels: feature, database
+Issue #12873: Labels: feature, database
+Issue #12872: Labels: feature, database
+With the new replication configuration, this doc should be updated.\n\nhttps://skywalking.apache.org/docs/skywalking-banyandb/next/concept/clustering/#51-data-replication\n\nThe doc was mentioning the app-replication is not provided.
+Issue #12871: Labels: bug, database
+Issue #12870: Labels: feature, database
+@hanahmily I removed your new label, the label should target to major components rather han features.\r\nOtherwise, we will receive a hug set of new labels.
+Issue #12868: Labels: bug, agent, go
+https://github.com/apache/skywalking-go/pull/210
+Issue #12867: Labels: feature, database
+Issue #12866: Labels: feature, database
+Issue #12865: Labels: UI, feature, database
+Issue #12864: Labels: feature, database
+Issue #12863: Labels: feature, database
+`BanyanDB-Java Client-v*` milestones seem not to be created for recent releases. Added that for 0.8 client.
+Issue #12862: Labels: feature, database
+Issue #12861: Labels: feature, database
+This should lead to client side change as well, right?
+Issue #12859: Labels: backend, feature
+To support this alarm in a proper way, we could include values of each metric for every time bucket, and the calculation result of MQE for every time bucket.\r\n\r\n@Fine0830 The configurations for alarm page could be linked to metrics name. We should show the value of alarm rule MQE values by default, and support to show each metric value by a selector. \r\n\r\nNote, about the metric like `successful rate`, its original value are not formatted, e.g. `9900 represents 99%`. Showing the original 900 is exactly what we expect. This could indicate why the configurations of MQE are not proper.
+Issue #12858: Labels: bug, agent, java
+Issue #12857: Labels: UI, database
+Issue #12853: Labels: feature
+Issue #12852: Labels: documentation
+Issue #12851: Labels: documentation
+Issue #12849: Labels: bug
+Issue #12848: Labels: feature, database
+Issue #12847: Labels: backend, feature
+Issue #12846: Labels: test, CI settings
+Issue #12845: Labels: CI settings
+Issue #12843: Labels: UI, submodule update
+Issue #12842: Labels: documentation, enhancement
+Issue #12841: Labels: bug, rejected
+Again, network issue is not upstream concern. That is your local/private network.
+Issue #12840: Labels: chore
+Issue #12838: Labels: feature
+Issue #12837: Labels: bug, php
+Maybe we can change the rdkafka dependency to dynamic-linking.
+Issue #12835: Labels: bug, database
+Issue #12834: Labels: bug, database
+Issue #12833: Labels: feature, database
+Issue #12832: Labels: feature, database
+Issue #12831: Labels: backend, feature, good first issue
+Issue #12830: Labels: agent, feature, Rover
+Issue #12829: Labels: documentation
+Issue #12827: Labels: documentation
+Issue #12826: Labels: backend, feature, rejected
+Issue #12825: Labels: UI, submodule update
+Issue #12824: Labels: UI
+Issue #12823: Labels: backend, enhancement, database
+Issue #12822: Labels: CI settings
+Issue #12821: Labels: backend, enhancement
+Issue #12818: Labels: feature
+Issue #12817: Labels: duplicate, question
+You may need this.\n\nhttps://skywalking.apache.org/docs/skywalking-java/latest/en/setup/service-agent/java-agent/application-toolkit-webflux/
+Issue #12816: Labels: bug, backend
+Issue #12815: Labels: feature, database
+Is Export Manager going to be a separate role node?
+Issue #12814: Labels: documentation
+Issue #12813: Labels: duplicate, feature
+Issue #12811: Labels: bug
+@jmjoy have a look
+Issue #12809: Labels: bug
+Issue #12808: Labels: backend, enhancement, database
+Issue #12806: Labels: bug, php
+I think we never declared our support for that. @jmjoy right?
+Issue #12805: Labels: bug, database
+Issue #12804: Labels: bug, database
+Issue #12802: Labels: bug
+Issue #12801: Labels: bug, backend, potential bug
+You should query for service instance traffic to get that list.\nPlease the time range correctly.
+Issue #12800: Labels: bug, dependencies
+The main question is, `2.4.1 to 3.8.0` Is this a compatible change? If not, you need to change codes to adopt those changes.
+Issue #12799: Labels: feature, rejected
+Ref https://github.com/apache/skywalking/discussions/12784#discussioncomment-11370742
+Issue #12798: Labels: feature, database
+Issue #12797: Labels: feature, database
+Issue #12796: Labels: backend, feature
+Issue #12795: Labels: bug, UI, database
+Issue #12794: Labels: backend, feature
+Issue #12793: Labels: UI, submodule update
+Issue #12792: Labels: documentation
+Issue #12791: Labels: bug, plugin, java
+Please reach Dubbo community. We just host plugins for the project, and the plugins were contributed by them.\n\nIt seems they added new async mechanism or/and new way of doing rpc, the previous plugn is not compatible anymore.
+Issue #12790: Labels: enhancement, database
+One TODO, we need to update the TTL doc to indicate the default setup in core module is no longer affecting the BanyanDB storage. \r\n\r\nAnd BanyanDB should have its own dedicated advanced setup in the OAP document. This has been tracked by https://github.com/apache/skywalking/issues/12632.
+Issue #12789: Labels: agent, feature, Rover
+1. For `buildvcs=false`, could you describe the scenario when it would cause failure? We already use volume mount when building the binary in the container. \r\n2. For the `-tags osusergo,netgo`, we already disable the gclib library in https://github.com/apache/skywalking-rover/blob/main/docker/Dockerfile.build#L26. So I think these two tags are not necessary. 
+Issue #12787: Labels: bug
+Issue #12786: Labels: bug, rejected
+Please use Slack CN channel if you need to discuss in Chinese. 
+Issue #12783: Labels: feature
+Issue #12782: Labels: backend, enhancement
+Unlike what is suggested in https://github.com/apache/skywalking/issues/12741, I use `@ElasticSearch.EnableDocValues` for those fields that need this feature to **opt in**, because most of the fields won’t require this feature.
+Issue #12780: Labels: backend, enhancement, database
+Issue #12778: Labels: documentation, chore
+Issue #12777: Labels: backend, enhancement
+Please update License(source) to remove the part of code copy.
+Issue #12776: Labels: agent, feature, Rover
+@mrproliu Here is another proposal.
+Issue #12775: Labels: agent, feature, dependencies, rejected, Rover
+@mrproliu Please check this whether we are accepting this.
+Issue #12774: Labels: backend, feature
+Issue #12771: Labels: feature
+Issue #12770: Labels: dependencies
+Issue #12769: Labels: backend, feature
+Issue #12768: Labels: backend, enhancement
+Issue #12763: Labels: feature
+No, we are not doing that. You could see metrics on your own.\nAnd this is not an issue.
+Issue #12762: Labels: backend, enhancement
+Issue #12761: Labels: UI, feature, query
+Issue #12759: Labels: bug
+Issue #12758: Labels: UI
+Issue #12754: Labels: bug
+Issue #12753: Labels: UI, enhancement
+Issue #12752: Labels: test
+Issue #12750: Labels: bug
+Issue #12749: Labels: bug, backend
+Issue #12748: Labels: bug, agent, java
+fyi @zhengziyi0117 as owner.
+Issue #12746: Labels: feature
+Issue #12745: Labels: bug, backend, database
+Issue #12744: Labels: backend, feature, database
+Issue #12743: Labels: backend, enhancement, database
+Issue #12742: Labels: backend, feature, database
+Issue #12741: Labels: backend, feature, enhancement, elastic/open-search
+Issue #12738: Labels: bug, backend
+Issue #12737: Labels: enhancement
+Issue #12736: Labels: backend, feature, enhancement
+fyi @zhengziyi0117 as owner.
+Issue #12734: Labels: bug
+Issue #12733: Labels: bug, python
+I’m not sure why you want to trace a TestClient? I think `TestClient` is for test only and don’t have a peer as expected
+Issue #12731: Labels: CI settings
+Issue #12730: Labels: enhancement
+Issue #12728: Labels: enhancement
+Issue #12727: Labels: chore
+Issue #12726: Labels: UI, enhancement
+Issue #12724: Labels: UI
+Issue #12722: Labels: bug
+![image](https://github.com/user-attachments/assets/3dff8255-f2ff-4692-9f3a-84314364d421)\r\n
+Issue #12721: Labels: UI
+Issue #12720: Labels: No Labels
+Issue #12719: Labels: enhancement
+Issue #12718: Labels: backend, feature
+Issue #12716: Labels: No Labels
+ww
+Issue #12714: Labels: bug
+Issue #12713: Labels: feature
+I think we are asking in a wrong place. SkyAPM is not a part of SkyWalking. It is a 3rd part org which provides SkyWalking compatible ecosystem projects, agents and tools.
+Issue #12712: Labels: enhancement, database
+Issue #12711: Labels: submodule update
+Issue #12707: Labels: bug
+Issue #12706: Labels: bug
+Issue #12704: Labels: bug
+Issue #12703: Labels: submodule update
+Issue #12702: Labels: question
+I think this is your maven issue? This is not in skywalking dependency path.
+Issue #12700: Labels: backend
+Is go agent side PR opened? Could you attach here?
+Issue #12699: Labels: No Labels
+Issue #12696: Labels: backend, feature
+Why nginx error and datastore reachable are two values rather than two graphs?
+Issue #12694: Labels: question
+You need to wait for Helm 4.7, which is pending on banyandb helm 0.3
+Issue #12693: Labels: submodule update, query
+fyi @apache/skywalking-committers We are open endpoint keep alive due to r3 is stable and restful APIs are not our concern to cause high cardinal number issues.
+Issue #12692: Labels: backend, so11y
+Issue #12690: Labels: bug
+Issue #12689: Labels: question
+Usually this is caused by you network(npm part). We have built this through GitHub CI(image you are using) and my local desktop.
+Issue #12688: Labels: dependencies
+Issue #12687: Labels: UI, so11y
+Issue #12686: Labels: backend, feature
+Issue #12685: Labels: backend, feature, database
+Issue #12683: Labels: backend, metrics
+We should add this to so11y dashboard.
+Issue #12682: Labels: bug, backend
+Issue #12681: Labels: query, enhancement
+You seem to miss the changelog update.
+Issue #12680: Labels: bug, backend
+Issue #12678: Labels: bug
+Issue #12677: Labels: feature, database
+Please submit an issue to track OAP side changes. We should adopt this as validate it on demo env.\nThis should be a significant change in 0.8.
+Issue #12676: Labels: documentation
+Issue #12673: Labels: feature, profiling
+Closed as all tasks above have been merged
+Issue #12672: Labels: bug, core feature, metrics
+Issue #12671: Labels: backend, feature, complexity:medium, profiling
+The proto changes seem very concern. As those things are never merged. You should not be able to update those submodules.
+Issue #12669: Labels: documentation
+Issue #12667: Labels: UI, submodule update
+Issue #12665: Labels: backend, enhancement
+Issue #12664: Labels: feature, database
+Issue #12663: Labels: dependencies
+Issue #12660: Labels: backend, enhancement
+Issue #12659: Labels: CI settings
+Issue #12657: Labels: question
+This is intentional. We controlled the ID to make sure it would be updated by doc ID, rather than query condition. This improves the performance.
+Issue #12656: Labels: enhancement
+Issue #12653: Labels: core feature, feature, enhancement, rejected
+We have an agreement, this feature benefit is too limited. I am closing this for now.
+Issue #12652: Labels: enhancement, database
+Issue #12651: Labels: enhancement, database
+Issue #12649: Labels: bug, backend
+fyi @weixiang1862 
+Issue #12648: Labels: enhancement
+Issue #12646: Labels: bug
+Issue #12645: Labels: core feature, backend, metrics
+Whoo, this seems an important one! @kezhenxu94 
+Issue #12644: Labels: backend, enhancement
+Issue #12643: Labels: feature
+Just tried out https://github.com/istio/istio/releases/tag/1.24.0-rc.0 and the filter_state becomes empty always, according to\r\n\r\n\r\n> Peer metadata is now stored\r\n>     in `filter_state.downstream_peer` and `filter_state.upstream_peer` instead\r\n>     of `filter_state["wasm.downstream_peer"]` and\r\n>     `filter_state["wasm.upstream_peer"]`.\r\n\r\nit should have downstream_peer upstream_peer but not, after downgrading to 1.22, `filter_state["wasm.downstream_peer”]` and\r\n     `filter_state["wasm.upstream_peer”]`  appear again so it’s probably not an issue of my setup\r\n\r\n\r\n
+Issue #12642: Labels: documentation
+Issue #12640: Labels: CI settings
+More info can be found https://maven.apache.org/maven-ci-friendly.html
+Issue #12639: Labels: enhancement, database
+Issue #12638: Labels: backend, enhancement, database
+@wankai123 I think this is an easy fix.
+Issue #12637: Labels: bug, database
+I think you need to update Banyandb dependency to fix this eventually
+Issue #12635: Labels: bug
+Issue #12633: Labels: bug, enhancement, database
+Issue #12632: Labels: documentation, backend, feature
+<img width="297" alt="image" src="https://github.com/user-attachments/assets/165fe1cd-76c2-4b0a-9f2e-65928a10a4aa">\r\n\r\nThe menu should be just after the `advanced feature`. We could put all incoming exclusive features in this part.
+Issue #12631: Labels: dependencies
+Issue #12630: Labels: documentation, chore
+Issue #12628: Labels: chore
+Issue #12626: Labels: bug
+Issue #12625: Labels: backend, feature
+Issue #12624: Labels: backend, enhancement
+You should follow PR template to update changes.md

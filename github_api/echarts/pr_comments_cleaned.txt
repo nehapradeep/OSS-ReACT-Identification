@@ -1,0 +1,373 @@
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\n⚠️ MISSING DOCUMENT INFO: Please make sure one of the document options are checked in this PR\
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\n⚠️ MISSING DOCUMENT INFO: Please make sure one of the document options are checked in this PR\
+
+Document changes are required in this PR. Please also make a PR to [apache/echarts-doc](https://github.com/apache/echarts-doc) for document changes and update the issue id in the PR description. When the doc PR is merged, the maintainers will remove the `PR: awaiting doc` label.
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\n⚠️ MISSING DOCUMENT INFO: Please make sure one of the document options are checked in this PR\
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20814@3e741b1\n<!-- ECHARTS_PR_PREVIEW -->
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\nThe pull request is marked to be `PR: author is committer` because you are a committer of this project.
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20800@adcbbfb\n<!-- ECHARTS_PR_PREVIEW -->
+
+Congratulations! Your PR has been merged. Thanks for your contribution! 👍
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20792@bd37d6e\n<!-- ECHARTS_PR_PREVIEW -->
+
+Congratulations! Your PR has been merged. Thanks for your contribution! 👍
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\nThe pull request is marked to be `PR: author is committer` because you are a committer of this project.\n\nDocument changes are required in this PR. Please also make a PR to [apache/echarts-doc](https://github.com/apache/echarts-doc) for document changes and update the issue id in the PR description. When the doc PR is merged, the maintainers will remove the `PR: awaiting doc` label.
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20782@f559a45\n<!-- ECHARTS_PR_PREVIEW -->
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).
+
+@100pah @Ovilia \r\nCould you help to review the PR? Thanks!
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20777@d0334da\n<!-- ECHARTS_PR_PREVIEW -->
+
+Thanks for your feedback. @plainheart @100pah What do you think about this?
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\nThe pull request is marked to be `PR: author is committer` because you are a committer of this project.
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20760@19c094a\n<!-- ECHARTS_PR_PREVIEW -->
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20754@214441e\n<!-- ECHARTS_PR_PREVIEW -->
+
+Congratulations! Your PR has been merged. Thanks for your contribution! 👍
+
+good luck ❤️
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\n⚠️ MISSING DOCUMENT INFO: Please make sure one of the document options are checked in this PR\
+
+Congratulations! Your PR has been merged. Thanks for your contribution! 👍
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\nDocument changes are required in this PR. Please also make a PR to [apache/echarts-doc](https://github.com/apache/echarts-doc) for document changes and update the issue id in the PR description. When the doc PR is merged, the maintainers will remove the `PR: awaiting doc` label.
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\n⚠️ MISSING DOCUMENT INFO: Please make sure one of the document options are checked in this PR\
+
+@Ovilia Can you take a look at the PR
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\nThe pull request is marked to be `PR: author is committer` because you are a committer of this project.\n\nDocument changes are required in this PR. Please also make a PR to [apache/echarts-doc](https://github.com/apache/echarts-doc) for document changes and update the issue id in the PR description. When the doc PR is merged, the maintainers will remove the `PR: awaiting doc` label.
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20717@0b38268\n<!-- ECHARTS_PR_PREVIEW -->
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\n⚠️ MISSING DOCUMENT INFO: Please make sure one of the document options are checked in this PR\
+
+@Ovilia @100pah \r\nCould you help to review the PR? Thanks!
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20710@d6b12d2\n<!-- ECHARTS_PR_PREVIEW -->
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\nThe pull request is marked to be `PR: author is committer` because you are a committer of this project.\n\nDocument changes are required in this PR. Please also make a PR to [apache/echarts-doc](https://github.com/apache/echarts-doc) for document changes and update the issue id in the PR description. When the doc PR is merged, the maintainers will remove the `PR: awaiting doc` label.
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20705@21c5ffc\n<!-- ECHARTS_PR_PREVIEW -->
+
+Congratulations! Your PR has been merged. Thanks for your contribution! 👍
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\nDocument changes are required in this PR. Please also make a PR to [apache/echarts-doc](https://github.com/apache/echarts-doc) for document changes and update the issue id in the PR description. When the doc PR is merged, the maintainers will remove the `PR: awaiting doc` label.
+
+Why is the suggested workaround (splitting the dataset) unacceptable?
+
+> Why is the suggested workaround (splitting the dataset) unacceptable?\r\n\r\nIt requires huge refactoring (tooltip, axis. series and so on) and maintaining two implementations.\r\nAnd the splitted datasets may cause other limitations or bugs.\r\nAs a workaround for now, I added the same visualmap for each series and only show the first controller.\r\nWhen selection changes, use `setOption` to sync the state cross all visualMaps.\r\nBut the `hoverLink` interaction cannot be synced.
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\nThe pull request is marked to be `PR: author is committer` because you are a committer of this project.\n\nDocument changes are required in this PR. Please also make a PR to [apache/echarts-doc](https://github.com/apache/echarts-doc) for document changes and update the issue id in the PR description. When the doc PR is merged, the maintainers will remove the `PR: awaiting doc` label.\n\nThis PR depends on [ZRender](https://github.com/ecomfe/zrender) changes. Please update the ZRender dependency to the latest nightly version including this change, which takes place everyday at 8:00 UTC (16:00 Beijing Time).\nYou can use `npm i zrender@npm:zrender-nightly@dev` to update package.json.\nIf you have any question about this, please leave a comment and we will give you extra help on this.
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\nThe pull request is marked to be `PR: author is committer` because you are a committer of this project.
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20699@2872e5c\n<!-- ECHARTS_PR_PREVIEW -->
+
+Congratulations! Your PR has been merged. Thanks for your contribution! 👍
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20689@0ab6564\n<!-- ECHARTS_PR_PREVIEW -->
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).
+
+@Ovilia Could you help to review the PR? Thanks!
+
+@100pah @plainheart \r\nCould you help to review this PR? Thanks!
+
+@pissang Could you help to review this PR? Thanks!
+
+Congratulations! Your PR has been merged. Thanks for your contribution! 👍
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).
+
+@Ovilia Hello, please review my code, thx
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20677@460fe5e\n<!-- ECHARTS_PR_PREVIEW -->
+
+Any progress on this PR?
+
+@plainheart @100pah Does anyone can review my PR? Thanks a lot 🙏
+
+One month later, anyone can help?
+
+Did I miss something?
+
+Does the code need any changes?
+
+I think this should be a great feature to introduce in ECharts 6.0. Please let me know if you need further help on this. I will check this PR regularly in case I miss anything more. Thanks!
+
+Should this be called `indicatorIndex` instead of `dimensionIndex`?
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\nThe pull request is marked to be `PR: author is committer` because you are a committer of this project.
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20676@271f9db\n<!-- ECHARTS_PR_PREVIEW -->
+
+Congratulations! Your PR has been merged. Thanks for your contribution! 👍
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\nThe pull request is marked to be `PR: author is committer` because you are a committer of this project.\n\n⚠️ MISSING DOCUMENT INFO: Please make sure one of the document options are checked in this PR\
+
+Congratulations! Your PR has been merged. Thanks for your contribution! 👍
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20669@c09cab5\n<!-- ECHARTS_PR_PREVIEW -->
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\nDocument changes are required in this PR. Please also make a PR to [apache/echarts-doc](https://github.com/apache/echarts-doc) for document changes and update the issue id in the PR description. When the doc PR is merged, the maintainers will remove the `PR: awaiting doc` label.
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).
+
+Congratulations! Your PR has been merged. Thanks for your contribution! 👍
+
+Congratulations! Your PR has been merged. Thanks for your contribution! 👍
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20627@fe42bc1\n<!-- ECHARTS_PR_PREVIEW -->
+
+Congratulations! Your PR has been merged. Thanks for your contribution! 👍
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\nDocument changes are required in this PR. Please also make a PR to [apache/echarts-doc](https://github.com/apache/echarts-doc) for document changes and update the issue id in the PR description. When the doc PR is merged, the maintainers will remove the `PR: awaiting doc` label.
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\n⚠️ MISSING DOCUMENT INFO: Please make sure one of the document options are checked in this PR\
+
+Document changes are required in this PR. Please also make a PR to [apache/echarts-doc](https://github.com/apache/echarts-doc) for document changes and update the issue id in the PR description. When the doc PR is merged, the maintainers will remove the `PR: awaiting doc` label.
+
+> This is not the way to support rich text. Consider checking out how `title.textStyle` does. And there is no good reason here using `ts-ignore` to ignore the typing problems.\r\n> \r\n> This should be a new feature instead of a bug fixing because there isn\
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\nThe pull request is marked to be `PR: author is committer` because you are a committer of this project.
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20582@7eec3c4\n<!-- ECHARTS_PR_PREVIEW -->
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\nThe pull request is marked to be `PR: author is committer` because you are a committer of this project.\n\n⚠️ MISSING DOCUMENT INFO: Please make sure one of the document options are checked in this PR\
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20566@4e84f15\n<!-- ECHARTS_PR_PREVIEW -->
+
+Congratulations! Your PR has been merged. Thanks for your contribution! 👍
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\nThe pull request is marked to be `PR: author is committer` because you are a committer of this project.\n\nDocument changes are required in this PR. Please also make a PR to [apache/echarts-doc](https://github.com/apache/echarts-doc) for document changes and update the issue id in the PR description. When the doc PR is merged, the maintainers will remove the `PR: awaiting doc` label.
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20564@3ec7b26\n<!-- ECHARTS_PR_PREVIEW -->
+
+Congratulations! Your PR has been merged. Thanks for your contribution! 👍
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).
+
+Thanks for your contribution. Can you add a test case for this fix?
+
+Thanks @plainheart, I have added a couple test cases
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20562@3af0b83\n<!-- ECHARTS_PR_PREVIEW -->
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\nThe pull request is marked to be `PR: author is committer` because you are a committer of this project.\n\nDocument changes are required in this PR. Please also make a PR to [apache/echarts-doc](https://github.com/apache/echarts-doc) for document changes and update the issue id in the PR description. When the doc PR is merged, the maintainers will remove the `PR: awaiting doc` label.
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20561@8f39773\n<!-- ECHARTS_PR_PREVIEW -->
+
+Congratulations! Your PR has been merged. Thanks for your contribution! 👍
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\nThe pull request is marked to be `PR: author is committer` because you are a committer of this project.
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20557@6e9ef3b\n<!-- ECHARTS_PR_PREVIEW -->
+
+Congratulations! Your PR has been merged. Thanks for your contribution! 👍
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20556@a96cbaa\n<!-- ECHARTS_PR_PREVIEW -->
+
+Congratulations! Your PR has been merged. Thanks for your contribution! 👍
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).
+
+Congratulations! Your PR has been merged. Thanks for your contribution! 👍
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\nDocument changes are required in this PR. Please also make a PR to [apache/echarts-doc](https://github.com/apache/echarts-doc) for document changes and update the issue id in the PR description. When the doc PR is merged, the maintainers will remove the `PR: awaiting doc` label.
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20541@aad4735\n<!-- ECHARTS_PR_PREVIEW -->
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20535@6b9642d\n<!-- ECHARTS_PR_PREVIEW -->
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20534@d303a5f\n<!-- ECHARTS_PR_PREVIEW -->
+
+Congratulations! Your PR has been merged. Thanks for your contribution! 👍
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20524@786c4e7\n<!-- ECHARTS_PR_PREVIEW -->
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\nThe pull request is marked to be `PR: author is committer` because you are a committer of this project.\n\n⚠️ MISSING DOCUMENT INFO: Please make sure one of the document options are checked in this PR\
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20522@bfed24a\n<!-- ECHARTS_PR_PREVIEW -->
+
+Document changes are required in this PR. Please also make a PR to [apache/echarts-doc](https://github.com/apache/echarts-doc) for document changes and update the issue id in the PR description. When the doc PR is merged, the maintainers will remove the `PR: awaiting doc` label.
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\nThe pull request is marked to be `PR: author is committer` because you are a committer of this project.
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20509@fd47b6b\n<!-- ECHARTS_PR_PREVIEW -->
+
+Congratulations! Your PR has been merged. Thanks for your contribution! 👍
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\nThe pull request is marked to be `PR: author is committer` because you are a committer of this project.\n\n⚠️ MISSING DOCUMENT INFO: Please make sure one of the document options are checked in this PR\
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20497@4b2eadf\n<!-- ECHARTS_PR_PREVIEW -->
+
+Hello @Ovilia ! Any updates on the PR ?
+
+> Hello @Ovilia ! Any updates on the PR ?\r\n\r\nThere seems to be a lot to do:\r\n\r\n- [ ] `areaStyle` for line pieces\r\n- [ ] Update animation\r\n- [ ] `step`\r\n- [ ] polar system\r\n\r\nI will leave this PR for a few more months and focusing on releasing v6.0.0 now.
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).
+
+Was this problemed solved by setting [custom.clip](https://echarts.apache.org/zh/option.html#series-custom.clip) to be true, which has been supported since v5.5.0 in #19197 ?
+
+> Was this problemed solved by setting [custom.clip](https://echarts.apache.org/zh/option.html#series-custom.clip) to be true, which has been supported since v5.5.0 in #19197 ?\r\n\r\n\r\nAccording to the update records of ECharts version 5.5.0, the custom.clip attribute was indeed introduced to support clipping for custom series. My PR also addresses the y-axis adaptation issue, ensuring that when using pictorial bar charts, the y-axis can correctly adapt to the chart content and prevent the bar charts from being offset. This is consistent with the solution described in issue #19197 that you mentioned. Thank you for the reminder.
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\n⚠️ MISSING DOCUMENT INFO: Please make sure one of the document options are checked in this PR\
+
+Document changes are required in this PR. Please also make a PR to [apache/echarts-doc](https://github.com/apache/echarts-doc) for document changes and update the issue id in the PR description. When the doc PR is merged, the maintainers will remove the `PR: awaiting doc` label.
+
+Is it possible to include this PR in the next version?
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\nThe pull request is marked to be `PR: author is committer` because you are a committer of this project.
+
+Document changes are required in this PR. Please also make a PR to [apache/echarts-doc](https://github.com/apache/echarts-doc) for document changes and update the issue id in the PR description. When the doc PR is merged, the maintainers will remove the `PR: awaiting doc` label.
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20492@61f2e84\n<!-- ECHARTS_PR_PREVIEW -->
+
+Congratulations! Your PR has been merged. Thanks for your contribution! 👍
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\nThe pull request is marked to be `PR: author is committer` because you are a committer of this project.
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20491@421069f\n<!-- ECHARTS_PR_PREVIEW -->
+
+Congratulations! Your PR has been merged. Thanks for your contribution! 👍
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20485@c939973\n<!-- ECHARTS_PR_PREVIEW -->
+
+Congratulations! Your PR has been merged. Thanks for your contribution! 👍
+
+\r\n\r\nCurious about why tslib 2.3.0 doesn\
+
+Some memos:\r\n\r\n+ Found that at present echarts only uses `__extends` function of tslib. (by searching `from "tslib` in echarts/lib.).\r\n+ About bundle size: After tree shaking (tested in vite@6.0.0-beta.9, `tsc -b && vite build`), only used functions of tslib will be included in bundle. That is only `__extends` (and `extendStatics`, which is called by `__extends` internally) is included. So the bundle size is probably not a concern till now.\r\n+ Compatibility if changing to `"tslib": "^x.x.x"`: Checked the commit log of `__extends` on git, there\
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\nThe pull request is marked to be `PR: author is committer` because you are a committer of this project.
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20484@3cb583f\n<!-- ECHARTS_PR_PREVIEW -->
+
+Congratulations! Your PR has been merged. Thanks for your contribution! 👍
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).
+
+## Before\r\n\r\n![image](https://github.com/user-attachments/assets/e30cdb9a-e131-48a3-9401-0b5fe973eb60)\r\n\r\n![image](https://github.com/user-attachments/assets/bcaa9500-e925-4f11-8e7f-0e2a00775460)\r\n\r\n## After\r\n\r\n![image](https://github.com/user-attachments/assets/9245b760-b3df-4144-8d86-f9d5c04a3a39)\r\n
+
+## Future works\r\n\r\nSupport `blur` and `emphasis` status for `labelLayout` .
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20476@931326a\n<!-- ECHARTS_PR_PREVIEW -->
+
+## Unit test\r\n\r\nThere is only one test ` label-layout` has diff except those ut i added. Not sure why.\r\n![image](https://github.com/user-attachments/assets/0e06783b-12ad-433b-bf17-822caf08ea2a)\r\n\r\nInitial state is same.\r\n![image](https://github.com/user-attachments/assets/9b99fe88-fe38-402d-970a-cdf0fb37cc81)\r\n\r\nAnd test `candlestick-large2` failed because of timeout, likely due to my weak computer and/or wsl overhead.\r\n\r\n
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20465@47e5928\n<!-- ECHARTS_PR_PREVIEW -->
+
+Congratulations! Your PR has been merged. Thanks for your contribution! 👍
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).
+
+Any news about this ? We have to migrate our project to vue 3 and nodeNext but we are blocked with echarts and this feature....
+
+> Any news about this ? We have to migrate our project to vue 3 and nodeNext but we are blocked with echarts and this feature....\n\nNope,without anyone review this simple pr.\n\nYou could fork and changg code then publish your own package,otherwise there is no exact time.😓
+
+For a more easy way,change the echarts dependency to a file path such as `lib/echarts`,in which way I use to test this pr if it works well.
+
+@BTMuli It works but with that solution we lost types :( 
+
+> @BTMuli It works but with that solution we lost types :(\r\n\r\nYou should install dependencies and run build script,It works well on my proj.\r\n![image](https://github.com/user-attachments/assets/d8b34d07-739d-4a61-9a3d-0518aac383b4)\r\n
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\nThe pull request is marked to be `PR: author is committer` because you are a committer of this project.\n\nDocument changes are required in this PR. Please also make a PR to [apache/echarts-doc](https://github.com/apache/echarts-doc) for document changes and update the issue id in the PR description. When the doc PR is merged, the maintainers will remove the `PR: awaiting doc` label.
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20447@d4ab7dc\n<!-- ECHARTS_PR_PREVIEW -->
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20436@2625230\n<!-- ECHARTS_PR_PREVIEW -->
+
+Thank you for reviewing!\r\n\r\nI see the problem. and i found a new problem.\r\n\r\nIf every one tick in intervalList is true. the last one will be out of control.\r\n\r\n![image](https://github.com/user-attachments/assets/45cff5fe-21d6-45e3-843f-fca5b67509fb)\r\n\r\nThe new fix way is change tick to right position and add last one after intervalList.\r\n\r\nSee the result after fix.\r\n\r\n![image](https://github.com/user-attachments/assets/921a8c25-5035-49be-bcca-d9c6f93e1b24)\r\n
+
+The current logic is simple: add last one after intervalList.\r\n\r\nTo form a tick pair, similar to the effect of boundaryGap: true, add an ending tick to the intervalList.\r\n\r\nA potential issue arises if the intervalList is [true, false]. By adding an end tick, it becomes [true, true], which might seem odd.\r\n\r\nA more intelligent way is if the tick is end of axis then add it. if not ignore it. \r\n\r\nShould we use this?\r\n
+
+See new reault.\r\n\r\n![image](https://github.com/user-attachments/assets/5cf72522-58ab-47eb-8d5e-e1d30cd1ac9a)\r\n
+
+See new reault.\r\n\r\n![image](https://github.com/user-attachments/assets/69dc35d1-5c59-436f-8812-178f34ce736c)\r\n
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\n⚠️ MISSING DOCUMENT INFO: Please make sure one of the document options are checked in this PR\
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20435@50b715b\n<!-- ECHARTS_PR_PREVIEW -->
+
+We sincerely appreciate your valuable contributions! We are currently running a special promotion for users who submit a Pull Request between September 25, 2024, and December 31, 2024. Eligible participants will receive a two-year enterprise membership to Baidu Comate (**Please note that in order to register Comate, you need to have a phone number in China due to local regulations**), valued at 2000 RMB (approximately 285 USD).\r\n\r\nTo learn more about this product, please visit https://comate.baidu.com/. If you are interested in this offer, kindly send an email with the link to your Pull Request along with your Comate username and email address to ovilia@apache.org to claim your membership.\r\n\r\nThank you once again for your support!
+
+Congratulations! Your PR has been merged. Thanks for your contribution! 👍
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\nThe pull request is marked to be `PR: author is committer` because you are a committer of this project.\n\nDocument changes are required in this PR. Please also make a PR to [apache/echarts-doc](https://github.com/apache/echarts-doc) for document changes and update the issue id in the PR description. When the doc PR is merged, the maintainers will remove the `PR: awaiting doc` label.\n\nThis PR depends on [ZRender](https://github.com/ecomfe/zrender) changes. Please update the ZRender dependency to the latest nightly version including this change, which takes place everyday at 8:00 UTC (16:00 Beijing Time).\nYou can use `npm i zrender@npm:zrender-nightly@dev` to update package.json.\nIf you have any question about this, please leave a comment and we will give you extra help on this.
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20402@9fb4073\n<!-- ECHARTS_PR_PREVIEW -->
+
+Congratulations! Your PR has been merged. Thanks for your contribution! 👍
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\nDocument changes are required in this PR. Please also make a PR to [apache/echarts-doc](https://github.com/apache/echarts-doc) for document changes and update the issue id in the PR description. When the doc PR is merged, the maintainers will remove the `PR: awaiting doc` label.
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20399@daf0104\n<!-- ECHARTS_PR_PREVIEW -->
+
+Congratulations! Your PR has been merged. Thanks for your contribution! 👍
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20398@234fb4b\n<!-- ECHARTS_PR_PREVIEW -->
+
+Done
+
+Congratulations! Your PR has been merged. Thanks for your contribution! 👍
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\nThe pull request is marked to be `PR: author is committer` because you are a committer of this project.
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20396@4704cbc\n<!-- ECHARTS_PR_PREVIEW -->
+
+Congratulations! Your PR has been merged. Thanks for your contribution! 👍
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20380@d60b241\n<!-- ECHARTS_PR_PREVIEW -->
+
+Congratulations! Your PR has been merged. Thanks for your contribution! 👍
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).\n\n⚠️ MISSING DOCUMENT INFO: Please make sure one of the document options are checked in this PR\
+
+Thanks for your contribution!\nThe community will review it ASAP. In the meanwhile, please checkout [the coding standard](https://echarts.apache.org/en/coding-standard.html) and Wiki about [How to make a pull request](https://github.com/apache/echarts/wiki/How-to-make-a-pull-request).
+
+The changes brought by this PR can be previewed at: https://echarts.apache.org/examples/editor?version=PR-20370@80438d2\n<!-- ECHARTS_PR_PREVIEW -->
+
+Congratulations! Your PR has been merged. Thanks for your contribution! 👍
+
+We sincerely appreciate your valuable contributions! We are currently running a special promotion for users who submit a Pull Request between September 25, 2024, and December 31, 2024. Eligible participants will receive a two-year enterprise membership to Baidu Comate, valued at 2000 RMB (approximately 285 USD).\r\n\r\nTo learn more about this product, please visit https://comate.baidu.com/. If you are interested in this offer, kindly send an email with the link to your Pull Request along with your Comate username and email address to ovilia@apache.org to claim your membership.\r\n\r\nThank you once again for your support!
