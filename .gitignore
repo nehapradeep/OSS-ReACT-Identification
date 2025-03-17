@@ -171,3 +171,5 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 pydrillerCSV/.DS_Store
+github_api/.DS_Store
+pydrillerCSV/.DS_Store
