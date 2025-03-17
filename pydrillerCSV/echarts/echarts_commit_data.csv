@@ -1,0 +1,435 @@
+Commit Hash,Author Email,Author Date,Committer Email,Committer Date,Commit Message,In Main Branch,Is Merge Commit,Number of Modified Files,File Name,File Extension,Added Lines,Deleted Lines,Total Lines Changed
+f559a457fec7b710dcfc6c0c5e51a3e434177e41,sz_p@outlook.com,2025-03-12 19:20:14+08:00,sz_p@outlook.com,2025-03-12 19:20:14+08:00,feat(marker): markPoint markLine markArea add z2 option to support change level #6691,True,False,10,Line.ts,ts,3,1,4
+f559a457fec7b710dcfc6c0c5e51a3e434177e41,sz_p@outlook.com,2025-03-12 19:20:14+08:00,sz_p@outlook.com,2025-03-12 19:20:14+08:00,feat(marker): markPoint markLine markArea add z2 option to support change level #6691,True,False,10,Symbol.ts,ts,8,3,11
+f559a457fec7b710dcfc6c0c5e51a3e434177e41,sz_p@outlook.com,2025-03-12 19:20:14+08:00,sz_p@outlook.com,2025-03-12 19:20:14+08:00,feat(marker): markPoint markLine markArea add z2 option to support change level #6691,True,False,10,MarkAreaModel.ts,ts,1,0,1
+f559a457fec7b710dcfc6c0c5e51a3e434177e41,sz_p@outlook.com,2025-03-12 19:20:14+08:00,sz_p@outlook.com,2025-03-12 19:20:14+08:00,feat(marker): markPoint markLine markArea add z2 option to support change level #6691,True,False,10,MarkAreaView.ts,ts,9,3,12
+f559a457fec7b710dcfc6c0c5e51a3e434177e41,sz_p@outlook.com,2025-03-12 19:20:14+08:00,sz_p@outlook.com,2025-03-12 19:20:14+08:00,feat(marker): markPoint markLine markArea add z2 option to support change level #6691,True,False,10,MarkLineModel.ts,ts,2,1,3
+f559a457fec7b710dcfc6c0c5e51a3e434177e41,sz_p@outlook.com,2025-03-12 19:20:14+08:00,sz_p@outlook.com,2025-03-12 19:20:14+08:00,feat(marker): markPoint markLine markArea add z2 option to support change level #6691,True,False,10,MarkLineView.ts,ts,4,2,6
+f559a457fec7b710dcfc6c0c5e51a3e434177e41,sz_p@outlook.com,2025-03-12 19:20:14+08:00,sz_p@outlook.com,2025-03-12 19:20:14+08:00,feat(marker): markPoint markLine markArea add z2 option to support change level #6691,True,False,10,MarkPointModel.ts,ts,1,0,1
+f559a457fec7b710dcfc6c0c5e51a3e434177e41,sz_p@outlook.com,2025-03-12 19:20:14+08:00,sz_p@outlook.com,2025-03-12 19:20:14+08:00,feat(marker): markPoint markLine markArea add z2 option to support change level #6691,True,False,10,MarkPointView.ts,ts,3,1,4
+f559a457fec7b710dcfc6c0c5e51a3e434177e41,sz_p@outlook.com,2025-03-12 19:20:14+08:00,sz_p@outlook.com,2025-03-12 19:20:14+08:00,feat(marker): markPoint markLine markArea add z2 option to support change level #6691,True,False,10,SeriesData.ts,ts,1,1,2
+f559a457fec7b710dcfc6c0c5e51a3e434177e41,sz_p@outlook.com,2025-03-12 19:20:14+08:00,sz_p@outlook.com,2025-03-12 19:20:14+08:00,feat(marker): markPoint markLine markArea add z2 option to support change level #6691,True,False,10,marker-z2.html,html,400,0,400
+adcbbfb6c0047d68fd11cf0f0f655b634af00ca0,sz_p@outlook.com,2025-03-03 19:23:04+08:00,sz_p@outlook.com,2025-03-04 09:10:57+08:00,fix(title): title text style width type should not include string #20799,True,False,1,install.ts,ts,5,2,7
+bd37d6e8ace50a1a05d78d168bb5542da5cb51c8,joakim.haugen@sintef.no,2025-02-27 09:05:37+01:00,joakim.haugen@sintef.no,2025-02-27 09:05:37+01:00,Use single quoted strings,True,False,1,langnb-NO.ts,ts,64,64,128
+88cf7cf79322da47995b12dcfb937138fecd30fa,joakim.haugen@sintef.no,2025-02-26 11:07:53+01:00,joakim.haugen@sintef.no,2025-02-26 11:07:53+01:00,Add Norwegian Bokmål language file,True,False,1,langnb-NO.ts,ts,143,0,143
+214441e5fd5e901338fe4cd8448ccb0b038500a1,49699333+dependabot[bot]@users.noreply.github.com,2025-02-12 15:25:15+00:00,noreply@github.com,2025-02-12 15:25:15+00:00,"chore(deps-dev): bump rollup from 2.34.2 to 2.79.2
+
+Bumps [rollup](https://github.com/rollup/rollup) from 2.34.2 to 2.79.2.
+- [Release notes](https://github.com/rollup/rollup/releases)
+- [Changelog](https://github.com/rollup/rollup/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/rollup/rollup/compare/v2.34.2...v2.79.2)
+
+---
+updated-dependencies:
+- dependency-name: rollup
+  dependency-type: direct:development
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",True,False,2,package-lock.json,json,17,16,33
+214441e5fd5e901338fe4cd8448ccb0b038500a1,49699333+dependabot[bot]@users.noreply.github.com,2025-02-12 15:25:15+00:00,noreply@github.com,2025-02-12 15:25:15+00:00,"chore(deps-dev): bump rollup from 2.34.2 to 2.79.2
+
+Bumps [rollup](https://github.com/rollup/rollup) from 2.34.2 to 2.79.2.
+- [Release notes](https://github.com/rollup/rollup/releases)
+- [Changelog](https://github.com/rollup/rollup/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/rollup/rollup/compare/v2.34.2...v2.79.2)
+
+---
+updated-dependencies:
+- dependency-name: rollup
+  dependency-type: direct:development
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",True,False,2,package.json,json,1,1,2
+f0734333f9ffcd8cf172a75c55e99f574879187a,152275799+shaymolcho@users.noreply.github.com,2025-01-31 17:54:01+02:00,noreply@github.com,2025-01-31 17:54:01+02:00,"Added missing period for consistency and readability
+
+Added a missing period in a specific part of the text to maintain consistency across the document. This ensures a uniform writing style, improves readability, and aligns with the formatting used throughout the content.",True,False,1,CONTRIBUTING.md,md,1,1,2
+2872e5c4a7a3d5932123c07f10abe9ca0be83aea,yhen@all-my-life.cn,2025-01-18 15:40:20+08:00,yhen@all-my-life.cn,2025-01-18 15:40:20+08:00,fix(heatmap): fix labels that are not in calendar range are unexpectedly displayed (resolves #20690),True,False,2,HeatmapView.ts,ts,7,1,8
+2872e5c4a7a3d5932123c07f10abe9ca0be83aea,yhen@all-my-life.cn,2025-01-18 15:40:20+08:00,yhen@all-my-life.cn,2025-01-18 15:40:20+08:00,fix(heatmap): fix labels that are not in calendar range are unexpectedly displayed (resolves #20690),True,False,2,calendar-heatmap2.html,html,81,0,81
+5bb07851d1538b14eba9c34606892f2cf8b36510,jinzisen@guandata.com,2025-01-15 18:19:26+08:00,jinzisen@guandata.com,2025-01-15 18:19:26+08:00,test(series):mismatched dimension index when canOmitUnusedDimensions is true,True,False,3,__meta__.json,json,1,0,1
+5bb07851d1538b14eba9c34606892f2cf8b36510,jinzisen@guandata.com,2025-01-15 18:19:26+08:00,jinzisen@guandata.com,2025-01-15 18:19:26+08:00,test(series):mismatched dimension index when canOmitUnusedDimensions is true,True,False,3,series-omitUnusedDimensions.json,json,1,0,1
+5bb07851d1538b14eba9c34606892f2cf8b36510,jinzisen@guandata.com,2025-01-15 18:19:26+08:00,jinzisen@guandata.com,2025-01-15 18:19:26+08:00,test(series):mismatched dimension index when canOmitUnusedDimensions is true,True,False,3,series-omitUnusedDimensions.html,html,221,0,221
+271f9db43e0394316ec3064bcfcc7a249d34a90d,zwl.sjtu@gmail.com,2025-01-14 15:36:44+08:00,zwl.sjtu@gmail.com,2025-01-14 15:36:44+08:00,chore(test): fix local echarts file path,True,False,2,client.js,js,3,1,4
+271f9db43e0394316ec3064bcfcc7a249d34a90d,zwl.sjtu@gmail.com,2025-01-14 15:36:44+08:00,zwl.sjtu@gmail.com,2025-01-14 15:36:44+08:00,chore(test): fix local echarts file path,True,False,2,util.js,js,4,6,10
+c7374640a878cb788822d13185fc0e823fa7be6d,jinzisen@guandata.com,2025-01-13 18:30:31+08:00,jinzisen@guandata.com,2025-01-13 18:30:31+08:00,fix(series): mismatched dimension index when canOmitUnusedDimensions is true,True,False,1,SeriesData.ts,ts,7,2,9
+7205ad224639ef7e7b6814c651a4e5fa8e1505f0,zwl.sjtu@gmail.com,2025-01-13 15:26:32+08:00,zwl.sjtu@gmail.com,2025-01-13 15:26:32+08:00,chore(test): use PR preview instead of branch,True,False,5,client.js,js,28,7,35
+7205ad224639ef7e7b6814c651a4e5fa8e1505f0,zwl.sjtu@gmail.com,2025-01-13 15:26:32+08:00,zwl.sjtu@gmail.com,2025-01-13 15:26:32+08:00,chore(test): use PR preview instead of branch,True,False,5,index.html,html,20,6,26
+7205ad224639ef7e7b6814c651a4e5fa8e1505f0,zwl.sjtu@gmail.com,2025-01-13 15:26:32+08:00,zwl.sjtu@gmail.com,2025-01-13 15:26:32+08:00,chore(test): use PR preview instead of branch,True,False,5,server.js,js,36,31,67
+7205ad224639ef7e7b6814c651a4e5fa8e1505f0,zwl.sjtu@gmail.com,2025-01-13 15:26:32+08:00,zwl.sjtu@gmail.com,2025-01-13 15:26:32+08:00,chore(test): use PR preview instead of branch,True,False,5,store.js,js,20,4,24
+7205ad224639ef7e7b6814c651a4e5fa8e1505f0,zwl.sjtu@gmail.com,2025-01-13 15:26:32+08:00,zwl.sjtu@gmail.com,2025-01-13 15:26:32+08:00,chore(test): use PR preview instead of branch,True,False,5,util.js,js,63,43,106
+f0f55f4ac9c0b0b2a3cd46fecaa0af0387c1e7aa,zwl.sjtu@gmail.com,2025-01-10 17:03:10+08:00,zwl.sjtu@gmail.com,2025-01-10 17:03:10+08:00,test: visual test support compare with a remote branch,True,False,6,cli.js,js,11,9,20
+f0f55f4ac9c0b0b2a3cd46fecaa0af0387c1e7aa,zwl.sjtu@gmail.com,2025-01-10 17:03:10+08:00,zwl.sjtu@gmail.com,2025-01-10 17:03:10+08:00,test: visual test support compare with a remote branch,True,False,6,client.js,js,148,17,165
+f0f55f4ac9c0b0b2a3cd46fecaa0af0387c1e7aa,zwl.sjtu@gmail.com,2025-01-10 17:03:10+08:00,zwl.sjtu@gmail.com,2025-01-10 17:03:10+08:00,test: visual test support compare with a remote branch,True,False,6,index.html,html,26,10,36
+f0f55f4ac9c0b0b2a3cd46fecaa0af0387c1e7aa,zwl.sjtu@gmail.com,2025-01-10 17:03:10+08:00,zwl.sjtu@gmail.com,2025-01-10 17:03:10+08:00,test: visual test support compare with a remote branch,True,False,6,server.js,js,25,24,49
+f0f55f4ac9c0b0b2a3cd46fecaa0af0387c1e7aa,zwl.sjtu@gmail.com,2025-01-10 17:03:10+08:00,zwl.sjtu@gmail.com,2025-01-10 17:03:10+08:00,test: visual test support compare with a remote branch,True,False,6,store.js,js,43,13,56
+f0f55f4ac9c0b0b2a3cd46fecaa0af0387c1e7aa,zwl.sjtu@gmail.com,2025-01-10 17:03:10+08:00,zwl.sjtu@gmail.com,2025-01-10 17:03:10+08:00,test: visual test support compare with a remote branch,True,False,6,util.js,js,34,12,46
+1720dc907c64b513c30df69ed56a457a5221c5e1,41898282+github-actions[bot]@users.noreply.github.com,2025-01-02 02:39:09+00:00,noreply@github.com,2025-01-02 02:39:09+00:00,chore: update NOTICE year to 2025,True,False,1,NOTICE,None,1,1,2
+176f9dfd0d0dba13a2dd46bf727be1db84cbf226,yhen@all-my-life.cn,2025-01-02 09:02:42+08:00,noreply@github.com,2025-01-02 09:02:42+08:00,chore(workflow): add package.json,True,False,1,package.json,json,3,0,3
+a96cbaa49aba1c24eec9a3a934aea199b84c99d9,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,release: build v5.6.0,True,False,25,echarts.common.js,js,3277,3147,6424
+a96cbaa49aba1c24eec9a3a934aea199b84c99d9,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,release: build v5.6.0,True,False,25,echarts.common.js.map,map,1,1,2
+a96cbaa49aba1c24eec9a3a934aea199b84c99d9,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,release: build v5.6.0,True,False,25,echarts.common.min.js,js,2,2,4
+a96cbaa49aba1c24eec9a3a934aea199b84c99d9,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,release: build v5.6.0,True,False,25,echarts.esm.js,js,4920,4764,9684
+a96cbaa49aba1c24eec9a3a934aea199b84c99d9,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,release: build v5.6.0,True,False,25,echarts.esm.js.map,map,1,1,2
+a96cbaa49aba1c24eec9a3a934aea199b84c99d9,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,release: build v5.6.0,True,False,25,echarts.esm.min.js,js,2,2,4
+a96cbaa49aba1c24eec9a3a934aea199b84c99d9,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,release: build v5.6.0,True,False,25,echarts.esm.min.mjs,mjs,2,2,4
+a96cbaa49aba1c24eec9a3a934aea199b84c99d9,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,release: build v5.6.0,True,False,25,echarts.esm.mjs,mjs,4920,4764,9684
+a96cbaa49aba1c24eec9a3a934aea199b84c99d9,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,release: build v5.6.0,True,False,25,echarts.esm.mjs.map,map,1,1,2
+a96cbaa49aba1c24eec9a3a934aea199b84c99d9,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,release: build v5.6.0,True,False,25,echarts.js,js,4920,4764,9684
+a96cbaa49aba1c24eec9a3a934aea199b84c99d9,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,release: build v5.6.0,True,False,25,echarts.js.map,map,1,1,2
+a96cbaa49aba1c24eec9a3a934aea199b84c99d9,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,release: build v5.6.0,True,False,25,echarts.min.js,js,2,2,4
+a96cbaa49aba1c24eec9a3a934aea199b84c99d9,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,release: build v5.6.0,True,False,25,echarts.simple.js,js,2520,2408,4928
+a96cbaa49aba1c24eec9a3a934aea199b84c99d9,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,release: build v5.6.0,True,False,25,echarts.simple.js.map,map,1,1,2
+a96cbaa49aba1c24eec9a3a934aea199b84c99d9,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,release: build v5.6.0,True,False,25,echarts.simple.min.js,js,2,2,4
+a96cbaa49aba1c24eec9a3a934aea199b84c99d9,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,release: build v5.6.0,True,False,25,bmap.js.map,map,1,1,2
+a96cbaa49aba1c24eec9a3a934aea199b84c99d9,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,release: build v5.6.0,True,False,25,dataTool.js,js,0,1,1
+a96cbaa49aba1c24eec9a3a934aea199b84c99d9,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,release: build v5.6.0,True,False,25,dataTool.js.map,map,1,1,2
+a96cbaa49aba1c24eec9a3a934aea199b84c99d9,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,release: build v5.6.0,True,False,25,langFA-obj.js,js,175,0,175
+a96cbaa49aba1c24eec9a3a934aea199b84c99d9,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,release: build v5.6.0,True,False,25,langFA.js,js,171,0,171
+a96cbaa49aba1c24eec9a3a934aea199b84c99d9,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,release: build v5.6.0,True,False,25,langPT-br-obj.js,js,12,12,24
+a96cbaa49aba1c24eec9a3a934aea199b84c99d9,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,release: build v5.6.0,True,False,25,langPT-br.js,js,12,12,24
+a96cbaa49aba1c24eec9a3a934aea199b84c99d9,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,release: build v5.6.0,True,False,25,langSV-obj.js,js,174,0,174
+a96cbaa49aba1c24eec9a3a934aea199b84c99d9,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,release: build v5.6.0,True,False,25,langSV.js,js,170,0,170
+a96cbaa49aba1c24eec9a3a934aea199b84c99d9,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,yhen@all-my-life.cn,2024-12-11 14:39:30+08:00,release: build v5.6.0,True,False,25,index.js.map,map,1,1,2
+74203be9f0d1a3d1d9f5bb037c3a4026d08f2269,yhen@all-my-life.cn,2024-12-11 13:28:05+08:00,yhen@all-my-life.cn,2024-12-11 13:28:49+08:00,release: update echarts version to 5.6.0,True,False,3,package-lock.json,json,2,2,4
+74203be9f0d1a3d1d9f5bb037c3a4026d08f2269,yhen@all-my-life.cn,2024-12-11 13:28:05+08:00,yhen@all-my-life.cn,2024-12-11 13:28:49+08:00,release: update echarts version to 5.6.0,True,False,3,package.json,json,1,1,2
+74203be9f0d1a3d1d9f5bb037c3a4026d08f2269,yhen@all-my-life.cn,2024-12-11 13:28:05+08:00,yhen@all-my-life.cn,2024-12-11 13:28:49+08:00,release: update echarts version to 5.6.0,True,False,3,echarts.ts,ts,2,2,4
+5764d0c3c554e865a5d9dab95d2d907bae4369f6,yhen@all-my-life.cn,2024-12-11 12:22:48+08:00,yhen@all-my-life.cn,2024-12-11 12:22:48+08:00,chore: update zrender versin to 5.6.1,True,False,2,package-lock.json,json,14,11,25
+5764d0c3c554e865a5d9dab95d2d907bae4369f6,yhen@all-my-life.cn,2024-12-11 12:22:48+08:00,yhen@all-my-life.cn,2024-12-11 12:22:48+08:00,chore: update zrender versin to 5.6.1,True,False,2,package.json,json,1,1,2
+4e84f15ceeaf5c432a33783981bf57ff536807a3,yhen@all-my-life.cn,2024-12-10 11:58:40+08:00,yhen@all-my-life.cn,2024-12-10 11:58:40+08:00,fix(test): fix map test case,True,False,1,geoScatter.html,html,2,2,4
+8dd547561fe78af767142d464895b9de87a44bd7,yhen@all-my-life.cn,2024-12-10 11:27:57+08:00,yhen@all-my-life.cn,2024-12-10 11:27:57+08:00,fix(test): fix map test case,True,False,3,dataset-charts.html,html,51,51,102
+8dd547561fe78af767142d464895b9de87a44bd7,yhen@all-my-life.cn,2024-12-10 11:27:57+08:00,yhen@all-my-life.cn,2024-12-10 11:27:57+08:00,fix(test): fix map test case,True,False,3,geo-map.html,html,60,60,120
+8dd547561fe78af767142d464895b9de87a44bd7,yhen@all-my-life.cn,2024-12-10 11:27:57+08:00,yhen@all-my-life.cn,2024-12-10 11:27:57+08:00,fix(test): fix map test case,True,False,3,map.html,html,4,4,8
+e231c0968be5f654af8fccc29176497564433aaa,zwl.sjtu@gmail.com,2024-12-09 17:03:33+08:00,zwl.sjtu@gmail.com,2024-12-09 18:28:25+08:00,fix(map): update test cases,True,False,2,effectScatter.html,html,15,15,30
+e231c0968be5f654af8fccc29176497564433aaa,zwl.sjtu@gmail.com,2024-12-09 17:03:33+08:00,zwl.sjtu@gmail.com,2024-12-09 18:28:25+08:00,fix(map): update test cases,True,False,2,map-projection.html,html,24,5,29
+181842f5e41d49f22e63f951e4e6e0054d3c0057,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,test(map): replace test cases with new map,True,False,29,brush.html,html,23,3,26
+181842f5e41d49f22e63f951e4e6e0054d3c0057,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,test(map): replace test cases with new map,True,False,29,china.js,js,57,1,58
+181842f5e41d49f22e63f951e4e6e0054d3c0057,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,test(map): replace test cases with new map,True,False,29,dataZoom-geo.html,html,19,3,22
+181842f5e41d49f22e63f951e4e6e0054d3c0057,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,test(map): replace test cases with new map,True,False,29,effectScatter.html,html,22,9,31
+181842f5e41d49f22e63f951e4e6e0054d3c0057,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,test(map): replace test cases with new map,True,False,29,geo-data-stream.html,html,15,0,15
+181842f5e41d49f22e63f951e4e6e0054d3c0057,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,test(map): replace test cases with new map,True,False,29,geo-lines.html,html,27,7,34
+181842f5e41d49f22e63f951e4e6e0054d3c0057,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,test(map): replace test cases with new map,True,False,29,geo-map.html,html,18,1,19
+181842f5e41d49f22e63f951e4e6e0054d3c0057,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,test(map): replace test cases with new map,True,False,29,geo-random-stream.html,html,19,1,20
+181842f5e41d49f22e63f951e4e6e0054d3c0057,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,test(map): replace test cases with new map,True,False,29,geo-update.html,html,16,0,16
+181842f5e41d49f22e63f951e4e6e0054d3c0057,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,test(map): replace test cases with new map,True,False,29,geoLine.html,html,38,24,62
+181842f5e41d49f22e63f951e4e6e0054d3c0057,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,test(map): replace test cases with new map,True,False,29,heatmap-geo.html,html,15,0,15
+181842f5e41d49f22e63f951e4e6e0054d3c0057,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,test(map): replace test cases with new map,True,False,29,heatmap-map.html,html,24,1,25
+181842f5e41d49f22e63f951e4e6e0054d3c0057,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,test(map): replace test cases with new map,True,False,29,lines-remove.html,html,29,11,40
+181842f5e41d49f22e63f951e4e6e0054d3c0057,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,test(map): replace test cases with new map,True,False,29,lines-symbol.html,html,20,5,25
+181842f5e41d49f22e63f951e4e6e0054d3c0057,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,test(map): replace test cases with new map,True,False,29,map-china.html,html,67,19,86
+181842f5e41d49f22e63f951e4e6e0054d3c0057,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,test(map): replace test cases with new map,True,False,29,map-contour.html,html,41,13,54
+181842f5e41d49f22e63f951e4e6e0054d3c0057,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,test(map): replace test cases with new map,True,False,29,map-default.html,html,23,7,30
+181842f5e41d49f22e63f951e4e6e0054d3c0057,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,test(map): replace test cases with new map,True,False,29,map-locate.html,html,18,3,21
+181842f5e41d49f22e63f951e4e6e0054d3c0057,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,test(map): replace test cases with new map,True,False,29,map.html,html,125,78,203
+181842f5e41d49f22e63f951e4e6e0054d3c0057,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,test(map): replace test cases with new map,True,False,29,pie-coordinate-system.html,html,19,2,21
+181842f5e41d49f22e63f951e4e6e0054d3c0057,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,test(map): replace test cases with new map,True,False,29,scatter-random-stream-fix-axis.html,html,1,2,3
+181842f5e41d49f22e63f951e4e6e0054d3c0057,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,test(map): replace test cases with new map,True,False,29,scatter-weibo.html,html,25,3,28
+181842f5e41d49f22e63f951e4e6e0054d3c0057,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,test(map): replace test cases with new map,True,False,29,touch-slide.html,html,18,1,19
+181842f5e41d49f22e63f951e4e6e0054d3c0057,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,test(map): replace test cases with new map,True,False,29,visualMap-pieces.html,html,53,37,90
+181842f5e41d49f22e63f951e4e6e0054d3c0057,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,zwl.sjtu@gmail.com,2024-12-09 16:58:54+08:00,test(map): replace test cases with new map,True,False,29,visualMap-special-case.html,html,19,2,21
+fd87c34e6d05c2db5705bb2a862dec1ebdafe686,zwl.sjtu@gmail.com,2024-12-09 16:57:30+08:00,zwl.sjtu@gmail.com,2024-12-09 16:57:52+08:00,fix(map): remove preventAutoZ for map,True,False,3,MapSeries.ts,ts,0,1,1
+fd87c34e6d05c2db5705bb2a862dec1ebdafe686,zwl.sjtu@gmail.com,2024-12-09 16:57:30+08:00,zwl.sjtu@gmail.com,2024-12-09 16:57:52+08:00,fix(map): remove preventAutoZ for map,True,False,3,MapDraw.ts,ts,6,6,12
+fd87c34e6d05c2db5705bb2a862dec1ebdafe686,zwl.sjtu@gmail.com,2024-12-09 16:57:30+08:00,zwl.sjtu@gmail.com,2024-12-09 16:57:52+08:00,fix(map): remove preventAutoZ for map,True,False,3,GeoModel.ts,ts,0,3,3
+4d990f750f08b1227d767461a070fa26147fbc55,yhen@all-my-life.cn,2024-12-08 20:35:25+08:00,yhen@all-my-life.cn,2024-12-08 20:35:25+08:00,fix(map): hide label for boundary line features,True,False,1,china-map.js,js,9,1,10
+945148f2e64744df2bd4bee0ebfe048301d06773,yhen@all-my-life.cn,2024-12-08 20:03:39+08:00,yhen@all-my-life.cn,2024-12-08 20:03:39+08:00,fix(test): update map data,True,False,1,china-map.js,js,43,27,70
+04d412ad64b72b82570536642fb2c3c7e0020f0a,zwl.sjtu@gmail.com,2024-12-06 19:55:35+08:00,zwl.sjtu@gmail.com,2024-12-06 19:55:35+08:00,fix: add regions.silent and z for geo and map,True,False,6,MapSeries.ts,ts,2,0,2
+04d412ad64b72b82570536642fb2c3c7e0020f0a,zwl.sjtu@gmail.com,2024-12-06 19:55:35+08:00,zwl.sjtu@gmail.com,2024-12-06 19:55:35+08:00,fix: add regions.silent and z for geo and map,True,False,6,MapDraw.ts,ts,6,0,6
+04d412ad64b72b82570536642fb2c3c7e0020f0a,zwl.sjtu@gmail.com,2024-12-06 19:55:35+08:00,zwl.sjtu@gmail.com,2024-12-06 19:55:35+08:00,fix: add regions.silent and z for geo and map,True,False,6,GeoModel.ts,ts,4,0,4
+04d412ad64b72b82570536642fb2c3c7e0020f0a,zwl.sjtu@gmail.com,2024-12-06 19:55:35+08:00,zwl.sjtu@gmail.com,2024-12-06 19:55:35+08:00,fix: add regions.silent and z for geo and map,True,False,6,geoCreator.ts,ts,8,7,15
+04d412ad64b72b82570536642fb2c3c7e0020f0a,zwl.sjtu@gmail.com,2024-12-06 19:55:35+08:00,zwl.sjtu@gmail.com,2024-12-06 19:55:35+08:00,fix: add regions.silent and z for geo and map,True,False,6,china-map.js,js,3,1,4
+04d412ad64b72b82570536642fb2c3c7e0020f0a,zwl.sjtu@gmail.com,2024-12-06 19:55:35+08:00,zwl.sjtu@gmail.com,2024-12-06 19:55:35+08:00,fix: add regions.silent and z for geo and map,True,False,6,effectScatter.html,html,22,16,38
+9139d4571029357ec419c58fef4113be5f869e26,zwl.sjtu@gmail.com,2024-12-06 18:08:39+08:00,zwl.sjtu@gmail.com,2024-12-06 18:08:39+08:00,fix(map): change map data,True,False,2,china-map.js,js,77,0,77
+9139d4571029357ec419c58fef4113be5f869e26,zwl.sjtu@gmail.com,2024-12-06 18:08:39+08:00,zwl.sjtu@gmail.com,2024-12-06 18:08:39+08:00,fix(map): change map data,True,False,2,effectScatter.html,html,9,10,19
+3ec7b26bef97ecad5bd74cfc80106a564faa18f9,yhen@all-my-life.cn,2024-12-06 13:52:47+08:00,yhen@all-my-life.cn,2024-12-06 13:55:45+08:00,refactor(geo): apply `echartsStyle` in Model instead of View.,True,False,8,MapSeries.ts,ts,17,6,23
+3ec7b26bef97ecad5bd74cfc80106a564faa18f9,yhen@all-my-life.cn,2024-12-06 13:52:47+08:00,yhen@all-my-life.cn,2024-12-06 13:55:45+08:00,refactor(geo): apply `echartsStyle` in Model instead of View.,True,False,8,MapDraw.ts,ts,2,6,8
+3ec7b26bef97ecad5bd74cfc80106a564faa18f9,yhen@all-my-life.cn,2024-12-06 13:52:47+08:00,yhen@all-my-life.cn,2024-12-06 13:55:45+08:00,refactor(geo): apply `echartsStyle` in Model instead of View.,True,False,8,GeoModel.ts,ts,9,4,13
+3ec7b26bef97ecad5bd74cfc80106a564faa18f9,yhen@all-my-life.cn,2024-12-06 13:52:47+08:00,yhen@all-my-life.cn,2024-12-06 13:55:45+08:00,refactor(geo): apply `echartsStyle` in Model instead of View.,True,False,8,Region.ts,ts,2,2,4
+3ec7b26bef97ecad5bd74cfc80106a564faa18f9,yhen@all-my-life.cn,2024-12-06 13:52:47+08:00,yhen@all-my-life.cn,2024-12-06 13:55:45+08:00,refactor(geo): apply `echartsStyle` in Model instead of View.,True,False,8,geoCreator.ts,ts,14,4,18
+3ec7b26bef97ecad5bd74cfc80106a564faa18f9,yhen@all-my-life.cn,2024-12-06 13:52:47+08:00,yhen@all-my-life.cn,2024-12-06 13:55:45+08:00,refactor(geo): apply `echartsStyle` in Model instead of View.,True,False,8,SeriesData.ts,ts,1,1,2
+3ec7b26bef97ecad5bd74cfc80106a564faa18f9,yhen@all-my-life.cn,2024-12-06 13:52:47+08:00,yhen@all-my-life.cn,2024-12-06 13:55:45+08:00,refactor(geo): apply `echartsStyle` in Model instead of View.,True,False,8,geo-map.html,html,6,0,6
+3ec7b26bef97ecad5bd74cfc80106a564faa18f9,yhen@all-my-life.cn,2024-12-06 13:52:47+08:00,yhen@all-my-life.cn,2024-12-06 13:55:45+08:00,refactor(geo): apply `echartsStyle` in Model instead of View.,True,False,8,map-nested.html,html,35,3,38
+8f3977327e40bfb9a70353d15582c475aa352137,yhen@all-my-life.cn,2024-12-05 14:35:16+08:00,yhen@all-my-life.cn,2024-12-05 14:35:16+08:00,refactor(geo): change option name to `echartsStyle` and enable more style options,True,False,3,MapDraw.ts,ts,3,7,10
+8f3977327e40bfb9a70353d15582c475aa352137,yhen@all-my-life.cn,2024-12-05 14:35:16+08:00,yhen@all-my-life.cn,2024-12-05 14:35:16+08:00,refactor(geo): change option name to `echartsStyle` and enable more style options,True,False,3,Region.ts,ts,2,2,4
+8f3977327e40bfb9a70353d15582c475aa352137,yhen@all-my-life.cn,2024-12-05 14:35:16+08:00,yhen@all-my-life.cn,2024-12-05 14:35:16+08:00,refactor(geo): change option name to `echartsStyle` and enable more style options,True,False,3,geo-map.html,html,81,33,114
+cdb0ebc0e4f962bd1471a21469551d96b64057f9,yhen@all-my-life.cn,2024-12-05 13:36:13+08:00,yhen@all-my-life.cn,2024-12-05 13:36:13+08:00,feat(geo): support styling region in original GeoJSON data,True,False,3,MapDraw.ts,ts,8,0,8
+cdb0ebc0e4f962bd1471a21469551d96b64057f9,yhen@all-my-life.cn,2024-12-05 13:36:13+08:00,yhen@all-my-life.cn,2024-12-05 13:36:13+08:00,feat(geo): support styling region in original GeoJSON data,True,False,3,Region.ts,ts,5,2,7
+cdb0ebc0e4f962bd1471a21469551d96b64057f9,yhen@all-my-life.cn,2024-12-05 13:36:13+08:00,yhen@all-my-life.cn,2024-12-05 13:36:13+08:00,feat(geo): support styling region in original GeoJSON data,True,False,3,geo-map.html,html,469,426,895
+2009644ce06d1832e6008493466ddf2e95a84947,yhen@all-my-life.cn,2024-12-05 11:29:58+08:00,yhen@all-my-life.cn,2024-12-05 11:29:58+08:00,test: can use CN mirror to fetch versions and libs,True,False,2,server.js,js,19,7,26
+2009644ce06d1832e6008493466ddf2e95a84947,yhen@all-my-life.cn,2024-12-05 11:29:58+08:00,yhen@all-my-life.cn,2024-12-05 11:29:58+08:00,test: can use CN mirror to fetch versions and libs,True,False,2,util.js,js,21,16,37
+b97aa695efe3c041d907513856dce0fcfc64e1e5,yhen@all-my-life.cn,2024-12-04 21:06:55+08:00,yhen@all-my-life.cn,2024-12-04 21:06:55+08:00,chore: add types for puppeteer browser,True,False,1,cli.js,js,7,2,9
+e09c9d2aad208469035f6ad0a022954e890dde78,yhen@all-my-life.cn,2024-12-04 20:42:03+08:00,yhen@all-my-life.cn,2024-12-04 20:42:03+08:00,test: fix test cases,True,False,8,bmap.html,html,2,2,4
+e09c9d2aad208469035f6ad0a022954e890dde78,yhen@all-my-life.cn,2024-12-04 20:42:03+08:00,yhen@all-my-life.cn,2024-12-04 20:42:03+08:00,test: fix test cases,True,False,8,bar2.json,json,1,1,2
+e09c9d2aad208469035f6ad0a022954e890dde78,yhen@all-my-life.cn,2024-12-04 20:42:03+08:00,yhen@all-my-life.cn,2024-12-04 20:42:03+08:00,test: fix test cases,True,False,8,dataZoom-axes.json,json,1,1,2
+e09c9d2aad208469035f6ad0a022954e890dde78,yhen@all-my-life.cn,2024-12-04 20:42:03+08:00,yhen@all-my-life.cn,2024-12-04 20:42:03+08:00,test: fix test cases,True,False,8,drag-out.json,json,1,1,2
+e09c9d2aad208469035f6ad0a022954e890dde78,yhen@all-my-life.cn,2024-12-04 20:42:03+08:00,yhen@all-my-life.cn,2024-12-04 20:42:03+08:00,test: fix test cases,True,False,8,heatmap.json,json,1,1,2
+e09c9d2aad208469035f6ad0a022954e890dde78,yhen@all-my-life.cn,2024-12-04 20:42:03+08:00,yhen@all-my-life.cn,2024-12-04 20:42:03+08:00,test: fix test cases,True,False,8,stackBar-dataZoom.json,json,1,1,2
+e09c9d2aad208469035f6ad0a022954e890dde78,yhen@all-my-life.cn,2024-12-04 20:42:03+08:00,yhen@all-my-life.cn,2024-12-04 20:42:03+08:00,test: fix test cases,True,False,8,index.html,html,1,1,2
+e09c9d2aad208469035f6ad0a022954e890dde78,yhen@all-my-life.cn,2024-12-04 20:42:03+08:00,yhen@all-my-life.cn,2024-12-04 20:42:03+08:00,test: fix test cases,True,False,8,recorder.css,css,5,0,5
+619beb7a3bf15567e09d4b9a53e544fac5dc3ed7,yhen@all-my-life.cn,2024-12-04 19:02:23+08:00,yhen@all-my-life.cn,2024-12-04 19:02:23+08:00,test: tweak test case,True,False,1,pictorial-zero-value.html,html,5,16,21
+6e9ef3b50a58332de19cf6f64922c3f1561c2d64,yhen@all-my-life.cn,2024-12-04 18:51:04+08:00,noreply@github.com,2024-12-04 18:51:04+08:00,style(pictorialBar): make pxSign logic more intuitive,True,False,1,PictorialBarView.ts,ts,1,1,2
+592cab67005f77aaa76bc6bf498a6b79becfb736,yhen@all-my-life.cn,2024-12-04 18:33:23+08:00,yhen@all-my-life.cn,2024-12-04 18:33:23+08:00,chore: remove unused types,True,False,4,treemapVisual.ts,ts,1,3,4
+592cab67005f77aaa76bc6bf498a6b79becfb736,yhen@all-my-life.cn,2024-12-04 18:33:23+08:00,yhen@all-my-life.cn,2024-12-04 18:33:23+08:00,chore: remove unused types,True,False,4,AxisProxy.ts,ts,0,2,2
+592cab67005f77aaa76bc6bf498a6b79becfb736,yhen@all-my-life.cn,2024-12-04 18:33:23+08:00,yhen@all-my-life.cn,2024-12-04 18:33:23+08:00,chore: remove unused types,True,False,4,ContinuousView.ts,ts,1,1,2
+592cab67005f77aaa76bc6bf498a6b79becfb736,yhen@all-my-life.cn,2024-12-04 18:33:23+08:00,yhen@all-my-life.cn,2024-12-04 18:33:23+08:00,chore: remove unused types,True,False,4,PiecewiseModel.ts,ts,0,3,3
+5a1be948971b789d912376e51f0f474b7b6b553f,zwl.sjtu@gmail.com,2024-12-04 18:29:28+08:00,zwl.sjtu@gmail.com,2024-12-04 18:29:28+08:00,refactor(pictorial): refactor xor logic,True,False,1,PictorialBarView.ts,ts,3,1,4
+c2b7b301a17d845a4e86c32c6b568e7634707ebf,yhen@all-my-life.cn,2024-12-04 18:11:58+08:00,yhen@all-my-life.cn,2024-12-04 18:11:58+08:00,test: fix test case,True,False,2,pie-coordinate-system.html,html,4,3,7
+c2b7b301a17d845a4e86c32c6b568e7634707ebf,yhen@all-my-life.cn,2024-12-04 18:11:58+08:00,yhen@all-my-life.cn,2024-12-04 18:11:58+08:00,test: fix test case,True,False,2,cli.js,js,1,1,2
+d58827ab9beb0a3c8027b4190b4a4584b920476f,yhen@all-my-life.cn,2024-12-04 17:51:39+08:00,yhen@all-my-life.cn,2024-12-04 17:51:39+08:00,fix(visualMap): tweak #20551 & add VRT test,True,False,5,PiecewiseView.ts,ts,9,10,19
+d58827ab9beb0a3c8027b4190b4a4584b920476f,yhen@all-my-life.cn,2024-12-04 17:51:39+08:00,yhen@all-my-life.cn,2024-12-04 17:51:39+08:00,fix(visualMap): tweak #20551 & add VRT test,True,False,5,__meta__.json,json,2,1,3
+d58827ab9beb0a3c8027b4190b4a4584b920476f,yhen@all-my-life.cn,2024-12-04 17:51:39+08:00,yhen@all-my-life.cn,2024-12-04 17:51:39+08:00,fix(visualMap): tweak #20551 & add VRT test,True,False,5,visualMap-selectMode.json,json,1,0,1
+d58827ab9beb0a3c8027b4190b4a4584b920476f,yhen@all-my-life.cn,2024-12-04 17:51:39+08:00,yhen@all-my-life.cn,2024-12-04 17:51:39+08:00,fix(visualMap): tweak #20551 & add VRT test,True,False,5,client.css,css,1,0,1
+d58827ab9beb0a3c8027b4190b4a4584b920476f,yhen@all-my-life.cn,2024-12-04 17:51:39+08:00,yhen@all-my-life.cn,2024-12-04 17:51:39+08:00,fix(visualMap): tweak #20551 & add VRT test,True,False,5,visualMap-selectMode.html,html,14,0,14
+08fb397c3210a115c952e0f238eb5f7ef4395737,zwl.sjtu@gmail.com,2024-12-04 17:36:05+08:00,zwl.sjtu@gmail.com,2024-12-04 17:36:05+08:00,fix(pictorial): fix zero value flipping for different axes,True,False,2,PictorialBarView.ts,ts,3,1,4
+08fb397c3210a115c952e0f238eb5f7ef4395737,zwl.sjtu@gmail.com,2024-12-04 17:36:05+08:00,zwl.sjtu@gmail.com,2024-12-04 17:36:05+08:00,fix(pictorial): fix zero value flipping for different axes,True,False,2,pictorial-zero-value.html,html,70,32,102
+ec05e160bd3d4d1ea8d5d846619e82b72a885d03,yhen@all-my-life.cn,2024-12-04 16:35:43+08:00,yhen@all-my-life.cn,2024-12-04 16:35:43+08:00,test: tweak log,True,False,1,cli.js,js,1,1,2
+b9705c5702348595aa6dcc22ea3bff67d8b0d1c8,yhen@all-my-life.cn,2024-12-04 16:22:38+08:00,yhen@all-my-life.cn,2024-12-04 16:22:38+08:00,test: fix test cases,True,False,2,symbol.json,json,1,1,2
+b9705c5702348595aa6dcc22ea3bff67d8b0d1c8,yhen@all-my-life.cn,2024-12-04 16:22:38+08:00,yhen@all-my-life.cn,2024-12-04 16:22:38+08:00,test: fix test cases,True,False,2,toolbox-textStyle.html,html,72,74,146
+3e9b843fa40263f81b77bbf6feb869fa717042ef,yhen@all-my-life.cn,2024-12-04 13:07:44+08:00,yhen@all-my-life.cn,2024-12-04 13:07:44+08:00,test: fix test case and tool & update stale deps,True,False,5,pie-coordinate-system.html,html,1,1,2
+3e9b843fa40263f81b77bbf6feb869fa717042ef,yhen@all-my-life.cn,2024-12-04 13:07:44+08:00,yhen@all-my-life.cn,2024-12-04 13:07:44+08:00,test: fix test case and tool & update stale deps,True,False,5,cli.js,js,29,13,42
+3e9b843fa40263f81b77bbf6feb869fa717042ef,yhen@all-my-life.cn,2024-12-04 13:07:44+08:00,yhen@all-my-life.cn,2024-12-04 13:07:44+08:00,test: fix test case and tool & update stale deps,True,False,5,compareScreenshot.js,js,3,2,5
+3e9b843fa40263f81b77bbf6feb869fa717042ef,yhen@all-my-life.cn,2024-12-04 13:07:44+08:00,yhen@all-my-life.cn,2024-12-04 13:07:44+08:00,test: fix test case and tool & update stale deps,True,False,5,package-lock.json,json,1759,598,2357
+3e9b843fa40263f81b77bbf6feb869fa717042ef,yhen@all-my-life.cn,2024-12-04 13:07:44+08:00,yhen@all-my-life.cn,2024-12-04 13:07:44+08:00,test: fix test case and tool & update stale deps,True,False,5,package.json,json,6,6,12
+b0a6c0e89a3c3ea30e000ef004758a8279920f20,yhen@all-my-life.cn,2024-12-03 18:27:11+08:00,yhen@all-my-life.cn,2024-12-03 18:27:11+08:00,fix(boxplot): simplify `_hasEncodeRule` logic (#20324),True,False,1,whiskerBoxCommon.ts,ts,1,4,5
+828c03745aced65f95b81938ff625ec8b7752e73,yhen@all-my-life.cn,2024-12-03 16:57:20+08:00,yhen@all-my-life.cn,2024-12-03 16:57:20+08:00,style(i18n): fix lint issue in langSV,True,False,1,langSV.ts,ts,1,1,2
+7ce67d550365b995cfbaab3180d6c7118c04c040,yhen@all-my-life.cn,2024-12-03 16:48:44+08:00,yhen@all-my-life.cn,2024-12-03 16:48:44+08:00,chore: npm audit packages,True,False,1,package-lock.json,json,3893,3649,7542
+aa2baff56b543901bebb460a323a528532f740af,sz_p@outlook.com,2024-11-28 20:44:54+08:00,sz_p@outlook.com,2024-11-28 20:44:54+08:00,test(visualMap): cursor is pointer on selectedMode=false,True,False,1,visualMap-selectMode.html,html,144,0,144
+eb23485a6c3215bd37dd5c4b14889891729eaf5d,sz_p@outlook.com,2024-11-28 20:44:39+08:00,sz_p@outlook.com,2024-11-28 20:44:39+08:00,fix(visualMap): cursor is pointer on selectedMode=false,True,False,1,PiecewiseView.ts,ts,15,10,25
+15a8f644b93220a4652405a3ee4bef36a0e0b41d,yhen@all-my-life.cn,2024-11-23 10:05:36+08:00,yhen@all-my-life.cn,2024-11-23 10:06:01+08:00,fix(axis): remove unused import,True,False,1,AxisBuilder.ts,ts,0,1,1
+d303a5f0a713cd7c36ab2bb99e3b6e5c701a2461,yhen@all-my-life.cn,2024-11-23 10:03:01+08:00,yhen@all-my-life.cn,2024-11-23 10:03:01+08:00,fix(data): fix potential NPE in the `SeriesData#rawIndexOf` function,True,False,1,SeriesData.ts,ts,1,1,2
+8f7773c4fd2c99bf66cea2514a96e738338f745d,yhen@all-my-life.cn,2024-11-23 09:55:29+08:00,yhen@all-my-life.cn,2024-11-23 09:55:41+08:00,feat(axis): support tooltip for axis label,True,False,4,package-lock.json,json,5,6,11
+8f7773c4fd2c99bf66cea2514a96e738338f745d,yhen@all-my-life.cn,2024-11-23 09:55:29+08:00,yhen@all-my-life.cn,2024-11-23 09:55:41+08:00,feat(axis): support tooltip for axis label,True,False,4,package.json,json,1,1,2
+8f7773c4fd2c99bf66cea2514a96e738338f745d,yhen@all-my-life.cn,2024-11-23 09:55:29+08:00,yhen@all-my-life.cn,2024-11-23 09:55:41+08:00,feat(axis): support tooltip for axis label,True,False,4,AxisBuilder.ts,ts,12,1,13
+8f7773c4fd2c99bf66cea2514a96e738338f745d,yhen@all-my-life.cn,2024-11-23 09:55:29+08:00,yhen@all-my-life.cn,2024-11-23 09:55:41+08:00,feat(axis): support tooltip for axis label,True,False,4,axisLabel.html,html,60,3,63
+fd47b6b3e49be0c8cb90c1623a32cfa04b85dbdd,zwl.sjtu@gmail.com,2024-11-13 15:59:20+08:00,zwl.sjtu@gmail.com,2024-11-13 15:59:20+08:00,chore: revert ts version in package-lock.json,True,False,1,package-lock.json,json,1,1,2
+76bf70afd559981f570d144f965d3103725ed467,zwl.sjtu@gmail.com,2024-11-13 14:16:27+08:00,zwl.sjtu@gmail.com,2024-11-13 14:16:27+08:00,chore: revert ts version,True,False,1,package.json,json,1,1,2
+47e5928d2e98bef9dc54690d122052307eb2d951,39530469+DevitX@users.noreply.github.com,2024-11-12 18:03:13+01:00,noreply@github.com,2024-11-12 18:03:13+01:00,fix(Bar): revert the strokeFirst to stroke null following the reviewed changes,True,False,1,BarView.ts,ts,1,1,2
+61f2e846d99579213d0e3b22a9b5962d296b263d,yhen@all-my-life.cn,2024-11-09 16:27:16+08:00,yhen@all-my-life.cn,2024-11-09 16:27:32+08:00,feat(calendar): add `silent` option for `dayLabel`/`monthLabel`/yearLabel`.,True,False,2,CalendarView.ts,ts,10,3,13
+61f2e846d99579213d0e3b22a9b5962d296b263d,yhen@all-my-life.cn,2024-11-09 16:27:16+08:00,yhen@all-my-life.cn,2024-11-09 16:27:32+08:00,feat(calendar): add `silent` option for `dayLabel`/`monthLabel`/yearLabel`.,True,False,2,calendar-simple.html,html,10,1,11
+421069f320cfbf024763b4e964021c222e8cc76b,yhen@all-my-life.cn,2024-11-09 15:41:04+08:00,yhen@all-my-life.cn,2024-11-09 15:45:35+08:00,fix(type): markLine `symbolOffset` can be a 2d array for both symbols,True,False,1,MarkLineModel.ts,ts,1,1,2
+c939973a966e06ca490dedd2098c38ca78238a04,bill@bill.works,2024-11-07 09:29:36+00:00,bill@bill.works,2024-11-07 09:29:36+00:00,Relax tslib requirement specifier,True,False,2,package-lock.json,json,1,1,2
+c939973a966e06ca490dedd2098c38ca78238a04,bill@bill.works,2024-11-07 09:29:36+00:00,bill@bill.works,2024-11-07 09:29:36+00:00,Relax tslib requirement specifier,True,False,2,package.json,json,1,1,2
+3cb583face090b1d1ac5218b981b11bd6a748a7a,zwl.sjtu@gmail.com,2024-11-07 17:19:11+08:00,zwl.sjtu@gmail.com,2024-11-07 17:19:11+08:00,test(aria): fix test case of #20218,True,False,1,aria-columns-exclude.test.ts,ts,16,13,29
+9e4ff9f1a76f5f0eb093a3e8580d2a8ebff4a678,knocxxxx@gmail.com,2024-11-06 20:40:13+01:00,knocxxxx@gmail.com,2024-11-06 20:40:13+01:00,test(bar): fix path,True,False,1,bar-large-border-fill.html,html,120,0,120
+4d452fdedb0c53ca9a3f668d3f954a46e0b3f0ca,39530469+DevitX@users.noreply.github.com,2024-11-06 20:24:32+01:00,noreply@github.com,2024-11-06 20:24:32+01:00,test(bar): rename file and updated title,True,False,1,bar-large-border-fill.html,html,2,1,3
+4d1a5705084857a351f95590cd39c207a357ab4d,39530469+DevitX@users.noreply.github.com,2024-11-06 20:11:57+01:00,noreply@github.com,2024-11-06 20:11:57+01:00,test(bar): changed test case for dense bars with border and fill color,True,False,1,candlestick-large-bar-border-color,None,65,302,367
+904ce4909ec09c75c3dd88341236df5722c089d1,39530469+DevitX@users.noreply.github.com,2024-11-06 20:08:46+01:00,noreply@github.com,2024-11-06 20:08:46+01:00,fix(Bar): updated with reviewed changes,True,False,1,BarView.ts,ts,2,2,4
+c3ce6e0fc39ff5fe830f7b5a5e6b1c7eb0168daf,zwl.sjtu@gmail.com,2024-11-06 15:03:18+08:00,zwl.sjtu@gmail.com,2024-11-06 15:03:18+08:00,fix(dataZoom): use handleLabel.show,True,False,3,SliderZoomModel.ts,ts,9,4,13
+c3ce6e0fc39ff5fe830f7b5a5e6b1c7eb0168daf,zwl.sjtu@gmail.com,2024-11-06 15:03:18+08:00,zwl.sjtu@gmail.com,2024-11-06 15:03:18+08:00,fix(dataZoom): use handleLabel.show,True,False,3,SliderZoomView.ts,ts,6,4,10
+c3ce6e0fc39ff5fe830f7b5a5e6b1c7eb0168daf,zwl.sjtu@gmail.com,2024-11-06 15:03:18+08:00,zwl.sjtu@gmail.com,2024-11-06 15:03:18+08:00,fix(dataZoom): use handleLabel.show,True,False,3,dataZoom-handleLabelShow.html,html,147,123,270
+c66c50317a7d1944ee34c5a72cf964e933da0480,39530469+DevitX@users.noreply.github.com,2024-10-30 23:56:02+01:00,noreply@github.com,2024-10-30 23:56:02+01:00,test(candlestick): add test case for candlestick volume bars with borderColor,True,False,1,candlestick-large-bar-border-color,None,356,0,356
+04bfaf976b2edf67ae01ebd57702ae4f135eceaa,39530469+DevitX@users.noreply.github.com,2024-10-30 23:16:22+01:00,noreply@github.com,2024-10-30 23:16:22+01:00,fix(BarView): borderColor hides bar color with large data. close #18185,True,False,1,BarView.ts,ts,2,1,3
+234fb4bc6ed69aa4669d1e0496fc7deda203b204,sz_p@outlook.com,2024-10-29 19:29:52+08:00,sz_p@outlook.com,2024-10-29 19:29:52+08:00,fix: Tooltip textStyle lineHeight does not work in default,True,False,1,tooltipMarkup.ts,ts,1,1,2
+c4eaf0ba89824f6963c4731716fb01daaf3590fd,sz_p@outlook.com,2024-10-24 19:31:05+08:00,sz_p@outlook.com,2024-10-24 19:31:05+08:00,fix: Tooltip textStyle lineHeight does not work in default,True,False,2,TooltipHTMLContent.ts,ts,2,2,4
+c4eaf0ba89824f6963c4731716fb01daaf3590fd,sz_p@outlook.com,2024-10-24 19:31:05+08:00,sz_p@outlook.com,2024-10-24 19:31:05+08:00,fix: Tooltip textStyle lineHeight does not work in default,True,False,2,tooltipMarkup.ts,ts,1,1,2
+ecebf6550bdaa61f69cf0e3096b20bebd5b98269,141122205+ktx-abhay@users.noreply.github.com,2024-10-23 12:50:58+05:30,noreply@github.com,2024-10-23 15:20:58+08:00,"fix(tooltip): fix potential NPE when setting option with `notMerge` strategy (#20435)
+
+* fix: tooltip hove issue on rerender
+
+* fix: use ternary instead of optional chaining
+
+* fix: eslint issue
+
+* remove: unwanted invoke",True,False,1,TooltipHTMLContent.ts,ts,4,1,5
+dd131a0d21b062c153fc138ead6d915ff9d21c05,wojtek.krakowiak@gmail.com,2024-10-15 17:18:07+02:00,wojtek.krakowiak@gmail.com,2024-10-15 17:18:07+02:00,chore: fix formatting issues,True,False,1,ContinuousView.ts,ts,2,2,4
+daf010493c255a206d5b9fba3fe7b293451ed361,sz_p@outlook.com,2024-10-09 18:51:06+08:00,sz_p@outlook.com,2024-10-09 18:51:06+08:00,test(sunburst): sunburst emphasis focus enable relative #20397,True,False,1,sunburst-emphasis-focus.html,html,234,0,234
+26338d20c4f79680cbb3ca005cdeedc92f3cedf9,sz_p@outlook.com,2024-10-09 18:50:45+08:00,sz_p@outlook.com,2024-10-09 18:50:45+08:00,feat(sunburst): sunburst emphasis focus enable relative #20397,True,False,2,SunburstPiece.ts,ts,3,2,5
+26338d20c4f79680cbb3ca005cdeedc92f3cedf9,sz_p@outlook.com,2024-10-09 18:50:45+08:00,sz_p@outlook.com,2024-10-09 18:50:45+08:00,feat(sunburst): sunburst emphasis focus enable relative #20397,True,False,2,SunburstSeries.ts,ts,1,1,2
+6dea1a49faaea38cbbcc7dfaed09993892c04195,sz_p@outlook.com,2024-10-08 19:59:14+08:00,sz_p@outlook.com,2024-10-08 19:59:14+08:00,test: Tooltip textStyle lineHeight does not work in default,True,False,1,tooltip-textStyle-lineHeight.html,html,278,0,278
+f0b90208ba4c247b3b587e1a947360c86cce7b01,sz_p@outlook.com,2024-10-08 19:58:55+08:00,sz_p@outlook.com,2024-10-08 19:58:55+08:00,fix: Tooltip textStyle lineHeight does not work in default,True,False,2,TooltipHTMLContent.ts,ts,4,2,6
+f0b90208ba4c247b3b587e1a947360c86cce7b01,sz_p@outlook.com,2024-10-08 19:58:55+08:00,sz_p@outlook.com,2024-10-08 19:58:55+08:00,fix: Tooltip textStyle lineHeight does not work in default,True,False,2,tooltipMarkup.ts,ts,19,2,21
+4704cbc09b25c5d5ace4d4273f2e1b2c32f621bd,yhen@all-my-life.cn,2024-10-08 10:55:40+08:00,yhen@all-my-life.cn,2024-10-08 10:57:30+08:00,fix(theme): fix legend page text color in dark mode.,True,False,2,dark.ts,ts,3,0,3
+4704cbc09b25c5d5ace4d4273f2e1b2c32f621bd,yhen@all-my-life.cn,2024-10-08 10:55:40+08:00,yhen@all-my-life.cn,2024-10-08 10:57:30+08:00,fix(theme): fix legend page text color in dark mode.,True,False,2,legend.html,html,27,1,28
+d60b241f34a59f61c8887a74b50ce34e4482e78a,yhen@all-my-life.cn,2024-09-29 10:30:32+08:00,yhen@all-my-life.cn,2024-09-29 10:30:56+08:00,test(sankey): tweak test case,True,False,1,sankey.html,html,23,6,29
+3f03c76c095afb0f58da1767bda9ead27e93e5e9,yhen@all-my-life.cn,2024-09-29 10:21:17+08:00,yhen@all-my-life.cn,2024-09-29 10:23:20+08:00,fix(sankey): also allow the `levels` option to be `undefined`,True,False,1,SankeySeries.ts,ts,5,5,10
+9593e0f82699b2020b9754c739a0825f3185c960,yhen@all-my-life.cn,2024-09-29 10:20:04+08:00,yhen@all-my-life.cn,2024-09-29 10:20:36+08:00,test(sankey): fix test case,True,False,1,sankey.html,html,9,13,22
+5b0a153ffe13203e28c8b9e99af3ae6389b0adf4,sz_p@outlook.com,2024-09-28 17:00:13+08:00,sz_p@outlook.com,2024-09-28 17:00:13+08:00,test: #20336 sankey getInitialData function catch undefined data and edges,True,False,1,sankey.html,html,29,2,31
+af72d75bbd5611ec24a3b764a559ca8a50dccbf2,sz_p@outlook.com,2024-09-28 16:44:14+08:00,sz_p@outlook.com,2024-09-28 16:44:14+08:00,fix: #20336 sankey getInitialData function catch undefined data and edges,True,False,1,SankeySeries.ts,ts,2,2,4
+80438d224e55d7e0ce6f542af6574aa6a0878d3b,sz_p@outlook.com,2024-09-25 20:02:59+08:00,sz_p@outlook.com,2024-09-25 20:02:59+08:00,fix: 修复 The polar coord clip should include center point in scatter,True,False,1,Polar.ts,ts,3,2,5
+399fb2f71ee3e41d00dff88f8a87bf51066e5e62,jonoshearman@gmail.com,2024-09-24 15:40:23+03:00,jonoshearman@gmail.com,2024-09-24 15:40:23+03:00,change equality check after PR review,True,False,1,whiskerBoxCommon.ts,ts,1,1,2
+b0ef6c80205978149f01d54c317ea8789649b819,sz_p@outlook.com,2024-09-24 19:21:08+08:00,sz_p@outlook.com,2024-09-24 19:21:08+08:00,test: #20363 The polar coord clip should include center point in scatter,True,False,1,clip.html,html,39,0,39
+69232edc2c5af146c86df56834dc7b4fc0c0e3ae,sz_p@outlook.com,2024-09-24 19:20:49+08:00,sz_p@outlook.com,2024-09-24 19:20:49+08:00,fix: #20363 The polar coord clip should include center point in scatter,True,False,1,Polar.ts,ts,3,3,6
+41ff0b09dc378aa618d094d844f4d07fc81500ed,jonoshearman@gmail.com,2024-09-05 12:04:52-06:00,jonoshearman@gmail.com,2024-09-20 11:21:39+03:00,fix(boxplot) correctly handle series.encode with category axis close #20319,True,False,2,whiskerBoxCommon.ts,ts,14,3,17
+41ff0b09dc378aa618d094d844f4d07fc81500ed,jonoshearman@gmail.com,2024-09-05 12:04:52-06:00,jonoshearman@gmail.com,2024-09-20 11:21:39+03:00,fix(boxplot) correctly handle series.encode with category axis close #20319,True,False,2,boxplot-category.html,html,137,0,137
+b70e4d2a957ffc43993f574b68bab114447fbb8c,viniciuscestari01@gmail.com,2024-09-16 09:27:07-03:00,viniciuscestari01@gmail.com,2024-09-16 09:27:07-03:00,feat(i18n): improve pt-BR translation,True,False,1,langPT-br.ts,ts,12,12,24
+e928a4c2f76e1e6034f7dfd88f1cf5911b738813,41395992+ribeirompl@users.noreply.github.com,2024-09-09 21:06:27+02:00,41395992+ribeirompl@users.noreply.github.com,2024-09-09 21:06:27+02:00,fix(sample): fix minmax final frame handling,True,False,1,DataStore.ts,ts,11,6,17
+a1498d6b5abe658a299345fd3b72f803c59d9ea2,41395992+ribeirompl@users.noreply.github.com,2024-09-02 23:48:38+02:00,41395992+ribeirompl@users.noreply.github.com,2024-09-02 23:48:38+02:00,fix(sample): fix minmax sampling behaviour,True,False,3,DataStore.ts,ts,64,0,64
+a1498d6b5abe658a299345fd3b72f803c59d9ea2,41395992+ribeirompl@users.noreply.github.com,2024-09-02 23:48:38+02:00,41395992+ribeirompl@users.noreply.github.com,2024-09-02 23:48:38+02:00,fix(sample): fix minmax sampling behaviour,True,False,3,SeriesData.ts,ts,19,2,21
+a1498d6b5abe658a299345fd3b72f803c59d9ea2,41395992+ribeirompl@users.noreply.github.com,2024-09-02 23:48:38+02:00,41395992+ribeirompl@users.noreply.github.com,2024-09-02 23:48:38+02:00,fix(sample): fix minmax sampling behaviour,True,False,3,dataSample.ts,ts,3,16,19
+0ffc94b168eddeda18bde4b7802f9607a568d137,m.ayazadeh@gmail.com,2024-09-01 18:34:55-07:00,noreply@github.com,2024-09-02 09:34:55+08:00,"feat(i18n): add Persian(FA) translation (#20312)
+
+* feat(i18n): add persian(fa) language
+
+* Feat(i18n): add persian(fa) language
+
+* fix(i18n): move Persian(FA) translation to src/i18n
+
+---------
+
+Co-authored-by: ayazadeh <50027@hfz.com>
+Co-authored-by: plainheart <yhen@all-my-life.cn>",True,False,1,langFA.ts,ts,144,0,144
+65ac3c3c9c433e117a27beed30ede63419e08208,zwl.sjtu@gmail.com,2024-08-28 14:43:22+08:00,zwl.sjtu@gmail.com,2024-08-28 14:43:22+08:00,style(pictorialBar): remove console log,True,False,1,PictorialBarView.ts,ts,0,1,1
+fd51f71d88344533934f2061167169f973231b4a,zwl.sjtu@gmail.com,2024-08-28 14:41:09+08:00,zwl.sjtu@gmail.com,2024-08-28 14:41:09+08:00,fix(pictorialBar): symbol should not flip with zero data #20260,True,False,1,PictorialBarView.ts,ts,2,1,3
+bc065fd0cb9b4b2cf10e8f38e2df5d95329b731f,zwl.sjtu@gmail.com,2024-08-27 18:26:06+08:00,zwl.sjtu@gmail.com,2024-08-27 18:26:06+08:00,test(pictorial): add test case when value is 0,True,False,1,pictorial-zero-value.html,html,54,0,54
+88345fe6bba37f058995cb8681c2d9ebc0a4bf22,40021217+kingyue737@users.noreply.github.com,2024-08-20 19:18:41+08:00,yjin@nustarnuclear.com,2024-08-23 18:41:19+08:00,fix(gauge): fix z2 is negative when maxVal is negative,True,False,1,GaugeView.ts,ts,1,1,2
+cce64807e10d77e1f7e23d4e1e92d145270484ed,wojtek.krakowiak@gmail.com,2024-08-13 12:04:42+02:00,wojtek.krakowiak@gmail.com,2024-08-13 12:04:42+02:00,test: fix visualMap-continuous test so it renders all cases,True,False,1,visualMap-continuous.html,html,627,664,1291
+9706b507fef97e2f64f0fe94ef5c2443320f990e,wojtek.krakowiak@gmail.com,2024-08-13 11:59:23+02:00,wojtek.krakowiak@gmail.com,2024-08-13 11:59:23+02:00,fix: adjust only label position below the maximum range end,True,False,1,ContinuousView.ts,ts,13,4,17
+3ad256a595e3c1f33cd9e08def87b6d5eb3c6996,wojtek.krakowiak@gmail.com,2024-08-12 15:09:12+02:00,wojtek.krakowiak@gmail.com,2024-08-12 15:09:12+02:00,fix(visualMap): handle label collides with horizontal size visualMap,True,False,3,ContinuousView.ts,ts,5,2,7
+3ad256a595e3c1f33cd9e08def87b6d5eb3c6996,wojtek.krakowiak@gmail.com,2024-08-12 15:09:12+02:00,wojtek.krakowiak@gmail.com,2024-08-12 15:09:12+02:00,fix(visualMap): handle label collides with horizontal size visualMap,True,False,3,visualMap-continuous.html,html,118,0,118
+3ad256a595e3c1f33cd9e08def87b6d5eb3c6996,wojtek.krakowiak@gmail.com,2024-08-12 15:09:12+02:00,wojtek.krakowiak@gmail.com,2024-08-12 15:09:12+02:00,fix(visualMap): handle label collides with horizontal size visualMap,True,False,3,visualMap-layout.html,html,90,0,90
+3bd3c7cf00a6caa8975aa48db87473c2e2949a09,zwl.sjtu@gmail.com,2024-08-12 15:12:08+08:00,zwl.sjtu@gmail.com,2024-08-12 15:12:08+08:00,fix(time): bar bandWidth with inversed time axis #20068,True,False,1,axisHelper.ts,ts,1,1,2
+7c7a3ed89a88b0dbdba71dc4e779f5e832a42f15,najambutt195@gmail.com,2024-08-06 16:31:12+02:00,noreply@github.com,2024-08-06 22:31:12+08:00,feat(i18n): add Swedish(SV) translation (#20227),True,False,1,langSV.ts,ts,144,0,144
+b1a237448b11bcb326c3a61339c369c9ccded5ed,semla.dev@gmail.com,2024-08-02 09:08:53+02:00,semla.dev@gmail.com,2024-08-02 09:08:53+02:00,refactor(aria): rename property to exclude,True,False,3,types.ts,ts,1,1,2
+b1a237448b11bcb326c3a61339c369c9ccded5ed,semla.dev@gmail.com,2024-08-02 09:08:53+02:00,semla.dev@gmail.com,2024-08-02 09:08:53+02:00,refactor(aria): rename property to exclude,True,False,3,aria.ts,ts,4,3,7
+b1a237448b11bcb326c3a61339c369c9ccded5ed,semla.dev@gmail.com,2024-08-02 09:08:53+02:00,semla.dev@gmail.com,2024-08-02 09:08:53+02:00,refactor(aria): rename property to exclude,True,False,3,aria-columns-exclude.test.ts,ts,1,1,2
+aeb078eb769064e8645477f69b860207bfb8a75d,semla.dev@gmail.com,2024-08-01 12:33:12+02:00,semla.dev@gmail.com,2024-08-01 12:33:12+02:00,feat(aria): allows excluding data in aria-label,True,False,3,types.ts,ts,2,1,3
+aeb078eb769064e8645477f69b860207bfb8a75d,semla.dev@gmail.com,2024-08-01 12:33:12+02:00,semla.dev@gmail.com,2024-08-01 12:33:12+02:00,feat(aria): allows excluding data in aria-label,True,False,3,aria.ts,ts,3,1,4
+aeb078eb769064e8645477f69b860207bfb8a75d,semla.dev@gmail.com,2024-08-01 12:33:12+02:00,semla.dev@gmail.com,2024-08-01 12:33:12+02:00,feat(aria): allows excluding data in aria-label,True,False,3,aria-columns-exclude.test.ts,ts,97,0,97
+ce500cf22a8413452e3d9da1dbe4df499bbf5dc2,huanxiqiao@qq.com,2024-07-29 12:39:41+08:00,noreply@github.com,2024-07-29 12:39:41+08:00,feature(treemap): add custom cursor properties for treemap (#20113),True,False,3,TreemapSeries.ts,ts,3,1,4
+ce500cf22a8413452e3d9da1dbe4df499bbf5dc2,huanxiqiao@qq.com,2024-07-29 12:39:41+08:00,noreply@github.com,2024-07-29 12:39:41+08:00,feature(treemap): add custom cursor properties for treemap (#20113),True,False,3,TreemapView.ts,ts,3,0,3
+ce500cf22a8413452e3d9da1dbe4df499bbf5dc2,huanxiqiao@qq.com,2024-07-29 12:39:41+08:00,noreply@github.com,2024-07-29 12:39:41+08:00,feature(treemap): add custom cursor properties for treemap (#20113),True,False,3,treemap-cursor.html,html,193,0,193
+5fb9e9d5ec4785a8da196b4e5208a7161251aa17,zwl.sjtu@gmail.com,2024-07-24 14:50:46+08:00,zwl.sjtu@gmail.com,2024-07-24 14:50:46+08:00,fix(axis): ticks overflowing grid area with dataZoom #20185,True,False,2,axisTickLabelBuilder.ts,ts,7,2,9
+5fb9e9d5ec4785a8da196b4e5208a7161251aa17,zwl.sjtu@gmail.com,2024-07-24 14:50:46+08:00,zwl.sjtu@gmail.com,2024-07-24 14:50:46+08:00,fix(axis): ticks overflowing grid area with dataZoom #20185,True,False,2,axis-customTicks.html,html,186,0,186
+72e3f8016bad75fc742f5095d9cc18157149cc7a,49699333+dependabot[bot]@users.noreply.github.com,2024-07-23 02:39:06+00:00,noreply@github.com,2024-07-23 02:39:06+00:00,"chore(deps-dev): bump socket.io-parser in /test/runTest
+
+Bumps [socket.io-parser](https://github.com/Automattic/socket.io-parser) from 3.3.3 to 3.3.4.
+- [Release notes](https://github.com/Automattic/socket.io-parser/releases)
+- [Changelog](https://github.com/socketio/socket.io-parser/blob/3.3.4/CHANGELOG.md)
+- [Commits](https://github.com/Automattic/socket.io-parser/compare/3.3.3...3.3.4)
+
+---
+updated-dependencies:
+- dependency-name: socket.io-parser
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",True,False,1,package-lock.json,json,6,6,12
+89a15af59084e1ada5bb984154674e2d6704d6ec,yhen@all-my-life.cn,2024-07-15 20:28:40+08:00,noreply@github.com,2024-07-15 20:28:40+08:00,fix(candelstick): still enable emphasis state by default,True,False,1,CandlestickSeries.ts,ts,0,2,2
+86db174f89e2719b7ee3b1d35c4ae26906faa7bc,yhen@all-my-life.cn,2024-07-15 17:11:09+08:00,yhen@all-my-life.cn,2024-07-15 17:15:47+08:00,perf(line): prebind context of `_changePolyState` function to current instance rather than create an new function to reduce runtime memory cost (fix #20151),True,False,1,LineView.ts,ts,3,3,6
+13fe1d903715f1edf1ec13a2f556ec44028d8794,yhen@all-my-life.cn,2024-07-11 22:57:22+08:00,noreply@github.com,2024-07-11 22:57:22+08:00,fix(legend): return allSelectedMap rather than selectedMap,True,False,1,legendAction.ts,ts,2,2,4
+6ce6ba312d85537f036e23fc43279313c2855eae,yhen@all-my-life.cn,2024-07-11 17:14:12+08:00,yhen@all-my-life.cn,2024-07-11 17:15:20+08:00,fix(legend): remove duplicated type of legend select method name,True,False,1,legendAction.ts,ts,1,4,5
+33249dcdc33ff2de39026e9d117a644bb22e31a8,yhen@all-my-life.cn,2024-07-11 16:31:53+08:00,yhen@all-my-life.cn,2024-07-11 16:52:31+08:00,chore(workflow): fix pr-preview workflow,True,False,1,pr-preview.yml,yml,3,0,3
+c7f672f8e9df5818d186c4c58b946ad13e88e69d,yhen@all-my-life.cn,2024-07-11 13:39:06+08:00,yhen@all-my-life.cn,2024-07-11 13:39:35+08:00,fix(legend): remove unused import,True,False,1,legendAction.ts,ts,1,1,2
+cc26ef3788861723e9b295172694bd69d9856f27,yhen@all-my-life.cn,2024-07-11 13:34:12+08:00,yhen@all-my-life.cn,2024-07-11 13:36:37+08:00,fix(legend): fix legend item is selected but corresponding series may not show after dispatching `legendAllSelect` action.,True,False,3,legendAction.ts,ts,48,29,77
+cc26ef3788861723e9b295172694bd69d9856f27,yhen@all-my-life.cn,2024-07-11 13:34:12+08:00,yhen@all-my-life.cn,2024-07-11 13:36:37+08:00,fix(legend): fix legend item is selected but corresponding series may not show after dispatching `legendAllSelect` action.,True,False,3,legend-action.html,html,34,4,38
+cc26ef3788861723e9b295172694bd69d9856f27,yhen@all-my-life.cn,2024-07-11 13:34:12+08:00,yhen@all-my-life.cn,2024-07-11 13:36:37+08:00,fix(legend): fix legend item is selected but corresponding series may not show after dispatching `legendAllSelect` action.,True,False,3,legend-action.json,json,1,1,2
+403dce221e5b368e44b402a4491bab137e414d35,yu.zhang_c@thundersoft.com,2024-07-09 17:39:45+08:00,yu.zhang_c@thundersoft.com,2024-07-09 17:39:45+08:00,fix(pie): fix some labels may not show #20074,True,False,1,labelLayout.ts,ts,1,1,2
+7564282bacd79954e3c84b438d7d503aaa42e740,yhen@all-my-life.cn,2024-07-09 10:01:03+08:00,yhen@all-my-life.cn,2024-07-09 10:01:34+08:00,test(legend): add a test case for legend action,True,False,3,legend-action.html,html,106,0,106
+7564282bacd79954e3c84b438d7d503aaa42e740,yhen@all-my-life.cn,2024-07-09 10:01:03+08:00,yhen@all-my-life.cn,2024-07-09 10:01:34+08:00,test(legend): add a test case for legend action,True,False,3,__meta__.json,json,1,0,1
+7564282bacd79954e3c84b438d7d503aaa42e740,yhen@all-my-life.cn,2024-07-09 10:01:03+08:00,yhen@all-my-life.cn,2024-07-09 10:01:34+08:00,test(legend): add a test case for legend action,True,False,3,legend-action.json,json,1,0,1
+1166f2d2634d1e672ba6a067ce2698011563d58c,yhen@all-my-life.cn,2024-07-08 18:40:53+08:00,yhen@all-my-life.cn,2024-07-09 09:41:10+08:00,fix(legend): fix legend action is not isolated from other legend components (resolves #20128),True,False,2,LegendView.ts,ts,2,1,3
+1166f2d2634d1e672ba6a067ce2698011563d58c,yhen@all-my-life.cn,2024-07-08 18:40:53+08:00,yhen@all-my-life.cn,2024-07-09 09:41:10+08:00,fix(legend): fix legend action is not isolated from other legend components (resolves #20128),True,False,2,legendAction.ts,ts,16,10,26
+35fa0cb7051da0a10bbc5deb5b91d67f1e253782,yhen@all-my-life.cn,2024-07-08 10:54:45+08:00,yhen@all-my-life.cn,2024-07-08 10:56:32+08:00,chore: enable prompt to use typescript from workspace,True,False,1,settings.json,json,3,2,5
+a4d803f6c0bffc9d6b3abd385111682d7b5d7de5,huanxiqiao@qq.com,2024-07-04 14:13:58+08:00,huanxiqiao@qq.com,2024-07-04 14:13:58+08:00,feature(axis): add feature to remove SplitLine on specified tick,True,False,5,CartesianAxisView.ts,ts,9,2,11
+a4d803f6c0bffc9d6b3abd385111682d7b5d7de5,huanxiqiao@qq.com,2024-07-04 14:13:58+08:00,huanxiqiao@qq.com,2024-07-04 14:13:58+08:00,feature(axis): add feature to remove SplitLine on specified tick,True,False,5,Axis.ts,ts,2,2,4
+a4d803f6c0bffc9d6b3abd385111682d7b5d7de5,huanxiqiao@qq.com,2024-07-04 14:13:58+08:00,huanxiqiao@qq.com,2024-07-04 14:13:58+08:00,feature(axis): add feature to remove SplitLine on specified tick,True,False,5,axisCommonTypes.ts,ts,5,1,6
+a4d803f6c0bffc9d6b3abd385111682d7b5d7de5,huanxiqiao@qq.com,2024-07-04 14:13:58+08:00,huanxiqiao@qq.com,2024-07-04 14:13:58+08:00,feature(axis): add feature to remove SplitLine on specified tick,True,False,5,axisDefault.ts,ts,2,0,2
+a4d803f6c0bffc9d6b3abd385111682d7b5d7de5,huanxiqiao@qq.com,2024-07-04 14:13:58+08:00,huanxiqiao@qq.com,2024-07-04 14:13:58+08:00,feature(axis): add feature to remove SplitLine on specified tick,True,False,5,axis-splitLine.html,html,83,0,83
+e4061f69e6eb38cccf0ca5d1c99fb48414e871df,yhen@all-my-life.cn,2024-07-02 12:57:03+08:00,yhen@all-my-life.cn,2024-07-02 12:57:22+08:00,fix(candlestick): disable emphasis state by default for forward compatibility,True,False,1,CandlestickSeries.ts,ts,2,1,3
+e6dab043c24dba2e7c7eaba2d5529a3ea861c4da,yhen@all-my-life.cn,2024-07-02 12:12:25+08:00,yhen@all-my-life.cn,2024-07-02 12:14:37+08:00,fix(candlestick): add back missing support for non-normal states since v5.0.0,True,False,5,CandlestickView.ts,ts,17,6,23
+e6dab043c24dba2e7c7eaba2d5529a3ea861c4da,yhen@all-my-life.cn,2024-07-02 12:12:25+08:00,yhen@all-my-life.cn,2024-07-02 12:14:37+08:00,fix(candlestick): add back missing support for non-normal states since v5.0.0,True,False,5,candlestickVisual.ts,ts,15,16,31
+e6dab043c24dba2e7c7eaba2d5529a3ea861c4da,yhen@all-my-life.cn,2024-07-02 12:12:25+08:00,yhen@all-my-life.cn,2024-07-02 12:14:37+08:00,fix(candlestick): add back missing support for non-normal states since v5.0.0,True,False,5,candlestick-case.html,html,50,1,51
+e6dab043c24dba2e7c7eaba2d5529a3ea861c4da,yhen@all-my-life.cn,2024-07-02 12:12:25+08:00,yhen@all-my-life.cn,2024-07-02 12:14:37+08:00,fix(candlestick): add back missing support for non-normal states since v5.0.0,True,False,5,__meta__.json,json,1,1,2
+e6dab043c24dba2e7c7eaba2d5529a3ea861c4da,yhen@all-my-life.cn,2024-07-02 12:12:25+08:00,yhen@all-my-life.cn,2024-07-02 12:14:37+08:00,fix(candlestick): add back missing support for non-normal states since v5.0.0,True,False,5,candlestick-case.json,json,1,1,2
+369cb035030124e0c1fe2c74a882781c0e90a556,141796004+fandi-1205@users.noreply.github.com,2024-06-28 15:29:41+08:00,noreply@github.com,2024-06-28 15:29:41+08:00,fix(custom): grid area clipping in custom series #19993 (#20043),True,False,2,createClipPathFromCoordSys.ts,ts,1,1,2
+369cb035030124e0c1fe2c74a882781c0e90a556,141796004+fandi-1205@users.noreply.github.com,2024-06-28 15:29:41+08:00,noreply@github.com,2024-06-28 15:29:41+08:00,fix(custom): grid area clipping in custom series #19993 (#20043),True,False,2,clip-custom.html,html,127,0,127
+05ac7dd6efb7b7a512735552a90ba76fe9513508,zwl.sjtu@gmail.com,2024-06-28 10:43:15+08:00,zwl.sjtu@gmail.com,2024-06-28 10:43:15+08:00,fix(line): step areaStyle bug #20021,True,False,2,LineView.ts,ts,33,17,50
+05ac7dd6efb7b7a512735552a90ba76fe9513508,zwl.sjtu@gmail.com,2024-06-28 10:43:15+08:00,zwl.sjtu@gmail.com,2024-06-28 10:43:15+08:00,fix(line): step areaStyle bug #20021,True,False,2,line-step.html,html,105,0,105
+dd5d624cd9131b6281542a4b92461820f246b108,zwl.sjtu@gmail.com,2024-06-27 15:38:59+08:00,zwl.sjtu@gmail.com,2024-06-27 15:38:59+08:00,test(dataZoom): add test cases,True,False,2,SliderZoomView.ts,ts,3,3,6
+dd5d624cd9131b6281542a4b92461820f246b108,zwl.sjtu@gmail.com,2024-06-27 15:38:59+08:00,zwl.sjtu@gmail.com,2024-06-27 15:38:59+08:00,test(dataZoom): add test cases,True,False,2,dataZoom-handleLabelShow.html,html,208,0,208
+70f0b5a580347685d8a903c83fac5e910a9d083b,zwl.sjtu@gmail.com,2024-06-26 18:31:44+08:00,zwl.sjtu@gmail.com,2024-06-26 18:31:44+08:00,feat(dataZoom): handle labels can be configured when to show #19676,True,False,2,SliderZoomModel.ts,ts,5,0,5
+70f0b5a580347685d8a903c83fac5e910a9d083b,zwl.sjtu@gmail.com,2024-06-26 18:31:44+08:00,zwl.sjtu@gmail.com,2024-06-26 18:31:44+08:00,feat(dataZoom): handle labels can be configured when to show #19676,True,False,2,SliderZoomView.ts,ts,14,8,22
+769bfef7160c770c1e8b218bda5a37fc6ab34834,yu.zhang_c@thundersoft.com,2024-06-25 17:01:24+08:00,yu.zhang_c@thundersoft.com,2024-06-25 17:01:24+08:00,fix(pie): Missing pie chart label display. close #20070,True,False,1,labelLayout.ts,ts,1,1,2
+64539fed9d35d0bb1ebc4a22fbcfb6cd6e219ae8,viniciuscestari01@gmail.com,2024-06-21 08:11:32-03:00,viniciuscestari01@gmail.com,2024-06-21 08:11:32-03:00,"refactor: move dom.setAttribute('role', 'img') to reduce duplication",True,False,1,aria.ts,ts,2,2,4
+b15b918b13ea2316025a98ab0d296db75750f5ce,viniciuscestari01@gmail.com,2024-06-20 09:17:31-03:00,viniciuscestari01@gmail.com,2024-06-20 09:17:31-03:00,fix: change ARIA role from region to img for accessibility,True,False,1,aria.ts,ts,2,2,4
+562889eed5a63afd195723935bc5b001bce7fceb,yhen@all-my-life.cn,2024-06-20 10:44:37+08:00,yhen@all-my-life.cn,2024-06-20 10:47:25+08:00,chore(workflow): use forked workflow deps for timely update & fix typo,True,False,2,pr-preview.yml,yml,3,4,7
+562889eed5a63afd195723935bc5b001bce7fceb,yhen@all-my-life.cn,2024-06-20 10:44:37+08:00,yhen@all-my-life.cn,2024-06-20 10:47:25+08:00,chore(workflow): use forked workflow deps for timely update & fix typo,True,False,2,teardown-pr-preview.yml,yml,1,1,2
+d3d974f7ccb91be55590148b6bde6790820dd97e,viniciuscestari01@gmail.com,2024-06-19 14:26:43-03:00,viniciuscestari01@gmail.com,2024-06-19 14:26:43-03:00,feat: add role region to div tag when aria: true,True,False,1,aria.ts,ts,2,0,2
+34889d9345f917b534bbbf8e7e584e4301a82fbd,bm2736892@gmail.com,2024-06-19 19:39:37+08:00,bm2736892@gmail.com,2024-06-19 19:39:37+08:00,build release,True,False,15,echarts.common.js,js,12,0,12
+34889d9345f917b534bbbf8e7e584e4301a82fbd,bm2736892@gmail.com,2024-06-19 19:39:37+08:00,bm2736892@gmail.com,2024-06-19 19:39:37+08:00,build release,True,False,15,echarts.common.js.map,map,1,1,2
+34889d9345f917b534bbbf8e7e584e4301a82fbd,bm2736892@gmail.com,2024-06-19 19:39:37+08:00,bm2736892@gmail.com,2024-06-19 19:39:37+08:00,build release,True,False,15,echarts.common.min.js,js,2,2,4
+34889d9345f917b534bbbf8e7e584e4301a82fbd,bm2736892@gmail.com,2024-06-19 19:39:37+08:00,bm2736892@gmail.com,2024-06-19 19:39:37+08:00,build release,True,False,15,echarts.esm.js,js,13,1,14
+34889d9345f917b534bbbf8e7e584e4301a82fbd,bm2736892@gmail.com,2024-06-19 19:39:37+08:00,bm2736892@gmail.com,2024-06-19 19:39:37+08:00,build release,True,False,15,echarts.esm.js.map,map,1,1,2
+34889d9345f917b534bbbf8e7e584e4301a82fbd,bm2736892@gmail.com,2024-06-19 19:39:37+08:00,bm2736892@gmail.com,2024-06-19 19:39:37+08:00,build release,True,False,15,echarts.esm.min.js,js,1,1,2
+34889d9345f917b534bbbf8e7e584e4301a82fbd,bm2736892@gmail.com,2024-06-19 19:39:37+08:00,bm2736892@gmail.com,2024-06-19 19:39:37+08:00,build release,True,False,15,echarts.esm.min.mjs,mjs,1,1,2
+34889d9345f917b534bbbf8e7e584e4301a82fbd,bm2736892@gmail.com,2024-06-19 19:39:37+08:00,bm2736892@gmail.com,2024-06-19 19:39:37+08:00,build release,True,False,15,echarts.esm.mjs,mjs,13,1,14
+34889d9345f917b534bbbf8e7e584e4301a82fbd,bm2736892@gmail.com,2024-06-19 19:39:37+08:00,bm2736892@gmail.com,2024-06-19 19:39:37+08:00,build release,True,False,15,echarts.esm.mjs.map,map,1,1,2
+34889d9345f917b534bbbf8e7e584e4301a82fbd,bm2736892@gmail.com,2024-06-19 19:39:37+08:00,bm2736892@gmail.com,2024-06-19 19:39:37+08:00,build release,True,False,15,echarts.js,js,12,0,12
+34889d9345f917b534bbbf8e7e584e4301a82fbd,bm2736892@gmail.com,2024-06-19 19:39:37+08:00,bm2736892@gmail.com,2024-06-19 19:39:37+08:00,build release,True,False,15,echarts.js.map,map,1,1,2
+34889d9345f917b534bbbf8e7e584e4301a82fbd,bm2736892@gmail.com,2024-06-19 19:39:37+08:00,bm2736892@gmail.com,2024-06-19 19:39:37+08:00,build release,True,False,15,echarts.min.js,js,1,1,2
+34889d9345f917b534bbbf8e7e584e4301a82fbd,bm2736892@gmail.com,2024-06-19 19:39:37+08:00,bm2736892@gmail.com,2024-06-19 19:39:37+08:00,build release,True,False,15,echarts.simple.js,js,1,0,1
+34889d9345f917b534bbbf8e7e584e4301a82fbd,bm2736892@gmail.com,2024-06-19 19:39:37+08:00,bm2736892@gmail.com,2024-06-19 19:39:37+08:00,build release,True,False,15,echarts.simple.js.map,map,1,1,2
+34889d9345f917b534bbbf8e7e584e4301a82fbd,bm2736892@gmail.com,2024-06-19 19:39:37+08:00,bm2736892@gmail.com,2024-06-19 19:39:37+08:00,build release,True,False,15,echarts.simple.min.js,js,1,1,2
+62210761d6e4e56adaef0d08b9f0b26c80151733,yhen@all-my-life.cn,2024-06-19 11:21:09+08:00,yhen@all-my-life.cn,2024-06-19 11:21:47+08:00,test(tooltip): update test case for tooltip xss,True,False,3,__meta__.json,json,1,1,2
+62210761d6e4e56adaef0d08b9f0b26c80151733,yhen@all-my-life.cn,2024-06-19 11:21:09+08:00,yhen@all-my-life.cn,2024-06-19 11:21:47+08:00,test(tooltip): update test case for tooltip xss,True,False,3,tooltip.json,json,1,1,2
+62210761d6e4e56adaef0d08b9f0b26c80151733,yhen@all-my-life.cn,2024-06-19 11:21:09+08:00,yhen@all-my-life.cn,2024-06-19 11:21:47+08:00,test(tooltip): update test case for tooltip xss,True,False,3,tooltip.html,html,38,9,47
+c1727a65fcef3ab6ac72e34856f918386970c19a,yhen@all-my-life.cn,2024-06-19 11:19:25+08:00,yhen@all-my-life.cn,2024-06-19 11:20:59+08:00,refactor(tooltip): add `encodeHTMLContent` option to specify whether the content should be encoded by default,True,False,3,TooltipView.ts,ts,13,1,14
+c1727a65fcef3ab6ac72e34856f918386970c19a,yhen@all-my-life.cn,2024-06-19 11:19:25+08:00,yhen@all-my-life.cn,2024-06-19 11:20:59+08:00,refactor(tooltip): add `encodeHTMLContent` option to specify whether the content should be encoded by default,True,False,3,graphic.ts,ts,2,4,6
+c1727a65fcef3ab6ac72e34856f918386970c19a,yhen@all-my-life.cn,2024-06-19 11:19:25+08:00,yhen@all-my-life.cn,2024-06-19 11:20:59+08:00,refactor(tooltip): add `encodeHTMLContent` option to specify whether the content should be encoded by default,True,False,3,types.ts,ts,6,0,6
+ad947d661526dd0a64d7ee55fbd200478381a3cc,yhen@all-my-life.cn,2024-06-18 18:45:50+08:00,yhen@all-my-life.cn,2024-06-18 18:47:52+08:00,fix(tooltip): fix tooltip XSS issue when legend name is HTML string,True,False,2,graphic.ts,ts,3,1,4
+ad947d661526dd0a64d7ee55fbd200478381a3cc,yhen@all-my-life.cn,2024-06-18 18:45:50+08:00,yhen@all-my-life.cn,2024-06-18 18:47:52+08:00,fix(tooltip): fix tooltip XSS issue when legend name is HTML string,True,False,2,tooltip.html,html,28,23,51
+4c015dd9f5ef91ac81ead86bb487a4b41af6e962,49699333+dependabot[bot]@users.noreply.github.com,2024-06-18 10:33:47+00:00,noreply@github.com,2024-06-18 10:33:47+00:00,"chore(deps-dev): bump ws from 7.5.7 to 7.5.10
+
+Bumps [ws](https://github.com/websockets/ws) from 7.5.7 to 7.5.10.
+- [Release notes](https://github.com/websockets/ws/releases)
+- [Commits](https://github.com/websockets/ws/compare/7.5.7...7.5.10)
+
+---
+updated-dependencies:
+- dependency-name: ws
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",True,False,1,package-lock.json,json,6,6,12
+486f24f6db1d030f7407bffbd3bab4068acbb2c6,bm2736892@gmail.com,2024-06-18 10:32:57+08:00,bm2736892@gmail.com,2024-06-18 10:32:57+08:00,change version from 5.6.0 to 5.5.1,True,False,12,echarts.common.js,js,1,1,2
+486f24f6db1d030f7407bffbd3bab4068acbb2c6,bm2736892@gmail.com,2024-06-18 10:32:57+08:00,bm2736892@gmail.com,2024-06-18 10:32:57+08:00,change version from 5.6.0 to 5.5.1,True,False,12,echarts.common.js.map,map,1,1,2
+486f24f6db1d030f7407bffbd3bab4068acbb2c6,bm2736892@gmail.com,2024-06-18 10:32:57+08:00,bm2736892@gmail.com,2024-06-18 10:32:57+08:00,change version from 5.6.0 to 5.5.1,True,False,12,echarts.common.min.js,js,1,1,2
+486f24f6db1d030f7407bffbd3bab4068acbb2c6,bm2736892@gmail.com,2024-06-18 10:32:57+08:00,bm2736892@gmail.com,2024-06-18 10:32:57+08:00,change version from 5.6.0 to 5.5.1,True,False,12,echarts.js,js,1,1,2
+486f24f6db1d030f7407bffbd3bab4068acbb2c6,bm2736892@gmail.com,2024-06-18 10:32:57+08:00,bm2736892@gmail.com,2024-06-18 10:32:57+08:00,change version from 5.6.0 to 5.5.1,True,False,12,echarts.js.map,map,1,1,2
+486f24f6db1d030f7407bffbd3bab4068acbb2c6,bm2736892@gmail.com,2024-06-18 10:32:57+08:00,bm2736892@gmail.com,2024-06-18 10:32:57+08:00,change version from 5.6.0 to 5.5.1,True,False,12,echarts.min.js,js,1,1,2
+486f24f6db1d030f7407bffbd3bab4068acbb2c6,bm2736892@gmail.com,2024-06-18 10:32:57+08:00,bm2736892@gmail.com,2024-06-18 10:32:57+08:00,change version from 5.6.0 to 5.5.1,True,False,12,echarts.simple.js,js,1,1,2
+486f24f6db1d030f7407bffbd3bab4068acbb2c6,bm2736892@gmail.com,2024-06-18 10:32:57+08:00,bm2736892@gmail.com,2024-06-18 10:32:57+08:00,change version from 5.6.0 to 5.5.1,True,False,12,echarts.simple.js.map,map,1,1,2
+486f24f6db1d030f7407bffbd3bab4068acbb2c6,bm2736892@gmail.com,2024-06-18 10:32:57+08:00,bm2736892@gmail.com,2024-06-18 10:32:57+08:00,change version from 5.6.0 to 5.5.1,True,False,12,echarts.simple.min.js,js,1,1,2
+486f24f6db1d030f7407bffbd3bab4068acbb2c6,bm2736892@gmail.com,2024-06-18 10:32:57+08:00,bm2736892@gmail.com,2024-06-18 10:32:57+08:00,change version from 5.6.0 to 5.5.1,True,False,12,package-lock.json,json,2,2,4
+486f24f6db1d030f7407bffbd3bab4068acbb2c6,bm2736892@gmail.com,2024-06-18 10:32:57+08:00,bm2736892@gmail.com,2024-06-18 10:32:57+08:00,change version from 5.6.0 to 5.5.1,True,False,12,package.json,json,1,1,2
+486f24f6db1d030f7407bffbd3bab4068acbb2c6,bm2736892@gmail.com,2024-06-18 10:32:57+08:00,bm2736892@gmail.com,2024-06-18 10:32:57+08:00,change version from 5.6.0 to 5.5.1,True,False,12,echarts.ts,ts,1,1,2
+ca9ed741e7b34c517202a34a392826ed69bde9ea,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,chore: release 5.6.0,True,False,18,echarts.common.js,js,83,19,102
+ca9ed741e7b34c517202a34a392826ed69bde9ea,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,chore: release 5.6.0,True,False,18,echarts.common.js.map,map,1,1,2
+ca9ed741e7b34c517202a34a392826ed69bde9ea,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,chore: release 5.6.0,True,False,18,echarts.common.min.js,js,2,2,4
+ca9ed741e7b34c517202a34a392826ed69bde9ea,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,chore: release 5.6.0,True,False,18,echarts.esm.js,js,123,22,145
+ca9ed741e7b34c517202a34a392826ed69bde9ea,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,chore: release 5.6.0,True,False,18,echarts.esm.js.map,map,1,1,2
+ca9ed741e7b34c517202a34a392826ed69bde9ea,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,chore: release 5.6.0,True,False,18,echarts.esm.min.js,js,2,2,4
+ca9ed741e7b34c517202a34a392826ed69bde9ea,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,chore: release 5.6.0,True,False,18,echarts.esm.min.mjs,mjs,2,2,4
+ca9ed741e7b34c517202a34a392826ed69bde9ea,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,chore: release 5.6.0,True,False,18,echarts.esm.mjs,mjs,123,22,145
+ca9ed741e7b34c517202a34a392826ed69bde9ea,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,chore: release 5.6.0,True,False,18,echarts.esm.mjs.map,map,1,1,2
+ca9ed741e7b34c517202a34a392826ed69bde9ea,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,chore: release 5.6.0,True,False,18,echarts.js,js,123,22,145
+ca9ed741e7b34c517202a34a392826ed69bde9ea,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,chore: release 5.6.0,True,False,18,echarts.js.map,map,1,1,2
+ca9ed741e7b34c517202a34a392826ed69bde9ea,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,chore: release 5.6.0,True,False,18,echarts.min.js,js,2,2,4
+ca9ed741e7b34c517202a34a392826ed69bde9ea,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,chore: release 5.6.0,True,False,18,echarts.simple.js,js,72,17,89
+ca9ed741e7b34c517202a34a392826ed69bde9ea,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,chore: release 5.6.0,True,False,18,echarts.simple.js.map,map,1,1,2
+ca9ed741e7b34c517202a34a392826ed69bde9ea,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,chore: release 5.6.0,True,False,18,echarts.simple.min.js,js,2,2,4
+ca9ed741e7b34c517202a34a392826ed69bde9ea,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,chore: release 5.6.0,True,False,18,package-lock.json,json,9,9,18
+ca9ed741e7b34c517202a34a392826ed69bde9ea,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,chore: release 5.6.0,True,False,18,package.json,json,2,2,4
+ca9ed741e7b34c517202a34a392826ed69bde9ea,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,bm2736892@gmail.com,2024-06-17 22:52:20+08:00,chore: release 5.6.0,True,False,18,echarts.ts,ts,2,2,4
+71541f85af970bfe78cf397f177d2e23a08a1104,sushuang0322@gmail.com,2024-06-14 02:42:37+08:00,sushuang0322@gmail.com,2024-06-14 02:42:37+08:00,fix: In users' .d.ts `import('echarts/types/dist/shared')` can not visit `'echarts/types/dist/shared.d.ts'` since v5.5.0. Fix it. Fix #19663.,True,False,2,package.README.md,md,4,1,5
+71541f85af970bfe78cf397f177d2e23a08a1104,sushuang0322@gmail.com,2024-06-14 02:42:37+08:00,sushuang0322@gmail.com,2024-06-14 02:42:37+08:00,fix: In users' .d.ts `import('echarts/types/dist/shared')` can not visit `'echarts/types/dist/shared.d.ts'` since v5.5.0. Fix it. Fix #19663.,True,False,2,package.json,json,8,0,8
+0ee94981f56dc122010357e1e5123362616d2d54,zwl.sjtu@gmail.com,2024-06-11 18:20:44+08:00,zwl.sjtu@gmail.com,2024-06-11 18:20:44+08:00,test(treemap): record test visual action for #18304,True,False,2,__meta__.json,json,1,0,1
+0ee94981f56dc122010357e1e5123362616d2d54,zwl.sjtu@gmail.com,2024-06-11 18:20:44+08:00,zwl.sjtu@gmail.com,2024-06-11 18:20:44+08:00,test(treemap): record test visual action for #18304,True,False,2,treemap-scaleLimit.json,json,1,0,1
+7faa2e17604e2bd7321d3d67cd5cbf1df7a3b565,zwl.sjtu@gmail.com,2024-06-11 18:14:31+08:00,zwl.sjtu@gmail.com,2024-06-11 18:14:31+08:00,test(treemap): update test case for #18304,True,False,1,treemap-scaleLimit.html,html,12,8,20
+0c908241d8cf6ee2e3daf26c0582fae40061179f,zwl.sjtu@gmail.com,2024-05-10 14:53:21+08:00,zwl.sjtu@gmail.com,2024-05-10 14:53:21+08:00,fix: fix failed test cases and improve code,True,False,2,axisTickLabelBuilder.ts,ts,1,11,12
+0c908241d8cf6ee2e3daf26c0582fae40061179f,zwl.sjtu@gmail.com,2024-05-10 14:53:21+08:00,zwl.sjtu@gmail.com,2024-05-10 14:53:21+08:00,fix: fix failed test cases and improve code,True,False,2,axis-customTicks.html,html,1,1,2
+ea0da6344be7aa2207618206ce7f9ea7d1baf4b6,yhen@all-my-life.cn,2024-05-07 17:46:54+08:00,yhen@all-my-life.cn,2024-05-07 17:48:13+08:00,fix(series): add non-null check for `seriesData.getLinkedData`.,True,False,4,Series.ts,ts,1,1,2
+ea0da6344be7aa2207618206ce7f9ea7d1baf4b6,yhen@all-my-life.cn,2024-05-07 17:46:54+08:00,yhen@all-my-life.cn,2024-05-07 17:48:13+08:00,fix(series): add non-null check for `seriesData.getLinkedData`.,True,False,4,graph-case.html,html,251,1,252
+ea0da6344be7aa2207618206ce7f9ea7d1baf4b6,yhen@all-my-life.cn,2024-05-07 17:46:54+08:00,yhen@all-my-life.cn,2024-05-07 17:48:13+08:00,fix(series): add non-null check for `seriesData.getLinkedData`.,True,False,4,__meta__.json,json,1,1,2
+ea0da6344be7aa2207618206ce7f9ea7d1baf4b6,yhen@all-my-life.cn,2024-05-07 17:46:54+08:00,yhen@all-my-life.cn,2024-05-07 17:48:13+08:00,fix(series): add non-null check for `seriesData.getLinkedData`.,True,False,4,graph-case.json,json,1,1,2
+f12a3c72c1c7a870d0e3d52cb9d3535cc435741d,yhen@all-my-life.cn,2024-05-07 12:13:10+08:00,yhen@all-my-life.cn,2024-05-07 12:15:04+08:00,fix(marker): fix marker label formatter can't get series information.,True,False,2,MarkerModel.ts,ts,18,2,20
+f12a3c72c1c7a870d0e3d52cb9d3535cc435741d,yhen@all-my-life.cn,2024-05-07 12:13:10+08:00,yhen@all-my-life.cn,2024-05-07 12:15:04+08:00,fix(marker): fix marker label formatter can't get series information.,True,False,2,markPoint.html,html,179,19,198
+872ac99c77eb4d6eec0eeaa455fa1a73532faa6e,yhen@all-my-life.cn,2024-05-06 13:14:08+08:00,noreply@github.com,2024-05-06 13:14:08+08:00,chore(aria): add TODO comment for SSR support,True,False,1,aria.ts,ts,2,1,3
+4515cd37f14c8f99d484e35a478439a9fac63cb8,overflowcat@gmail.com,2024-05-04 08:10:02+08:00,overflowcat@gmail.com,2024-05-04 08:33:32+08:00,fix: aria throws error in SSR (#19191),True,False,2,aria.ts,ts,5,1,6
+4515cd37f14c8f99d484e35a478439a9fac63cb8,overflowcat@gmail.com,2024-05-04 08:10:02+08:00,overflowcat@gmail.com,2024-05-04 08:33:32+08:00,fix: aria throws error in SSR (#19191),True,False,2,ssr.js,js,4,0,4
+96f4a5f3bfea555ed7ec1480f8f9bd1ff9a6e62a,maurodesouza2017@hotmail.com,2024-05-01 18:00:04-03:00,maurodesouza2017@hotmail.com,2024-05-01 18:00:04-03:00,feat(time): add meridian template,True,False,2,time.ts,ts,4,1,5
+96f4a5f3bfea555ed7ec1480f8f9bd1ff9a6e62a,maurodesouza2017@hotmail.com,2024-05-01 18:00:04-03:00,maurodesouza2017@hotmail.com,2024-05-01 18:00:04-03:00,feat(time): add meridian template,True,False,2,time.test.ts,ts,15,1,16
+e23a40759607432f666313d0df2867c275e4d2ae,zettca@users.noreply.github.com,2024-04-17 16:53:56+01:00,zettca@users.noreply.github.com,2024-04-17 16:53:56+01:00,fix: detectValue & parseDataValue not crashing with BigInt,True,False,2,dataValueHelper.ts,ts,1,1,2
+e23a40759607432f666313d0df2867c275e4d2ae,zettca@users.noreply.github.com,2024-04-17 16:53:56+01:00,zettca@users.noreply.github.com,2024-04-17 16:53:56+01:00,fix: detectValue & parseDataValue not crashing with BigInt,True,False,2,sourceHelper.ts,ts,2,2,4
+1ad9a08fedf8ddaf7a884163fa76c9b68ff9d99d,zxg951208@163.com,2024-04-16 13:37:39+08:00,zxg951208@163.com,2024-04-16 13:37:39+08:00,Georoam supports the totalZoom parameter,True,False,2,MapDraw.ts,ts,1,0,1
+1ad9a08fedf8ddaf7a884163fa76c9b68ff9d99d,zxg951208@163.com,2024-04-16 13:37:39+08:00,zxg951208@163.com,2024-04-16 13:37:39+08:00,Georoam supports the totalZoom parameter,True,False,2,map-china.html,html,1,0,1
+29c0f9df11ee68e745ddf2bf3b82070f43bf93fe,deftmail@163.com,2024-03-27 11:58:12+08:00,deftmail@163.com,2024-03-27 11:58:12+08:00,feat(sankey): Add sankey chart itemStyle.borderRadius support.,True,False,3,SankeyView.ts,ts,4,2,6
+29c0f9df11ee68e745ddf2bf3b82070f43bf93fe,deftmail@163.com,2024-03-27 11:58:12+08:00,deftmail@163.com,2024-03-27 11:58:12+08:00,feat(sankey): Add sankey chart itemStyle.borderRadius support.,True,False,3,types.ts,ts,1,0,1
+29c0f9df11ee68e745ddf2bf3b82070f43bf93fe,deftmail@163.com,2024-03-27 11:58:12+08:00,deftmail@163.com,2024-03-27 11:58:12+08:00,feat(sankey): Add sankey chart itemStyle.borderRadius support.,True,False,3,sankey-borderRadius.html,html,93,0,93

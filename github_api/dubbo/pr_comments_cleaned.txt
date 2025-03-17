@@ -1,0 +1,309 @@
+Is it possible to add some tests?
+
+> Is it possible to add some tests?\r\n\r\nthe results of these codes vary with os and jdk version,\r\n```\r\nServerSocket serverSocket = new ServerSocket(port);\r\nassertFalse(serverSocket.getReuseAddress());\r\n```\r\npassed if running on win10 + compiled by jdk8,\r\nfailed if running on linux + compiled by jdk17 as ```serverSocket.getReuseAddress()``` returns true.\r\ni doubt there should have unified solution.
+
+2.7.x has been EOL. In this case, hessian should support null classloader.
+
+![image](https://github.com/user-attachments/assets/1e1e59f5-1cac-496a-b5aa-8425087381bd)\r\n\r\nhttps://github.com/apache/dubbo/actions/runs/13748721648?pr=15223
+
+Hey. Thanks for the tip. Do I need to update  branch?
+
+PTAL @AlbumenJ 
+
+As far as I know, Virtual Threads is a new feature introduced after JDK 21, and Spring Boot added support for it starting from version 3.2. Should we add this configuration in dubbo-spring-boot-3?
+
+![image](https://github.com/user-attachments/assets/ba16cac3-f675-427c-9318-9733cc6fe0c2)\r\n
+
+> ![image](https://private-user-images.githubusercontent.com/9292748/421159957-ba16cac3-f675-427c-9318-9733cc6fe0c2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDE3MDg2ODcsIm5iZiI6MTc0MTcwODM4NywicGF0aCI6Ii85MjkyNzQ4LzQyMTE1OTk1Ny1iYTE2Y2FjMy1mNjc1LTQyN2MtOTMxOC05NzMzY2M2ZmUwYzIucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDMxMSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTAzMTFUMTU1MzA3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NTJhMzM3MjM4YTM4Mzc2ZDlkNmM0ZTBlNjdjODM1ODdlMzYzMjUyMTJjYzYxNjM0OTZmOWFkYmRjYTdhNDg1OCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.7suL5iheaJDXi_j3cGBqFwJNe4oEJeTY8S5lw--LiZE)\r\n\r\nThank you very much for the screenshot 👍. Due to continuous errors when downloading local Maven dependencies, the project still cannot run mvn spotless:apply. Therefore, I have been trying to push my code to check if my code formatting passes the checks 😭. I will use your screenshot as a reference and try to reformat my code again.
+
+@CrazyHZM PTAL
+
+PTAL @oxsean 
+
+Please write some tests to verify the current changes.
+
+@EarthChen PTAL
+
+I think the target branch should be set to 3.3 instead of 3.4.
+
+Hi @Stellar1999, for version 3.3.3/3.4 the place where the error is happening (`org.apache.dubbo.rpc.protocol.tri.servlet.HttpMetadataAdapter.headers()#57`) looks like this as also mentioned in the original [issue](https://github.com/apache/dubbo/issues/15184): \r\n<img width="827" alt="Screenshot 2025-03-02 at 15 46 35" src="https://github.com/user-attachments/assets/30f90806-9161-4b2d-8d3d-2df8b7451c78" /> \r\n\r\nHowever, the same line in 3.3 looks like this: \r\n<img width="682" alt="Screenshot 2025-03-02 at 15 47 16" src="https://github.com/user-attachments/assets/800e2068-6305-47d5-9bc8-9351eebf1f7b" />\r\n\r\nSince you mentioned that 3.3.3 will be merged to 3.3, \r\nshall i change in 3.3 `request.getServerName()` to `request.getHeader(HttpHeaderNames.HOST.getName())` as how it\
+
+> Hi @Stellar1999, for version 3.3.3/3.4 the place where the error is happening (`org.apache.dubbo.rpc.protocol.tri.servlet.HttpMetadataAdapter.headers()#57`) looks like this as also mentioned in the original [issue](https://github.com/apache/dubbo/issues/15184): <img alt="Screenshot 2025-03-02 at 15 46 35" width="827" src="https://private-user-images.githubusercontent.com/19259971/418329999-30f90806-9161-4b2d-8d3d-2df8b7451c78.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDA5MDI2MjYsIm5iZiI6MTc0MDkwMjMyNiwicGF0aCI6Ii8xOTI1OTk3MS80MTgzMjk5OTktMzBmOTA4MDYtOTE2MS00YjJkLThkM2QtMmRmOGI3NDUxYzc4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMDIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzAyVDA3NTg0NlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTk0OWVjMjRiMWVkMTlmZWE0ZjkxYWJhNzRlMGQ2ZDQ2MDMzZGQ2MjllNWExYzY1YmQ5MjExYmI2ODRhNzUxY2YmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.OYZF63jpnDjbtsTBF_ec5opPphBzIHbiStDIVeIr_WA">\r\n> \r\n> However, the same line in 3.3 looks like this: <img alt="Screenshot 2025-03-02 at 15 47 16" width="682" src="https://private-user-images.githubusercontent.com/19259971/418330032-800e2068-6305-47d5-9bc8-9351eebf1f7b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDA5MDI2MjYsIm5iZiI6MTc0MDkwMjMyNiwicGF0aCI6Ii8xOTI1OTk3MS80MTgzMzAwMzItODAwZTIwNjgtNjMwNS00N2Q1LTliYzgtOTM1MWVlYmYxZjdiLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMDIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzAyVDA3NTg0NlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTg3ZmU3MGVjM2U2NTdiYTQzOTM2MzdkMGQxZjIwMmNjZmVjM2ZjZmQ4MDVhNDAwOThiZWFmYThhNGFmY2JlZjEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.z7XOb42WzIi0eu8ngcUfsF59x0NLoVHca9Cku0Yugeg">\r\n> \r\n> Since you mentioned that 3.3.3 will be merged to 3.3, shall i change in 3.3 `request.getServerName()` to `request.getHeader(HttpHeaderNames.HOST.getName())` as how it\
+
+I will merge 3.3 into 3.4 later
+
+> I will merge 3.3 into 3.4 later\r\n\r\ndone
+
+<dubbo:protocol name="dubbo" port="20880" host="192.168.1.100"/>\r\nyou can use -D.... to choose special ip address.
+
+see https://blog.csdn.net/tlcjbl/article/details/120708721
+
+> <dubbo:protocol name="dubbo" port="20880" host="192.168.1.100"/> you can use -D.... to choose special ip address.\r\n\r\nYou\
+
+There are many complex network scenarios besides VPN. for example, there might be no other way except to specify ip address and port bound to dubbo provider in docker container.
+
+How about register all the available ips to registry and let consumer try all the ips? But this might be a bad design:)
+
+> How about register all the available ips to registry and let consumer try all the ips? But this might be a bad design:)\r\n\r\nI think so:)
+
+@AlbumenJ @oxsean PTAL
+
+@Stellar1999 \r\nFirst of all, thank you for responding to this issue so promptly.\r\n\r\n[rfc7231/3.1.1.1.  Media Type](https://datatracker.ietf.org/doc/html/rfc7231#section-3.1.1.1)\r\n`media-type = type "/" subtype *( OWS ";" OWS parameter )`\r\n\r\nAccording to the description in the RFC document, the `content-type` may include one or more parameters in addition to the media-type, with `charset` being just one of these parameters. There is no stipulated order for these parameters, so in extreme cases, relying on index positioning could potentially lead to issues.\r\n\r\nPerhaps it is also necessary to define a new method: `String mediaTypeParam(String name);`, to retrieve the value of a specified parameter.\r\n```\r\nString mediaTypeParam(String name) {\r\n  paramsStr = contentType.substring(X);\r\n  params = paramsStr.split(";")\r\n                    .filter(str -> str.contain("="))\r\n                    .map(str -> str.split("="));\r\n  return params[name];\r\n}\r\n\r\nvar charset = mediaTypeParam("charset");\r\nvar boundary = mediaTypeParam("boundary");\r\n```
+
+> @Stellar1999 First of all, thank you for responding to this issue so promptly.\r\n> \r\n> [rfc7231/3.1.1.1. Media Type](https://datatracker.ietf.org/doc/html/rfc7231#section-3.1.1.1) `media-type = type "/" subtype *( OWS ";" OWS parameter )`\r\n> \r\n> According to the description in the RFC document, the `content-type` may include one or more parameters in addition to the media-type, with `charset` being just one of these parameters. There is no stipulated order for these parameters, so in extreme cases, relying on index positioning could potentially lead to issues.\r\n> \r\n> Perhaps it is also necessary to define a new method: `String mediaTypeParam(String name);`, to retrieve the value of a specified parameter.\r\n> \r\n> ```\r\n> String mediaTypeParam(String name) {\r\n>   paramsStr = contentType.substring(X);\r\n>   params = paramsStr.split(";")\r\n>                     .filter(str -> str.contain("="))\r\n>                     .map(str -> str.split("="));\r\n>   return params[name];\r\n> }\r\n> \r\n> var charset = mediaTypeParam("charset");\r\n> var boundary = mediaTypeParam("boundary");\r\n> ```\r\n\r\nThanks for your review.\r\nI think my new code does not rely on an index for positioning. (If you mean indexOf, it\
+
+Perhaps it can return `null` or `DenyClass.class`. (https://github.com/wuwen5/dubbo/commit/d7d3cf6d3178ee55102db0921a3ac698fe7f91d4)\r\n\r\nIf there is a better solution, please let me know.\r\n\r\n
+
+> zrlw\r\n\r\nYou can trigger it on your own Github Repo Actions
+
+> > zrlw\r\n> \r\n> You can trigger it on your own Github Repo Actions\r\ni can trigger it but actions/checkout@v4 and other actions are not allowed to be used in my repository.\r\n![image](https://github.com/user-attachments/assets/d51d004b-87ae-441f-a766-c1227d97974b)\r\n
+
+> > > zrlw\r\n> > \r\n> > \r\n> > You can trigger it on your own Github Repo Actions\r\n> > i can trigger it but actions/checkout@v4 and other actions are not allowed to be used in my repository.\r\n> > ![image](https://private-user-images.githubusercontent.com/40652892/416061863-d51d004b-87ae-441f-a766-c1227d97974b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDAzNzk2NjcsIm5iZiI6MTc0MDM3OTM2NywicGF0aCI6Ii80MDY1Mjg5Mi80MTYwNjE4NjMtZDUxZDAwNGItODdhZS00NDFmLWE3NjYtYzEyMjdkOTc5NzRiLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjI0VDA2NDI0N1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWM2NGNhNmIwMmY5YzI3ODEwNzM3NjA4OWE3MWE0MDkzMzQzNWZjYjU5NjhkNGQyODliZmM0OTRhMzVlMGZiMzAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.ajkimYi8c8nWHUOaEtV6uEThmAGCeNR6QBgofZCbWI0)\r\n\r\ni got it\r\n![image](https://github.com/user-attachments/assets/d6fefdab-96eb-4dcc-b907-dbefce2b676b)\r\n
+
+PTAL @AlbumenJ @CrazyHZM 
+
+@dependabot rebase
+
+i found merging into 3.3 or 3.4 is blocked,  so commits should be merged to which branch now?\r\n@AlbumenJ 
+
+@CrazyHZM PTAL
+
+The IT fix code needs to be merged as a priority. Ref:https://github.com/apache/dubbo-integration-cases/pull/55
+
+PTAL @AlbumenJ 
+
+It has already passed the CI verification in my own repository.\r\nRef:3.3:https://github.com/Stellar1999/dubbo/actions/runs/13354955097\r\nRef:3.2:https://github.com/Stellar1999/dubbo/actions/runs/13354944216
+
+![image](https://github.com/user-attachments/assets/80633624-8321-4873-8c8d-314e7624e16a)\r\nthis problem should be fixed.
+
+> ![image](https://private-user-images.githubusercontent.com/40652892/413620042-80633624-8321-4873-8c8d-314e7624e16a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzk3MTUxMjIsIm5iZiI6MTczOTcxNDgyMiwicGF0aCI6Ii80MDY1Mjg5Mi80MTM2MjAwNDItODA2MzM2MjQtODMyMS00ODczLThjOGQtMzE0ZTc2MjRlMTZhLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjE2VDE0MDcwMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTFiYTgzNjQxYTE3ZDFkMzg3NzJhNGZjYjIyZGQ3ZTAwMjhiNmU3ODhhZGNiMzkxM2U4ZmNhZGVmYjdjNjY1ZTkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.R8sJWgBC7u0CiReI85O17o65wNkJCS0NuR2BnujkMSY) this problem should be fixed.\r\n\r\nPlease read the comment first.\r\n\r\n> The IT fix code needs to be merged as a priority. Ref:[apache/dubbo-integration-cases#55](https://github.com/apache/dubbo-integration-cases/pull/55)\r\n\r\n
+
+Why we need revert it？
+
+Close by https://github.com/apache/dubbo/pull/15127\r\n\r\nMerge 3.2 to 3.3 later
+
+@AlbumenJ  Check if this dependency has duplicate definitions.\r\nI discovered it during `cherry-pick` before, and just checked on 3.3 and found that there were duplicates\r\n\r\ndubbo-rpc-triple/pom.xml\r\n```\r\n<dependency>\r\n      <groupId>org.apache.dubbo</groupId>\r\n      <artifactId>dubbo-cluster</artifactId>\r\n      <version>${project.parent.version}</version>\r\n      <scope>test</scope>\r\n    </dependency>\r\n```
+
+> @AlbumenJ Check if this dependency has duplicate definitions. I discovered it during `cherry-pick` before, and just checked on 3.3 and found that there were duplicates\r\n> \r\n> dubbo-rpc-triple/pom.xml\r\n> \r\n> ```\r\n> <dependency>\r\n>       <groupId>org.apache.dubbo</groupId>\r\n>       <artifactId>dubbo-cluster</artifactId>\r\n>       <version>${project.parent.version}</version>\r\n>       <scope>test</scope>\r\n>     </dependency>\r\n> ```\r\n\r\nCan you pls submit a PR to fix it?
+
+@AlbumenJ \r\nhttps://github.com/apache/dubbo/pull/15135
+
+https://github.com/apache/dubbo/pull/15125 It has already been removed.
+
+```dubbo-samples-configcenter-apollo``` at https://github.com/apache/dubbo-samples should be modified before removing dubbo-test module from dubbo-remoting-zookeeper-curator5.
+
+> `dubbo-samples-configcenter-apollo` at https://github.com/apache/dubbo-samples should be modified before removing dubbo-test module from dubbo-remoting-zookeeper-curator5.\r\n\r\nIt is unrelated to this PR. The investigation indicates that it is related to recent changes in Apollo. I will fix the CI issue later.
+
+oops, dubbo-samples-configcenter-apollo testing result is always timeout no matter revert #15082 or not.
+
+Will be fixed in https://github.com/apache/dubbo-samples/pull/1203
+
+issue #14980
+
+Thanks for your contribution~However, You should run `mvn spotless:apply` to format before commit your code.@Akshaypa91\r\n
+
+![image](https://github.com/user-attachments/assets/8c95ba49-7d18-43d9-ba36-df1fffc67fff)\r\n
+
+@Akshaypa91 \r\n1.  should not write ```//``` at the end of statement. \r\n2.  should not write space charaecters at the end of statement.\r\nyou can fixed them manully or by running mvn spotless:apply through:\r\n```\r\n1. change mvn runner to jdk17 as spotless must be runned under jdk17+.\r\n3.  run mvn spotless:apply to fix you code format problems.\r\n4.  push changed codes again.\r\n```
+
+Thanks for your contribution~However, You should run `mvn spotless:apply` to format before commit your code.@wuwen5
+
+@heliang666s  Done. Thanks!
+
+@CrazyHZM PTAL
+
+@EarthChen @icodening @oxsean PTAL
+
+![image](https://github.com/user-attachments/assets/7b1f1315-2523-4770-a7f8-4c42cd901a06)\r\n\r\n
+
+@CrazyHZM @chickenlj PTAL
+
+ReferenceConfigTest，ServiceConfigTest，DubboBootstrapTest，MultipleRegistryCenterServiceDiscoveryRegistryIntegrationTest of dubbo-config-api might be affected as sometimes RpcException with ```Address already in use``` will be thrown.\r\nsee https://github.com/apache/dubbo/actions/runs/13462589128/job/37621771946\r\n```\r\n2025-02-21T18:35:26.8596499Z [ERROR]   ReferenceConfigTest.testClassLoader:1164 » Rpc Fail to start server(url: dubbo://10.1.0.216:20880/org.apache.dubbo.config.api.DemoService?anyhost=true&application=Test&background=false&bind.ip=10.1.0.216&bind.port=20880&channel.readonly.sent=true&codec=dubbo&deprecated=false&dubbo=2.0.2&dynamic=true&executor-management-mode=isolation&file-cache=true&generic=false&heartbeat=60000&interface=org.apache.dubbo.config.api.DemoService&methods=callInnerClass,echo,getBox,getUsers,sayName,throwDemoException&pid=236855&register=false&release=3.3.4-SNAPSHOT&side=provider&timestamp=1740162893508) Failed to bind NettyServer on /0.0.0.0:20880, cause: Address already in use\r\n...\r\n```\r\n\r\n\r\n
+
+```Build and Test Scheduled On 3.3``` https://github.com/apache/dubbo/actions/runs/13269479987/job/37046175125 which just runned after this PR merging into 3.3:\r\n```\r\n2025-02-11T18:39:00.4118796Z [ERROR] Errors: \r\n2025-02-11T18:39:00.4124586Z [ERROR]   ServiceConfigTest.testMethodConfigWithConfiguredArgumentType:492 » Rpc Fail to start server(url: dubbo://10.1.0.109:20880/org.apache.dubbo.config.api.DemoService?anyhost=true&application=app&background=false&bind.ip=10.1.0.109&bind.port=20880&channel.readonly.sent=true&codec=dubbo&deprecated=false&dubbo=2.0.2&dynamic=true&executor-management-mode=isolation&export=true&file-cache=true&generic=false&heartbeat=60000&interface=org.apache.dubbo.config.api.DemoService&methods=callInnerClass,echo,getBox,getUsers,sayName,throwDemoException&pid=236894&register=false&release=3.3.4-SNAPSHOT&sayName.0.callback=false&sayName.return=true&sayName.sent=true&side=provider&timestamp=1739299104130) Failed to bind NettyServer on /0.0.0.0:20880, cause: Address already in use\r\n2025-02-11T18:39:00.4131440Z [ERROR]   MultipleRegistryCenterServiceDiscoveryRegistryIntegrationTest.integrate:152 » Runtime org.apache.dubbo.rpc.RpcException: Fail to start server(url: dubbo://10.1.0.109:20880/org.apache.dubbo.config.integration.multiple.servicediscoveryregistry.MultipleRegistryCenterServiceDiscoveryRegistryService?anyhost=true&application=multiple-registry-center-provider-for-service-discovery-registry-protocol&async=false&background=false&bind.ip=10.1.0.109&bind.port=20880&channel.readonly.sent=true&codec=dubbo&deprecated=false&dubbo=2.0.2&dynamic=true&executor-management-mode=isolation&file-cache=true&generic=false&heartbeat=60000&interface=org.apache.dubbo.config.integration.multiple.servicediscoveryregistry.MultipleRegistryCenterServiceDiscoveryRegistryService&methods=hello&pid=236894&prefer.serialization=hessian2,fastjson2&release=3.3.4-SNAPSHOT&service-name-mapping=true&side=provider&timestamp=1739299132226) Failed to bind NettyServer on /0.0.0.0:20880, cause: Address already in use\r\n```\r\n
+
+> `Build and Test Scheduled On 3.3` https://github.com/apache/dubbo/actions/runs/13269479987/job/37046175125 which just runned after this PR merging into 3.3:\r\n> \r\n> ```\r\n> 2025-02-11T18:39:00.4118796Z [ERROR] Errors: \r\n> 2025-02-11T18:39:00.4124586Z [ERROR]   ServiceConfigTest.testMethodConfigWithConfiguredArgumentType:492 » Rpc Fail to start server(url: dubbo://10.1.0.109:20880/org.apache.dubbo.config.api.DemoService?anyhost=true&application=app&background=false&bind.ip=10.1.0.109&bind.port=20880&channel.readonly.sent=true&codec=dubbo&deprecated=false&dubbo=2.0.2&dynamic=true&executor-management-mode=isolation&export=true&file-cache=true&generic=false&heartbeat=60000&interface=org.apache.dubbo.config.api.DemoService&methods=callInnerClass,echo,getBox,getUsers,sayName,throwDemoException&pid=236894&register=false&release=3.3.4-SNAPSHOT&sayName.0.callback=false&sayName.return=true&sayName.sent=true&side=provider&timestamp=1739299104130) Failed to bind NettyServer on /0.0.0.0:20880, cause: Address already in use\r\n> 2025-02-11T18:39:00.4131440Z [ERROR]   MultipleRegistryCenterServiceDiscoveryRegistryIntegrationTest.integrate:152 » Runtime org.apache.dubbo.rpc.RpcException: Fail to start server(url: dubbo://10.1.0.109:20880/org.apache.dubbo.config.integration.multiple.servicediscoveryregistry.MultipleRegistryCenterServiceDiscoveryRegistryService?anyhost=true&application=multiple-registry-center-provider-for-service-discovery-registry-protocol&async=false&background=false&bind.ip=10.1.0.109&bind.port=20880&channel.readonly.sent=true&codec=dubbo&deprecated=false&dubbo=2.0.2&dynamic=true&executor-management-mode=isolation&file-cache=true&generic=false&heartbeat=60000&interface=org.apache.dubbo.config.integration.multiple.servicediscoveryregistry.MultipleRegistryCenterServiceDiscoveryRegistryService&methods=hello&pid=236894&prefer.serialization=hessian2,fastjson2&release=3.3.4-SNAPSHOT&service-name-mapping=true&side=provider&timestamp=1739299132226) Failed to bind NettyServer on /0.0.0.0:20880, cause: Address already in use\r\n> ```\r\n\r\nMaybe we should enhance the UT
+
+> Maybe we should enhance the UT\r\n\r\n#15164  might solve it.
+
+I have been troubled by this problem for a day. It is a sporadic problem and it is very annoying. I have upgraded dubbo to 3.2.16. Is there a way to solve it?
+
+> I have been troubled by this problem for a day. It is a sporadic problem and it is very annoying. I have upgraded dubbo to 3.2.16. Is there a way to solve it?\r\n\r\nwe tested and it seemed that this pr could resolve our no provider problem when restarting all clients and servers at the same time.
+
+https://github.com/apache/dubbo/pull/15126\r\n\r\nClose this PR. I will merge 3.2 into 3.3 later.
+
+> #15126\r\n> \r\n> Close this PR. I will merge 3.2 into 3.3 later.\r\n\r\ndone
+
+@CrazyHZM  PTAL
+
+dubbo-test-check otherwise test failure:\r\n```\r\n[dubbo-samples-configcenter-apollo:1/1] TEST FAILURE: Run tests timeout, version: -Ddubbo.version=3.3.4-SNAPSHOT -Dspring.version=5.3.24 -Djava.version=8, please check logs: /home/runner/work/dubbo/dubbo/3-extensions/configcenter/dubbo-samples-configcenter-apollo/target/logs\r\n```
+
+Superseded by #15093.
+
+PTAL @CrazyHZM 
+
+Superseded by #15071.
+
+How about move to 3.4?
+
+> How about move to 3.4?\r\n\r\nAlready changed it to 3.4. @AlbumenJ 
+
+Superseded by #15077.
+
+@dependabot rebase\r\n
+
+@EarthChen PTAL
+
+Could you please test whether SSE is work fine?\r\nhttps://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events
+
+> Could you please test whether SSE is work fine? https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events\r\n\r\nIn Spring, i can use SseEmitter to send messages, but how should this be done in Dubbo? Are there any related examples?
+
+Superseded by #15027.
+
+Please fix style check
+
+> Please fix style check\r\n\r\nfixed
+
+Can this PR fix that issue?
+
+> Can this PR fix that issue?\r\n\r\nyes,we can lazy load micrometer class when it exists:\r\n<img width="337" alt="image" src="https://github.com/user-attachments/assets/7c529368-c622-4707-9332-7ee1a390aa9a" />\r\n
+
+Looks like org.asynchttpclient:async-http-client is up-to-date now, so this is no longer needed.
+
+@dependabot rebase
+
+![image](https://github.com/user-attachments/assets/edf76ff8-1eb5-46e6-a1b4-075d87caa0fc)\r\n
+
+> ![image](https://private-user-images.githubusercontent.com/9292748/394636225-edf76ff8-1eb5-46e6-a1b4-075d87caa0fc.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzQ2NzM5MzQsIm5iZiI6MTczNDY3MzYzNCwicGF0aCI6Ii85MjkyNzQ4LzM5NDYzNjIyNS1lZGY3NmZmOC0xZWI1LTQ2ZTYtYTFiNC0wNzVkODdjYWEwZmMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MTIyMCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDEyMjBUMDU0NzE0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZGIzNTM1ZTVjOGI4MmNiM2U3NDEzYTg0ZDE0Yzk3YmU5Y2VkZTkyODI0YjRiOTNlM2RkMWM0MGFhOTQyM2MxOCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.ggYfkXHIgB7qKMAGPTFmIEHNq4oll5rwOQXUbB8nabI)\r\n\r\nhttps://github.com/apache/dubbo/actions/runs/12425957233/job/34693521096?pr=14969  May I ask if you saw this screenshot at an address? I have not been able to find the detailed reason for this formatting error
+
+![image](https://github.com/user-attachments/assets/dd250fb3-60ee-457a-babd-609c84974803)\r\n
+
+@CrazyHZM @AlbumenJ  
+
+I have tested the script on both windows and mac as well as linux systems.
+
+The `nodeCacheMap` is a cache, and each cache should not be closed when the current client is destroyed.
+
+format code
+
+![image](https://github.com/user-attachments/assets/29ae6c2d-68dd-483c-964e-d4cb11c8af11)\r\n
+
+## [Codecov](https://app.codecov.io/gh/apache/dubbo/pull/14929?dropdown=coverage&src=pr&el=h1&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) Report\nAll modified and coverable lines are covered by tests :white_check_mark:\n> Project coverage is 37.55%. Comparing base [(`9e249cf`)](https://app.codecov.io/gh/apache/dubbo/commit/9e249cfd846a673aba365e1a42f85950f71bd433?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) to head [(`3e04799`)](https://app.codecov.io/gh/apache/dubbo/commit/3e0479968b4ea25aec750d54a8329ad0f19e1e6c?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n> Report is 3 commits behind head on 3.3.\n\n<details><summary>Additional details and impacted files</summary>\n\n\n```diff\n@@           Coverage Diff           @@\n##              3.3   #14929   +/-   ##\n=======================================\n  Coverage   37.55%   37.55%           \n=======================================\n  Files        1835     1835           \n  Lines       81382    81382           \n  Branches    12093    12093           \n=======================================\n+ Hits        30563    30566    +3     \n- Misses      46377    46379    +2     \n+ Partials     4442     4437    -5     \n```\n\n</details>\n\n[:umbrella: View full report in Codecov by Sentry](https://app.codecov.io/gh/apache/dubbo/pull/14929?dropdown=coverage&src=pr&el=continue&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).   \n:loudspeaker: Have feedback on the report? [Share it here](https://about.codecov.io/codecov-pr-comment-feedback/?utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n\n----\n🚨 Try these New Features:\n\n- [Flaky Tests Detection](https://docs.codecov.com/docs/test-result-ingestion-beta) - Detect and resolve failed and flaky tests\n- [JS Bundle Analysis](https://docs.codecov.com/docs/javascript-bundle-analysis) - Avoid shipping oversized bundles
+
+NPE will be thrown at org.apache.dubbo.rpc.protocol.tri.servlet.HttpMetadataAdapter because ```request.getHeader(HttpHeaderNames.HOST.getName())``` will return null if using http2.\r\n```\r\n@Override\r\n    public HttpHeaders headers() {\r\n            headers.add(PseudoHeaderName.METHOD.value(), method());\r\n            headers.add(PseudoHeaderName.SCHEME.value(), request.getScheme());\r\n            headers.add(PseudoHeaderName.AUTHORITY.value(), request.getHeader(HttpHeaderNames.HOST.getName()));\r\n            headers.add(PseudoHeaderName.PROTOCOL.value(), request.getProtocol());\r\n            this.headers = headers;\r\n```\r\nhttps://github.com/apache/dubbo-samples/tree/master/2-advanced/dubbo-samples-triple-servlet NPE:\r\n```\r\n[DUBBO] Initialize executor failed., dubbo version: 3.3.4-SNAPSHOT, current host: 172.27.0.3, error code: 0-18. This may be caused by , go to https://dubbo.apache.org/faq/0/18 to find instructions. \r\n2025-02-16T08:06:02.1996318Z java.lang.NullPointerException: value\r\n2025-02-16T08:06:02.1997279Z \tat io.netty.util.internal.ObjectUtil.checkNotNull(ObjectUtil.java:39) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]\r\n2025-02-16T08:06:02.1998664Z \tat io.netty.handler.codec.DefaultHeaders.add(DefaultHeaders.java:331) ~[netty-codec-4.1.107.Final.jar:4.1.107.Final]\r\n2025-02-16T08:06:02.2000554Z \tat org.apache.dubbo.remoting.http12.netty4.NettyHttpHeaders.add(NettyHttpHeaders.java:82) ~[dubbo-3.3.4-SNAPSHOT.jar:3.3.4-SNAPSHOT]\r\n2025-02-16T08:06:02.2002451Z \tat org.apache.dubbo.rpc.protocol.tri.servlet.jakarta.HttpMetadataAdapter.headers(HttpMetadataAdapter.java:58) ~[dubbo-3.3.4-SNAPSHOT.jar:3.3.4-SNAPSHOT]\r\n2025-02-16T08:06:02.2004703Z \tat org.apache.dubbo.rpc.protocol.tri.transport.TripleIsolationExecutorSupport.getServiceKey(TripleIsolationExecutorSupport.java:46) ~[dubbo-3.3.4-SNAPSHOT.jar:3.3.4-SNAPSHOT]\r\n2025-02-16T08:06:02.2007068Z \tat org.apache.dubbo.rpc.executor.AbstractIsolationExecutorSupport.getProviderModel(AbstractIsolationExecutorSupport.java:64) ~[dubbo-3.3.4-SNAPSHOT.jar:3.3.4-SNAPSHOT]\r\n2025-02-16T08:06:02.2009377Z \tat org.apache.dubbo.rpc.executor.AbstractIsolationExecutorSupport.getExecutor(AbstractIsolationExecutorSupport.java:41) ~[dubbo-3.3.4-SNAPSHOT.jar:3.3.4-SNAPSHOT]\r\n2025-02-16T08:06:02.2011790Z \tat org.apache.dubbo.rpc.protocol.tri.h12.AbstractServerTransportListener.getExecutor(AbstractServerTransportListener.java:137) ~[dubbo-3.3.4-SNAPSHOT.jar:3.3.4-SNAPSHOT]\r\n2025-02-16T08:06:02.2014200Z \tat org.apache.dubbo.rpc.protocol.tri.h12.grpc.GrpcHttp2ServerTransportListener.initializeExecutor(GrpcHttp2ServerTransportListener.java:64) \r\n```\r\nit might be fixed by https://github.com/apache/dubbo/pull/15141
+
+LGTM
+
+Test locally first.\r\n\r\n![image](https://github.com/user-attachments/assets/2e22e561-754a-405e-8a1b-0552760ac4b3)\r\n
+
+> Test locally first.\r\n\r\nSeems like I missed that one, sorry for that. However to me it seems like this test should have failed without my changes as well.\r\n\r\nI noticed that there is an exact copy of the failing test which has the assertion that is causing the issue here is commented out\r\n\r\nComparing \r\n[dubbo-spring-boot/src/test/java/org/apache/dubbo/spring/boot/env/DubboDefaultPropertiesEnvironmentPostProcessorTest.java](https://github.com/strangelookingnerd/dubbo/blob/757dd4bfd73df36f9f9a85caa314a5b93a066efe/dubbo-spring-boot-project/dubbo-spring-boot/src/test/java/org/apache/dubbo/spring/boot/env/DubboDefaultPropertiesEnvironmentPostProcessorTest.java#L58)\r\n\r\n[dubbo-spring-boot-autoconfigure/src/test/java/org/apache/dubbo/spring/boot/env/DubboDefaultPropertiesEnvironmentPostProcessorTest](https://github.com/strangelookingnerd/dubbo/blob/757dd4bfd73df36f9f9a85caa314a5b93a066efe/dubbo-spring-boot-project/dubbo-spring-boot-autoconfigure/src/test/java/org/apache/dubbo/spring/boot/env/DubboDefaultPropertiesEnvironmentPostProcessorTest.java#L58)\r\n\r\n---\r\n\r\n**Edit:**\r\n\r\nI just confirmed that the test that is failing was simply not executed before my changes. Digging a little deeper I found #12861 which suggests that the property that is checked here caused some kind of issue. I therefore propose to give the test the same treatment as in `dubbo-spring-boot` and comment the assertion out.\r\n\r\n\r\n\r\n
+
+use `mvn spotless:apply` to format the code.
+
+Please add some test cases to verify that the results of this `method` are the same.
+
+@dependabot rebase
+
+@dependabot rebase
+
+@dependabot rebase
+
+@dependabot rebase
+
+@dependabot rebase
+
+@dependabot rebase
+
+@dependabot rebase
+
+Superseded by #14993.
+
+ci fixed in https://github.com/apache/dubbo-samples/pull/1195
+
+Please merge the relevant pr first.
+
+> Please merge the relevant pr first.\r\n\r\nOK, waiting for ci completed.
+
+use `mvn spotless:apply` to format the code.
+
+## [Codecov](https://app.codecov.io/gh/apache/dubbo/pull/14888?dropdown=coverage&src=pr&el=h1&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) Report\nAll modified and coverable lines are covered by tests :white_check_mark:\n> Project coverage is 2.20%. Comparing base [(`ef6e8bd`)](https://app.codecov.io/gh/apache/dubbo/commit/ef6e8bd01cef22ef148f1edb67cc1b41af55f4d6?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) to head [(`69de5fb`)](https://app.codecov.io/gh/apache/dubbo/commit/69de5fb22315ec3a92ff9cf4f68b79a706172730?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n> Report is 56 commits behind head on 3.3.\n\n<details><summary>Additional details and impacted files</summary>\n\n\n```diff\n@@              Coverage Diff              @@\n##              3.3    #14888        +/-   ##\n=============================================\n- Coverage   37.53%     2.20%    -35.34%     \n=============================================\n  Files        1813     26083     +24270     \n  Lines       80737   1389674   +1308937     \n  Branches    12005    220210    +208205     \n=============================================\n+ Hits        30304     30588       +284     \n- Misses      46042   1354645   +1308603     \n- Partials     4391      4441        +50     \n```\n\n</details>\n\n[:umbrella: View full report in Codecov by Sentry](https://app.codecov.io/gh/apache/dubbo/pull/14888?dropdown=coverage&src=pr&el=continue&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).   \n:loudspeaker: Have feedback on the report? [Share it here](https://about.codecov.io/codecov-pr-comment-feedback/?utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n
+
+as @AlbumenJ said this is not a bug but a feature\r\nhttps://github.com/apache/dubbo/issues/14883#issuecomment-2475562946
+
+## [Codecov](https://app.codecov.io/gh/apache/dubbo/pull/14877?dropdown=coverage&src=pr&el=h1&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) Report\nAll modified and coverable lines are covered by tests :white_check_mark:\n> Project coverage is 2.19%. Comparing base [(`ef6e8bd`)](https://app.codecov.io/gh/apache/dubbo/commit/ef6e8bd01cef22ef148f1edb67cc1b41af55f4d6?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) to head [(`1f45da0`)](https://app.codecov.io/gh/apache/dubbo/commit/1f45da086643c49e85d5a4dd5b1f5564b3f5d4a2?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n> Report is 55 commits behind head on 3.3.\n\n<details><summary>Additional details and impacted files</summary>\n\n\n```diff\n@@              Coverage Diff              @@\n##              3.3    #14877        +/-   ##\n=============================================\n- Coverage   37.53%     2.19%    -35.34%     \n=============================================\n  Files        1813     26083     +24270     \n  Lines       80737   1389674   +1308937     \n  Branches    12005    220210    +208205     \n=============================================\n+ Hits        30304     30560       +256     \n- Misses      46042   1354672   +1308630     \n- Partials     4391      4442        +51     \n```\n\n</details>\n\n[:umbrella: View full report in Codecov by Sentry](https://app.codecov.io/gh/apache/dubbo/pull/14877?dropdown=coverage&src=pr&el=continue&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).   \n:loudspeaker: Have feedback on the report? [Share it here](https://about.codecov.io/codecov-pr-comment-feedback/?utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n
+
+@CrazyHZM PTAL
+
+## [Codecov](https://app.codecov.io/gh/apache/dubbo/pull/14875?dropdown=coverage&src=pr&el=h1&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) Report\nAll modified and coverable lines are covered by tests :white_check_mark:\n> Project coverage is 2.19%. Comparing base [(`ef6e8bd`)](https://app.codecov.io/gh/apache/dubbo/commit/ef6e8bd01cef22ef148f1edb67cc1b41af55f4d6?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) to head [(`87bfe55`)](https://app.codecov.io/gh/apache/dubbo/commit/87bfe55b43170b712833a1d5c04200f3e5fd687a?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n> Report is 55 commits behind head on 3.3.\n\n<details><summary>Additional details and impacted files</summary>\n\n\n```diff\n@@              Coverage Diff              @@\n##              3.3    #14875        +/-   ##\n=============================================\n- Coverage   37.53%     2.19%    -35.34%     \n=============================================\n  Files        1813     26083     +24270     \n  Lines       80737   1389674   +1308937     \n  Branches    12005    220210    +208205     \n=============================================\n+ Hits        30304     30544       +240     \n- Misses      46042   1354687   +1308645     \n- Partials     4391      4443        +52     \n```\n\n</details>\n\n[:umbrella: View full report in Codecov by Sentry](https://app.codecov.io/gh/apache/dubbo/pull/14875?dropdown=coverage&src=pr&el=continue&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).   \n:loudspeaker: Have feedback on the report? [Share it here](https://about.codecov.io/codecov-pr-comment-feedback/?utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n
+
+## [Codecov](https://app.codecov.io/gh/apache/dubbo/pull/14874?dropdown=coverage&src=pr&el=h1&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) Report\nAll modified and coverable lines are covered by tests :white_check_mark:\n> Project coverage is 2.19%. Comparing base [(`ef6e8bd`)](https://app.codecov.io/gh/apache/dubbo/commit/ef6e8bd01cef22ef148f1edb67cc1b41af55f4d6?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) to head [(`02c2f20`)](https://app.codecov.io/gh/apache/dubbo/commit/02c2f209193db78e0b20c5b323a4a4f774343c24?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n> Report is 88 commits behind head on 3.3.\n\n<details><summary>Additional details and impacted files</summary>\n\n\n```diff\n@@              Coverage Diff              @@\n##              3.3    #14874        +/-   ##\n=============================================\n- Coverage   37.53%     2.19%    -35.34%     \n=============================================\n  Files        1813     26083     +24270     \n  Lines       80737   1389686   +1308949     \n  Branches    12005    220210    +208205     \n=============================================\n+ Hits        30304     30570       +266     \n- Misses      46042   1354680   +1308638     \n- Partials     4391      4436        +45     \n```\n\n</details>\n\n[:umbrella: View full report in Codecov by Sentry](https://app.codecov.io/gh/apache/dubbo/pull/14874?dropdown=coverage&src=pr&el=continue&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).   \n:loudspeaker: Have feedback on the report? [Share it here](https://about.codecov.io/codecov-pr-comment-feedback/?utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n
+
+@chickenlj PTAL
+
+## [Codecov](https://app.codecov.io/gh/apache/dubbo/pull/14873?dropdown=coverage&src=pr&el=h1&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) Report\nAll modified and coverable lines are covered by tests :white_check_mark:\n> Project coverage is 2.19%. Comparing base [(`ef6e8bd`)](https://app.codecov.io/gh/apache/dubbo/commit/ef6e8bd01cef22ef148f1edb67cc1b41af55f4d6?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) to head [(`4ec40c5`)](https://app.codecov.io/gh/apache/dubbo/commit/4ec40c56f5eedda5bdce7fd28e9312895e3d4771?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n> Report is 55 commits behind head on 3.3.\n\n<details><summary>Additional details and impacted files</summary>\n\n\n```diff\n@@              Coverage Diff              @@\n##              3.3    #14873        +/-   ##\n=============================================\n- Coverage   37.53%     2.19%    -35.34%     \n=============================================\n  Files        1813     26083     +24270     \n  Lines       80737   1389674   +1308937     \n  Branches    12005    220210    +208205     \n=============================================\n+ Hits        30304     30550       +246     \n- Misses      46042   1354687   +1308645     \n- Partials     4391      4437        +46     \n```\n\n</details>\n\n[:umbrella: View full report in Codecov by Sentry](https://app.codecov.io/gh/apache/dubbo/pull/14873?dropdown=coverage&src=pr&el=continue&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).   \n:loudspeaker: Have feedback on the report? [Share it here](https://about.codecov.io/codecov-pr-comment-feedback/?utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n
+
+why add it
+
+let me fix it :\r\n<img width="839" alt="image" src="https://github.com/user-attachments/assets/361d0f58-c091-4f94-be2a-48ff3f5d211c" />\r\n
+
+## [Codecov](https://app.codecov.io/gh/apache/dubbo/pull/14871?dropdown=coverage&src=pr&el=h1&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) Report\nAll modified and coverable lines are covered by tests :white_check_mark:\n> Project coverage is 2.19%. Comparing base [(`ef6e8bd`)](https://app.codecov.io/gh/apache/dubbo/commit/ef6e8bd01cef22ef148f1edb67cc1b41af55f4d6?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) to head [(`0261a18`)](https://app.codecov.io/gh/apache/dubbo/commit/0261a182a7b11267571b4298a13672e6c049d10a?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n> Report is 55 commits behind head on 3.3.\n\n> :exclamation: **Current head 0261a18 differs from pull request most recent head 2af91b4**\n> \n> Please [upload](https://docs.codecov.com/docs/codecov-uploader) reports for the commit 2af91b4 to get more accurate results.\n\n<details><summary>Additional details and impacted files</summary>\n\n\n```diff\n@@              Coverage Diff              @@\n##              3.3    #14871        +/-   ##\n=============================================\n- Coverage   37.53%     2.19%    -35.34%     \n=============================================\n  Files        1813     26083     +24270     \n  Lines       80737   1389674   +1308937     \n  Branches    12005    220210    +208205     \n=============================================\n+ Hits        30304     30566       +262     \n- Misses      46042   1354670   +1308628     \n- Partials     4391      4438        +47     \n```\n\n</details>\n\n[:umbrella: View full report in Codecov by Sentry](https://app.codecov.io/gh/apache/dubbo/pull/14871?dropdown=coverage&src=pr&el=continue&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).   \n:loudspeaker: Have feedback on the report? [Share it here](https://about.codecov.io/codecov-pr-comment-feedback/?utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n
+
+![image](https://github.com/user-attachments/assets/b6e10fca-3188-455b-bd8a-89fbaf876b0c)\r\n
+
+## [Codecov](https://app.codecov.io/gh/apache/dubbo/pull/14869?dropdown=coverage&src=pr&el=h1&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) Report\nAll modified and coverable lines are covered by tests :white_check_mark:\n> Project coverage is 2.34%. Comparing base [(`ef6e8bd`)](https://app.codecov.io/gh/apache/dubbo/commit/ef6e8bd01cef22ef148f1edb67cc1b41af55f4d6?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) to head [(`b162442`)](https://app.codecov.io/gh/apache/dubbo/commit/b162442b2e621895cf32aae84f1cbfb0b4e84877?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n> Report is 104 commits behind head on 3.3.\n\n<details><summary>Additional details and impacted files</summary>\n\n\n```diff\n@@              Coverage Diff              @@\n##              3.3    #14869        +/-   ##\n=============================================\n- Coverage   37.53%     2.34%    -35.19%     \n=============================================\n  Files        1813     24219     +22406     \n  Lines       80737   1288755   +1208018     \n  Branches    12005    203843    +191838     \n=============================================\n- Hits        30304     30275        -29     \n- Misses      46042   1254069   +1208027     \n- Partials     4391      4411        +20     \n```\n\n</details>\n\n[:umbrella: View full report in Codecov by Sentry](https://app.codecov.io/gh/apache/dubbo/pull/14869?dropdown=coverage&src=pr&el=continue&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).   \n:loudspeaker: Have feedback on the report? [Share it here](https://about.codecov.io/codecov-pr-comment-feedback/?utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n
+
+## [Codecov](https://app.codecov.io/gh/apache/dubbo/pull/14866?dropdown=coverage&src=pr&el=h1&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) Report\nAll modified and coverable lines are covered by tests :white_check_mark:\n> Project coverage is 2.19%. Comparing base [(`ef6e8bd`)](https://app.codecov.io/gh/apache/dubbo/commit/ef6e8bd01cef22ef148f1edb67cc1b41af55f4d6?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) to head [(`b4ca9ba`)](https://app.codecov.io/gh/apache/dubbo/commit/b4ca9bae08fe5ed49fd5e416a28f3174dcccf201?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n> Report is 55 commits behind head on 3.3.\n\n<details><summary>Additional details and impacted files</summary>\n\n\n```diff\n@@              Coverage Diff              @@\n##              3.3    #14866        +/-   ##\n=============================================\n- Coverage   37.53%     2.19%    -35.34%     \n=============================================\n  Files        1813     26083     +24270     \n  Lines       80737   1389713   +1308976     \n  Branches    12005    220216    +208211     \n=============================================\n+ Hits        30304     30553       +249     \n- Misses      46042   1354724   +1308682     \n- Partials     4391      4436        +45     \n```\n\n</details>\n\n[:umbrella: View full report in Codecov by Sentry](https://app.codecov.io/gh/apache/dubbo/pull/14866?dropdown=coverage&src=pr&el=continue&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).   \n:loudspeaker: Have feedback on the report? [Share it here](https://about.codecov.io/codecov-pr-comment-feedback/?utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n
+
+@dependabot rebase
+
+@dependabot recreate
+
+Looks like these dependencies are up-to-date now, so this is no longer needed.
+
+use `mvn spotless:apply` to format the code.
+
+## [Codecov](https://app.codecov.io/gh/apache/dubbo/pull/14847?dropdown=coverage&src=pr&el=h1&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) Report\nAll modified and coverable lines are covered by tests :white_check_mark:\n> Project coverage is 2.19%. Comparing base [(`ef6e8bd`)](https://app.codecov.io/gh/apache/dubbo/commit/ef6e8bd01cef22ef148f1edb67cc1b41af55f4d6?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) to head [(`d4181e3`)](https://app.codecov.io/gh/apache/dubbo/commit/d4181e3c96253c2fe70f1a70c900c4696766cca0?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n> Report is 47 commits behind head on 3.3.\n\n<details><summary>Additional details and impacted files</summary>\n\n\n```diff\n@@              Coverage Diff              @@\n##              3.3    #14847        +/-   ##\n=============================================\n- Coverage   37.53%     2.19%    -35.34%     \n=============================================\n  Files        1813     26083     +24270     \n  Lines       80737   1389593   +1308856     \n  Branches    12005    220183    +208178     \n=============================================\n+ Hits        30304     30515       +211     \n- Misses      46042   1354638   +1308596     \n- Partials     4391      4440        +49     \n```\n\n</details>\n\n[:umbrella: View full report in Codecov by Sentry](https://app.codecov.io/gh/apache/dubbo/pull/14847?dropdown=coverage&src=pr&el=continue&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).   \n:loudspeaker: Have feedback on the report? [Share it here](https://about.codecov.io/codecov-pr-comment-feedback/?utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n
+
+Follow-up: https://github.com/apache/dubbo/issues/14841
+
+@AlbumenJ:\r\nCan you start the "Build and Test For PR" again, please? I don\
+
+Thank you for your first contribution! Now the CI error is due to something wrong with the community upgrading the Zookeeper version, which has now been fixed, and you can start a new commit and run the CI test again.
+
+LGTM
+
+@heliang666s  hi, thanks for your review, but I have nothing to commit any more, is it necessory to run the CI test again?  if it is , how can I run it again without a new commit? 
+
+@heliang666s thank you I tried but CI test still not success
+
+Judging from the error logs, this may be because there are other PRs running CI tests as well, which is causing the port to be occupied. You can wait a little longer and try again. @wsliliang
+
+@dependabot rebase
+
+@dependabot recreate\r\n
+
+### Some suggestions for reference only:\r\n- Rename `dubbo-spring-boot-project` to `dubbo-spring-boot-all`\r\n- Move `dubbo-spring-boot-compatible/dubbo-spring-boot-autoconfigure-compatible` to `dubbo-spring-boot-1-autoconfigure`\r\n- Move `dubbo-spring-boot-compatible/dubbo-spring-boot-actuator-autoconfigure-compatible` to `dubbo-spring-boot-1-actuator-autoconfigure`\r\n
+
+LGTM
+
+use `mvn spotless:apply` to format the code first
+
+Thanks, Already formatted @wcy666103 
+
+@AlbumenJ  Hello, can you help me merge this pr? 😊\r\nAll checks have passed
+
+Should we proceed with merging this PR? If not, I will go ahead and close it.\r\n@AlbumenJ 
+
+@CrazyHZM PTAL
+
+Looks like org.junit.platform:junit-platform-launcher is up-to-date now, so this is no longer needed.
+
+## [Codecov](https://app.codecov.io/gh/apache/dubbo/pull/14747?dropdown=coverage&src=pr&el=h1&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) Report\nAll modified and coverable lines are covered by tests :white_check_mark:\n> Project coverage is 37.54%. Comparing base [(`b9a2f19`)](https://app.codecov.io/gh/apache/dubbo/commit/b9a2f194f044c07532715e212ab2e72155be9bad?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) to head [(`af324b6`)](https://app.codecov.io/gh/apache/dubbo/commit/af324b620b9bf2dc97fc1e9130b1bf05a9ffc1a8?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n> Report is 15 commits behind head on 3.3.\n\n<details><summary>Additional details and impacted files</summary>\n\n\n```diff\n@@           Coverage Diff           @@\n##              3.3   #14747   +/-   ##\n=======================================\n  Coverage   37.54%   37.54%           \n=======================================\n  Files        1813     1813           \n  Lines       80736    80736           \n  Branches    12005    12005           \n=======================================\n+ Hits        30314    30316    +2     \n+ Misses      46034    46032    -2     \n  Partials     4388     4388           \n```\n\n</details>\n\n[:umbrella: View full report in Codecov by Sentry](https://app.codecov.io/gh/apache/dubbo/pull/14747?dropdown=coverage&src=pr&el=continue&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).   \n:loudspeaker: Have feedback on the report? [Share it here](https://about.codecov.io/codecov-pr-comment-feedback/?utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n
+
+@dependabot rebase
+
+@dependabot recreate
+
+Looks like these dependencies are no longer a dependency, so this is no longer needed.
+
+@CrazyHZM \n@AlbumenJ 

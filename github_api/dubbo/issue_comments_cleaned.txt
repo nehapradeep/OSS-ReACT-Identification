@@ -1,0 +1,699 @@
+Issue #15242: Labels: No Labels
+Issue #15241: Labels: No Labels
+Issue #15240: Labels: type/need-triage, component/need-triage
+@oxsean PTAL
+Issue #15239: Labels: No Labels
+Is it possible to add some tests?
+Issue #15238: Labels: type/need-triage, component/need-triage
+Issue #15237: Labels: type/need-triage, component/need-triage
+These classes are generated during the compilation, please compile and refresh the project first.
+Issue #15236: Labels: No Labels
+Issue #15235: Labels: type/need-triage, component/need-triage
+Issue #15234: Labels: type/need-triage, component/need-triage
+Issue #15233: Labels: type/need-triage, component/need-triage
+Issue #15232: Labels: type/need-triage, component/need-triage
+Issue #15231: Labels: No Labels
+Issue #15230: Labels: No Labels
+2.7.x has been EOL. In this case, hessian should support null classloader.
+Issue #15229: Labels: dependencies
+Issue #15228: Labels: dependencies
+Issue #15227: Labels: dependencies
+Issue #15226: Labels: dependencies
+Issue #15225: Labels: dependencies
+Issue #15224: Labels: dependencies
+Issue #15223: Labels: No Labels
+![image](https://github.com/user-attachments/assets/1e1e59f5-1cac-496a-b5aa-8425087381bd)\r\n\r\nhttps://github.com/apache/dubbo/actions/runs/13748721648?pr=15223
+Issue #15222: Labels: No Labels
+Hey. Thanks for the tip. Do I need to update  branch?
+Issue #15221: Labels: No Labels
+PTAL @AlbumenJ 
+Issue #15220: Labels: No Labels
+As far as I know, Virtual Threads is a new feature introduced after JDK 21, and Spring Boot added support for it starting from version 3.2. Should we add this configuration in dubbo-spring-boot-3?
+Issue #15219: Labels: No Labels
+![image](https://github.com/user-attachments/assets/ba16cac3-f675-427c-9318-9733cc6fe0c2)\r\n
+Issue #15218: Labels: No Labels
+@CrazyHZM PTAL
+Issue #15217: Labels: type/need-triage, component/need-triage
+Issue #15216: Labels: type/need-triage, component/need-triage
+Issue #15215: Labels: type/need-triage, component/need-triage
+Issue #15214: Labels: type/need-triage, component/need-triage
+Issue #15213: Labels: type/need-triage, component/need-triage
+Issue #15212: Labels: type/need-triage, component/need-triage
+I want to solve it～
+Issue #15211: Labels: No Labels
+Issue #15210: Labels: No Labels
+Issue #15209: Labels: No Labels
+Issue #15208: Labels: No Labels
+Issue #15207: Labels: No Labels
+Issue #15206: Labels: No Labels
+Issue #15205: Labels: No Labels
+Issue #15204: Labels: type/need-triage, component/need-triage
+Issue #15203: Labels: No Labels
+PTAL @oxsean 
+Issue #15202: Labels: No Labels
+Issue #15201: Labels: type/need-triage, component/need-triage
+Issue #15200: Labels: dependencies
+Issue #15199: Labels: dependencies
+Issue #15198: Labels: dependencies
+Issue #15197: Labels: dependencies
+Issue #15196: Labels: dependencies
+Issue #15195: Labels: dependencies
+Issue #15194: Labels: dependencies
+Issue #15193: Labels: No Labels
+Issue #15192: Labels: No Labels
+Please write some tests to verify the current changes.
+Issue #15191: Labels: type/need-triage, component/need-triage
+Upgrade the depenencies bom is ok
+Issue #15190: Labels: No Labels
+I think the target branch should be set to 3.3 instead of 3.4.
+Issue #15189: Labels: No Labels
+<dubbo:protocol name="dubbo" port="20880" host="192.168.1.100"/>\r\nyou can use -D.... to choose special ip address.
+Issue #15188: Labels: No Labels
+@AlbumenJ @oxsean PTAL
+Issue #15187: Labels: type/need-triage, component/need-triage
+IMO,  "multipart/form-data" form type should not be used for Dubbo HTTP transport.
+Issue #15184: Labels: type/need-triage, component/need-triage
+Hi @robin977 I would like to fix this issue. Could you kindly assign it to me?
+Issue #15183: Labels: type/need-triage, component/need-triage
+Fix in dubbo-serialization/dubbo-serialization-hessian2/src/main/java/org/apache/dubbo/common/serialize/hessian2/Hessian2SerializerFactory.java
+Issue #15181: Labels: status/don’t-merge
+Perhaps it can return `null` or `DenyClass.class`. (https://github.com/wuwen5/dubbo/commit/d7d3cf6d3178ee55102db0921a3ac698fe7f91d4)\r\n\r\nIf there is a better solution, please let me know.\r\n\r\n
+Issue #15180: Labels: type/need-triage, component/need-triage
+This feature is still in developing and expected to be release officially late this year
+Issue #15179: Labels: type/need-triage, component/need-triage
+This is by design. Because `Level.class` is in the default deny list. Default deny list has the highest priority
+Issue #15178: Labels: No Labels
+Issue #15176: Labels: No Labels
+Issue #15175: Labels: dependencies
+Issue #15174: Labels: dependencies
+Issue #15173: Labels: dependencies
+Issue #15172: Labels: dependencies
+Issue #15171: Labels: dependencies
+Issue #15170: Labels: dependencies
+Issue #15169: Labels: dependencies
+Issue #15168: Labels: dependencies
+Issue #15167: Labels: dependencies
+Issue #15165: Labels: type/need-triage, component/need-triage
+Already Supported! Please try Dubbo 3.3 which use the latest hessian-lite
+Issue #15164: Labels: No Labels
+> zrlw\r\n\r\nYou can trigger it on your own Github Repo Actions
+Issue #15163: Labels: No Labels
+Issue #15161: Labels: No Labels
+Issue #15160: Labels: type/need-triage, component/need-triage
+extracted a error message snippet from https://github.com/apache/dubbo/actions/runs/13425007540/job/37506574404\n```\nError:  org.apache.dubbo.remoting.transport.netty4.ReplierDispatcherTest.testMultiThread -- Time elapsed: 11.06 s <<< ERROR!\njava.util.concurrent.ExecutionException: org.opentest4j.AssertionFailedError\n\tat java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)\n\tat java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)\n\tat org.apache.dubbo.remoting.transport.netty4.ReplierDispatcherTest.testMultiThread(ReplierDispatcherTest.java:114)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:580)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1596)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1596)\nCaused by: org.opentest4j.AssertionFailedError\n\tat org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:46)\n\tat org.junit.jupiter.api.Assertions.fail(Assertions.java:161)\n\tat org.apache.dubbo.remoting.transport.netty4.ReplierDispatcherTest.lambda$testMultiThread$1(ReplierDispatcherTest.java:110)\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\nCaused by: java.util.concurrent.ExecutionException: org.apache.dubbo.remoting.RemotingException: Server side(127.0.0.1,31708) thread pool is exhausted, detail msg:Thread pool is EXHAUSTED! Thread Name: DubboServerHandler-127.0.0.1:8080, Pool Size: 200 (active: 200, core: 200, max: 200, largest: 200), Task: 499 (completed: 299), Executor status:(isShutdown:false, isTerminated:false, isTerminating:false), in empty://127.0.0.1:8080!\n\tat java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)\n\tat java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073)\n\tat org.apache.dubbo.remoting.transport.netty4.ReplierDispatcherTest.clientExchangeInfo(ReplierDispatcherTest.java:136)\n\tat org.apache.dubbo.remoting.transport.netty4.ReplierDispatcherTest.lambda$testMultiThread$1(ReplierDispatcherTest.java:108)\n\t... 5 more\nCaused by: org.apache.dubbo.remoting.RemotingException: Server side(127.0.0.1,31708) thread pool is exhausted, detail msg:Thread pool is EXHAUSTED! Thread Name: DubboServerHandler-127.0.0.1:8080, Pool Size: 200 (active: 200, core: 200, max: 200, largest: 200), Task: 499 (completed: 299), Executor status:(isShutdown:false, isTerminated:false, isTerminating:false), in empty://127.0.0.1:8080!\n\tat org.apache.dubbo.remoting.exchange.support.DefaultFuture.doReceived(DefaultFuture.java:265)\n\tat org.apache.dubbo.remoting.exchange.support.DefaultFuture.received(DefaultFuture.java:208)\n\tat org.apache.dubbo.remoting.exchange.support.DefaultFuture.received(DefaultFuture.java:196)\n\tat org.apache.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleResponse(HeaderExchangeHandler.java:65)\n\tat org.apache.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:211)\n\tat org.apache.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)\n\tat org.apache.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:64)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat org.apache.dubbo.common.threadlocal.InternalRunnable.run(InternalRunnable.java:39)\n\t... 1 more\n```
+Issue #15158: Labels: type/need-triage, component/need-triage
+Would you like to support it?
+Issue #15157: Labels: No Labels
+PTAL @AlbumenJ @CrazyHZM 
+Issue #15156: Labels: type/need-triage, component/need-triage
+ In Java 19 and 20, try  Executors.newVirtualThreadPerTaskExecutor\n\n```java\n@Configuration\npublic class DubboConfig {\n    @Bean\n    public ExecutorService virtualThreadExecutor() {\n        return Executors.newVirtualThreadPerTaskExecutor();\n    }\n}\n\n```\n\n```yaml\ndubbo:\n  protocol:\n    name: dubbo\n    port: 20880\n    dispatcher: all\n    threadpool: cached\n    # 关键配置：使用虚拟线程\n    executor: virtualThreadExecutor\n```
+Issue #15155: Labels: dependencies
+Issue #15154: Labels: dependencies
+Issue #15153: Labels: dependencies
+Issue #15152: Labels: dependencies
+Issue #15151: Labels: dependencies
+Issue #15150: Labels: dependencies
+Issue #15149: Labels: dependencies
+Issue #15148: Labels: dependencies
+Issue #15147: Labels: dependencies
+@dependabot rebase
+Issue #15146: Labels: dependencies
+Issue #15145: Labels: dependencies
+Issue #15144: Labels: type/need-triage, component/need-triage
+by the way,  ```No templates available for the current repository``` will be shown if trying to create issue at https://github.com/apache/dubbo-samples.
+Issue #15143: Labels: No Labels
+i found merging into 3.3 or 3.4 is blocked,  so commits should be merged to which branch now?\r\n@AlbumenJ 
+Issue #15142: Labels: No Labels
+Issue #15141: Labels: No Labels
+Issue #15139: Labels: No Labels
+@CrazyHZM PTAL
+Issue #15138: Labels: type/need-triage, component/need-triage
+https://github.com/apache/dubbo-spi-extensions/pull/598
+Issue #15136: Labels: No Labels
+The IT fix code needs to be merged as a priority. Ref:https://github.com/apache/dubbo-integration-cases/pull/55
+Issue #15135: Labels: No Labels
+Issue #15134: Labels: No Labels
+Why we need revert it？
+Issue #15133: Labels: type/need-triage, component/need-triage
+You can configure `delay` property
+Issue #15131: Labels: No Labels
+Close by https://github.com/apache/dubbo/pull/15127\r\n\r\nMerge 3.2 to 3.3 later
+Issue #15130: Labels: No Labels
+https://github.com/apache/dubbo/pull/15125 It has already been removed.
+Issue #15129: Labels: No Labels
+issue #14980
+Issue #15128: Labels: type/need-triage, component/need-triage
+Issue #15127: Labels: No Labels
+Thanks for your contribution~However, You should run `mvn spotless:apply` to format before commit your code.@wuwen5
+Issue #15126: Labels: No Labels
+Issue #15125: Labels: No Labels
+@CrazyHZM PTAL
+Issue #15124: Labels: type/need-triage, component/need-triage
+When remove @ToString and @EqualsAndHashCode on **Member**\n\n![Image](https://github.com/user-attachments/assets/5ba10fbf-8a5c-4550-8378-e348272d8ced)
+Issue #15123: Labels: type/need-triage, component/need-triage
+Would you like to fix it?
+Issue #15122: Labels: No Labels
+@EarthChen @icodening @oxsean PTAL
+Issue #15121: Labels: type/need-triage, component/need-triage
+@AlbumenJ @CrazyHZM 
+Issue #15120: Labels: dependencies
+Issue #15119: Labels: dependencies
+Issue #15118: Labels: dependencies
+Issue #15117: Labels: dependencies
+Issue #15116: Labels: type/need-triage, component/need-triage
+1. Dubbo 2.7.x is no longer supported\n2. This might caused by jdk17\n3. Dubbo 3.x currently not support eureka. Contribution is welcome
+Issue #15115: Labels: No Labels
+![image](https://github.com/user-attachments/assets/7b1f1315-2523-4770-a7f8-4c42cd901a06)\r\n\r\n
+Issue #15114: Labels: type/need-triage, component/need-triage
+Please re-submit this issue in English only.
+Issue #15113: Labels: No Labels
+@CrazyHZM @chickenlj PTAL
+Issue #15112: Labels: No Labels
+Issue #15111: Labels: type/need-triage, component/need-triage
+@oxsean PTAL
+Issue #15110: Labels: No Labels
+I have been troubled by this problem for a day. It is a sporadic problem and it is very annoying. I have upgraded dubbo to 3.2.16. Is there a way to solve it?
+Issue #15109: Labels: No Labels
+Issue #15108: Labels: type/need-triage, component/need-triage
+PTAL @oxsean \nIt appears that the absence of a `ServiceModel` during the initialization of the gRPC-related URL object caused a NullPointerException (NPE) in the following code:  \n\n```java\nHeaderFilter[] headerFilters =  \n    UrlUtils.computeServiceAttribute(invoker.getUrl(), HEADER_FILTERS_CACHE, this::loadHeaderFilters);\n```
+Issue #15107: Labels: type/need-triage, component/need-triage
+since ```nacos do not notify the latest data once Sub```, ```Sub``` before ```Get``` might solve this issue, at least alleviate the issue.\nif ```Sub``` before ```Get``` at client starting, \n1. if server status is offline yet, nacos will not notify when it get ```Sub```  request as the server status is not changed. but it will notify the client once the server status is changed to online  no matter ```Get``` empty instances or not.\n2. if  server status is already online,  ```Get``` after ```Sub``` will get server instances no matter nacos notification or not.\n\nby the way, adding retry mechanism when setting forbidden to false might be another solution.
+Issue #15106: Labels: No Labels
+Dubbo 3.2.2 and below still use SnakeYAML 1.x, and I believe the most time-saving and effortless approach is to use that version, as it is compatible with both Dubbo 3.x and Spring Boot 2.1.x. @marmot-z
+Issue #15104: Labels: dependencies
+Issue #15103: Labels: dependencies
+Issue #15102: Labels: dependencies
+Issue #15101: Labels: dependencies
+Issue #15100: Labels: dependencies
+Issue #15099: Labels: dependencies
+Issue #15098: Labels: dependencies
+Issue #15097: Labels: dependencies
+Issue #15096: Labels: type/need-triage, component/need-triage
+Would you like to fix it?
+Issue #15095: Labels: dependencies
+Issue #15094: Labels: dependencies
+Issue #15093: Labels: dependencies
+Issue #15092: Labels: type/need-triage, component/need-triage
+Issue #15091: Labels: type/need-triage, component/need-triage
+Please re-submit this pr in English only.
+Issue #15090: Labels: type/need-triage, component/need-triage
+Agree
+Issue #15089: Labels: No Labels
+Issue #15088: Labels: type/need-triage, component/need-triage
+This version has been archived, and no further code modifications or functional support will be provided.
+Issue #15087: Labels: type/need-triage, component/need-triage
+@funky-eyes PTAL
+Issue #15086: Labels: No Labels
+Issue #15085: Labels: No Labels
+Issue #15084: Labels: No Labels
+Issue #15082: Labels: No Labels
+@CrazyHZM  PTAL
+Issue #15081: Labels: dependencies
+Issue #15080: Labels: dependencies
+Issue #15079: Labels: dependencies
+Issue #15078: Labels: dependencies
+Issue #15077: Labels: dependencies
+Issue #15076: Labels: dependencies
+Issue #15075: Labels: dependencies
+Issue #15074: Labels: dependencies
+Issue #15073: Labels: dependencies
+Superseded by #15093.
+Issue #15072: Labels: dependencies
+Issue #15071: Labels: dependencies
+Issue #15070: Labels: No Labels
+我想成为dubbo的commiter，现在还不熟悉，可以做一些简单的工作吗？
+Issue #15069: Labels: No Labels
+Issue #15068: Labels: No Labels
+Issue #15067: Labels: No Labels
+Repeated, closed
+Issue #15065: Labels: No Labels
+Issue #15064: Labels: No Labels
+PTAL @CrazyHZM 
+Issue #15063: Labels: type/need-triage, component/need-triage
+Issue #15060: Labels: No Labels
+Issue #15059: Labels: type/need-triage, component/need-triage
+I want to solve it.Please assign me ~
+Issue #15058: Labels: No Labels
+Issue #15057: Labels: dependencies
+Issue #15056: Labels: dependencies
+Issue #15055: Labels: dependencies
+Superseded by #15071.
+Issue #15054: Labels: dependencies
+Issue #15053: Labels: dependencies
+Issue #15052: Labels: dependencies
+Issue #15051: Labels: type/need-triage, component/need-triage
+Currently, there is service discovery support for Kubernetes in the Dubbo extension library. Is it possible to use it? If there are other requirements, could you describe them in more detail? [dubbo-kubernetes](https://github.com/apache/dubbo-spi-extensions/tree/master/dubbo-kubernetes)
+Issue #15050: Labels: type/need-triage, component/need-triage
+Would you be willing to try fixing this issue
+Issue #15049: Labels: No Labels
+Issue #15047: Labels: type/need-triage, component/need-triage
+I found the cause of the problem because dubbo3 uses the nacos registry. Dual registration mode will be used, resulting in both the http port and dubbo port on a microservice being registered with nacos. Therefore, when the spring gateway obtains nacos services, after Load Balancer, it will poll and invoke these two ports, and it will be found that each time succeeds and the other fails.\r\n\r\n\r\n![image](https://github.com/user-attachments/assets/da4cef3f-438e-4dc9-9d9a-b741a3594be7)\r\n
+Issue #15046: Labels: No Labels
+How about move to 3.4?
+Issue #15045: Labels: type/need-triage, component/need-triage
+Why do you want to do it?
+Issue #15044: Labels: type/need-triage, component/need-triage
+This may caused by heartbeat failure. Please check your network configuration.
+Issue #15043: Labels: type/need-triage, component/need-triage
+Check if there are some huge request / response. This will block your I/O thread.
+Issue #15042: Labels: type/need-triage, component/need-triage
+content-type supports modification, but there are some limitations, after changing the content-type, the encoder is not modified, which means if you change it to yml, the output is still json.
+Issue #15041: Labels: type/need-triage, component/need-triage
+Spring Boot 3.0 builds on and requires Spring Framework 6\r\nhttps://github.com/spring-projects/spring-boot/wiki/Spring-Boot-3.0-Release-Notes
+Issue #15040: Labels: type/need-triage, component/need-triage
+Please try use the latest version of 3.2.x. Service Directory has been fixed for serval times.
+Issue #15039: Labels: dependencies
+Superseded by #15077.
+Issue #15038: Labels: dependencies
+Issue #15037: Labels: dependencies
+Issue #15036: Labels: dependencies
+@dependabot rebase\r\n
+Issue #15035: Labels: No Labels
+Issue #15034: Labels: No Labels
+Issue #15033: Labels: No Labels
+Issue #15032: Labels: No Labels
+Issue #15031: Labels: type/need-triage, component/need-triage
+Issue #15030: Labels: No Labels
+Issue #15029: Labels: No Labels
+@EarthChen PTAL
+Issue #15028: Labels: No Labels
+Issue #15027: Labels: dependencies
+Issue #15026: Labels: No Labels
+Issue #15025: Labels: No Labels
+Issue #15024: Labels: type/need-triage, component/need-triage
+Issue #15022: Labels: type/need-triage, component/need-triage
+What do you want?
+Issue #15021: Labels: type/need-triage, component/need-triage
+![image](https://github.com/user-attachments/assets/09861b06-f17b-448c-babf-5d2a7dda5405)\r\nthis is my pom.xml
+Issue #15020: Labels: type/need-triage, component/need-triage
+@oxsean PTAL
+Issue #15019: Labels: No Labels
+Could you please test whether SSE is work fine?\r\nhttps://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events
+Issue #15018: Labels: type/need-triage, component/need-triage
+`curl http://127.0.0.1:22222/metrics`\r\n\r\nTo enable metrics, you may need import `observatory-starter` and configure `dubbo.metrics.protocol=prometheus dubbo.metrics.enableRpc=true`
+Issue #15017: Labels: No Labels
+Issue #15016: Labels: type/need-triage, component/need-triage
+Why do you want to extend a `Config`?
+Issue #15015: Labels: No Labels
+Issue #15014: Labels: No Labels
+Issue #15013: Labels: type/need-triage, component/need-triage
+Dubbo 3.3 has removed the Rest protocol and released it as an extension, you can try to import it.\r\n\r\n```\r\n<dependency>\r\n    <groupId>org.apache.dubbo.extensions</groupId>\r\n    <artifactId>dubbo-remoting-http</artifactId>\r\n    <version>3.3.1</version>\r\n</dependency>\r\n```
+Issue #15012: Labels: dependencies
+Issue #15011: Labels: type/need-triage, component/need-triage
+Issue #15010: Labels: type/need-triage, component/need-triage
+@EarthChen PTAL
+Issue #15008: Labels: type/need-triage, component/need-triage
+Please resubmit in English only.
+Issue #15006: Labels: No Labels
+Issue #15004: Labels: type/need-triage, component/need-triage
+同一台机器，调用多次，有几次是no provider，其他是正常的
+Issue #15003: Labels: type/need-triage, component/need-triage
+Can you show the complete error message?
+Issue #15002: Labels: dependencies
+Superseded by #15027.
+Issue #15001: Labels: dependencies
+Issue #15000: Labels: dependencies
+Issue #14999: Labels: dependencies
+Issue #14998: Labels: dependencies
+Issue #14997: Labels: dependencies
+Issue #14996: Labels: dependencies
+Issue #14995: Labels: dependencies
+Issue #14994: Labels: dependencies
+Issue #14993: Labels: dependencies
+Issue #14992: Labels: dependencies
+Issue #14991: Labels: dependencies
+Issue #14990: Labels: dependencies
+Issue #14989: Labels: dependencies
+Issue #14988: Labels: type/need-triage, component/need-triage
+Upgrade dubbo version to 3.2 first, then try to add the following configuration and set it by yourself.\r\n\r\n```\r\ndubbo:\r\n  application:\r\n    parameters:\r\n      # set header size, the default is 8192\r\n      max.header.size: 8192\r\n      # set the netty chunk size, the default is 8192\r\n      max.chunk.size: 8192\r\n      # set request object size, the default is 1024 * 1024 * 10 = 10,485,760\r\n      max.request.size: 10485760\r\n```
+Issue #14987: Labels: type/need-triage, component/need-triage
+@AlbumenJ 
+Issue #14986: Labels: No Labels
+Please fix style check
+Issue #14983: Labels: dependencies
+Looks like org.asynchttpclient:async-http-client is up-to-date now, so this is no longer needed.
+Issue #14982: Labels: No Labels
+Issue #14981: Labels: No Labels
+Issue #14980: Labels: type/need-triage, component/need-triage
+I understand, it should be the binary search method of Arrays that ensures that the last element will not be retrieved
+Issue #14977: Labels: dependencies
+@dependabot rebase
+Issue #14976: Labels: dependencies
+Issue #14975: Labels: dependencies
+Issue #14973: Labels: No Labels
+Issue #14972: Labels: No Labels
+Issue #14971: Labels: dependencies
+Issue #14970: Labels: No Labels
+Issue #14969: Labels: No Labels
+![image](https://github.com/user-attachments/assets/edf76ff8-1eb5-46e6-a1b4-075d87caa0fc)\r\n
+Issue #14968: Labels: type/need-triage, component/need-triage
+```java\r\n    protected LoadBalance initLoadBalance(List<Invoker<T>> invokers, Invocation invocation) {\r\n        ApplicationModel applicationModel = ScopeModelUtil.getApplicationModel(invocation.getModuleModel());\r\n        if (CollectionUtils.isNotEmpty(invokers)) {\r\n            return applicationModel\r\n                    .getExtensionLoader(LoadBalance.class)\r\n                    .getExtension(invokers.get(0)\r\n                            .getUrl()\r\n                            .getMethodParameter(\r\n                                    RpcUtils.getMethodName(invocation), LOADBALANCE_KEY, DEFAULT_LOADBALANCE));\r\n        } else {\r\n            return applicationModel.getExtensionLoader(LoadBalance.class).getExtension(DEFAULT_LOADBALANCE);\r\n        }\r\n    }\r\n```\r\ni think you can override url by config on dubbo admin.
+Issue #14967: Labels: type/need-triage, component/need-triage
+If you use zk upper than 3.4.x, it would be better to use dubbo-dependencies-zookeeper-curator5
+Issue #14966: Labels: No Labels
+@CrazyHZM @AlbumenJ  
+Issue #14965: Labels: No Labels
+Issue #14964: Labels: type/need-triage, component/need-triage
+@songxiaosheng PTAL
+Issue #14960: Labels: type/need-triage, component/need-triage
+![image](https://github.com/user-attachments/assets/0c7c1cfd-16fb-442b-8f3c-654b16e35f26)\r\n
+Issue #14959: Labels: type/need-triage, component/need-triage
+ok,
+Issue #14958: Labels: dependencies
+Issue #14957: Labels: dependencies
+Issue #14956: Labels: dependencies
+Issue #14955: Labels: No Labels
+Issue #14954: Labels: No Labels
+I have tested the script on both windows and mac as well as linux systems.
+Issue #14953: Labels: No Labels
+Issue #14952: Labels: type/need-triage, component/need-triage
+Yes, it will use `injvm` protocol
+Issue #14950: Labels: No Labels
+The `nodeCacheMap` is a cache, and each cache should not be closed when the current client is destroyed.
+Issue #14949: Labels: No Labels
+format code
+Issue #14948: Labels: No Labels
+Issue #14947: Labels: type/need-triage, component/need-triage
+It looks like a problem with idea, not all maven projects were identified.
+Issue #14946: Labels: type/need-triage, component/need-triage
+Would you be willing to submit a pr to help fix this?
+Issue #14944: Labels: dependencies
+Issue #14943: Labels: dependencies
+Issue #14942: Labels: dependencies
+Issue #14941: Labels: dependencies
+Issue #14940: Labels: dependencies
+Issue #14939: Labels: type/need-triage, component/need-triage
+PTAL @AlbumenJ 
+Issue #14938: Labels: type/need-triage, component/need-triage
+Normally it will be also notifyed by RegistryDirectory, because it is dual registration(interface & instance). when all of them finished destory, the count of ReferenceCountExchangeClient will be zero, so it will be destory.\r\n
+Issue #14937: Labels: type/need-triage, component/need-triage
+We may can use cache here. `ReflectionServiceDescriptor` might be not detailed enough for security check.
+Issue #14936: Labels: No Labels
+Issue #14935: Labels: No Labels
+Issue #14934: Labels: No Labels
+Issue #14933: Labels: No Labels
+Issue #14932: Labels: No Labels
+Issue #14931: Labels: No Labels
+![image](https://github.com/user-attachments/assets/29ae6c2d-68dd-483c-964e-d4cb11c8af11)\r\n
+Issue #14930: Labels: No Labels
+Issue #14929: Labels: No Labels
+## [Codecov](https://app.codecov.io/gh/apache/dubbo/pull/14929?dropdown=coverage&src=pr&el=h1&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) Report\nAll modified and coverable lines are covered by tests :white_check_mark:\n> Project coverage is 37.55%. Comparing base [(`9e249cf`)](https://app.codecov.io/gh/apache/dubbo/commit/9e249cfd846a673aba365e1a42f85950f71bd433?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) to head [(`3e04799`)](https://app.codecov.io/gh/apache/dubbo/commit/3e0479968b4ea25aec750d54a8329ad0f19e1e6c?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n> Report is 3 commits behind head on 3.3.\n\n<details><summary>Additional details and impacted files</summary>\n\n\n```diff\n@@           Coverage Diff           @@\n##              3.3   #14929   +/-   ##\n=======================================\n  Coverage   37.55%   37.55%           \n=======================================\n  Files        1835     1835           \n  Lines       81382    81382           \n  Branches    12093    12093           \n=======================================\n+ Hits        30563    30566    +3     \n- Misses      46377    46379    +2     \n+ Partials     4442     4437    -5     \n```\n\n</details>\n\n[:umbrella: View full report in Codecov by Sentry](https://app.codecov.io/gh/apache/dubbo/pull/14929?dropdown=coverage&src=pr&el=continue&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).   \n:loudspeaker: Have feedback on the report? [Share it here](https://about.codecov.io/codecov-pr-comment-feedback/?utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n\n----\n🚨 Try these New Features:\n\n- [Flaky Tests Detection](https://docs.codecov.com/docs/test-result-ingestion-beta) - Detect and resolve failed and flaky tests\n- [JS Bundle Analysis](https://docs.codecov.com/docs/javascript-bundle-analysis) - Avoid shipping oversized bundles
+Issue #14928: Labels: No Labels
+Issue #14927: Labels: type/need-triage, component/need-triage
+Would you like to support it?
+Issue #14926: Labels: type/need-triage, component/need-triage
+Issue #14925: Labels: type/need-triage, component/need-triage
+Please submit issue to Skywalking first
+Issue #14924: Labels: No Labels
+NPE will be thrown at org.apache.dubbo.rpc.protocol.tri.servlet.HttpMetadataAdapter because ```request.getHeader(HttpHeaderNames.HOST.getName())``` will return null if using http2.\r\n```\r\n@Override\r\n    public HttpHeaders headers() {\r\n            headers.add(PseudoHeaderName.METHOD.value(), method());\r\n            headers.add(PseudoHeaderName.SCHEME.value(), request.getScheme());\r\n            headers.add(PseudoHeaderName.AUTHORITY.value(), request.getHeader(HttpHeaderNames.HOST.getName()));\r\n            headers.add(PseudoHeaderName.PROTOCOL.value(), request.getProtocol());\r\n            this.headers = headers;\r\n```\r\nhttps://github.com/apache/dubbo-samples/tree/master/2-advanced/dubbo-samples-triple-servlet NPE:\r\n```\r\n[DUBBO] Initialize executor failed., dubbo version: 3.3.4-SNAPSHOT, current host: 172.27.0.3, error code: 0-18. This may be caused by , go to https://dubbo.apache.org/faq/0/18 to find instructions. \r\n2025-02-16T08:06:02.1996318Z java.lang.NullPointerException: value\r\n2025-02-16T08:06:02.1997279Z \tat io.netty.util.internal.ObjectUtil.checkNotNull(ObjectUtil.java:39) ~[netty-common-4.1.107.Final.jar:4.1.107.Final]\r\n2025-02-16T08:06:02.1998664Z \tat io.netty.handler.codec.DefaultHeaders.add(DefaultHeaders.java:331) ~[netty-codec-4.1.107.Final.jar:4.1.107.Final]\r\n2025-02-16T08:06:02.2000554Z \tat org.apache.dubbo.remoting.http12.netty4.NettyHttpHeaders.add(NettyHttpHeaders.java:82) ~[dubbo-3.3.4-SNAPSHOT.jar:3.3.4-SNAPSHOT]\r\n2025-02-16T08:06:02.2002451Z \tat org.apache.dubbo.rpc.protocol.tri.servlet.jakarta.HttpMetadataAdapter.headers(HttpMetadataAdapter.java:58) ~[dubbo-3.3.4-SNAPSHOT.jar:3.3.4-SNAPSHOT]\r\n2025-02-16T08:06:02.2004703Z \tat org.apache.dubbo.rpc.protocol.tri.transport.TripleIsolationExecutorSupport.getServiceKey(TripleIsolationExecutorSupport.java:46) ~[dubbo-3.3.4-SNAPSHOT.jar:3.3.4-SNAPSHOT]\r\n2025-02-16T08:06:02.2007068Z \tat org.apache.dubbo.rpc.executor.AbstractIsolationExecutorSupport.getProviderModel(AbstractIsolationExecutorSupport.java:64) ~[dubbo-3.3.4-SNAPSHOT.jar:3.3.4-SNAPSHOT]\r\n2025-02-16T08:06:02.2009377Z \tat org.apache.dubbo.rpc.executor.AbstractIsolationExecutorSupport.getExecutor(AbstractIsolationExecutorSupport.java:41) ~[dubbo-3.3.4-SNAPSHOT.jar:3.3.4-SNAPSHOT]\r\n2025-02-16T08:06:02.2011790Z \tat org.apache.dubbo.rpc.protocol.tri.h12.AbstractServerTransportListener.getExecutor(AbstractServerTransportListener.java:137) ~[dubbo-3.3.4-SNAPSHOT.jar:3.3.4-SNAPSHOT]\r\n2025-02-16T08:06:02.2014200Z \tat org.apache.dubbo.rpc.protocol.tri.h12.grpc.GrpcHttp2ServerTransportListener.initializeExecutor(GrpcHttp2ServerTransportListener.java:64) \r\n```\r\nit might be fixed by https://github.com/apache/dubbo/pull/15141
+Issue #14923: Labels: type/need-triage, component/need-triage
+Could you please provide the exception stack?
+Issue #14922: Labels: No Labels
+LGTM
+Issue #14921: Labels: No Labels
+Issue #14920: Labels: type/need-triage, component/need-triage
+Are the existing Dubbo routing rules inadequate for your scenario? https://cn.dubbo.apache.org/zh-cn/overview/mannual/java-sdk/tasks/traffic-management/  Can you give me an example ？
+Issue #14919: Labels: type/need-triage, component/need-triage
+Please remove this config. We have already remove these commands in Dubbo 3
+Issue #14918: Labels: No Labels
+use `mvn spotless:apply` to format the code.
+Issue #14917: Labels: No Labels
+Issue #14915: Labels: type/need-triage, component/need-triage
+all the huge log is repetitive like the image show.and produce huge log every exeption,short time it produce more than 1g
+Issue #14914: Labels: type/need-triage, component/need-triage
+This is to avoid security issues  https://github.com/apache/dubbo/pull/7779\r\n\r\nConsider changing the nacos password?
+Issue #14913: Labels: dependencies
+@dependabot rebase
+Issue #14912: Labels: dependencies
+@dependabot rebase
+Issue #14911: Labels: dependencies
+@dependabot rebase
+Issue #14910: Labels: dependencies
+@dependabot rebase
+Issue #14909: Labels: dependencies
+@dependabot rebase
+Issue #14907: Labels: dependencies
+@dependabot rebase
+Issue #14906: Labels: dependencies
+@dependabot rebase
+Issue #14905: Labels: No Labels
+Issue #14904: Labels: No Labels
+ci fixed in https://github.com/apache/dubbo-samples/pull/1195
+Issue #14903: Labels: No Labels
+Issue #14902: Labels: No Labels
+Please merge the relevant pr first.
+Issue #14901: Labels: No Labels
+Issue #14900: Labels: No Labels
+use `mvn spotless:apply` to format the code.
+Issue #14899: Labels: No Labels
+Issue #14898: Labels: No Labels
+Issue #14897: Labels: help wanted, component/sdk
+"Hi, I\
+Issue #14896: Labels: No Labels
+Issue #14895: Labels: type/need-triage, component/need-triage
+Could you please create a PR to fix it?
+Issue #14894: Labels: type/need-triage, component/need-triage
+https://github.com/apache/dubbo-website/pull/3071
+Issue #14892: Labels: No Labels
+Issue #14891: Labels: type/need-triage, component/need-triage
+Issue #14890: Labels: type/need-triage, component/need-triage
+Please re-submit the issue in English only :)
+Issue #14888: Labels: No Labels
+## [Codecov](https://app.codecov.io/gh/apache/dubbo/pull/14888?dropdown=coverage&src=pr&el=h1&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) Report\nAll modified and coverable lines are covered by tests :white_check_mark:\n> Project coverage is 2.20%. Comparing base [(`ef6e8bd`)](https://app.codecov.io/gh/apache/dubbo/commit/ef6e8bd01cef22ef148f1edb67cc1b41af55f4d6?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) to head [(`69de5fb`)](https://app.codecov.io/gh/apache/dubbo/commit/69de5fb22315ec3a92ff9cf4f68b79a706172730?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n> Report is 56 commits behind head on 3.3.\n\n<details><summary>Additional details and impacted files</summary>\n\n\n```diff\n@@              Coverage Diff              @@\n##              3.3    #14888        +/-   ##\n=============================================\n- Coverage   37.53%     2.20%    -35.34%     \n=============================================\n  Files        1813     26083     +24270     \n  Lines       80737   1389674   +1308937     \n  Branches    12005    220210    +208205     \n=============================================\n+ Hits        30304     30588       +284     \n- Misses      46042   1354645   +1308603     \n- Partials     4391      4441        +50     \n```\n\n</details>\n\n[:umbrella: View full report in Codecov by Sentry](https://app.codecov.io/gh/apache/dubbo/pull/14888?dropdown=coverage&src=pr&el=continue&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).   \n:loudspeaker: Have feedback on the report? [Share it here](https://about.codecov.io/codecov-pr-comment-feedback/?utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n
+Issue #14887: Labels: dependencies
+Issue #14886: Labels: dependencies
+Issue #14885: Labels: component/sdk
+Could you please provider a demo?
+Issue #14884: Labels: No Labels
+as @AlbumenJ said this is not a bug but a feature\r\nhttps://github.com/apache/dubbo/issues/14883#issuecomment-2475562946
+Issue #14883: Labels: type/need-triage, component/need-triage
+The priority of **RegistryConfig** is higher than **ApplicationConfig**\r\n\r\n
+Issue #14880: Labels: type/need-triage, component/need-triage
+Issue #14878: Labels: type/need-triage, component/need-triage
+close as completed.
+Issue #14877: Labels: No Labels
+## [Codecov](https://app.codecov.io/gh/apache/dubbo/pull/14877?dropdown=coverage&src=pr&el=h1&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) Report\nAll modified and coverable lines are covered by tests :white_check_mark:\n> Project coverage is 2.19%. Comparing base [(`ef6e8bd`)](https://app.codecov.io/gh/apache/dubbo/commit/ef6e8bd01cef22ef148f1edb67cc1b41af55f4d6?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) to head [(`1f45da0`)](https://app.codecov.io/gh/apache/dubbo/commit/1f45da086643c49e85d5a4dd5b1f5564b3f5d4a2?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n> Report is 55 commits behind head on 3.3.\n\n<details><summary>Additional details and impacted files</summary>\n\n\n```diff\n@@              Coverage Diff              @@\n##              3.3    #14877        +/-   ##\n=============================================\n- Coverage   37.53%     2.19%    -35.34%     \n=============================================\n  Files        1813     26083     +24270     \n  Lines       80737   1389674   +1308937     \n  Branches    12005    220210    +208205     \n=============================================\n+ Hits        30304     30560       +256     \n- Misses      46042   1354672   +1308630     \n- Partials     4391      4442        +51     \n```\n\n</details>\n\n[:umbrella: View full report in Codecov by Sentry](https://app.codecov.io/gh/apache/dubbo/pull/14877?dropdown=coverage&src=pr&el=continue&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).   \n:loudspeaker: Have feedback on the report? [Share it here](https://about.codecov.io/codecov-pr-comment-feedback/?utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n
+Issue #14875: Labels: No Labels
+## [Codecov](https://app.codecov.io/gh/apache/dubbo/pull/14875?dropdown=coverage&src=pr&el=h1&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) Report\nAll modified and coverable lines are covered by tests :white_check_mark:\n> Project coverage is 2.19%. Comparing base [(`ef6e8bd`)](https://app.codecov.io/gh/apache/dubbo/commit/ef6e8bd01cef22ef148f1edb67cc1b41af55f4d6?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) to head [(`87bfe55`)](https://app.codecov.io/gh/apache/dubbo/commit/87bfe55b43170b712833a1d5c04200f3e5fd687a?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n> Report is 55 commits behind head on 3.3.\n\n<details><summary>Additional details and impacted files</summary>\n\n\n```diff\n@@              Coverage Diff              @@\n##              3.3    #14875        +/-   ##\n=============================================\n- Coverage   37.53%     2.19%    -35.34%     \n=============================================\n  Files        1813     26083     +24270     \n  Lines       80737   1389674   +1308937     \n  Branches    12005    220210    +208205     \n=============================================\n+ Hits        30304     30544       +240     \n- Misses      46042   1354687   +1308645     \n- Partials     4391      4443        +52     \n```\n\n</details>\n\n[:umbrella: View full report in Codecov by Sentry](https://app.codecov.io/gh/apache/dubbo/pull/14875?dropdown=coverage&src=pr&el=continue&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).   \n:loudspeaker: Have feedback on the report? [Share it here](https://about.codecov.io/codecov-pr-comment-feedback/?utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n
+Issue #14874: Labels: No Labels
+## [Codecov](https://app.codecov.io/gh/apache/dubbo/pull/14874?dropdown=coverage&src=pr&el=h1&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) Report\nAll modified and coverable lines are covered by tests :white_check_mark:\n> Project coverage is 2.19%. Comparing base [(`ef6e8bd`)](https://app.codecov.io/gh/apache/dubbo/commit/ef6e8bd01cef22ef148f1edb67cc1b41af55f4d6?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) to head [(`02c2f20`)](https://app.codecov.io/gh/apache/dubbo/commit/02c2f209193db78e0b20c5b323a4a4f774343c24?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n> Report is 88 commits behind head on 3.3.\n\n<details><summary>Additional details and impacted files</summary>\n\n\n```diff\n@@              Coverage Diff              @@\n##              3.3    #14874        +/-   ##\n=============================================\n- Coverage   37.53%     2.19%    -35.34%     \n=============================================\n  Files        1813     26083     +24270     \n  Lines       80737   1389686   +1308949     \n  Branches    12005    220210    +208205     \n=============================================\n+ Hits        30304     30570       +266     \n- Misses      46042   1354680   +1308638     \n- Partials     4391      4436        +45     \n```\n\n</details>\n\n[:umbrella: View full report in Codecov by Sentry](https://app.codecov.io/gh/apache/dubbo/pull/14874?dropdown=coverage&src=pr&el=continue&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).   \n:loudspeaker: Have feedback on the report? [Share it here](https://about.codecov.io/codecov-pr-comment-feedback/?utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n
+Issue #14873: Labels: No Labels
+## [Codecov](https://app.codecov.io/gh/apache/dubbo/pull/14873?dropdown=coverage&src=pr&el=h1&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) Report\nAll modified and coverable lines are covered by tests :white_check_mark:\n> Project coverage is 2.19%. Comparing base [(`ef6e8bd`)](https://app.codecov.io/gh/apache/dubbo/commit/ef6e8bd01cef22ef148f1edb67cc1b41af55f4d6?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) to head [(`4ec40c5`)](https://app.codecov.io/gh/apache/dubbo/commit/4ec40c56f5eedda5bdce7fd28e9312895e3d4771?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n> Report is 55 commits behind head on 3.3.\n\n<details><summary>Additional details and impacted files</summary>\n\n\n```diff\n@@              Coverage Diff              @@\n##              3.3    #14873        +/-   ##\n=============================================\n- Coverage   37.53%     2.19%    -35.34%     \n=============================================\n  Files        1813     26083     +24270     \n  Lines       80737   1389674   +1308937     \n  Branches    12005    220210    +208205     \n=============================================\n+ Hits        30304     30550       +246     \n- Misses      46042   1354687   +1308645     \n- Partials     4391      4437        +46     \n```\n\n</details>\n\n[:umbrella: View full report in Codecov by Sentry](https://app.codecov.io/gh/apache/dubbo/pull/14873?dropdown=coverage&src=pr&el=continue&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).   \n:loudspeaker: Have feedback on the report? [Share it here](https://about.codecov.io/codecov-pr-comment-feedback/?utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n
+Issue #14872: Labels: No Labels
+why add it
+Issue #14871: Labels: No Labels
+## [Codecov](https://app.codecov.io/gh/apache/dubbo/pull/14871?dropdown=coverage&src=pr&el=h1&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) Report\nAll modified and coverable lines are covered by tests :white_check_mark:\n> Project coverage is 2.19%. Comparing base [(`ef6e8bd`)](https://app.codecov.io/gh/apache/dubbo/commit/ef6e8bd01cef22ef148f1edb67cc1b41af55f4d6?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) to head [(`0261a18`)](https://app.codecov.io/gh/apache/dubbo/commit/0261a182a7b11267571b4298a13672e6c049d10a?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n> Report is 55 commits behind head on 3.3.\n\n> :exclamation: **Current head 0261a18 differs from pull request most recent head 2af91b4**\n> \n> Please [upload](https://docs.codecov.com/docs/codecov-uploader) reports for the commit 2af91b4 to get more accurate results.\n\n<details><summary>Additional details and impacted files</summary>\n\n\n```diff\n@@              Coverage Diff              @@\n##              3.3    #14871        +/-   ##\n=============================================\n- Coverage   37.53%     2.19%    -35.34%     \n=============================================\n  Files        1813     26083     +24270     \n  Lines       80737   1389674   +1308937     \n  Branches    12005    220210    +208205     \n=============================================\n+ Hits        30304     30566       +262     \n- Misses      46042   1354670   +1308628     \n- Partials     4391      4438        +47     \n```\n\n</details>\n\n[:umbrella: View full report in Codecov by Sentry](https://app.codecov.io/gh/apache/dubbo/pull/14871?dropdown=coverage&src=pr&el=continue&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).   \n:loudspeaker: Have feedback on the report? [Share it here](https://about.codecov.io/codecov-pr-comment-feedback/?utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n
+Issue #14870: Labels: type/need-triage, component/need-triage
+> Hello thanks for the feedback, the implementation of consul is in [dubbo-spi-extension](https://github.com/apache/dubbo-spi-extensions/tree/master/dubbo-metadata-report-extensions/dubbo-metadata-report-consul), and the specific usage method can be found in [dubbo-spi-samples](https://github.com/apache/dubbo-spi-samples/tree/main/5-dubbo-spi-metadata-samples/samples-spi-metadata/samples-spi-metadata-consul). There is already an [issue](https://github.com/apache/dubbo/issues/14868) that reflects the same problem, and a PR has been filed. If you still can\
+Issue #14869: Labels: No Labels
+## [Codecov](https://app.codecov.io/gh/apache/dubbo/pull/14869?dropdown=coverage&src=pr&el=h1&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) Report\nAll modified and coverable lines are covered by tests :white_check_mark:\n> Project coverage is 2.34%. Comparing base [(`ef6e8bd`)](https://app.codecov.io/gh/apache/dubbo/commit/ef6e8bd01cef22ef148f1edb67cc1b41af55f4d6?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) to head [(`b162442`)](https://app.codecov.io/gh/apache/dubbo/commit/b162442b2e621895cf32aae84f1cbfb0b4e84877?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n> Report is 104 commits behind head on 3.3.\n\n<details><summary>Additional details and impacted files</summary>\n\n\n```diff\n@@              Coverage Diff              @@\n##              3.3    #14869        +/-   ##\n=============================================\n- Coverage   37.53%     2.34%    -35.19%     \n=============================================\n  Files        1813     24219     +22406     \n  Lines       80737   1288755   +1208018     \n  Branches    12005    203843    +191838     \n=============================================\n- Hits        30304     30275        -29     \n- Misses      46042   1254069   +1208027     \n- Partials     4391      4411        +20     \n```\n\n</details>\n\n[:umbrella: View full report in Codecov by Sentry](https://app.codecov.io/gh/apache/dubbo/pull/14869?dropdown=coverage&src=pr&el=continue&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).   \n:loudspeaker: Have feedback on the report? [Share it here](https://about.codecov.io/codecov-pr-comment-feedback/?utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n
+Issue #14868: Labels: type/need-triage, component/need-triage
+Issue #14867: Labels: type/need-triage, component/need-triage
+Hello and thanks for the feedback. But this is not a bug, this is because the latest version of `dubbo-spi-extensions` has not been released yet, and the current version 3.3 has not integrated the redis extension. Our latest version is coming soon, so you can wait. If you need to use it urgently, you can manually compile and package the master branch of `dubbo-spi-extensions` and then use it.@eduosi 
+Issue #14866: Labels: No Labels
+## [Codecov](https://app.codecov.io/gh/apache/dubbo/pull/14866?dropdown=coverage&src=pr&el=h1&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) Report\nAll modified and coverable lines are covered by tests :white_check_mark:\n> Project coverage is 2.19%. Comparing base [(`ef6e8bd`)](https://app.codecov.io/gh/apache/dubbo/commit/ef6e8bd01cef22ef148f1edb67cc1b41af55f4d6?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) to head [(`b4ca9ba`)](https://app.codecov.io/gh/apache/dubbo/commit/b4ca9bae08fe5ed49fd5e416a28f3174dcccf201?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n> Report is 55 commits behind head on 3.3.\n\n<details><summary>Additional details and impacted files</summary>\n\n\n```diff\n@@              Coverage Diff              @@\n##              3.3    #14866        +/-   ##\n=============================================\n- Coverage   37.53%     2.19%    -35.34%     \n=============================================\n  Files        1813     26083     +24270     \n  Lines       80737   1389713   +1308976     \n  Branches    12005    220216    +208211     \n=============================================\n+ Hits        30304     30553       +249     \n- Misses      46042   1354724   +1308682     \n- Partials     4391      4436        +45     \n```\n\n</details>\n\n[:umbrella: View full report in Codecov by Sentry](https://app.codecov.io/gh/apache/dubbo/pull/14866?dropdown=coverage&src=pr&el=continue&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).   \n:loudspeaker: Have feedback on the report? [Share it here](https://about.codecov.io/codecov-pr-comment-feedback/?utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n
+Issue #14859: Labels: type/need-triage, component/need-triage
+i have tested dubbo 3.3.1, it successed  to register app instance programmatically.\r\n\r\n```java\r\nServiceConfig<Greeter> service = new ServiceConfig<>();\r\n\t\tservice.setInterface(Greeter.class);\r\n\t\tservice.setRef(new GreeterImpl());\r\n\t\tDubboBootstrap.getInstance().getCache().get(App.class);\r\n\r\n\t\tRegistryConfig registryConfig = new RegistryConfig("nacos://127.0.0.1:8848");\r\n\t\tregistryConfig.setRegisterMode("instance");\r\n\t\tDubboBootstrap bootstrap = DubboBootstrap.getInstance();\r\n\t\tbootstrap.application(new ApplicationConfig("tri-stub-server"))\r\n\t\t\t\t.registry(registryConfig)\r\n\t\t\t\t.protocol(new ProtocolConfig(CommonConstants.TRIPLE, 50051))\r\n\t\t\t\t.service(service)\r\n\t\t\t\t.start();\r\n\t\tSystem.out.println("Dubbo triple stub server started");\r\n\r\n\t\tSystem.in.read();\r\n```\r\n\r\nyou can paste your code for further discuss.\r\n\r\n
+Issue #14858: Labels: No Labels
+Issue #14857: Labels: dependencies
+Issue #14856: Labels: dependencies
+Issue #14855: Labels: dependencies
+Issue #14854: Labels: dependencies
+Issue #14853: Labels: dependencies
+@dependabot rebase
+Issue #14852: Labels: dependencies
+Issue #14851: Labels: No Labels
+Issue #14850: Labels: No Labels
+Issue #14849: Labels: No Labels
+use `mvn spotless:apply` to format the code.
+Issue #14848: Labels: type/need-triage, component/need-triage
+Issue #14847: Labels: No Labels
+## [Codecov](https://app.codecov.io/gh/apache/dubbo/pull/14847?dropdown=coverage&src=pr&el=h1&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) Report\nAll modified and coverable lines are covered by tests :white_check_mark:\n> Project coverage is 2.19%. Comparing base [(`ef6e8bd`)](https://app.codecov.io/gh/apache/dubbo/commit/ef6e8bd01cef22ef148f1edb67cc1b41af55f4d6?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) to head [(`d4181e3`)](https://app.codecov.io/gh/apache/dubbo/commit/d4181e3c96253c2fe70f1a70c900c4696766cca0?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n> Report is 47 commits behind head on 3.3.\n\n<details><summary>Additional details and impacted files</summary>\n\n\n```diff\n@@              Coverage Diff              @@\n##              3.3    #14847        +/-   ##\n=============================================\n- Coverage   37.53%     2.19%    -35.34%     \n=============================================\n  Files        1813     26083     +24270     \n  Lines       80737   1389593   +1308856     \n  Branches    12005    220183    +208178     \n=============================================\n+ Hits        30304     30515       +211     \n- Misses      46042   1354638   +1308596     \n- Partials     4391      4440        +49     \n```\n\n</details>\n\n[:umbrella: View full report in Codecov by Sentry](https://app.codecov.io/gh/apache/dubbo/pull/14847?dropdown=coverage&src=pr&el=continue&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).   \n:loudspeaker: Have feedback on the report? [Share it here](https://about.codecov.io/codecov-pr-comment-feedback/?utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n
+Issue #14846: Labels: type/need-triage, component/need-triage
+The PR code for WebSocket: https://github.com/apache/dubbo/pull/14390\r\nThe sample code: https://github.com/apache/dubbo-samples/pull/1168
+Issue #14845: Labels: No Labels
+Issue #14844: Labels: type/need-triage, component/need-triage
+Can you provide a demo that is stable to reproduce?\r\nAre you willing to resolve this issue by submitting a pr?
+Issue #14843: Labels: No Labels
+Issue #14842: Labels: type/need-triage, component/need-triage
+Since these codes are generated from proto files, you need to compile them once in Maven before proceeding with packaging.@simon28li 
+Issue #14841: Labels: type/need-triage, component/need-triage
+- jsr311-api-1.1.1.jar\r\n- jaxrs-api-1.0.0.GA.jar\r\n- jaxrs-api-2.0.0.GA.jar
+Issue #14840: Labels: No Labels
+Follow-up: https://github.com/apache/dubbo/issues/14841
+Issue #14839: Labels: No Labels
+Issue #14838: Labels: type/need-triage, component/need-triage
+Have you tried with `parameters = {"responseFilter", "true", "securityFilter", "false"}`?\r\n\r\nAlso, can\
+Issue #14837: Labels: No Labels
+Issue #14836: Labels: No Labels
+Issue #14834: Labels: dependencies
+Issue #14833: Labels: dependencies
+Issue #14832: Labels: dependencies
+Issue #14831: Labels: dependencies
+Issue #14830: Labels: dependencies
+Issue #14829: Labels: dependencies
+Issue #14828: Labels: dependencies
+Issue #14827: Labels: dependencies
+Issue #14826: Labels: dependencies
+Issue #14825: Labels: dependencies
+Issue #14824: Labels: No Labels
+Issue #14823: Labels: type/need-triage, component/need-triage
+Issue #14822: Labels: No Labels
+Issue #14821: Labels: type/need-triage, component/need-triage
+Issue #14820: Labels: No Labels
+Issue #14818: Labels: type/need-triage, component/need-triage
+Issue #14817: Labels: No Labels
+Issue #14816: Labels: No Labels
+Issue #14815: Labels: No Labels
+@AlbumenJ:\r\nCan you start the "Build and Test For PR" again, please? I don\
+Issue #14814: Labels: type/need-triage, component/need-triage
+Can you please provide a demo? I cannot reproduce it.\r\n\r\n![image](https://github.com/user-attachments/assets/1e6b3248-c8b3-451b-a014-eda99249d8b6)\r\n\r\n\r\nOr have you ever configure the hessian-lite version. Hessian-lite 4.x has improved the compability with `Record`
+Issue #14813: Labels: No Labels
+Issue #14812: Labels: No Labels
+Issue #14811: Labels: No Labels
+Issue #14810: Labels: No Labels
+Thank you for your first contribution! Now the CI error is due to something wrong with the community upgrading the Zookeeper version, which has now been fixed, and you can start a new commit and run the CI test again.
+Issue #14809: Labels: type/need-triage, component/need-triage
+Hii,  I think I can solve this. How do I do it ? Since I am a new beginner please help me.
+Issue #14808: Labels: dependencies
+Issue #14807: Labels: dependencies
+Issue #14806: Labels: dependencies
+Issue #14805: Labels: dependencies
+@dependabot rebase
+Issue #14804: Labels: dependencies
+Issue #14803: Labels: dependencies
+Issue #14802: Labels: dependencies
+Issue #14801: Labels: No Labels
+Issue #14800: Labels: No Labels
+Issue #14799: Labels: type/need-triage, component/need-triage
+Can\
+Issue #14798: Labels: No Labels
+Issue #14797: Labels: No Labels
+Issue #14796: Labels: No Labels
+Issue #14795: Labels: dependencies
+Issue #14794: Labels: No Labels
+### Some suggestions for reference only:\r\n- Rename `dubbo-spring-boot-project` to `dubbo-spring-boot-all`\r\n- Move `dubbo-spring-boot-compatible/dubbo-spring-boot-autoconfigure-compatible` to `dubbo-spring-boot-1-autoconfigure`\r\n- Move `dubbo-spring-boot-compatible/dubbo-spring-boot-actuator-autoconfigure-compatible` to `dubbo-spring-boot-1-actuator-autoconfigure`\r\n
+Issue #14793: Labels: No Labels
+LGTM
+Issue #14792: Labels: type/need-triage, component/need-triage
+You can submit a pr to try and fix the issue.
+Issue #14791: Labels: type/need-triage, component/need-triage
+Demo: dubbo-samples/tree/master/2-advanced/dubbo-samples-triple-streaming
+Issue #14790: Labels: type/need-triage, component/need-triage
+My Dubbo version is 3.1.10
+Issue #14789: Labels: type/need-triage, component/need-triage
+Issue #14788: Labels: type/need-triage, component/need-triage
+utun5 is a virtual network interface typically created by VPN:\r\n<img width="751" alt="image" src="https://github.com/user-attachments/assets/c6ccc12d-3e6f-4807-bdde-2e32ed615b3a">\r\n\r\nI have resolve the issue:\r\n```\r\nProtocolConfig protocol = new ProtocolConfig(CommonConstants.TRIPLE, -1);\r\nprotocol.setHost("xxx.xxx.xxx.xxx"); //uses the specified IP address\r\n```
+Issue #14787: Labels: No Labels
+Issue #14786: Labels: type/need-triage, component/need-triage
+Please use QoS (22222) instead. Management operation on biz port has been disabled.
+Issue #14785: Labels: No Labels
+Issue #14784: Labels: type/need-triage, component/need-triage
+namespace is wrong.
+Issue #14783: Labels: type/need-triage, component/need-triage
+Do you want to start in IDEA？ then run provider and then consumer.If you want to run a jar, because the consumer and provider are packages and not modules, only one jar package will be generated. You can use the Maven Exec plugin pom.xml and use the corresponding command at startup.@zhangcunli
+Issue #14782: Labels: type/need-triage, component/need-triage
+<img width="1206" alt="image" src="https://github.com/user-attachments/assets/e68f8fe2-4761-4100-a023-6309df25c114">\r\nBy the way, you can close the issue if you feel your issue has been solved
+Issue #14781: Labels: type/need-triage, component/need-triage
+Your dubbo version is 3.3.0-beta.2, not 3.3.0
+Issue #14779: Labels: type/need-triage, component/need-triage
+Please translate all the content to English
+Issue #14778: Labels: type/need-triage, component/need-triage
+Issue #14777: Labels: dependencies
+Issue #14776: Labels: dependencies
+Issue #14775: Labels: dependencies
+Issue #14774: Labels: dependencies
+Issue #14773: Labels: dependencies
+Issue #14772: Labels: type/need-triage, component/need-triage
+```java\r\n// work fine\r\nthrow HttpResult.found("http://www.apache.org").toPayload();\r\n\r\n// work fine\r\nthrow new HttpResultPayloadException(302, "http://www.apache.org");\r\n\r\n// not work, fixed\r\nHttpResponse response = RpcContext.getServiceContext().getResponse(HttpResponse.class);\r\nresponse.sendRedirect("http://www.apache.org");\r\n```
+Issue #14770: Labels: type/need-triage, component/need-triage
+Track in https://github.com/alibaba/fastjson2/issues/3100
+Issue #14769: Labels: No Labels
+use `mvn spotless:apply` to format the code first
+Issue #14768: Labels: type/need-triage, component/need-triage
+Would you like to implement it?
+Issue #14767: Labels: type/need-triage, component/need-triage
+Can we copy a new module named dubbo-rest-jaxrs3 from dubbo-plugin/dubbo-rest-jaxrs to develop this feature?
+Issue #14764: Labels: type/need-triage, component/need-triage
+Please re-submit this pr in english only.
+Issue #14763: Labels: No Labels
+Issue #14762: Labels: type/need-triage, component/need-triage
+Will be fixed in https://github.com/apache/dubbo/pull/14763
+Issue #14761: Labels: type/need-triage, component/need-triage
+Issue #14760: Labels: No Labels
+Issue #14759: Labels: type/need-triage, component/need-triage
+I have looked at the dubbo code and it seems that there is no Dubco-Dependencies -zookeeper after 3.0-beta.2
+Issue #14758: Labels: type/need-triage, component/need-triage
+Can you provide a full demo address?
+Issue #14756: Labels: dependencies
+Issue #14755: Labels: dependencies
+Issue #14754: Labels: dependencies
+Issue #14753: Labels: dependencies
+Issue #14752: Labels: dependencies
+Issue #14751: Labels: dependencies
+Issue #14750: Labels: dependencies
+Issue #14749: Labels: dependencies
+Issue #14748: Labels: dependencies
+Looks like org.junit.platform:junit-platform-launcher is up-to-date now, so this is no longer needed.
+Issue #14747: Labels: dependencies
+## [Codecov](https://app.codecov.io/gh/apache/dubbo/pull/14747?dropdown=coverage&src=pr&el=h1&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) Report\nAll modified and coverable lines are covered by tests :white_check_mark:\n> Project coverage is 37.54%. Comparing base [(`b9a2f19`)](https://app.codecov.io/gh/apache/dubbo/commit/b9a2f194f044c07532715e212ab2e72155be9bad?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache) to head [(`af324b6`)](https://app.codecov.io/gh/apache/dubbo/commit/af324b620b9bf2dc97fc1e9130b1bf05a9ffc1a8?dropdown=coverage&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n> Report is 15 commits behind head on 3.3.\n\n<details><summary>Additional details and impacted files</summary>\n\n\n```diff\n@@           Coverage Diff           @@\n##              3.3   #14747   +/-   ##\n=======================================\n  Coverage   37.54%   37.54%           \n=======================================\n  Files        1813     1813           \n  Lines       80736    80736           \n  Branches    12005    12005           \n=======================================\n+ Hits        30314    30316    +2     \n+ Misses      46034    46032    -2     \n  Partials     4388     4388           \n```\n\n</details>\n\n[:umbrella: View full report in Codecov by Sentry](https://app.codecov.io/gh/apache/dubbo/pull/14747?dropdown=coverage&src=pr&el=continue&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).   \n:loudspeaker: Have feedback on the report? [Share it here](https://about.codecov.io/codecov-pr-comment-feedback/?utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=apache).\n
+Issue #14746: Labels: type/need-triage, component/need-triage
+Can you submit a complete reproduction? Can you help us improve by submitting a pr?
+Issue #14745: Labels: No Labels
+Issue #14744: Labels: type/need-triage, component/need-triage
+Changing value is really dangerous, and may cause a lot of problems. \r\nBTW, to improve the usability, we can print a warning log once user changes the class type of `Response`.
+Issue #14742: Labels: No Labels
+Issue #14741: Labels: No Labels
+Issue #14740: Labels: type/need-triage, component/need-triage
+@oxsean PTAL
+Issue #14739: Labels: dependencies
+Issue #14738: Labels: dependencies
+Issue #14737: Labels: dependencies
+Issue #14736: Labels: dependencies
+Issue #14735: Labels: dependencies
+Issue #14734: Labels: dependencies
+Issue #14733: Labels: dependencies
+@dependabot rebase
+Issue #14732: Labels: No Labels
+Issue #14731: Labels: No Labels
+Issue #14730: Labels: No Labels
+Issue #14728: Labels: type/need-triage, component/need-triage
+This revision is fetched by jar name. You can check `org.apache.dubbo.common.Version`
+Issue #14727: Labels: type/need-triage, component/need-triage
+To compact to previous version
+Issue #14726: Labels: No Labels
+Issue #14724: Labels: No Labels
+Issue #14723: Labels: No Labels
+Issue #14722: Labels: type/need-triage, component/need-triage
+![image](https://github.com/user-attachments/assets/fca76d2a-6f86-400a-8ad3-0c316774caeb)\r\n
+Issue #14721: Labels: type/need-triage, component/need-triage
+Issue #14720: Labels: type/need-triage, component/need-triage
+Issue #14719: Labels: type/need-triage, component/need-triage
+@oxsean  do you agree this ?
+Issue #14718: Labels: No Labels
+Issue #14717: Labels: type/bug, component/sdk, java
+Issue #14716: Labels: type/bug, component/sdk, java
+Issue #14715: Labels: type/need-triage, component/need-triage
+#13600 I have commented here, hope this can help, this is very difficult to describe, the way of integration like: https://dubbo.apache.org/zh-cn/overview/tasks/mesh/dubbo-mesh/
+Issue #14714: Labels: No Labels
+Issue #14713: Labels: dependencies
+Issue #14712: Labels: dependencies
+Issue #14711: Labels: dependencies
+Issue #14710: Labels: dependencies
+Issue #14709: Labels: dependencies
+Issue #14708: Labels: dependencies
+Issue #14707: Labels: dependencies
+Issue #14706: Labels: dependencies
+Issue #14705: Labels: No Labels
+Issue #14704: Labels: dependencies
+Issue #14702: Labels: No Labels
+Issue #14701: Labels: type/need-triage, component/need-triage
+https://cn.dubbo.apache.org/zh-cn/overview/mannual/java-sdk/tasks/security/class-check/
+Issue #14700: Labels: No Labels
+@CrazyHZM \n@AlbumenJ 
+Issue #14699: Labels: type/need-triage, component/need-triage
+Would you like to fix it?
+Issue #14698: Labels: dependencies
+Issue #14696: Labels: type/need-triage, component/need-triage
+Issue #14695: Labels: type/need-triage, component/need-triage
+Please re-submit this pr in english only.
