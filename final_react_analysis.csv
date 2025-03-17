@@ -379,7 +379,48 @@ pygwalker,"ReACT-69: Improve Inheritance in the source code (Remove implicit pol
 pygwalker,"ReACT-70: Improve encapsulation in the source code (Minimize public interface, remove unnecessary public variables)",The analysis of the provided files doesn't reveal explicit efforts to improve encapsulation by minimizing the public interface or removing unnecessary public variables. While the code appears structured  there's no clear indication of access modifiers or design patterns specifically aimed at stricter encapsulation. Further code inspection and review of design principles applied would be needed to confirm encapsulation improvements.,No
 pygwalker,ReACT-71: Improve exception handling in the source code,The provided files do not contain explicit information about improvements to exception handling. Analysis of the code chunks is not sufficient to determine exception handling quality. Without code examples demonstrating error handling strategies or recent improvements  it's impossible to confirm.,No
 pygwalker,ReACT-72: Improve naming in the source code,The provided code snippets don't offer enough context to assess naming conventions comprehensively. Analyzing naming effectively would require examining variable names  function names  class names  and more across a larger portion of the codebase. Therefore  a conclusive judgment on naming quality based on these files alone is not possible.,No
-pygwalker,"ReACT-74: Improve Modularization (Modularize API, Improve organization of test directory, Remove unneeded packages)",The provided file list shows attempts at modularization through the separation of concerns into different files (streamlit.py  webserver.py  api.py  component.py  base.py). However  whether the degree of modularization is sufficient or if unneeded packages exist requires deeper analysis than the file names alone provide. There is no indication to confirm the complete removal of unneeded packages.,No
+pygwalker,"ReACT-74: Improve Modularization (Modularize API, Improve organization of test directory, Remove unneeded packages)",The provided file list shows attempts at modularization through the separation of concerns into different files (streamlit.py  webserver.py  api.py  component.py  base.py). However  whether the degree of modularization is sufficient or if unneeded packages exist requires deeper analysis than the file names alone provide. There is no indication to confirm the complete removal of unneeded packages.,Nospark,ReACT-81 Keep knowledge up to date and findable.,Meets criteria (Last README update: 2025-03-02 17:45:12-08:00),Yes
+spark,ReACT-9,Does not meet criteria (Keyword 'how to request for access' not found),No
+spark,ReACT-19,Does not meet criteria (Keyword 'flag newcomers' not found),No
+spark,ReACT-33,Does not meet criteria (Keyword 'contribution guidelines' not found),No
+spark,ReACT-84,Does not meet criteria (Keyword 'onboarding support' not found),No
+spark,ReACT-100,Processes and practices are documented within the project.,Yes
+spark,ReACT-93,No clear communication channels (like Zulip or chat platforms) found.,No
+spark,ReACT-77,Mailing list is not mentioned.,No
+spark,ReACT-60,GitHub stars are not present.,No
+spark,ReACT-53,The project is not incubated by a large software foundation.,No
+spark,ReACT-20,The project does not communicate through various channels.,No
+spark,ReACT-97,The project license is not mentioned or not Apache License.,No
+spark,ReACT-98,Clear build and run instructions are provided.,Yes
+spark,ReACT-95,Contribution guidelines are clearly mentioned.,Yes
+spark,ReACT-102,Security considerations are not documented.,No
+dubbo,ReACT-11 Keep the project small and simple.,Meets criteria,Yes
+dubbo,ReACT-26 Conduct unit tests.,Meets criteria,Yes
+dubbo,ReACT-32 Promote code transparency. Keep the code as simple as possible,"Does not meet criteria (Comment ratio is 0.03, which is below the recommended threshold of 15%.)",No
+dubbo,ReACT-82 Have and enforce a code of conduct,Does not meet criteria (No code of conduct file found in the project.),No
+dubbo,ReACT-66 Perform adequate testing before integrating a feature,Meets criteria,Yes
+dubbo,ReACT-3: Utilize a common programming language,java: 62.02%; xml: 30.47%; yml: 2.27%; groovy: 0.85%; artifacts: 0.51%; md: 0.37%; imports: 0.27%; factories: 0.27%; proto: 0.24%; mustache: 0.24%; ArgumentResolver: 0.14%; ReflectionTypeDescriberRegistrar: 0.10%; properties: 0.10%; xsd: 0.10%; pem: 0.10%; key: 0.10%; editorconfig: 0.07%; ArgumentConverter: 0.07%; ClientStreamFactory: 0.07%; Validation: 0.07%; ParamConverterProvider: 0.07%; yaml: 0.07%; gitignore: 0.07%; cmd: 0.07%; allowlist: 0.07%; HeaderFilter: 0.07%; ParameterNameReader: 0.07%; BaseCommand: 0.07%; ScopeModelInitializer: 0.07%; HttpMessageEncoderFactory: 0.07%; html: 0.07%; Serialization: 0.03%; ResourceDescriberRegistrar: 0.03%; Processor: 0.03%; RequestHandlerMapping: 0.03%; Http3ServerTransportListenerFactory: 0.03%; ChannelAddressAccessor: 0.03%; blockedlist: 0.03%; cache: 0.03%; HttpBinder: 0.03%; BuiltinServiceDetector: 0.03%; ProxyDescriberRegistrar: 0.03%; Protocol: 0.03%; HttpMessageAdapterFactory: 0.03%; RequestMappingResolver: 0.03%; RestExtensionAdapter: 0.03%; JsonUtil: 0.03%; RestExtension: 0.03%; OpenAPIExtension: 0.03%; HttpMessageDecoderFactory: 0.03%; WebSocketServerTransportListenerFactory: 0.03%; Filter: 0.03%; ExceptionHandler: 0.03%; json: 0.03%; Authenticator: 0.03%; RestClientFactory: 0.03%,N/A
+dubbo,"ReACT-65: Maintain the current project platform; refrain from altering it. (if available on github, ReACT is satisfied)",Meets criteria,N/A
+dubbo,ReACT-16,"Total Integrators: 0, Total Merge Commits: 0, Earliest Merge: No merge commits found, Latest Merge: No merge commits found",No
+dubbo,ReACT-36,"Meets criteria (Active developers: 11, Threshold: 50)",Yes
+dubbo,ReACT-38,"Meets criteria (Experienced contributors: 7, Threshold: 5)",Yes
+dubbo,ReACT-100,Processes and practices are documented within the project.,Yes
+dubbo,ReACT-93,A Mailing List is available for communication.,Yes
+dubbo,ReACT-77,Mailing list is mentioned, but not encouraged.,No
+dubbo,ReACT-60,GitHub stars are not present.,No
+dubbo,ReACT-53,The project is not incubated by a large software foundation.,No
+dubbo,ReACT-20,The project communicates through various channels: Twitter, WeChat, Mailing List.,Yes
+dubbo,ReACT-97,The project is licensed under the Apache License.,Yes
+dubbo,ReACT-98,Clear build and run instructions are provided.,Yes
+dubbo,ReACT-95,Contribution guidelines are clearly mentioned.,Yes
+dubbo,ReACT-102,Security considerations are documented.,Yes
+dubbo,ReACT-14 Merge pull requests promptly.,Meets criteria (Avg merge time: 111.10 hours),Yes
+dubbo,ReACT-62 Encourage developers to start contributing to the project early.,Does not meet criteria (First commit date 2024-03-18 10:20:17+08:00 does not match repo creation month/year or insufficient contributions in first 2 months: 0),No
+dubbo,ReACT-81 Keep knowledge up to date and findable.,Meets criteria (Last README update: 2025-03-12 03:45:29+02:00),Yes
+dubbo,ReACT-9,Does not meet criteria (Keyword 'how to request for access' not found),No
+dubbo,ReACT-19,Does not meet criteria (Keyword 'flag newcomers' not found),No
+dubbo,ReACT-33,Does not meet criteria (Keyword 'contribution guidelines' not found),No
+dubbo,ReACT-84,Does not meet criteria (Keyword 'onboarding support' not found),No
 seata,ReACT-11 Keep the project small and simple.,Meets criteria,Yes
 seata,ReACT-26 Conduct unit tests.,Meets criteria,Yes
 seata,ReACT-32 Promote code transparency. Keep the code as simple as possible,"Does not meet criteria (Comment ratio is 0.04, which is below the recommended threshold of 15%.)",No

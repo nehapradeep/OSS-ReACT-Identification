@@ -4,21 +4,21 @@ from datetime import datetime, timedelta, timezone
 from pydriller import Repository
 
 # Define the repository URL
-repo_url = "https://github.com/apache/dubbo"
+repo_url = "https://github.com/apache/echarts"
 
 # Define the time window (last 1 year)
 one_year_ago = datetime.now(timezone.utc) - timedelta(days=365)
 
 # Define file paths
-csv_filename = "pydrillerCSV/dubbo/dubbo_commit_data_2.csv"
-readme_filename = "pydrillerCSV/dubbo/readme-dubbo.md"
-license_filename = "pydrillerCSV/dubbo/license-dubbo.txt"
-contributing_filename = "pydrillerCSV/dubbo/contributing-dubbo.md"
+csv_filename = "pydrillerCSV/echarts/echarts_commit_data_2.csv"
+readme_filename = "pydrillerCSV/echarts/readme-echarts.md"
+license_filename = "pydrillerCSV/echarts/license-echarts.txt"
+contributing_filename = "pydrillerCSV/echarts/contributing-echarts.md"
 
 # Create necessary directories
 os.makedirs(os.path.dirname(csv_filename), exist_ok=True)
 
-print(f"🔍 Fetching latest commits from {repo_url} (last 1 year)...")
+print(f"Fetching latest commits from {repo_url} (last 1 year)...")
 
 # Open CSV file for writing
 with open(csv_filename, mode="w", newline="", encoding="utf-8") as csv_file:
@@ -41,7 +41,7 @@ with open(csv_filename, mode="w", newline="", encoding="utf-8") as csv_file:
     for commit in Repository(repo_url, since=one_year_ago, order="reverse").traverse_commits():
         try:
             commit_count += 1
-            print(f"🔹 Processing Commit: {commit.hash} | Date: {commit.author_date}")
+            print(f"Processing Commit: {commit.hash} | Date: {commit.author_date}")
 
             for file in commit.modified_files:
                 # Skip binary and object files
@@ -80,19 +80,19 @@ with open(csv_filename, mode="w", newline="", encoding="utf-8") as csv_file:
 
         except Exception as e:
             skipped_commits += 1
-            print(f"⚠️ Skipping commit {commit.hash} due to error: {e}")
+            print(f"Skipping commit {commit.hash} due to error: {e}")
 
-    print(f"✅ Completed! Processed {commit_count} commits, skipped {skipped_commits} problematic commits.")
+    print(f"Completed! Processed {commit_count} commits, skipped {skipped_commits} problematic commits.")
 
 # Save latest README, LICENSE, and CONTRIBUTING.md files
 def save_file(content, filename, filetype):
     if content:
         with open(filename, "w", encoding="utf-8") as f:
             f.write(content)
-        print(f"📄 Saved latest {filetype} in {filename}")
+        print(f"Saved latest {filetype} in {filename}")
 
 save_file(latest_readme, readme_filename, "README")
 save_file(latest_license, license_filename, "LICENSE")
 save_file(latest_contributing, contributing_filename, "CONTRIBUTING.md")
 
-print(f"🚀 All data saved successfully in {csv_filename}")
+print(f"All data saved successfully in {csv_filename}")
