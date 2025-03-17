@@ -535,3 +535,30 @@ superset,ReACT-48,No mention of scheduled brainstorming sessions.,No,,,
 superset,ReACT-52,No reference to documentation on engineering activities.,No,,,
 superset,ReACT-53,No mention of software foundation incubation.,No,,,
 superset,ReACT-60,Checking for social media presence or repository stars.,No,,,
+rocketmq,ReACT-14 Merge pull requests promptly.,Meets criteria (Avg merge time: 150.36 hours),Yes
+rocketmq,ReACT-62 Encourage developers to start contributing to the project early.,Does not meet criteria (First commit date 2024-03-18 10:46:36+08:00 does not match repo creation month/year or insufficient contributions in first 2 months: 0),No
+rocketmq,ReACT-81 Keep knowledge up to date and findable.,Meets criteria (Last README update: 2025-01-14 20:22:30+08:00),Yes
+rocketmq,ReACT-9,Does not meet criteria (Keyword 'how to request for access' not found),No
+rocketmq,ReACT-19,Does not meet criteria (Keyword 'flag newcomers' not found),No
+rocketmq,ReACT-33,Does not meet criteria (Keyword 'contribution guidelines' not found),No
+rocketmq,ReACT-84,Does not meet criteria (Keyword 'onboarding support' not found),No
+rocketmq,ReACT-11 Keep the project small and simple.,Meets criteria,Yes
+rocketmq,ReACT-26 Conduct unit tests.,Meets criteria,Yes
+rocketmq,ReACT-32 Promote code transparency. Keep the code as simple as possible,"Does not meet criteria (Comment ratio is 0.02, which is below the recommended threshold of 15%.)",No
+rocketmq,ReACT-82 Have and enforce a code of conduct,Does not meet criteria (No code of conduct file found in the project.),No
+rocketmq,ReACT-66 Perform adequate testing before integrating a feature,Meets criteria,Yes
+rocketmq,ReACT-3: Utilize a common programming language,java: 86.27%; xml: 8.57%; yml: 1.99%; bazel: 1.24%; md: 1.06%; yaml: 0.50%; cmd: 0.12%; png: 0.12%; sh: 0.06%; gitignore: 0.06%,N/A
+rocketmq,"ReACT-65: Maintain the current project platform; refrain from altering it. (if available on github, ReACT is satisfied)",Meets criteria,N/A
+rocketmq,ReACT-16,"Total Integrators: 0, Total Merge Commits: 0, Earliest Merge: No merge commits found, Latest Merge: No merge commits found",No
+rocketmq,ReACT-36,"Meets criteria (Active developers: 18, Threshold: 50)",Yes
+rocketmq,ReACT-38,"Meets criteria (Experienced contributors: 7, Threshold: 5)",Yes
+rocketmq,ReACT-100,No documentation of processes and practices found in the project.,No
+rocketmq,ReACT-93,A Mailing List is available for communication.,Yes
+rocketmq,ReACT-77,Mailing list is mentioned and encouraged.,Yes
+rocketmq,ReACT-60,GitHub stars are not present.,No
+rocketmq,ReACT-53,The project is incubated by the Apache Software Foundation.,Yes
+rocketmq,ReACT-20,The project communicates through various channels: Mailing List, Twitter.,Yes
+rocketmq,ReACT-97,The project is licensed under the Apache License.,Yes
+rocketmq,ReACT-98,Clear build and run instructions are provided.,Yes
+rocketmq,ReACT-95,Contribution guidelines are clearly mentioned.,Yes
+rocketmq,ReACT-102,Security considerations are documented.,Yes
