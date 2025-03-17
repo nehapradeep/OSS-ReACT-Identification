@@ -1,0 +1,337 @@
+PR Number,Title,State,URL,Created At,Merged At
+15242,213,closed,,2025-03-16T08:29:39Z,None
+15241,[3.3] optimized testExporterThreadpoolName by starting dispatcher thread directly,open,,2025-03-14T16:23:20Z,None
+15239,[3.3] Set socket reuse address option to true,open,,2025-03-14T08:26:50Z,None
+15236,remove dubbo plugin useless dependency,open,,2025-03-13T13:29:28Z,None
+15231,tracing add zipkin dep default,closed,,2025-03-11T14:53:39Z,2025-03-12T01:50:36Z
+15230,fix: getClassLoader() may return null,closed,,2025-03-11T13:36:59Z,None
+15229,Bump curator5_version from 4.2.0 to 5.8.0,closed,,2025-03-10T07:41:08Z,2025-03-11T02:03:30Z
+15228,Bump io.opentelemetry:opentelemetry-bom from 1.47.0 to 1.48.0,closed,,2025-03-10T07:40:42Z,2025-03-11T02:03:38Z
+15227,Bump tomcat.version from 8.5.100 to 10.1.39,closed,,2025-03-10T07:40:22Z,2025-03-11T02:03:52Z
+15226,Bump org.testcontainers:testcontainers from 1.20.5 to 1.20.6,closed,,2025-03-10T07:39:56Z,2025-03-11T02:03:58Z
+15225,Bump org.webjars:webjars-locator-lite from 1.0.1 to 1.1.0,open,,2025-03-10T07:39:39Z,None
+15224,Bump grpc.version from 1.70.0 to 1.71.0,closed,,2025-03-10T07:39:22Z,2025-03-11T02:04:13Z
+15223,Fix SerializeCheckStatusTest and Improve Serialization Security Management,closed,,2025-03-09T12:15:09Z,None
+15222,docs: added a link to the license,closed,,2025-03-08T16:47:00Z,2025-03-12T01:45:29Z
+15221,fix repeat load registryFactory,closed,,2025-03-08T11:00:32Z,2025-03-11T02:29:46Z
+15220,autoconfiguration virtual-thread-pool,closed,,2025-03-08T06:02:49Z,2025-03-14T13:37:17Z
+15219,Resolving the Thread-Safety Problem in registerReferenceKeyAndBeanName Using an Overloaded computeIfAbsent,open,,2025-03-08T04:21:47Z,None
+15218,"Remove dubbo-test in dubbo-metrics,dubbo-registry,dubbo-serialization",open,,2025-03-08T03:30:47Z,None
+15211,Master,closed,,2025-03-07T12:12:37Z,None
+15210,Fix concurrency problem in ThreadlessExecutor,closed,,2025-03-06T09:31:12Z,2025-03-06T13:15:23Z
+15209,[3.3] Retry connect to provider server by catching ClosedChannelException,closed,,2025-03-06T06:33:00Z,2025-03-12T01:46:12Z
+15208,exclude logback transit dependency in zookeeper,closed,,2025-03-05T16:04:43Z,2025-03-06T01:35:53Z
+15207,Fix memory leak when OOM,closed,,2025-03-05T07:18:54Z,2025-03-05T08:49:10Z
+15206,15134.adding a dummy change,open,,2025-03-04T17:02:53Z,None
+15205,[3.3] Optimized EagerThreadPoolExecutorTest by decreasing maximumPoolSize,closed,,2025-03-04T15:23:39Z,2025-03-06T01:43:37Z
+15203,Optimize parseCharset method for best performance.,closed,,2025-03-03T12:52:45Z,2025-03-04T01:51:43Z
+15202,[3.3] Removed mGroup from NamedThreadFactory,closed,,2025-03-03T11:32:44Z,2025-03-04T01:51:07Z
+15200,Bump org.apache.maven.plugins:maven-deploy-plugin from 3.1.3 to 3.1.4,closed,,2025-03-03T08:31:22Z,2025-03-03T09:36:30Z
+15199,Bump byte-buddy_version from 1.17.1 to 1.17.2,closed,,2025-03-03T08:31:09Z,2025-03-03T09:36:38Z
+15198,Bump jackson_version from 2.18.2 to 2.18.3,closed,,2025-03-03T08:30:55Z,2025-03-03T09:36:47Z
+15197,Bump org.webjars:swagger-ui from 5.18.3 to 5.20.0,closed,,2025-03-03T08:30:15Z,2025-03-03T09:37:06Z
+15196,Bump netty4_version from 4.1.118.Final to 4.1.119.Final,closed,,2025-03-03T08:29:48Z,2025-03-03T09:36:58Z
+15195,Bump org.apache.groovy:groovy from 4.0.25 to 4.0.26,closed,,2025-03-03T08:29:35Z,2025-03-04T01:50:05Z
+15194,Bump org.codehaus.mojo:flatten-maven-plugin from 1.6.0 to 1.7.0,closed,,2025-03-03T08:29:25Z,2025-03-04T01:50:12Z
+15193,[3.3] Upgraded netty3 to 3.10.6.Final,closed,,2025-03-03T04:56:30Z,None
+15192,fix Context loss when async invoke issue#13666,open,,2025-03-02T09:58:36Z,None
+15190,FIX-15184 resolved NettyHttp Header add by set to empty String,closed,,2025-03-01T12:57:19Z,None
+15189,"check the network,Local site be the preferred one",open,,2025-03-01T07:39:31Z,None
+15188,"Fix the issue where the charset from Content-Type is not parsed correctly, and refactor the related code.",closed,,2025-02-28T05:55:55Z,2025-03-03T02:03:28Z
+15181,"Fix `DefaultSerializeClassChecker` verification, when the mode is `WARN`",closed,,2025-02-26T07:01:52Z,None
+15178,default format need't convert avoid data loss,open,,2025-02-25T15:02:14Z,None
+15176,refactor SimpleMetricsCountSampler,open,,2025-02-24T23:27:16Z,None
+15175,Bump com.diffplug.spotless:spotless-maven-plugin from 2.44.2 to 2.44.3,closed,,2025-02-24T08:56:38Z,2025-02-24T14:27:55Z
+15174,Bump org.testcontainers:testcontainers from 1.20.4 to 1.20.5,closed,,2025-02-24T08:56:28Z,2025-02-25T01:43:41Z
+15173,Bump org.awaitility:awaitility from 4.2.2 to 4.3.0,closed,,2025-02-24T08:56:17Z,2025-03-06T01:43:56Z
+15172,Bump com.alibaba.fastjson2:fastjson2 from 2.0.55 to 2.0.56,closed,,2025-02-24T08:55:51Z,2025-02-25T01:43:33Z
+15171,Bump org.apache.maven.plugins:maven-compiler-plugin from 3.13.0 to 3.14.0,closed,,2025-02-24T08:55:30Z,2025-02-25T01:43:26Z
+15170,Bump junit_platform_version from 1.11.4 to 1.12.0,closed,,2025-02-24T08:55:20Z,2025-02-25T01:43:18Z
+15169,Bump spring-boot-3.version from 3.4.2 to 3.4.3,closed,,2025-02-24T08:54:58Z,2025-02-25T01:43:09Z
+15168,Bump junit_jupiter_version from 5.11.4 to 5.12.0,closed,,2025-02-24T08:53:53Z,2025-02-26T01:40:54Z
+15167,Bump tomcat.version from 8.5.100 to 10.1.36,closed,,2025-02-24T08:53:45Z,2025-02-25T01:42:49Z
+15164,[3.3] Optimized Wrapper#getWrapper and some unit tests,closed,,2025-02-22T15:32:23Z,2025-03-03T01:59:05Z
+15163,[3.3] Optimized RpcMessageHandler to reduce thread pool usage,closed,,2025-02-20T08:12:37Z,2025-02-21T02:31:50Z
+15161,:recycle: move dubbo mertics and tracing to observability,open,,2025-02-20T05:09:14Z,None
+15157,FIX gRPC-related URL object caused a NullPointerException (NPE),closed,,2025-02-18T04:09:17Z,2025-02-21T02:23:10Z
+15155,Bump org.yaml:snakeyaml from 2.3 to 2.4,closed,,2025-02-17T08:38:51Z,2025-02-19T01:50:50Z
+15154,Bump com.alibaba.fastjson2:fastjson2 from 2.0.54 to 2.0.55,closed,,2025-02-17T08:38:41Z,2025-02-19T01:51:02Z
+15153,Bump io.projectreactor:reactor-core from 3.7.2 to 3.7.3,closed,,2025-02-17T08:38:19Z,2025-02-19T01:51:09Z
+15152,Bump io.micrometer:micrometer-core from 1.14.3 to 1.14.4,closed,,2025-02-17T08:38:02Z,2025-02-19T01:51:20Z
+15151,Bump io.micrometer:micrometer-tracing-bom from 1.4.2 to 1.4.3,closed,,2025-02-17T08:37:53Z,2025-02-19T01:57:25Z
+15150,Bump byte-buddy_version from 1.17.0 to 1.17.1,closed,,2025-02-17T08:37:25Z,2025-02-19T01:57:53Z
+15149,Bump io.micrometer:micrometer-bom from 1.14.3 to 1.14.4,closed,,2025-02-17T08:37:14Z,2025-02-19T01:57:35Z
+15148,Bump netty4_version from 4.1.117.Final to 4.1.118.Final,closed,,2025-02-17T08:37:06Z,2025-02-19T01:57:45Z
+15147,Bump io.zipkin.reporter2:zipkin-reporter-bom from 3.4.3 to 3.5.0,closed,,2025-02-17T08:36:51Z,2025-02-20T01:31:27Z
+15146,Bump tomcat.version from 8.5.100 to 10.1.35,closed,,2025-02-17T08:36:41Z,2025-02-19T01:59:16Z
+15145,Bump spring-6.version from 6.2.2 to 6.2.3,closed,,2025-02-17T08:36:24Z,2025-02-19T01:59:06Z
+15143,[3.4] Get authority by calling HttpServletRequest#getServerName,closed,,2025-02-17T07:44:30Z,None
+15142,Get authority by calling HttpServletRequest#getServerName,closed,,2025-02-17T07:39:53Z,None
+15141,[3.3] Get authority by calling HttpServletRequest#getServerName,closed,,2025-02-17T06:46:17Z,2025-02-18T02:56:47Z
+15139,Fix native support generic service,closed,,2025-02-17T03:35:58Z,2025-02-24T14:38:34Z
+15136,Fix 3.2 ci,closed,,2025-02-16T11:46:25Z,2025-02-17T11:20:33Z
+15135,Remove duplicate dependencies.,closed,,2025-02-14T06:22:49Z,2025-02-16T07:35:16Z
+15134,"Revert ""Bump com.ctrip.framework.apollo:apollo-client from 2.3.0 to 2.4.0""",closed,,2025-02-14T00:34:21Z,None
+15131,[3.3]Fix:triple protocol echoService invoke.,closed,,2025-02-13T09:36:25Z,None
+15130,"[3.3] Revert ""feat:dubbo-remoting-zookeeper-curator5 remove dubbo-test module (#15082)""",closed,,2025-02-13T08:53:59Z,None
+15129,issue #14980,open,,2025-02-12T15:13:58Z,None
+15127,[3.2]Fix:triple protocol echoService invoke.,closed,,2025-02-12T10:31:07Z,2025-02-13T11:01:36Z
+15126,[3.2] Getting all nacos instances without subscription,closed,,2025-02-12T06:38:50Z,2025-02-13T10:52:57Z
+15125,feat: remove useless dependency,closed,,2025-02-11T11:14:35Z,2025-02-14T14:33:21Z
+15122,Ignore RejectedExecutionException if executor is shutdown during submit task,closed,,2025-02-10T09:47:33Z,2025-02-13T10:49:34Z
+15120,Bump com.ctrip.framework.apollo:apollo-mockserver from 2.3.0 to 2.4.0,closed,,2025-02-10T08:21:53Z,2025-02-11T02:32:20Z
+15119,Bump commons-logging:commons-logging from 1.3.4 to 1.3.5,closed,,2025-02-10T08:21:23Z,2025-02-11T02:32:13Z
+15118,Bump io.opentelemetry:opentelemetry-bom from 1.46.0 to 1.47.0,closed,,2025-02-10T08:21:20Z,2025-02-11T02:32:05Z
+15117,Bump com.ctrip.framework.apollo:apollo-client from 2.3.0 to 2.4.0,closed,,2025-02-10T08:20:48Z,2025-02-11T02:31:57Z
+15115,Fix triple protocol for native image,open,,2025-02-09T15:43:34Z,None
+15113,Try register Service Instance after export,closed,,2025-02-08T08:43:07Z,2025-02-11T14:58:28Z
+15112,Fix some minor issues discovered by PMD plugins,open,,2025-02-07T13:45:53Z,None
+15110,[3.3] Getting all nacos instances without subscription,closed,,2025-02-07T09:23:29Z,None
+15109,Fix zookeeper reflection type describer registrar path,closed,,2025-02-06T15:02:57Z,2025-02-06T15:22:42Z
+15104,Bump byte-buddy_version from 1.16.1 to 1.17.0,closed,,2025-02-03T08:48:13Z,2025-02-04T23:56:23Z
+15103,Bump com.google.code.gson:gson from 2.11.0 to 2.12.1,closed,,2025-02-03T08:47:52Z,2025-02-04T23:56:31Z
+15102,Bump org.webjars:redoc from 2.1.5 to 2.3.0,closed,,2025-02-03T08:47:30Z,2025-02-04T23:56:45Z
+15101,Bump org.webjars:swagger-ui from 5.18.2 to 5.18.3,closed,,2025-02-03T08:47:23Z,2025-02-04T23:56:39Z
+15100,Bump commons-codec:commons-codec from 1.17.2 to 1.18.0,closed,,2025-02-03T08:47:08Z,2025-02-04T23:56:53Z
+15099,Bump com.alibaba.nacos:nacos-client from 2.4.3 to 2.5.0,closed,,2025-02-03T08:46:40Z,2025-02-04T23:57:03Z
+15098,Bump jakarta.validation:jakarta.validation-api from 3.1.0 to 3.1.1,closed,,2025-02-03T08:46:26Z,2025-02-04T23:57:10Z
+15097,Bump org.apache.groovy:groovy from 4.0.24 to 4.0.25,closed,,2025-02-03T08:46:18Z,2025-02-08T09:01:48Z
+15095,Bump protobuf-java_version from 3.25.5 to 3.25.6,closed,,2025-01-27T08:12:20Z,2025-01-27T08:21:27Z
+15094,Bump spring-boot-3.version from 3.4.1 to 3.4.2,closed,,2025-01-27T08:10:42Z,2025-01-28T13:29:03Z
+15093,Bump grpc.version from 1.69.0 to 1.70.0,closed,,2025-01-27T08:09:25Z,2025-01-28T13:28:27Z
+15089,Refactoring Metadata Unit Tests,open,,2025-01-22T16:52:40Z,None
+15086,bugfix: the issue of possible infinite loop when cleaning up expired metadata info,closed,,2025-01-22T06:05:16Z,2025-02-05T03:43:35Z
+15085,Devin/1737462635 http3 connection mgmt,closed,,2025-01-21T14:59:26Z,None
+15084,Support for Domain-Based Service Registration and Discovery implements by Devin AI,closed,,2025-01-21T12:04:14Z,None
+15082,dubbo-remoting-zookeeper-curator5 module remove dubbo-test-check and dubbo-test-common,closed,,2025-01-21T08:22:15Z,2025-02-10T15:11:03Z
+15081,Bump io.swagger.core.v3:swagger-annotations from 2.2.27 to 2.2.28,closed,,2025-01-20T08:39:22Z,2025-01-28T14:04:26Z
+15080,Bump netty4_version from 4.1.116.Final to 4.1.117.Final,closed,,2025-01-20T08:38:58Z,2025-01-28T14:05:05Z
+15079,Bump byte-buddy_version from 1.15.11 to 1.16.1,closed,,2025-01-20T08:38:42Z,2025-01-28T14:05:40Z
+15078,Bump io.micrometer:micrometer-tracing-bom from 1.4.1 to 1.4.2,closed,,2025-01-20T08:38:18Z,2025-01-28T14:04:09Z
+15077,Bump io.micrometer:micrometer-bom from 1.13.6 to 1.14.3,closed,,2025-01-20T08:37:57Z,2025-01-31T02:31:23Z
+15076,Bump io.micrometer:micrometer-core from 1.14.2 to 1.14.3,closed,,2025-01-20T08:37:41Z,2025-01-28T14:04:18Z
+15075,Bump io.projectreactor:reactor-core from 3.7.1 to 3.7.2,closed,,2025-01-20T08:37:35Z,2025-01-28T14:04:42Z
+15074,Bump swagger_version from 1.6.14 to 1.6.15,closed,,2025-01-20T08:37:21Z,2025-01-28T14:05:17Z
+15073,Bump grpc.version from 1.69.0 to 1.69.1,closed,,2025-01-20T08:37:06Z,None
+15072,Bump spring-6.version from 6.2.1 to 6.2.2,closed,,2025-01-20T08:36:39Z,2025-01-28T14:06:25Z
+15071,Bump com.diffplug.spotless:spotless-maven-plugin from 2.43.0 to 2.44.2,closed,,2025-01-20T08:35:28Z,2025-01-28T14:03:50Z
+15065,Remove unused plugin,closed,,2025-01-19T14:46:42Z,2025-02-08T09:13:38Z
+15064,dubbo-rpc module remove dubbo-test-check,closed,,2025-01-19T01:25:27Z,2025-01-19T14:21:04Z
+15060,Remove duplicated invokers in registry notification,open,,2025-01-16T09:31:48Z,None
+15058,fix:Remove the configuration to avoid impacting users' default configuration values.,closed,,2025-01-13T15:18:18Z,2025-01-14T03:46:48Z
+15057,Bump commons-codec:commons-codec from 1.17.1 to 1.17.2,closed,,2025-01-13T08:08:48Z,2025-01-19T14:33:00Z
+15056,Bump org.eclipse.jetty:jetty-maven-plugin from 9.4.56.v20240826 to 9.4.57.v20241219,closed,,2025-01-13T08:07:54Z,2025-01-26T12:14:08Z
+15055,Bump com.diffplug.spotless:spotless-maven-plugin from 2.43.0 to 2.44.1,closed,,2025-01-13T08:07:40Z,None
+15054,Bump io.opentelemetry:opentelemetry-bom from 1.45.0 to 1.46.0,closed,,2025-01-13T08:07:21Z,2025-01-28T14:04:51Z
+15053,Bump com.alibaba.fastjson2:fastjson2 from 2.0.53 to 2.0.54,closed,,2025-01-13T08:07:12Z,2025-01-28T14:03:20Z
+15052,Bump jetty_version from 9.4.56.v20240826 to 9.4.57.v20241219,closed,,2025-01-13T08:06:36Z,2025-01-28T14:05:32Z
+15049,Support pass SSLSession in Invocation to check permission,closed,,2025-01-10T09:09:26Z,2025-01-13T03:15:31Z
+15046,Remove datasource status checker,closed,,2025-01-09T15:55:28Z,2025-01-28T14:08:08Z
+15039,Bump io.micrometer:micrometer-bom from 1.13.6 to 1.14.2,closed,,2025-01-06T08:19:49Z,None
+15038,Bump netty4_version from 4.1.115.Final to 4.1.116.Final,closed,,2025-01-06T08:19:17Z,2025-01-07T03:21:49Z
+15037,Bump junit_jupiter_version from 5.11.3 to 5.11.4,closed,,2025-01-06T08:18:21Z,2025-01-07T15:37:21Z
+15036,Bump junit_platform_version from 1.11.3 to 1.11.4,closed,,2025-01-06T08:17:59Z,2025-01-09T14:27:16Z
+15035,Disable testWriteUTF on Windows,closed,,2025-01-05T10:42:44Z,2025-01-05T12:01:46Z
+15034,Fix testDecode_Backspace,closed,,2025-01-05T07:40:59Z,2025-01-05T08:06:12Z
+15033,Fix TelnetCodecTest in Windows,closed,,2025-01-03T08:34:27Z,2025-01-03T08:34:34Z
+15032,Add a configuration to determine whether to enable the point-to-point network interface,closed,,2025-01-03T03:26:54Z,2025-01-10T13:12:31Z
+15030,Fix CI Upload Configuration,closed,,2025-01-02T01:45:39Z,2025-01-03T02:26:05Z
+15029,opt: client supports requests to server-streaming endpoints without parameters,closed,,2024-12-31T08:03:22Z,2025-01-06T02:55:17Z
+15028,update README.md,closed,,2024-12-30T17:09:05Z,2025-01-03T06:01:50Z
+15027,Bump org.openjdk.nashorn:nashorn-core from 15.4 to 15.6,closed,,2024-12-30T08:26:16Z,2025-01-04T02:32:02Z
+15026,feat: server stream supports requests without parameters,closed,,2024-12-30T06:32:07Z,2024-12-31T06:52:02Z
+15025,Replace upload artifact results,closed,,2024-12-27T01:41:19Z,2024-12-27T09:20:19Z
+15019,optimize: support http1 automatic keepalive setting,closed,,2024-12-25T09:10:54Z,2024-12-26T10:16:09Z
+15017,Bugfix: An instance of the subclass of RegistryConfig should be added to configsCache as the RegistryConfig class type #15016,closed,,2024-12-24T18:25:13Z,2025-01-26T12:36:22Z
+15015,correcting spelling mistakes,closed,,2024-12-24T09:24:33Z,2025-01-04T03:06:12Z
+15014,remove unnecessary protocolRevisionsToUrls and build newServiceUrls d…,closed,,2024-12-24T07:31:36Z,None
+15012,Bump spring-boot-3.version from 3.4.0 to 3.4.1,closed,,2024-12-23T08:27:12Z,2025-01-05T07:42:42Z
+15006,Check the md5 of the metadata cache file,closed,,2024-12-20T02:54:16Z,2025-02-28T02:12:08Z
+15002,Bump org.openjdk.nashorn:nashorn-core from 15.4 to 15.5,closed,,2024-12-16T08:32:57Z,None
+15001,Bump io.projectreactor:reactor-core from 3.7.0 to 3.7.1,closed,,2024-12-16T08:32:19Z,2025-01-04T02:32:28Z
+15000,Bump byte-buddy_version from 1.15.10 to 1.15.11,closed,,2024-12-16T08:32:15Z,2025-01-04T03:07:17Z
+14999,Bump org.webjars:webjars-locator-lite from 1.0.0 to 1.0.1,closed,,2024-12-16T08:31:59Z,2025-01-04T03:07:56Z
+14998,Bump org.apache.dubbo.extensions:dubbo-rpc-rest from 3.3.0 to 3.3.1,closed,,2024-12-16T08:31:31Z,2025-01-05T07:42:51Z
+14997,Bump log4j2_version from 2.24.2 to 2.24.3,closed,,2024-12-16T08:31:26Z,2025-01-05T07:43:04Z
+14996,Bump io.swagger.core.v3:swagger-annotations from 2.2.25 to 2.2.27,closed,,2024-12-16T08:31:15Z,2025-01-04T03:04:56Z
+14995,Bump org.asynchttpclient:async-http-client from 2.12.3 to 2.12.4,closed,,2024-12-16T08:31:00Z,2025-01-04T03:09:02Z
+14994,Bump org.codehaus.plexus:plexus-utils from 3.5.1 to 3.6.0,closed,,2024-12-16T08:30:47Z,2025-01-05T07:42:31Z
+14993,Bump tomcat.version from 8.5.100 to 10.1.34,closed,,2024-12-16T08:30:44Z,2025-01-05T07:44:04Z
+14992,Bump spring-6.version from 6.2.0 to 6.2.1,closed,,2024-12-16T08:30:34Z,2025-01-05T07:44:21Z
+14991,Bump io.micrometer:micrometer-core from 1.14.1 to 1.14.2,closed,,2024-12-16T08:29:33Z,2025-01-04T03:08:34Z
+14990,Bump io.micrometer:micrometer-tracing-bom from 1.4.0 to 1.4.1,closed,,2024-12-16T08:29:27Z,2025-01-05T07:43:55Z
+14989,Bump grpc.version from 1.68.2 to 1.69.0,closed,,2024-12-16T08:29:23Z,2025-01-05T07:43:14Z
+14986,remove strong dep micrometer in tracing,closed,,2024-12-13T14:12:00Z,2025-02-10T01:38:57Z
+14983,Bump org.asynchttpclient:async-http-client from 2.12.3 to 3.0.1 in /dubbo-test/dubbo-test-check,closed,,2024-12-12T22:22:53Z,None
+14982,Replace matrix id with job id,closed,,2024-12-12T01:45:26Z,None
+14981,Fix upload artifact failed in Scheduled Test,closed,,2024-12-11T09:15:17Z,2024-12-11T09:15:34Z
+14977,Bump io.zipkin.reporter2:zipkin-reporter-bom from 3.4.2 to 3.4.3,closed,,2024-12-09T08:13:13Z,2024-12-13T12:04:40Z
+14976,Bump org.apache.maven.plugins:maven-javadoc-plugin from 3.11.1 to 3.11.2,closed,,2024-12-09T08:12:41Z,2024-12-11T08:13:04Z
+14975,Bump io.opentelemetry:opentelemetry-bom from 1.44.1 to 1.45.0,closed,,2024-12-09T08:11:39Z,2024-12-11T08:12:47Z
+14973,Ignore some modules in codecov,closed,,2024-12-06T15:01:17Z,2024-12-06T23:05:51Z
+14972,Ignore some modules,closed,,2024-12-06T13:55:47Z,2024-12-06T14:54:09Z
+14971,Bump com.alibaba:fastjson from 1.2.83_noneautotype to 2.0.0 in /dubbo-dependencies-bom,closed,,2024-12-06T12:47:45Z,None
+14970,Fix codecov no result,closed,,2024-12-06T12:45:09Z,2024-12-06T12:46:53Z
+14969,Fix some minor issues discovered by PMD plugins,closed,,2024-12-06T10:05:14Z,None
+14966,fix ClassCastException,open,,2024-12-06T02:02:36Z,None
+14965,Fix some minor issues discovered by PMD plugins,closed,,2024-12-05T13:05:03Z,None
+14958,Bump org.codehaus.mojo:license-maven-plugin from 2.4.0 to 2.5.0,closed,,2024-12-02T08:49:42Z,2024-12-06T03:34:14Z
+14957,Bump grpc.version from 1.68.0 to 1.68.2,closed,,2024-12-02T08:48:13Z,2024-12-06T03:33:45Z
+14956,Bump jackson_version from 2.18.1 to 2.18.2,closed,,2024-12-02T08:46:41Z,2024-12-06T03:33:21Z
+14955,HTTP3 bugfix,closed,,2024-12-01T12:59:16Z,2024-12-06T03:30:31Z
+14954,Add xds demo stop.sh,closed,,2024-11-30T13:04:21Z,2024-12-04T01:54:55Z
+14953,【xDS】Run through the process & Add example,closed,,2024-11-30T11:27:53Z,2024-12-04T01:54:30Z
+14950,Close-NodeCache-before-Curator,closed,,2024-11-28T03:26:33Z,None
+14949,[Optimize]Added the dubbo-plugin-loom module to the pom.xml of dubbo-parent.,closed,,2024-11-27T18:58:36Z,None
+14948,Fix the dependency missing of dubbo-spring-boot.(#14947),closed,,2024-11-26T10:09:13Z,2024-11-27T02:38:44Z
+14944,Bump commons-io:commons-io from 2.17.0 to 2.18.0,closed,,2024-11-25T08:38:32Z,2024-11-29T06:36:46Z
+14943,Bump org.testcontainers:testcontainers from 1.20.3 to 1.20.4,closed,,2024-11-25T08:38:08Z,2024-11-27T08:04:02Z
+14942,Bump log4j2_version from 2.24.1 to 2.24.2,closed,,2024-11-25T08:37:48Z,2024-11-27T08:02:00Z
+14941,Bump spring-boot-3.version from 3.3.5 to 3.4.0,closed,,2024-11-25T08:37:31Z,2024-11-27T08:03:42Z
+14940,Bump org.springframework.security:spring-security-bom from 5.8.15 to 5.8.16,closed,,2024-11-25T08:35:10Z,2024-11-27T08:01:49Z
+14936,Fix DefaultRequestMappingRegistry.exists NPE when not initialized,closed,,2024-11-25T06:36:41Z,2024-11-27T02:41:30Z
+14935,Update PULL_REQUEST_TEMPLATE.md to fix hyperlink error,closed,,2024-11-25T05:11:31Z,2024-11-27T11:31:21Z
+14934,[Feature]move mesh-router into spi-extension,open,,2024-11-24T04:51:26Z,None
+14933,dubbo-metadata module change integration test to unit test,open,,2024-11-23T10:14:46Z,None
+14932,dubbo-configcenter module change integration test to unit test,closed,,2024-11-23T10:09:51Z,2024-11-25T01:55:18Z
+14931,dubbo-config module change integration test to unit test,open,,2024-11-23T10:07:25Z,None
+14930,dubbo-compatible module change integration test to unit test,open,,2024-11-23T10:02:45Z,None
+14929,dubbo-cluster module change integration test to unit test,closed,,2024-11-23T09:34:39Z,2024-11-27T08:05:03Z
+14928,Remove unused dependency,closed,,2024-11-23T08:17:09Z,2024-11-23T10:15:46Z
+14924,Triple Rest Openapi Support,closed,,2024-11-22T11:04:47Z,2024-12-11T14:34:42Z
+14922,Migrate tests to JUnit5,closed,,2024-11-21T09:28:32Z,2024-11-23T08:22:17Z
+14921,[Bug]Fix github workflow,closed,,2024-11-20T12:11:50Z,2024-11-21T03:01:27Z
+14918,refactor generateExtNameAssignment to better structure,open,,2024-11-19T06:22:06Z,None
+14917,Fix dead loop in onNext,closed,,2024-11-18T15:29:36Z,2024-11-20T09:07:29Z
+14913,Bump io.micrometer:micrometer-bom from 1.13.6 to 1.14.1,closed,,2024-11-18T08:23:02Z,None
+14912,Bump io.projectreactor:reactor-core from 3.6.11 to 3.7.0,closed,,2024-11-18T08:22:11Z,2024-11-22T12:33:17Z
+14911,Bump io.micrometer:micrometer-tracing-bom from 1.3.5 to 1.4.0,closed,,2024-11-18T08:21:20Z,2024-11-22T12:33:00Z
+14910,Bump netty4_version from 4.1.114.Final to 4.1.115.Final,closed,,2024-11-18T08:20:09Z,2024-11-22T12:32:43Z
+14909,Bump spring-6.version from 6.1.14 to 6.2.0,closed,,2024-11-18T08:19:09Z,2024-11-22T12:32:21Z
+14907,Bump io.micrometer:micrometer-core from 1.13.6 to 1.14.1,closed,,2024-11-18T08:15:35Z,2024-11-22T12:32:05Z
+14906,Bump tomcat.version from 8.5.100 to 10.1.33,closed,,2024-11-18T08:15:25Z,None
+14905,correctly validate service-name-mapping parameter,closed,,2024-11-18T06:33:40Z,2024-11-20T09:21:14Z
+14904,optimize generateMethodContent to avoid unnecessary StringBuilder cre…,closed,,2024-11-18T06:21:13Z,2024-11-20T09:21:41Z
+14903,Support setting curator session timeout,closed,,2024-11-18T05:23:23Z,2024-11-20T09:20:48Z
+14902,Update dubbo revision to 3.3.3-SNAPSHOT,closed,,2024-11-17T14:04:18Z,2024-11-20T09:20:13Z
+14901,Fix http3 negotiation failed,closed,,2024-11-17T13:00:13Z,2024-11-20T09:17:30Z
+14900,fix flaky tests under DubboAppenderTest,closed,,2024-11-17T02:23:10Z,2024-11-20T09:19:27Z
+14899,[Dubbo]Fix: Collections.emptyList() is final,closed,,2024-11-15T14:13:51Z,2024-11-16T13:33:35Z
+14898,[Dubbo]Fix #14895 Httputils Bug  Fix,closed,,2024-11-15T13:54:08Z,None
+14896,Fix three flaky tests in TaskQueueTest.java,closed,,2024-11-14T17:40:10Z,2024-11-20T07:00:41Z
+14892,Fix init order in AbstractPortUnificationServer,closed,,2024-11-13T07:38:50Z,2024-11-14T07:21:49Z
+14888,[Dubbo]: Fix the bug that isDefault configuration is not useful  #12961,open,,2024-11-11T16:23:34Z,None
+14887,Bump org.apache.groovy:groovy from 4.0.23 to 4.0.24,closed,,2024-11-11T08:53:03Z,2024-11-14T07:00:12Z
+14886,Bump io.opentelemetry:opentelemetry-bom from 1.43.0 to 1.44.1,closed,,2024-11-11T08:52:13Z,2024-11-14T07:00:21Z
+14884,Fix RegistryConfig override ApplicationConfig,closed,,2024-11-11T03:42:22Z,None
+14877,[optimize] Replace dubbo-demo-native,closed,,2024-11-08T09:36:29Z,None
+14875,optimize repeat registry,closed,,2024-11-08T02:20:01Z,2024-11-13T07:11:19Z
+14874,fix judgment for registry configed in DefaultApplicationDeployer,open,,2024-11-07T14:30:53Z,None
+14873,Fix annotation configuration processor dependency missing,closed,,2024-11-07T13:51:02Z,2024-11-08T14:26:41Z
+14872,add 'micrometer-core' as transitive dependency,open,,2024-11-07T09:52:58Z,None
+14871,[optimize]Refactor the dubbo-demo module,closed,,2024-11-07T07:32:36Z,2024-11-20T08:12:02Z
+14869,Remove zookeeper dependency management,closed,,2024-11-06T13:18:27Z,2024-11-13T06:53:07Z
+14866,Spring6 compatibility,closed,,2024-11-06T01:36:24Z,2024-11-13T06:52:33Z
+14858,optimize dubbo-triple-demo,closed,,2024-11-04T10:40:35Z,2024-11-04T12:08:47Z
+14857,Bump org.apache.maven.plugins:maven-failsafe-plugin from 3.5.1 to 3.5.2,closed,,2024-11-04T08:25:31Z,2024-11-07T09:20:20Z
+14856,Bump byte-buddy_version from 1.15.7 to 1.15.10,closed,,2024-11-04T08:24:44Z,2024-11-06T12:37:20Z
+14855,Bump org.apache.maven.plugins:maven-surefire-plugin from 3.5.1 to 3.5.2,closed,,2024-11-04T08:24:13Z,2024-11-06T12:37:54Z
+14854,Bump org.apache.maven.plugins:maven-javadoc-plugin from 3.10.1 to 3.11.1,closed,,2024-11-04T08:24:03Z,2024-11-06T12:38:36Z
+14853,Bump grpc.version from 1.68.0 to 1.68.1,closed,,2024-11-04T08:23:53Z,None
+14852,Bump jackson_version from 2.18.0 to 2.18.1,closed,,2024-11-04T08:23:01Z,2024-11-06T13:25:23Z
+14851,Update initial mapping apps of service discovery MappingListener,closed,,2024-11-03T15:28:18Z,2024-11-07T09:12:53Z
+14850,Refactor project dir and remove pom module,closed,,2024-11-03T09:16:50Z,2024-11-21T14:11:11Z
+14849,Add preferred protocol support for application service discovery,closed,,2024-11-03T07:34:42Z,2024-11-07T09:12:23Z
+14847,Upgrade github action version,closed,,2024-11-01T14:53:58Z,2024-11-06T12:36:21Z
+14845,WIP: Add DNS Mode as default peer resolver,open,,2024-11-01T08:42:09Z,None
+14843,Support read parameter names from local variable table,closed,,2024-11-01T01:40:40Z,2024-11-01T02:27:26Z
+14840,Check jaxrs 2 class,closed,,2024-10-29T07:54:00Z,2024-10-29T07:59:53Z
+14839,Fix Radix Test case on jdk 8~17,closed,,2024-10-29T07:17:07Z,2024-10-29T07:31:51Z
+14837,Fix input stream unable to being deserialized,closed,,2024-10-29T06:49:18Z,2024-10-29T06:49:29Z
+14836,Check all the required classes in rest toolkit,closed,,2024-10-29T03:56:23Z,None
+14834,Bump org.apache.maven.plugins:maven-dependency-plugin from 3.8.0 to 3.8.1,closed,,2024-10-28T07:32:31Z,2024-10-29T06:53:47Z
+14833,Bump org.apache.maven.plugin-tools:maven-plugin-annotations from 3.15.0 to 3.15.1,closed,,2024-10-28T07:32:23Z,2024-10-29T07:54:36Z
+14832,Bump org.testcontainers:testcontainers from 1.20.2 to 1.20.3,closed,,2024-10-28T07:32:14Z,2024-10-28T13:20:48Z
+14831,Bump junit_platform_version from 1.11.2 to 1.11.3,closed,,2024-10-28T07:31:40Z,2024-10-28T13:20:00Z
+14830,Bump org.apache.maven.plugins:maven-checkstyle-plugin from 3.5.0 to 3.6.0,closed,,2024-10-28T07:31:04Z,2024-10-28T13:22:18Z
+14829,Bump ch.qos.logback:logback-core from 1.5.11 to 1.5.12,closed,,2024-10-28T07:30:57Z,2024-10-29T06:53:32Z
+14828,Bump byte-buddy_version from 1.15.1 to 1.15.7,closed,,2024-10-28T07:30:51Z,2024-10-29T06:53:39Z
+14827,Bump org.springframework.security:spring-security-bom from 5.8.14 to 5.8.15,closed,,2024-10-28T07:30:18Z,2024-10-28T13:22:53Z
+14826,Bump org.apache.maven.plugins:maven-plugin-plugin from 3.15.0 to 3.15.1,closed,,2024-10-28T07:30:10Z,2024-10-29T06:53:24Z
+14825,Bump junit_jupiter_version from 5.11.2 to 5.11.3,closed,,2024-10-27T13:54:26Z,2024-10-29T06:53:08Z
+14824,Running examples and integration tests in jdk 17,open,,2024-10-26T03:05:59Z,None
+14822,A couple of rest bugfix,closed,,2024-10-26T02:50:29Z,2024-10-28T07:11:16Z
+14820,Fix unable to deserialize Record using Hessian2,closed,,2024-10-25T08:51:29Z,2024-10-28T07:10:31Z
+14817,support jackson custom module,closed,,2024-10-23T03:27:18Z,2024-10-25T08:57:47Z
+14816,Keep the behavior consistent with SpringMVC when access through browser,closed,,2024-10-22T16:20:23Z,2024-10-25T09:51:05Z
+14815,dubbo-compiler: pom.xml: set manifest main class to Dubbo3TripleGenerator,closed,,2024-10-22T11:52:57Z,2024-10-25T08:58:41Z
+14813,Config value supports arrays.,closed,,2024-10-21T16:30:32Z,2024-10-22T08:27:11Z
+14812,Fix Path matching bug,closed,,2024-10-21T16:28:02Z,2024-10-22T11:13:16Z
+14811,Fix sendRedirect 302 failure,closed,,2024-10-21T16:26:19Z,2024-10-22T11:13:41Z
+14810,fix spelling typo,closed,,2024-10-21T13:49:36Z,2024-10-22T08:20:36Z
+14808,Bump io.projectreactor:reactor-core from 3.6.10 to 3.6.11,closed,,2024-10-21T08:04:04Z,2024-10-24T14:44:13Z
+14807,Bump io.micrometer:micrometer-core from 1.13.5 to 1.13.6,closed,,2024-10-21T08:03:46Z,2024-10-24T14:44:52Z
+14806,Bump byte-buddy_version from 1.15.1 to 1.15.5,closed,,2024-10-21T08:03:12Z,2024-10-25T08:45:05Z
+14805,Bump io.micrometer:micrometer-bom from 1.13.5 to 1.13.6,closed,,2024-10-21T08:02:46Z,2024-10-30T02:13:05Z
+14804,Bump curator5_version from 4.2.0 to 5.7.1,closed,,2024-10-21T08:02:25Z,2024-10-24T14:46:10Z
+14803,Bump io.micrometer:micrometer-tracing-bom from 1.3.4 to 1.3.5,closed,,2024-10-21T08:01:53Z,2024-10-25T08:43:34Z
+14802,Bump ch.qos.logback:logback-core from 1.5.10 to 1.5.11,closed,,2024-10-21T08:01:33Z,2024-10-25T08:43:25Z
+14801,Simplify auth failed message,closed,,2024-10-21T06:53:10Z,2024-10-24T08:40:36Z
+14800,Lower log level when no connection,closed,,2024-10-21T02:24:08Z,2024-10-24T08:41:20Z
+14798,Fix fastjson2 init error cause startup failure,closed,,2024-10-21T01:39:52Z,2024-10-22T01:43:59Z
+14797,add generate openapi logic,closed,,2024-10-20T15:33:13Z,None
+14796,Support parsing custom REST paths from proto files and generating @Ma…,closed,,2024-10-19T15:37:16Z,2024-11-03T05:02:27Z
+14795,Bump org.springframework:spring-context from 6.1.13 to 6.1.14 in /dubbo-config/dubbo-config-spring6,closed,,2024-10-18T20:21:03Z,2024-10-21T02:38:26Z
+14794,Refactor dubbo spring boot structure,closed,,2024-10-18T13:09:50Z,2024-10-31T14:45:42Z
+14793,Fix NetUtils: should be ignore link-local address,open,,2024-10-18T03:40:45Z,None
+14787,Add  Affinity Router,open,,2024-10-17T05:32:26Z,None
+14785,fix future.sync.set default value=false,closed,,2024-10-16T14:25:48Z,2024-10-21T02:31:18Z
+14777,Bump com.alibaba.nacos:nacos-client from 2.4.2 to 2.4.3,closed,,2024-10-14T07:42:54Z,2024-10-17T08:41:57Z
+14776,Bump io.opentelemetry:opentelemetry-bom from 1.42.1 to 1.43.0,closed,,2024-10-14T07:42:37Z,2024-10-17T08:40:53Z
+14775,Bump byte-buddy_version from 1.15.1 to 1.15.4,closed,,2024-10-14T07:42:07Z,2024-10-17T08:39:48Z
+14774,Bump ch.qos.logback:logback-core from 1.5.8 to 1.5.10,closed,,2024-10-14T07:41:38Z,2024-10-17T08:40:38Z
+14773,Bump curator5_version from 5.7.0 to 5.7.1,closed,,2024-10-14T07:40:52Z,2024-10-17T08:39:33Z
+14769,Support socks5 proxy username and password,open,,2024-10-13T19:38:29Z,None
+14763,Fix ParameterizedType in SERVER_STREAM,closed,,2024-10-11T03:39:02Z,2024-10-22T08:10:45Z
+14760,Fix memory leak in HttpPostRequestDecoder when body is empty,closed,,2024-10-11T01:55:44Z,2024-10-11T05:41:45Z
+14756,Bump io.micrometer:micrometer-core from 1.13.4 to 1.13.5,closed,,2024-10-07T07:41:44Z,2024-10-09T02:05:10Z
+14755,Bump io.micrometer:micrometer-bom from 1.13.4 to 1.13.5,closed,,2024-10-07T07:41:24Z,2024-10-09T02:05:01Z
+14754,Bump org.apache.maven.plugins:maven-failsafe-plugin from 3.5.0 to 3.5.1,closed,,2024-10-07T07:40:48Z,2024-10-10T01:34:24Z
+14753,Bump netty4_version from 4.1.113.Final to 4.1.114.Final,closed,,2024-10-07T07:40:08Z,2024-10-09T02:04:46Z
+14752,Bump org.apache.maven.plugins:maven-surefire-plugin from 3.5.0 to 3.5.1,closed,,2024-10-07T07:39:24Z,2024-10-09T02:04:37Z
+14751,Bump com.alibaba:fastjson from 1.2.83 to 1.2.83_noneautotype,closed,,2024-10-07T07:39:11Z,2024-10-07T08:40:21Z
+14750,Bump org.apache.maven.plugins:maven-javadoc-plugin from 3.10.0 to 3.10.1,closed,,2024-10-07T07:38:29Z,2024-10-09T02:04:29Z
+14749,Bump org.testcontainers:testcontainers from 1.20.1 to 1.20.2,closed,,2024-10-07T07:37:40Z,2024-10-09T01:54:03Z
+14748,Bump org.junit.platform:junit-platform-launcher from 1.9.3 to 1.11.2,closed,,2024-10-07T07:37:20Z,None
+14747,Bump junit_jupiter_version from 5.9.3 to 5.11.2,closed,,2024-10-07T07:37:04Z,2024-10-11T04:26:06Z
+14745,Update,closed,,2024-10-05T02:48:58Z,None
+14742,Fix SpringRestToolKit getBean param mistake,closed,,2024-10-02T02:41:00Z,2024-10-02T02:43:11Z
+14741,Fix memory leak in HttpPostRequestDecoder,closed,,2024-09-30T15:24:26Z,2024-10-02T02:16:24Z
+14739,Bump io.micrometer:micrometer-tracing-bom from 1.3.3 to 1.3.4,closed,,2024-09-30T07:09:02Z,2024-10-02T01:51:50Z
+14738,Bump jackson_version from 2.17.2 to 2.18.0,closed,,2024-09-30T07:08:21Z,2024-10-02T01:51:42Z
+14737,Bump io.opentelemetry:opentelemetry-bom from 1.42.0 to 1.42.1,closed,,2024-09-30T07:07:55Z,2024-10-04T15:49:51Z
+14736,Bump byte-buddy_version from 1.15.1 to 1.15.3,closed,,2024-09-30T07:06:34Z,2024-10-02T01:51:12Z
+14735,Bump log4j2_version from 2.24.0 to 2.24.1,closed,,2024-09-30T07:06:09Z,2024-10-02T01:51:05Z
+14734,Bump io.zipkin.reporter2:zipkin-reporter-bom from 3.4.0 to 3.4.2,closed,,2024-09-30T07:05:42Z,2024-10-02T01:50:56Z
+14733,Bump junit_jupiter_version from 5.9.3 to 5.11.1,closed,,2024-09-30T07:05:29Z,None
+14732,Disable check when create MetadataService invoker to prevent memory leak,closed,,2024-09-30T02:38:41Z,2024-09-30T02:38:55Z
+14731,Implement Destroyable in MetadataServiceV2,closed,,2024-09-30T02:38:22Z,2024-09-30T02:39:13Z
+14730,Fix safeLock not run when interrupt & Fix partial notification being cancelled in ServiceInstancesChangedListener,closed,,2024-09-29T04:09:41Z,2024-09-30T02:39:04Z
+14726,Support configuration of disallowed content-types,closed,,2024-09-25T15:35:08Z,2024-09-27T08:14:35Z
+14724,Fix native image for proxy,closed,,2024-09-25T14:04:22Z,2024-09-25T14:39:12Z
+14723,Support single file mode in dubbo-maven-plugin,closed,,2024-09-25T11:47:14Z,2024-09-26T02:58:38Z
+14718,Fix triple client connection shareing race condition,closed,,2024-09-24T10:33:50Z,2024-09-27T09:30:35Z
+14714,Returns a matching http status code based on the rest mappings,closed,,2024-09-23T16:12:39Z,2024-09-27T08:14:57Z
+14713,Bump commons-io:commons-io from 2.16.1 to 2.17.0,closed,,2024-09-23T07:16:14Z,2024-09-27T08:11:30Z
+14712,Bump curator5_version from 4.2.0 to 5.7.0,closed,,2024-09-23T07:15:40Z,2024-09-27T08:11:46Z
+14711,Bump commons-codec:commons-codec from 1.16.0 to 1.17.1,closed,,2024-09-23T07:15:15Z,2024-09-27T09:07:08Z
+14710,Bump io.zipkin.reporter2:zipkin-reporter-bom from 3.4.0 to 3.4.2,closed,,2024-09-23T07:15:10Z,2024-09-27T08:11:51Z
+14709,Bump org.apache.groovy:groovy from 4.0.21 to 4.0.23,closed,,2024-09-23T07:14:56Z,2024-09-27T08:12:06Z
+14708,Bump org.awaitility:awaitility from 4.2.0 to 4.2.2,closed,,2024-09-23T07:14:45Z,2024-09-27T08:12:21Z
+14707,Bump com.alibaba.fastjson2:fastjson2 from 2.0.52 to 2.0.53,closed,,2024-09-23T07:14:37Z,2024-09-27T08:12:14Z
+14706,Bump grpc.version from 1.66.0 to 1.68.0,closed,,2024-09-23T07:14:29Z,2024-09-27T08:12:29Z
+14705,Move observability autoconfigure to dubbo-spring-boot-autoconfigure,closed,,2024-09-22T06:23:36Z,2024-09-29T02:09:11Z
+14704,Bump com.google.protobuf:protobuf-java from 3.25.4 to 3.25.5 in /dubbo-dependencies-bom,closed,,2024-09-21T15:25:40Z,2024-09-22T04:11:46Z
+14702,Added support for configuring Tomcat HTTP2 max stream size in Spring boot,closed,,2024-09-20T15:13:33Z,2024-09-30T01:42:09Z
+14700,bugfix: application/x-www-form-urlencoded There is a problem with parameter parsing,closed,,2024-09-20T06:11:39Z,2024-09-20T13:57:56Z
+14698,Bump com.google.protobuf:protobuf-java from 3.25.0 to 3.25.5 in /dubbo-maven-plugin,closed,,2024-09-19T16:25:15Z,2024-09-21T15:25:01Z

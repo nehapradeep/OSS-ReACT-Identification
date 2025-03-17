@@ -1,0 +1,1344 @@
+PR #15242: 213 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15242
+Created at: 2025-03-16T08:29:39Z, Merged at: None
+================================================================================
+PR #15241: [3.3] optimized testExporterThreadpoolName by starting dispatcher thread directly (State: open)
+URL: https://github.com/apache/dubbo/pull/15241
+Created at: 2025-03-14T16:23:20Z, Merged at: None
+================================================================================
+PR #15239: [3.3] Set socket reuse address option to true (State: open)
+URL: https://github.com/apache/dubbo/pull/15239
+Created at: 2025-03-14T08:26:50Z, Merged at: None
+================================================================================
+PR #15236: remove dubbo plugin useless dependency (State: open)
+URL: https://github.com/apache/dubbo/pull/15236
+Created at: 2025-03-13T13:29:28Z, Merged at: None
+================================================================================
+PR #15231: tracing add zipkin dep default (State: closed)
+URL: https://github.com/apache/dubbo/pull/15231
+Created at: 2025-03-11T14:53:39Z, Merged at: 2025-03-12T01:50:36Z
+================================================================================
+PR #15230: fix: getClassLoader() may return null (State: closed)
+URL: https://github.com/apache/dubbo/pull/15230
+Created at: 2025-03-11T13:36:59Z, Merged at: None
+================================================================================
+PR #15229: Bump curator5_version from 4.2.0 to 5.8.0 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15229
+Created at: 2025-03-10T07:41:08Z, Merged at: 2025-03-11T02:03:30Z
+================================================================================
+PR #15228: Bump io.opentelemetry:opentelemetry-bom from 1.47.0 to 1.48.0 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15228
+Created at: 2025-03-10T07:40:42Z, Merged at: 2025-03-11T02:03:38Z
+================================================================================
+PR #15227: Bump tomcat.version from 8.5.100 to 10.1.39 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15227
+Created at: 2025-03-10T07:40:22Z, Merged at: 2025-03-11T02:03:52Z
+================================================================================
+PR #15226: Bump org.testcontainers:testcontainers from 1.20.5 to 1.20.6 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15226
+Created at: 2025-03-10T07:39:56Z, Merged at: 2025-03-11T02:03:58Z
+================================================================================
+PR #15225: Bump org.webjars:webjars-locator-lite from 1.0.1 to 1.1.0 (State: open)
+URL: https://github.com/apache/dubbo/pull/15225
+Created at: 2025-03-10T07:39:39Z, Merged at: None
+================================================================================
+PR #15224: Bump grpc.version from 1.70.0 to 1.71.0 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15224
+Created at: 2025-03-10T07:39:22Z, Merged at: 2025-03-11T02:04:13Z
+================================================================================
+PR #15223: Fix SerializeCheckStatusTest and Improve Serialization Security Management (State: closed)
+URL: https://github.com/apache/dubbo/pull/15223
+Created at: 2025-03-09T12:15:09Z, Merged at: None
+================================================================================
+PR #15222: docs: added a link to the license (State: closed)
+URL: https://github.com/apache/dubbo/pull/15222
+Created at: 2025-03-08T16:47:00Z, Merged at: 2025-03-12T01:45:29Z
+================================================================================
+PR #15221: fix repeat load registryFactory (State: closed)
+URL: https://github.com/apache/dubbo/pull/15221
+Created at: 2025-03-08T11:00:32Z, Merged at: 2025-03-11T02:29:46Z
+================================================================================
+PR #15220: autoconfiguration virtual-thread-pool (State: closed)
+URL: https://github.com/apache/dubbo/pull/15220
+Created at: 2025-03-08T06:02:49Z, Merged at: 2025-03-14T13:37:17Z
+================================================================================
+PR #15219: Resolving the Thread-Safety Problem in registerReferenceKeyAndBeanName Using an Overloaded computeIfAbsent (State: open)
+URL: https://github.com/apache/dubbo/pull/15219
+Created at: 2025-03-08T04:21:47Z, Merged at: None
+================================================================================
+PR #15218: Remove dubbo-test in dubbo-metrics,dubbo-registry,dubbo-serialization (State: open)
+URL: https://github.com/apache/dubbo/pull/15218
+Created at: 2025-03-08T03:30:47Z, Merged at: None
+================================================================================
+PR #15211: Master (State: closed)
+URL: https://github.com/apache/dubbo/pull/15211
+Created at: 2025-03-07T12:12:37Z, Merged at: None
+================================================================================
+PR #15210: Fix concurrency problem in ThreadlessExecutor (State: closed)
+URL: https://github.com/apache/dubbo/pull/15210
+Created at: 2025-03-06T09:31:12Z, Merged at: 2025-03-06T13:15:23Z
+================================================================================
+PR #15209: [3.3] Retry connect to provider server by catching ClosedChannelException (State: closed)
+URL: https://github.com/apache/dubbo/pull/15209
+Created at: 2025-03-06T06:33:00Z, Merged at: 2025-03-12T01:46:12Z
+================================================================================
+PR #15208: exclude logback transit dependency in zookeeper (State: closed)
+URL: https://github.com/apache/dubbo/pull/15208
+Created at: 2025-03-05T16:04:43Z, Merged at: 2025-03-06T01:35:53Z
+================================================================================
+PR #15207: Fix memory leak when OOM (State: closed)
+URL: https://github.com/apache/dubbo/pull/15207
+Created at: 2025-03-05T07:18:54Z, Merged at: 2025-03-05T08:49:10Z
+================================================================================
+PR #15206: 15134.adding a dummy change (State: open)
+URL: https://github.com/apache/dubbo/pull/15206
+Created at: 2025-03-04T17:02:53Z, Merged at: None
+================================================================================
+PR #15205: [3.3] Optimized EagerThreadPoolExecutorTest by decreasing maximumPoolSize (State: closed)
+URL: https://github.com/apache/dubbo/pull/15205
+Created at: 2025-03-04T15:23:39Z, Merged at: 2025-03-06T01:43:37Z
+================================================================================
+PR #15203: Optimize parseCharset method for best performance. (State: closed)
+URL: https://github.com/apache/dubbo/pull/15203
+Created at: 2025-03-03T12:52:45Z, Merged at: 2025-03-04T01:51:43Z
+================================================================================
+PR #15202: [3.3] Removed mGroup from NamedThreadFactory (State: closed)
+URL: https://github.com/apache/dubbo/pull/15202
+Created at: 2025-03-03T11:32:44Z, Merged at: 2025-03-04T01:51:07Z
+================================================================================
+PR #15200: Bump org.apache.maven.plugins:maven-deploy-plugin from 3.1.3 to 3.1.4 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15200
+Created at: 2025-03-03T08:31:22Z, Merged at: 2025-03-03T09:36:30Z
+================================================================================
+PR #15199: Bump byte-buddy_version from 1.17.1 to 1.17.2 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15199
+Created at: 2025-03-03T08:31:09Z, Merged at: 2025-03-03T09:36:38Z
+================================================================================
+PR #15198: Bump jackson_version from 2.18.2 to 2.18.3 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15198
+Created at: 2025-03-03T08:30:55Z, Merged at: 2025-03-03T09:36:47Z
+================================================================================
+PR #15197: Bump org.webjars:swagger-ui from 5.18.3 to 5.20.0 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15197
+Created at: 2025-03-03T08:30:15Z, Merged at: 2025-03-03T09:37:06Z
+================================================================================
+PR #15196: Bump netty4_version from 4.1.118.Final to 4.1.119.Final (State: closed)
+URL: https://github.com/apache/dubbo/pull/15196
+Created at: 2025-03-03T08:29:48Z, Merged at: 2025-03-03T09:36:58Z
+================================================================================
+PR #15195: Bump org.apache.groovy:groovy from 4.0.25 to 4.0.26 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15195
+Created at: 2025-03-03T08:29:35Z, Merged at: 2025-03-04T01:50:05Z
+================================================================================
+PR #15194: Bump org.codehaus.mojo:flatten-maven-plugin from 1.6.0 to 1.7.0 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15194
+Created at: 2025-03-03T08:29:25Z, Merged at: 2025-03-04T01:50:12Z
+================================================================================
+PR #15193: [3.3] Upgraded netty3 to 3.10.6.Final (State: closed)
+URL: https://github.com/apache/dubbo/pull/15193
+Created at: 2025-03-03T04:56:30Z, Merged at: None
+================================================================================
+PR #15192: fix Context loss when async invoke issue#13666 (State: open)
+URL: https://github.com/apache/dubbo/pull/15192
+Created at: 2025-03-02T09:58:36Z, Merged at: None
+================================================================================
+PR #15190: FIX-15184 resolved NettyHttp Header add by set to empty String (State: closed)
+URL: https://github.com/apache/dubbo/pull/15190
+Created at: 2025-03-01T12:57:19Z, Merged at: None
+================================================================================
+PR #15189: check the network,Local site be the preferred one (State: open)
+URL: https://github.com/apache/dubbo/pull/15189
+Created at: 2025-03-01T07:39:31Z, Merged at: None
+================================================================================
+PR #15188: Fix the issue where the charset from Content-Type is not parsed correctly, and refactor the related code. (State: closed)
+URL: https://github.com/apache/dubbo/pull/15188
+Created at: 2025-02-28T05:55:55Z, Merged at: 2025-03-03T02:03:28Z
+================================================================================
+PR #15181: Fix `DefaultSerializeClassChecker` verification, when the mode is `WARN` (State: closed)
+URL: https://github.com/apache/dubbo/pull/15181
+Created at: 2025-02-26T07:01:52Z, Merged at: None
+================================================================================
+PR #15178: default format need't convert avoid data loss (State: open)
+URL: https://github.com/apache/dubbo/pull/15178
+Created at: 2025-02-25T15:02:14Z, Merged at: None
+================================================================================
+PR #15176: refactor SimpleMetricsCountSampler (State: open)
+URL: https://github.com/apache/dubbo/pull/15176
+Created at: 2025-02-24T23:27:16Z, Merged at: None
+================================================================================
+PR #15175: Bump com.diffplug.spotless:spotless-maven-plugin from 2.44.2 to 2.44.3 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15175
+Created at: 2025-02-24T08:56:38Z, Merged at: 2025-02-24T14:27:55Z
+================================================================================
+PR #15174: Bump org.testcontainers:testcontainers from 1.20.4 to 1.20.5 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15174
+Created at: 2025-02-24T08:56:28Z, Merged at: 2025-02-25T01:43:41Z
+================================================================================
+PR #15173: Bump org.awaitility:awaitility from 4.2.2 to 4.3.0 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15173
+Created at: 2025-02-24T08:56:17Z, Merged at: 2025-03-06T01:43:56Z
+================================================================================
+PR #15172: Bump com.alibaba.fastjson2:fastjson2 from 2.0.55 to 2.0.56 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15172
+Created at: 2025-02-24T08:55:51Z, Merged at: 2025-02-25T01:43:33Z
+================================================================================
+PR #15171: Bump org.apache.maven.plugins:maven-compiler-plugin from 3.13.0 to 3.14.0 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15171
+Created at: 2025-02-24T08:55:30Z, Merged at: 2025-02-25T01:43:26Z
+================================================================================
+PR #15170: Bump junit_platform_version from 1.11.4 to 1.12.0 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15170
+Created at: 2025-02-24T08:55:20Z, Merged at: 2025-02-25T01:43:18Z
+================================================================================
+PR #15169: Bump spring-boot-3.version from 3.4.2 to 3.4.3 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15169
+Created at: 2025-02-24T08:54:58Z, Merged at: 2025-02-25T01:43:09Z
+================================================================================
+PR #15168: Bump junit_jupiter_version from 5.11.4 to 5.12.0 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15168
+Created at: 2025-02-24T08:53:53Z, Merged at: 2025-02-26T01:40:54Z
+================================================================================
+PR #15167: Bump tomcat.version from 8.5.100 to 10.1.36 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15167
+Created at: 2025-02-24T08:53:45Z, Merged at: 2025-02-25T01:42:49Z
+================================================================================
+PR #15164: [3.3] Optimized Wrapper#getWrapper and some unit tests (State: closed)
+URL: https://github.com/apache/dubbo/pull/15164
+Created at: 2025-02-22T15:32:23Z, Merged at: 2025-03-03T01:59:05Z
+================================================================================
+PR #15163: [3.3] Optimized RpcMessageHandler to reduce thread pool usage (State: closed)
+URL: https://github.com/apache/dubbo/pull/15163
+Created at: 2025-02-20T08:12:37Z, Merged at: 2025-02-21T02:31:50Z
+================================================================================
+PR #15161: :recycle: move dubbo mertics and tracing to observability (State: open)
+URL: https://github.com/apache/dubbo/pull/15161
+Created at: 2025-02-20T05:09:14Z, Merged at: None
+================================================================================
+PR #15157: FIX gRPC-related URL object caused a NullPointerException (NPE) (State: closed)
+URL: https://github.com/apache/dubbo/pull/15157
+Created at: 2025-02-18T04:09:17Z, Merged at: 2025-02-21T02:23:10Z
+================================================================================
+PR #15155: Bump org.yaml:snakeyaml from 2.3 to 2.4 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15155
+Created at: 2025-02-17T08:38:51Z, Merged at: 2025-02-19T01:50:50Z
+================================================================================
+PR #15154: Bump com.alibaba.fastjson2:fastjson2 from 2.0.54 to 2.0.55 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15154
+Created at: 2025-02-17T08:38:41Z, Merged at: 2025-02-19T01:51:02Z
+================================================================================
+PR #15153: Bump io.projectreactor:reactor-core from 3.7.2 to 3.7.3 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15153
+Created at: 2025-02-17T08:38:19Z, Merged at: 2025-02-19T01:51:09Z
+================================================================================
+PR #15152: Bump io.micrometer:micrometer-core from 1.14.3 to 1.14.4 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15152
+Created at: 2025-02-17T08:38:02Z, Merged at: 2025-02-19T01:51:20Z
+================================================================================
+PR #15151: Bump io.micrometer:micrometer-tracing-bom from 1.4.2 to 1.4.3 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15151
+Created at: 2025-02-17T08:37:53Z, Merged at: 2025-02-19T01:57:25Z
+================================================================================
+PR #15150: Bump byte-buddy_version from 1.17.0 to 1.17.1 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15150
+Created at: 2025-02-17T08:37:25Z, Merged at: 2025-02-19T01:57:53Z
+================================================================================
+PR #15149: Bump io.micrometer:micrometer-bom from 1.14.3 to 1.14.4 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15149
+Created at: 2025-02-17T08:37:14Z, Merged at: 2025-02-19T01:57:35Z
+================================================================================
+PR #15148: Bump netty4_version from 4.1.117.Final to 4.1.118.Final (State: closed)
+URL: https://github.com/apache/dubbo/pull/15148
+Created at: 2025-02-17T08:37:06Z, Merged at: 2025-02-19T01:57:45Z
+================================================================================
+PR #15147: Bump io.zipkin.reporter2:zipkin-reporter-bom from 3.4.3 to 3.5.0 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15147
+Created at: 2025-02-17T08:36:51Z, Merged at: 2025-02-20T01:31:27Z
+================================================================================
+PR #15146: Bump tomcat.version from 8.5.100 to 10.1.35 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15146
+Created at: 2025-02-17T08:36:41Z, Merged at: 2025-02-19T01:59:16Z
+================================================================================
+PR #15145: Bump spring-6.version from 6.2.2 to 6.2.3 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15145
+Created at: 2025-02-17T08:36:24Z, Merged at: 2025-02-19T01:59:06Z
+================================================================================
+PR #15143: [3.4] Get authority by calling HttpServletRequest#getServerName (State: closed)
+URL: https://github.com/apache/dubbo/pull/15143
+Created at: 2025-02-17T07:44:30Z, Merged at: None
+================================================================================
+PR #15142: Get authority by calling HttpServletRequest#getServerName (State: closed)
+URL: https://github.com/apache/dubbo/pull/15142
+Created at: 2025-02-17T07:39:53Z, Merged at: None
+================================================================================
+PR #15141: [3.3] Get authority by calling HttpServletRequest#getServerName (State: closed)
+URL: https://github.com/apache/dubbo/pull/15141
+Created at: 2025-02-17T06:46:17Z, Merged at: 2025-02-18T02:56:47Z
+================================================================================
+PR #15139: Fix native support generic service (State: closed)
+URL: https://github.com/apache/dubbo/pull/15139
+Created at: 2025-02-17T03:35:58Z, Merged at: 2025-02-24T14:38:34Z
+================================================================================
+PR #15136: Fix 3.2 ci (State: closed)
+URL: https://github.com/apache/dubbo/pull/15136
+Created at: 2025-02-16T11:46:25Z, Merged at: 2025-02-17T11:20:33Z
+================================================================================
+PR #15135: Remove duplicate dependencies. (State: closed)
+URL: https://github.com/apache/dubbo/pull/15135
+Created at: 2025-02-14T06:22:49Z, Merged at: 2025-02-16T07:35:16Z
+================================================================================
+PR #15134: Revert "Bump com.ctrip.framework.apollo:apollo-client from 2.3.0 to 2.4.0" (State: closed)
+URL: https://github.com/apache/dubbo/pull/15134
+Created at: 2025-02-14T00:34:21Z, Merged at: None
+================================================================================
+PR #15131: [3.3]Fix:triple protocol echoService invoke. (State: closed)
+URL: https://github.com/apache/dubbo/pull/15131
+Created at: 2025-02-13T09:36:25Z, Merged at: None
+================================================================================
+PR #15130: [3.3] Revert "feat:dubbo-remoting-zookeeper-curator5 remove dubbo-test module (#15082)" (State: closed)
+URL: https://github.com/apache/dubbo/pull/15130
+Created at: 2025-02-13T08:53:59Z, Merged at: None
+================================================================================
+PR #15129: issue #14980 (State: open)
+URL: https://github.com/apache/dubbo/pull/15129
+Created at: 2025-02-12T15:13:58Z, Merged at: None
+================================================================================
+PR #15127: [3.2]Fix:triple protocol echoService invoke. (State: closed)
+URL: https://github.com/apache/dubbo/pull/15127
+Created at: 2025-02-12T10:31:07Z, Merged at: 2025-02-13T11:01:36Z
+================================================================================
+PR #15126: [3.2] Getting all nacos instances without subscription (State: closed)
+URL: https://github.com/apache/dubbo/pull/15126
+Created at: 2025-02-12T06:38:50Z, Merged at: 2025-02-13T10:52:57Z
+================================================================================
+PR #15125: feat: remove useless dependency (State: closed)
+URL: https://github.com/apache/dubbo/pull/15125
+Created at: 2025-02-11T11:14:35Z, Merged at: 2025-02-14T14:33:21Z
+================================================================================
+PR #15122: Ignore RejectedExecutionException if executor is shutdown during submit task (State: closed)
+URL: https://github.com/apache/dubbo/pull/15122
+Created at: 2025-02-10T09:47:33Z, Merged at: 2025-02-13T10:49:34Z
+================================================================================
+PR #15120: Bump com.ctrip.framework.apollo:apollo-mockserver from 2.3.0 to 2.4.0 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15120
+Created at: 2025-02-10T08:21:53Z, Merged at: 2025-02-11T02:32:20Z
+================================================================================
+PR #15119: Bump commons-logging:commons-logging from 1.3.4 to 1.3.5 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15119
+Created at: 2025-02-10T08:21:23Z, Merged at: 2025-02-11T02:32:13Z
+================================================================================
+PR #15118: Bump io.opentelemetry:opentelemetry-bom from 1.46.0 to 1.47.0 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15118
+Created at: 2025-02-10T08:21:20Z, Merged at: 2025-02-11T02:32:05Z
+================================================================================
+PR #15117: Bump com.ctrip.framework.apollo:apollo-client from 2.3.0 to 2.4.0 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15117
+Created at: 2025-02-10T08:20:48Z, Merged at: 2025-02-11T02:31:57Z
+================================================================================
+PR #15115: Fix triple protocol for native image (State: open)
+URL: https://github.com/apache/dubbo/pull/15115
+Created at: 2025-02-09T15:43:34Z, Merged at: None
+================================================================================
+PR #15113: Try register Service Instance after export (State: closed)
+URL: https://github.com/apache/dubbo/pull/15113
+Created at: 2025-02-08T08:43:07Z, Merged at: 2025-02-11T14:58:28Z
+================================================================================
+PR #15112: Fix some minor issues discovered by PMD plugins (State: open)
+URL: https://github.com/apache/dubbo/pull/15112
+Created at: 2025-02-07T13:45:53Z, Merged at: None
+================================================================================
+PR #15110: [3.3] Getting all nacos instances without subscription (State: closed)
+URL: https://github.com/apache/dubbo/pull/15110
+Created at: 2025-02-07T09:23:29Z, Merged at: None
+================================================================================
+PR #15109: Fix zookeeper reflection type describer registrar path (State: closed)
+URL: https://github.com/apache/dubbo/pull/15109
+Created at: 2025-02-06T15:02:57Z, Merged at: 2025-02-06T15:22:42Z
+================================================================================
+PR #15104: Bump byte-buddy_version from 1.16.1 to 1.17.0 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15104
+Created at: 2025-02-03T08:48:13Z, Merged at: 2025-02-04T23:56:23Z
+================================================================================
+PR #15103: Bump com.google.code.gson:gson from 2.11.0 to 2.12.1 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15103
+Created at: 2025-02-03T08:47:52Z, Merged at: 2025-02-04T23:56:31Z
+================================================================================
+PR #15102: Bump org.webjars:redoc from 2.1.5 to 2.3.0 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15102
+Created at: 2025-02-03T08:47:30Z, Merged at: 2025-02-04T23:56:45Z
+================================================================================
+PR #15101: Bump org.webjars:swagger-ui from 5.18.2 to 5.18.3 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15101
+Created at: 2025-02-03T08:47:23Z, Merged at: 2025-02-04T23:56:39Z
+================================================================================
+PR #15100: Bump commons-codec:commons-codec from 1.17.2 to 1.18.0 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15100
+Created at: 2025-02-03T08:47:08Z, Merged at: 2025-02-04T23:56:53Z
+================================================================================
+PR #15099: Bump com.alibaba.nacos:nacos-client from 2.4.3 to 2.5.0 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15099
+Created at: 2025-02-03T08:46:40Z, Merged at: 2025-02-04T23:57:03Z
+================================================================================
+PR #15098: Bump jakarta.validation:jakarta.validation-api from 3.1.0 to 3.1.1 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15098
+Created at: 2025-02-03T08:46:26Z, Merged at: 2025-02-04T23:57:10Z
+================================================================================
+PR #15097: Bump org.apache.groovy:groovy from 4.0.24 to 4.0.25 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15097
+Created at: 2025-02-03T08:46:18Z, Merged at: 2025-02-08T09:01:48Z
+================================================================================
+PR #15095: Bump protobuf-java_version from 3.25.5 to 3.25.6 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15095
+Created at: 2025-01-27T08:12:20Z, Merged at: 2025-01-27T08:21:27Z
+================================================================================
+PR #15094: Bump spring-boot-3.version from 3.4.1 to 3.4.2 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15094
+Created at: 2025-01-27T08:10:42Z, Merged at: 2025-01-28T13:29:03Z
+================================================================================
+PR #15093: Bump grpc.version from 1.69.0 to 1.70.0 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15093
+Created at: 2025-01-27T08:09:25Z, Merged at: 2025-01-28T13:28:27Z
+================================================================================
+PR #15089: Refactoring Metadata Unit Tests (State: open)
+URL: https://github.com/apache/dubbo/pull/15089
+Created at: 2025-01-22T16:52:40Z, Merged at: None
+================================================================================
+PR #15086: bugfix: the issue of possible infinite loop when cleaning up expired metadata info (State: closed)
+URL: https://github.com/apache/dubbo/pull/15086
+Created at: 2025-01-22T06:05:16Z, Merged at: 2025-02-05T03:43:35Z
+================================================================================
+PR #15085: Devin/1737462635 http3 connection mgmt (State: closed)
+URL: https://github.com/apache/dubbo/pull/15085
+Created at: 2025-01-21T14:59:26Z, Merged at: None
+================================================================================
+PR #15084: Support for Domain-Based Service Registration and Discovery implements by Devin AI (State: closed)
+URL: https://github.com/apache/dubbo/pull/15084
+Created at: 2025-01-21T12:04:14Z, Merged at: None
+================================================================================
+PR #15082: dubbo-remoting-zookeeper-curator5 module remove dubbo-test-check and dubbo-test-common (State: closed)
+URL: https://github.com/apache/dubbo/pull/15082
+Created at: 2025-01-21T08:22:15Z, Merged at: 2025-02-10T15:11:03Z
+================================================================================
+PR #15081: Bump io.swagger.core.v3:swagger-annotations from 2.2.27 to 2.2.28 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15081
+Created at: 2025-01-20T08:39:22Z, Merged at: 2025-01-28T14:04:26Z
+================================================================================
+PR #15080: Bump netty4_version from 4.1.116.Final to 4.1.117.Final (State: closed)
+URL: https://github.com/apache/dubbo/pull/15080
+Created at: 2025-01-20T08:38:58Z, Merged at: 2025-01-28T14:05:05Z
+================================================================================
+PR #15079: Bump byte-buddy_version from 1.15.11 to 1.16.1 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15079
+Created at: 2025-01-20T08:38:42Z, Merged at: 2025-01-28T14:05:40Z
+================================================================================
+PR #15078: Bump io.micrometer:micrometer-tracing-bom from 1.4.1 to 1.4.2 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15078
+Created at: 2025-01-20T08:38:18Z, Merged at: 2025-01-28T14:04:09Z
+================================================================================
+PR #15077: Bump io.micrometer:micrometer-bom from 1.13.6 to 1.14.3 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15077
+Created at: 2025-01-20T08:37:57Z, Merged at: 2025-01-31T02:31:23Z
+================================================================================
+PR #15076: Bump io.micrometer:micrometer-core from 1.14.2 to 1.14.3 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15076
+Created at: 2025-01-20T08:37:41Z, Merged at: 2025-01-28T14:04:18Z
+================================================================================
+PR #15075: Bump io.projectreactor:reactor-core from 3.7.1 to 3.7.2 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15075
+Created at: 2025-01-20T08:37:35Z, Merged at: 2025-01-28T14:04:42Z
+================================================================================
+PR #15074: Bump swagger_version from 1.6.14 to 1.6.15 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15074
+Created at: 2025-01-20T08:37:21Z, Merged at: 2025-01-28T14:05:17Z
+================================================================================
+PR #15073: Bump grpc.version from 1.69.0 to 1.69.1 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15073
+Created at: 2025-01-20T08:37:06Z, Merged at: None
+================================================================================
+PR #15072: Bump spring-6.version from 6.2.1 to 6.2.2 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15072
+Created at: 2025-01-20T08:36:39Z, Merged at: 2025-01-28T14:06:25Z
+================================================================================
+PR #15071: Bump com.diffplug.spotless:spotless-maven-plugin from 2.43.0 to 2.44.2 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15071
+Created at: 2025-01-20T08:35:28Z, Merged at: 2025-01-28T14:03:50Z
+================================================================================
+PR #15065: Remove unused plugin (State: closed)
+URL: https://github.com/apache/dubbo/pull/15065
+Created at: 2025-01-19T14:46:42Z, Merged at: 2025-02-08T09:13:38Z
+================================================================================
+PR #15064: dubbo-rpc module remove dubbo-test-check (State: closed)
+URL: https://github.com/apache/dubbo/pull/15064
+Created at: 2025-01-19T01:25:27Z, Merged at: 2025-01-19T14:21:04Z
+================================================================================
+PR #15060: Remove duplicated invokers in registry notification (State: open)
+URL: https://github.com/apache/dubbo/pull/15060
+Created at: 2025-01-16T09:31:48Z, Merged at: None
+================================================================================
+PR #15058: fix:Remove the configuration to avoid impacting users' default configuration values. (State: closed)
+URL: https://github.com/apache/dubbo/pull/15058
+Created at: 2025-01-13T15:18:18Z, Merged at: 2025-01-14T03:46:48Z
+================================================================================
+PR #15057: Bump commons-codec:commons-codec from 1.17.1 to 1.17.2 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15057
+Created at: 2025-01-13T08:08:48Z, Merged at: 2025-01-19T14:33:00Z
+================================================================================
+PR #15056: Bump org.eclipse.jetty:jetty-maven-plugin from 9.4.56.v20240826 to 9.4.57.v20241219 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15056
+Created at: 2025-01-13T08:07:54Z, Merged at: 2025-01-26T12:14:08Z
+================================================================================
+PR #15055: Bump com.diffplug.spotless:spotless-maven-plugin from 2.43.0 to 2.44.1 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15055
+Created at: 2025-01-13T08:07:40Z, Merged at: None
+================================================================================
+PR #15054: Bump io.opentelemetry:opentelemetry-bom from 1.45.0 to 1.46.0 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15054
+Created at: 2025-01-13T08:07:21Z, Merged at: 2025-01-28T14:04:51Z
+================================================================================
+PR #15053: Bump com.alibaba.fastjson2:fastjson2 from 2.0.53 to 2.0.54 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15053
+Created at: 2025-01-13T08:07:12Z, Merged at: 2025-01-28T14:03:20Z
+================================================================================
+PR #15052: Bump jetty_version from 9.4.56.v20240826 to 9.4.57.v20241219 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15052
+Created at: 2025-01-13T08:06:36Z, Merged at: 2025-01-28T14:05:32Z
+================================================================================
+PR #15049: Support pass SSLSession in Invocation to check permission (State: closed)
+URL: https://github.com/apache/dubbo/pull/15049
+Created at: 2025-01-10T09:09:26Z, Merged at: 2025-01-13T03:15:31Z
+================================================================================
+PR #15046: Remove datasource status checker (State: closed)
+URL: https://github.com/apache/dubbo/pull/15046
+Created at: 2025-01-09T15:55:28Z, Merged at: 2025-01-28T14:08:08Z
+================================================================================
+PR #15039: Bump io.micrometer:micrometer-bom from 1.13.6 to 1.14.2 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15039
+Created at: 2025-01-06T08:19:49Z, Merged at: None
+================================================================================
+PR #15038: Bump netty4_version from 4.1.115.Final to 4.1.116.Final (State: closed)
+URL: https://github.com/apache/dubbo/pull/15038
+Created at: 2025-01-06T08:19:17Z, Merged at: 2025-01-07T03:21:49Z
+================================================================================
+PR #15037: Bump junit_jupiter_version from 5.11.3 to 5.11.4 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15037
+Created at: 2025-01-06T08:18:21Z, Merged at: 2025-01-07T15:37:21Z
+================================================================================
+PR #15036: Bump junit_platform_version from 1.11.3 to 1.11.4 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15036
+Created at: 2025-01-06T08:17:59Z, Merged at: 2025-01-09T14:27:16Z
+================================================================================
+PR #15035: Disable testWriteUTF on Windows (State: closed)
+URL: https://github.com/apache/dubbo/pull/15035
+Created at: 2025-01-05T10:42:44Z, Merged at: 2025-01-05T12:01:46Z
+================================================================================
+PR #15034: Fix testDecode_Backspace (State: closed)
+URL: https://github.com/apache/dubbo/pull/15034
+Created at: 2025-01-05T07:40:59Z, Merged at: 2025-01-05T08:06:12Z
+================================================================================
+PR #15033: Fix TelnetCodecTest in Windows (State: closed)
+URL: https://github.com/apache/dubbo/pull/15033
+Created at: 2025-01-03T08:34:27Z, Merged at: 2025-01-03T08:34:34Z
+================================================================================
+PR #15032: Add a configuration to determine whether to enable the point-to-point network interface (State: closed)
+URL: https://github.com/apache/dubbo/pull/15032
+Created at: 2025-01-03T03:26:54Z, Merged at: 2025-01-10T13:12:31Z
+================================================================================
+PR #15030: Fix CI Upload Configuration (State: closed)
+URL: https://github.com/apache/dubbo/pull/15030
+Created at: 2025-01-02T01:45:39Z, Merged at: 2025-01-03T02:26:05Z
+================================================================================
+PR #15029: opt: client supports requests to server-streaming endpoints without parameters (State: closed)
+URL: https://github.com/apache/dubbo/pull/15029
+Created at: 2024-12-31T08:03:22Z, Merged at: 2025-01-06T02:55:17Z
+================================================================================
+PR #15028: update README.md (State: closed)
+URL: https://github.com/apache/dubbo/pull/15028
+Created at: 2024-12-30T17:09:05Z, Merged at: 2025-01-03T06:01:50Z
+================================================================================
+PR #15027: Bump org.openjdk.nashorn:nashorn-core from 15.4 to 15.6 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15027
+Created at: 2024-12-30T08:26:16Z, Merged at: 2025-01-04T02:32:02Z
+================================================================================
+PR #15026: feat: server stream supports requests without parameters (State: closed)
+URL: https://github.com/apache/dubbo/pull/15026
+Created at: 2024-12-30T06:32:07Z, Merged at: 2024-12-31T06:52:02Z
+================================================================================
+PR #15025: Replace upload artifact results (State: closed)
+URL: https://github.com/apache/dubbo/pull/15025
+Created at: 2024-12-27T01:41:19Z, Merged at: 2024-12-27T09:20:19Z
+================================================================================
+PR #15019: optimize: support http1 automatic keepalive setting (State: closed)
+URL: https://github.com/apache/dubbo/pull/15019
+Created at: 2024-12-25T09:10:54Z, Merged at: 2024-12-26T10:16:09Z
+================================================================================
+PR #15017: Bugfix: An instance of the subclass of RegistryConfig should be added to configsCache as the RegistryConfig class type #15016 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15017
+Created at: 2024-12-24T18:25:13Z, Merged at: 2025-01-26T12:36:22Z
+================================================================================
+PR #15015: correcting spelling mistakes (State: closed)
+URL: https://github.com/apache/dubbo/pull/15015
+Created at: 2024-12-24T09:24:33Z, Merged at: 2025-01-04T03:06:12Z
+================================================================================
+PR #15014: remove unnecessary protocolRevisionsToUrls and build newServiceUrls d… (State: closed)
+URL: https://github.com/apache/dubbo/pull/15014
+Created at: 2024-12-24T07:31:36Z, Merged at: None
+================================================================================
+PR #15012: Bump spring-boot-3.version from 3.4.0 to 3.4.1 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15012
+Created at: 2024-12-23T08:27:12Z, Merged at: 2025-01-05T07:42:42Z
+================================================================================
+PR #15006: Check the md5 of the metadata cache file (State: closed)
+URL: https://github.com/apache/dubbo/pull/15006
+Created at: 2024-12-20T02:54:16Z, Merged at: 2025-02-28T02:12:08Z
+================================================================================
+PR #15002: Bump org.openjdk.nashorn:nashorn-core from 15.4 to 15.5 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15002
+Created at: 2024-12-16T08:32:57Z, Merged at: None
+================================================================================
+PR #15001: Bump io.projectreactor:reactor-core from 3.7.0 to 3.7.1 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15001
+Created at: 2024-12-16T08:32:19Z, Merged at: 2025-01-04T02:32:28Z
+================================================================================
+PR #15000: Bump byte-buddy_version from 1.15.10 to 1.15.11 (State: closed)
+URL: https://github.com/apache/dubbo/pull/15000
+Created at: 2024-12-16T08:32:15Z, Merged at: 2025-01-04T03:07:17Z
+================================================================================
+PR #14999: Bump org.webjars:webjars-locator-lite from 1.0.0 to 1.0.1 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14999
+Created at: 2024-12-16T08:31:59Z, Merged at: 2025-01-04T03:07:56Z
+================================================================================
+PR #14998: Bump org.apache.dubbo.extensions:dubbo-rpc-rest from 3.3.0 to 3.3.1 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14998
+Created at: 2024-12-16T08:31:31Z, Merged at: 2025-01-05T07:42:51Z
+================================================================================
+PR #14997: Bump log4j2_version from 2.24.2 to 2.24.3 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14997
+Created at: 2024-12-16T08:31:26Z, Merged at: 2025-01-05T07:43:04Z
+================================================================================
+PR #14996: Bump io.swagger.core.v3:swagger-annotations from 2.2.25 to 2.2.27 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14996
+Created at: 2024-12-16T08:31:15Z, Merged at: 2025-01-04T03:04:56Z
+================================================================================
+PR #14995: Bump org.asynchttpclient:async-http-client from 2.12.3 to 2.12.4 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14995
+Created at: 2024-12-16T08:31:00Z, Merged at: 2025-01-04T03:09:02Z
+================================================================================
+PR #14994: Bump org.codehaus.plexus:plexus-utils from 3.5.1 to 3.6.0 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14994
+Created at: 2024-12-16T08:30:47Z, Merged at: 2025-01-05T07:42:31Z
+================================================================================
+PR #14993: Bump tomcat.version from 8.5.100 to 10.1.34 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14993
+Created at: 2024-12-16T08:30:44Z, Merged at: 2025-01-05T07:44:04Z
+================================================================================
+PR #14992: Bump spring-6.version from 6.2.0 to 6.2.1 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14992
+Created at: 2024-12-16T08:30:34Z, Merged at: 2025-01-05T07:44:21Z
+================================================================================
+PR #14991: Bump io.micrometer:micrometer-core from 1.14.1 to 1.14.2 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14991
+Created at: 2024-12-16T08:29:33Z, Merged at: 2025-01-04T03:08:34Z
+================================================================================
+PR #14990: Bump io.micrometer:micrometer-tracing-bom from 1.4.0 to 1.4.1 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14990
+Created at: 2024-12-16T08:29:27Z, Merged at: 2025-01-05T07:43:55Z
+================================================================================
+PR #14989: Bump grpc.version from 1.68.2 to 1.69.0 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14989
+Created at: 2024-12-16T08:29:23Z, Merged at: 2025-01-05T07:43:14Z
+================================================================================
+PR #14986: remove strong dep micrometer in tracing (State: closed)
+URL: https://github.com/apache/dubbo/pull/14986
+Created at: 2024-12-13T14:12:00Z, Merged at: 2025-02-10T01:38:57Z
+================================================================================
+PR #14983: Bump org.asynchttpclient:async-http-client from 2.12.3 to 3.0.1 in /dubbo-test/dubbo-test-check (State: closed)
+URL: https://github.com/apache/dubbo/pull/14983
+Created at: 2024-12-12T22:22:53Z, Merged at: None
+================================================================================
+PR #14982: Replace matrix id with job id (State: closed)
+URL: https://github.com/apache/dubbo/pull/14982
+Created at: 2024-12-12T01:45:26Z, Merged at: None
+================================================================================
+PR #14981: Fix upload artifact failed in Scheduled Test (State: closed)
+URL: https://github.com/apache/dubbo/pull/14981
+Created at: 2024-12-11T09:15:17Z, Merged at: 2024-12-11T09:15:34Z
+================================================================================
+PR #14977: Bump io.zipkin.reporter2:zipkin-reporter-bom from 3.4.2 to 3.4.3 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14977
+Created at: 2024-12-09T08:13:13Z, Merged at: 2024-12-13T12:04:40Z
+================================================================================
+PR #14976: Bump org.apache.maven.plugins:maven-javadoc-plugin from 3.11.1 to 3.11.2 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14976
+Created at: 2024-12-09T08:12:41Z, Merged at: 2024-12-11T08:13:04Z
+================================================================================
+PR #14975: Bump io.opentelemetry:opentelemetry-bom from 1.44.1 to 1.45.0 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14975
+Created at: 2024-12-09T08:11:39Z, Merged at: 2024-12-11T08:12:47Z
+================================================================================
+PR #14973: Ignore some modules in codecov (State: closed)
+URL: https://github.com/apache/dubbo/pull/14973
+Created at: 2024-12-06T15:01:17Z, Merged at: 2024-12-06T23:05:51Z
+================================================================================
+PR #14972: Ignore some modules (State: closed)
+URL: https://github.com/apache/dubbo/pull/14972
+Created at: 2024-12-06T13:55:47Z, Merged at: 2024-12-06T14:54:09Z
+================================================================================
+PR #14971: Bump com.alibaba:fastjson from 1.2.83_noneautotype to 2.0.0 in /dubbo-dependencies-bom (State: closed)
+URL: https://github.com/apache/dubbo/pull/14971
+Created at: 2024-12-06T12:47:45Z, Merged at: None
+================================================================================
+PR #14970: Fix codecov no result (State: closed)
+URL: https://github.com/apache/dubbo/pull/14970
+Created at: 2024-12-06T12:45:09Z, Merged at: 2024-12-06T12:46:53Z
+================================================================================
+PR #14969: Fix some minor issues discovered by PMD plugins (State: closed)
+URL: https://github.com/apache/dubbo/pull/14969
+Created at: 2024-12-06T10:05:14Z, Merged at: None
+================================================================================
+PR #14966: fix ClassCastException (State: open)
+URL: https://github.com/apache/dubbo/pull/14966
+Created at: 2024-12-06T02:02:36Z, Merged at: None
+================================================================================
+PR #14965: Fix some minor issues discovered by PMD plugins (State: closed)
+URL: https://github.com/apache/dubbo/pull/14965
+Created at: 2024-12-05T13:05:03Z, Merged at: None
+================================================================================
+PR #14958: Bump org.codehaus.mojo:license-maven-plugin from 2.4.0 to 2.5.0 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14958
+Created at: 2024-12-02T08:49:42Z, Merged at: 2024-12-06T03:34:14Z
+================================================================================
+PR #14957: Bump grpc.version from 1.68.0 to 1.68.2 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14957
+Created at: 2024-12-02T08:48:13Z, Merged at: 2024-12-06T03:33:45Z
+================================================================================
+PR #14956: Bump jackson_version from 2.18.1 to 2.18.2 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14956
+Created at: 2024-12-02T08:46:41Z, Merged at: 2024-12-06T03:33:21Z
+================================================================================
+PR #14955: HTTP3 bugfix (State: closed)
+URL: https://github.com/apache/dubbo/pull/14955
+Created at: 2024-12-01T12:59:16Z, Merged at: 2024-12-06T03:30:31Z
+================================================================================
+PR #14954: Add xds demo stop.sh (State: closed)
+URL: https://github.com/apache/dubbo/pull/14954
+Created at: 2024-11-30T13:04:21Z, Merged at: 2024-12-04T01:54:55Z
+================================================================================
+PR #14953: 【xDS】Run through the process & Add example (State: closed)
+URL: https://github.com/apache/dubbo/pull/14953
+Created at: 2024-11-30T11:27:53Z, Merged at: 2024-12-04T01:54:30Z
+================================================================================
+PR #14950: Close-NodeCache-before-Curator (State: closed)
+URL: https://github.com/apache/dubbo/pull/14950
+Created at: 2024-11-28T03:26:33Z, Merged at: None
+================================================================================
+PR #14949: [Optimize]Added the dubbo-plugin-loom module to the pom.xml of dubbo-parent. (State: closed)
+URL: https://github.com/apache/dubbo/pull/14949
+Created at: 2024-11-27T18:58:36Z, Merged at: None
+================================================================================
+PR #14948: Fix the dependency missing of dubbo-spring-boot.(#14947) (State: closed)
+URL: https://github.com/apache/dubbo/pull/14948
+Created at: 2024-11-26T10:09:13Z, Merged at: 2024-11-27T02:38:44Z
+================================================================================
+PR #14944: Bump commons-io:commons-io from 2.17.0 to 2.18.0 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14944
+Created at: 2024-11-25T08:38:32Z, Merged at: 2024-11-29T06:36:46Z
+================================================================================
+PR #14943: Bump org.testcontainers:testcontainers from 1.20.3 to 1.20.4 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14943
+Created at: 2024-11-25T08:38:08Z, Merged at: 2024-11-27T08:04:02Z
+================================================================================
+PR #14942: Bump log4j2_version from 2.24.1 to 2.24.2 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14942
+Created at: 2024-11-25T08:37:48Z, Merged at: 2024-11-27T08:02:00Z
+================================================================================
+PR #14941: Bump spring-boot-3.version from 3.3.5 to 3.4.0 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14941
+Created at: 2024-11-25T08:37:31Z, Merged at: 2024-11-27T08:03:42Z
+================================================================================
+PR #14940: Bump org.springframework.security:spring-security-bom from 5.8.15 to 5.8.16 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14940
+Created at: 2024-11-25T08:35:10Z, Merged at: 2024-11-27T08:01:49Z
+================================================================================
+PR #14936: Fix DefaultRequestMappingRegistry.exists NPE when not initialized (State: closed)
+URL: https://github.com/apache/dubbo/pull/14936
+Created at: 2024-11-25T06:36:41Z, Merged at: 2024-11-27T02:41:30Z
+================================================================================
+PR #14935: Update PULL_REQUEST_TEMPLATE.md to fix hyperlink error (State: closed)
+URL: https://github.com/apache/dubbo/pull/14935
+Created at: 2024-11-25T05:11:31Z, Merged at: 2024-11-27T11:31:21Z
+================================================================================
+PR #14934: [Feature]move mesh-router into spi-extension (State: open)
+URL: https://github.com/apache/dubbo/pull/14934
+Created at: 2024-11-24T04:51:26Z, Merged at: None
+================================================================================
+PR #14933: dubbo-metadata module change integration test to unit test (State: open)
+URL: https://github.com/apache/dubbo/pull/14933
+Created at: 2024-11-23T10:14:46Z, Merged at: None
+================================================================================
+PR #14932: dubbo-configcenter module change integration test to unit test (State: closed)
+URL: https://github.com/apache/dubbo/pull/14932
+Created at: 2024-11-23T10:09:51Z, Merged at: 2024-11-25T01:55:18Z
+================================================================================
+PR #14931: dubbo-config module change integration test to unit test (State: open)
+URL: https://github.com/apache/dubbo/pull/14931
+Created at: 2024-11-23T10:07:25Z, Merged at: None
+================================================================================
+PR #14930: dubbo-compatible module change integration test to unit test (State: open)
+URL: https://github.com/apache/dubbo/pull/14930
+Created at: 2024-11-23T10:02:45Z, Merged at: None
+================================================================================
+PR #14929: dubbo-cluster module change integration test to unit test (State: closed)
+URL: https://github.com/apache/dubbo/pull/14929
+Created at: 2024-11-23T09:34:39Z, Merged at: 2024-11-27T08:05:03Z
+================================================================================
+PR #14928: Remove unused dependency (State: closed)
+URL: https://github.com/apache/dubbo/pull/14928
+Created at: 2024-11-23T08:17:09Z, Merged at: 2024-11-23T10:15:46Z
+================================================================================
+PR #14924: Triple Rest Openapi Support (State: closed)
+URL: https://github.com/apache/dubbo/pull/14924
+Created at: 2024-11-22T11:04:47Z, Merged at: 2024-12-11T14:34:42Z
+================================================================================
+PR #14922: Migrate tests to JUnit5 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14922
+Created at: 2024-11-21T09:28:32Z, Merged at: 2024-11-23T08:22:17Z
+================================================================================
+PR #14921: [Bug]Fix github workflow (State: closed)
+URL: https://github.com/apache/dubbo/pull/14921
+Created at: 2024-11-20T12:11:50Z, Merged at: 2024-11-21T03:01:27Z
+================================================================================
+PR #14918: refactor generateExtNameAssignment to better structure (State: open)
+URL: https://github.com/apache/dubbo/pull/14918
+Created at: 2024-11-19T06:22:06Z, Merged at: None
+================================================================================
+PR #14917: Fix dead loop in onNext (State: closed)
+URL: https://github.com/apache/dubbo/pull/14917
+Created at: 2024-11-18T15:29:36Z, Merged at: 2024-11-20T09:07:29Z
+================================================================================
+PR #14913: Bump io.micrometer:micrometer-bom from 1.13.6 to 1.14.1 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14913
+Created at: 2024-11-18T08:23:02Z, Merged at: None
+================================================================================
+PR #14912: Bump io.projectreactor:reactor-core from 3.6.11 to 3.7.0 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14912
+Created at: 2024-11-18T08:22:11Z, Merged at: 2024-11-22T12:33:17Z
+================================================================================
+PR #14911: Bump io.micrometer:micrometer-tracing-bom from 1.3.5 to 1.4.0 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14911
+Created at: 2024-11-18T08:21:20Z, Merged at: 2024-11-22T12:33:00Z
+================================================================================
+PR #14910: Bump netty4_version from 4.1.114.Final to 4.1.115.Final (State: closed)
+URL: https://github.com/apache/dubbo/pull/14910
+Created at: 2024-11-18T08:20:09Z, Merged at: 2024-11-22T12:32:43Z
+================================================================================
+PR #14909: Bump spring-6.version from 6.1.14 to 6.2.0 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14909
+Created at: 2024-11-18T08:19:09Z, Merged at: 2024-11-22T12:32:21Z
+================================================================================
+PR #14907: Bump io.micrometer:micrometer-core from 1.13.6 to 1.14.1 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14907
+Created at: 2024-11-18T08:15:35Z, Merged at: 2024-11-22T12:32:05Z
+================================================================================
+PR #14906: Bump tomcat.version from 8.5.100 to 10.1.33 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14906
+Created at: 2024-11-18T08:15:25Z, Merged at: None
+================================================================================
+PR #14905: correctly validate service-name-mapping parameter (State: closed)
+URL: https://github.com/apache/dubbo/pull/14905
+Created at: 2024-11-18T06:33:40Z, Merged at: 2024-11-20T09:21:14Z
+================================================================================
+PR #14904: optimize generateMethodContent to avoid unnecessary StringBuilder cre… (State: closed)
+URL: https://github.com/apache/dubbo/pull/14904
+Created at: 2024-11-18T06:21:13Z, Merged at: 2024-11-20T09:21:41Z
+================================================================================
+PR #14903: Support setting curator session timeout (State: closed)
+URL: https://github.com/apache/dubbo/pull/14903
+Created at: 2024-11-18T05:23:23Z, Merged at: 2024-11-20T09:20:48Z
+================================================================================
+PR #14902: Update dubbo revision to 3.3.3-SNAPSHOT (State: closed)
+URL: https://github.com/apache/dubbo/pull/14902
+Created at: 2024-11-17T14:04:18Z, Merged at: 2024-11-20T09:20:13Z
+================================================================================
+PR #14901: Fix http3 negotiation failed (State: closed)
+URL: https://github.com/apache/dubbo/pull/14901
+Created at: 2024-11-17T13:00:13Z, Merged at: 2024-11-20T09:17:30Z
+================================================================================
+PR #14900: fix flaky tests under DubboAppenderTest (State: closed)
+URL: https://github.com/apache/dubbo/pull/14900
+Created at: 2024-11-17T02:23:10Z, Merged at: 2024-11-20T09:19:27Z
+================================================================================
+PR #14899: [Dubbo]Fix: Collections.emptyList() is final (State: closed)
+URL: https://github.com/apache/dubbo/pull/14899
+Created at: 2024-11-15T14:13:51Z, Merged at: 2024-11-16T13:33:35Z
+================================================================================
+PR #14898: [Dubbo]Fix #14895 Httputils Bug  Fix (State: closed)
+URL: https://github.com/apache/dubbo/pull/14898
+Created at: 2024-11-15T13:54:08Z, Merged at: None
+================================================================================
+PR #14896: Fix three flaky tests in TaskQueueTest.java (State: closed)
+URL: https://github.com/apache/dubbo/pull/14896
+Created at: 2024-11-14T17:40:10Z, Merged at: 2024-11-20T07:00:41Z
+================================================================================
+PR #14892: Fix init order in AbstractPortUnificationServer (State: closed)
+URL: https://github.com/apache/dubbo/pull/14892
+Created at: 2024-11-13T07:38:50Z, Merged at: 2024-11-14T07:21:49Z
+================================================================================
+PR #14888: [Dubbo]: Fix the bug that isDefault configuration is not useful  #12961 (State: open)
+URL: https://github.com/apache/dubbo/pull/14888
+Created at: 2024-11-11T16:23:34Z, Merged at: None
+================================================================================
+PR #14887: Bump org.apache.groovy:groovy from 4.0.23 to 4.0.24 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14887
+Created at: 2024-11-11T08:53:03Z, Merged at: 2024-11-14T07:00:12Z
+================================================================================
+PR #14886: Bump io.opentelemetry:opentelemetry-bom from 1.43.0 to 1.44.1 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14886
+Created at: 2024-11-11T08:52:13Z, Merged at: 2024-11-14T07:00:21Z
+================================================================================
+PR #14884: Fix RegistryConfig override ApplicationConfig (State: closed)
+URL: https://github.com/apache/dubbo/pull/14884
+Created at: 2024-11-11T03:42:22Z, Merged at: None
+================================================================================
+PR #14877: [optimize] Replace dubbo-demo-native (State: closed)
+URL: https://github.com/apache/dubbo/pull/14877
+Created at: 2024-11-08T09:36:29Z, Merged at: None
+================================================================================
+PR #14875: optimize repeat registry (State: closed)
+URL: https://github.com/apache/dubbo/pull/14875
+Created at: 2024-11-08T02:20:01Z, Merged at: 2024-11-13T07:11:19Z
+================================================================================
+PR #14874: fix judgment for registry configed in DefaultApplicationDeployer (State: open)
+URL: https://github.com/apache/dubbo/pull/14874
+Created at: 2024-11-07T14:30:53Z, Merged at: None
+================================================================================
+PR #14873: Fix annotation configuration processor dependency missing (State: closed)
+URL: https://github.com/apache/dubbo/pull/14873
+Created at: 2024-11-07T13:51:02Z, Merged at: 2024-11-08T14:26:41Z
+================================================================================
+PR #14872: add 'micrometer-core' as transitive dependency (State: open)
+URL: https://github.com/apache/dubbo/pull/14872
+Created at: 2024-11-07T09:52:58Z, Merged at: None
+================================================================================
+PR #14871: [optimize]Refactor the dubbo-demo module (State: closed)
+URL: https://github.com/apache/dubbo/pull/14871
+Created at: 2024-11-07T07:32:36Z, Merged at: 2024-11-20T08:12:02Z
+================================================================================
+PR #14869: Remove zookeeper dependency management (State: closed)
+URL: https://github.com/apache/dubbo/pull/14869
+Created at: 2024-11-06T13:18:27Z, Merged at: 2024-11-13T06:53:07Z
+================================================================================
+PR #14866: Spring6 compatibility (State: closed)
+URL: https://github.com/apache/dubbo/pull/14866
+Created at: 2024-11-06T01:36:24Z, Merged at: 2024-11-13T06:52:33Z
+================================================================================
+PR #14858: optimize dubbo-triple-demo (State: closed)
+URL: https://github.com/apache/dubbo/pull/14858
+Created at: 2024-11-04T10:40:35Z, Merged at: 2024-11-04T12:08:47Z
+================================================================================
+PR #14857: Bump org.apache.maven.plugins:maven-failsafe-plugin from 3.5.1 to 3.5.2 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14857
+Created at: 2024-11-04T08:25:31Z, Merged at: 2024-11-07T09:20:20Z
+================================================================================
+PR #14856: Bump byte-buddy_version from 1.15.7 to 1.15.10 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14856
+Created at: 2024-11-04T08:24:44Z, Merged at: 2024-11-06T12:37:20Z
+================================================================================
+PR #14855: Bump org.apache.maven.plugins:maven-surefire-plugin from 3.5.1 to 3.5.2 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14855
+Created at: 2024-11-04T08:24:13Z, Merged at: 2024-11-06T12:37:54Z
+================================================================================
+PR #14854: Bump org.apache.maven.plugins:maven-javadoc-plugin from 3.10.1 to 3.11.1 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14854
+Created at: 2024-11-04T08:24:03Z, Merged at: 2024-11-06T12:38:36Z
+================================================================================
+PR #14853: Bump grpc.version from 1.68.0 to 1.68.1 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14853
+Created at: 2024-11-04T08:23:53Z, Merged at: None
+================================================================================
+PR #14852: Bump jackson_version from 2.18.0 to 2.18.1 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14852
+Created at: 2024-11-04T08:23:01Z, Merged at: 2024-11-06T13:25:23Z
+================================================================================
+PR #14851: Update initial mapping apps of service discovery MappingListener (State: closed)
+URL: https://github.com/apache/dubbo/pull/14851
+Created at: 2024-11-03T15:28:18Z, Merged at: 2024-11-07T09:12:53Z
+================================================================================
+PR #14850: Refactor project dir and remove pom module (State: closed)
+URL: https://github.com/apache/dubbo/pull/14850
+Created at: 2024-11-03T09:16:50Z, Merged at: 2024-11-21T14:11:11Z
+================================================================================
+PR #14849: Add preferred protocol support for application service discovery (State: closed)
+URL: https://github.com/apache/dubbo/pull/14849
+Created at: 2024-11-03T07:34:42Z, Merged at: 2024-11-07T09:12:23Z
+================================================================================
+PR #14847: Upgrade github action version (State: closed)
+URL: https://github.com/apache/dubbo/pull/14847
+Created at: 2024-11-01T14:53:58Z, Merged at: 2024-11-06T12:36:21Z
+================================================================================
+PR #14845: WIP: Add DNS Mode as default peer resolver (State: open)
+URL: https://github.com/apache/dubbo/pull/14845
+Created at: 2024-11-01T08:42:09Z, Merged at: None
+================================================================================
+PR #14843: Support read parameter names from local variable table (State: closed)
+URL: https://github.com/apache/dubbo/pull/14843
+Created at: 2024-11-01T01:40:40Z, Merged at: 2024-11-01T02:27:26Z
+================================================================================
+PR #14840: Check jaxrs 2 class (State: closed)
+URL: https://github.com/apache/dubbo/pull/14840
+Created at: 2024-10-29T07:54:00Z, Merged at: 2024-10-29T07:59:53Z
+================================================================================
+PR #14839: Fix Radix Test case on jdk 8~17 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14839
+Created at: 2024-10-29T07:17:07Z, Merged at: 2024-10-29T07:31:51Z
+================================================================================
+PR #14837: Fix input stream unable to being deserialized (State: closed)
+URL: https://github.com/apache/dubbo/pull/14837
+Created at: 2024-10-29T06:49:18Z, Merged at: 2024-10-29T06:49:29Z
+================================================================================
+PR #14836: Check all the required classes in rest toolkit (State: closed)
+URL: https://github.com/apache/dubbo/pull/14836
+Created at: 2024-10-29T03:56:23Z, Merged at: None
+================================================================================
+PR #14834: Bump org.apache.maven.plugins:maven-dependency-plugin from 3.8.0 to 3.8.1 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14834
+Created at: 2024-10-28T07:32:31Z, Merged at: 2024-10-29T06:53:47Z
+================================================================================
+PR #14833: Bump org.apache.maven.plugin-tools:maven-plugin-annotations from 3.15.0 to 3.15.1 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14833
+Created at: 2024-10-28T07:32:23Z, Merged at: 2024-10-29T07:54:36Z
+================================================================================
+PR #14832: Bump org.testcontainers:testcontainers from 1.20.2 to 1.20.3 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14832
+Created at: 2024-10-28T07:32:14Z, Merged at: 2024-10-28T13:20:48Z
+================================================================================
+PR #14831: Bump junit_platform_version from 1.11.2 to 1.11.3 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14831
+Created at: 2024-10-28T07:31:40Z, Merged at: 2024-10-28T13:20:00Z
+================================================================================
+PR #14830: Bump org.apache.maven.plugins:maven-checkstyle-plugin from 3.5.0 to 3.6.0 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14830
+Created at: 2024-10-28T07:31:04Z, Merged at: 2024-10-28T13:22:18Z
+================================================================================
+PR #14829: Bump ch.qos.logback:logback-core from 1.5.11 to 1.5.12 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14829
+Created at: 2024-10-28T07:30:57Z, Merged at: 2024-10-29T06:53:32Z
+================================================================================
+PR #14828: Bump byte-buddy_version from 1.15.1 to 1.15.7 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14828
+Created at: 2024-10-28T07:30:51Z, Merged at: 2024-10-29T06:53:39Z
+================================================================================
+PR #14827: Bump org.springframework.security:spring-security-bom from 5.8.14 to 5.8.15 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14827
+Created at: 2024-10-28T07:30:18Z, Merged at: 2024-10-28T13:22:53Z
+================================================================================
+PR #14826: Bump org.apache.maven.plugins:maven-plugin-plugin from 3.15.0 to 3.15.1 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14826
+Created at: 2024-10-28T07:30:10Z, Merged at: 2024-10-29T06:53:24Z
+================================================================================
+PR #14825: Bump junit_jupiter_version from 5.11.2 to 5.11.3 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14825
+Created at: 2024-10-27T13:54:26Z, Merged at: 2024-10-29T06:53:08Z
+================================================================================
+PR #14824: Running examples and integration tests in jdk 17 (State: open)
+URL: https://github.com/apache/dubbo/pull/14824
+Created at: 2024-10-26T03:05:59Z, Merged at: None
+================================================================================
+PR #14822: A couple of rest bugfix (State: closed)
+URL: https://github.com/apache/dubbo/pull/14822
+Created at: 2024-10-26T02:50:29Z, Merged at: 2024-10-28T07:11:16Z
+================================================================================
+PR #14820: Fix unable to deserialize Record using Hessian2 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14820
+Created at: 2024-10-25T08:51:29Z, Merged at: 2024-10-28T07:10:31Z
+================================================================================
+PR #14817: support jackson custom module (State: closed)
+URL: https://github.com/apache/dubbo/pull/14817
+Created at: 2024-10-23T03:27:18Z, Merged at: 2024-10-25T08:57:47Z
+================================================================================
+PR #14816: Keep the behavior consistent with SpringMVC when access through browser (State: closed)
+URL: https://github.com/apache/dubbo/pull/14816
+Created at: 2024-10-22T16:20:23Z, Merged at: 2024-10-25T09:51:05Z
+================================================================================
+PR #14815: dubbo-compiler: pom.xml: set manifest main class to Dubbo3TripleGenerator (State: closed)
+URL: https://github.com/apache/dubbo/pull/14815
+Created at: 2024-10-22T11:52:57Z, Merged at: 2024-10-25T08:58:41Z
+================================================================================
+PR #14813: Config value supports arrays. (State: closed)
+URL: https://github.com/apache/dubbo/pull/14813
+Created at: 2024-10-21T16:30:32Z, Merged at: 2024-10-22T08:27:11Z
+================================================================================
+PR #14812: Fix Path matching bug (State: closed)
+URL: https://github.com/apache/dubbo/pull/14812
+Created at: 2024-10-21T16:28:02Z, Merged at: 2024-10-22T11:13:16Z
+================================================================================
+PR #14811: Fix sendRedirect 302 failure (State: closed)
+URL: https://github.com/apache/dubbo/pull/14811
+Created at: 2024-10-21T16:26:19Z, Merged at: 2024-10-22T11:13:41Z
+================================================================================
+PR #14810: fix spelling typo (State: closed)
+URL: https://github.com/apache/dubbo/pull/14810
+Created at: 2024-10-21T13:49:36Z, Merged at: 2024-10-22T08:20:36Z
+================================================================================
+PR #14808: Bump io.projectreactor:reactor-core from 3.6.10 to 3.6.11 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14808
+Created at: 2024-10-21T08:04:04Z, Merged at: 2024-10-24T14:44:13Z
+================================================================================
+PR #14807: Bump io.micrometer:micrometer-core from 1.13.5 to 1.13.6 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14807
+Created at: 2024-10-21T08:03:46Z, Merged at: 2024-10-24T14:44:52Z
+================================================================================
+PR #14806: Bump byte-buddy_version from 1.15.1 to 1.15.5 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14806
+Created at: 2024-10-21T08:03:12Z, Merged at: 2024-10-25T08:45:05Z
+================================================================================
+PR #14805: Bump io.micrometer:micrometer-bom from 1.13.5 to 1.13.6 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14805
+Created at: 2024-10-21T08:02:46Z, Merged at: 2024-10-30T02:13:05Z
+================================================================================
+PR #14804: Bump curator5_version from 4.2.0 to 5.7.1 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14804
+Created at: 2024-10-21T08:02:25Z, Merged at: 2024-10-24T14:46:10Z
+================================================================================
+PR #14803: Bump io.micrometer:micrometer-tracing-bom from 1.3.4 to 1.3.5 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14803
+Created at: 2024-10-21T08:01:53Z, Merged at: 2024-10-25T08:43:34Z
+================================================================================
+PR #14802: Bump ch.qos.logback:logback-core from 1.5.10 to 1.5.11 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14802
+Created at: 2024-10-21T08:01:33Z, Merged at: 2024-10-25T08:43:25Z
+================================================================================
+PR #14801: Simplify auth failed message (State: closed)
+URL: https://github.com/apache/dubbo/pull/14801
+Created at: 2024-10-21T06:53:10Z, Merged at: 2024-10-24T08:40:36Z
+================================================================================
+PR #14800: Lower log level when no connection (State: closed)
+URL: https://github.com/apache/dubbo/pull/14800
+Created at: 2024-10-21T02:24:08Z, Merged at: 2024-10-24T08:41:20Z
+================================================================================
+PR #14798: Fix fastjson2 init error cause startup failure (State: closed)
+URL: https://github.com/apache/dubbo/pull/14798
+Created at: 2024-10-21T01:39:52Z, Merged at: 2024-10-22T01:43:59Z
+================================================================================
+PR #14797: add generate openapi logic (State: closed)
+URL: https://github.com/apache/dubbo/pull/14797
+Created at: 2024-10-20T15:33:13Z, Merged at: None
+================================================================================
+PR #14796: Support parsing custom REST paths from proto files and generating @Ma… (State: closed)
+URL: https://github.com/apache/dubbo/pull/14796
+Created at: 2024-10-19T15:37:16Z, Merged at: 2024-11-03T05:02:27Z
+================================================================================
+PR #14795: Bump org.springframework:spring-context from 6.1.13 to 6.1.14 in /dubbo-config/dubbo-config-spring6 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14795
+Created at: 2024-10-18T20:21:03Z, Merged at: 2024-10-21T02:38:26Z
+================================================================================
+PR #14794: Refactor dubbo spring boot structure (State: closed)
+URL: https://github.com/apache/dubbo/pull/14794
+Created at: 2024-10-18T13:09:50Z, Merged at: 2024-10-31T14:45:42Z
+================================================================================
+PR #14793: Fix NetUtils: should be ignore link-local address (State: open)
+URL: https://github.com/apache/dubbo/pull/14793
+Created at: 2024-10-18T03:40:45Z, Merged at: None
+================================================================================
+PR #14787: Add  Affinity Router (State: open)
+URL: https://github.com/apache/dubbo/pull/14787
+Created at: 2024-10-17T05:32:26Z, Merged at: None
+================================================================================
+PR #14785: fix future.sync.set default value=false (State: closed)
+URL: https://github.com/apache/dubbo/pull/14785
+Created at: 2024-10-16T14:25:48Z, Merged at: 2024-10-21T02:31:18Z
+================================================================================
+PR #14777: Bump com.alibaba.nacos:nacos-client from 2.4.2 to 2.4.3 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14777
+Created at: 2024-10-14T07:42:54Z, Merged at: 2024-10-17T08:41:57Z
+================================================================================
+PR #14776: Bump io.opentelemetry:opentelemetry-bom from 1.42.1 to 1.43.0 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14776
+Created at: 2024-10-14T07:42:37Z, Merged at: 2024-10-17T08:40:53Z
+================================================================================
+PR #14775: Bump byte-buddy_version from 1.15.1 to 1.15.4 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14775
+Created at: 2024-10-14T07:42:07Z, Merged at: 2024-10-17T08:39:48Z
+================================================================================
+PR #14774: Bump ch.qos.logback:logback-core from 1.5.8 to 1.5.10 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14774
+Created at: 2024-10-14T07:41:38Z, Merged at: 2024-10-17T08:40:38Z
+================================================================================
+PR #14773: Bump curator5_version from 5.7.0 to 5.7.1 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14773
+Created at: 2024-10-14T07:40:52Z, Merged at: 2024-10-17T08:39:33Z
+================================================================================
+PR #14769: Support socks5 proxy username and password (State: open)
+URL: https://github.com/apache/dubbo/pull/14769
+Created at: 2024-10-13T19:38:29Z, Merged at: None
+================================================================================
+PR #14763: Fix ParameterizedType in SERVER_STREAM (State: closed)
+URL: https://github.com/apache/dubbo/pull/14763
+Created at: 2024-10-11T03:39:02Z, Merged at: 2024-10-22T08:10:45Z
+================================================================================
+PR #14760: Fix memory leak in HttpPostRequestDecoder when body is empty (State: closed)
+URL: https://github.com/apache/dubbo/pull/14760
+Created at: 2024-10-11T01:55:44Z, Merged at: 2024-10-11T05:41:45Z
+================================================================================
+PR #14756: Bump io.micrometer:micrometer-core from 1.13.4 to 1.13.5 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14756
+Created at: 2024-10-07T07:41:44Z, Merged at: 2024-10-09T02:05:10Z
+================================================================================
+PR #14755: Bump io.micrometer:micrometer-bom from 1.13.4 to 1.13.5 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14755
+Created at: 2024-10-07T07:41:24Z, Merged at: 2024-10-09T02:05:01Z
+================================================================================
+PR #14754: Bump org.apache.maven.plugins:maven-failsafe-plugin from 3.5.0 to 3.5.1 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14754
+Created at: 2024-10-07T07:40:48Z, Merged at: 2024-10-10T01:34:24Z
+================================================================================
+PR #14753: Bump netty4_version from 4.1.113.Final to 4.1.114.Final (State: closed)
+URL: https://github.com/apache/dubbo/pull/14753
+Created at: 2024-10-07T07:40:08Z, Merged at: 2024-10-09T02:04:46Z
+================================================================================
+PR #14752: Bump org.apache.maven.plugins:maven-surefire-plugin from 3.5.0 to 3.5.1 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14752
+Created at: 2024-10-07T07:39:24Z, Merged at: 2024-10-09T02:04:37Z
+================================================================================
+PR #14751: Bump com.alibaba:fastjson from 1.2.83 to 1.2.83_noneautotype (State: closed)
+URL: https://github.com/apache/dubbo/pull/14751
+Created at: 2024-10-07T07:39:11Z, Merged at: 2024-10-07T08:40:21Z
+================================================================================
+PR #14750: Bump org.apache.maven.plugins:maven-javadoc-plugin from 3.10.0 to 3.10.1 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14750
+Created at: 2024-10-07T07:38:29Z, Merged at: 2024-10-09T02:04:29Z
+================================================================================
+PR #14749: Bump org.testcontainers:testcontainers from 1.20.1 to 1.20.2 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14749
+Created at: 2024-10-07T07:37:40Z, Merged at: 2024-10-09T01:54:03Z
+================================================================================
+PR #14748: Bump org.junit.platform:junit-platform-launcher from 1.9.3 to 1.11.2 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14748
+Created at: 2024-10-07T07:37:20Z, Merged at: None
+================================================================================
+PR #14747: Bump junit_jupiter_version from 5.9.3 to 5.11.2 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14747
+Created at: 2024-10-07T07:37:04Z, Merged at: 2024-10-11T04:26:06Z
+================================================================================
+PR #14745: Update (State: closed)
+URL: https://github.com/apache/dubbo/pull/14745
+Created at: 2024-10-05T02:48:58Z, Merged at: None
+================================================================================
+PR #14742: Fix SpringRestToolKit getBean param mistake (State: closed)
+URL: https://github.com/apache/dubbo/pull/14742
+Created at: 2024-10-02T02:41:00Z, Merged at: 2024-10-02T02:43:11Z
+================================================================================
+PR #14741: Fix memory leak in HttpPostRequestDecoder (State: closed)
+URL: https://github.com/apache/dubbo/pull/14741
+Created at: 2024-09-30T15:24:26Z, Merged at: 2024-10-02T02:16:24Z
+================================================================================
+PR #14739: Bump io.micrometer:micrometer-tracing-bom from 1.3.3 to 1.3.4 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14739
+Created at: 2024-09-30T07:09:02Z, Merged at: 2024-10-02T01:51:50Z
+================================================================================
+PR #14738: Bump jackson_version from 2.17.2 to 2.18.0 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14738
+Created at: 2024-09-30T07:08:21Z, Merged at: 2024-10-02T01:51:42Z
+================================================================================
+PR #14737: Bump io.opentelemetry:opentelemetry-bom from 1.42.0 to 1.42.1 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14737
+Created at: 2024-09-30T07:07:55Z, Merged at: 2024-10-04T15:49:51Z
+================================================================================
+PR #14736: Bump byte-buddy_version from 1.15.1 to 1.15.3 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14736
+Created at: 2024-09-30T07:06:34Z, Merged at: 2024-10-02T01:51:12Z
+================================================================================
+PR #14735: Bump log4j2_version from 2.24.0 to 2.24.1 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14735
+Created at: 2024-09-30T07:06:09Z, Merged at: 2024-10-02T01:51:05Z
+================================================================================
+PR #14734: Bump io.zipkin.reporter2:zipkin-reporter-bom from 3.4.0 to 3.4.2 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14734
+Created at: 2024-09-30T07:05:42Z, Merged at: 2024-10-02T01:50:56Z
+================================================================================
+PR #14733: Bump junit_jupiter_version from 5.9.3 to 5.11.1 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14733
+Created at: 2024-09-30T07:05:29Z, Merged at: None
+================================================================================
+PR #14732: Disable check when create MetadataService invoker to prevent memory leak (State: closed)
+URL: https://github.com/apache/dubbo/pull/14732
+Created at: 2024-09-30T02:38:41Z, Merged at: 2024-09-30T02:38:55Z
+================================================================================
+PR #14731: Implement Destroyable in MetadataServiceV2 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14731
+Created at: 2024-09-30T02:38:22Z, Merged at: 2024-09-30T02:39:13Z
+================================================================================
+PR #14730: Fix safeLock not run when interrupt & Fix partial notification being cancelled in ServiceInstancesChangedListener (State: closed)
+URL: https://github.com/apache/dubbo/pull/14730
+Created at: 2024-09-29T04:09:41Z, Merged at: 2024-09-30T02:39:04Z
+================================================================================
+PR #14726: Support configuration of disallowed content-types (State: closed)
+URL: https://github.com/apache/dubbo/pull/14726
+Created at: 2024-09-25T15:35:08Z, Merged at: 2024-09-27T08:14:35Z
+================================================================================
+PR #14724: Fix native image for proxy (State: closed)
+URL: https://github.com/apache/dubbo/pull/14724
+Created at: 2024-09-25T14:04:22Z, Merged at: 2024-09-25T14:39:12Z
+================================================================================
+PR #14723: Support single file mode in dubbo-maven-plugin (State: closed)
+URL: https://github.com/apache/dubbo/pull/14723
+Created at: 2024-09-25T11:47:14Z, Merged at: 2024-09-26T02:58:38Z
+================================================================================
+PR #14718: Fix triple client connection shareing race condition (State: closed)
+URL: https://github.com/apache/dubbo/pull/14718
+Created at: 2024-09-24T10:33:50Z, Merged at: 2024-09-27T09:30:35Z
+================================================================================
+PR #14714: Returns a matching http status code based on the rest mappings (State: closed)
+URL: https://github.com/apache/dubbo/pull/14714
+Created at: 2024-09-23T16:12:39Z, Merged at: 2024-09-27T08:14:57Z
+================================================================================
+PR #14713: Bump commons-io:commons-io from 2.16.1 to 2.17.0 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14713
+Created at: 2024-09-23T07:16:14Z, Merged at: 2024-09-27T08:11:30Z
+================================================================================
+PR #14712: Bump curator5_version from 4.2.0 to 5.7.0 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14712
+Created at: 2024-09-23T07:15:40Z, Merged at: 2024-09-27T08:11:46Z
+================================================================================
+PR #14711: Bump commons-codec:commons-codec from 1.16.0 to 1.17.1 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14711
+Created at: 2024-09-23T07:15:15Z, Merged at: 2024-09-27T09:07:08Z
+================================================================================
+PR #14710: Bump io.zipkin.reporter2:zipkin-reporter-bom from 3.4.0 to 3.4.2 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14710
+Created at: 2024-09-23T07:15:10Z, Merged at: 2024-09-27T08:11:51Z
+================================================================================
+PR #14709: Bump org.apache.groovy:groovy from 4.0.21 to 4.0.23 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14709
+Created at: 2024-09-23T07:14:56Z, Merged at: 2024-09-27T08:12:06Z
+================================================================================
+PR #14708: Bump org.awaitility:awaitility from 4.2.0 to 4.2.2 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14708
+Created at: 2024-09-23T07:14:45Z, Merged at: 2024-09-27T08:12:21Z
+================================================================================
+PR #14707: Bump com.alibaba.fastjson2:fastjson2 from 2.0.52 to 2.0.53 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14707
+Created at: 2024-09-23T07:14:37Z, Merged at: 2024-09-27T08:12:14Z
+================================================================================
+PR #14706: Bump grpc.version from 1.66.0 to 1.68.0 (State: closed)
+URL: https://github.com/apache/dubbo/pull/14706
+Created at: 2024-09-23T07:14:29Z, Merged at: 2024-09-27T08:12:29Z
+================================================================================
+PR #14705: Move observability autoconfigure to dubbo-spring-boot-autoconfigure (State: closed)
+URL: https://github.com/apache/dubbo/pull/14705
+Created at: 2024-09-22T06:23:36Z, Merged at: 2024-09-29T02:09:11Z
+================================================================================
+PR #14704: Bump com.google.protobuf:protobuf-java from 3.25.4 to 3.25.5 in /dubbo-dependencies-bom (State: closed)
+URL: https://github.com/apache/dubbo/pull/14704
+Created at: 2024-09-21T15:25:40Z, Merged at: 2024-09-22T04:11:46Z
+================================================================================
+PR #14702: Added support for configuring Tomcat HTTP2 max stream size in Spring boot (State: closed)
+URL: https://github.com/apache/dubbo/pull/14702
+Created at: 2024-09-20T15:13:33Z, Merged at: 2024-09-30T01:42:09Z
+================================================================================
+PR #14700: bugfix: application/x-www-form-urlencoded There is a problem with parameter parsing (State: closed)
+URL: https://github.com/apache/dubbo/pull/14700
+Created at: 2024-09-20T06:11:39Z, Merged at: 2024-09-20T13:57:56Z
+================================================================================
+PR #14698: Bump com.google.protobuf:protobuf-java from 3.25.0 to 3.25.5 in /dubbo-maven-plugin (State: closed)
+URL: https://github.com/apache/dubbo/pull/14698
+Created at: 2024-09-19T16:25:15Z, Merged at: 2024-09-21T15:25:01Z
+================================================================================
