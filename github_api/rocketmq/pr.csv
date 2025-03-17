@@ -1,0 +1,236 @@
+PR Number,Title,State,URL,Created At,Merged At
+9252,[ISSUE apache#9249]延迟消息，投递失败，投递设置的开始offset有误修改,open,,2025-03-16T11:35:20Z,None
+9251,Optimized ConsumerOffsetManager for Faster Topic & Group Lookups,open,,2025-03-16T08:14:30Z,None
+9250,Fix unstable test: BrokerOuterAPITest.test_needRegister_timeout,open,,2025-03-15T14:44:15Z,None
+9247,[ISSUE #9246] Support init offset mode in PopConsumerService,closed,,2025-03-14T11:47:45Z,2025-03-15T07:02:07Z
+9245,[ISSUE #9244] Avoid writing dirty data in consumption mode,open,,2025-03-14T07:05:37Z,None
+9243,4.9.6,open,,2025-03-14T04:00:06Z,None
+9242,[ISSUE #9241] RocksDBConsumeQueueStore do not need to update storeCheckPoint,open,,2025-03-13T11:58:02Z,None
+9239,fix master-slave sync issue in Dledger mode,open,,2025-03-13T02:34:58Z,None
+9238,Update NOTICE,closed,,2025-03-12T09:10:52Z,2025-03-13T07:57:44Z
+9236,[ISSUE #9235] fix: response codes do not match,closed,,2025-03-11T08:43:42Z,None
+9234,[ISSUE #9233] Query message in tiered storage may fail for the first correct index file was not selected,closed,,2025-03-11T02:34:58Z,2025-03-13T09:02:58Z
+9232,[maven-release-plugin] prepare for next development iteration,closed,,2025-03-08T06:11:45Z,2025-03-08T09:20:49Z
+9231,[maven-release-plugin] prepare release rocketmq-all-5.3.2,closed,,2025-03-07T08:28:56Z,2025-03-08T06:07:17Z
+9230,[ISSUE #9227] Release rocketmq-all-5.3.2,closed,,2025-03-07T08:21:24Z,None
+9228,[ISSUE #9227] Prepare to release Apache RocketMQ 5.3.2,closed,,2025-03-06T02:56:56Z,2025-03-07T07:45:26Z
+9226,Add test to test the exception branch,open,,2025-03-05T07:48:17Z,None
+9224,[ISSUE #9223] Pop consumer example add the default NamesrvAddr,closed,,2025-03-04T08:59:10Z,2025-03-07T05:47:35Z
+9222,[ISSUE #9221] Extract some common code in BrokerPathConfigHelper,closed,,2025-03-03T14:53:39Z,2025-03-04T07:20:28Z
+9218,[ISSUE #9217] Fix broker's inflight and available message counts incorrect when the pop consumer service is enabled,closed,,2025-03-03T03:46:31Z,2025-03-03T06:24:02Z
+9214,[ISSUE #9213] Fix get the earliest time error when data is clean up in tiered storage,closed,,2025-02-28T03:41:14Z,2025-03-03T01:58:06Z
+9212,[ISSUE #8589] Optimize RocksDB CQ shutdown when using DoubleWriteCQ,closed,,2025-02-28T03:13:09Z,2025-02-28T06:19:38Z
+9211,"Revert ""[ISSUE #9176] Fix pop message header missing fields when enable ACL 2.0""",closed,,2025-02-27T11:22:58Z,2025-02-28T01:52:46Z
+9210,Support for ibm J9,open,,2025-02-27T03:17:31Z,None
+9207,[ISSUE #9206] Fix slave sync topic sub in rocksdb ha,closed,,2025-02-26T01:59:29Z,2025-02-26T03:27:40Z
+9204,[ISSUE #9203] Replace numbers with static variables defined in RequestCode,closed,,2025-02-24T08:55:17Z,2025-02-25T00:09:53Z
+9202,[ISSUE #9201] cleanup dead code patterns and improve readability and maintainability.,closed,,2025-02-23T13:38:16Z,2025-02-24T00:44:36Z
+9197,[ISSUE #9196] Broker return pop stats when receive notification,closed,,2025-02-20T09:44:42Z,2025-03-03T03:35:03Z
+9194,[ISSUE #9193]Optimized get sequential message lock logic,open,,2025-02-19T12:33:43Z,None
+9192,[ISSUE #9191] Provide the ability to replace the remoting layer implementation for Proxy and Broker,closed,,2025-02-19T09:52:42Z,2025-02-24T04:27:30Z
+9189,[ISSUE #9188] Use fastjson2 in org/apache/rocketmq/broker/config/v1,open,,2025-02-17T13:03:41Z,None
+9186,[ISSUE #9187] The request should be rejected if the queueOffset equals maxOffset when changing the invisible time,closed,,2025-02-17T08:23:43Z,2025-02-19T09:24:50Z
+9185,[ISSUE #9184] Optimize QueueLockManager#tryLock method in Pop,closed,,2025-02-16T15:22:34Z,2025-03-07T05:46:52Z
+9183,[ISSUE #9182] Fix NameServer will be not ready forever when set needWaitForService to true,closed,,2025-02-14T10:01:26Z,2025-02-17T03:38:51Z
+9180,[ISSUE #9181] update fastjson version,closed,,2025-02-12T08:00:03Z,2025-02-13T02:04:51Z
+9179,[ISSUE #9176] Fix pop message header missing fields when enable ACL 2.0,closed,,2025-02-12T06:06:52Z,2025-02-21T06:17:03Z
+9178,[ISSUE #9177] Fix unstable tests in AdaptiveLockTest.testAdaptiveLock ,closed,,2025-02-12T05:33:49Z,2025-02-12T08:44:34Z
+9175,[ISSUE #9174] Add a collection of predefined Groups and common che…,closed,,2025-02-11T11:58:50Z,2025-02-12T07:38:42Z
+9173,[ISSUE #9172] Clean pull offset and reset offset when delete subscription group,closed,,2025-02-11T07:56:54Z,2025-02-12T11:09:55Z
+9168,Restrict the list version workflow to be executed only in the main repository,closed,,2025-02-08T14:44:04Z,2025-02-10T00:28:39Z
+9165,[ISSUE #9164] Add producer stats manager,open,,2025-02-04T17:42:51Z,None
+9163,[ISSUE #9127] remove dependency io.github.aliyunmq:rocketmq-grpc-nett…,open,,2025-01-28T11:14:27Z,None
+9162,[ISSUE#9097] Add new command to check async task status in broker.,open,,2025-01-27T03:29:09Z,None
+9161,fix test,closed,,2025-01-25T09:24:22Z,None
+9159,[ISSUE#9160] Ensure the requestCode increments sequentially,closed,,2025-01-24T14:34:35Z,2025-01-28T02:08:00Z
+9158,[ISSUE #9155][2025-01-23] update doc Deployment Context,closed,,2025-01-24T04:28:20Z,2025-01-28T02:08:32Z
+9157,[ISSUE #9156] Use fastjson2 in AclUtils#getAclRPCHook,closed,,2025-01-23T13:54:54Z,2025-02-10T02:40:59Z
+9153,[ISSUE #9152] Broker getConsumeStats supports inputting multiple topics,closed,,2025-01-22T03:25:08Z,2025-02-05T06:41:54Z
+9150,[ISSUE #9149]Assign offset in offsetTable even if the subscription key not exist.,closed,,2025-01-21T03:55:23Z,2025-02-06T08:48:31Z
+9148,[ISSUE #9147] Remove unused code,open,,2025-01-20T03:25:07Z,None
+9142,[ISSUE #9141] [RIP-75] Supports timer message on RocksDB,open,,2025-01-17T04:18:21Z,None
+9140,[ISSUE #9102] Fix bazel ci,closed,,2025-01-16T06:02:49Z,None
+9137,[ISSUE #8997] Ensure there is an opportunity to send a retry message when broker no response,closed,,2025-01-16T02:09:18Z,2025-03-10T08:03:11Z
+9135,6398: adding a small change,open,,2025-01-15T07:58:47Z,None
+9134,[ISSUE #9133] Credentials enhancement,open,,2025-01-15T07:53:44Z,None
+9131,[Enhancement] Load balancing cache in POP consumption mode,open,,2025-01-14T14:37:53Z,None
+9129,[ISSUE #9128] Fix NPE when gRPC client ack message immediately after changing proxy,closed,,2025-01-14T07:02:01Z,2025-01-14T08:01:28Z
+9126,[ISSUE #9125]Fix: array out-of-bounds exceptions caused by messages not present,closed,,2025-01-11T14:05:48Z,None
+9124,fix(comment): correct typos in ConsumeQueueExt class.,closed,,2025-01-11T10:12:37Z,2025-01-15T06:51:09Z
+9122,[ISSUE #9121] Fix CRC32 Check Failing When Value is 0,closed,,2025-01-10T08:10:45Z,2025-01-11T02:27:46Z
+9120,[ISSUE #9119] Invoke async should handle raw exception instead of CompletionException,closed,,2025-01-10T07:08:42Z,2025-01-17T03:44:32Z
+9116,[ISSUE #9115] Optimize the broker's reverse notification for consumerId change,open,,2025-01-09T05:01:19Z,None
+9114,[ISSUE #9111] Support export broker RocksDB Config to json file,closed,,2025-01-08T12:58:28Z,2025-01-14T02:29:40Z
+9113,[ISSUE #9112] Speedup revive scan in Pop Consumption and support server side reset offset,closed,,2025-01-08T09:01:18Z,2025-01-08T15:00:22Z
+9109,[ISSUE #9108] Refactor ColdDataCgCtrService#getColdDataFlowCtrInfo,closed,,2025-01-05T13:37:30Z,2025-01-08T09:14:59Z
+9107,[ISSUE #9106] Fix revive backoff retry not effective in Pop Consumption based on rocksdb,closed,,2025-01-05T13:07:42Z,2025-01-06T02:03:34Z
+9104,[ISSUE #9081] Remove redundant get,open,,2025-01-04T06:50:12Z,None
+9103,[ISSUE #9102] Fix bazel-compile (ubuntu-latest) ci run failure,open,,2025-01-04T05:01:43Z,None
+9101,[ISSUE #9105] Fix the issue of duplicate consumption in LMQ,closed,,2025-01-03T09:36:15Z,2025-01-06T02:51:59Z
+9100,[ISSUE #9025] [RIP-73] Modify Pop Consumption rocksdb init config,closed,,2025-01-03T08:37:29Z,2025-01-03T11:39:35Z
+9096,"[ISSUE #4570] fix: Docker usage may occur error in volume mapping params, simple fix",closed,,2025-01-02T08:49:37Z,2025-01-14T12:22:30Z
+9095,[ISSUE #4570] Use docker to start RocketMq,closed,,2025-01-02T08:40:36Z,None
+9094,[ISSUE #8895] Fix NPE when broker shutdown and optimize the log,closed,,2025-01-02T05:58:30Z,2025-01-14T06:50:57Z
+9087,[ISSUE #9025] [RIP-73] Fix reset offset not effective in Pop Consumption,closed,,2024-12-30T07:28:26Z,2024-12-30T12:05:20Z
+9086,[ISSUE #9080] Not hold final message store config in fetcher,closed,,2024-12-27T07:11:22Z,2024-12-30T07:21:26Z
+9085,fix use bufferSize not msgSize in dledger recover,open,,2024-12-26T12:43:56Z,None
+9079,[ISSUE #9080] Fix tranfer logic when get large messages from cache in tiered storage,closed,,2024-12-25T12:33:34Z,2024-12-26T06:49:00Z
+9076,[ISSUE #9075] Avoid message type validate in message sync scenario,closed,,2024-12-23T08:46:26Z,2024-12-25T09:57:47Z
+9073,[ISSUE 9072]Fix the permission check for retry topic to get topic route.,closed,,2024-12-20T06:29:52Z,2024-12-20T07:39:46Z
+9071,[ISSUE #9069] Fix the IndexFile ConcurrentModificationException in tiered storage,closed,,2024-12-20T03:34:21Z,2024-12-25T09:02:06Z
+9068,[ISSUE #9019] feat: make check expired message interval configurable to reduce the consuming thread block time,open,,2024-12-19T12:38:31Z,None
+9067,"[ISSUE #8974] add feature switch of recalling, disable by default.",closed,,2024-12-19T10:57:36Z,2024-12-27T05:56:09Z
+9062,[ISSUE #9064] Optimize transaction message callback check logic,closed,,2024-12-18T04:34:55Z,2025-01-08T09:25:05Z
+9060,[ISSUE #9059] Support reset offset for lite pull consumer,open,,2024-12-17T11:54:59Z,None
+9058,[ISSUE #9044]Supplemental checks that are missing from the UpdateSubGroup&UpdateSubGroupList  operation,open,,2024-12-16T14:35:16Z,None
+9055,[ISSUE #9054]Optimize log print when client consume message in pop mode,closed,,2024-12-14T15:08:09Z,2024-12-15T02:34:09Z
+9051,[ISSUE #9050] Fix repeat response code,open,,2024-12-12T07:57:43Z,None
+9049,[ISSUE #9047] reduce some methods cognitive complexity and optimize code format to meet sonar lint requirements.,closed,,2024-12-12T07:41:05Z,None
+9048,[ISSUE #9025] [RIP-73] Pop Consumption Improvement Based on RocksDB,closed,,2024-12-12T06:35:49Z,2024-12-20T12:37:25Z
+9043,[ISSUE #9039]Improve Code Readability for Name Server Address Management,open,,2024-12-10T09:10:22Z,None
+9041,[ISSUE #9042] Update createTimerMessageStore call with new parameter,closed,,2024-12-09T11:45:53Z,2024-12-10T06:40:27Z
+9040,[ISSUE #9039]Improve Code Readability for Name Server Address Management,closed,,2024-12-09T09:40:20Z,None
+9037,reduce duplicate calls,closed,,2024-12-08T03:08:18Z,2024-12-09T06:32:37Z
+9036,reduce duplicate calls,closed,,2024-12-07T15:51:28Z,None
+9034,refactor(LmqBrokerStatsManager): Refactor Redundant Code in LmqBrokerStatsManager,closed,,2024-12-06T17:34:04Z,2024-12-07T09:59:46Z
+9032,CreateFlushConsumeQueueService for loadAndStartConsumerServiceOnly,open,,2024-12-06T08:41:02Z,None
+9027,[ISSUE #9028]Adjust some error code for SYSTEM_ERROR,closed,,2024-12-05T09:21:59Z,2024-12-14T02:08:55Z
+9026,CreateFlushConsumeQueueService for loadAndStartConsumerServiceOnly,closed,,2024-12-05T07:54:45Z,None
+9022,[ISSUE #9021] Correct the error message of acl command,closed,,2024-12-04T15:31:50Z,2024-12-10T06:41:07Z
+9020,[ISSUE #9019] feat: make check expired message interval configurable to reduce the consuming thread block time,closed,,2024-12-04T03:59:42Z,None
+9018,Bump org.springframework:spring-core from 5.3.27 to 6.1.14,open,,2024-12-02T21:34:32Z,None
+9017,[ISSUE #9014] Fix clusterAclConfigVersion command execution failed,closed,,2024-12-02T10:56:46Z,2024-12-03T01:56:41Z
+9016,[ISSUE #9015] Sync SysFlag and message body inflation status; allow omit of message body,closed,,2024-12-02T10:55:24Z,2024-12-05T07:06:35Z
+9013,[ISSUE #9012]Optimize RemotingTimeoutException message to print,open,,2024-11-30T05:47:19Z,None
+9010,[ISSUE #9009] Optimize message accumulation display and Metrics in DefaultPullConsumer,closed,,2024-11-29T08:16:31Z,2024-11-29T09:18:49Z
+9008,[ISSUE #9007] Fix client connection local ip is null in RemotingClient,closed,,2024-11-29T08:00:51Z,2024-12-02T07:13:05Z
+9003,"[ISSUE #9002]when bytebuffer is not enough, do not throw exception",closed,,2024-11-29T01:44:53Z,2024-12-19T03:44:32Z
+8999,[ISSUE #8998] No retry is required when the remaining time reaches zero,closed,,2024-11-28T09:24:23Z,2025-01-06T02:23:48Z
+8996,[ISSUE #8995] Fix pull consumers can't be found when querying consumers,closed,,2024-11-28T06:45:42Z,None
+8994,"    feat[consumer]: support custom thread pool, providing the possibility for different consumers to reuse thread pools",open,,2024-11-28T05:20:26Z,None
+8993,just a little bit cleanup.,open,,2024-11-27T10:57:47Z,None
+8992,[ISSUE #8991] prepareHeartbeatData should not be set by default subscriptionDataSet data,closed,,2024-11-27T09:06:51Z,2024-11-28T02:31:23Z
+8989,[ISSUE #8988] Support dispatchBehindMilliseconds,closed,,2024-11-26T08:56:07Z,2024-12-10T12:05:44Z
+8986,[ISSUE #8984] Fix the broker switch enableMixedMessageType doesn't work,closed,,2024-11-26T03:22:37Z,2024-12-02T02:01:51Z
+8985,[ISSUE #8982] Dynamically install latest Go version for e2e pipeline,closed,,2024-11-26T00:49:53Z,2024-11-26T03:37:46Z
+8983,[ISSEU #6426] Fix slave broker SubscriptionGroupConfig and MessageRequestMode updating atomically,closed,,2024-11-25T12:17:07Z,2025-01-13T06:45:20Z
+8981,[ISSUE #8460] Set default broker name when revive found ack without broker name field,closed,,2024-11-25T09:33:47Z,2024-11-25T11:24:43Z
+8980,[ISSUE #8979] Add configurable switch for timer message retry logic ,closed,,2024-11-25T06:32:30Z,2024-12-05T09:49:04Z
+8977,[ISSUE #8976] Modify file segment construct method,closed,,2024-11-23T07:19:16Z,2024-11-26T06:16:38Z
+8975,[ISSUE #8974] Support recalling of delay message,closed,,2024-11-22T06:26:54Z,2024-12-09T08:56:12Z
+8973,[ISSUE #8972] Adding the EnableLmqStats option allows monitoring of LMQ statistics at runtime,closed,,2024-11-22T02:40:51Z,2024-11-22T04:57:38Z
+8971,[ISSUE #8970] Remove redundant heartbeats,closed,,2024-11-21T11:25:54Z,2024-12-10T06:54:43Z
+8969,[ISSUE #8968] Introduce the clearRetryTopicWhenDeleteTopic option to enable precise external deletion of topics,closed,,2024-11-21T08:56:44Z,2024-11-27T08:19:06Z
+8967,[ISSUE #8966] Feat: add remote address information to acl perm error,closed,,2024-11-21T08:08:50Z,2024-12-02T02:04:17Z
+8965,[ISSUE #8955] Fix message buffer not release and dispatch thread exit in tiered storage,closed,,2024-11-21T07:12:59Z,2024-11-22T03:02:50Z
+8964,[ISSUE #8963] Fix code36 request sent to ns,closed,,2024-11-20T12:54:34Z,2024-11-27T06:43:45Z
+8962,[ISSUE #8961] Automatic recognition of address scheme in Topic Route by host,closed,,2024-11-20T09:33:59Z,2024-11-22T07:34:37Z
+8958,[ISSUE #8957] Remove excess traffic and fix cache inconsistencies,closed,,2024-11-20T05:16:06Z,2024-12-25T06:38:57Z
+8956,fix: avoid memory overhead when there is large number of LMQ CQ,closed,,2024-11-20T03:27:31Z,2024-11-20T06:55:31Z
+8954,[ISSUE #8953] Improve IO for asynchronous delivery processes,closed,,2024-11-19T06:07:05Z,2024-11-20T03:13:12Z
+8951,[ISSUE #8950] Remove Redundant nullcheck of configPath,closed,,2024-11-18T08:16:41Z,2024-12-02T02:03:16Z
+8949,[ISSUE #8947] Notify pop request before calculate consumer lag,closed,,2024-11-18T07:45:41Z,2024-11-20T06:57:35Z
+8946,[#ISSUE 8945] Remove unnecessary operations from the critical section,closed,,2024-11-18T05:22:46Z,2024-11-18T08:46:35Z
+8944,[#ISSUE 8927] DLedger support lmq,open,,2024-11-18T02:41:56Z,None
+8943,[ISSUE #8942] Add incGroupAckNums and incGroupCkNums to LmqBrokerStatsManager,closed,,2024-11-16T10:42:23Z,2024-11-18T06:23:00Z
+8941,[ISSUE #8940] Fix incorrect path for exportMetadataInRocksDBCommand,closed,,2024-11-16T10:09:21Z,2024-11-18T09:25:20Z
+8939,[ISSUE #8829] Support for Persisting LMQ Consumer Offsets in Config V1 Using RocksDB,closed,,2024-11-16T09:14:59Z,2024-11-18T06:30:01Z
+8936,[ISSUE #8935] Fix behind metrics unit error in timer message store,closed,,2024-11-15T08:44:21Z,2024-11-19T09:35:10Z
+8934,[ISSUE #8933] feat: DefaultPullConsumer add balance switch.,closed,,2024-11-15T07:28:48Z,2024-11-20T06:58:30Z
+8930,[ISSUE #8929] Proxy adds message body empty check when send in grpc protocol,closed,,2024-11-15T02:42:43Z,2024-11-21T08:40:49Z
+8928,[ISSUE #8927] DLedger support LMQ,closed,,2024-11-15T01:51:27Z,None
+8926,[ISSUE #8925]Fix the bug of update user for ACL 2.0,closed,,2024-11-14T11:51:02Z,2024-11-15T02:35:37Z
+8923,[ISSUE #8912] Rebalancing logic shift in POP consumption mode,closed,,2024-11-14T08:47:21Z,None
+8922,[ISSUE #8921] Add isWakeCommitWhenPutMessage  for AIO,closed,,2024-11-14T08:04:11Z,2024-11-14T11:42:25Z
+8919,[ISSUE #8917]Topic route return none permission message queues for gRPC client ,closed,,2024-11-14T02:48:48Z,2024-11-14T11:24:19Z
+8918,[ISSUE #8917]Topic route return none permission message queues for gRPC client,closed,,2024-11-14T02:38:20Z,None
+8916,[ISSUE #8877] Refactor lock in ReceiptHandleGroup  to make the lock can be properly released when future can not be completed.,closed,,2024-11-13T12:45:47Z,2024-11-21T09:53:46Z
+8915,fix: multiple patches during long running tests for LMQ over RocksDB,closed,,2024-11-13T11:38:48Z,2024-12-02T02:07:54Z
+8910,[ISSUE #8909] Move nullcheck ahead,closed,,2024-11-12T10:04:55Z,2024-11-16T01:07:55Z
+8907,[ISSUE #8906] Handle string toUpperCase outside the loop,closed,,2024-11-11T07:09:28Z,2024-11-12T11:29:22Z
+8905,fixed typo of RocketMQ_Example.md,closed,,2024-11-09T12:32:26Z,2024-11-11T02:00:27Z
+8902,[ISSUE #8901] Add more test coverage for RpcClientImpl,closed,,2024-11-07T14:22:14Z,2024-11-18T02:19:49Z
+8897,[#8859] Fix duplicate mapped file in mutil commitlog store path mode.,open,,2024-11-06T13:19:40Z,None
+8896,Override recoverOffsetTable for kvCq store,closed,,2024-11-06T11:21:43Z,None
+8893,feat: make code compile in Java 9+,open,,2024-11-05T13:52:53Z,None
+8891,[ISSUE #8829] Keep data version while reload and XXXConfigManagerV2 turns off sync,closed,,2024-11-05T09:40:03Z,2024-11-06T02:12:25Z
+8890,[ISSUE #8889] handle namespace outside the loop,closed,,2024-11-05T08:47:44Z,2024-11-08T01:03:10Z
+8886,[ISSUE #8885] Resolve the issue of inaccurate CK number statistics,closed,,2024-11-01T09:45:22Z,2024-11-06T02:15:43Z
+8884,1,closed,,2024-11-01T09:26:16Z,None
+8883,[ISSUE #8882]Change the compare method for acl signature to improve the security.,closed,,2024-11-01T09:20:05Z,2024-11-07T11:04:55Z
+8880,"[ISSUE #8879] reduce seach key times in method,to import performance",open,,2024-10-30T16:49:56Z,None
+8876,[ISSUE #8875] Fix HAConnection leak,closed,,2024-10-30T03:10:26Z,2024-10-30T08:42:30Z
+8874,"Revert ""fix RequestCode overflowed issues:8868 (#8871)""",closed,,2024-10-30T02:34:36Z,2024-10-30T06:20:00Z
+8873,[ISSUE #8892] Add test cases to config manager v2,closed,,2024-10-29T11:00:38Z,2024-10-29T12:07:49Z
+8872,update LanguageCode,closed,,2024-10-29T10:01:39Z,2024-10-29T11:07:14Z
+8871,fix RequestCode overflowed issues:8868,closed,,2024-10-29T08:45:54Z,2024-10-29T11:44:20Z
+8862,[ISSUE #8599] Throw exception when receiving GO_AWAY twice to close channel.,closed,,2024-10-25T08:00:09Z,2024-11-14T06:07:21Z
+8857,[ISSUE #8829]feat: add test case to RocksDBConsumeQueueOffsetTable,closed,,2024-10-23T05:35:44Z,2024-10-23T11:17:05Z
+8856,[ISSUE #8829] feat: provide ConfigManagerV2 to make best uses of RocksDB,closed,,2024-10-23T03:16:11Z,2024-10-28T02:00:34Z
+8855,[ISSUE #8854]refactor(proxy): refactor proxy server with spi,open,,2024-10-22T17:29:40Z,None
+8853,[ISSUE #8852] Add more test coverage for ClientMetadata,closed,,2024-10-22T12:20:32Z,2024-10-28T08:32:58Z
+8851,[ISSUE #8850] Use correct log method,closed,,2024-10-22T11:28:24Z,2024-10-23T01:57:35Z
+8849,[ISSUE #8848] Fix log typo,closed,,2024-10-22T11:14:31Z,2024-10-23T00:29:35Z
+8847,fix: registerProducer should not be affected by concurrent scanNotAct…,closed,,2024-10-21T03:58:08Z,2024-10-23T01:37:17Z
+8844,[ISSUE #8843] Optimize the Rebalance algorithm in POP consumption mode,closed,,2024-10-21T02:01:36Z,None
+8842,Support LMQ dispatch in case if Consume Queue Store is RocksDB-based,closed,,2024-10-18T11:08:31Z,2024-10-23T01:56:37Z
+8841,fix: make ConsumeQueueStore bottom most compression type configurable,closed,,2024-10-18T06:53:34Z,2024-10-18T08:50:14Z
+8840,fix: remove unnecessary synchronized to improve concurrency,closed,,2024-10-18T03:25:48Z,2024-10-21T01:25:55Z
+8838,[ISSUE #8837] Remove netty codec threads for better performance,closed,,2024-10-17T09:42:06Z,None
+8836,"[ISSUE #8835]When ck is in the buffer, incomplete ack will lead to message duplication.",closed,,2024-10-17T08:29:47Z,2024-10-17T11:16:15Z
+8834,[ISSUE #8833] Update netty-all version to 4.1.114 to fix CVE-2023-34462,closed,,2024-10-17T07:24:36Z,2024-10-21T05:37:43Z
+8832,[ISSUE #8833] Update netty version to 4.1.114 to fix CVE-2023-34462,closed,,2024-10-17T07:14:46Z,2024-10-21T05:40:49Z
+8830,fix: atomic flush incorrect use and clean up code,closed,,2024-10-17T02:20:16Z,2024-10-18T06:30:38Z
+8825,[ISSUE #8824] Fix IllegalStateException caused by logical errors,closed,,2024-10-15T14:28:21Z,2024-10-16T03:00:51Z
+8823,"[ISSUE #8822] Double write cq, reduce unnecessary switches",closed,,2024-10-15T06:25:39Z,2024-10-29T11:09:35Z
+8821,fix variables match annotation (@RocketMQResource),closed,,2024-10-14T11:08:17Z,2024-10-18T01:18:41Z
+8817,[ISSUE #8816] Fix log typo.,closed,,2024-10-12T01:51:34Z,2024-10-14T01:13:17Z
+8815,[ISSUE #8814] Add more test coverage for ControllerClosure,open,,2024-10-11T13:50:49Z,None
+8812,[ISSUE #8810] Fix independent execution of e2e and benchmark deployments,closed,,2024-10-11T02:44:44Z,2024-10-11T08:43:07Z
+8809,[ISSUE #8808] Resolve unsupported 'UseBiasedLocking' VM Option for JDK21,closed,,2024-10-10T13:54:19Z,2024-11-06T11:30:18Z
+8807,[ISSUE #8806] Fix autoBatch bug when connecting multiple RocketMQ clusters.,closed,,2024-10-10T12:33:20Z,2024-10-11T07:29:18Z
+8805,[ISSUE #8804] clean offset when remove group offset,closed,,2024-10-10T00:27:13Z,2024-10-10T01:53:06Z
+8803,[ISSUE #8802] Update controller design.md,closed,,2024-10-09T12:55:30Z,2024-10-10T01:48:30Z
+8800,[ISSUE #8764] Implement consume lag estimation in cq rocksdb store,closed,,2024-10-09T09:28:09Z,2024-10-15T06:14:31Z
+8799,[ISSUE #8798] Fix typo,closed,,2024-10-09T01:17:20Z,2024-10-10T01:52:46Z
+8797,[ISSUE #8796] Add more test coverage for PopLongPollingService,closed,,2024-10-08T14:34:23Z,2024-10-09T01:58:52Z
+8795,Zyh_ict_pr,closed,,2024-10-08T13:43:43Z,None
+8793,first commet,open,,2024-10-08T11:52:03Z,None
+8792,[ISSUE #8790] Add Utils for put header to Metadata to avoid duplicate data,closed,,2024-10-08T10:51:54Z,2024-10-09T02:37:20Z
+8791,[ISSUE #8790] Add Utils for put header to gRPC Metadata to avoid duplicate data.,closed,,2024-10-08T10:46:37Z,None
+8788,"[ISSUE #8697]feat:When starting the broker and nameserver, the xmx, xms, and xmn p…",open,,2024-10-08T05:49:33Z,None
+8787,[ISSUE #8786] Fix doc typo,closed,,2024-10-06T05:03:44Z,2024-10-08T09:42:23Z
+8785,[ISSUE #8784] PrintMessageSubCommand support lmq,closed,,2024-10-06T03:56:05Z,2024-10-09T01:58:06Z
+8783,[ISSUE #8782] Fix log typo,closed,,2024-10-04T09:11:57Z,2024-10-05T02:09:08Z
+8781,Bump commons-io:commons-io from 2.7 to 2.14.0,closed,,2024-10-03T18:47:37Z,2024-10-05T02:08:54Z
+8778,[ISSUE #8777] enhance error log when when can't connect to namesrv addrs,open,,2024-09-30T10:22:59Z,None
+8774,[ISSUE #8772] Remove lock mq step in broadcasting mode rebalancing,closed,,2024-09-29T09:57:09Z,2024-10-23T02:29:56Z
+8773,[ISSUE #8772] Remove lock mq step in broadcasting mode rebalancing,open,,2024-09-29T09:50:13Z,None
+8770,[ISSUE #8769] Fix doc typo,closed,,2024-09-28T13:48:20Z,2024-09-29T01:54:15Z
+8766,[ISSUE #8765] fix low performance of delay message when enable rocksdb consume queue,closed,,2024-09-27T09:09:33Z,2024-11-20T03:10:01Z
+8763,[ISUUE #8762] Fix dLedger lock granularity issue causing LMQ message loss,closed,,2024-09-27T07:59:04Z,None
+8761,Update performance benchmark test tool,closed,,2024-09-27T07:49:52Z,2024-09-27T09:46:39Z
+8759,Test the performance benchmark pipeline execution status,closed,,2024-09-27T03:46:25Z,2024-09-27T06:13:08Z
+8757,"[ISSUE #8756] fix broker logback config, gzip the archive files.",open,,2024-09-26T08:10:24Z,None
+8754,[ISSUE #8753]ConsumeQueue minOffset did not update when the corresponding CommitLog files were all deleted,open,,2024-09-26T03:39:04Z,None
+8750,[maven-release-plugin] prepare for next development iteration,closed,,2024-09-25T15:31:56Z,2024-09-26T01:33:52Z
+8749,[maven-release-plugin] prepare release rocketmq-all-5.3.1,closed,,2024-09-25T13:22:20Z,2024-09-25T15:24:56Z
+8748,[ISSUE #8747] Fix PR E2E artifact download issue,closed,,2024-09-25T03:17:53Z,2024-09-25T06:54:26Z
+8746,[ISSUE #8755] batch send support compression,open,,2024-09-25T03:11:31Z,None
+8744,[ISSUE #8743] Modify the brokerAddrTable and brokerVersionTable in MQClientInstance to Concurrent HashMap.,open,,2024-09-24T08:46:33Z,None
+8741,[ISSUE #8742] Enhance unit test retry mechanism to trigger on PR submission,closed,,2024-09-24T08:06:57Z,2024-09-25T02:08:42Z
+8739,[ISSUE #8698] Remove batch write in kv cq store and update rocksdb cq check tool,closed,,2024-09-24T07:49:56Z,2024-09-25T11:32:47Z
+8738,[ISSUE #8740] fix rocksDBConfigToJson command,closed,,2024-09-24T07:43:05Z,2024-09-25T02:14:39Z
+8737,[ISSUE #8736] fix searchOffset corner case in rocksdb consume queue,closed,,2024-09-24T02:35:56Z,2024-09-29T07:10:06Z
+8734,[ISSUE #8733] Add a performance benchmark testing pipeline,closed,,2024-09-23T15:09:15Z,2024-10-05T02:07:01Z
+8732,[ISSUE #8731] Prepare to release Apache RocketMQ 5.3.1,closed,,2024-09-23T11:59:50Z,2024-09-25T12:56:33Z
+8729,[ISSUE #8728] Add more test coverage for TopicQueueMappingCleanService,closed,,2024-09-22T16:04:16Z,2025-01-16T05:54:04Z
+8727,[ISSUE #8780] Implement asynchronous storage of ack/ck messages in pop consume to enhance performance,closed,,2024-09-21T14:19:31Z,2024-10-16T05:39:27Z
+8726,[ISSUE #8725]clean DefaultMQPushConsumer after start fail,closed,,2024-09-21T08:20:32Z,2024-10-30T12:08:28Z
+8721,[ISSUE #8720] Support disable netty server worker group by config,closed,,2024-09-20T03:52:12Z,2024-09-20T09:19:23Z
+8717,[ISSUE #8718] Fix flaky CreateAndUpdateTopicIT,closed,,2024-09-19T09:41:04Z,2024-09-20T05:53:37Z
+8713,[ISSUE #8712] Set namesrvAddrChoosed to null if choosed addr is not exist.,closed,,2024-09-19T03:07:26Z,2024-09-23T04:28:42Z
+8710,[ISSUE #8671]  Replace channel.attr() set() and get() with RemotingHelper,closed,,2024-09-18T13:02:32Z,2024-09-19T09:27:49Z
+8709,#8509 lmq offset sync master to slave ,open,,2024-09-18T10:40:10Z,None
+8708,[ISSUE #8707] Fix artifact download failure in CI after action upgrade,closed,,2024-09-18T10:11:42Z,2024-09-19T05:50:05Z
+8706,[ISSUE #8705] Make MQClientAPIFactory shutdown async,closed,,2024-09-18T07:47:23Z,2024-09-19T12:13:13Z
