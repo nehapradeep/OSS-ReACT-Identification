@@ -1,0 +1,395 @@
+PR Number,Title,State,URL,Created At,Merged At
+7225,test: added unit tests for NacosRegistryServiceImple,open,,2025-03-16T21:22:01Z,None
+7224,optimize/optimize changeGlobalStatus interface of console,open,,2025-03-16T04:47:27Z,None
+7223,feature: Apply Spotless with Palantir Java Format,open,,2025-03-15T15:10:05Z,None
+7222,optimize: in raft mode add the vgroup field to global lock,closed,,2025-03-15T07:17:19Z,2025-03-16T12:25:12Z
+7221,test: add UT for gRPC Encoder/Decoder,closed,,2025-03-14T07:33:55Z,2025-03-15T13:08:13Z
+7219,optimize: optimize sql parsing logic,closed,,2025-03-13T11:25:27Z,2025-03-14T08:33:24Z
+7218,bugfix:NotSupportExc can't be thrown out in some cases,closed,,2025-03-13T10:52:58Z,None
+7215,optimize: intercept non-leader write requests of the console trx operation,closed,,2025-03-12T15:30:19Z,2025-03-15T06:26:29Z
+7214,optimize: upgrade jackson dependency to 2.18.3,closed,,2025-03-12T13:10:36Z,2025-03-14T04:53:40Z
+7213,feature: support kingbase xa mode,closed,,2025-03-12T06:18:11Z,2025-03-15T13:17:17Z
+7203,test: add UT for DM/kingbase/oscar sqlparser,closed,,2025-03-11T09:07:35Z,2025-03-13T01:10:29Z
+7202,optimize: upgrade protobuf version from 3.25.4 to 3.25.5,closed,,2025-03-11T05:47:48Z,2025-03-12T01:23:12Z
+7200,"Revert ""refactor: refactor the `Result` Class (#7176)""",closed,,2025-03-10T13:22:43Z,2025-03-10T13:37:06Z
+7199,test: add some UT cases for client processor,closed,,2025-03-10T02:11:36Z,2025-03-10T03:19:48Z
+7197,test: add some UT cases for config module,open,,2025-03-09T09:44:16Z,None
+7194,optimize: skip the proxy of AbstractRoutingDataSource,closed,,2025-03-06T03:44:21Z,2025-03-06T06:16:40Z
+7193,optimize: automatically skipping proxy for datasource of type Abstrac…,closed,,2025-03-06T03:29:32Z,None
+7191,(WIP)bugfix:Fix problems while using etcd3 as registry,closed,,2025-03-04T06:15:03Z,None
+7189,test: fix the runtime exception in the saga test case,closed,,2025-02-28T08:22:52Z,2025-03-03T04:09:31Z
+7188,bugfix: Fix missing branchType in BusinessActionContext,closed,,2025-02-28T05:11:05Z,2025-03-03T05:39:55Z
+7187,optimize: add dependency-check-maven plugin to detect potential vulnerabilities,closed,,2025-02-28T03:54:55Z,2025-03-08T13:17:57Z
+7184,optimize: using subqueries to reduce the retrieval of invalid content data.,open,,2025-02-25T11:36:57Z,None
+7183,feature: client discovers raft nodes through the naming server,closed,,2025-02-25T05:51:06Z,2025-03-09T01:37:36Z
+7182,optimize:  use the ip of the peerId as the host of the raft node,closed,,2025-02-24T09:59:58Z,2025-02-25T01:36:44Z
+7181,feature:  raft implements domain name resolution and selects peerId,closed,,2025-02-24T09:38:13Z,2025-02-25T01:22:02Z
+7179,optimize: Use shared `EventLoop` for TM and RM clients to reduce thread overhead and improve performance,closed,,2025-02-23T08:25:12Z,2025-03-04T02:14:17Z
+7176,refactor: refactor the `Result` Class,closed,,2025-02-22T05:07:58Z,2025-03-09T01:56:30Z
+7175,optimize: fix 2.3.0 UT,closed,,2025-02-20T12:33:53Z,2025-02-20T12:34:18Z
+7174,[WIP]feature:[loom] replace the usages of synchronized with ReentrantLock at saga module,open,,2025-02-20T12:16:38Z,None
+7172,optimize: fix 2.3.0 UT and update NOTICE,closed,,2025-02-20T08:45:10Z,2025-02-20T08:47:54Z
+7171,feature:support `EpollEventLoopGroup` in client,closed,,2025-02-19T09:41:46Z,2025-02-19T10:02:14Z
+7170,optimize: optimize seata client I/O processing by adjusting thread count,closed,,2025-02-19T06:06:08Z,2025-02-19T08:20:49Z
+7167,test: Refactored tests in DurationUtilTest to simplify and use parameterized unit testing,closed,,2025-02-18T05:14:40Z,2025-02-19T08:56:12Z
+7164,feature:Transfer global timeout and branch transaction begin time,open,,2025-02-13T09:37:28Z,None
+7162,optimize: Throwing IOException in sendSyncRequest ,closed,,2025-02-13T01:29:11Z,2025-02-24T02:58:45Z
+7160,test: Refactored tests in LowerCaseLinkHashMapTest to use parameterized unit testing,closed,,2025-02-12T19:00:54Z,2025-02-15T10:02:24Z
+7157,feature: migrate the console to the naming server,closed,,2025-02-11T07:14:11Z,2025-02-24T06:57:21Z
+7156,compatible version,closed,,2025-02-11T04:04:52Z,None
+7155,reactor: refactor the code that does not comply with license requirements,closed,,2025-02-11T02:45:06Z,2025-02-11T02:56:55Z
+7154,optimize: remove unused dependencies,closed,,2025-02-11T02:38:14Z,2025-02-11T02:38:26Z
+7153,optimize: upgrade tomcat-embed to 9.0.98,closed,,2025-02-11T02:34:14Z,2025-02-11T02:34:33Z
+7152,optimize: remove org.eclipse.jetty dependency,closed,,2025-02-11T02:29:11Z,2025-02-11T02:29:32Z
+7151,optimize: upgrade xstream to 1.4.21,closed,,2025-02-11T02:24:43Z,2025-02-11T02:25:14Z
+7150,bugfix: The time difference between the raft node and the follower node cannot synchronize data.,closed,,2025-02-10T08:30:10Z,2025-02-10T08:51:26Z
+7149,optimize:Fix abnormal character display issues in ./distribution/NOTICE.md,closed,,2025-02-10T03:52:55Z,2025-02-10T06:23:02Z
+7147,feature: Raft config center v2,open,,2025-02-09T07:39:51Z,None
+7145,reactor: refactor the code that does not comply with license requirements,open,,2025-02-08T16:15:35Z,None
+7143,feature: raft config center v2,closed,,2025-02-08T12:51:55Z,None
+7142,optimize: upgrade commons-compress to 1.27.1,closed,,2025-02-08T10:44:11Z,2025-02-10T03:30:51Z
+7141,optimize: remove unused dependencies,closed,,2025-02-08T02:55:33Z,2025-02-08T05:59:53Z
+7139,optimize: upgrade xstream to 1.4.21,closed,,2025-02-07T11:18:14Z,2025-02-08T01:33:41Z
+7138,optimize: remove org.eclipse.jetty dependency,closed,,2025-02-07T11:15:39Z,2025-02-08T01:59:07Z
+7135,bugfix: treating a unique index conflict during rollback as a dirty write,closed,,2025-02-05T09:45:31Z,2025-02-06T07:47:51Z
+7134,optimize: upgrade tomcat-embed to 9.0.98,closed,,2025-02-04T15:14:24Z,2025-02-05T03:31:07Z
+7133,feature: Implement scheduled handling for end status transaction,closed,,2025-01-31T05:39:15Z,2025-02-18T05:36:47Z
+7131,optimize:Remove org.codehaus.jackson dependency,closed,,2025-01-23T07:47:57Z,2025-01-23T08:05:38Z
+7130,"optimize:Expose some keepalive-related configuration for Druid, Hikari, and DBCP",closed,,2025-01-23T06:39:16Z,2025-02-12T09:07:18Z
+7127,bugfix: fix branchType server decode error,closed,,2025-01-21T07:29:01Z,2025-01-21T07:34:33Z
+7124,bugfix: GlobalTransactionScanner.afterPropertiesSet need do scanner check,closed,,2025-01-21T01:27:28Z,2025-01-22T07:56:06Z
+7119,bugfix: conflictingBeanDefinitionException ,closed,,2025-01-16T11:27:57Z,2025-01-16T11:29:46Z
+7117,bugfix: prefix: [seata.server.raft.ssl] should not be null,closed,,2025-01-16T06:11:19Z,2025-01-16T07:12:04Z
+7116,bugfix: prefix: [seata.server.raft.ssl] should not be null,closed,,2025-01-16T03:00:40Z,2025-01-16T08:21:59Z
+7114,feature: support raft mode registry to namingserver,closed,,2025-01-15T15:22:31Z,2025-02-24T06:43:38Z
+7112,bugfix: remove the condition that IPv6 must start with fe80:,closed,,2025-01-15T07:55:35Z,2025-01-16T03:22:50Z
+7107,bugfix: the issue of incorrect annotation retrieval from the proxy object,closed,,2025-01-13T09:11:37Z,2025-01-21T06:00:11Z
+7106,修复tcc模式下，当业务对象为代理对象时，解析注解失败问题。,closed,,2025-01-13T09:07:54Z,None
+7104,bugfix: impl of supportsSourceType is not defined,closed,,2025-01-11T14:09:29Z,2025-01-12T07:18:22Z
+7102,bugfix: modify XA mode pre commit transaction from commit phase to before close phase,closed,,2025-01-11T04:27:06Z,2025-02-15T10:01:24Z
+7101,optimize: add tcc dependency spring-tx,closed,,2025-01-10T08:46:00Z,2025-01-10T08:46:34Z
+7098,test: expand unit test coverage for the [cmmon] module.,closed,,2025-01-08T14:01:30Z,2025-01-13T02:57:50Z
+7095,optimize:  support fast fail when channel disconnect after message sent  for RemotingClient,open,,2025-01-04T12:01:15Z,None
+7093,optimize: add a test workflow for JDK 21,closed,,2025-01-03T02:38:14Z,2025-01-03T03:09:16Z
+7092,test: fix the issue of NacosMockTest failing to run,closed,,2025-01-03T01:35:40Z,2025-01-03T01:59:47Z
+7089,optimize: support instance registration to the registry center,closed,,2025-01-02T03:30:21Z,2025-01-03T07:26:47Z
+7088,optimize: expand english abbreviations to full words,closed,,2025-01-01T10:22:12Z,2025-01-03T03:38:04Z
+7085,test:add unit test for seata spring starter module,open,,2024-12-29T12:57:30Z,None
+7084,optimize:fix grpc complie fail ut,closed,,2024-12-28T09:45:20Z,2024-12-28T09:46:22Z
+7083,optimize: fix tm context conflict ut,closed,,2024-12-28T08:20:12Z,2024-12-28T08:21:17Z
+7080,optimize: fix context conflict ut,closed,,2024-12-27T03:27:26Z,2024-12-27T03:28:07Z
+7079,optimize: fix 2.3.0 ut,closed,,2024-12-26T13:01:35Z,2024-12-26T13:02:02Z
+7075,optimize: fast fail when channel is null,closed,,2024-12-25T07:44:25Z,2024-12-26T01:17:36Z
+7073,feature:[loom] replace the usages of synchronized with ReentrantLock,closed,,2024-12-23T10:50:44Z,2025-01-17T08:06:46Z
+7072,optimize: caching the ConsistentHashSelector to avoid remapping when select every time.,closed,,2024-12-23T10:09:25Z,2025-03-07T02:10:19Z
+7071,如果是读写分离，在用aop设置主库的时候，会走这里，需要重新设置resourceId,closed,,2024-12-23T04:18:25Z,None
+7070,optimize: fix changes,closed,,2024-12-23T03:14:59Z,2024-12-23T05:41:48Z
+7069,feature: Raft cluster mode supports address translation,closed,,2024-12-23T02:44:15Z,2024-12-30T08:59:52Z
+7067,2.3.0,closed,,2024-12-20T15:49:32Z,None
+7066,optimize: fix changes,closed,,2024-12-20T15:49:14Z,2024-12-31T05:52:04Z
+7065,optimize: modify the version to 2.4.0-SNAPSHOT,closed,,2024-12-20T07:47:35Z,2024-12-21T15:40:46Z
+7064,optimize: remove unnecessary null checks,closed,,2024-12-19T07:45:46Z,2025-02-22T16:35:48Z
+7062,optimize: fix changes,closed,,2024-12-18T19:18:59Z,2024-12-19T06:00:51Z
+7061,optimize: fix changes,closed,,2024-12-18T12:38:20Z,2024-12-18T12:39:17Z
+7060,optimize:  UPDATE changes AND version,closed,,2024-12-17T08:26:32Z,2024-12-17T08:32:17Z
+7059,optimize: update notice and LICENSE,closed,,2024-12-16T12:15:25Z,2024-12-16T15:48:53Z
+7054,optimize: In file mode when the lock cannot be acquired output the holder's xid.,closed,,2024-12-10T02:22:15Z,2024-12-10T02:49:14Z
+7051,optimize: add namingserver jib,closed,,2024-12-09T00:12:49Z,2024-12-10T08:05:30Z
+7049,optimize: optimize deserialization efficiency,closed,,2024-12-05T02:15:00Z,2024-12-05T03:52:51Z
+7046,optimize: remove the dependency conflict for spring-webmvc,closed,,2024-12-04T02:27:09Z,2024-12-04T03:52:33Z
+7044,bugfix: fix tablemeta refresh after closed,closed,,2024-12-03T08:46:02Z,2024-12-04T01:23:43Z
+7043,optimize:  finish rollback if sendResult/msg not found,closed,,2024-12-03T08:15:53Z,2024-12-05T02:20:04Z
+7040,optimize: alter the print info in ConfigurationFactory.java when load ExtConfiguration,closed,,2024-12-01T10:51:39Z,2024-12-01T16:03:21Z
+7038,feature: add fury serializer support,closed,,2024-11-30T08:27:10Z,2025-01-09T08:10:16Z
+7037,feature: add fury undolog parser support,closed,,2024-11-30T08:22:59Z,2025-01-03T02:23:09Z
+7033,optimize: add the decompression size limit,closed,,2024-11-29T05:38:30Z,2024-11-29T09:15:58Z
+7032,optimize: add jdbc class isolation loader for different versions,closed,,2024-11-29T03:32:31Z,2024-11-29T05:57:50Z
+7031,optimize: optimize Raft SSL configuration items,closed,,2024-11-29T03:01:14Z,2024-11-29T05:42:46Z
+7030,test: add some test case.,closed,,2024-11-28T10:58:16Z,2024-11-28T12:31:54Z
+7028,optimize: add mysql to docker image,closed,,2024-11-26T17:01:47Z,2024-11-27T08:48:50Z
+7027,optimize: raft mode maintains the reload logic consistent with the file,closed,,2024-11-26T09:10:46Z,2024-11-27T06:13:06Z
+7025,bugfix: fix vGroupMappingManager is NOT init,closed,,2024-11-22T05:39:01Z,2024-11-22T06:04:12Z
+7024,feature: add console transaction control,closed,,2024-11-22T04:19:26Z,2025-02-07T08:53:53Z
+7023,"optimize: fail fast, when all server channel not available",closed,,2024-11-22T02:34:29Z,2024-11-25T06:33:41Z
+7022,bugfix: modify the properties in the raft application file,closed,,2024-11-21T07:47:26Z,2024-11-21T08:02:20Z
+7019,optimize: compatible with macOS 10.15 compilation,closed,,2024-11-20T06:40:15Z,None
+7018,test: improve unit test coverage of seata-tm moudle,closed,,2024-11-20T01:31:19Z,2024-11-22T01:23:56Z
+7017,reactor: remove dependency on seata-server module,closed,,2024-11-19T15:10:45Z,2024-11-28T05:02:23Z
+7012,"optimize: When the number of primary keys exceeds 1000, use union to concatenate the SQL #6957",closed,,2024-11-18T10:43:52Z,2024-12-25T07:01:11Z
+7011,"optimize: When the number of primary keys exceeds 1000, use union to concatenate the SQL #6957",closed,,2024-11-18T09:31:55Z,None
+7010,"bugfix:fix error while the ""context"" is key word in DM8 when delete undolog",closed,,2024-11-18T07:41:15Z,2024-11-19T02:43:18Z
+7007,optimize: fix the CI build issue on the ARM64 platform,closed,,2024-11-18T03:39:10Z,2024-11-18T05:35:49Z
+7005,bugfix: fix the Raft NPE issue caused by two-phase concurrency,closed,,2024-11-15T07:49:11Z,2024-11-18T05:43:03Z
+7002,optimize: optimize lock release logic in AT transaction mode,closed,,2024-11-14T13:06:52Z,2024-11-15T01:24:17Z
+7001,optimize: optimize transaction metrics,closed,,2024-11-14T12:48:59Z,2024-11-17T05:12:51Z
+7000,optimize : support multi-version codec & fix not returning client registration failure msg,open,,2024-11-14T10:47:20Z,None
+6998,optimize : skip sending some request if client-version is v0,open,,2024-11-14T02:49:45Z,None
+6996,optimize: optimize lock release logic in AT transaction mode,closed,,2024-11-11T11:47:26Z,2024-11-15T01:32:25Z
+6995,optimize: upgrade outdate npmjs dependencies,closed,,2024-11-11T03:39:53Z,2024-11-11T04:27:59Z
+6994,bugfix: fix the problem of building undoLog exception when update join does not update data,closed,,2024-11-10T16:38:11Z,2024-11-11T06:38:54Z
+6993,optimize: optimize transaction metrics,closed,,2024-11-10T15:53:23Z,2024-11-14T04:04:29Z
+6992,feature: add grpc serializer,closed,,2024-11-10T07:24:09Z,2024-11-10T13:02:07Z
+6991,optimize: gRPC serialization default to Protobuf,closed,,2024-11-09T18:03:58Z,2024-11-10T04:29:30Z
+6988,optimize: delete unnecessary cached data,closed,,2024-11-07T02:02:13Z,None
+6987,"optimize: When the number of primary keys exceeds 1000, use union to concatenate the SQL #6957",closed,,2024-11-07T01:41:30Z,None
+6986,bugfix: fix statemachine cache object,closed,,2024-11-06T13:46:26Z,None
+6984,bugfix: support building docker image on openjdk23,closed,,2024-11-06T02:39:11Z,2024-11-06T03:26:31Z
+6983,[WIP]feature:[loom] replace the usages of synchronized with ReentrantLock,closed,,2024-11-05T13:47:31Z,None
+6974,feature: add fastjson2 undolog parser,closed,,2024-11-02T11:21:01Z,2024-11-04T01:33:59Z
+6973,feature: support saga annotation,closed,,2024-11-02T07:27:47Z,2024-12-01T17:24:01Z
+6959,optimize: modify seata-http-jakarta's name and description in pom.xml,closed,,2024-10-29T05:49:58Z,2024-10-29T06:43:48Z
+6954,feature: support raft configuration center,closed,,2024-10-27T05:10:41Z,2024-10-27T05:14:37Z
+6953,"Revert ""feature: support raft configuration center""",closed,,2024-10-27T04:58:06Z,2024-10-27T04:59:17Z
+6952,Add `seata-solon-plugin` adaptation (draft),open,,2024-10-25T13:13:29Z,None
+6950,optimize: remove JVM parameter app.id,closed,,2024-10-25T09:09:31Z,2024-10-26T02:56:22Z
+6948,bugfix: fix the CI build issue on the ARM64 platform,closed,,2024-10-25T03:51:15Z,2024-10-26T02:57:47Z
+6947,bugfix: fix npe for nacos registry when look up address,closed,,2024-10-24T11:11:15Z,2024-10-25T05:24:12Z
+6945,bugfix: fix NacosRegistry lookup behavior transactionServiceGroup is empty causing NPE,closed,,2024-10-24T03:44:41Z,2024-10-24T07:19:52Z
+6943,bugfix: fix ConcurrentModificationException in SessionConverter.convertBranchSession,closed,,2024-10-23T03:27:30Z,2024-10-24T07:05:42Z
+6938,optimize: update online chat information in README.md,closed,,2024-10-21T03:56:30Z,2024-10-23T01:49:43Z
+6936,增加自我描述,closed,,2024-10-19T08:39:53Z,None
+6932,bugfix: Lock contention failure in file & Raft mode did not exit,closed,,2024-10-18T09:18:24Z,2024-10-18T14:56:10Z
+6928,bugfix: resolve issue in Raft model a follower's crash may lead to the continued use of expired tokens (#6925),closed,,2024-10-16T04:35:53Z,None
+6927,optimize: expand unit test coverage for the [rocketmq] module.,closed,,2024-10-15T11:27:29Z,2024-10-23T10:24:10Z
+6926,feature: support ssl communication for raft nodes,closed,,2024-10-15T09:22:06Z,2024-11-28T12:54:46Z
+6925,bugfix: resolve issue in Raft model a follower's crash may lead to the continued use of expired tokens,closed,,2024-10-15T01:22:16Z,2024-10-15T09:19:10Z
+6924,feature: add double token support for console and raft registry api,open,,2024-10-14T18:36:24Z,None
+6923,bugfix: Enhance 401 Error Handling by Refreshing Token in acquireClusterMetaData Method,closed,,2024-10-14T15:54:10Z,2024-10-17T09:58:20Z
+6920,feat: Add parallelized health check mechanism for Raft nodes,closed,,2024-10-12T11:15:13Z,None
+6918,optimize:Use the openjdk image of eclipse-temurin as the base image,closed,,2024-10-12T08:17:22Z,2024-10-14T09:00:35Z
+6913,feature: add double token support for seata netty communication authentication,open,,2024-10-10T19:26:33Z,None
+6911,optimize: fix some typos in project,closed,,2024-10-10T06:47:12Z,2024-10-12T07:46:14Z
+6910,2.1.0 Code Change Statistics,closed,,2024-10-10T01:27:59Z,None
+6907,bugfix: fix the issue of Codecov not generating reports,closed,,2024-10-09T09:02:19Z,2024-10-10T01:31:46Z
+6906,optimize: h2 dependency adds test scope,closed,,2024-10-09T08:08:25Z,2024-10-10T10:17:12Z
+6905,optimize: remove incompatible licenses at build time,closed,,2024-10-09T06:17:06Z,2024-10-12T02:08:51Z
+6904,feature: add fastjson2 serializer support,closed,,2024-10-08T13:57:51Z,2024-10-31T02:49:21Z
+6903,optimize: avoid dead loop logging during cache plan refresh exceptions.,closed,,2024-10-08T08:11:26Z,2024-10-08T08:58:00Z
+6902,optimize: optimize readme docs,closed,,2024-10-07T15:20:13Z,2024-10-08T02:14:09Z
+6899,bugfix: fix file.conf read failed after package,closed,,2024-10-03T05:37:14Z,2024-10-08T02:10:44Z
+6898,optimize: upgrade npmjs version in saga module,closed,,2024-09-30T06:08:31Z,2024-09-30T07:01:17Z
+6896,optimize: optimize raftsnapshot read,closed,,2024-09-29T17:13:34Z,2024-09-30T02:48:13Z
+6893,Fix issue like PR #6702 in snapshot module.,closed,,2024-09-29T04:14:50Z,None
+6892,optimize: upgrade npmjs version,closed,,2024-09-29T02:39:19Z,2024-09-29T03:08:29Z
+6891,optimize: add StateType Enum,closed,,2024-09-28T16:29:23Z,2024-11-29T02:16:16Z
+6890,bugfix: DesignerJson to StandardJson: SubStateMachine CompensateState cannot be recognized ,closed,,2024-09-28T14:30:24Z,2024-10-08T06:20:20Z
+6889,optimize: Correct word spelling errors,closed,,2024-09-28T14:23:59Z,2024-09-30T03:01:00Z
+6883,optimize: removed write only object,closed,,2024-09-27T12:10:41Z,2024-09-30T06:39:31Z
+6881,feature: support grpc protocol,closed,,2024-09-26T14:25:36Z,2024-10-05T05:14:21Z
+6879,optimize: Log args mismatch,closed,,2024-09-25T20:26:43Z,2024-10-08T08:58:16Z
+6878,feature: support double token for seata authentication and support raft ssl communication,closed,,2024-09-25T17:15:57Z,2024-10-30T13:11:12Z
+6876,feature: support kingbase,closed,,2024-09-24T09:44:34Z,2024-09-29T09:25:09Z
+6874,optimize: modify the version to 2.3.0-SNAPSHOT,closed,,2024-09-22T15:52:14Z,2024-09-23T01:21:42Z
+6873,bugfix: DesignerJson to StandardJson: SubStateMachine CompensateState cannot be recognized,closed,,2024-09-21T03:49:06Z,None
+6872,optimize: sync 2.2.0 to 2.x branch,closed,,2024-09-20T16:16:27Z,2024-09-21T13:39:19Z
+6869,test: add test for seata-core,closed,,2024-09-19T11:11:45Z,2024-11-30T13:39:37Z
+6867,optimize: update notice.md and LICENSE,closed,,2024-09-19T10:11:24Z,2024-09-19T10:13:24Z
+6866,optimize: windows and macos do not start container,closed,,2024-09-18T14:47:38Z,2024-09-19T05:36:48Z
+6864,feature: support shentong database,closed,,2024-09-18T06:50:11Z,2024-10-11T07:16:11Z
+6863,optimize: update NOTICE.md,closed,,2024-09-18T05:39:35Z,2024-09-18T05:46:10Z
+6861,feature: Namingserver watch support http2,closed,,2024-09-17T11:33:15Z,2024-10-29T14:44:24Z
+6859,bugfix: duplicated dependency #6857,closed,,2024-09-16T13:52:06Z,2024-09-16T14:23:34Z
+6858,bugfix: duplicated dependency #6857,closed,,2024-09-16T13:47:42Z,None
+6855,"bugfix: after scaling down a Raft cluster, the metadata still contains the removed node",closed,,2024-09-14T06:53:27Z,2024-09-16T08:31:26Z
+6852,optimize: raft metadata api,closed,,2024-09-14T01:41:38Z,2024-09-14T13:51:01Z
+6850,bugfix: raft mode is backward compatible with version 2.0,closed,,2024-09-13T08:51:45Z,2024-09-13T09:10:45Z
+6845,bugfix: rocksDB opens the same file multiple times,closed,,2024-09-12T02:25:34Z,2024-09-12T03:02:07Z
+6843,bugfix: Fix 403 error when sending a POST request from the console,closed,,2024-09-11T05:20:19Z,2024-09-11T07:27:20Z
+6841,optimize: update the LICENSE and NOTICE files and standardize dependency versions,closed,,2024-09-11T02:00:43Z,2024-09-16T08:32:00Z
+6840,bugfix:  Unsafe deserialization in processorYaml.java #6839,closed,,2024-09-10T15:46:02Z,2024-09-11T02:22:43Z
+6838,Improve test coverage by  ignore compatible module,closed,,2024-09-10T12:31:55Z,None
+6836,optimize: add independent nacos for the CI process.,closed,,2024-09-09T11:42:21Z,2024-09-10T09:34:40Z
+6835,bugfix: fix post method in HttpClientUtil,closed,,2024-09-09T09:50:52Z,2024-09-10T01:37:57Z
+6833,bugfix: SQLIntegrityConstraintViolationException capture incorrectly when inserting a globallock,closed,,2024-09-09T03:49:14Z,2024-09-11T01:30:27Z
+6831,optimize: use curator instead of zkclient in registry model,closed,,2024-09-08T13:37:09Z,2024-09-12T08:16:42Z
+6830,feature: support raft configuration center,closed,,2024-09-08T12:28:58Z,2024-10-27T04:31:37Z
+6828,optimize: spring boot compatible with file.conf and registry.conf  (#6811),closed,,2024-09-07T13:02:22Z,2024-12-24T14:48:27Z
+6827,optimize: rename namingserver registry type,closed,,2024-09-07T12:47:31Z,2024-09-09T05:51:17Z
+6826,optimize: remove the branch registration operation of the XA read-only transaction,closed,,2024-09-07T11:52:38Z,2024-09-21T14:10:13Z
+6825,bugfix: the issue where connection held during the first phase of PostgreSQL cannot be rollback,closed,,2024-09-07T06:01:10Z,2024-09-09T06:21:30Z
+6824,Fix bug in https://github.com/apache/incubator-seata/issues/6814,closed,,2024-09-07T05:31:28Z,None
+6823,optimize: fix typo,closed,,2024-09-07T03:54:10Z,2024-09-11T02:30:42Z
+6821, test: Improve the test case,closed,,2024-09-06T00:59:21Z,2024-09-06T06:27:47Z
+6820,bugfix:Fix file path error in the Dockerfile,closed,,2024-09-05T08:18:02Z,2024-09-05T08:59:53Z
+6819,optimize: merge the packaging processes of namingserver and seata-server,closed,,2024-09-05T07:07:14Z,2024-09-09T06:17:55Z
+6817,bugfix: fix namingserver changVgroup failed,closed,,2024-09-05T02:47:11Z,2024-09-06T07:21:38Z
+6816,bugfix:Fix NPE when getting branchType in a non-global transaction context,closed,,2024-09-05T02:37:28Z,2024-09-05T05:36:03Z
+6812,bugfix: change group and node offline status are not pushed in real time,closed,,2024-09-04T05:39:58Z,2024-09-04T07:02:46Z
+6809,test CodeQL,closed,,2024-09-03T14:39:57Z,None
+6808,optimize: change version to 2.2.0-SNAPSHOT,closed,,2024-09-03T05:56:25Z,2024-09-04T03:13:33Z
+6807,optimize: splitting MergedWarpMessage enhances the server parallel processing capability,closed,,2024-09-03T01:45:18Z,2024-10-31T06:03:45Z
+6806,optimize: avoid dead loop logging during cache plan refresh exceptions,closed,,2024-09-02T10:37:45Z,2024-09-03T03:40:23Z
+6803,optimize: compilation and packaging for the ARM64 architecture,closed,,2024-09-01T08:52:47Z,2024-09-13T02:25:30Z
+6802,"[BUG]fix ""Connect to nodejs.org:443""",closed,,2024-09-01T04:11:44Z,None
+6801,feature: seata-server support http protocol,closed,,2024-08-31T16:03:38Z,2024-10-27T05:05:08Z
+6800,optimize: optimize database driver cannot found message,closed,,2024-08-31T08:38:34Z,2024-08-31T14:46:01Z
+6797,optimize: fall back to any of available cluster address when query cluster address is empty,closed,,2024-08-29T06:49:51Z,2024-08-30T03:28:03Z
+6795,optimize: optimize the initialization logic for server meta,closed,,2024-08-29T00:36:13Z,2024-09-02T01:56:16Z
+6794,optimize: optimize NacosMockTest UT case,closed,,2024-08-28T07:33:24Z,2024-08-30T01:23:03Z
+6793,optimize: fix npmjs conflicts,closed,,2024-08-28T04:35:50Z,2024-08-28T06:15:52Z
+6791,optimize: optimize database  driver cannot found message(#6760),closed,,2024-08-27T16:29:46Z,None
+6787,optimize: upgrade elliptic to 6.5.7,closed,,2024-08-27T05:43:58Z,2024-08-27T08:23:41Z
+6786,bugfix: fix prometheus fail to return seata metrics data when using Nacos,closed,,2024-08-27T03:28:35Z,2024-09-11T01:31:46Z
+6784,optimize: upgrade axios to 1.7.4,closed,,2024-08-27T02:56:03Z,2024-08-27T03:21:10Z
+6783,optimize: rename the server naming/v1 api to vgroup/v1,closed,,2024-08-26T15:34:02Z,2024-08-28T01:11:39Z
+6781,bugfix: the issue where the TC occasionally fails to go offline from the NamingServer,closed,,2024-08-25T15:58:39Z,2024-08-26T13:11:13Z
+6780,optimize: optimize the reflection operation in class `SerializerServiceLoader`,closed,,2024-08-25T14:02:35Z,2024-08-26T03:49:39Z
+6779,optimize: use curator instead of zkclient in config model,closed,,2024-08-25T04:46:11Z,2024-09-12T03:22:00Z
+6778,bugfix: fix the naming server node having a term of 0,closed,,2024-08-24T14:33:23Z,2024-08-25T05:33:23Z
+6777,[WIP]test: increate the code coverage of the rm-datasource module,open,,2024-08-23T18:04:50Z,None
+6773,test: fix the wrong code coverage from codecov icon in default branch,closed,,2024-08-21T15:02:59Z,2024-08-23T17:47:17Z
+6770,optimize: automatic deletion of namingserver vgroup through Caffeine map,closed,,2024-08-19T23:59:05Z,2024-08-23T16:08:17Z
+6769,bugfix: fix tcc dead lock,closed,,2024-08-19T15:34:32Z,2024-08-22T09:44:30Z
+6768,optimize: report the tcc fence transaction isolation level,closed,,2024-08-19T14:58:39Z,2024-08-22T09:20:08Z
+6766,feature: add TCC three-phase hooks,closed,,2024-08-19T08:17:51Z,2024-09-02T06:21:35Z
+6765,bugfix: Resolve MySQL Driver Loading Issue (#6760),closed,,2024-08-18T12:14:06Z,2024-08-25T14:43:19Z
+6764,test: add Apollo mock test case,closed,,2024-08-18T11:54:08Z,2024-08-28T08:36:00Z
+6763,optimize: optimize NacosConfiguration singleton reload,closed,,2024-08-18T07:29:01Z,2024-08-18T16:30:41Z
+6761,optimize: the namingserver code to improve readability,closed,,2024-08-17T07:07:25Z,2024-08-18T14:35:07Z
+6759,bugfix: fix the error of active refresh failure of cross-database table metadata,closed,,2024-08-15T14:34:38Z,2024-09-03T03:01:01Z
+6757,bugfix: the bug where multiple nodes cannot be retrieved from the naming server,closed,,2024-08-15T07:18:51Z,2024-08-17T06:54:19Z
+6756,feature: add single server rate limit,closed,,2024-08-14T13:13:52Z,2025-01-22T14:34:35Z
+6755,optimize: optimize namingserver ,closed,,2024-08-14T00:12:18Z,2024-08-15T06:58:15Z
+6754,feature: support grpc protocol,closed,,2024-08-14T00:08:35Z,None
+6753,docs: optimize `README.md` sentence spaces,closed,,2024-08-13T20:49:07Z,2024-08-31T14:48:51Z
+6752,test: Improve the test case coverage of [metrics] module to 70%,closed,,2024-08-13T11:33:34Z,2024-08-31T14:47:25Z
+6750,test: increase spring autoconfigure module unit test coverage,closed,,2024-08-13T04:16:53Z,2024-08-19T07:39:31Z
+6749,optimize: optimize WebSecurityConfig csrf,closed,,2024-08-13T03:26:11Z,2024-09-02T01:45:15Z
+6748,optimize: optimize ConsistentHashLoadBalance Algorithm,closed,,2024-08-13T03:14:10Z,2024-08-13T15:41:31Z
+6747,optimize: optimize fastjson deserialization,closed,,2024-08-13T02:54:57Z,2024-08-13T03:39:58Z
+6746,optimize: optimize compatible dependencies,closed,,2024-08-12T17:01:14Z,2024-08-13T02:48:04Z
+6745,optimize: fix node-gyp build error on arm64 and macos,closed,,2024-08-12T16:23:12Z,2024-08-13T02:09:09Z
+6743,optimize: upgrade npmjs version in saga,closed,,2024-08-11T12:26:30Z,2024-08-11T15:48:34Z
+6742,optimize: upgrade npmjs version in console,closed,,2024-08-11T11:37:17Z,2024-08-11T16:07:55Z
+6741,optimize: upgrade tomcat-embed-core to 9.0.90,closed,,2024-08-11T10:11:11Z,2024-08-12T07:21:03Z
+6732,optimize: add the default console and security config on application.examle.yml,closed,,2024-08-05T15:43:23Z,2024-08-09T15:10:54Z
+6728,bugfix: Support serialization for dm.jdbc.driver.DmdbTimestamp (#6701),closed,,2024-08-03T10:53:18Z,2024-08-11T16:05:59Z
+6727,optimize: deserialize performance optimize,closed,,2024-08-03T10:43:41Z,2024-08-06T03:17:58Z
+6722,optimize: Extract datasource proxy metadata,open,,2024-08-02T08:08:51Z,None
+6717,bugfix: fix dameng on update column will not rollback,closed,,2024-08-01T11:05:35Z,None
+6716,bugfix: fix dameng delete undo fail,closed,,2024-08-01T09:39:51Z,2024-08-01T12:55:05Z
+6715,bugfix: fix dameng rollback info un compress fail,closed,,2024-08-01T09:03:12Z,2024-08-01T09:19:19Z
+6714,bugfix: fix dameng delete undo fail,closed,,2024-08-01T08:41:02Z,2024-08-01T09:18:09Z
+6712,bugfix: fix dameng rollback info un compress fail,closed,,2024-08-01T08:29:38Z,None
+6711,bugfix: fix dameng rollback info un compress fail,closed,,2024-08-01T08:07:28Z,2024-08-01T08:40:14Z
+6710,bugfix: fix dameng rollback info un compress fail,closed,,2024-08-01T08:00:07Z,None
+6707,bugfix: fix readonly branch commit errors in Oracle XA transactions. ,closed,,2024-07-29T14:07:24Z,2024-07-30T02:37:23Z
+6706,bugfix: add three tcc fence interceptors to fix tcc fence deadlock ex…,open,,2024-07-29T02:32:19Z,None
+6704,optimize: fix javadoc version incompatibility issue,closed,,2024-07-27T17:25:26Z,2024-07-27T17:28:40Z
+6702,optimize: optimize Raft deserialization,closed,,2024-07-26T13:56:35Z,2024-07-27T15:27:03Z
+6700,optimize : remove sdk version checking ,closed,,2024-07-25T09:32:11Z,2024-07-25T13:32:23Z
+6697,bugfix: v0 ByteBuf should not decode by super class,closed,,2024-07-24T09:33:26Z,2024-07-25T08:12:49Z
+6695,test : old version(< 0.7.1) client test case for multi-version protocol ,closed,,2024-07-24T09:17:00Z,2024-07-30T07:12:34Z
+6692,optimize: fix node-gyp build error on arm64 and macos,closed,,2024-07-23T12:51:27Z,2024-07-24T03:43:49Z
+6691,optimize: add release notes,closed,,2024-07-23T12:06:33Z,2024-07-23T12:07:04Z
+6688,optimize: delete static code built on the frontend,closed,,2024-07-20T16:35:40Z,2024-07-20T16:41:56Z
+6687,optimize: delete static code built on the frontend,closed,,2024-07-20T10:41:39Z,2024-07-22T14:05:20Z
+6684,在edas 3.5.x版本下ClientFilter、ServerFilter需分开实现,closed,,2024-07-19T02:12:16Z,None
+6678,bugfix: Fixed that the same record has different lowkeys due to mixed case of table names,closed,,2024-07-15T13:36:17Z,2024-07-16T14:40:10Z
+6677,optimize: add license header for SPI file,closed,,2024-07-13T16:33:25Z,2024-07-13T16:33:48Z
+6676,bugfix: fix hsf ConsumerModel convert error,closed,,2024-07-13T16:30:38Z,2024-07-13T16:30:58Z
+6675,bugfix: fix Alibaba Dubbo convert error,closed,,2024-07-13T16:27:12Z,2024-07-13T16:27:50Z
+6674,optimize: update source license,closed,,2024-07-13T16:21:24Z,2024-07-13T16:21:58Z
+6673,optimize: add license header for spring config file,closed,,2024-07-13T16:17:44Z,2024-07-13T16:18:16Z
+6672,optimize: update front-end license,closed,,2024-07-13T16:11:58Z,2024-07-13T16:12:23Z
+6671,optimize: optimize multiple licenses and remove license urls,closed,,2024-07-13T16:05:32Z,2024-07-13T16:08:39Z
+6670,optimize: add license header for proto file,closed,,2024-07-13T15:58:40Z,2024-07-13T16:00:31Z
+6668,bugfix: thread safety issue when adding and removing instances,closed,,2024-07-12T08:11:25Z,2024-07-13T06:07:42Z
+6667,optimize: namingserver log output,closed,,2024-07-12T06:00:51Z,2024-07-12T06:37:24Z
+6666,optimize: add ExceptionUtil class for unwarp error msg,closed,,2024-07-12T03:53:23Z,2024-07-12T08:15:02Z
+6663,bugfix: fix cache scheduled refresh issue (#6661),closed,,2024-07-10T02:05:42Z,2024-07-10T05:40:34Z
+6661,bugfix: fix cache scheduled refresh issue.,closed,,2024-07-09T06:17:01Z,2024-07-09T07:52:53Z
+6658,feat: try sonar cloud,closed,,2024-07-08T13:50:18Z,None
+6656,optimize: update source license,closed,,2024-07-08T03:49:02Z,2024-07-09T03:13:01Z
+6655,optimize: update front-end license,closed,,2024-07-08T03:33:17Z,2024-07-08T05:59:40Z
+6654,optimize: add namingserver distribution,closed,,2024-07-08T01:07:16Z,2024-07-12T03:49:53Z
+6653,optimize: optimize multiple licenses and remove license urls,closed,,2024-07-07T16:48:07Z,2024-07-08T02:32:09Z
+6652,optimize: add license header for spring config file,closed,,2024-07-07T12:44:02Z,2024-07-09T03:12:19Z
+6651,optimize: add license header for proto file,closed,,2024-07-07T12:17:30Z,2024-07-07T22:57:01Z
+6650,optimize: add license header for SPI file,closed,,2024-07-07T11:58:19Z,2024-07-07T22:55:48Z
+6649,optimize: add license header,closed,,2024-07-07T11:03:59Z,2024-07-07T12:50:03Z
+6648,optimize:add license header,closed,,2024-07-07T10:50:24Z,2024-07-07T12:48:50Z
+6647,test: improve the test case coverage of saga module to 70%,closed,,2024-07-06T09:16:28Z,2024-07-06T14:05:36Z
+6646,fix(6509): improve the test case coverage of saga module to 70%,closed,,2024-07-06T04:23:41Z,None
+6645,fix(6509): improve the test case coverage of saga module to 70%,closed,,2024-07-06T04:01:33Z,None
+6642,bugfix: codecov token not found,closed,,2024-07-04T08:55:08Z,2024-07-04T09:19:07Z
+6640,optimize: modify codecov version,closed,,2024-07-03T12:30:31Z,2024-07-04T08:09:42Z
+6636,Fix stack overflow issue,open,,2024-06-28T09:47:52Z,None
+6634,optimize: select channel handles based on protocol versions,closed,,2024-06-27T02:58:00Z,2024-07-01T07:34:44Z
+6632,bugfix: fix hsf ConsumerModel convert error,closed,,2024-06-26T06:48:57Z,2024-06-26T09:32:41Z
+6629,bugfix: fix readonly branch commit errors in Oracle XA transactions.,closed,,2024-06-24T03:36:00Z,None
+6628,bugfix: fix Alibaba Dubbo convert error,closed,,2024-06-23T14:29:31Z,2024-06-24T12:39:02Z
+6627,bugfix: fix the issue of xaEnded not being reset,closed,,2024-06-22T16:42:01Z,2024-06-26T09:45:21Z
+6626,bugfix: fix hsf ConsumerModel convert error,closed,,2024-06-22T10:13:59Z,2024-06-25T05:58:21Z
+6624,bugfix: fix Alibaba Dubbo convert error,closed,,2024-06-21T06:27:50Z,2024-06-21T16:13:50Z
+6621,optimize:  archive 2.1 version change log,closed,,2024-06-20T03:34:04Z,2024-06-21T02:02:02Z
+6613,optimize: add release notes and change version to 2.1.0,closed,,2024-06-14T13:11:03Z,2024-06-15T09:10:14Z
+6610,optimize: revise the notice file,closed,,2024-06-13T03:14:37Z,2024-06-13T04:32:47Z
+6609,optimize: revise the notice file,closed,,2024-06-12T17:09:12Z,2024-06-13T02:13:05Z
+6608,test: Improve the test case coverage of [sqlparser] module to 70%,closed,,2024-06-12T08:02:13Z,2024-07-12T10:14:13Z
+6605,optimize: revised the license and notice,closed,,2024-06-09T15:20:53Z,2024-06-10T13:11:15Z
+6602,2.1.0,closed,,2024-06-06T08:32:08Z,None
+6599,optimize: add release notes and change version to 2.1.0,closed,,2024-06-04T02:54:52Z,2024-06-04T02:55:38Z
+6597,optimize: remove binary from source code,closed,,2024-06-03T08:44:01Z,2024-06-04T02:11:16Z
+6592,bugfix:fix @Async annotation not working.,closed,,2024-05-30T08:05:26Z,2024-06-20T02:31:48Z
+6585,optimize: optimize compatible module pom.xml,closed,,2024-05-27T17:23:12Z,2024-05-28T07:44:24Z
+6583,optimize: optimize the default compilation to be independent of the Git Env,closed,,2024-05-27T12:17:05Z,2024-05-27T15:10:15Z
+6581,optimize: add release notes and change version to 2.1.0,closed,,2024-05-26T14:03:56Z,2024-05-28T10:51:29Z
+6580,feature：seata benchmark,closed,,2024-05-25T10:16:20Z,None
+6578,optimize: registry.conf supplemented raft configuration,closed,,2024-05-24T08:42:58Z,2024-05-24T09:18:22Z
+6576,optimize: remove oracle datatype parser,closed,,2024-05-24T08:01:18Z,2024-05-24T09:07:00Z
+6575,bugfix: io.seata ActionInterceptorHandler use org.apache.seata BusinessActionContextParameter,closed,,2024-05-23T15:32:14Z,2024-05-24T06:53:11Z
+6572,optimize: add release notes and change version to 2.1.0,closed,,2024-05-23T03:01:44Z,2024-05-23T03:02:02Z
+6571,infra: prepare delete tag v2.1.0,closed,,2024-05-23T02:24:51Z,2024-05-23T02:29:41Z
+6570,optimize: add notice file to binary,closed,,2024-05-22T15:08:29Z,2024-05-23T01:38:10Z
+6569,"bugfix: fix when doing global rollback ,may cause an endless loop",closed,,2024-05-22T05:09:21Z,None
+6567,version: change version to 2.1.0,closed,,2024-05-21T10:31:22Z,2024-05-21T10:45:07Z
+6566,optimize: add support for configuring exposeProxy in GlobalTransactionScanner,closed,,2024-05-21T08:30:22Z,2024-07-02T02:10:53Z
+6565,test: fix testCompensationStateMachine fail,closed,,2024-05-21T08:08:53Z,2024-05-21T10:15:39Z
+6560,"test : fix mock-server test, do not shutdown in Runtime.getRuntime().addShutdownHook",closed,,2024-05-20T02:40:47Z,2024-05-20T09:22:41Z
+6558,optimize: remove mysql-connector-java from pom.xml,closed,,2024-05-18T08:31:17Z,2024-05-18T09:02:36Z
+6557,sync 2.x to 2.1.0,closed,,2024-05-17T03:06:14Z,2024-05-17T03:06:33Z
+6555,bugfix: fix businessActionContext not compatible with io.seata,closed,,2024-05-16T14:31:01Z,2024-05-16T16:23:24Z
+6554,bugfix: unfixed serializer,closed,,2024-05-16T12:52:56Z,2024-05-16T15:00:13Z
+6553,"bugfix: fix saga ""cannot matching status""",closed,,2024-05-16T12:02:56Z,2024-05-16T12:52:45Z
+6551,"bug: setting up a Raft cluster using domain, the listening request port is error",closed,,2024-05-16T04:04:07Z,2024-06-26T09:58:40Z
+6550,optimize: optimize workflow and UT,closed,,2024-05-16T01:53:38Z,2024-05-16T02:35:06Z
+6549,optimize: macos workflow support arm testing,closed,,2024-05-15T12:27:55Z,2024-05-16T01:51:46Z
+6548,optimize: upgrade the byte-buddy version to 1.14.15,closed,,2024-05-15T07:43:19Z,2024-05-15T12:16:52Z
+6547,"bugfix: Corrected an issue in the Seata AT mode where, upon multiple …",closed,,2024-05-14T10:35:13Z,None
+6545,test: fix TestConfigCustomSPI compatibility test fail,closed,,2024-05-14T04:01:14Z,2024-05-14T05:37:16Z
+6543,optimize: upgrade the byte-buddy version to 1.14.15,closed,,2024-05-14T03:37:39Z,None
+6541,version: change version to 2.1.0,closed,,2024-05-14T02:58:44Z,2024-05-21T07:21:12Z
+6540,optimize: exclude com.google.guava:listenablefuture,closed,,2024-05-13T07:07:28Z,2024-05-14T02:25:05Z
+6539,optimize: add subcomponents license,closed,,2024-05-13T05:50:11Z,2024-05-13T06:03:33Z
+6538,feature：init Namingserver server,closed,,2024-05-13T04:51:08Z,2024-07-30T07:47:11Z
+6537,feature: init Namingserver,closed,,2024-05-13T04:49:09Z,2024-07-05T01:15:48Z
+6536,feature: init namingserver client,closed,,2024-05-13T04:47:34Z,2024-08-13T15:56:44Z
+6534,optimize: send async response,closed,,2024-05-12T08:30:17Z,2024-06-20T08:09:25Z
+6533,test: Increase [integration-tx-api] module test case coverage,closed,,2024-05-12T08:23:40Z,2024-07-29T09:40:25Z
+6529,optimize: optimize release maven plugin,closed,,2024-05-11T04:59:25Z,2024-05-11T09:34:30Z
+6524,fix(6502): supplement the store unit test cases in the [core] module.,open,,2024-05-07T14:25:37Z,None
+6523,optimize: upgrade alibaba/druid version  to 1.2.20,closed,,2024-05-06T09:52:23Z,2024-06-26T10:13:44Z
+6521,optimize: optimize kotlin-maven-plugin,open,,2024-05-06T04:16:46Z,None
+6519,fix(6509): improve the test case coverage of saga module to 70%,closed,,2024-05-05T06:21:10Z,None
+6518,optimize: optimize ConfigurationCache proxy method,closed,,2024-05-01T15:52:51Z,2024-05-06T05:39:33Z
+6516,optimize: optimize code format,closed,,2024-04-30T07:22:59Z,2024-05-01T16:01:36Z
+6511,bugfix: the failure of rollbacking back of the delete SQL at AT mode when using SQLServer,closed,,2024-04-28T17:02:20Z,2024-09-11T02:01:44Z
+6499,optimize: split the task thread pool for committing and rollbacking statuses,closed,,2024-04-26T03:43:30Z,2024-06-20T09:44:11Z
+6497,fix(6495): [seata.tcc] should not be null,closed,,2024-04-23T13:12:59Z,2024-04-24T01:13:36Z
+6496,bugfix: fix XA rollback on commit failure (#6492),closed,,2024-04-23T12:29:15Z,2024-04-24T01:57:21Z
+6493,bugfix: fix SQLServer-related SQL error when using database of SQLServer,closed,,2024-04-22T17:57:53Z,2024-04-26T03:32:53Z
+6487,optimize: seata plugin jackson parser package name,closed,,2024-04-19T04:07:22Z,2024-04-22T07:37:30Z
+6484,test: fix FileConfigurationTest and MockServerTest fail,closed,,2024-04-18T02:04:39Z,2024-04-22T07:35:56Z
+6483,bugfix: undolog rollback info more than 64MB,closed,,2024-04-17T09:46:35Z,2024-07-31T08:32:58Z
+6477,bugfix: fix SQLServer-related SQL error when using database of SQLServer,closed,,2024-04-14T03:04:29Z,None
+6475,bugfix: fix the failure of @BusinessActionContextParamete annotation …,open,,2024-04-10T18:46:55Z,None
+6473,Hotfix tcc context param,closed,,2024-04-08T16:59:35Z,None
+6469,bugfix: sqlserver lock_table missing status placeholder,closed,,2024-04-07T09:10:40Z,2024-04-08T06:52:30Z
+6466,test: support Redis integration testing,closed,,2024-04-07T02:48:22Z,2024-04-17T14:20:50Z
+6465,bugfix: fix saga mode replay context lost start in 2.x,closed,,2024-04-06T13:24:35Z,2024-04-06T14:44:09Z
+6464,Update 2.x.md,closed,,2024-04-05T19:52:22Z,None
+6463,Update 2.x.md,closed,,2024-04-05T19:51:20Z,None
+6458,optimize: add null value check for MAC address,closed,,2024-04-02T07:27:04Z,2024-04-23T02:44:50Z
+6456,test: adjust the test cases related to dynamic configuration,closed,,2024-04-01T06:28:14Z,2024-04-08T15:23:11Z
+6442,optimize: clarify if conditions,closed,,2024-03-23T19:42:56Z,2024-04-08T02:20:40Z

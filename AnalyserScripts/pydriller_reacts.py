@@ -19,7 +19,7 @@ def save_analysis(react_name, outcome, recommendation, output_file):
     
     print(f"Analysis for {react_name} saved to {output_file}")
 
-df = pd.read_csv(os.path.join('pydrillerCSV', project_name, f"{project_name}_commit_data.csv"))
+df = pd.read_csv(os.path.join('..','pydrillerCSV', project_name, f"{project_name}_commit_data.csv"))
 print(df.head())
 
 # purva
@@ -109,7 +109,7 @@ def analyze_react_78(df):
         recommendation = "Yes"
 
     return outcome, recommendation
-output_file = 'final_react_analysis.csv'
+output_file = '../final_react_analysis.csv'
 outcome_react63, recommendation_react63 = analyze_react_63(df)
 save_analysis("ReACT-63", outcome_react63, recommendation_react63, output_file)
 outcome_react64, recommendation_react64 = analyze_react_64(df)
