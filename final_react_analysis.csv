@@ -562,3 +562,30 @@ rocketmq,ReACT-97,The project is licensed under the Apache License.,Yes
 rocketmq,ReACT-98,Clear build and run instructions are provided.,Yes
 rocketmq,ReACT-95,Contribution guidelines are clearly mentioned.,Yes
 rocketmq,ReACT-102,Security considerations are documented.,Yes
+skywalking,ReACT-14 Merge pull requests promptly.,Meets criteria (Avg merge time: 11.03 hours),Yes
+skywalking,ReACT-62 Encourage developers to start contributing to the project early.,Does not meet criteria (First commit date 2023-05-23 00:31:00+08:00 does not match repo creation month/year or insufficient contributions in first 2 months: 0),No
+skywalking,ReACT-81 Keep knowledge up to date and findable.,Meets criteria (Last README update: 2025-02-12 12:46:26+08:00),Yes
+skywalking,ReACT-9,Does not meet criteria (Keyword 'how to request for access' not found),No
+skywalking,ReACT-19,Does not meet criteria (Keyword 'flag newcomers' not found),No
+skywalking,ReACT-33,Does not meet criteria (Keyword 'contribution guidelines' not found),No
+skywalking,ReACT-84,Does not meet criteria (Keyword 'onboarding support' not found),No
+skywalking,ReACT-11 Keep the project small and simple.,Meets criteria,Yes
+skywalking,ReACT-26 Conduct unit tests.,Meets criteria,Yes
+skywalking,ReACT-32 Promote code transparency. Keep the code as simple as possible,"Does not meet criteria (Comment ratio is 0.05, which is below the recommended threshold of 15%.)",No
+skywalking,ReACT-82 Have and enforce a code of conduct,Does not meet criteria (No code of conduct file found in the project.),No
+skywalking,ReACT-66 Perform adequate testing before integrating a feature,Meets criteria,Yes
+skywalking,ReACT-3: Utilize a common programming language,java: 36.35%; md: 17.09%; yml: 12.66%; xml: 11.76%; json: 10.83%; yaml: 7.93%; g4: 0.92%; sh: 0.69%; proto: 0.27%; oal: 0.23%; ModuleProvider: 0.23%; ModuleDefine: 0.17%; conf: 0.12%; gitignore: 0.08%; py: 0.08%; ftl: 0.06%; properties: 0.06%; env: 0.06%; txt: 0.04%; lua: 0.04%; mod: 0.04%; sql: 0.04%; tpl: 0.04%; crt: 0.04%; go: 0.02%; nginx: 0.02%; key: 0.02%; php: 0.02%; ini: 0.02%; generate-traffic: 0.02%; log: 0.02%,N/A
+skywalking,"ReACT-65: Maintain the current project platform; refrain from altering it. (if available on github, ReACT is satisfied)",Meets criteria,N/A
+skywalking,ReACT-16,"Total Integrators: 0, Total Merge Commits: 0, Earliest Merge: No merge commits found, Latest Merge: No merge commits found",No
+skywalking,ReACT-36,"Meets criteria (Active developers: 13, Threshold: 50)",Yes
+skywalking,ReACT-38,"Meets criteria (Experienced contributors: 14, Threshold: 5)",Yes
+skywalking,ReACT-100,Processes and practices are documented within the project.,Yes
+skywalking,ReACT-93,No clear communication channels (like Zulip or chat platforms) found.,No
+skywalking,ReACT-77,Mailing list is not mentioned.,No
+skywalking,ReACT-60,GitHub stars and social media links are present.,Yes
+skywalking,ReACT-53,The project is not incubated by a large software foundation.,No
+skywalking,ReACT-20,The project does not communicate through various channels.,No
+skywalking,ReACT-97,The project license is not mentioned or not Apache License.,No
+skywalking,ReACT-98,Clear build and run instructions are provided.,Yes
+skywalking,ReACT-95,Contribution guidelines are not mentioned.,No
+skywalking,ReACT-102,Security considerations are not documented.,No
