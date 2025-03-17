@@ -2,6 +2,7 @@ import csv
 import os
 import pandas as pd
 from datetime import datetime
+import sys
 
 # React 11
 # React 26
@@ -10,13 +11,12 @@ from datetime import datetime
 # React 66
 # React 16
 # React 36
-
 # React 38
 
 from datetime import datetime
 csv.field_size_limit(1000000)
 
-def analyze_react_metrics(csv_filename, project_name, output_file="../final_react_analysis.csv"):
+def analyze_react_metrics(csv_filename, project_name, output_file="final_react_analysis.csv"):
     project_metrics = {
         "ReACT-11 Keep the project small and simple.": True,
         "ReACT-26 Conduct unit tests.": False,
@@ -90,7 +90,7 @@ def analyze_react_metrics(csv_filename, project_name, output_file="../final_reac
     
     print(f"Analysis saved to {output_file}")
 
-def analyze_file_extensions(file_path, react_number, project_name, output_file="../final_react_analysis.csv"):
+def analyze_file_extensions(file_path, react_number, project_name, output_file="final_react_analysis.csv"):
     df = pd.read_csv(file_path)
     extension_counts = df["File Extension"].value_counts()
     extension_percentage = (extension_counts / extension_counts.sum()) * 100
@@ -118,7 +118,7 @@ def analyze_file_extensions(file_path, react_number, project_name, output_file="
     
     print(f"Analysis saved to {output_file}")
 
-def analyze_commit_messages(csv_filename, project_name, output_file="../final_react_analysis.csv"):
+def analyze_commit_messages(csv_filename, project_name, output_file="final_react_analysis.csv"):
     project_metrics = {"ReACT-66 Perform adequate testing before integrating a feature": False}
     total_commits = 0
     revert_commits = 0
@@ -167,7 +167,7 @@ def analyze_commit_messages(csv_filename, project_name, output_file="../final_re
 
 
 
-def analyze_react_16(file_path, project_name, output_file="../final_react_analysis.csv"):
+def analyze_react_16(file_path, project_name, output_file="final_react_analysis.csv"):
     """
     Analyze ReACT-16: Identify the number of integrators (committers who merged pull requests)
     and track their expansion over time.
@@ -207,7 +207,7 @@ def analyze_react_16(file_path, project_name, output_file="../final_react_analys
     print(f"ReACT-16 Analysis saved to {output_file}")
 
 
-def analyze_react_36(file_path, project_name, output_file="../final_react_analysis.csv"):
+def analyze_react_36(file_path, project_name, output_file="final_react_analysis.csv"):
     """
     Analyze ReACT-36: Maintain a small number of core/active developers.
     """
@@ -243,7 +243,7 @@ def analyze_react_36(file_path, project_name, output_file="../final_react_analys
     
     print(f"ReACT-36 Analysis saved to {output_file}")
 
-def analyze_react_38_with_loc(file_path, project_name, min_commits=10, min_months_active=3, min_lines_of_code=1000, output_file="../final_react_analysis.csv"):
+def analyze_react_38_with_loc(file_path, project_name, min_commits=10, min_months_active=3, min_lines_of_code=1000, output_file="final_react_analysis.csv"):
     """
     Analyze ReACT-38: Foster contributions from experienced contributors.
     """
@@ -293,24 +293,25 @@ def analyze_react_38_with_loc(file_path, project_name, min_commits=10, min_month
 
 
 
-def main():
-    project_path = '../'
-    project_name = 'seata'
-    input_csv = os.path.join(project_path, "pydrillerCSV", project_name, "seata_commit_data.csv")
-    output_csv = "../final_react_analysis.csv"
+def main(project_name):
+    # Get the current working directory as the base project path
+    project_path = os.getcwd()
+    
+    input_csv = os.path.join(project_path, "pydrillerCSV", project_name, f"{project_name}_commit_data.csv")
+    output_csv = "final_react_analysis.csv"
     react_number = "ReACT-16"
 
     analyze_react_metrics(input_csv, project_name, output_csv)
     analyze_commit_messages(input_csv, project_name, output_csv)
     analyze_file_extensions(input_csv, react_number, project_name, output_csv)
-    #analyze_file_extensions(input_csv, react_number)
-    analyze_react_16(input_csv,project_name)
-    analyze_react_36(input_csv,project_name)
-    analyze_react_38_with_loc(input_csv,project_name)
-    
-    #analyze_react_metrics(input_csv)
+    analyze_react_16(input_csv, project_name)
+    analyze_react_36(input_csv, project_name)
+    analyze_react_38_with_loc(input_csv, project_name)
 
-
-    
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) != 2:
+        print("Usage: python script.py <project_name>")
+        sys.exit(1)
+    
+    project_name = sys.argv[1]
+    main(project_name)
