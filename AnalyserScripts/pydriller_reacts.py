@@ -1,8 +1,7 @@
 import pandas as pd
 import csv
 import os
-
-project_name = 'pulsar'
+import sys
 
 def save_analysis(react_name, outcome, recommendation, output_file):
     with open(output_file, mode="a", encoding="utf-8", newline="") as csv_file:
@@ -18,9 +17,6 @@ def save_analysis(react_name, outcome, recommendation, output_file):
         })
     
     print(f"Analysis for {react_name} saved to {output_file}")
-
-df = pd.read_csv(os.path.join('..','pydrillerCSV', project_name, f"{project_name}_commit_data.csv"))
-print(df.head())
 
 # purva
 def analyze_react_63(df):
@@ -109,10 +105,24 @@ def analyze_react_78(df):
         recommendation = "Yes"
 
     return outcome, recommendation
-output_file = '../final_react_analysis.csv'
-outcome_react63, recommendation_react63 = analyze_react_63(df)
-save_analysis("ReACT-63", outcome_react63, recommendation_react63, output_file)
-outcome_react64, recommendation_react64 = analyze_react_64(df)
-save_analysis("ReACT-64", outcome_react64, recommendation_react64, output_file)
-outcome_react78, recommendation_react78 = analyze_react_78(df)
-save_analysis("ReACT-78", outcome_react78, recommendation_react78, output_file)
+
+def main(project_name):
+    # Get the current working directory as the base project path
+    project_path = os.getcwd()
+    df = pd.read_csv(os.path.join(project_path, "pydrillerCSV", project_name, f"{project_name}_commit_data.csv"))
+    print(df.head())
+    output_file = "final_react_analysis.csv"
+    outcome_react63, recommendation_react63 = analyze_react_63(df)
+    save_analysis("ReACT-63", outcome_react63, recommendation_react63, output_file)
+    outcome_react64, recommendation_react64 = analyze_react_64(df)
+    save_analysis("ReACT-64", outcome_react64, recommendation_react64, output_file)
+    outcome_react78, recommendation_react78 = analyze_react_78(df)
+    save_analysis("ReACT-78", outcome_react78, recommendation_react78, output_file)
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: python3 AnalyserScripts/pydriller_reacts.py <project_name>")
+        sys.exit(1)
+    
+    project_name = sys.argv[1]
+    main(project_name)

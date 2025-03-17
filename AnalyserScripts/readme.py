@@ -176,8 +176,8 @@ def analyze_react_102(readme_content, output_file, project_name):
 # def main(project_name):
 #     readme_file = os.path.join("github_api", project_name, "README.md")
 
-if __name__ == "__main__":
-    readme_file = os.path.join("..","github_api", project_name, "README.md")
+def main(project_name):
+    readme_file = os.path.join("github_api", project_name, "README.md")
     output_file = "final_react_analysis.csv"
     
     with open(readme_file, "r", encoding="utf-8") as file:

@@ -1,0 +1,490 @@
+PR Number,Title,State,URL,Created At,Merged At
+24081,[fix][broker] Fix broker is not able to schedule producer-creation task after failure,open,,2025-03-14T23:47:20Z,None
+24080,[fix][broker] Fix Metadata event synchronizer should not fail with bad version,open,,2025-03-14T20:02:31Z,None
+24079,[fix][broker] Fix NPE while publishing Metadata-Event with not init producer,open,,2025-03-14T19:00:22Z,None
+24077,[fix] Bring GitHub Discussions back by enabling discussions in .asf.yaml,closed,,2025-03-14T15:41:25Z,2025-03-14T15:43:01Z
+24076,[improve] PIP-404: Introduce per ledger properties,open,,2025-03-13T14:51:23Z,None
+24074,Bump golang.org/x/net from 0.33.0 to 0.36.0 in /pulsar-function-go/examples,open,,2025-03-13T01:44:03Z,None
+24073,[improve][broker]Optimize message expiration rate repeated update issues,open,,2025-03-12T09:59:09Z,None
+24072,[fix][broker] Pattern subscription doesn't work when the pattern excludes the topic domain.,closed,,2025-03-12T07:32:11Z,2025-03-14T00:16:54Z
+24071,[fix][client] PIP-409 retry/dead letter topic producer config don't take effect.,closed,,2025-03-12T07:25:18Z,2025-03-14T09:51:45Z
+24069,[improve][broker]clean up duplicate code and fix typo,open,,2025-03-11T16:11:58Z,None
+24067,[fix][broker] http metric endpoint get compaction latency stats always be 0,closed,,2025-03-10T08:33:44Z,2025-03-14T08:01:07Z
+24066,[fix][broker] Typo correction: from backlogQuotaDefaultLimitByte to backlogQuotaDefaultLimitBytes,closed,,2025-03-08T01:33:22Z,2025-03-10T16:20:44Z
+24065,[fix][monitor] Set correct content-type for metrics endpoints in Pulsar for Prometheus 3.x compatibility,closed,,2025-03-07T23:46:38Z,None
+24064,[improve][broker] Optimize ThresholdShedder with improved boundary checks and parameter reuse,closed,,2025-03-07T08:02:09Z,2025-03-13T09:59:22Z
+24063,[fix][broker]Fix failed consumption after loaded up a terminated topic,closed,,2025-03-07T03:17:22Z,2025-03-13T04:42:46Z
+24061,[fix][client] Fix building broken batched message when publishing,closed,,2025-03-06T18:21:20Z,2025-03-14T21:14:12Z
+24060,[improve][monitor] Add version=0.0.4 to /metrics content type for Prometheus 3.x compatibility,closed,,2025-03-05T17:20:28Z,2025-03-06T07:33:43Z
+24059,[fix][client] Copy eventTime to retry letter topic and DLQ messages,closed,,2025-03-05T13:21:42Z,2025-03-05T19:26:16Z
+24058,[fix][ml] Avoid NPE when getCurrentLedger() returns null,closed,,2025-03-05T12:55:34Z,None
+24056,[fix][test] Update partitioned topic subscription assertions in IncrementPartitionsTest,closed,,2025-03-05T10:18:49Z,2025-03-12T02:01:49Z
+24055,[fix] Avoid negative estimated entry count,closed,,2025-03-05T07:30:25Z,2025-03-07T04:58:34Z
+24054,[fix][ml] Corrected pulsar_storage_size metric to not multiply offloaded storage by the write quorum,closed,,2025-03-04T16:59:49Z,2025-03-14T10:39:32Z
+24050,"Fix Compilation Errors, Add Kotlin Support & Update Documentation",closed,,2025-03-04T09:59:31Z,None
+24049,[improve] Upgrade Netty to 4.1.119.Final,closed,,2025-03-04T07:41:01Z,2025-03-04T11:18:49Z
+24048,[fix][broker] Fix UnsupportedOperationException while setting subscription level dispatch rate policy,open,,2025-03-04T05:11:09Z,None
+24045,[improve][broker]Delete unnecessary calls,open,,2025-03-03T16:25:34Z,None
+24042,[fix][test] Fix flaky PrometheusMetricsTest.testBrokerMetrics,closed,,2025-03-01T19:08:15Z,2025-03-14T07:22:16Z
+24040,[fix][doc] Workaround Go Yaml issue go-yaml/yaml#789 in docker-compose example,closed,,2025-02-28T19:52:39Z,2025-03-03T19:05:58Z
+24037,[fix][broker][branch-3.0] Backport missed CompactedTopicImpl deadlock fixes #20697 and #20984 to branch 3.0,open,,2025-02-28T12:27:24Z,None
+24035,[fix][broker] fix delay queue sequence issue.,closed,,2025-02-28T07:45:22Z,2025-03-03T02:50:30Z
+24033,[cleanup][misc] Add override annotation,closed,,2025-02-27T16:20:55Z,2025-02-28T08:43:47Z
+24032,[fix][broker] Fix missing validation when setting retention policy on topic level,closed,,2025-02-27T06:14:42Z,2025-03-03T01:42:59Z
+24031,[WIP][fix][offload] Fix classloading issue when using tiered storage,open,,2025-02-26T11:38:57Z,None
+24028,[improve]  PIP-410: Introduce pending publish buffer usage metrics,open,,2025-02-26T07:15:59Z,None
+24027,[improve][broker] Clean up config changes without a PIP since the 4.0 LTS,open,,2025-02-26T06:58:48Z,None
+24025,[improve] [broker] Separate offload read and write thread pool,closed,,2025-02-25T19:19:27Z,2025-02-26T03:27:35Z
+24023,[fix][doc] fix doc related to chunk message feature.,closed,,2025-02-25T08:18:39Z,2025-02-26T07:41:27Z
+24022,[improve][pip] PIP-409: support producer configuration for retry/dead letter topic producer,closed,,2025-02-25T07:28:06Z,2025-02-28T09:00:48Z
+24020,[improve][client] PIP-409: support producer configuration for retry/dead letter topic producer,closed,,2025-02-25T03:40:05Z,2025-03-06T08:41:34Z
+24019,[fix][test]Fix flaky test V1_ProducerConsumerTest.testConcurrentConsumerReceiveWhileReconnect,closed,,2025-02-24T13:56:21Z,2025-02-25T06:48:55Z
+24015,[fix][client] diable chunk feature for retry/dead letter producer.,closed,,2025-02-24T09:02:27Z,None
+24014,[fix][broker] Fix BucketDelayedDeliveryTracker thread safety,closed,,2025-02-24T06:29:48Z,2025-02-25T06:51:19Z
+24012,[fix][broker] PIP-322 Fix issue with rate limiters where rates can exceed limits initially and consumption pauses until token balance is positive,closed,,2025-02-21T15:41:33Z,2025-02-25T09:30:49Z
+24011,[fix][test] Fix flaky test OneWayReplicatorUsingGlobalZKTest.testConfigReplicationStartAt,closed,,2025-02-21T03:57:56Z,2025-02-25T06:49:33Z
+24008,[fix][broker] Fix NPE during active consumer is disconnected,closed,,2025-02-20T07:16:04Z,2025-02-20T11:28:18Z
+24006,[fix][broker] fix broker identifying incorrect stuck topic,closed,,2025-02-20T00:31:57Z,2025-02-20T09:46:47Z
+24004,[improve][ci] Upgrade Gradle Develocity Maven Extension to 1.23.1,closed,,2025-02-19T13:36:02Z,2025-02-22T08:27:10Z
+24003,[improve][test] Upgrade Testcontainers to 1.20.4 and docker-java to 3.4.0,closed,,2025-02-19T13:29:27Z,2025-02-20T01:34:56Z
+24002,"[fix][broker] Rate-Limiter fails with a huge spike in a traffic, and publish/consume stuck for a longer time",closed,,2025-02-19T08:34:17Z,None
+24000,[fix] Used unshaded netty buffer classes in pulsar-client shading test,open,,2025-02-18T22:04:32Z,None
+23998,[fix][test] Fix flaky test MetadataStoreTest.emptyStoreTest,closed,,2025-02-17T18:29:41Z,2025-02-18T06:22:07Z
+23997,[improve][pip] PIP-408 add maxRetryRequestTimes in ClientConfigurationData and remove duplicate retry logic,open,,2025-02-17T15:20:33Z,None
+23996,[improve][meta] Simplify getting parent path in ZKMetadataStore without using java.io.File,closed,,2025-02-17T12:18:26Z,2025-02-18T07:11:26Z
+23995,[improve][meta] Stop election operations when LeaderElectionImpl gets closed,open,,2025-02-17T12:14:13Z,None
+23994,"[revert] ""[improve][ml] Do not switch thread to execute asyncAddEntry's core logic (#23940)""",closed,,2025-02-17T11:19:25Z,2025-02-17T15:48:48Z
+23992,[fix][build] Add develops for buildtools,closed,,2025-02-17T04:54:24Z,2025-02-17T06:46:45Z
+23989,[fix][client] add maxRetryRequestTimes in ClientConfigurationData and remove Duplicate retry logic,open,,2025-02-15T14:45:50Z,None
+23988,[fix][meta] Fix ephemeral handling of ZK nodes and fix MockZooKeeper ephemeral and ZK stat handling,closed,,2025-02-14T15:40:03Z,2025-02-17T16:54:43Z
+23986,[fix][test] fix flaky testNegativeAcksWithBackoff when batch enabled.,closed,,2025-02-14T09:31:41Z,2025-02-14T11:18:07Z
+23985,[fix] fix for code scanning alert no. 48: Uncontrolled data used in path expression,closed,,2025-02-14T02:54:23Z,2025-02-14T16:54:59Z
+23984,[fix][meta] Fix ephemeral Zookeeper put which creates a persistent znode,closed,,2025-02-13T21:20:10Z,2025-02-14T10:52:13Z
+23983,[improve][broker] Don't call ManagedLedger#asyncAddEntry in Netty I/O thread,open,,2025-02-13T12:21:51Z,None
+23981,[improve][proxy] Make keep-alive interval configurable in Pulsar Proxy,closed,,2025-02-13T11:02:37Z,2025-02-14T06:56:41Z
+23980,[fix][broker] Consumer stuck when delete subscription __compaction failed,open,,2025-02-13T09:29:59Z,None
+23979,[fix][io] Fix pulsar-io:pom not found,closed,,2025-02-13T09:02:08Z,2025-02-13T17:50:53Z
+23978,[improve][cli] Support additional msg metadata for V1 topic on peek message cmd,closed,,2025-02-13T08:01:50Z,2025-02-25T06:52:08Z
+23977,[fix][broker] pattern regex error in PulsarLedgerManager cause zk data notification can not execute,open,,2025-02-13T07:13:53Z,None
+23976,[fix] Potential fix for code scanning alert no. 22: HTTP response splitting,closed,,2025-02-13T05:20:30Z,2025-02-13T15:56:13Z
+23975,[fix][broker] Add expire check for replicator,closed,,2025-02-13T04:33:19Z,2025-02-28T15:20:03Z
+23974,[improve][broker] Support showing client ip address in client stats while using reverse proxy,closed,,2025-02-12T23:01:34Z,2025-03-05T06:37:12Z
+23973,[fix] Bump org.eclipse.jetty:jetty-server from 10.0.22 to 10.0.24 in /pulsar-io/solr,closed,,2025-02-12T22:39:35Z,2025-02-13T01:04:27Z
+23971,[fix][client] Fix memory leak in ClientCnx.newLookup when there's TooManyRequestsException,closed,,2025-02-12T16:25:28Z,2025-02-12T23:29:54Z
+23970,"[improve][ci] Skip ""OWASP dependency check"" when data wasn't found in cache",closed,,2025-02-12T14:31:03Z,2025-02-12T19:57:08Z
+23969,[improve][client] Update TypedMessageBuilder deliverAfter and deliverAt api comment,closed,,2025-02-12T13:13:15Z,2025-02-13T05:29:58Z
+23967,[fix][client] Fix memory leak when message size exceeds max message size and batching is enabled,closed,,2025-02-12T11:35:12Z,2025-02-12T23:33:55Z
+23966,[fix][build] Upgrade json-smart to 2.5.2,closed,,2025-02-12T09:53:45Z,2025-02-12T15:06:21Z
+23965,[fix][sec] Upgrade to Netty 4.1.118,closed,,2025-02-11T18:24:07Z,2025-02-11T20:37:09Z
+23964,[fix] Use Alpine 3.21 in base image,closed,,2025-02-11T18:13:42Z,2025-02-11T20:57:27Z
+23962,[improve][ml] Use lock-free queue in InflightReadsLimiter since there's no concurrent access ,closed,,2025-02-11T16:12:57Z,2025-02-25T11:08:33Z
+23961,[fix] Fix branch 3.0 build failure,closed,,2025-02-11T15:11:51Z,None
+23960,[fix][ml] Fix memory leaks in ManagedCursorInfo and ManagedLedgerInfo decompression and compression,closed,,2025-02-11T14:28:41Z,2025-02-11T21:39:13Z
+23959,[improve][fn] Provide a way to set Pulsar client memory limit in Pulsar Function,open,,2025-02-11T13:46:35Z,None
+23958,[fix][ml] Fix deadlock in PendingReadsManager,closed,,2025-02-11T11:30:42Z,2025-02-11T15:14:18Z
+23957,[improve][broker] Avoid PersistentReplicator.expireMessages logic compute backlog twice,closed,,2025-02-11T04:01:52Z,2025-02-11T23:30:02Z
+23956,[WIP][improve][ci] Enable Netty leak detection in CI and make leaks fail the build,open,,2025-02-10T19:59:41Z,None
+23955,[fix][ml] Fix memory leak due to duplicated RangeCache value retain operations ,closed,,2025-02-10T14:03:44Z,2025-02-10T18:17:54Z
+23954,[improve][io] Support Protobuf schema for Kafka source connector,open,,2025-02-10T00:31:59Z,None
+23951,[fix] [ml] incorrect non-durable cursor's backlog due to concurrently trimming ledger and non-durable cursor creation,closed,,2025-02-08T09:36:28Z,2025-02-11T03:03:39Z
+23950,[improve][pip] PIP-407 Add a newMessage API to create a message with a schema and transaction,closed,,2025-02-07T17:13:48Z,2025-02-28T09:17:01Z
+23947,[feat][client] Support forward proxy for the ZTS server in pulsar-client-auth-athenz,closed,,2025-02-07T10:20:09Z,2025-02-08T10:03:29Z
+23946,[improve][broker] PIP-406: Introduce metrics related to dispatch throttled events,open,,2025-02-07T09:29:08Z,None
+23945,[improve][pip] PIP-406: Introduce metrics related to dispatch throttled events,open,,2025-02-07T09:22:19Z,None
+23943,[fix] [client] call redeliver 1 msg but did 2 msgs,closed,,2025-02-07T07:00:59Z,2025-02-10T01:44:07Z
+23942,[improve][client]  PIP-407 Add newMessage with schema and transactions,open,,2025-02-06T21:31:46Z,None
+23940,[improve][ml] Do not switch thread to execute asyncAddEntry's core logic,closed,,2025-02-06T12:57:38Z,2025-02-10T03:19:33Z
+23939,[improve][broker] Avoid logging errors when there is a connection issue during subscription.,closed,,2025-02-06T10:15:03Z,2025-02-06T13:03:10Z
+23938,[improve][broker] Avoid printing log for IncompatibleSchemaException in ServerCnx,closed,,2025-02-06T10:00:10Z,2025-02-07T01:48:47Z
+23935,[improve][client] Avoid logging errors for retriable errors when creating producer,closed,,2025-02-06T04:13:13Z,2025-02-06T10:52:09Z
+23933,[improve][offload] Skip tiered-storage deployment,closed,,2025-02-06T03:56:59Z,2025-02-09T15:25:03Z
+23932,[improve][io] Allow skipping connector deployment,closed,,2025-02-06T03:35:52Z,2025-02-08T05:18:46Z
+23931,[improve] [broker] Make the estimated entry size more accurate,closed,,2025-02-05T13:56:27Z,2025-02-25T04:57:17Z
+23930,[fix][broker] Fix rate limiter token bucket and clock consistency issues causing excessive throttling and connection timeouts,closed,,2025-02-05T13:18:13Z,2025-02-08T17:01:07Z
+23929,[improve][broker] Don't print error logs for ProducerBusyException,closed,,2025-02-05T10:38:35Z,2025-02-06T02:07:16Z
+23928,[improve][broker] Do not print error logs for NotFound or Conflict errors when using the Admin API,closed,,2025-02-05T10:02:14Z,2025-02-06T09:56:57Z
+23927,[fix] [common] Fix RawMessageImpl.getProperties() failed when the message metadata contains the same key but with different values,closed,,2025-02-05T03:23:05Z,2025-03-11T12:13:06Z
+23926,[fix] [common] Fix RawMessageImpl.getProperties() failed when the message metadata contains the same key but with different values,closed,,2025-02-05T03:10:37Z,None
+23924,[fix][client] Replace String with WebTarget in authenticationStage,open,,2025-02-05T01:56:08Z,None
+23919,[fix][broker] Fix seeking by timestamp can be reset the cursor position to earliest,closed,,2025-02-02T15:18:56Z,2025-02-11T06:25:14Z
+23918,[improve][broker]Optimize InMemoryDelayedDeliveryTracker by maintaining state,open,,2025-02-02T12:47:22Z,None
+23915,[improve][broker] Refactor a private method to eliminate an unnecessary parameter,closed,,2025-01-31T08:57:10Z,2025-02-11T06:52:09Z
+23914,[fix] Initialize UrlServiceProvider before trying to use transaction coordinator,closed,,2025-01-30T22:32:37Z,2025-01-31T02:23:37Z
+23911,[fix] Avoid NPE when closing an uninitialized SameAuthParamsLookupAutoClusterFailover,closed,,2025-01-29T21:17:04Z,2025-01-30T02:28:40Z
+23909,[fix][ci] Configure Docker data-root to /mnt/docker to avoid running out of disk space,closed,,2025-01-29T14:21:52Z,2025-01-29T17:33:40Z
+23907,[improve][broker] Implementing delayed message cancellation in pulsar,open,,2025-01-29T03:58:57Z,None
+23905,[improve][client] Implement HTTP client using javax.ws.rs,open,,2025-01-28T17:28:50Z,None
+23904,[improve][broker] Refactor a private method to eliminate an unnecessary parameter,closed,,2025-01-28T09:23:04Z,None
+23903,[fix][broker Fix bug in RangeCache where different instance of the key wouldn't ever match,closed,,2025-01-28T00:31:48Z,2025-01-28T23:23:52Z
+23902,[fix][meta] Fix ephemeral Zookeeper put which creates a persistent znode,closed,,2025-01-27T20:15:00Z,None
+23901,[fix][broker] Make InflightReadsLimiter asynchronous and apply it for replay queue reads,closed,,2025-01-27T19:51:35Z,2025-01-29T20:11:57Z
+23899,[fix] Bump org.apache.solr:solr-core from 8.11.3 to 9.8.0 in /pulsar-io/solr,closed,,2025-01-27T17:23:38Z,2025-02-12T22:38:45Z
+23898,[fix][build] Use amazoncorretto:21-alpine3.20 JDK build for Alpine 3.20,closed,,2025-01-27T06:45:38Z,2025-01-27T09:07:51Z
+23896,[improve][client] PIP-405 Enhanced Dynamic Handling of Selective Consumers in MultiTopicConsumers,open,,2025-01-25T08:42:50Z,None
+23895,[improve][pip] PIP-405: Enhanced Dynamic Handling of Selective Consumers in MultiTopicConsumers,open,,2025-01-25T08:35:09Z,None
+23894,[fix][broker] Apply dispatcherMaxReadSizeBytes also for replay reads for Shared and Key_Shared subscriptions,closed,,2025-01-24T22:03:10Z,2025-01-27T06:10:54Z
+23893,[fix][test] Fix flaky DelayedDeliveryTest.testEnableTopicDelayedDelivery,closed,,2025-01-24T20:37:37Z,2025-01-28T22:17:22Z
+23892,"[improve][test] Support decorating topic, subscription, dispatcher, ManagedLedger and ManagedCursors instances in tests",closed,,2025-01-24T17:24:33Z,2025-01-25T08:59:01Z
+23888,[improve][ml]Set default value of managedLedgerPersistIndividualAckAsLongArray to true,closed,,2025-01-24T08:01:44Z,2025-01-24T11:51:50Z
+23886,[fix][client] Fix LoadManagerReport not found,closed,,2025-01-23T10:41:59Z,2025-01-24T18:44:16Z
+23884,[fix][broker] Closed topics won't be removed from the cache,closed,,2025-01-23T09:12:06Z,2025-02-06T02:14:28Z
+23883,[improve][ci] Increase Maven max heap size to 2048M and tune GCLockerRetryAllocationCount,closed,,2025-01-23T08:43:09Z,2025-01-23T11:40:04Z
+23881,[improve][fn] Set default tenant and namespace for ListFunctions cmd,closed,,2025-01-23T03:08:33Z,2025-01-24T04:11:00Z
+23878,[improve][broker] Support values up to 2^32 in ConcurrentBitmapSortedLongPairSet,closed,,2025-01-22T17:33:45Z,2025-01-23T14:02:45Z
+23876,[fix][test] Fix quiet time implementation in BrokerTestUtil.receiveMessages,closed,,2025-01-22T08:02:08Z,2025-01-23T06:48:47Z
+23875,[improve][test] Add solution to PulsarMockBookKeeper for intercepting reads,closed,,2025-01-22T07:54:01Z,2025-01-23T06:36:40Z
+23874,[fix][broker] PIP-379 Key_Shared implementation race condition causing out-of-order message delivery,closed,,2025-01-21T14:50:41Z,2025-01-23T10:21:45Z
+23871,[feat][misc] upgrade oxia java client to 0.5.0,closed,,2025-01-20T23:54:22Z,2025-01-21T02:12:04Z
+23869,[fix][broker] Fix repeatedly acquired pending reads quota,closed,,2025-01-20T14:19:15Z,2025-01-27T19:26:32Z
+23864,[improve][broker] Improve Consumer.equals performance,closed,,2025-01-18T00:36:08Z,2025-01-20T18:42:51Z
+23863,[improve] Upgrade to Netty 4.1.117.Final,closed,,2025-01-17T19:59:50Z,2025-01-20T17:39:54Z
+23862,[improve][broker] Remove spamming logs for customized managed ledger,closed,,2025-01-17T13:47:00Z,2025-01-20T14:08:08Z
+23861,[fix] Bump golang.org/x/net from 0.23.0 to 0.33.0 in /pulsar-function-go,closed,,2025-01-17T12:12:14Z,2025-02-12T01:09:51Z
+23860,[improve][fn] Implement pip 401: Support set batching configurations for Pulsar Functions&Sources,closed,,2025-01-17T09:33:20Z,2025-03-12T05:56:42Z
+23859,[fix][client] fix retry topic with exclusive mode.,closed,,2025-01-17T06:39:21Z,2025-02-18T09:59:52Z
+23858,[improve][ci] Make semantic pr title required for merging,open,,2025-01-17T03:55:05Z,None
+23857,[fix][test] Add reconsumeLater call in RetryTopicTest#testRetryTopicWithMultiTopic.,closed,,2025-01-17T03:19:45Z,2025-01-17T07:57:24Z
+23855,"[fix][broker] Revert ""[fix][broker] Cancel possible pending replay read in cancelPendingRead (#23384)""",closed,,2025-01-16T20:14:02Z,2025-01-17T06:08:45Z
+23854,[fix][broker] Fix deadlock in Key_Shared PIP-379 implementation,closed,,2025-01-15T22:10:55Z,2025-01-16T11:53:56Z
+23853,[fix][client] Orphan producer when concurrently calling producer closing and reconnection,closed,,2025-01-15T13:50:53Z,2025-01-17T06:48:46Z
+23852,[fix][test]Fix flaky test testTopicUnloadAfterSessionRebuild,closed,,2025-01-15T02:52:15Z,2025-01-16T08:40:31Z
+23851,[improve][ci] Publish build scans to develocity.apache.org,closed,,2025-01-14T21:51:14Z,2025-01-16T11:41:12Z
+23847,[fix][misc] Honor dynamic log levels in log4j2.yaml,closed,,2025-01-14T10:20:21Z,2025-01-14T14:39:15Z
+23846,[improve] Support overriding java.net.preferIPv4Stack with OPTS,closed,,2025-01-14T07:33:02Z,2025-01-14T12:38:23Z
+23844,[improve][fn]: Added logLevel to change the log level of Function/Source/Sink Pod/Process to desired Level ,open,,2025-01-13T11:34:06Z,None
+23842,[fix][broker] Continue using the next provider for http authentication if one fails,closed,,2025-01-13T04:26:49Z,2025-01-14T08:30:44Z
+23841,[fix] [broker] Fix acknowledgeCumulativeAsync block when ackReceipt is enabled,closed,,2025-01-12T07:44:45Z,2025-01-14T02:41:59Z
+23839,[improve][broker] Reduce unnecessary REPLICATED_SUBSCRIPTION_SNAPSHOT_REQUEST,closed,,2025-01-10T12:21:40Z,2025-01-13T04:06:36Z
+23837,[improve][pip] PIP-404: Introduce per ledger properties,open,,2025-01-10T04:27:54Z,None
+23833,[fix][broker] Fix possible mark delete NPE when batch index ack is enabled,closed,,2025-01-09T14:01:41Z,2025-01-14T08:58:11Z
+23832,[fix][broker] Remove blocking calls from internalGetPartitionedStats,closed,,2025-01-09T12:30:34Z,2025-01-13T02:39:02Z
+23831,[fix][misc]: ignore deleted ledger when tear down cluster,open,,2025-01-09T10:31:20Z,None
+23830,[fix][client] Client interceptors close method not called after producer/consumer/reader close,open,,2025-01-09T07:51:38Z,None
+23829,[improve][fn] Add API endpoint for function-worker for liveness check with configurable flag,open,,2025-01-09T06:19:42Z,None
+23828,[fix][test]: naming conventions,closed,,2025-01-09T02:37:19Z,None
+23826,[improve][broker][branch-3.3] Optimize PersistentTopic.getLastDispatchablePosition (#22707),closed,,2025-01-08T13:31:29Z,2025-01-08T18:15:56Z
+23824,[fix][client] Prevent retry topic and dead letter topic producer leaks when sending of message fails,closed,,2025-01-08T13:00:36Z,2025-01-09T19:10:49Z
+23823,[fix][test] Remove useless test code,closed,,2025-01-08T03:23:16Z,2025-01-08T20:05:22Z
+23822,test ci,closed,,2025-01-07T16:35:40Z,None
+23820,[fix][fn] change async function time get,closed,,2025-01-07T15:05:49Z,None
+23819,[fix] [bk] Add configuration parameters related to the maximum compaction duration to the bookkeeper.conf,open,,2025-01-07T11:07:01Z,None
+23817,[fix][broker] Remove failed OpAddEntry from pendingAddEntries,closed,,2025-01-06T15:12:17Z,2025-01-07T16:34:45Z
+23815,[fix][broker] Ensure existing subscriptions use the initial replication policy,closed,,2025-01-06T03:53:50Z,None
+23814,[Fix][client]Fix status html endpoint,closed,,2025-01-05T19:12:30Z,None
+23813,[improve] Upgrade to Netty 4.1.116.Final and io_uring to 0.0.26.Final,closed,,2025-01-05T12:02:04Z,2025-01-05T18:51:08Z
+23811,[fix][fn] Record Pulsar Function processing time properly for asynchronous functions,closed,,2025-01-04T09:51:57Z,2025-01-28T16:03:11Z
+23810,[improve][ci] Move ZkSessionExpireTest to flaky group to unblock CI,closed,,2025-01-03T18:47:51Z,2025-01-03T21:50:07Z
+23808,[improve][client] Add schema cache to improve performance,closed,,2025-01-03T16:46:14Z,None
+23806,[improve][broker] Add additional configuration items to control the type of auto-creation of retry-topic and DLQ-topic,open,,2025-01-03T10:25:49Z,None
+23804,[improve][client] PIP-393: Support configuring NegativeAckPrecisionBitCnt while building consumer.,closed,,2025-01-03T01:58:51Z,2025-01-03T09:56:33Z
+23803,[fix] [ml] fix key_shared mode delivery are order out order after a consumers reconnection,open,,2025-01-02T11:00:22Z,None
+23802,"[fix] [broker] Fix items in dispatcher.recentlyJoinedConsumers are out-of-order, which may cause a delivery stuck",closed,,2025-01-02T10:56:44Z,2025-01-03T08:11:43Z
+23801,[fix][client][branch-3.0] Fix compatibility between kerberos and tls,closed,,2025-01-02T09:35:58Z,2025-01-03T02:33:56Z
+23798,[fix][client] Fix compatibility between kerberos and tls,closed,,2024-12-31T11:53:29Z,2025-01-02T08:16:08Z
+23797,[fix][broker] Continue using the next provider for authentication if one fails,closed,,2024-12-31T09:45:13Z,2025-01-02T07:14:12Z
+23796,[fix][broker] Fix incorrect blockedConsumerOnUnackedMsgs value when maxUnackedMessagesPerConsumer is 1,closed,,2024-12-31T06:42:33Z,2025-02-14T09:56:46Z
+23795,[fix] [broker] Msg delivery is stuck due to items in the collection recentlyJoinedConsumers are out-of-order,closed,,2024-12-31T05:04:09Z,2025-01-02T07:54:35Z
+23794,[improve][client] Enhance dynamic topic subscription management in PatternMultiTopicsConsumer,open,,2024-12-30T13:24:02Z,None
+23793,[improve][pip] PIP-401: Support set batching configurations for Pulsar Functions&Sources,closed,,2024-12-30T08:39:27Z,2025-01-09T04:40:10Z
+23791,[fix][client] Cannot access message data inside ProducerInterceptor#onSendAcknowledgement,closed,,2024-12-27T10:17:36Z,2024-12-30T18:25:09Z
+23790,[improve][pip] PIP-400: Support namespace-level configuration of migratedClusterUrl in blue-green migration feature,open,,2024-12-27T10:07:59Z,None
+23789,[fix][pip] PIP-399: Fix Metric Name for Delayed Queue,closed,,2024-12-27T09:13:49Z,2025-01-13T06:14:32Z
+23788,[improve][broker] Support namespace-level configuration of migratedClusterUrl in blue-green migration feature,open,,2024-12-27T09:02:15Z,None
+23787,[Bug][pulsar-function]Pulsar Function processing time doesn't get properly recorded for asynchronous functions,closed,,2024-12-26T13:20:17Z,None
+23786,[fix][broker] topic policy deadlock block metadata thread.,closed,,2024-12-26T09:08:42Z,2024-12-30T15:57:28Z
+23785,[improve][broker] Add dedicated partition configuration for system topics to reduce resource usage,open,,2024-12-26T07:55:30Z,None
+23784,[fix][admin] Fix exception thrown in getMessageId method,closed,,2024-12-26T06:54:36Z,2025-01-03T18:04:24Z
+23782,[fix][broker] Fix pulsar.replicated.subscription checks,closed,,2024-12-26T04:43:12Z,2024-12-31T02:15:41Z
+23781,[fix][broker] Fix enableReplicatedSubscriptions,closed,,2024-12-25T09:10:58Z,2024-12-27T11:19:03Z
+23780,[improve][broker] Improve SystemTopicBasedTopicPoliciesService reader to reduce GC pressure,closed,,2024-12-25T08:50:07Z,2025-01-03T08:35:39Z
+23779,[improve][txn] Improve Reader in TransactionBuffer to reduce GC pressure,closed,,2024-12-25T08:33:21Z,2025-01-03T08:39:55Z
+23777,[Enhancement] Cache Schema instances for classes in a weak reference cache since creating an instance could be CPU intensive,open,,2024-12-24T14:13:50Z,None
+23776,[improve][ml] Optimize BlobStoreManagedLedgerOffloader.getOffloadPolicies,closed,,2024-12-24T07:17:26Z,2024-12-25T06:37:15Z
+23775,[WIP][improve][ml] Make offloader threshold config dynamic,closed,,2024-12-24T06:37:17Z,None
+23774,[improve][broker] Improve the extensibility of the TopicBundleAssignmentStrategy interface class (#23773),closed,,2024-12-24T06:07:01Z,None
+23772,[fix][ml] Topic load timeout due to ml data ledger future never finishes,closed,,2024-12-23T16:11:52Z,2024-12-25T06:14:01Z
+23770,"[improve][pip] PIP-398: Subscription replication on the broker, namespace and topic levels",open,,2024-12-23T08:01:04Z,None
+23769,[improvement][broker]Add replicate all subscription state switch on the broker side.,open,,2024-12-21T11:42:46Z,None
+23767,[fix][broker] System topic should not be migrated during blue-green cluster migration,closed,,2024-12-20T12:10:00Z,2024-12-21T13:32:33Z
+23766,[fix][admin] Fix exception loss in getMessageId method,closed,,2024-12-20T10:08:48Z,2024-12-21T11:20:57Z
+23764,[fix][broker] Fix bug causing loss of migrated information when setting other localPolicies in namespace,closed,,2024-12-20T08:19:14Z,2024-12-20T12:04:24Z
+23762,[fix] Fix issues with Pulsar Alpine docker image stability: remove glibc-compat ,closed,,2024-12-19T20:22:38Z,2024-12-21T08:41:37Z
+23761,[Fix][Client] Fix pending message not complete when closeAsync,closed,,2024-12-19T18:12:21Z,2024-12-20T11:17:14Z
+23759,[fix] [ml] Fix cursor metadata compatability issue when switching the config unackedRangesOpenCacheSetEnabled,closed,,2024-12-19T10:18:15Z,2025-01-20T01:48:53Z
+23758,[fix][doc]Correcting spelling mistakes in the pulsar-broker module,closed,,2024-12-19T09:19:26Z,None
+23757,[improve][client] Make replicateSubscriptionState nullable,closed,,2024-12-19T09:08:02Z,2024-12-20T12:58:03Z
+23756,[improve][monitor] Upgrade OTel to 1.45.0,closed,,2024-12-19T04:55:22Z,2024-12-20T09:30:38Z
+23755,[fix][broker] Fix typo in `buildMetadataForCompactedLedger`,closed,,2024-12-19T02:59:37Z,2024-12-19T08:23:34Z
+23753,[fix][client] Fix enableRetry for consumers using legacy topic naming where cluster name is included,closed,,2024-12-18T09:28:28Z,2024-12-20T12:19:16Z
+23752,[improve] Upgrade lombok to 1.18.36,closed,,2024-12-18T07:22:58Z,2024-12-18T09:17:24Z
+23751,[feat]PIP-410: Add a metric to track publish buffer usage.,open,,2024-12-18T06:52:45Z,None
+23747,[fix][test] Fix flaky KeySharedSubscriptionTest.testNoKeySendAndReceiveWithHashRangeAutoSplitStickyKeyConsumerSelector,closed,,2024-12-17T13:25:27Z,2024-12-20T11:39:05Z
+23743,[fix][sec] Upgrade golang.org/x/crypto from 0.21.0 to 0.31.0 in pulsar-function-go,closed,,2024-12-17T08:53:13Z,2024-12-17T10:39:25Z
+23738,[fix] [client] Fix memory leak when publishing encountered a corner case error,closed,,2024-12-16T12:38:56Z,2024-12-20T02:59:04Z
+23737,[fix][sec] Bump golang.org/x/crypto from 0.21.0 to 0.31.0 in /pulsar-function-go/examples,closed,,2024-12-16T11:52:42Z,None
+23734,[improve][fn] Improve closing of producers in Pulsar Functions ProducerCache invalidation,closed,,2024-12-16T10:38:04Z,2024-12-17T16:34:33Z
+23732,[fix][sec] Upgrade async-http-client to 2.12.4 to address CVE-2024-53990,closed,,2024-12-16T07:24:09Z,2024-12-16T11:51:28Z
+23731,[fix][sec] Bump async-http-client to 2.12.4 to address CVE-2024-53990,closed,,2024-12-16T02:32:20Z,None
+23730,[fix][admin] Verify is policies read only before revoke permissions on topic,closed,,2024-12-13T17:18:27Z,2024-12-17T03:38:13Z
+23725,[fix][sec] Mitigate CVE-2024-53990 by disabling AsyncHttpClient CookieStore,closed,,2024-12-12T23:14:14Z,2024-12-13T13:13:00Z
+23724,Bump org.asynchttpclient:async-http-client from 2.12.1 to 3.0.1,closed,,2024-12-12T22:22:49Z,None
+23721,"[improve] [test] Add more test for the case that client receives a SendError, which relates to the PR #23038",closed,,2024-12-12T10:31:25Z,2024-12-16T02:11:59Z
+23720,[fix] [broker] fix NPE when calculating a topic's backlogQuota,closed,,2024-12-12T10:09:15Z,2024-12-13T03:36:09Z
+23719,[fix] [broker] Fix config replicationStartAt does not work when set it to earliest,closed,,2024-12-12T08:26:01Z,2024-12-13T01:42:17Z
+23718,[fix][client] Make DeadLetterPolicy & KeySharedPolicy serializable,closed,,2024-12-12T04:15:25Z,2024-12-24T06:41:42Z
+23716,[improve][pip] PIP-397: Support topic-level migration from blue cluster to green cluster,closed,,2024-12-12T02:48:07Z,None
+23714,[improve][broker] Support topic-level migration from blue cluster to green cluster,closed,,2024-12-11T11:46:23Z,None
+23713,[fix][client] Fix wrong start message id when it's a chunked message id,closed,,2024-12-11T11:13:59Z,2024-12-13T06:38:04Z
+23712,[fix][broker] PIP-399: Fix Metric Name for Delayed Queue,closed,,2024-12-11T08:44:41Z,2025-01-14T09:40:15Z
+23709,[improve][admin] Opt-out of topic-existence check,closed,,2024-12-10T18:41:55Z,2024-12-11T12:57:48Z
+23708,[improve][fn] Improve implementation for maxPendingAsyncRequests async concurrency limit when return type is CompletableFuture<Void>,closed,,2024-12-10T17:58:54Z,2024-12-17T16:33:25Z
+23698,[improve][client] Print consumer stats log if prefetched messages are not zero,closed,,2024-12-09T22:19:21Z,2024-12-12T13:32:20Z
+23697,[fix][broker] Geo Replication lost messages or frequently fails due to Deduplication is not appropriate for Geo-Replication,closed,,2024-12-09T16:55:28Z,2025-02-21T04:30:22Z
+23695,[fix][broker] Correct the 'connected' status in topic stats of multi-partition topic for geo replication,open,,2024-12-09T07:29:41Z,None
+23693,[fix][client] Fix reader message filtering issue during blue-green cluster switch,closed,,2024-12-09T03:29:18Z,2024-12-20T12:05:09Z
+23692,[fix][broker] fix aging subscription accidentally when expiration time not arrive ,closed,,2024-12-08T17:52:34Z,None
+23691,[fix][common] TopicName: Throw IllegalArgumentException if localName is whitespace only,closed,,2024-12-08T08:45:38Z,2024-12-17T06:23:13Z
+23689,[fix][cli] Fix set-retention with >2GB size value for topic policy,closed,,2024-12-06T22:50:48Z,2024-12-07T11:11:11Z
+23688,[fix][cli] Fix set topic retention policy failed,closed,,2024-12-06T18:15:48Z,2024-12-06T22:27:00Z
+23687,[fix][doc] Refine ClientBuilder#memoryLimit and ConsumerBuilder#autoScaledReceiverQueueSizeEnabled javadoc,closed,,2024-12-06T09:04:53Z,2024-12-13T18:14:15Z
+23686,[fix][broker] Fix the retry mechanism in `MetadataCache#readModifyUpdateOrCreate`,closed,,2024-12-06T05:18:22Z,2024-12-14T06:49:11Z
+23685,[improve][io] Bump io.lettuce:lettuce-core from 5.0.2.RELEASE to 6.5.1.RELEASE in /pulsar-io/redis,closed,,2024-12-05T20:11:29Z,2024-12-06T18:14:06Z
+23684,[fix][sec] Bump commons-io version to 2.18.0,closed,,2024-12-05T18:56:16Z,2024-12-06T23:22:18Z
+23683,[fix][broker] Catch exception for entry payload interceptor processor,closed,,2024-12-05T05:16:44Z,2024-12-08T10:28:55Z
+23681,[improve][client]Add logging for message size exceeding the configured threshold before throwing exception,open,,2024-12-04T12:47:45Z,None
+23680,[fix][admin] Listen partitioned topic creation event,closed,,2024-12-04T10:07:55Z,2024-12-08T14:26:52Z
+23679,[bug][conf] Add a return carriage to the config to avoid parsing issues,closed,,2024-12-04T09:43:46Z,None
+23676,[fix][broker] Invoke custom BrokerInterceptor's `onFilter` method if it's defined,closed,,2024-12-03T14:14:11Z,2024-12-04T10:13:51Z
+23675,[fix][broker] support missing cluster level fine-granted permissions,closed,,2024-12-03T12:33:26Z,2024-12-04T02:16:21Z
+23672,[fix][ml] The readPosition is greater than the lastPosition,closed,,2024-12-03T07:38:53Z,None
+23671,[fix] [broker] Add consumer name for subscription stats,closed,,2024-12-03T06:16:30Z,2024-12-04T02:01:45Z
+23669,[improve][io] Bump io.lettuce:lettuce-core from 5.0.2.RELEASE to 6.5.0.RELEASE in /pulsar-io/redis,closed,,2024-12-02T20:03:41Z,None
+23667,[improve] Install coreutils in docker image to improve compatibility,closed,,2024-12-02T08:59:59Z,2024-12-02T15:21:32Z
+23666,[fix][test]: Flaky-test: GetPartitionMetadataMultiBrokerTest.testCompatibilityDifferentBrokersForNonPersistentTopic,closed,,2024-12-02T06:46:53Z,2025-01-03T08:42:02Z
+23665,[improve] Add comment to emphasize using `;` as separator in `metadataServiceUri`.,open,,2024-12-02T02:06:03Z,None
+23663,[feat][broker] Implement allowBrokerOperationAsync in PulsarAuthorizationProvider to avoid exception thrown,closed,,2024-11-29T14:35:23Z,2024-11-29T17:17:17Z
+23660,[fix][broker] support missing tenant level fine-granted permissions,closed,,2024-11-29T08:35:39Z,2024-11-29T14:30:16Z
+23659,[improve][pip] PIP-396: Align WindowFunction's WindowContext with BaseContext,closed,,2024-11-29T02:19:31Z,2025-03-13T01:26:57Z
+23658,[fix][admin][branch-2.10] getMessageIdByTimestamp cannot redirect,open,,2024-11-29T02:11:31Z,None
+23657,"[fix][broker] Revert ""[improve][client] Add log when can't add message to the container",closed,,2024-11-29T01:58:28Z,2024-11-29T06:00:16Z
+23656,[improve] Upgrade OpenTelemetry library to 1.44.1 version,closed,,2024-11-28T19:26:03Z,2024-11-29T09:05:29Z
+23655,"[fix][build] Fix error ""Element encoding is not allowed here"" in pom.xml",closed,,2024-11-28T19:05:05Z,2024-11-29T02:57:58Z
+23653,[improve] Upgrade oxia-java to 0.4.10 and fix closing of OxiaMetadataStore,closed,,2024-11-28T12:49:05Z,2024-11-28T16:01:17Z
+23652,[improve][log] Print ZK path if write to ZK fails due to data being too large to persist,closed,,2024-11-28T10:57:52Z,2024-12-30T02:40:37Z
+23651,[fix][client] Fix deadlock of NegativeAcksTracker,closed,,2024-11-28T08:44:40Z,2024-11-28T14:58:24Z
+23649,[improve] [proxy] PIP-395: Add Proxy configuration to support configurable response headers for http reverse-proxy,closed,,2024-11-28T01:41:16Z,2025-02-14T00:10:14Z
+23648,[improve] [pip] PIP-395: Add Proxy configuration to support configurable response headers for http reverse-proxy,closed,,2024-11-28T01:10:27Z,2025-02-14T00:09:38Z
+23647,[improve][client] Reduce unshaded dependencies and shading warnings in shaded Java client modules,closed,,2024-11-27T22:44:38Z,2024-11-29T09:17:08Z
+23646,[fix][client] Remove javax.ws.rs-api dependency from client side,closed,,2024-11-27T13:29:05Z,None
+23645,[improve][client] Replace NameUtil#generateRandomName with RandomStringUtils#randomAlphanumeric,closed,,2024-11-27T12:13:26Z,2024-11-29T02:59:20Z
+23644,[fix][client] Fixed an issue where a cert chain could not be used in TLS authentication,closed,,2024-11-27T04:18:45Z,2024-11-27T20:35:08Z
+23642,[fix][broker] fix null lookup result when brokers are starting,closed,,2024-11-26T13:02:40Z,2024-11-27T20:38:15Z
+23641,[fix][misc] Class conflict during jetcd-core-shaded shading process,closed,,2024-11-26T10:44:29Z,2024-11-26T21:09:21Z
+23640,[improve][broker] Reduce memory occupation of InMemoryRedeliveryTracker.,closed,,2024-11-26T08:44:22Z,2024-11-27T13:47:19Z
+23639,[cleanup][build] skip generating pom.xml.versionsBackup,closed,,2024-11-26T03:22:06Z,2024-11-27T07:33:32Z
+23638,[fix][ws] Implement missing http header data functions in AuthenticationDataSubscription,closed,,2024-11-26T01:56:00Z,2024-11-26T20:43:36Z
+23637,[fix][broker]: support missing broker level fine-granted permissions,closed,,2024-11-25T10:00:50Z,2024-11-29T08:30:48Z
+23636,[fix][perf] fix performanceConsumer log error throughput,closed,,2024-11-25T07:37:14Z,None
+23634,"[improve][broker] If there is a deadlock in the service, the probe should return a failure because the service may be unavailable",open,,2024-11-24T04:34:47Z,None
+23633,[improve][test] Reduce OneWayReplicatorUsingGlobalZKTest.testRemoveCluster execution time,closed,,2024-11-23T21:51:51Z,2024-11-25T15:00:06Z
+23632,[fix][client] Make protobuf-java dependency optional in java client libraries,closed,,2024-11-22T18:01:41Z,2024-11-27T22:46:06Z
+23628,[fix][fn] Align WindowContext with BaseContext,closed,,2024-11-22T08:21:09Z,2024-11-25T15:02:23Z
+23627,"[improve][broker] Skip auto-creation for topics with ""-partition-"" suffix missing a valid partition number",open,,2024-11-22T03:25:42Z,None
+23626,[improve][broker] Skip unloading when bundle throughput is zero (ExtensibleLoadManagerImpl only),closed,,2024-11-21T23:26:19Z,2024-11-22T16:49:07Z
+23624,[fix][client] fix incomingMessageSize and client memory usage is negative,closed,,2024-11-21T07:54:33Z,2024-11-22T01:51:03Z
+23621,[improve][broker] TopicStats specify serialized field name,open,,2024-11-21T06:01:58Z,None
+23620,[feat][broker] Prevent auto-creation of topics using legacy cluster-based naming scheme,closed,,2024-11-21T04:21:55Z,2025-01-02T07:16:25Z
+23619,[improve][broker] Decouple pulsar_storage_backlog_age_seconds metric with backlogQuota check,closed,,2024-11-21T03:29:33Z,2024-11-28T13:44:15Z
+23618,[fix][fn] ack messages for window function when its result is null,closed,,2024-11-21T03:01:00Z,2024-11-22T01:05:01Z
+23615,[fix][broker] Skip to persist cursor info if it failed by cursor closed,closed,,2024-11-20T16:54:25Z,2024-12-31T07:32:13Z
+23613,[improve] Improve logic for enabling Netty leak detection,closed,,2024-11-20T14:28:58Z,2024-11-21T08:13:23Z
+23612,[improve] Use single buffer for metrics when noUnsafe use,closed,,2024-11-19T10:15:23Z,2024-11-27T21:55:10Z
+23611,[improve][broker] Reduce memory occupation of the delayed message queue,closed,,2024-11-19T08:20:06Z,2024-11-22T06:10:05Z
+23610,[fix][client] Initializing client-authentication using configured auth params,closed,,2024-11-19T07:53:40Z,2024-11-26T21:20:51Z
+23609,[improve][ml] Avoid repetitive nested lock for isMessageDeleted in ManagedCursorImpl,closed,,2024-11-18T13:18:32Z,2024-11-19T16:24:46Z
+23608,[improve] [pip] PIP-394 Add two interfaces CursorMetadataSerializerProvider and CursorMetadataDeSerializerProvider to support newer or customized cursor metadata serializations,open,,2024-11-18T11:29:54Z,None
+23607,[feat][misc] Upgrade oxia version to 0.4.9,closed,,2024-11-18T10:55:07Z,2024-11-19T05:38:30Z
+23604,[fix][misc] Unable to connect an etcd metastore with recent releases due to jetc-core sharding problem,closed,,2024-11-15T14:55:15Z,2024-11-16T18:45:13Z
+23602,[fix][broker] Fix failed TokenAuthenticatedProducerConsumerTest,closed,,2024-11-15T09:05:13Z,2024-11-18T02:18:30Z
+23601,[improve][pip] PIP-393: Improve performance of Negative Acknowledgement,closed,,2024-11-15T07:53:00Z,2024-12-05T08:55:38Z
+23600,[improve][client] PIP-393: Improve performance of Negative Acknowledgement,closed,,2024-11-14T08:58:23Z,2025-01-02T17:58:56Z
+23598,[improve][test] Clarify method signatures in Bookkeeper mock client,closed,,2024-11-13T14:52:11Z,2024-11-14T10:27:11Z
+23596,[fix][sec] Upgrade to Netty 4.1.115.Final to address CVE-2024-47535,closed,,2024-11-13T08:38:51Z,2024-11-13T09:54:39Z
+23595,Bump io.netty:netty-common from 4.1.104.Final to 4.1.115.Final in /buildtools,closed,,2024-11-12T19:58:23Z,None
+23594,[fix] [broker] No longer allow creating subscription that contains slash,open,,2024-11-12T15:51:49Z,None
+23593,[fix][client] The partitionedProducer maxPendingMessages always is 0,closed,,2024-11-12T14:10:52Z,2024-11-13T10:25:11Z
+23592,[feat][pip] PIP-402: Role Anonymizer for Pulsar Logging,open,,2024-11-12T13:36:43Z,None
+23591,[improve][offload] Use filesystemURI as the storage path,closed,,2024-11-12T10:05:13Z,2024-11-18T02:09:26Z
+23590,Enabling DNS retryOnTimeout with TCP in DnsNameResolver,closed,,2024-11-12T02:24:31Z,2024-11-13T21:07:02Z
+23589,[improve][broker] Exclude system topics from namespace level publish and dispatch rate limiting,closed,,2024-11-11T15:35:33Z,2024-11-12T09:34:07Z
+23585,[improve][misc] Disable OTel by default when running the pulsar-perf tool,closed,,2024-11-11T08:50:07Z,2024-11-27T20:34:07Z
+23584,[improve][broker] PIP-392: Add configuration to enable consistent hashing to select active consumer for partitioned topic,closed,,2024-11-11T08:36:13Z,2024-11-21T02:59:56Z
+23583,[improve][pip] PIP-392: Enable consistent hashing to select active consumer in partitioned topic for failover subscription,closed,,2024-11-11T08:29:11Z,2024-11-20T13:00:32Z
+23582,[improve] [broker] replace HashMap with inner implementation ConcurrentLongLongPairHashMap in Negative Ack Tracker.,closed,,2024-11-11T08:15:12Z,2024-11-13T09:51:55Z
+23581,[fix][sec] Upgrade Zookeeper to 3.9.3 to address CVE-2024-51504,closed,,2024-11-10T23:00:41Z,2024-11-12T03:09:14Z
+23580,[improve][broker][branch-3.3] re-elect the channel owner if no channel owner is found (#23516),closed,,2024-11-09T01:07:28Z,2024-11-12T17:32:27Z
+23579,[fix][broker] Broker is failing to create non-durable sub if topic is fenced,closed,,2024-11-09T01:00:19Z,2024-11-11T20:26:06Z
+23578,[fix][client] fix the beforeConsume() method earlier hit with message listener,closed,,2024-11-07T19:45:41Z,2024-11-08T02:59:06Z
+23577,[fix][client] Fix DLQ producer name conflicts when there are same name consumers,closed,,2024-11-07T12:31:57Z,2024-11-25T02:39:29Z
+23576,[improve][ml] Optimization method getNumberOfEntries,open,,2024-11-07T10:19:51Z,None
+23575,[improve][ci] Fix github CI,closed,,2024-11-07T07:44:44Z,None
+23568,[improve][consumer] Optimizing Exception Handling and Logging in `MultiTopicsConsumerImpl`,open,,2024-11-06T13:24:47Z,None
+23567,[improve][pip] PIP-391: Enable batch index ACK by default,closed,,2024-11-06T12:39:52Z,2024-11-14T04:40:53Z
+23566,[fix][test]Flaky-test: SchemaServiceTest.testSchemaRegistryMetrics,closed,,2024-11-06T08:30:52Z,2024-11-06T11:41:32Z
+23565,[improve][pip] PIP-390 Improve the reusability of Pulsar test code and best practice for unit and integration tests for Pulsar,open,,2024-11-05T22:31:47Z,None
+23564,Try to reproduce issue with nondurable consumers impacting topic migr…,closed,,2024-11-05T22:14:56Z,None
+23563,[improve][admin] Print error log if handle http response fails,closed,,2024-11-05T09:50:27Z,2024-11-06T01:37:22Z
+23562,"[improve][broker]Restrict the creation of topics with ""-partition--x""",closed,,2024-11-05T08:33:28Z,None
+23561,[improve][broker] Support cleanup `replication cluster` and `allowed cluster` when cluster metadata teardown,closed,,2024-11-05T06:17:07Z,2024-11-12T08:59:47Z
+23560,[fix][client] Fix race-condition causing doReconsumeLater to hang when creating retryLetterProducer has failed,closed,,2024-11-05T03:01:21Z,2024-11-29T14:56:03Z
+23556,[fix] [admin] Fix lookup get a null result if uses proxy,closed,,2024-11-04T12:09:46Z,2024-11-05T08:36:28Z
+23552,[fix][test] Fix DeadLetterTopicTest.testDeadLetterTopicWithInitialSubscriptionAndMultiConsumers,closed,,2024-11-04T11:11:17Z,2024-11-06T12:56:57Z
+23551,[fix][txn] fix concurrent error cause txn stuck in TransactionBufferHandlerImpl#endTxn,open,,2024-11-04T08:33:27Z,None
+23549,[improve][broker] PIP-380: Support-setting-up-specific-namespaces-to-skipping-the-load-shedding,open,,2024-11-04T07:38:31Z,None
+23548,[fix][broker] Increase readBuffer size for bookkeeper.DLOutputStream,closed,,2024-11-04T07:14:45Z,2024-11-05T00:19:23Z
+23546,[fix][test] Fix SimpleProducerConsumerTest.testMultiTopicsConsumerImplPauseForManualSubscription,closed,,2024-11-03T11:12:09Z,2024-11-06T03:24:08Z
+23545,[fix][client] Add logging when lib disabled sni even after passing proxy-url,closed,,2024-11-02T00:04:20Z,2024-11-06T15:12:16Z
+23544,[fix][broker] fix logging with correct error message while loading the topic,closed,,2024-11-01T23:42:31Z,2024-11-05T20:40:16Z
+23540,[improve][test] Disable OTel autoconfigured exporters in tests,closed,,2024-11-01T14:40:47Z,2024-11-02T09:12:55Z
+23538,[improve][io] Support update subscription position for sink connector,closed,,2024-11-01T08:09:46Z,2024-11-05T03:40:39Z
+23536,[improve][test] Split tests module ,open,,2024-11-01T01:12:24Z,None
+23535,[fix][broker] Fix print cluster migration state response,closed,,2024-10-31T22:32:16Z,2024-11-01T20:16:30Z
+23534,[fix][broker] Fix Broker migration NPE while broker tls url not configured,closed,,2024-10-31T22:23:03Z,2024-11-01T10:47:17Z
+23532,[fix][sec] Replace bcprov-jdk15on dependency with bcprov-jdk18-on,closed,,2024-10-30T16:02:51Z,2024-10-31T04:22:20Z
+23531,[fix][test] Fix SimpleProducerConsumerTest.testMultiTopicsConsumerImplPauseForManualSubscription ,closed,,2024-10-30T13:56:12Z,None
+23530,[fix][broker] Fix currently client retries until operation timeout if the topic does not exist,closed,,2024-10-30T09:09:48Z,2024-11-06T09:01:34Z
+23527,[improve][build] Use apache@33 as parent pom,closed,,2024-10-29T10:03:42Z,None
+23526,[improve][pip] PIP-389: Add Producer config compressMinMsgBodySize to improve compression performance,closed,,2024-10-29T09:09:49Z,2024-11-28T11:33:21Z
+23525,[improve][client][PIP-389] Add a producer config to improve compression performance,closed,,2024-10-29T08:34:33Z,2025-02-17T02:16:49Z
+23524,[fix][broker] Fix reading entries failed due to max in-flight reading,closed,,2024-10-28T13:39:38Z,None
+23523,[fix][broker] Correct the 'connected' status in topic stats of multi-partition topic for geo replication,closed,,2024-10-28T09:49:23Z,None
+23522,[fix] [broker] Fix race-condition causing repeated delete topic,closed,,2024-10-28T08:47:50Z,2024-10-29T08:01:58Z
+23521,[fix][broker] Correct the 'connected' status in topic stats of multi-partition topic for geo replication,closed,,2024-10-28T08:19:41Z,None
+23520,[improve][broker] Make cluster metadata teardown command support metadata config path,closed,,2024-10-28T01:43:21Z,2024-10-29T09:44:12Z
+23518,[fix][test] Fix ManagedCursorTest.testForceCursorRecovery,closed,,2024-10-27T13:54:14Z,2024-11-05T10:16:55Z
+23517,[fix][broker][branch-3.3] Fix namespace unload might be blocked too long with extensible load manager (#23433),closed,,2024-10-25T23:40:58Z,2024-10-28T15:25:41Z
+23516,[improve][broker] re-elect the channel owner if no channel owner is found,closed,,2024-10-25T21:13:04Z,2024-10-28T17:56:58Z
+23515,[fix][broker] Fix ownership loss,closed,,2024-10-25T18:23:41Z,2024-11-07T03:49:28Z
+23510,[fix][broker][branch-3.3] timeout when broker registry hangs and monitor broker registry (ExtensibleLoadManagerImpl only) (#23382),closed,,2024-10-23T22:13:04Z,2024-10-25T04:28:23Z
+23508,[fix][client] Fix the javadoc for startMessageIdInclusive,closed,,2024-10-23T14:58:50Z,2024-10-30T14:15:00Z
+23507,[fix][broker][branch-3.3] Fix the broker registering might be blocked for long time (#23371),closed,,2024-10-23T12:47:38Z,2024-10-23T18:06:15Z
+23502,[fix][client] Fix Reader.hasMessageAvailable return wrong value after seeking by timestamp with startMessageIdInclusive,closed,,2024-10-22T15:40:09Z,2024-10-24T09:34:31Z
+23500,feat(authz): support tenants related granularity operation,closed,,2024-10-22T14:51:09Z,None
+23499,[fix][client] Fix producer/consumer stop to reconnect or Pub/Sub due to IO thread race-condition ,closed,,2024-10-22T14:15:35Z,2024-10-23T11:04:34Z
+23497,[fix][standalone] correctly delete bookie registration znode,closed,,2024-10-22T04:13:39Z,2024-10-25T03:24:57Z
+23496,[fix][broker][branch-3.3] Fix unloadNamespaceBundlesGracefully can be stuck with extensible load manager  (#23349),closed,,2024-10-22T03:40:45Z,2024-10-23T11:25:22Z
+23495,[fix][broker] Fix consumer receive individual acknowledged messages from compacted topic after reconnection,open,,2024-10-21T15:48:14Z,None
+23492,[fix][test] Fix running ClusterMetadataSetupTest in IDE,closed,,2024-10-21T13:16:00Z,2024-10-21T20:36:57Z
+23489,[fix] [proxy] Fix pattern consumer does not work when using Proxy,closed,,2024-10-21T08:08:15Z,2024-10-21T12:32:35Z
+23488,[fix][broker] Don't allow creating a non-persistent partitioned topic with '-partition-' in name,open,,2024-10-21T08:05:35Z,None
+23487,[fix][broker] unsynchronize TableViewLoadDataStoreImpl,open,,2024-10-20T20:16:09Z,None
+23486,[fix][test] Prevent OOM in test by not spying invocations in SimpleProducerConsumerTest,closed,,2024-10-19T19:48:55Z,2024-10-21T03:08:46Z
+23484,[improve][monitor] Upgrade OTel to 1.41.0,closed,,2024-10-18T16:28:28Z,2024-10-18T18:24:25Z
+23483,[fix][test] Fix memory leak via OTel shutdown hooks in tests,closed,,2024-10-18T15:57:00Z,2024-10-18T18:24:07Z
+23481,[improve][io] Upgrade Spring version to 6.1.14 in IO Connectors,closed,,2024-10-18T11:07:25Z,2024-10-18T19:21:18Z
+23479,[feat][monitor] Add offloader stats grafana dashboard,closed,,2024-10-17T12:13:53Z,2024-10-18T06:47:51Z
+23478,[fix][ci] Temporarily move OneWayReplicatorTestBase tests to flaky group to unblock CI,closed,,2024-10-17T12:01:27Z,2024-10-17T14:08:56Z
+23473,[improve][test] Added message properties tests for batch and non-batch messages,closed,,2024-10-17T05:00:30Z,2024-10-18T11:31:48Z
+23471,[feat][meta] Bump oxia java version from 0.4.5 to 0.4.7,closed,,2024-10-17T04:09:11Z,2024-10-17T12:44:00Z
+23470,[fix][ml] Fix races in ledger initialization timeout handling,open,,2024-10-16T19:28:27Z,None
+23468,[fix][client] Prevent embedding protobuf-java class files in pulsar-client-admin and pulsar-client-all,closed,,2024-10-16T09:42:54Z,2024-10-17T18:07:38Z
+23465,[improve][build] Upgrade os-maven-plugin to support RISC-V 64,closed,,2024-10-16T07:22:21Z,2024-10-16T16:23:58Z
+23464,[improve][ci] Prevent git force push to more recent maintenance branches,closed,,2024-10-16T03:59:10Z,2024-10-16T05:15:54Z
+23463,[fix][sql][branch-3.0] Fix LICENSE,closed,,2024-10-16T03:37:23Z,2024-10-16T05:15:17Z
+23462,[improve] [pip] PIP-387: Modify interface TopicCompactionService to support cancelling an in-progress compaction task,open,,2024-10-15T17:46:59Z,None
+23461,[fix][client][branch-3.0] Use dedicated executor for requests in BinaryProtoLookupService (#23378),closed,,2024-10-15T16:20:30Z,2024-10-16T07:26:37Z
+23459,[improve][io] Upgrade Spring version to 6.1.13 in IO Connectors,closed,,2024-10-15T04:46:51Z,2024-10-15T13:08:22Z
+23458,[fix][broker] Do not record as a topic load failure for the requested broker is not the owner,closed,,2024-10-14T23:43:58Z,None
+23456,[fix][test] Address flaky GetPartitionMetadataMultiBrokerTest,closed,,2024-10-14T08:39:46Z,2024-10-14T11:09:25Z
+23452,[fix][client] Fix the javadoc for ConsumerBuilder.isAckReceiptEnabled,closed,,2024-10-14T07:45:59Z,2024-10-14T10:19:19Z
+23450,[improve][build] Drop deprecated pulsar-client-1x and pulsar-client-2x-shaded modules,closed,,2024-10-13T18:29:23Z,2024-10-14T04:38:58Z
+23449,[fix][broker] Key_Shared subscription: Reject consumers with incompatible policy,closed,,2024-10-13T12:59:25Z,2024-10-21T21:32:31Z
+23448,[fix][build] Add basic support for vscode-java and Eclipse IDE,closed,,2024-10-12T18:53:08Z,2024-10-14T09:03:57Z
+23447,[improve][broker][PIP-379] Improve hash collision handling by restoring consumer when other leaves,closed,,2024-10-12T15:45:03Z,2024-10-14T06:52:31Z
+23446,[improve][cli] Add compactor type option for compaction tool,closed,,2024-10-12T13:35:23Z,2024-10-13T17:09:02Z
+23442,[fix][build] Set project version to 4.1.0-SNAPSHOT,closed,,2024-10-11T15:19:45Z,2024-10-14T16:54:55Z
+23441,[improve][broker][PIP-379] Don't replace a consumer when there's a collision,closed,,2024-10-11T15:07:37Z,2024-10-11T17:54:52Z
+23440,[fix][build] Remove duplicate dependencies in pom.xml,closed,,2024-10-11T14:39:49Z,2024-10-11T16:36:26Z
+23438,[fix][broker] normalize path,closed,,2024-10-11T09:50:31Z,2024-10-11T15:42:39Z
+23437,[fix][test] Fix flaky test ManagedLedgerTest.testDeleteCurrentLedgerWhenItIsClosed,closed,,2024-10-11T09:17:00Z,2024-10-13T14:56:56Z
+23434,[improve][broker] Add log to track issue when `handleGetTopicsOfNamespace`,closed,,2024-10-10T13:35:25Z,2024-10-14T11:19:05Z
+23433,[fix][broker] Fix namespace unload might be blocked too long with extensible load manager,closed,,2024-10-10T10:59:24Z,2024-10-10T16:14:27Z
+23431,[fix][ci] Pin aquasecurity/trivy-action@0.26.0 since master is broken,closed,,2024-10-10T04:50:12Z,2024-10-10T06:37:05Z
+23430,[improve][client] Increase default Java client connectionMaxIdleSeconds to 60 seconds,closed,,2024-10-10T04:23:29Z,2024-10-10T10:18:44Z
+23429,"[improve][broker][PIP-379] Add observability stats for ""draining hashes""",closed,,2024-10-10T03:37:06Z,2024-10-10T09:46:43Z
+23428,[fix][broker] Allow broker to handle non-recoverable schema error only if SchemaLedgerForceRecovery flag is enabled,closed,,2024-10-09T20:13:57Z,2024-10-10T19:30:16Z
+23427,[improve][pip] PIP-386: Add resetIncludeHead in CommandSubscribe for startMessageIdInclusive implementation,open,,2024-10-09T13:02:08Z,None
+23426,[fix][ml][PIP-327] fix recover from ledger when ledgerForceRecovery is true,closed,,2024-10-09T08:47:45Z,2024-10-09T14:17:27Z
+23424,[improve][broker] PIP-379: Enable the use of the classic implementation of Key_Shared / Shared with feature flag,closed,,2024-10-09T04:15:22Z,2024-10-09T05:38:14Z
+23423,[improve][broker] PIP-379: Snapshot hash range assignments only in AUTO_SPLIT ordered mode,closed,,2024-10-08T22:11:28Z,2024-10-08T23:34:21Z
+23419,[fix][sql][branch-3.0] Fix long decimal compatibility in Trino 368.,closed,,2024-10-08T13:48:16Z,2024-10-08T17:32:23Z
+23418,[fix][ml] Remove unnecessary return in ManagedLedgerImpl,closed,,2024-10-08T11:46:02Z,2024-10-08T18:52:47Z
+23415,[fix][broker] Fix typos in pulsar-broker and tiered-storage.,closed,,2024-10-08T09:44:55Z,2024-10-09T04:29:14Z
+23414,[improve][ci] Move some flaky ExtensibleLoadManager tests to flaky group until they are fixed,closed,,2024-10-08T09:44:51Z,2024-10-08T12:40:38Z
+23411,"[fix][sec] Drop hdfs2 support, Upgrade hadoop3 to 3.4.0 and dnsjava to 3.6.2 to address CVE-2024-25638",closed,,2024-10-08T08:42:50Z,2024-10-11T16:22:35Z
+23410,[improve][build] Update maven-wrapper (mvnw) to recent stable version 3.3.2,closed,,2024-10-08T07:55:10Z,2024-10-08T10:28:16Z
+23407,[improve][functions]Adding boolean in contextImpl.java to check partitioned topic present or not.,open,,2024-10-07T17:44:45Z,None
+23405,[improve][misc] Upgrade Jetty to 9.4.56.v20240826,closed,,2024-10-07T06:48:41Z,2024-10-07T12:44:47Z
+23401,[fix][client] Add more info while throwing reader creation exception,closed,,2024-10-04T19:10:55Z,2024-10-04T23:09:48Z
+23399,[fix][broker] Fix delivery-test with unnecessary invocation-count,closed,,2024-10-04T18:13:10Z,2024-10-04T23:10:00Z
+23398,[improve][pip] PIP-385 Add rate limit semantics to pulsar protocol and Java Client,open,,2024-10-04T13:41:40Z,None
+23397,[improve][ci] Continue Pulsar CI build even when Trivy scanner fails,closed,,2024-10-04T13:15:44Z,2024-10-04T15:14:43Z
+23395,[fix][broker] Fix Broker was failing to create producer with broken schema ledger,closed,,2024-10-03T23:43:03Z,2024-10-04T17:51:46Z
+23394,[fix][sec] Upgrade Avro to 1.11.4 to address CVE-2024-47561,closed,,2024-10-03T20:40:05Z,2024-10-03T23:15:47Z
+23393,[fix] Bump commons-io:commons-io from 2.8.0 to 2.14.0,closed,,2024-10-03T18:50:39Z,2024-10-03T23:12:06Z
+23390,[improve][broker] Add error logs and retry if the broker failed to register itself for metadata node deletion,closed,,2024-10-02T11:03:29Z,None
+23387,[improve][pip] Improve PIP process and voting timeline,closed,,2024-10-01T23:39:37Z,2024-10-02T00:03:52Z
+23386,[improve][broker/proxy] Optionally prevent role/originalPrincipal logging,open,,2024-10-01T19:48:59Z,None
+23384,[fix][broker] Cancel possible pending replay read in cancelPendingRead,closed,,2024-10-01T08:43:33Z,2024-10-01T19:54:32Z
+23382,[fix][broker] timeout when broker registry hangs and monitor broker registry (ExtensibleLoadManagerImpl only),closed,,2024-10-01T02:31:47Z,2024-10-03T19:50:11Z
+23381,[improve][broker] check system topic is used before configuring system topic (ExtensibleLoadManagerImpl only),closed,,2024-09-30T22:46:54Z,2024-10-01T01:45:23Z
+23380,[improve][client]: add --streaming option to topics partitioned-stats-internal,open,,2024-09-30T16:40:02Z,None
+23378,[fix][client] Use dedicated executor for requests in BinaryProtoLookupService,closed,,2024-09-30T13:46:16Z,2024-10-15T13:41:27Z
+23377,[improve] Upgrade Pulsar Python client in docker image to 3.5.0,closed,,2024-09-30T10:57:07Z,2024-09-30T14:10:15Z
+23376,[fix] EXPERIMENT: Switch to use minideb base image to fix glibc compatibility issues,closed,,2024-09-30T10:51:57Z,None
+23375,[improve] Configure Rocksdb to use musl libc flavor of the native library,closed,,2024-09-30T06:08:36Z,2024-10-02T03:46:52Z
+23374,[fix] Remove gcompat from the Alpine based image since real glibc is installed,closed,,2024-09-30T05:46:49Z,None
+23373,[improve][ci] Switch to Java 21 as default JVM version for CI,closed,,2024-09-29T16:57:27Z,2024-09-30T04:09:04Z
+23372,[improve][broker] PIP-383: Support granting/revoking permissions for multiple topics,closed,,2024-09-29T11:21:24Z,2024-10-10T10:37:27Z
+23371,[fix][broker] Fix the broker registering might be blocked for long time,closed,,2024-09-29T07:55:54Z,2024-09-30T06:20:33Z
+23370,"[fix][cli] Remove deprecated ""-client"" JVM arg",closed,,2024-09-29T07:54:49Z,2024-09-29T11:16:55Z
+23369,[fix][test] Fix ReplicatorRateLimiterTest,closed,,2024-09-29T03:47:21Z,2024-09-29T07:13:38Z
+23368,[fix][ml] Managed ledger should recover after open ledger failed,closed,,2024-09-29T01:31:21Z,2024-09-29T03:16:33Z
+23367,[fix][build] Disable flaky test BrokerRegistryIntegrationTest,closed,,2024-09-28T14:22:34Z,2024-09-28T17:10:54Z
+23366,[fix] EXPERIMENT: Switch docker base image to avoid mixing musl & glibc libraries at runtime,closed,,2024-09-28T14:16:51Z,None
+23364,[fix][misc] Log Conscrypt security provider initialization warnings at debug level,closed,,2024-09-28T10:55:45Z,2024-09-29T03:28:06Z
+23363,[improve] PIP-384: ManagedLedger interface decoupling,closed,,2024-09-27T18:06:16Z,2024-10-07T15:37:55Z
+23362,[improve] Install openssl in the docker image to fix compatibility with Apache Pulsar Helm chart,closed,,2024-09-27T16:16:40Z,2024-09-29T17:09:54Z
+23361,[fix][alpine] thread stack size,closed,,2024-09-27T15:08:15Z,None
+23360,[fix] [broker] topics failed to delete after remove cluster from replicated clusters set and caused OOM,closed,,2024-09-27T09:15:02Z,2024-10-14T04:50:02Z
+23359,[fix][broker] Fix the broker registery cannot recover from the metadata node deletion,closed,,2024-09-26T17:58:23Z,2024-09-27T11:49:02Z
+23358,[fix][sec][branch-3.3] Upgrade protobuf-java to 3.25.5 (#23356),closed,,2024-09-26T16:21:08Z,2024-10-03T15:42:54Z
+23357,[fix][sec][branch-3.0] Upgrade protobuf-java to 3.25.5 (#23356),closed,,2024-09-26T16:17:45Z,2024-10-03T15:43:11Z
+23356,[fix][sec] Upgrade protobuf-java to 3.25.5,closed,,2024-09-26T15:01:30Z,2024-10-03T15:42:35Z
+23355,[improve][PIP] PIP-383: Support granting/revoking permissions for multiple topics,closed,,2024-09-26T14:00:32Z,2024-10-08T11:22:31Z
+23354,[improve][schema]Improve the getSchema() method in SchemaRegistryServiceImpl.java ,open,,2024-09-26T06:49:43Z,None
+23353,[fix] [broker] Fix incorrect stat sub.msgBacklogNoDelayed if enabled delayedDeliveryFixedDelayDetectionLookahead,open,,2024-09-26T05:28:25Z,None
+23352,[improve][broker] PIP-379: Key_Shared Draining Hashes for Improved Message Ordering,closed,,2024-09-25T16:34:56Z,2024-10-08T14:03:13Z
+23351,[improve] [pip] PIP-382: Add a label named reason for topic_load_failed_total,open,,2024-09-25T16:08:54Z,None
+23349,[fix][broker] Fix unloadNamespaceBundlesGracefully can be stuck with extensible load manager ,closed,,2024-09-25T05:16:45Z,2024-09-27T09:33:29Z
+23347,[fix][cli] Fix Pulsar-Client CLI to print metadata of message including encryption metadata,closed,,2024-09-24T22:53:56Z,2024-09-25T22:30:55Z
+23346,[fix][cli] Fix Pulsar-Client to allow consume encrypted messages with appropriate crypto-failure-action,closed,,2024-09-24T22:51:52Z,2024-09-25T21:01:08Z
+23345,[fix][client] Fix failover consumer-listener stuck with cumulative ack and epoch time,closed,,2024-09-24T22:40:51Z,2024-10-02T17:12:49Z
+23344,[improve][schema] Improve Incompatible Schema Exception error message in ServerCnx.java,closed,,2024-09-24T11:03:29Z,2024-09-25T14:45:13Z
+23343,[fix][broker] Avoid introducing delay when there are delayed messages or marker messages,closed,,2024-09-24T10:38:35Z,2024-09-25T05:28:21Z
+23342,[fix][build] Remove io.grpc.netty relocation,closed,,2024-09-24T10:29:09Z,None
+23340,[fix] Key_Shared mode consumption latency when low traffic,closed,,2024-09-23T16:27:55Z,2024-09-23T19:50:01Z
+23338,[fix][sec] Upgrade vertx to 4.5.10 to address CVE-2024-8391,closed,,2024-09-23T11:33:10Z,2024-09-23T13:37:33Z
+23337,[fix][build] Fix problem where git.commit.id.abbrev is missing in image tagging,closed,,2024-09-23T08:58:05Z,2024-09-23T12:00:53Z
+23336,[fix][client] Fix ArrayIndexOutOfBoundsException when using SameAuthParamsLookupAutoClusterFailover,open,,2024-09-23T08:31:20Z,None
+23335,[improve][build] Use eclipse-temurin:17 image instead of apt installation,closed,,2024-09-23T08:11:51Z,None
+23334,[Draft] [fix] [broker] Do not record a bundle-unloading into the topic load failed metrics,open,,2024-09-23T08:10:33Z,None
+23331,[fix][broker] fix broker may lost rack information,closed,,2024-09-23T03:51:48Z,2025-02-14T23:30:56Z
+23329,[improve][broker] Remove ConcurrentOpenHashMap and ConcurrentOpenHashSet,closed,,2024-09-21T12:14:35Z,2024-09-23T02:44:48Z
+23328,[improve][pip] PIP-381: Handle large PositionInfo state,closed,,2024-09-20T23:33:54Z,2024-10-01T22:37:43Z
+23327,[fix][broker] Fix out-of-order issues with ConsistentHashingStickyKeyConsumerSelector,closed,,2024-09-20T10:16:40Z,2024-10-02T08:13:36Z
+23326,[fix][broker] Fix topic policies cannot be queried with extensible load manager,closed,,2024-09-20T06:52:26Z,2024-09-20T10:40:54Z
+23322,[improve][broker] Replace ConcurrentOpenHashMap with ConcurrentHashMap in Topic classes,closed,,2024-09-19T12:28:06Z,2024-09-21T11:48:21Z
+23320,[improve][broker] Replace ConcurrentOpenHashMap with ConcurrentHashMap in BrokerService,closed,,2024-09-19T10:04:26Z,2024-09-21T07:02:24Z
+23319,[improve][broker] PIP-376: Make topic policies service pluggable,closed,,2024-09-19T09:07:27Z,2024-09-19T14:33:33Z
+23318,[fix][io] Upgrade mssql server docker tag in DebeziumMsSqlContainer,closed,,2024-09-19T04:11:24Z,2024-09-19T06:45:46Z

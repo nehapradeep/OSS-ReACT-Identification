@@ -813,6 +813,13 @@ flink,ReACT-9,Does not meet criteria (Keyword 'how to request for access' not fo
 flink,ReACT-19,Does not meet criteria (Keyword 'flag newcomers' not found),No
 flink,ReACT-33,Does not meet criteria (Keyword 'contribution guidelines' not found),No
 flink,ReACT-84,Does not meet criteria (Keyword 'onboarding support' not found),No
+pulsar,ReACT-14 Merge pull requests promptly.,Meets criteria (Avg merge time: 137.70 hours),Yes
+pulsar,ReACT-62 Encourage developers to start contributing to the project early.,Does not meet criteria (First commit date 2024-09-18 14:14:49+05:30 does not match repo creation month/year or insufficient contributions in first 2 months: 0),No
+pulsar,ReACT-81 Keep knowledge up to date and findable.,Meets criteria (Last README update: 2025-02-25 11:30:49+02:00),Yes
+pulsar,ReACT-9,Does not meet criteria (Keyword 'how to request for access' not found),No
+pulsar,ReACT-19,Does not meet criteria (Keyword 'flag newcomers' not found),No
+pulsar,ReACT-33,Does not meet criteria (Keyword 'contribution guidelines' not found),No
+pulsar,ReACT-84,Does not meet criteria (Keyword 'onboarding support' not found),No
 pulsar,ReACT-11 Keep the project small and simple.,Meets criteria,Yes
 pulsar,ReACT-26 Conduct unit tests.,Meets criteria,Yes
 pulsar,ReACT-32 Promote code transparency. Keep the code as simple as possible,"Does not meet criteria (Comment ratio is 0.04, which is below the recommended threshold of 15%.)",No
@@ -823,6 +830,46 @@ pulsar,"ReACT-65: Maintain the current project platform; refrain from altering i
 pulsar,ReACT-16,"Total Integrators: 0, Total Merge Commits: 0, Earliest Merge: No merge commits found, Latest Merge: No merge commits found",No
 pulsar,ReACT-36,"Meets criteria (Active developers: 14, Threshold: 50)",Yes
 pulsar,ReACT-38,"Meets criteria (Experienced contributors: 11, Threshold: 5)",Yes
+pulsar,ReACT-100,Processes and practices are documented within the project.,Yes
+pulsar,ReACT-93,A Mailing List is available for communication.,Yes
+pulsar,ReACT-77,Mailing list is mentioned and encouraged.,Yes
+pulsar,ReACT-60,GitHub stars are not present.,No
+pulsar,ReACT-53,The project is incubated by the Apache Software Foundation.,Yes
+pulsar,ReACT-20,The project communicates through various channels: Twitter, Mailing List.,Yes
+pulsar,ReACT-97,The project is licensed under the Apache License.,Yes
+pulsar,ReACT-98,Clear build and run instructions are provided.,Yes
+pulsar,ReACT-95,Contribution guidelines are not mentioned.,No
+pulsar,ReACT-102,Security considerations are documented.,Yes
 pulsar,ReACT-63,Average modified-to-added lines ratio: 0.01. Average number of modified files per commit: 24.12. Average number of new files added: 1638.00. Total number of commits analyzed: 1686.,Yes
 pulsar,ReACT-64,Number of code files modified: 11. Number of documentation files modified: 0. Code-to-Documentation file ratio: inf.,No
 pulsar,ReACT-78,Total number of commits analyzed: 1686. Number of commits involving code comment updates: 1. Percentage of commits with comment updates: 0.06%. ,No
+airflow,ReACT-14 Merge pull requests promptly.,Meets criteria (Avg merge time: 68.94 hours),Yes
+airflow,ReACT-62 Encourage developers to start contributing to the project early.,Does not meet criteria (First commit date 2024-09-17 21:33:13-07:00 does not match repo creation month/year or insufficient contributions in first 2 months: 0),No
+airflow,ReACT-81 Keep knowledge up to date and findable.,Meets criteria (Last README update: 2025-03-15 07:14:55+00:00),Yes
+airflow,ReACT-9,Does not meet criteria (Keyword 'how to request for access' not found),No
+airflow,ReACT-19,Does not meet criteria (Keyword 'flag newcomers' not found),No
+airflow,ReACT-33,Does not meet criteria (Keyword 'contribution guidelines' not found),No
+airflow,ReACT-84,Does not meet criteria (Keyword 'onboarding support' not found),No
+airflow,ReACT-11 Keep the project small and simple.,Meets criteria,Yes
+airflow,ReACT-26 Conduct unit tests.,Meets criteria,Yes
+airflow,ReACT-32 Promote code transparency. Keep the code as simple as possible,"Does not meet criteria (Comment ratio is 0.07, which is below the recommended threshold of 15%.)",No
+airflow,ReACT-82 Have and enforce a code of conduct,Does not meet criteria (No code of conduct file found in the project.),No
+airflow,ReACT-66 Perform adequate testing before integrating a feature,Meets criteria,Yes
+airflow,ReACT-3: Utilize a common programming language,py: 59.88%; rst: 12.86%; yaml: 5.63%; tsx: 4.78%; ts: 4.59%; toml: 3.22%; yml: 2.41%; txt: 1.64%; svg: 1.07%; json: 1.03%; md: 0.65%; sh: 0.37%; gitignore: 0.33%; ci: 0.28%; html: 0.23%; sha256: 0.22%; js: 0.20%; pyi: 0.13%; jinja2: 0.12%; png: 0.08%; css: 0.06%; lock: 0.04%; dockerignore: 0.04%; cfg: 0.04%; ipynb: 0.01%; example: 0.01%; env: 0.01%; sql: 0.01%; mako: 0.01%; prettierignore: 0.01%; airflowignore: 0.01%; prettierrc: 0.01%; ini: 0.01%; csv: 0.01%; editorconfig: 0.00%; zip: 0.00%; significant: 0.00%; typed: 0.00%; java: 0.00%; xml: 0.00%; MD: 0.00%,N/A
+airflow,"ReACT-65: Maintain the current project platform; refrain from altering it. (if available on github, ReACT is satisfied)",Meets criteria,N/A
+airflow,ReACT-16,"Total Integrators: 0, Total Merge Commits: 0, Earliest Merge: No merge commits found, Latest Merge: No merge commits found",No
+airflow,ReACT-36,"Meets criteria (Active developers: 21, Threshold: 50)",Yes
+airflow,ReACT-38,"Meets criteria (Experienced contributors: 43, Threshold: 5)",Yes
+airflow,ReACT-100,Processes and practices are documented within the project.,Yes
+airflow,ReACT-93,No clear communication channels (like Zulip or chat platforms) found.,No
+airflow,ReACT-77,Mailing list is not mentioned.,No
+airflow,ReACT-60,GitHub stars are not present.,No
+airflow,ReACT-53,The project is incubated by the Apache Software Foundation.,Yes
+airflow,ReACT-20,The project does not communicate through various channels.,No
+airflow,ReACT-97,The project is licensed under the Apache License.,Yes
+airflow,ReACT-98,Clear build and run instructions are provided.,Yes
+airflow,ReACT-95,Contribution guidelines are clearly mentioned.,Yes
+airflow,ReACT-102,Security considerations are documented.,Yes
+airflow,ReACT-63,Average modified-to-added lines ratio: 0.01. Average number of modified files per commit: 383.77. Average number of new files added: 27416.00. Total number of commits analyzed: 28913.,Yes
+airflow,ReACT-64,Number of code files modified: 55. Number of documentation files modified: 98. Code-to-Documentation file ratio: 0.56.,Yes
+airflow,ReACT-78,Total number of commits analyzed: 28913. Number of commits involving code comment updates: 1098. Percentage of commits with comment updates: 3.80%. ,No
