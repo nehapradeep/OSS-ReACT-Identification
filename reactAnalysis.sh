@@ -14,3 +14,4 @@ REPO_CREATION_DATE=$2
 python github_api/txt_csv.py "$PROJECT_NAME"
 python3 AnalyserScripts/analyse_githubapi_data.py "$PROJECT_NAME" "$REPO_CREATION_DATE"
 python3 AnalyserScripts/analyseReACTs.py "$PROJECT_NAME"
+python3 AnalyserScripts/readme.py "$PROJECT_NAME"
