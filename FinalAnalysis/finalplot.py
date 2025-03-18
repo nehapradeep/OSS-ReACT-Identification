@@ -3,17 +3,12 @@ import plotly.graph_objects as go
 
 df = pd.read_csv("ReACTCounts.csv", header=None)
 
-
 df = df.T
 df.columns = ["Count", "React"]
 df = df.iloc[1:].reset_index(drop=True)
 
-
 df["Count"] = pd.to_numeric(df["Count"], errors="coerce").astype(int)
-
-
 df["Color"] = df["Count"].apply(lambda x: "#1e5f82" if x > 7 else "#66b3e0")
-
 
 fig = go.Figure()
 
@@ -24,7 +19,6 @@ for _, row in df.iterrows():
         marker_color=row["Color"],
         name=row["React"]
     ))
-
 
 for _, row in df.iterrows():
     if row["Count"] > 7:
@@ -38,7 +32,6 @@ for _, row in df.iterrows():
             textangle=-90 
         )
 
-# Add red dashed threshold line at y=7
 fig.add_shape(
     type="line",
     x0=-0.5, x1=len(df) - 0.5, 
@@ -46,12 +39,12 @@ fig.add_shape(
     line=dict(color="red", width=2, dash="dash")
 )
 
-# Layout adjustments
 fig.update_layout(
     title="Total Count of Each ReACT",
     xaxis_title="ReACT Types",
     yaxis_title="Count",
-    showlegend=False
+    showlegend=False,
+    xaxis=dict(tickangle=270)  # Rotate x-axis labels by 180 degrees
 )
 
 fig.show()
