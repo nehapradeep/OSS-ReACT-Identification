@@ -1,0 +1,600 @@
+Issue #17064: Labels: UI
+Issue #17063: Labels: improvement, Waiting for reply
+Issue #17062: Labels: UI
+Issue #17061: Labels: improvement, Waiting for reply
+Issue #17059: Labels: bug, Waiting for reply
+Issue #17058: Labels: first time contributor, improvement, backend, test
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+Issue #17057: Labels: improvement, priority:middle, 3.3.0
+Issue #17056: Labels: bug, Waiting for reply
+Issue #17055: Labels: bug, priority:high
+Issue #17054: Labels: bug, backend, test, priority:high
+Issue #17053: Labels: bug, UI, priority:high, ready-to-merge
+Awesome work, congrats on your first merged pull request!\n
+Issue #17052: Labels: bug, UI, priority:high
+Issue #17051: Labels: bug, backend, priority:high, 3.3.0
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+Issue #17050: Labels: bug, backend
+Issue #17048: Labels: bug, discussion
+> A task is executed only if all upstream edges are reachable, in your dag, the switch doesn\
+Issue #17047: Labels: bug, need to verify
+cc @ruanwenjun 
+Issue #17046: Labels: UI, improvement
+Issue #17045: Labels: UI, improvement
+Issue #17043: Labels: question
+Issue #17041: Labels: backend, test, CI&CD, document, priority:high, chore
+cc @ruanwenjun @zhongjiajie @Gallardot 
+Issue #17040: Labels: bug, help wanted
+The query type SQL too
+Issue #17039: Labels: bug, backend, priority:high
+Issue #17038: Labels: bug, backend, priority:high, 3.3.0
+@reele Please take a look.
+Issue #17037: Labels: backend, test, DSIP, priority:high
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+Issue #17036: Labels: bug, priority:high
+Issue #17034: Labels: backend, test, CI&CD, e2e, document
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+Issue #17032: Labels: improvement, backend, test
+@SbloodyS  PTAL.\r\n
+Issue #17031: Labels: bug, Waiting for reply
+Issue #17030: Labels: bug, priority:high
+cc @ruanwenjun 
+Issue #17029: Labels: UI, improvement
+Please retry analysis of this Pull-Request directly on SonarQube Cloud
+Issue #17028: Labels: bug, first time contributor, backend
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+Issue #17027: Labels: improvement, CI&CD, chore
+Please retry analysis of this Pull-Request directly on SonarQube Cloud
+Issue #17026: Labels: bug, help wanted
+Issue #17025: Labels: UI, priority:high
+Yes, I also meet this problem.
+Issue #17023: Labels: bug, good first issue
+### Search before asking\n\n- [x] I had searched in the [issues](https://github.com/apache/dolphinscheduler/issues?q=is%3Aissue) and found no similar issues.\n\n\n### What happened\n\n**this is doris data source, doris driver**\n```\n[INFO] 2025-02-19 12:16:39.612 +0800 - ********************************************* Execute task instance ******************************************\n[INFO] 2025-02-19 12:16:39.613 +0800 - ****************************************** ********************************************************* ************\n[INFO] 2025-02-19 12:16:39.613 +0800 - Full sql parameters: SqlParameters{type=\
+Issue #17022: Labels: bug, help wanted
+Issue #17021: Labels: bug
+Fixed in `dev`.
+Issue #17020: Labels: bug, backend, test, priority:high, ready-to-merge
+Please retry analysis of this Pull-Request directly on SonarQube Cloud
+Issue #17019: Labels: bug, backend, priority:high
+Issue #17018: Labels: bug, help wanted
+version is 3.2.0
+Issue #17017: Labels: help wanted, document
+### Search before asking\n\n- [x] I had searched in the [issues](https://github.com/apache/dolphinscheduler/issues?q=is%3Aissue) and found no similar feature requirement.\n\n\n### Description\n\nThe official documentation introduces:\nDatabase: [PostgreSQL](https://www.postgresql.org/download/) (8.2.15+)\n\nMy postgresql: postgres (PostgreSQL) 9.2.24\n\nHowever, an error was reported during execution:\n[ERROR] 2025-02-14 17:16:19.894 +0800 o.a.d.a.e.ApiExceptionHandler:[47] - Meet en unknown exception:\norg.springframework.jdbc.BadSqlGrammarException:\n### Error updating database. Cause: org.postgresql.util.PSQLException: Error: Syntax error in "ON" or near\n  Location: 142\n### The error may exist in class path resource [org/apache/dolphinscheduler/dao/mapper/TriggerRelationMapper.xml]\n### The error may involve defaultParameterMap\n### The error occurred while setting parameters\n### SQL: INSERT INTO t_ds_trigger_relation (trigger_code, trigger_type, job_id, create_time, update_time) VALUES( ?,?,?,?,?) ON CONFLICT(trigger_type, job_id, trigger_code) DO UPDATE SET update_time = ?;\n### Cause: org.postgresql.util.PSQLException: Error: Syntax error in "ON" or near\n  Location: 142\n; bad SQL grammar []; nested exception is org.postgresql.util.PSQLException: Error: Syntax error in "ON" or near\n  Location: 142\n\n\n### Documentation Links\n\nhttps://dolphinscheduler.apache.org/zh-cn/docs/3.2.2/guide/installation/pseudo-cluster\n\n### Are you willing to submit a PR?\n\n- [ ] Yes I am willing to submit a PR!\n\n### Code of Conduct\n\n- [x] I agree to follow this project\
+Issue #17016: Labels: bug
+### Search before asking\n\n- [x] I had searched in the [issues](https://github.com/apache/dolphinscheduler/issues?q=is%3Aissue) and found no similar issues.\n\n\n### What happened\n\nV3.3.2 version is deployed stand-alone. After configuring the alarm, there is no problem sending test emails. However, when the workflow executes the alarm email, it is reported that the json cannot parse the error. The error content is as follows\n`[ERROR] 2025-02-15 00:19:28.869 +0800 o.a.d.c.u.JSONUtils:[186] - parse list exception!\n\ncom.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.util.ArrayList<org.apache.dolphinscheduler.spi.params.base.PluginParams>` from Object value (token `JsonToken.START_OBJECT`)\n\nat [Source: (String)"`\n\n### What you expected to happen\n\njson parsing exception\n\n### How to reproduce\n\nIt feels like json cannot be parsed, so there should be a problem with which field type\n\n### Anything else\n\n_No response_\n\n### Version\n\n3.2.x\n\n### Are you willing to submit PR?\n\n- [x] Yes I am willing to submit a PR!\n\n### Code of Conduct\n\n- [x] I agree to follow this project\
+Issue #17013: Labels: bug, help wanted
+### Search before asking\n\n- [x] I had searched in the [issues](https://github.com/apache/dolphinscheduler/issues?q=is%3Aissue) and found no similar issues.\n\n\n### What happened\n\n  Version 3.1.4 Call API Run the instance interface Start the workflow instance and found that waiting for the stream cannot obtain incoming parameters when the execution policy is serial waiting mode.\n\n### What you expected to happen\n\nCall the command:\ncurl --location \
+Issue #17010: Labels: help wanted, improvement
+I think I can finish this issue. Can you assign it to me? Thank you.\n@SbloodyS 
+Issue #17008: Labels: bug, backend, chore
+Issue #17007: Labels: bug, priority:middle
+Issue #17006: Labels: backend, test, chore
+Issue #17005: Labels: bug, backend, test, priority:high
+Issue #17004: Labels: bug, priority:high
+Issue #17003: Labels: improvement, backend
+Please retry analysis of this Pull-Request directly on SonarQube Cloud
+Issue #17002: Labels: backend, chore
+Issue #17001: Labels: improvement
+Issue #17000: Labels: improvement, backend, test, document, priority:low
+Issue #16999: Labels: improvement, priority:low
+Issue #16998: Labels: bug, backend, test, priority:high
+cc @reele 
+Issue #16997: Labels: bug, roadmap
+### Search before asking\n\n- [x] I had searched in the [issues](https://github.com/apache/dolphinscheduler/issues?q=is%3Aissue) and found no similar issues.\n\n\n### What happened\n\n![Image](https://github.com/user-attachments/assets/89084b10-6e4e-4ce0-a91b-88c412b0831b)\nA single task instance runs or runs backwards only once\n```\n[WI-0][TI-0] - [ERROR] 2025-02-06 15:57:45.452 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[153] - Master handle command 1160 error \norg.apache.dolphinscheduler.server.master.exception.WorkflowCreateException: Create WorkflowExecuteRunnable failed\n\tat org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteRunnableFactory.createWorkflowExecuteRunnable(WorkflowExecuteRunnableFactory.java:98)\n\tat org.apache.dolphinscheduler.server.master.runner.MasterSchedulerBootstrap.lambda$run$0(MasterSchedulerBootstrap.java:136)\n\tat java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)\n\tat java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1384)\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)\n\tat java.util.stream.ForEachOps$ForEachTask.compute(ForEachOps.java:291)\n\tat java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)\n\tat java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)\n\tat java.util.concurrent.ForkJoinTask.doInvoke(ForkJoinTask.java:401)\n\tat java.util.concurrent.ForkJoinTask.invoke(ForkJoinTask.java:734)\n\tat java.util.stream.ForEachOps$ForEachOp.evaluateParallel(ForEachOps.java:160)\n\tat java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateParallel(ForEachOps.java:174)\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:233)\n\tat java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:418)\n\tat java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:583)\n\tat org.apache.dolphinscheduler.server.master.runner.MasterSchedulerBootstrap.run(MasterSchedulerBootstrap.java:133)\nCaused by: java.lang.NullPointerException: null\n\tat com.google.common.base.Preconditions.checkNotNull(Preconditions.java:889)\n\tat com.google.common.collect.Lists.newArrayList(Lists.java:128)\n\tat org.apache.dolphinscheduler.service.process.ProcessServiceImpl.joinVarPool(ProcessServiceImpl.java:1038)\n\tat org.apache.dolphinscheduler.service.process.ProcessServiceImpl.setSubProcessParam(ProcessServiceImpl.java:982)\n\tat org.apache.dolphinscheduler.service.process.ProcessServiceImpl.handleCommand(ProcessServiceImpl.java:316)\n\tat org.apache.dolphinscheduler.service.process.ProcessServiceImpl$$FastClassBySpringCGLIB$$9d3e18f9.invoke(<generated>)\n\tat org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)\n\tat org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)\n\tat org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)\n\tat org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)\n\tat org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)\n\tat org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)\n\tat org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)\n\tat org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)\n\tat org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)\n\tat org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)\n\tat org.apache.dolphinscheduler.service.process.ProcessServiceImpl$$EnhancerBySpringCGLIB$$6edc3705.handleCommand(<generated>)\n\tat org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContextFactory.createWorkflowInstance(WorkflowExecuteContextFactory.java:81)\n\tat org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteContextFactory.createWorkflowExecuteRunnableContext(WorkflowExecuteContextFactory.java:56)\n\tat org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteRunnableFactory.createWorkflowExecuteRunnable(WorkflowExecuteRunnableFactory.java:83)\n\t... 15 common frames omitted\n```\n\n### What you expected to happen\n\n```\n    @Test\n    void subtractVarPool() {\n        Truth.assertThat(VarPoolUtils.subtractVarPool(null, null)).isNull();\n        List<Property> varpool1 = Lists.newArrayList(new Property("name", Direct.OUT, DataType.VARCHAR, "tom"),\n                new Property("age", Direct.OUT, DataType.INTEGER, "10"));\n        List<Property> varpool2 = Lists.newArrayList(new Property("name", Direct.OUT, DataType.VARCHAR, "tom"));\n        List<Property> varpool3 = Lists.newArrayList(new Property("location", Direct.OUT, DataType.VARCHAR, "china"));\n\n        Truth.assertThat(VarPoolUtils.subtractVarPool(varpool1, Lists.newArrayList(varpool2, varpool3)))\n                .containsExactly(new Property("age", Direct.OUT, DataType.INTEGER, "10"));\n    }\n```\n\n### How to reproduce\n\n流程逻辑：一个工作流里面通过sub_process 方式，嵌套另一个工作流\n主工作流逻辑\n\n![Image](https://github.com/user-attachments/assets/c95ea57e-f99c-497a-b0ad-435a068e6cfd)\n\n子工作流逻辑\n\n![Image](https://github.com/user-attachments/assets/09788d9c-0ab0-49dc-93d7-4aaa698c2f7e)\n\n问题：当运行过程中失败时。\n\n![Image](https://github.com/user-attachments/assets/c29003e9-1876-4b40-9cab-dbe7af23c5e8)\n\n进入工作流实例\n\n![Image](https://github.com/user-attachments/assets/51953c23-2888-42f2-a6bc-d280d769fc75)\n\n![Image](https://github.com/user-attachments/assets/0e9e51ba-fa38-465a-ad63-344694cd9803)\n\n执行向后运行，或运行 只能成功执行一次。 再执行就没有反应。\n\n### Anything else\n\n_No response_\n\n### Version\n\n3.2.x\n\n### Are you willing to submit PR?\n\n- [x] Yes I am willing to submit a PR!\n\n### Code of Conduct\n\n- [x] I agree to follow this project\
+Issue #16995: Labels: bug, backend, test, priority:high, 3.3.0
+cc @reele 
+Issue #16994: Labels: improvement, backend, priority:middle
+> * Do you means when failover we need to take-over the previous task which has already submitted to remote cluster?\n\nexactly \n\ne.g.\n\nwhen a scheduled task experienced a failover when remote application is still running, i think we should continue polling the state of existing application instead of starting a new one
+Issue #16993: Labels: feature, first time contributor, UI, backend, test
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+Issue #16992: Labels: feature, Stale
+This issue has been automatically marked as stale because it has not had recent activity for 30 days. It will be closed in next 7 days if no further activity occurs.
+Issue #16991: Labels: bug, backend, priority:high
+We will clone the environment config from the old task instance, this not work?
+Issue #16990: Labels: bug, backend, priority:high
+Good catch, we need to recursively judge whether its parents is in active list.
+Issue #16989: Labels: bug, backend, test, priority:high
+Issue #16987: Labels: question, Stale
+You should put `spark-examples_2.12-3.5.4.jar` to storage center and use it in task through resource file if you want to use cluster deployment.
+Issue #16986: Labels: improvement, backend, test, priority:low
+Issue #16985: Labels: improvement, priority:low
+Issue #16984: Labels: wontfix
+Flink stream task is deprecated and will be remove in the future release.
+Issue #16983: Labels: improvement, backend, test
+Issue #16982: Labels: improvement
+Issue #16981: Labels: question, backend, Stale
+Please try to use \n```\nworker-load-balancer-configuration-properties:\n```\nin dev.\n\nhttps://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/architecture/configuration.md#master-server-related-configuration
+Issue #16980: Labels: bug, backend, test, priority:high
+@ruanwenjun\r\nTest cases added, and passed all test in master and worker.
+Issue #16979: Labels: improvement, priority:low, community, 3.3.0
+@reele 
+Issue #16978: Labels: bug, priority:high, 3.3.0
+@reele 
+Issue #16977: Labels: good first issue, need more information, improvement, backend, need to verify
+Can you provide more details of reproducing steps?
+Issue #16976: Labels: bug, improvement, backend, Stale, priority:high
+cc @ruanwenjun 
+Issue #16975: Labels: UI, improvement, Stale
+This issue has been automatically marked as stale because it has not had recent activity for 30 days. It will be closed in next 7 days if no further activity occurs.
+Issue #16973: Labels: need to verify
+need more info to verify. I have left comment in https://github.com/apache/dolphinscheduler/issues/16972#issuecomment-2606656005
+Issue #16972: Labels: question, win-os, Stale
+Can you describe your issue more clearly? It can be packaged normally in local or CI.
+Issue #16971: Labels: need more information, improvement, Stale
+In what scenario will AWS S3 be used without complying with S3 path style specification?
+Issue #16969: Labels: bug, backend, Pyscheduler, priority:high, chore
+so quick, my bro @SbloodyS 
+Issue #16968: Labels: bug, UI, backend, test, priority:high, 3.3.0
+Please retry analysis of this Pull-Request directly on SonarQube Cloud
+Issue #16967: Labels: feature
+Please create an DSIP first. Like #16818
+Issue #16963: Labels: help wanted, document
+Hi, I am working on a team project in school and wanted to take a shot at this issue with my team, can I be allowed permission for this issue?
+Issue #16962: Labels: first time contributor, UI, backend, test, DSIP, document
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+Issue #16961: Labels: feature, Stale
+Would you like to implement it ?
+Issue #16960: Labels: bug
+Data quality module has been removed from Apache DolphinScheduler. You can search other ways or buy business product `whalestudio` 
+Issue #16958: Labels: improvement, Stale
+This issue has been automatically marked as stale because it has not had recent activity for 30 days. It will be closed in next 7 days if no further activity occurs.
+Issue #16957: Labels: backend, kubernetes, test, e2e, document, chore
+Issue #16956: Labels: improvement, Stale
+Hi, I am working on a team project in school and wanted to take a shot at this issue with my team, can I be allowed permission for this issue?
+Issue #16953: Labels: bug, backend
+Issue #16952: Labels: UI, backend, don't merge
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+Issue #16951: Labels: wontfix
+Issue #16950: Labels: bug
+This have been fixed in `dev`.
+Issue #16949: Labels: question
+You can manually set network through these config.\r\nhttps://github.com/apache/dolphinscheduler/blob/890376a9eebef74a930f41e390a8402c1f92493c/dolphinscheduler-common/src/main/resources/common.properties#L77-L84
+Issue #16948: Labels: question, Stale
+It looks like the flink sql client issue from the log output. Please open the issue in flink community.
+Issue #16947: Labels: discussion, UI, improvement
+> Please follow the pull request notice first.\r\n\r\nWell, should I use it like this? [Improvement-16947][UI] Task instance log details should always stay at the bottom\r\n\r\n\r\n
+Issue #16946: Labels: duplicate
+Issue #16945: Labels: bug
+Fixed in `dev`.
+Issue #16944: Labels: question, Stale
+Using `sh shell_test/a.sh` relative path instead.
+Issue #16942: Labels: bug, priority:high, 3.3.0
+cc @ruanwenjun 
+Issue #16941: Labels: bug, document
+Issue #16940: Labels: bug, document
+Issue #16939: Labels: bug, backend
+@SbloodyS @caishunfeng PTAL
+Issue #16938: Labels: improvement, backend, roadmap
+This issue has been automatically marked as stale because it has not had recent activity for 30 days. It will be closed in next 7 days if no further activity occurs.
+Issue #16937: Labels: bug
+Fixed in `dev`.
+Issue #16936: Labels: CI&CD, 3.3.0, chore
+Issue #16935: Labels: document
+Issue #16934: Labels: bug
+We need put code to taskCodeMap in advance.\r\nCan you assigned this job to me? @ruanwenjun @SbloodyS \r\nI am willing to submit a PR.
+Issue #16933: Labels: bug, backend
+Hi guys, this PR can only fix the `varPool` for physical task executors for now.\r\n\r\nCould you give me some guidance on how to fix the `varPool` for logical task executors?\r\n\r\nThank you.
+Issue #16931: Labels: wontfix
+### Search before asking\n\n- [X] I had searched in the [issues](https://github.com/apache/dolphinscheduler/issues?q=is%3Aissue) and found no similar feature requirement.\n\n\n### Description\n\nFor newcomers who want to try it out, the installation documentation is very unfriendly, especially for those who are not familiar with the Ubuntu environment. It is full of pitfalls. I installed it according to the instructions https://dolphinscheduler.apache.org/zh-cn/docs/3.1.5/guide/installation/pseudo-cluster. I found that I encountered problems almost every 1-2 steps. I asked step by step. I have been struggling with chatgpt 4o. It has been 2 days and only two-thirds of the way. I admit that I am a novice on Ubuntu. I temporarily learned some Ubuntu commands in order to install the pilot project. However, for the majority of users who want to promote the development of the community, the importance of documentation far exceeds the project itself. I hope that everyone can work together to make this open source The project truly benefits the public, so that the public can be more motivated to give feedback and improve. Now I will briefly describe several document problems I found as follows:\r\n1. The section "Preparing the DolphinScheduler startup environment" should be placed at the top of the document. Reason: If you directly follow the "preparatory work", all tools that require pre-installation will be installed in the account you are currently logged in, but in fact they should be installed in a new account. For example, as described in subsequent documents: Create the dolphinscheduler user.\r\n2. # To create a user, you need to log in as root: useradd dolphinscheduler. This command should be preceded by sudo, or tell the user how to first enter the root account.\r\n3. # Modify the directory permissions so that the deployment user has operating permissions on the apache-dolphinscheduler-*-bin directory after the binary package is decompressed. chown -R dolphinscheduler:dolphinscheduler apache-dolphinscheduler-*-bin. The description here is very unclear. It should be explained that apache-dolphinscheduler-*-bin is replaced with the file name after decompression of the binary installation package.\r\n4. Enter the installation directory of zookeeper, copy the zoo_sample.cfg configuration file to conf/zoo.cfg, and change the value of dataDir in conf/zoo.cfg to dataDir=./tmp/zookeeper. The zoo_sample.cfg configuration file has changed in the new version.\r\n5. Modify the install_env.sh file. Where is this file? Not found yet\r\nThe above are just a small part. It’s really impossible to list them all. There are too many...\n\n### Documentation Links\n\n_No response_\n\n### Are you willing to submit a PR?\n\n- [ ] Yes I am willing to submit a PR!\n\n### Code of Conduct\n\n- [X] I agree to follow this project\
+Issue #16930: Labels: bug
+Fixed in `dev`.
+Issue #16929: Labels: bug, help wanted
+Issue #16928: Labels: bug
+Fixed in `dev`.
+Issue #16927: Labels: bug, Waiting for reply
+I found this log if using `docker run`, it must be somewhere to disable kubernetes environment detection?\r\n<img width="1104" alt="image" src="https://github.com/user-attachments/assets/92cdc694-8e05-4e01-842c-0a047a430ca0" />\r\n
+Issue #16925: Labels: document, chore
+Issue #16924: Labels: bug, help wanted
+Issue #16923: Labels: bug, backend, test, document
+You should run `mvn spotless:apply` to format the code. @BruceWong96 
+Issue #16922: Labels: UI, improvement, test, e2e
+Issue #16921: Labels: question
+This has been implemented, please consult the documentation.
+Issue #16920: Labels: UI, improvement
+Issue #16919: Labels: bug
+### Search before asking\n\n- [X] I had searched in the [issues](https://github.com/apache/dolphinscheduler/issues?q=is%3Aissue) and found no similar issues.\n\n\n### What happened\n\nexecute a workflow, instance si running state ,but no instance log ,find this dolphinscheduler-master-server log:\r\n\r\n~~~java\r\n[WI-25][TI-0] - [ERROR] 2024-12-25 13:59:55.713 +0800 o.a.d.s.m.r.WorkflowExecuteRunnable:[697] - Start workflow error\r\norg.springframework.dao.DataIntegrityViolationException: \r\n### Error updating database.  Cause: org.postgresql.util.PSQLException: ERROR: null value in column "id" of relation "t_ds_listener_event" violates not-null constraint\r\n  Detail: Failing row contains (null, {"projectCode":16075595133568,"projectName":"数据仓库","owne..., 9f65adacfa5f6dd8e66efc27e5b51bf3a496f025a214097d8a10838e3c30b37c, 0, 4, null, 2024-12-25 13:59:55.711, 2024-12-25 13:59:55.711).\r\n### The error may exist in org/apache/dolphinscheduler/dao/mapper/ListenerEventMapper.java (best guess)\r\n### The error may involve org.apache.dolphinscheduler.dao.mapper.ListenerEventMapper.insert-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO t_ds_listener_event  ( content, sign, event_type, post_status,  create_time, update_time )  VALUES  ( ?, ?, ?, ?,  ?, ? )\r\n### Cause: org.postgresql.util.PSQLException: ERROR: null value in column "id" of relation "t_ds_listener_event" violates not-null constraint\r\n  Detail: Failing row contains (null, {"projectCode":16075595133568,"projectName":"数据仓库","owne..., 9f65adacfa5f6dd8e66efc27e5b51bf3a496f025a214097d8a10838e3c30b37c, 0, 4, null, 2024-12-25 13:59:55.711, 2024-12-25 13:59:55.711).\r\n; ERROR: null value in column "id" of relation "t_ds_listener_event" violates not-null constraint\r\n  Detail: Failing row contains (null, {"projectCode":16075595133568,"projectName":"数据仓库","owne..., 9f65adacfa5f6dd8e66efc27e5b51bf3a496f025a214097d8a10838e3c30b37c, 0, 4, null, 2024-12-25 13:59:55.711, 2024-12-25 13:59:55.711).; nested exception is org.postgresql.util.PSQLException: ERROR: null value in column "id" of relation "t_ds_listener_event" violates not-null constraint\r\n  Detail: Failing row contains (null, {"projectCode":16075595133568,"projectName":"数据仓库","owne..., 9f65adacfa5f6dd8e66efc27e5b51bf3a496f025a214097d8a10838e3c30b37c, 0, 4, null, 2024-12-25 13:59:55.711, 2024-12-25 13:59:55.711).\r\n\tat org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:251)\r\n\tat org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)\r\n\tat org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:91)\r\n\tat org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)\r\n\tat com.sun.proxy.$Proxy141.insert(Unknown Source)\r\n\tat org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)\r\n\tat com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:59)\r\n\tat com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)\r\n\tat com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)\r\n\tat com.sun.proxy.$Proxy183.insert(Unknown Source)\r\n\tat org.apache.dolphinscheduler.service.alert.ListenerEventAlertManager.saveNormalEvent(ListenerEventAlertManager.java:257)\r\n\tat org.apache.dolphinscheduler.service.alert.ListenerEventAlertManager.saveEvent(ListenerEventAlertManager.java:252)\r\n\tat org.apache.dolphinscheduler.service.alert.ListenerEventAlertManager.publishProcessStartListenerEvent(ListenerEventAlertManager.java:134)\r\n\tat org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteRunnable.processStart(WorkflowExecuteRunnable.java:342)\r\n\tat org.apache.dolphinscheduler.server.master.runner.WorkflowExecuteRunnable.startWorkflow(WorkflowExecuteRunnable.java:690)\r\n\tat org.apache.dolphinscheduler.server.master.runner.IWorkflowExecuteRunnable.call(IWorkflowExecuteRunnable.java:27)\r\n\tat java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1604)\r\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\r\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\r\n\tat java.lang.Thread.run(Thread.java:750)\r\n~~~\n\n### What you expected to happen\n\nstable service\n\n### How to reproduce\n\ndolphinscheduler : 3.2.1\r\nkubernetes: v1.28.4-r0-28.0.40\r\npostgresql: PostgreSQL 14.12 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 11.4.1 20231218 (Red Hat 11.4.1-3), 64-bit\n\n### Anything else\n\n_No response_\n\n### Version\n\n3.2.x\n\n### Are you willing to submit PR?\n\n- [ ] Yes I am willing to submit a PR!\n\n### Code of Conduct\n\n- [X] I agree to follow this project\
+Issue #16918: Labels: bug
+Issue #16917: Labels: bug, help wanted, backend
+Issue #16916: Labels: bug, backend, test
+Issue #16915: Labels: bug, Stale
+Can you provide more error logs?
+Issue #16914: Labels: bug, priority:high
+Issue #16912: Labels: need more information, DSIP
+What is `OTHER_CONTINUE `, please add detail design and specific motivation.
+Issue #16911: Labels: bug, first time contributor, backend, test, priority:high
+没有处理掉，工作流还是不能复制逻辑节点的关联关系
+Issue #16910: Labels: UI, improvement, backend, test
+Issue #16909: Labels: bug, backend, test
+Please retry analysis of this Pull-Request directly on SonarQube Cloud
+Issue #16908: Labels: improvement, backend
+Issue #16907: Labels: improvement, 3.3.0
+Issue #16906: Labels: bug, backend
+The only one different is the `.kill` file will be executed by tenant, please check if the tenant has permission to execute the file
+Issue #16905: Labels: improvement, backend
+Issue #16904: Labels: first time contributor, improvement, backend
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+Issue #16903: Labels: bug, priority:high
+This issue has been automatically marked as stale because it has not had recent activity for 30 days. It will be closed in next 7 days if no further activity occurs.
+Issue #16902: Labels: improvement, backend, test, 3.3.0, chore
+Issue #16901: Labels: feature, good idea, improvement, Stale
+For missing JARs, such as MySQL or Oracle, rebuilding docker images directly may be more convenient in many cases. However, shared storage is also a suitable solution.  Welcome to create a PR to make this feature possible.
+Issue #16900: Labels: bug, help wanted, priority:high
+Issue #16899: Labels: improvement, backend, test
+Issue #16898: Labels: kubernetes
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+Issue #16897: Labels: improvement
+Which version are you using? @welsonzhang 
+Issue #16895: Labels: bug
+Fixed in `dev`.
+Issue #16894: Labels: backend, test, priority:high, chore
+Issue #16893: Labels: backend, test, chore
+Please retry analysis of this Pull-Request directly on SonarQube Cloud
+Issue #16892: Labels: UI, backend, test, DSIP, e2e, document
+Issue #16891: Labels: DSIP
+Issue #16890: Labels: document, chore
+Issue #16887: Labels: UI, improvement, backend
+Issue #16886: Labels: need more information, discussion, DSIP
+Please provide full design detail like #16481 
+Issue #16885: Labels: bug, backend, test
+Please retry analysis of this Pull-Request directly on SonarQube Cloud
+Issue #16884: Labels: bug
+Issue #16883: Labels: improvement, backend, test
+Issue #16881: Labels: backend, chore
+Issue #16880: Labels: improvement, backend
+Issue #16879: Labels: bug, help wanted
+### Search before asking\n\n- [X] I had searched in the [issues](https://github.com/apache/dolphinscheduler/issues?q=is%3Aissue) and found no similar issues.\n\n\n### What happened\n\nIn the workflow, create multiple sub-processes, for example, create 12 sub-processes. When the sub-process obtains the parameters of the upstream task, there will be coverage/error/ and the parameters obtained by the 12 nodes are exactly the same, which is not as expected.\r\nJudging from the query in the database, there is no problem with the parameters of the generated 12 sub-process instances. However, in the varpool setting phase, the varpool corresponding to the parent_process_instance_id is obtained, which results in the task instance in the sub-process instance being executed. Parameters are always the same\r\n\r\n<img width="1009" alt="iShot_2024-12-05_10 44 15" src="https://github.com/user-attachments/assets/073be1eb-916b-4344-bfab-f5cb3b7dba95">\r\n\n\n### What you expected to happen\n\nJudging from the query in the database, there is no problem with the parameters of the generated 12 sub-process instances. However, in the varpool setting phase, the varpool corresponding to the parent_process_instance_id is obtained, which results in the task instance in the sub-process instance being executed. Parameters are always the same\r\nThrough the debug setSubProcessParam method, it can be seen that there is a problem with the varpool parameters obtained by each sub-process task instance, and duplicates occur randomly.\n\n### How to reproduce\n\nI have verified that this problem exists in the standalone image of 3.2.1, the standalone image of 3.2.2, and the debug image code. It can also be reproduced on the two image web service pages. I provided my verification workflow json, ⚠️Note: After importing, you need to change the reference of the sub-process in the main process to the new id\r\n[workflow_1733366901095.json](https://github.com/user-attachments/files/18016619/workflow_1733366901095.json)\r\n\n\n### Anything else\n\n_No response_\n\n### Version\n\n3.2.x\n\n### Are you willing to submit PR?\n\n- [X] Yes I am willing to submit a PR!\n\n### Code of Conduct\n\n- [X] I agree to follow this project\
+Issue #16878: Labels: bug, need more information, backend
+@reele I cannot clear understand, are you means when master handle the failover command and then master crash, will cuase the workflow instance loss state?\r\n\r\nThis stage is already in a transaction \r\nhttps://github.com/apache/dolphinscheduler/blob/566651c6c58672deaf438d29fcf2f644c67a9160/dolphinscheduler-master/src/main/java/org/apache/dolphinscheduler/server/master/engine/workflow/runnable/WorkflowExecutionRunnableFactory.java#L48-L58\r\n
+Issue #16877: Labels: backend, test, 3.3.0, chore
+Issue #16876: Labels: wontfix
+### Search before asking\n\n- [X] I had searched in the [issues](https://github.com/apache/dolphinscheduler/issues?q=is%3Aissue) and found no similar issues.\n\n\n### What happened\n\nproblem happen on version 3.2.2\xa0，when i try to edit and save a process definition which import from 2.0.6 version, dolphinscheduler-api complain with the following exception:\r\n\r\n[ERROR] 2024-12-04 17:44:16.348 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[487] - Check task relation list error, meet an unknown exception, given taskRelationJson: [{"name":"","preTaskCode":0,"preTaskVersion":0,"postTaskCode":126832332601184,"postTaskVersion":1,"conditionType":"NONE","conditionParams":{}},{"name":"","preTaskCode":126832332601190,"preTaskVersion":1,"postTaskCode":126832332601185,"postTaskVersion":1,"conditionType":"NONE","conditionParams":{}},{"name":"","preTaskCode":126832332601186,"preTaskVersion":1,"postTaskCode":126832332601187,"postTaskVersion":1,"conditionType":"NONE","conditionParams":{}},{"name":"","preTaskCode":126832332601190,"preTaskVersion":1,"postTaskCode":126832332601186,"postTaskVersion":1,"conditionType":"NONE","conditionParams":{}},{"name":"","preTaskCode":126832332601188,"preTaskVersion":1,"postTaskCode":126832332601189,"postTaskVersion":1,"conditionType":"NONE","conditionParams":{}},{"name":"","preTaskCode":126832332601187,"preTaskVersion":1,"postTaskCode":126832332601188,"postTaskVersion":1,"conditionType":"NONE","conditionParams":{}},{"name":"","preTaskCode":126832332601184,"preTaskVersion":1,"postTaskCode":126832332601190,"postTaskVersion":1,"conditionType":"NONE","conditionParams":{}}]\r\njava.lang.NullPointerException: null\r\n        at org.apache.dolphinscheduler.service.process.ProcessServiceImpl.transformTask(ProcessServiceImpl.java:1965)\r\n        at org.apache.dolphinscheduler.service.process.ProcessServiceImpl$$FastClassBySpringCGLIB$$9d3e18f9.invoke(<generated>)\r\n        at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)\r\n        at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)\r\n        at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)\r\n        at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704)\r\n        at org.apache.dolphinscheduler.service.process.ProcessServiceImpl$$EnhancerBySpringCGLIB$$8af77b4d.transformTask(<generated>)\r\n        at org.apache.dolphinscheduler.api.service.impl.ProcessDefinitionServiceImpl.generateTaskRelationList(ProcessDefinitionServiceImpl.java:458)\r\n        at org.apache.dolphinscheduler.api.service.impl.ProcessDefinitionServiceImpl.updateProcessDefinition(ProcessDefinitionServiceImpl.java:776)\r\n        at org.apache.dolphinscheduler.api.service.impl.ProcessDefinitionServiceImpl$$FastClassBySpringCGLIB$$e8e34ed9.invoke(<generated>)\r\n        at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)\r\n        at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)\r\n        at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)\r\n        at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)\r\n        at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)\r\n        at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)\r\n        at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)\r\n        at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)\r\n        at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)\r\n        at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)\r\n        at org.apache.dolphinscheduler.api.service.impl.ProcessDefinitionServiceImpl$$EnhancerBySpringCGLIB$$b867c8ed.updateProcessDefinition(<generated>)\r\n        at org.apache.dolphinscheduler.api.controller.ProcessDefinitionController.updateProcessDefinition(ProcessDefinitionController.java:253)\r\n        at org.apache.dolphinscheduler.api.controller.ProcessDefinitionController$$FastClassBySpringCGLIB$$dc9bf5db.invoke(<generated>)\r\n        at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)\r\n        at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)\r\n        at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)\r\n        at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)\r\n        at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)\r\n        at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175)\r\n        at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)\r\n        at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57)\r\n        at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175)\r\n        at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)\r\n        at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)\r\n        at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175)\r\n        at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)\r\n        at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)\r\n        at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)\r\n        at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)\r\n        at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)\r\n        at org.apache.dolphinscheduler.api.controller.ProcessDefinitionController$$EnhancerBySpringCGLIB$$d52184df.updateProcessDefinition(<generated>)\r\n        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n        at java.lang.reflect.Method.invoke(Method.java:498)\r\n        at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)\r\n        at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)\r\n        at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)\r\n        at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)\r\n        at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)\r\n        at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)\r\n        at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)\r\n        at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)\r\n        at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)\r\n        at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920)\r\n        at javax.servlet.http.HttpServlet.service(HttpServlet.java:710)\r\n        at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)\r\n        at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)\r\n        at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)\r\n        at org.eclipse.jetty.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1656)\r\n        at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)\r\n        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\r\n        at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)\r\n        at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)\r\n        at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\r\n        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\r\n        at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)\r\n        at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)\r\n        at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:90)\r\n        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\r\n        at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)\r\n        at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)\r\n        at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)\r\n        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\r\n        at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)\r\n        at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)\r\n        at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)\r\n        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\r\n        at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)\r\n        at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)\r\n        at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:552)\r\n        at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)\r\n        at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)\r\n        at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)\r\n        at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)\r\n        at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)\r\n        at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)\r\n        at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)\r\n        at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)\r\n        at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505)\r\n        at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)\r\n        at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)\r\n        at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)\r\n        at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)\r\n        at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:772)\r\n        at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)\r\n        at org.eclipse.jetty.server.Server.handle(Server.java:516)\r\n        at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)\r\n        at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)\r\n        at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)\r\n        at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)\r\n        at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)\r\n        at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)\r\n        at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)\r\n        at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)\r\n        at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)\r\n        at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)\r\n        at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)\r\n        at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)\r\n        at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)\r\n        at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)\r\n        at java.lang.Thread.run(Thread.java:750)\r\n[ERROR] 2024-12-04 17:44:16.351 +0800 o.a.d.a.e.ApiExceptionHandler:[40] - org.apache.dolphinscheduler.api.controller.ProcessDefinitionController#updateProcessDefinition[12 args] Meet a ServiceException: 请求参数[{0}]无效\r\n\r\nThis exception is occur when data in table t_ds_task_definition with field is_cache value is null.\n\n### What you expected to happen\n\nwish to fix this problem\n\n### How to reproduce\n\n1、try to update one of row in table t_ds_task_definition set field 【is_cache】to null.\r\n2、edit this task definition on the ui web page and click save button\r\n3、you will get error【请求参数[{0}]无效】\n\n### Anything else\n\n_No response_\n\n### Version\n\n3.2.x\n\n### Are you willing to submit PR?\n\n- [ ] Yes I am willing to submit a PR!\n\n### Code of Conduct\n\n- [X] I agree to follow this project\
+Issue #16875: Labels: feature, UI, backend, test, e2e
+Please retry analysis of this Pull-Request directly on SonarQube Cloud
+Issue #16874: Labels: bug, help wanted
+How it worked later
+Issue #16873: Labels: improvement, backend, test
+Issue #16872: Labels: improvement
+Issue #16870: Labels: improvement, backend
+Issue #16869: Labels: improvement, backend
+Issue #16868: Labels: bug
+Please using english to descirbe.
+Issue #16867: Labels: improvement, backend
+Issue #16866: Labels: bug
+Fixed in dev. Please using english to describe.
+Issue #16864: Labels: help wanted, improvement, backend
+我查看了源码，主要是因为使用了PreparedStatement进行了SQL内容替换。\r\n![image](https://github.com/user-attachments/assets/0a47f328-e966-49bc-ada6-a8f835b1f32c)\r\n我猜测当时这么使用的目的是为了防止任意SQL的执行，以及注入等问题，但考虑到SQL任务组件是控制在调度平台的，不像应用接口那样，所以是不是可以调整以下呢？我正在尝试直接执行替换后的SQL，不再使用PreparedStatement预处理占位符。\r\n\r\n
+Issue #16863: Labels: UI, backend, test, DSIP, document
+Issue #16862: Labels: improvement, Waiting for reply
+Issue #16861: Labels: first time contributor, backend
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+Issue #16860: Labels: improvement, backend, test, e2e, document
+Issue #16859: Labels: bug, backend
+Today I debugged the project and fixed it。\r\nCan you assign this issues to me? thx。\r\nI will to submit pr to 3.1.9-release
+Issue #16858: Labels: backend
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+Issue #16857: Labels: DSIP, priority:middle
+Issue #16856: Labels: DSIP, priority:middle
+Issue #16855: Labels: wontfix
+### Search before asking\n\n- [X] I had searched in the [issues](https://github.com/apache/dolphinscheduler/issues?q=is%3Aissue) and found no similar issues.\n\n\n### What happened\n\n![image](https://github.com/user-attachments/assets/9ee68605-78b4-4e4d-b686-8b5571129e1c)\r\nWhen I selected the MYSQL data source and configured various parameters, the test connection always failed, and subsequent workflow creation data quality also failed to obtain the database table data.\r\nTo test the connection I tried two methods.\r\n① Directly click the "Test Connection" button and the error will be reported as follows:\r\n[INFO] 2024-11-29 11:03:32.865 +0800 o.a.d.p.d.a.u.DataSourceUtils:[57] - Parameters map:MySQLConnectionParam{user=\
+Issue #16854: Labels: bug, Stale
+This issue has been automatically marked as stale because it has not had recent activity for 30 days. It will be closed in next 7 days if no further activity occurs.
+Issue #16853: Labels: bug
+Can you provide the reproducing steps? I can not reproduce it.
+Issue #16852: Labels: wontfix
+Please using english to describe.
+Issue #16851: Labels: bug, document
+Issue #16850: Labels: improvement
+Issue #16849: Labels: bug, document
+Issue #16847: Labels: CI&CD, document, chore
+Issue #16846: Labels: backend, test, chore
+Issue #16845: Labels: bug, help wanted, ready-to-close
+### Search before asking\n\n- [X] I had searched in the [issues](https://github.com/apache/dolphinscheduler/issues?q=is%3Aissue) and found no similar issues.\n\n\n### What happened\n\nClass: org.apache.dolphinscheduler.plugin.datasource.api.plugin.DataSourceClientProvider\r\ndataSouce local cache: private static final Cache<String, DataSourceClient> uniqueId2dataSourceClientCache = CacheBuilder.newBuilder()\r\n        .expireAfterWrite(duration, TimeUnit.HOURS)\r\n        .removalListener((RemovalListener<String, DataSourceClient>) notification -> {\r\n            try (DataSourceClient closedClient = notification.getValue()) {\r\n                logger.info("Datasource: {} is removed from cache due to expire", notification.getKey());\r\n            }\r\n        })\r\n        .maximumSize(100)\r\n        .build();\r\n\n\n### What you expected to happen\n\nexpireAfterWrite: After the specified time is up, the strong one will close the DataSource no matter what.\r\nA better way can be to use expireAfterAccess instead, and try not to be closed during saving and use.\n\n### How to reproduce\n\nFor example, in the Hive scenario, hql execution time is generally long, and the process DataSource used is closed; causing the socket of the hive thrift address to be closed, but the internal status judgment continues.\r\nCase:\r\nsql task error and appId:[]\r\njava.sql.SQLException: org.apache.thrift.transport.TTransportException: SASL authentication not complete\r\nat org.apache.hive.jdbc.HiveStatement.waitForOperationToComplete(HiveStatement.java:399)\r\nat org.apache.hive.jdbc.HiveStatement.execute(HiveStatement.java:254)\r\nat org.apache.hive.jdbc.HiveStatement.executeUpdate(HiveStatement.java:490)\r\nat org.apache.hive.jdbc.HivePreparedStatement.executeUpdate(HivePreparedStatement.java:122)\r\nat com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)\r\nat com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)\r\nat org.apache.dolphinscheduler.plugin.task.sql.SqlTask.executeUpdate(SqlTask.java:323)\r\nat org.apache.dolphinscheduler.plugin.task.sql.SqlTask.executeFuncAndSql(SqlTask.java:220)\r\nat org.apache.dolphinscheduler.plugin.task.sql.SqlTask.handle(SqlTask.java:167)\r\nat\n\n### Anything else\n\n_No response_\n\n### Version\n\n3.1.x\n\n### Are you willing to submit PR?\n\n- [X] Yes I am willing to submit a PR!\n\n### Code of Conduct\n\n- [X] I agree to follow this project\
+Issue #16844: Labels: first time contributor, UI, backend, test, don't merge, DSIP, document
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+Issue #16843: Labels: bug, help wanted
+Issue #16842: Labels: UI, backend, test, DSIP, document
+Please retry analysis of this Pull-Request directly on SonarQube Cloud
+Issue #16841: Labels: bug
+This have been fixed in `dev`.
+Issue #16840: Labels: bug, UI, backend
+Fixed in `dev`.
+Issue #16839: Labels: question
+Can you describe what you what to do?
+Issue #16838: Labels: backend, DSIP, e2e, ready-to-merge
+Issue #16837: Labels: bug, backend, priority:middle, ready-to-merge
+Issue #16836: Labels: improvement, backend, test, 3.3.0
+Issue #16835: Labels: improvement
+Issue #16834: Labels: feature
+Issue #16833: Labels: DSIP
+Issue #16832: Labels: wontfix
+This is `DataX` issue. Please open another issue in `DataX` community.
+Issue #16831: Labels: feature
+Please create an DSIP first. Just like #16818
+Issue #16830: Labels: bug, need to verify, Stale
+### Search before asking\n\n- [X] I had searched in the [issues](https://github.com/apache/dolphinscheduler/issues?q=is%3Aissue) and found no similar issues.\n\n\n### What happened\n\n![image](https://github.com/user-attachments/assets/903178db-a30b-4031-8256-dea3f0a0d7e2)\r\n![image](https://github.com/user-attachments/assets/e756385a-e178-4af1-b432-d22e2fef8f3e)\r\nWhen using shell nodes, same bash script, same output parameters, different results，version is 3.2.1\r\n\r\nTHIS IS LOG\r\n[LOG-PATH]: /home/dolphinscheduler/dolphinscheduler/worker-server/logs/20241121/15711672610656/1/2850/9520.log, [HOST]:  10.244.3.1:1234\r\n[INFO] 2024-11-21 16:31:14.656 +0800 - ***********************************************************************************************\r\n[INFO] 2024-11-21 16:31:14.658 +0800 - *********************************  Initialize task context  ***********************************\r\n[INFO] 2024-11-21 16:31:14.658 +0800 - ***********************************************************************************************\r\n[INFO] 2024-11-21 16:31:14.658 +0800 - Begin to initialize task\r\n[INFO] 2024-11-21 16:31:14.658 +0800 - Set task startTime: 1732177874658\r\n[INFO] 2024-11-21 16:31:14.658 +0800 - Set task appId: 2850_9520\r\n[INFO] 2024-11-21 16:31:14.658 +0800 - End initialize task {\r\n  "taskInstanceId" : 9520,\r\n  "taskName" : "cs",\r\n  "firstSubmitTime" : 1732177874648,\r\n  "startTime" : 1732177874658,\r\n  "taskType" : "SHELL",\r\n  "workflowInstanceHost" : "10.244.3.1:5678",\r\n  "host" : "10.244.3.1:1234",\r\n  "logPath" : "/home/dolphinscheduler/dolphinscheduler/worker-server/logs/20241121/15711672610656/1/2850/9520.log",\r\n  "processId" : 0,\r\n  "processDefineCode" : 15711672610656,\r\n  "processDefineVersion" : 1,\r\n  "processInstanceId" : 2850,\r\n  "scheduleTime" : 1732118400000,\r\n  "executorId" : 2,\r\n  "cmdTypeIfComplement" : 5,\r\n  "tenantCode" : "dolphinscheduler",\r\n  "processDefineId" : 0,\r\n  "projectId" : 0,\r\n  "projectCode" : 14483060818400,\r\n  "taskParams" : "{\\"localParams\\":[],\\"rawScript\\":\\"#!/bin/bash\\\\r\\\\n# 显示当前时间\\\\r\\\\necho \\\\\\"当前时间为 : ${ct}\\\\\\"\\\\r\\\\n\\\\r\\\\n# 截取时间部分\\\\r\\\\nsub_time=$(echo $ct | cut -c 9-14)\\\\r\\\\necho \\\\\\"日期部分为 : ${sub_time}\\\\\\"\\\\r\\\\n# 判断时间部分\\\\r\\\\nif [ \\\\\\"$sub_time\\\\\\" == \\\\\\"000000\\\\\\" ]; then\\\\r\\\\n    echo \\\\\\"yes\\\\\\"\\\\r\\\\nelse\\\\r\\\\n    echo \\\\\\"no\\\\\\"\\\\r\\\\nfi\\",\\"resourceList\\":[]}",\r\n  "environmentConfig" : "export DATAX_LAUNCHER=/home/dolphinscheduler/datax/bin/datax.py\\nexport PYTHON_LAUNCHER=/home/dolphinscheduler/anaconda3/bin/python\\nexport PATH=$PATH:$DATAX_LAUNCHER:$PYTHON_LAUNCHER",\r\n  "prepareParamsMap" : {\r\n    "system.task.definition.name" : {\r\n      "prop" : "system.task.definition.name",\r\n      "direct" : "IN",\r\n      "type" : "VARCHAR",\r\n      "value" : "cs"\r\n    },\r\n    "system.project.name" : {\r\n      "prop" : "system.project.name",\r\n      "direct" : "IN",\r\n      "type" : "VARCHAR",\r\n      "value" : null\r\n    },\r\n    "pt" : {\r\n      "prop" : "pt",\r\n      "direct" : "IN",\r\n      "type" : "VARCHAR",\r\n      "value" : "20241120"\r\n    },\r\n    "system.biz.curdate" : {\r\n      "prop" : "system.biz.curdate",\r\n      "direct" : "IN",\r\n      "type" : "VARCHAR",\r\n      "value" : "20241121"\r\n    },\r\n    "system.task.instance.id" : {\r\n      "prop" : "system.task.instance.id",\r\n      "direct" : "IN",\r\n      "type" : "VARCHAR",\r\n      "value" : "9520"\r\n    },\r\n    "system.task.definition.code" : {\r\n      "prop" : "system.task.definition.code",\r\n      "direct" : "IN",\r\n      "type" : "VARCHAR",\r\n      "value" : "15711670763872"\r\n    },\r\n    "system.datetime" : {\r\n      "prop" : "system.datetime",\r\n      "direct" : null,\r\n      "type" : null,\r\n      "value" : "20241121000000"\r\n    },\r\n    "ct" : {\r\n      "prop" : "ct",\r\n      "direct" : "IN",\r\n      "type" : "VARCHAR",\r\n      "value" : "20241121000000\\t"\r\n    },\r\n    "system.project.code" : {\r\n      "prop" : "system.project.code",\r\n      "direct" : "IN",\r\n      "type" : "VARCHAR",\r\n      "value" : "14483060818400"\r\n    },\r\n    "system.workflow.instance.id" : {\r\n      "prop" : "system.workflow.instance.id",\r\n      "direct" : "IN",\r\n      "type" : "VARCHAR",\r\n      "value" : "2850"\r\n    },\r\n    "system.biz.date" : {\r\n      "prop" : "system.biz.date",\r\n      "direct" : "IN",\r\n      "type" : "VARCHAR",\r\n      "value" : "20241120"\r\n    },\r\n    "system.workflow.definition.name" : {\r\n      "prop" : "system.workflow.definition.name",\r\n      "direct" : "IN",\r\n      "type" : "VARCHAR",\r\n      "value" : "cs1"\r\n    },\r\n    "system.workflow.definition.code" : {\r\n      "prop" : "system.workflow.definition.code",\r\n      "direct" : "IN",\r\n      "type" : "VARCHAR",\r\n      "value" : "15711672610656"\r\n    }\r\n  },\r\n  "taskAppId" : "2850_9520",\r\n  "taskTimeout" : 2147483647,\r\n  "workerGroup" : "default",\r\n  "delayTime" : 0,\r\n  "currentExecutionStatus" : "SUBMITTED_SUCCESS",\r\n  "endTime" : 0,\r\n  "dryRun" : 0,\r\n  "paramsMap" : {\r\n    "system.datetime" : {\r\n      "prop" : "system.datetime",\r\n      "direct" : null,\r\n      "type" : null,\r\n      "value" : "20241121000000"\r\n    }\r\n  },\r\n  "cpuQuota" : -1,\r\n  "memoryMax" : -1,\r\n  "testFlag" : 0,\r\n  "logBufferEnable" : false,\r\n  "dispatchFailTimes" : 0\r\n}\r\n[INFO] 2024-11-21 16:31:14.659 +0800 - ***********************************************************************************************\r\n[INFO] 2024-11-21 16:31:14.659 +0800 - *********************************  Load task instance plugin  *********************************\r\n[INFO] 2024-11-21 16:31:14.659 +0800 - ***********************************************************************************************\r\n[INFO] 2024-11-21 16:31:14.660 +0800 - Send task status RUNNING_EXECUTION master: 10.244.3.1:1234\r\n[INFO] 2024-11-21 16:31:14.660 +0800 - TenantCode: dolphinscheduler check successfully\r\n[INFO] 2024-11-21 16:31:14.661 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/dolphinscheduler/14483060818400/15711672610656_1/2850/9520 check successfully\r\n[INFO] 2024-11-21 16:31:14.661 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.shell.ShellTaskChannel successfully\r\n[INFO] 2024-11-21 16:31:14.661 +0800 - Download resources successfully: \r\nResourceContext(resourceItemMap={})\r\n[INFO] 2024-11-21 16:31:14.661 +0800 - Download upstream files: [] successfully\r\n[INFO] 2024-11-21 16:31:14.661 +0800 - Task plugin instance: SHELL create successfully\r\n[INFO] 2024-11-21 16:31:14.661 +0800 - Initialize shell task params {\r\n  "localParams" : [ ],\r\n  "varPool" : null,\r\n  "rawScript" : "#!/bin/bash\\r\\n# 显示当前时间\\r\\necho \\"当前时间为 : ${ct}\\"\\r\\n\\r\\n# 截取时间部分\\r\\nsub_time=$(echo $ct | cut -c 9-14)\\r\\necho \\"日期部分为 : ${sub_time}\\"\\r\\n# 判断时间部分\\r\\nif [ \\"$sub_time\\" == \\"000000\\" ]; then\\r\\n    echo \\"yes\\"\\r\\nelse\\r\\n    echo \\"no\\"\\r\\nfi",\r\n  "resourceList" : [ ]\r\n}\r\n[INFO] 2024-11-21 16:31:14.662 +0800 - Success initialized task plugin instance successfully\r\n[INFO] 2024-11-21 16:31:14.662 +0800 - Set taskVarPool: null successfully\r\n[INFO] 2024-11-21 16:31:14.662 +0800 - ***********************************************************************************************\r\n[INFO] 2024-11-21 16:31:14.662 +0800 - *********************************  Execute task instance  *************************************\r\n[INFO] 2024-11-21 16:31:14.662 +0800 - ***********************************************************************************************\r\n[INFO] 2024-11-21 16:31:14.662 +0800 - Final Shell file is: \r\n[INFO] 2024-11-21 16:31:14.662 +0800 - ****************************** Script Content *****************************************************************\r\n[INFO] 2024-11-21 16:31:14.662 +0800 - #!/bin/bash\r\nBASEDIR=$(cd `dirname $0`; pwd)\r\ncd $BASEDIR\r\nexport DATAX_LAUNCHER=/home/dolphinscheduler/datax/bin/datax.py\r\nexport PYTHON_LAUNCHER=/home/dolphinscheduler/anaconda3/bin/python\r\nexport PATH=$PATH:$DATAX_LAUNCHER:$PYTHON_LAUNCHER\r\n#!/bin/bash\r\n# 显示当前时间\r\necho "当前时间为 : 20241121000000\t"\r\n\r\n# 截取时间部分\r\nsub_time=$(echo $ct | cut -c 9-14)\r\necho "日期部分为 : ${sub_time}"\r\n# 判断时间部分\r\nif [ "$sub_time" == "000000" ]; then\r\n    echo "yes"\r\nelse\r\n    echo "no"\r\nfi\r\n[INFO] 2024-11-21 16:31:14.663 +0800 - ****************************** Script Content *****************************************************************\r\n[INFO] 2024-11-21 16:31:14.663 +0800 - Executing shell command : sudo -u dolphinscheduler -i /tmp/dolphinscheduler/exec/process/dolphinscheduler/14483060818400/15711672610656_1/2850/9520/2850_9520.sh\r\n[INFO] 2024-11-21 16:31:14.666 +0800 - process start, process id is: 87985\r\n[INFO] 2024-11-21 16:31:16.666 +0800 -  -> \r\n\t当前时间为 : 20241121000000\t\r\n\t日期部分为 : \r\n\tno\r\n[INFO] 2024-11-21 16:31:16.668 +0800 - process has exited. execute path:/tmp/dolphinscheduler/exec/process/dolphinscheduler/14483060818400/15711672610656_1/2850/9520, processId:87985 ,exitStatusCode:0 ,processWaitForStatus:true ,processExitValue:0\r\n[INFO] 2024-11-21 16:31:16.669 +0800 - ***********************************************************************************************\r\n[INFO] 2024-11-21 16:31:16.669 +0800 - *********************************  Finalize task instance  ************************************\r\n[INFO] 2024-11-21 16:31:16.669 +0800 - ***********************************************************************************************\r\n[INFO] 2024-11-21 16:31:16.669 +0800 - Upload output files: [] successfully\r\n[INFO] 2024-11-21 16:31:16.670 +0800 - Send task execute status: SUCCESS to master : 10.244.3.1:1234\r\n[INFO] 2024-11-21 16:31:16.670 +0800 - Remove the current task execute context from worker cache\r\n[INFO] 2024-11-21 16:31:16.670 +0800 - The current execute mode isn\
+Issue #16829: Labels: first time contributor, improvement, backend, ready-to-merge
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+Issue #16827: Labels: bug
+Fixed in `dev`.
+Issue #16826: Labels: improvement, backend, test, CI&CD, e2e, document
+Please retry analysis of this Pull-Request directly on SonarQube Cloud
+Issue #16825: Labels: DSIP, 3.3.0
+Issue #16824: Labels: bug, first time contributor, backend, test
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+Issue #16823: Labels: DSIP
+Issue #16822: Labels: bug, need to verify, Stale
+All your master have the same timezone?
+Issue #16821: Labels: backend, test, document
+Issue #16820: Labels: bug, 3.3.0
+We should use filter here
+Issue #16818: Labels: DSIP
+Issue #16816: Labels: DSIP, 3.3.0
+Issue #16815: Labels: discussion, DSIP
+The removal here is just expressed by replacing hints with keys \r\nThe front-end and back-end judgment methods are all hardcoded, which is not conducive to multilingual expansion\r\nIf more languages are introduced later, the enum AlertInputTips will become very bulky
+Issue #16814: Labels: bug, backend, priority:high, ready-to-merge
+@SbloodyS fixed.
+Issue #16813: Labels: bug, backend
+Issue #16812: Labels: improvement
+Please create an DSIP first and provide full design details.
+Issue #16811: Labels: bug, backend, priority:high
+Issue #16810: Labels: improvement, backend, 3.3.0
+Issue #16809: Labels: improvement
+Issue #16808: Labels: UI, improvement, 3.3.0
+Issue #16807: Labels: UI, improvement
+Issue #16804: Labels: bug, help wanted
+![image](https://github.com/user-attachments/assets/6ceaff72-78fa-4e77-8e2f-88fbfd0ff144)\r\n
+Issue #16803: Labels: feature, UI, backend, test
+Issue #16802: Labels: discussion, improvement
+cc @Gallardot @zhongjiajie @ruanwenjun 
+Issue #16801: Labels: feature, UI
+Issue #16799: Labels: bug, backend, test, priority:high
+Issue #16798: Labels: bug, backend
+Fixed in `dev`.
+Issue #16797: Labels: wontfix
+### Search before asking\n\n- [X] I had searched in the [issues](https://github.com/apache/dolphinscheduler/issues?q=is%3Aissue) and found no similar issues.\n\n\n### What happened\n\nAfter adding a warning instance to the warning group and configuring it, "Test Send" was successful and the email could be sent successfully. However, after selecting the created warning when starting the process, the email could not be received after the process was executed. The warning troubleshooting log found that an error was reported when sending the email. .\r\n![C7F085CA-4025-4b4c-8C83-EB9F0D21B810](https://github.com/user-attachments/assets/c0c0569f-34e2-4f02-b328-77f86555f2cd)\r\n\n\n### What you expected to happen\n\nThe process ended normally, but the warning email could not be sent.\n\n### How to reproduce\n\nThe version used is 3.2.2. Configure the use of email for early warning, and then create a simple process instance. The rotation will be started both successfully and failed. Problems will occur after the process is executed.\n\n### Anything else\n\n_No response_\n\n### Version\n\n3.2.x\n\n### Are you willing to submit PR?\n\n- [ ] Yes I am willing to submit a PR!\n\n### Code of Conduct\n\n- [X] I agree to follow this project\
+Issue #16796: Labels: bug, backend, 3.3.0
+Since we use a daemon thread to detect the worker group changed, so there will always exist delay, but this delay does have a serious effect. We can broadcast a worker group changed event to all masters once the api receive a worker group changed event.
+Issue #16795: Labels: backend
+Issue #16794: Labels: UI, backend, kubernetes, test, CI&CD, DSIP, e2e, document
+> Apache emphasizes achieving consensus.\r\n\r\nFirst of all, the current consensus does not require all people to reach an agreement, but only more than half. For more info you can take a look at https://github.com/apache/comdev-site/pull/189\r\n\r\n> If there are significant differences and we cannot be resolved in the short term, we may choose to temporarily shelve the proposal, allowing much more time for more information before re-discussing.\r\n\r\nLike I said, no one among the maintainers on the current community is willing to refactor this module. How to achieve this without anyone willing to take responsibility?\r\n\r\n> Considering this is a major decision, I suggest you send a vote email to the dev mailing list.\r\n\r\nI think issue and dev mail list have the same meaning on this issue. And all active PMC/Committer have been included in this issue.
+Issue #16793: Labels: bug, backend
+Issue #16792: Labels: backend
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+Issue #16791: Labels: bug, good first issue
+Hi @sylphy-zh, I have assigned this issue to you, you can submit a PR to solve it.
+Issue #16790: Labels: backend, test, DSIP, document, 3.3.0
+Issue #16789: Labels: bug, good first issue
+help
+Issue #16788: Labels: first time contributor, improvement, backend
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+Issue #16787: Labels: bug, UI
+Issue #16786: Labels: bug, UI
+Issue #16785: Labels: bug, good first issue
+@SbloodyS  Could you assign it to me ?  I can fix it.
+Issue #16784: Labels: bug, UI
+Please retry analysis of this Pull-Request directly on SonarCloud
+Issue #16783: Labels: bug, UI
+Issue #16782: Labels: document
+Issue #16781: Labels: improvement, backend
+I am thinking about a question, whether it is more appropriate to add these parameters such as loadUrl, loadProps, batchSize, etc., in the plugin datax, 和 display them according to the database type\r\nTake a look at the picture below：\r\n![image](https://github.com/user-attachments/assets/0a7a7e1a-bcac-402e-8ff6-ebdf0908f651)\r\n
+Issue #16780: Labels: improvement, document
+Issue #16779: Labels: improvement, document
+Issue #16778: Labels: wontfix
+This feature already exists. You can check `about` function.
+Issue #16777: Labels: bug, good first issue
+I verified this issue using the dev branch, and it did not reproduce. Both workflow and sub_process(sub_workflow) are using the same tenant. Could you check which branch you are using?\r\n![WX20241117-123319@2x](https://github.com/user-attachments/assets/4bff52d6-92ec-4cd1-b75d-618feb604e63)\r\n![WX20241117-123355@2x](https://github.com/user-attachments/assets/01dc76b4-d76f-4f18-ba9c-1dc8d1056b81)\r\n
+Issue #16776: Labels: bug, backend, 3.3.0
+@ruanwenjun i can have a try
+Issue #16775: Labels: bug, backend, test
+Issue #16773: Labels: improvement, backend
+@SbloodyS  cc
+Issue #16772: Labels: discussion, DSIP
+If this is to be optimized, all relevant frontend and backend codes and table field names need to be modified uniformly. You should create an DSIP first.
+Issue #16771: Labels: bug, UI
+> The type `WAIT_TO_RUN` is never used, it would be better if you help to optimize this.\r\n\r\nThe type `WAIT_TO_RUN` is never used, It can be removed, but this PR is to fix the display problem. The two do not affect each other.
+Issue #16770: Labels: bug, backend
+Issue #16769: Labels: UI, improvement
+Issue #16768: Labels: bug, backend, Stale
+This issue has been automatically marked as stale because it has not had recent activity for 30 days. It will be closed in next 7 days if no further activity occurs.
+Issue #16767: Labels: question, Stale
+The `sub-workflow` task is a special task type. During the fault tolerance period, all task types will generate new task instances, which is a unified operation. So this is not a bug.
+Issue #16766: Labels: discussion, DSIP
+cc @ruanwenjun @Radeity @Gallardot @caishunfeng @EricGao888 
+Issue #16765: Labels: improvement, Waiting for reply
+Please create an DSIP first. @liunaijie 
+Issue #16764: Labels: bug, backend
+Issue #16763: Labels: bug, first time contributor, backend
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+Issue #16762: Labels: document, 3.3.0, chore
+Please follow the pull-request-notice to create an issue first and correct the title and description. @GOODBOY008 \r\n\r\nhttps://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md
+Issue #16760: Labels: feature, need more information
+If there are plans to develop it, when is it expected to be launched?
+Issue #16759: Labels: bug, Stale
+Which version you are using? @1105560808 
+Issue #16758: Labels: good first issue, improvement, 3.3.0
+Please assign this to me.
+Issue #16757: Labels: good first issue, improvement, 3.3.0
+I want to complete this Improvement，please assign this task to me
+Issue #16756: Labels: improvement, backend, test, document
+will add test cast when this pr https://github.com/apache/dolphinscheduler/pull/16741 merged
+Issue #16755: Labels: good first issue, improvement, document
+i want to try this , can you please assign this to me？
+Issue #16754: Labels: good first issue, improvement
+i think can try do it
+Issue #16752: Labels: question, Stale
+This issue has been automatically marked as stale because it has not had recent activity for 30 days. It will be closed in next 7 days if no further activity occurs.
+Issue #16751: Labels: bug, UI, backend, test
+> This is not an implementation I can accept, we already have two kinds of i18n implementation, right now we introduced another new one. We need to make sure for one plugin there only exist one i18n implementation. The i18n of parameter type is controlled by front-end, place holder is controlled by front-end/back-end, this look strange.\r\n> \r\n> It will be great if the parameter type is also controlled at this way.\r\n\r\nThis time I am solving the display problem, and next I plan to extract all prompt information and put it on the front end, then retrieve the prompt information through specifying keys
+Issue #16750: Labels: duplicate
+Duplicated with #16747
+Issue #16748: Labels: duplicate
+Duplicated with #16517
+Issue #16747: Labels: bug
+version 3.2.1
+Issue #16746: Labels: bug
+good job
+Issue #16745: Labels: bug
+PTAL, Thanks. @Gallardot 
+Issue #16744: Labels: bug
+This issue have been fixed in `dev`
+Issue #16743: Labels: wontfix
+Please using english to describe.
+Issue #16742: Labels: improvement, Stale
+This issue has been automatically marked as stale because it has not had recent activity for 30 days. It will be closed in next 7 days if no further activity occurs.
+Issue #16741: Labels: bug, UI, backend, test
+![image](https://github.com/user-attachments/assets/2252378c-1296-4bd7-9bc7-9146bdbc88df)\r\n\r\n![image](https://github.com/user-attachments/assets/d0666ae0-295e-4d27-b7c3-a53ec16ff044)\r\n\r\n\r\nAll failures look like timeout issues, can someone help to re-trigger the CI? thanks
+Issue #16740: Labels: bug, backend
+Issue #16738: Labels: bug, need more information
+### Search before asking\n\n- [X] I had searched in the [issues](https://github.com/apache/dolphinscheduler/issues?q=is%3Aissue) and found no similar issues.\n\n\n### What happened\n\nour dolphinscheduler task sometimes  failed with error below:\r\n\r\n```\r\n[WI-0][TI-0] - [ERROR] 2024-10-23 18:00:15.480 +0800 o.a.d.s.m.r.BaseTaskDispatcher:[58] - Dispatch task: 看板推送任务实例同步 failed, worker group not found.\r\norg.apache.dolphinscheduler.server.master.dispatch.exceptions.WorkerGroupNotFoundException: Cannot find worker group: Can not find worker group 数仓\r\n\tat org.apache.dolphinscheduler.server.master.dispatch.host.LowerWeightHostManager.getWorkerHostWeights(LowerWeightHostManager.java:157)\r\n\tat org.apache.dolphinscheduler.server.master.dispatch.host.LowerWeightHostManager.select(LowerWeightHostManager.java:74)\r\n\tat org.apache.dolphinscheduler.server.master.runner.dispatcher.WorkerTaskDispatcher.getTaskInstanceDispatchHost(WorkerTaskDispatcher.java:78)\r\n\tat org.apache.dolphinscheduler.server.master.runner.BaseTaskDispatcher.dispatchTask(BaseTaskDispatcher.java:55)\r\n\tat org.apache.dolphinscheduler.server.master.runner.GlobalTaskDispatchWaitingQueueLooper.run(GlobalTaskDispatchWaitingQueueLooper.java:80)\r\n```\r\n\r\nand the work group definitely exists, 800+ task use this worker group, only some task failed randomly. It also report "Cannot find worker group: Can not find worker group default" sometimes. These error will always succeed with a retry/retrun.  I looked into the source code,  I wonder if the `workerHostWeightsMap`  will change while running?  If yes, how?  Thank you.\r\n\r\n```\r\n    private Set<HostWeight> getWorkerHostWeights(String workerGroup) throws WorkerGroupNotFoundException {\r\n        workerGroupReadLock.lock();\r\n        try {\r\n            Set<HostWeight> hostWeights = workerHostWeightsMap.get(workerGroup);\r\n            if (hostWeights == null) {\r\n                throw new WorkerGroupNotFoundException("Can not find worker group " + workerGroup);\r\n            }\r\n            return hostWeights;\r\n        } finally {\r\n            workerGroupReadLock.unlock();\r\n        }\r\n    }\r\n```\n\n### What you expected to happen\n\nwork group should always been found\n\n### How to reproduce\n\ncannot reproduce for specified task, rerun will succeed, but always happens everyday for random tasks\n\n### Anything else\n\n_No response_\n\n### Version\n\n3.2.x\n\n### Are you willing to submit PR?\n\n- [ ] Yes I am willing to submit a PR!\n\n### Code of Conduct\n\n- [X] I agree to follow this project\
+Issue #16735: Labels: discussion, DSIP
+@SbloodyS Sb @davidzollo da\r\nFor the SDK, we need to share base classes with SDK users, such as ProcessDefinition, DEPENDENT task, K8s task, and Schedule. If we can move these classes to a common API module, this module can then be reused by both the SDK module and the Master/Worker modules.\r\n\r\nOf course, we can create some DTO classes, but we also need to plan for creating DTOs for future classes.\r\n
+Issue #16734: Labels: bug, Waiting for reply
+Issue #16733: Labels: improvement, document
+Issue #16732: Labels: improvement, document
+Issue #16730: Labels: duplicate
+Duplicated with #16295
+Issue #16729: Labels: duplicate
+docker dolphinscheduler-standalone-server:3.2.2
+Issue #16728: Labels: discussion, DSIP, priority:high
+I generally agree with it, data quality is an important module of our project we not only have a data quality type task but also have a data quality result sub-module in UI, if we want to remove it we should earn enough +1 vote in our community
+Issue #16727: Labels: bug, help wanted
+Can anyone help me to solve this problem? thx~
+Issue #16726: Labels: backend, test, CI&CD, don't merge, Stale, e2e, document
+Please retry analysis of this Pull-Request directly on SonarCloud
+Issue #16725: Labels: improvement, backend, Stale
+This issue has been automatically marked as stale because it has not had recent activity for 30 days. It will be closed in next 7 days if no further activity occurs.
+Issue #16724: Labels: bug, good first issue
+The remote shell task was successful, but the log shows a failure
+Issue #16723: Labels: question, Stale
+This issue has been automatically marked as stale because it has not had recent activity for 30 days. It will be closed in next 7 days if no further activity occurs.
+Issue #16721: Labels: wontfix
+Issue #16719: Labels: wontfix
+Please using english to describe.
+Issue #16718: Labels: bug
+This issue have been fixed in `dev`
+Issue #16717: Labels: discussion, improvement, Stale
+We have no plans to support flink streaming task for now since this is a very huge task.
+Issue #16716: Labels: help wanted, discussion, improvement
+I think this is too bloated. We can provide some parameters and templates for users to edit the content of alarm information freely, just like grafana alarm.
+Issue #16715: Labels: bug, backend, test
+Please check failed UT. @sdhzwc 
+Issue #16714: Labels: wontfix
+Docker tag `dev` to the `dev` branch, not belonging to the production environment.
+Issue #16712: Labels: docker, backend, test
+Duplicated with #16711
+Issue #16711: Labels: improvement, backend, test, Stale
+> Please create an improvement sub issue first and link to this PR.\r\n\r\nSure. 
+Issue #16710: Labels: No Labels
+Issue #16709: Labels: No Labels
+Please using english to describe.
+Issue #16708: Labels: document, chore
+Issue #16706: Labels: discussion, DSIP
+What does the UI look like when lastNdate is selected? 
+Issue #16705: Labels: bug, good first issue
+@SbloodyS Let me contribute.
+Issue #16704: Labels: duplicate
+Is it necessary to turn the `cycle time` of dependent tasks in the same cycle into a variable that can be parsed, for example: taking 1 from last1date and performing the operation of date-1 directly, taking 1 from last1month and performing the operation of month-1 directly, and so on.Or should we only give a few fixed `cycle time`\r\n
+Issue #16703: Labels: feature, first time contributor, backend, test, document, miss:docs
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+Issue #16701: Labels: bug, first time contributor, document
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+Issue #16700: Labels: bug, document
+Issue #16699: Labels: feature, UI, backend, Stale
+This issue has been automatically marked as stale because it has not had recent activity for 30 days. It will be closed in next 7 days if no further activity occurs.
+Issue #16698: Labels: help wanted, improvement
+Issue #16697: Labels: bug, backend
+I need some help
+Issue #16695: Labels: help wanted, feature
+Spark on k8s with spark task not supported right now. You can using shell task instead.
+Issue #16694: Labels: question
+### Search before asking\n\n- [X] I had searched in the [issues](https://github.com/apache/dolphinscheduler/issues?q=is%3Aissue) and found no similar issues.\n\n\n### What happened\n\nLet me tell you my steps\r\n1. Deploy the dolphinscheduler 1.3.3 environment and start it\r\n\r\n2. Create a DAG containing only one shell task in the workflow. The content of the shell script is to print some constants.\r\n(Even if the script shell content is replaced with nothing, the error in the third step will occur)\r\n\r\n3. An error occurs when running the workflow. The corresponding content of dolphinscheduler-api-server.log is as follows:\r\n[INFO] 2024-10-14 16:48:22.796 org.apache.dolphinscheduler.api.controller.ProcessDefinitionController:[180] - login user admin, update process define, project name: project_test, process define name: dag, process_definition_json: {"globalParams":[],"tasks":[{"type":"SHELL","id":"tasks-43985","name":"shell","params":{"resourceList":[ ],"localParams":[],"rawScript":" "},"description":"","timeout":{"strategy":"","interval":null,"enable":false}," runFlag":"NORMAL","conditionResult":{"successNode":[""],"failedNode":[""]},"dependence":{},"maxRetryTimes":"1","retryInterval": "1","taskInstancePriority":"MEDIUM","workerGroup":"default","preTasks":[]}],"tenantId":2,"timeout":0}, desc: , locations:{"tasks -43985":{"name":"shell","targetarr":"","nodenumber":"0","x":418,"y":174}}, connects:[]\r\n[INFO] 2024-10-14 16:48:24.248 org.apache.dolphinscheduler.api.controller.ProcessDefinitionController:[290] - query process definition list paging, login user:admin, project name:project_test\r\n[INFO] 2024-10-14 16:48:34.424 org.apache.dolphinscheduler.api.controller.ProcessDefinitionController:[212] - login user admin, release process definition, project name: project_test, release state: 1\r\n[INFO] 2024-10-14 16:48:34.613 org.apache.dolphinscheduler.api.controller.ProcessDefinitionController:[290] - query process definition list paging, login user:admin, project name:project_test\r\n[INFO] 2024-10-14 16:48:36.152 org.apache.dolphinscheduler.api.controller.WorkerGroupController:[100] - query all worker group: login user admin\r\n[INFO] 2024-10-14 16:48:36.281 org.apache.dolphinscheduler.api.controller.ExecutorController:[173] - login user admin, check process definition 4\r\n[INFO] 2024-10-14 16:48:36.381 org.apache.dolphinscheduler.api.controller.ExecutorController:[199] - login user admin, get process receiver definition and cc\r\n[INFO] 2024-10-14 16:48:36.382 org.apache.dolphinscheduler.api.service.ExecutorService:[436] - processInstanceId null[INFO] 2024-10-14 16:48:37.847 org.apache.dolphinscheduler. api.controller.ExecutorController:[111] - login user admin, start process instance, project name: project_test, process definition id: 4, schedule time: , failure policy: CONTINUE, node name: , node dep: TASK_POST, notify type: NONE, notify group id: default,receivers:,receiversCc:, run mode: RUN_MODE_SERIAL,process instance priority:MEDIUM, workerGroup: default, timeout: null\r\n[ERROR] 2024-10-14 16:48:37.851 org.apache.dolphinscheduler.api.exceptions.ApiExceptionHandler:[45] - Running workflow instance\r\nmistake\r\njava.lang.NumberFormatException: For input string: "{"startupTime":1726131628063"\r\n        at sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2043)\r\n        at sun.misc.FloatingDecimal.parseDouble(FloatingDecimal.java:110)\r\n        at java.lang.Double.parseDouble(Double.java:538)\r\n        at org.apache.dolphinscheduler.common.utils.ResInfo.parseHeartbeatForZKInfo(ResInfo.java:105)\r\n        at org.apache.dolphinscheduler.service.zk.AbstractZKClient.getServersList(AbstractZKClient.java:127)\r\n        at org.apache.dolphinscheduler.api.service.MonitorService.getServerListFromZK(MonitorService.java:153)\r\n        at org.apache.dolphinscheduler.api.service.ExecutorService.checkMasterExists(ExecutorService.java:160)\r\n        at org.apache.dolphinscheduler.api.service.ExecutorService.execProcessInstance(ExecutorService.java:128)\r\n        at org.apache.dolphinscheduler.api.controller.ExecutorController.startProcessInstance(ExecutorController.java:122)\r\n        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n        at java.lang.reflect.Method.invoke(Method.java:498)\r\n        at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)\r\n        at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)\r\n        at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)\r\n        at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)\r\n        at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)\r\n        at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)\r\n        at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)\r\n        at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)\r\n        at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)\r\n        at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)\r\n        at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)\r\n        at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)\r\n        at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)\r\n        at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:867)\r\n        at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1623)\r\n        at com.github.xiaoymin.swaggerbootstrapui.filter.SecurityBasicAuthFilter.doFilter(SecurityBasicAuthFilter.java:84)\r\n        at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610)\r\n        at com.github.xiaoymin.swaggerbootstrapui.filter.ProductionSecurityFilter.doFilter(ProductionSecurityFilter.java:53)\r\n        at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610)\r\n        at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)\r\n        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)\r\n        at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610)\r\n        at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)\r\n        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)\r\n        at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610)\r\n        at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)\r\n        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)\r\n        at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610)\r\n        at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)\r\n        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)\r\n        at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610)\r\n        at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)\r\n        at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)\r\n        at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)\r\n        at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)\r\n        at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)\r\n        at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)\r\n        at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)\r\n        at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)\r\n        at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)\r\n        at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)\r\n        at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)\r\n        at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)\r\n        at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)\r\n        at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)\r\n        at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)\r\n        at org.eclipse.jetty.server.Server.handle(Server.java:502)\r\n        at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)\r\n        at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)\r\n        at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)\r\n     at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)\r\n        at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)\r\n        at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)\r\n        at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)\r\n        at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)\r\n        at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)\r\n        at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)\r\n        at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)\r\n        at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)\r\n        at java.lang.Thread.run(Thread.java:750)\n\n### What you expected to happen\n\nThere is no startupTime parameter in either the workflow tasks or the environment configuration of dolphinscheduler. Is it possible that the startupTime format conversion problem is a bug?\n\n### How to reproduce\n\n1. Refer to this document to deploy the dolphinscheduler-1.3.3 environment (3 nodes)\r\nhttps://dolphinscheduler.apache.org/zh-cn/docs/1.3.3/cluster-deployment\r\n2. Create a DAG containing only shell tasks in the workflow and run this workflow.\n\n### Anything else\n\n_No response_\n\n### Version\n\ndev\n\n### Are you willing to submit PR?\n\n- [ ] Yes I am willing to submit a PR!\n\n### Code of Conduct\n\n- [X] I agree to follow this project\
+Issue #16693: Labels: bug, document
+Issue #16692: Labels: bug, document
+Issue #16691: Labels: question
+You should add `SPRING_PROFILES_ACTIVE=postgresql` to env.
+Issue #16690: Labels: bug, document
+Issue #16689: Labels: No Labels
+There is no such plan at present.
+Issue #16688: Labels: DSIP
+Issue #16686: Labels: bug, backend, Stale
+This issue has been automatically marked as stale because it has not had recent activity for 30 days. It will be closed in next 7 days if no further activity occurs.
+Issue #16685: Labels: discussion, improvement, kubernetes, Stale
+cc @Gallardot 
+Issue #16683: Labels: discussion, backend, test
+Issue #16682: Labels: bug, backend, Stale
+This issue has been automatically marked as stale because it has not had recent activity for 30 days. It will be closed in next 7 days if no further activity occurs.
+Issue #16681: Labels: bug, backend, ready-to-merge
+Please retry analysis of this Pull-Request directly on SonarCloud
+Issue #16680: Labels: bug, backend
+Issue #16679: Labels: help wanted, improvement
+You mean datasource or metadata?
+Issue #16677: Labels: question, Stale
+![image](https://github.com/user-attachments/assets/81f88982-82df-4144-9cfa-85b714e885c4)\r\n
+Issue #16675: Labels: question, Stale
+### Search before asking\n\n- [X] I had searched in the [issues](https://github.com/apache/dolphinscheduler/issues?q=is%3Aissue) and found no similar issues.\n\n\n### What happened\n\n1.安装apache-dolphinscheduler-3.1.9，配置文件配置好的情况下，执行install.sh部署脚本，在安装过程中报：\r\nException in thread "main" java.lang.NoClassDefFoundError: org/apache/commons/cli/DefaultParser\r\nat org.apache.zookeeper.cli.DeleteAllCommand.parse(DeleteAllCommand.java:52)\r\nat org.apache.zookeeper.ZooKeeperMain.processZKCmd(ZooKeeperMain.java:438)\r\nat org.apache.zookeeper.ZooKeeperMain.processCmd(ZooKeeperMain.java:367)\r\nat org.apache.zookeeper.ZooKeeperMain.run(ZooKeeperMain.java:350)\r\nat org.apache.zookeeper.ZooKeeperMain.main(ZooKeeperMain.java:293)\r\nCaused by: java.lang.ClassNotFoundException: org.apache.commons.cli.DefaultParser\r\nat java.net.URLClassLoader.findClass(URLClassLoader.java:407)\r\nat java.lang.ClassLoader.loadClass(ClassLoader.java:418)\r\nat sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)\r\nat java.lang.ClassLoader.loadClass(ClassLoader.java:351)\r\n... 5 more\n\n### What you expected to happen\n\n如何解决？\n\n### How to reproduce\n\n手动安装apache-dolphinscheduler-3.1.9，配置dolphinscheduler_env.sh、install_env.sh、common.properties，文件\r\nhadoop为高可用模式\n\n### Anything else\n\n_No response_\n\n### Version\n\n3.1.x\n\n### Are you willing to submit PR?\n\n- [ ] Yes I am willing to submit a PR!\n\n### Code of Conduct\n\n- [X] I agree to follow this project\
+Issue #16674: Labels: question, Stale
+dolphinshed-xxx-prod-01.xxxx.local   IP 172.17.7.1  VIP 172.17.7.6
+Issue #16673: Labels: backend, test, CI&CD, DSIP, e2e, document, miss:docs, miss:tests
+I think you miss the code of master-server .The task of other system sholud call other system in master-server .
+Issue #16672: Labels: discussion, DSIP
+> Please provide the needed information of a DSIP #14102.\r\n> \r\n> > The purpose of SDK is to allow third-party systems to register in DS through the integration of DS SDK plugins. The SDK includes third-party system registration, task list functions, task parameter functions, and task execution functions. Third party systems can delegate tasks to DS triggers by integrating SDKs and corresponding implementations. For example, in a data quality system, if a company wants to use its own data quality system to implement data quality audit tasks, and the data processing tasks are in DS, the processing tasks of the two platforms cannot be triggered by dependencies. The purpose of this feature is to solve the integration problem between DS and third-party systems. The above introduction is about the modification of DS, including the main process of task definition development and task execution. The main implementation of this DSIP is to provide a dependency (DS SDK) for third-party systems; 2. Add a new node (Other System node) to DS\r\n> \r\n> Let\
+Issue #16671: Labels: question
+### Search before asking\n\n- [X] I had searched in the [issues](https://github.com/apache/dolphinscheduler/issues?q=is%3Aissue) and found no similar issues.\n\n\n### What happened\n\n[Bug] [Worker] The sub workflow instance doesn\
+Issue #16669: Labels: bug, first time contributor, backend, Stale
+Please retry analysis of this Pull-Request directly on SonarCloud
+Issue #16668: Labels: bug, backend, Stale
+fixed in 3.3.0 
+Issue #16667: Labels: backend, CI&CD, e2e, document, chore
+Issue #16666: Labels: bug, document
+Issue #16664: Labels: backend
+Issue #16663: Labels: backend
+Issue #16662: Labels: backend
+Issue #16661: Labels: bug, need more information, Stale
+Can you provide the reproduction steps? @1017005846 
+Issue #16660: Labels: backend
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+Issue #16659: Labels: backend, test
+Duplicated with #16673
+Issue #16658: Labels: feature
+Please create an dsip first and provide the background and design details in it.
+Issue #16657: Labels: document
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+Issue #16655: Labels: bug, document
+Issue #16654: Labels: UI, backend, CI&CD, DSIP, e2e, document
+Issue #16653: Labels: bug
+### Search before asking\n\n- [X] I had searched in the [issues](https://github.com/apache/dolphinscheduler/issues?q=is%3Aissue) and found no similar issues.\n\n\n### What happened\n\n发送http告警的时候报错\r\n![image](https://github.com/user-attachments/assets/d79376db-de1a-4175-9fc2-8c5e4555777e)\r\n[ERROR] 2024-09-24 14:01:25.630 +0800 o.a.d.c.u.JSONUtils:[186] - parse list exception!\r\ncom.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.util.ArrayList<org.apache.dolphinscheduler.spi.params.base.PluginParams>` from Object value (token `JsonToken.START_OBJECT`)\r\n at [Source: (String)"{"headerParams":" {\\"Content-Type\\": \\"application/json\\"}","requestType":"POST","bodyParams":"{ \\"msgtype\\": \\"text\\",   \\"text\\": {\\"content\\": \
+Issue #16652: Labels: bug, backend, test, 3.3.0
+@Radeity PTAL.
+Issue #16651: Labels: bug
+### Search before asking\n\n- [X] I had searched in the [issues](https://github.com/apache/dolphinscheduler/issues?q=is%3Aissue) and found no similar issues.\n\n\n### What happened\n\nSeptember 24th 2024, 10:54:04.511 | [WI-0][TI-0] - [ERROR] 2024-09-24 10:54:04.373 +0800 o.a.d.e.b.s.JdkDynamicServerHandler:[84] - Cannot find the ServerMethodInvoker of : Transporter(header=TransporterHeader(methodIdentifier=public abstract void org.apache.dolphinscheduler.extract.worker.ITaskInstanceExecutionEventAckListener.handleTaskInstanceExecutionRunningEventAck(org.apache.dolphinscheduler.extract.worker.transportor.TaskInstanceExecutionRunningEventAck), opaque=308510), body=[123, 34, 97, 114, 103, 115, 34, 58, 91, 34, 101, 121, 74, 48, 89, 88, 78, 114, 83, 87, 53, 122, 100, 71, 70, 117, 89, 50, 86, 74, 90, 67, 73, 54, 77, 106, 77, 53, 77, 68, 107, 119, 79, 67, 119, 105, 99, 51, 86, 106, 89, 50, 86, 122, 99, 121, 73, 54, 100, 72, 74, 49, 90, 88, 48, 61, 34, 93, 44, 34, 97, 114, 103, 115, 84, 121, 112, 101, 115, 34, 58, 91, 34, 111, 114, 103, 46, 97, 112, 97, 99, 104, 101, 46, 100, 111, 108, 112, 104, 105, 110, 115, 99, 104, 101, 100, 117, 108, 101, 114, 46, 101, 120, 116, 114, 97, 99, 116, 46, 119, 111, 114, 107, 101, 114, 46, 116, 114, 97, 110, 115, 112, 111, 114, 116, 111, 114, 46, 84, 97, 115, 107, 73, 110, 115, 116, 97, 110, 99, 101, 69, 120, 101, 99, 117, 116, 105, 111, 110, 82, 117, 110, 110, 105, 110, 103, 69, 118, 101, 110, 116, 65, 99, 107, 34, 93, 125])\r\n-- | --\r\n\r\n\xa0 | September 24th 2024, 10:54:04.511 | [WI-1023497][TI-2390908] - [ERROR] 2024-09-24 10:54:04.374 +0800 o.a.d.s.m.p.q.TaskExecuteRunnable:[64] - Handle task event error, this event will be removed, event: TaskEvent(taskInstanceId=2390908, workerAddress=192.168.209.102:5678, state=TaskExecutionStatus{code=1, desc=\
+Issue #16650: Labels: bug
+Hi @ChaoquanTao , would you like to fix it?
+Issue #16649: Labels: bug, help wanted
+Issue #16648: Labels: UI, improvement
+To to target specific issue from PR, we recommend use keyword fix: #issue_id or close: #issue_id or closes: #issue_id in your PR describe(not title, just desc). It would not only connect issue to PR but also close issue automatically when PR is be closed.
+Issue #16647: Labels: UI, improvement
+Issue #16646: Labels: improvement, backend, Stale
+This issue has been automatically marked as stale because it has not had recent activity for 30 days. It will be closed in next 7 days if no further activity occurs.
+Issue #16645: Labels: improvement, backend
+Issue #16643: Labels: backend, test, DSIP, e2e
+Issue #16642: Labels: DSIP
+Issue #16641: Labels: improvement, priority:middle
+Issue #16640: Labels: improvement, backend, test
+Issue #16639: Labels: 3.3.0, chore
+Issue #16638: Labels: improvement, priority:high
+Issue #16637: Labels: bug, backend, test, priority:high, 3.3.0
+Issue #16636: Labels: improvement, backend, CI&CD, chore
+Issue #16635: Labels: improvement, CI&CD
+Issue #16634: Labels: bug
+Can you provide more logs of `api-server`? @chenhuping 
+Issue #16633: Labels: test, CI&CD, e2e, chore
+Issue #16632: Labels: wontfix
+Please using english to describe.
+Issue #16631: Labels: discussion, DSIP
+> But for the column name dynamic display and hide (I am a front-end white, to achieve this for me a bit of a struggle), found > that put in a bit out of place feeling, I feel that is not should be a single out of a pr, for the function of the field more than a > little optimization of the unity of a little better, I would like to listen to your views?\r\n\r\nYou can just achieve the `Workflow Definition` part of this issue. And The `Workflow Timing` part is waiting for other contributors to realize.
+Issue #16630: Labels: bug, UI
+@SbloodyS cc
+Issue #16629: Labels: bug
+Would you like to fix it? @sdhzwc 
+Issue #16628: Labels: question, Stale
+This issue has been automatically marked as stale because it has not had recent activity for 30 days. It will be closed in next 7 days if no further activity occurs.

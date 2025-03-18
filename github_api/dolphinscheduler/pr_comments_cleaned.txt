@@ -1,0 +1,327 @@
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+
+Update: When a ring exists, it is not a DAG
+
+Awesome work, congrats on your first merged pull request!\n
+
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+
+LGTM, please fix the code style
+
+Awesome work, congrats on your first merged pull request!\n
+
+Merged, and will be release at 3.3.0. Thanks for your PR.
+
+cc @ruanwenjun @zhongjiajie @Gallardot 
+
+@reele Please take a look.
+
+> @reele Please take a look.\n\n@ruanwenjun \nexcuse me... I’ve been really busy time...\n\nLGTM
+
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+
+@SbloodyS  PTAL.\r\n
+
+> Please retry analysis of this Pull-Request directly on SonarQube Cloud\r\n\r\n@SbloodyS  How do i retry analysis of this PR ? \r\nThanks.\r\n
+
+![2025-03-14 16 50 18](https://github.com/user-attachments/assets/eb2aeef7-875a-4e4f-84e4-a6c206aa4d82)\r\n@SbloodyS @ruanwenjun  cc, General practice
+
+Please retry analysis of this Pull-Request directly on SonarQube Cloud
+
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+
+Awesome work, congrats on your first merged pull request!\n
+
+Please retry analysis of this Pull-Request directly on SonarQube Cloud
+
+Please retry analysis of this Pull-Request directly on SonarQube Cloud
+
+Please retry analysis of this Pull-Request directly on SonarQube Cloud
+
+cc @reele 
+
+> cc @reele\r\n\r\ngot. +1
+
+cc @reele 
+
+Please retry analysis of this Pull-Request directly on SonarQube Cloud
+
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+
+Hi @JeremyXin , thanks for your contribution. Can you copy and paste the contents of the pdf into the description with english, which will make it easier for others to participate in the discussion and review?
+
+> Hi @JeremyXin , thanks for your contribution. Can you copy and paste the contents of the pdf into the description with english, which will make it easier for others to participate in the discussion and review?\r\n\r\nOk，I have updated the English version of the document and optimized the code. Thank you for your reply.
+
+How can I retry analysis of this Pull-Request directly on SonarQube Cloud?
+
+> How can I retry analysis of this Pull-Request directly on SonarQube Cloud?\r\n\r\nto First-time contributor, it need to trigger CI by committer manually\r\n
+
+I have added unit test code to improve coverage on new code and may need to re-execute SonarQube Cloud. Thanks!
+
+Please retry analysis of this Pull-Request directly on SonarQube Cloud
+
+@ruanwenjun\r\nTest cases added, and passed all test in master and worker.
+
+> High quality PR, looks pretty good.\r\n\r\n@ruanwenjun \r\nthx, there is a new commit to remove the redundant code
+
+need more info to verify. I have left comment in https://github.com/apache/dolphinscheduler/issues/16972#issuecomment-2606656005
+
+Closing for not plan.
+
+so quick, my bro @SbloodyS 
+
+do not merge untill we pass the test of apache/dolphinscheduler-sdk-python#156
+
+> do not merge untill we pass the test of [apache/dolphinscheduler-sdk-python#156](https://github.com/apache/dolphinscheduler-sdk-python/pull/156)\r\n\r\nCI pass and it ready to merge after review pass
+
+PTAL to this PR if you have time @SbloodyS @ruanwenjun 
+
+Thanks all 👍 . and the schedule CI in apache/dolphinscheduler-sdk-python looks good now https://github.com/apache/dolphinscheduler-sdk-python/actions/runs/12919365828
+
+Please retry analysis of this Pull-Request directly on SonarQube Cloud
+
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+
+Related DSIP https://github.com/apache/dolphinscheduler/issues/16818
+
+Please fix CI errors. @eco8848 
+
+I have referred to the official license requirements at https://dolphinscheduler.apache.org/zh-cn/docs/3.2.2/contribute/join/DS-License. It is necessary to add a description of the newly introduced third-party library in `tools/dependencies/known-dependencies.txt`, but it seems to conflict with https://github.com/apache/dolphinscheduler/issues/16838. What should I do now to comply with the requirements? @SbloodyS 
+
+The CI errors have already been fixed. @SbloodyS 
+
+I saw that there is a new check requires a milestone label. So is there a general plan for the integration of this PR? @SbloodyS 
+
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+
+> Please follow the pull request notice first.\r\n\r\nWell, should I use it like this? [Improvement-16947][UI] Task instance log details should always stay at the bottom\r\n\r\n\r\n
+
+> I think this feature needs disscussion. No all users needs this when the log is very large and refresh very fast.\r\n\r\nAdd a button that allows the user to manually control whether to scroll to the bottom, without forcing automatic scrolling. Would that work?
+
+> > I think this feature needs disscussion. No all users needs this when the log is very large and refresh very fast.\r\n> \r\n> Add a button that allows the user to manually control whether to scroll to the bottom, without forcing automatic scrolling. Would that work?\r\n\r\nLike this.\r\n![12345.gif](https://github.com/user-attachments/assets/e1c8e6b0-0acd-4af8-9f4c-f1b186a2dc4c)\r\n
+
+> > Please follow the pull request notice first.\r\n> \r\n> Well, should I use it like this? [Improvement-16947][UI] Task instance log details should always stay at the bottom\r\n\r\nYou can take a look at https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md
+
+> Generally LGTM. Just some NIT.\r\n\r\nFixed the NITs, thanks for the suggestions!
+
+@SbloodyS @caishunfeng PTAL
+
+@SbloodyS @caishunfeng @ruanwenjun PTAL
+
+Hi guys, this PR can only fix the `varPool` for physical task executors for now.\r\n\r\nCould you give me some guidance on how to fix the `varPool` for logical task executors?\r\n\r\nThank you.
+
+You should run `mvn spotless:apply` to format the code. @BruceWong96 
+
+> You should run `mvn spotless:apply` to format the code. @BruceWong96\r\n\r\nFinished. Thanks.
+
+@caishunfeng @EricGao888  PTAL.
+
+没有处理掉，工作流还是不能复制逻辑节点的关联关系
+
+> 没有处理掉，工作流还是不能复制逻辑节点的关联关系\r\n\r\nPlease using english to describe.
+
+> > 没有处理掉，工作流还是不能复制逻辑节点的关联关系\r\n> \r\n> Please using english to describe.\r\n\r\nWorkflow still cannot copy the association relationship of logical nodes
+
+> > > 没有处理掉，工作流还是不能复制逻辑节点的关联关系\r\n> > \r\n> > \r\n> > Please using english to describe.\r\n> \r\n> Workflow still cannot copy the association relationship of logical nodes\r\n\r\nHi，what is the version of your dolphinScheduler? \r\nI fixed in the dev branch, I will try to upload a gif to prove that the fix was useful.\r\nIf there is nothing wrong with the gif, then you can see the results after the fix.\r\n![switch-gif-2](https://github.com/user-attachments/assets/81e6163e-5197-42f4-bf4c-5ffb547e928a)\r\n
+
+> > > > 没有处理掉，工作流还是不能复制逻辑节点的关联关系\r\n> > > \r\n> > > \r\n> > > Please using english to describe.\r\n> > \r\n> > \r\n> > Workflow still cannot copy the association relationship of logical nodes\r\n> \r\n> Hi，what is the version of your dolphinScheduler? I fixed in the dev branch, I will try to upload a gif to prove that the fix was useful. If there is nothing wrong with the gif, then you can see the results after the fix. ![switch-gif-2](https://private-user-images.githubusercontent.com/38174237/398511762-81e6163e-5197-42f4-bf4c-5ffb547e928a.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzUxMDIxNTgsIm5iZiI6MTczNTEwMTg1OCwicGF0aCI6Ii8zODE3NDIzNy8zOTg1MTE3NjItODFlNjE2M2UtNTE5Ny00MmY0LWJmNGMtNWZmYjU0N2U5MjhhLmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMjUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjI1VDA0NDQxOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTgxZjMyZGVmMjJlOTNkOWZiM2ZlMjIyNTVkMmE1ZjE5YzFhYTM3MDBmNjc4ZDhlNWQ2MDdiMzkxYWE1ZmY4ZmMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.KOS5WYuKHgHIN2ZB4n0PlQbDpvftuc7EpHWkgMfdrNg) [ ![switch-gif-2](https://private-user-images.githubusercontent.com/38174237/398511762-81e6163e-5197-42f4-bf4c-5ffb547e928a.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzUxMDIxNTgsIm5iZiI6MTczNTEwMTg1OCwicGF0aCI6Ii8zODE3NDIzNy8zOTg1MTE3NjItODFlNjE2M2UtNTE5Ny00MmY0LWJmNGMtNWZmYjU0N2U5MjhhLmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMjUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjI1VDA0NDQxOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTgxZjMyZGVmMjJlOTNkOWZiM2ZlMjIyNTVkMmE1ZjE5YzFhYTM3MDBmNjc4ZDhlNWQ2MDdiMzkxYWE1ZmY4ZmMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.KOS5WYuKHgHIN2ZB4n0PlQbDpvftuc7EpHWkgMfdrNg) ](https://private-user-images.githubusercontent.com/38174237/398511762-81e6163e-5197-42f4-bf4c-5ffb547e928a.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzUxMDIxNTgsIm5iZiI6MTczNTEwMTg1OCwicGF0aCI6Ii8zODE3NDIzNy8zOTg1MTE3NjItODFlNjE2M2UtNTE5Ny00MmY0LWJmNGMtNWZmYjU0N2U5MjhhLmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMjUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjI1VDA0NDQxOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTgxZjMyZGVmMjJlOTNkOWZiM2ZlMjIyNTVkMmE1ZjE5YzFhYTM3MDBmNjc4ZDhlNWQ2MDdiMzkxYWE1ZmY4ZmMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.KOS5WYuKHgHIN2ZB4n0PlQbDpvftuc7EpHWkgMfdrNg) [ ](https://private-user-images.githubusercontent.com/38174237/398511762-81e6163e-5197-42f4-bf4c-5ffb547e928a.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzUxMDIxNTgsIm5iZiI6MTczNTEwMTg1OCwicGF0aCI6Ii8zODE3NDIzNy8zOTg1MTE3NjItODFlNjE2M2UtNTE5Ny00MmY0LWJmNGMtNWZmYjU0N2U5MjhhLmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMjUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjI1VDA0NDQxOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTgxZjMyZGVmMjJlOTNkOWZiM2ZlMjIyNTVkMmE1ZjE5YzFhYTM3MDBmNjc4ZDhlNWQ2MDdiMzkxYWE1ZmY4ZmMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.KOS5WYuKHgHIN2ZB4n0PlQbDpvftuc7EpHWkgMfdrNg)\r\n\r\nok
+
+@SbloodyS \r\nhi，this is my first time contribut。\r\ni see the style check did’t pass, should I change the code and commit it again?
+
+You can run `mvn spotless:apply` to fix these violations. @JackIllkid 
+
+> 您可以运行`mvn spotless:apply`来修复这些违规行为。@JackIllkid\r\n\r\n@SbloodyS done, Can you check it again please.
+
+@SbloodyS @ruanwenjun PTAL
+
+> LGTM, one nit.\r\n\r\ngood better best
+
+@caishunfeng PTAL
+
+Please retry analysis of this Pull-Request directly on SonarQube Cloud
+
+Awesome work, congrats on your first merged pull request!\n
+
+Merged into dev, this will be released at 3.3.0, thanks for your PR.
+
+#16934 When copying workflows containing switch nodes, if created in different orders, the associated relationships will also be lost
+
+Please retry analysis of this Pull-Request directly on SonarQube Cloud
+
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+
+> Please create an issue first. @justicerling\r\n\r\n[#16905](https://github.com/apache/dolphinscheduler/issues/16905) @SbloodyS \r\n
+
+Awesome work, congrats on your first merged pull request!\n
+
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+
+Please retry analysis of this Pull-Request directly on SonarQube Cloud
+
+Please retry analysis of this Pull-Request directly on SonarQube Cloud
+
+Please retry analysis of this Pull-Request directly on SonarQube Cloud
+
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+
+> Please change your target branch to `dev` and rebase from it.\r\n\r\n
+
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+
+We have remove dynamic task type in `dev`. This PR is no longer avaliable.
+
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+
+Please retry analysis of this Pull-Request directly on SonarQube Cloud
+
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+
+Awesome work, congrats on your first merged pull request!\n
+
+Please retry analysis of this Pull-Request directly on SonarQube Cloud
+
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+
+Awesome work, congrats on your first merged pull request!\n
+
+@SbloodyS fixed.
+
+Since we use a daemon thread to detect the worker group changed, so there will always exist delay, but this delay does have a serious effect. We can broadcast a worker group changed event to all masters once the api receive a worker group changed event.
+
+formatted
+
+> Apache emphasizes achieving consensus.\r\n\r\nFirst of all, the current consensus does not require all people to reach an agreement, but only more than half. For more info you can take a look at https://github.com/apache/comdev-site/pull/189\r\n\r\n> If there are significant differences and we cannot be resolved in the short term, we may choose to temporarily shelve the proposal, allowing much more time for more information before re-discussing.\r\n\r\nLike I said, no one among the maintainers on the current community is willing to refactor this module. How to achieve this without anyone willing to take responsibility?\r\n\r\n> Considering this is a major decision, I suggest you send a vote email to the dev mailing list.\r\n\r\nI think issue and dev mail list have the same meaning on this issue. And all active PMC/Committer have been included in this issue.
+
+At that time, there was no DSIP mechanism in place, and much of the communication took place during community meetings. The feature I’m referring to took 8-9 months to develop and implement. If this is not a major feature, I believe that statement would be inaccurate.
+
+> We should add ddl to drop the dq table.\r\n\r\nWe can remove the create table ddl in the init sql and give some drop table ddl to users in docs to let users decide whether or not to execute it instead of execute it by default. WDYT?
+
+> > We should add ddl to drop the dq table.\r\n> \r\n> We can remove the create table ddl in the init sql and give some drop table ddl to users in docs to let users decide whether or not to execute it instead of execute it by default. WDYT?\r\n\r\nHow about giving entry point script to remove exists table and package it into binary tarball instead of document, cause we support only two of databases in prod, and we should keep thing easy to use
+
+> > > We should add ddl to drop the dq table.\r\n> > \r\n> > \r\n> > We can remove the create table ddl in the init sql and give some drop table ddl to users in docs to let users decide whether or not to execute it instead of execute it by default. WDYT?\r\n> \r\n> How about giving entry point script to remove exists table and package it into binary tarball instead of document, cause we support only two of databases in prod, and we should keep thing easy to use\r\n\r\nI think it will be more traversal for some users to provide users with operating DLLs intuitively since this is a dangerous operation for drop table...
+
+For proposal only, it seems inconsistency exists, although some of the PMCs in #16728 already agreed to remove it, David is right and he could challenge it and ask to vote in the dev mailing list. So maybe should vote in dev mail thread, And I think the vote result should be the **ONLY** result of this PR continue or not instead of personal emotions.\r\nI found out author @zixi0825 also voted +1 in https://github.com/apache/dolphinscheduler/issues/16728#issuecomment-2434073450, and @qingwli, who has maintained data quality for some time, voted -1 for removing it. \r\n\r\nAnd for this feature, I think it should better act as a plugin instead of a built-in function. Especially since it has many bugs and CVEs and not team member want to maintain it. So I personally would vote +1 for removing it. \r\n\r\nAnd BTW, the time cost for the feature development should not as a standard to measure the importance or not. 
+
+> > > > We should add ddl to drop the dq table.\r\n> > > \r\n> > > \r\n> > > We can remove the create table ddl in the init sql and give some drop table ddl to users in docs to let users decide whether or not to execute it instead of execute it by default. WDYT?\r\n> > \r\n> > \r\n> > How about giving entry point script to remove exists table and package it into binary tarball instead of document, cause we support only two of databases in prod, and we should keep thing easy to use\r\n> \r\n> I think it will be more traversal for some users to provide users with operating DLLs intuitively since this is a dangerous operation for drop table...\r\n\r\nI mean we should add new bash script like https://github.com/apache/dolphinscheduler/blob/dev/dolphinscheduler-tools/src/main/bin/migrate-lineage.sh which is separated form `upgrade-schema.sh`, for easy use of end users. But it not important thing, the exists data should be keep and we can provide document to notice our users
+
+> I mean we should add new bash script like https://github.com/apache/dolphinscheduler/blob/dev/dolphinscheduler-tools/src/main/bin/migrate-lineage.sh which is separated form upgrade-schema.sh, for easy use of end users. But it not important thing, the exists data should be keep and we can provide document to notice our users\r\n\r\nOk.
+
+> For proposal only, it seems inconsistency exists, although some of the PMCs in #16728 already agreed to remove it, David is right and he could challenge it and ask to vote in the dev mailing list. So maybe should vote in dev mail thread, And I think the vote result should be the **ONLY** result of this PR continue or not instead of personal emotions. I found out author @zixi0825 also voted +1 in [#16728 (comment)](https://github.com/apache/dolphinscheduler/issues/16728#issuecomment-2434073450), and @qingwli, who has maintained data quality for some time, voted -1 for removing it.\r\n> \r\n> And for this feature, I think it should better act as a plugin instead of a built-in function. Especially since it has many bugs and CVEs and not team member want to maintain it. So I personally would vote +1 for removing it.\r\n> \r\n> And BTW, the time cost for the feature development should not as a standard to measure the importance or not.\r\n\r\nI will raise a vote in dev mail list.
+
+FYI, vote mail in https://lists.apache.org/thread/0tldm33skkbrfgbt01bvd610z5zmb725
+
+About the Flink real-time stream processing task, we have rewritten it for our platform. And our platform looks like a big data schedule system. @davidzollo told want to have a quick meet about the Real-time part in Ds, We have finished some doc about introducing our Flink, Do you have some time so we can discuss this part? CC @Gallardot 
+
+> I mean we should add new bash script like https://github.com/apache/dolphinscheduler/blob/dev/dolphinscheduler-tools/src/main/bin/migrate-lineage.sh which is separated form upgrade-schema.sh, for easy use of end users. But it not important thing, the exists data should be keep and we can provide document to notice our users\r\n\r\nWe remove data-quality related table in init sql but not add it in upgrade sql. It will cause the schema check in CI failed... @zhongjiajie @ruanwenjun 
+
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+
+Please retry analysis of this Pull-Request directly on SonarCloud
+
+Awesome work, congrats on your first merged pull request!\n
+
+Please retry analysis of this Pull-Request directly on SonarCloud
+
+@ruanwenjun i can have a try
+
+> The type `WAIT_TO_RUN` is never used, it would be better if you help to optimize this.\r\n\r\nThe type `WAIT_TO_RUN` is never used, It can be removed, but this PR is to fix the display problem. The two do not affect each other.
+
+Please retry analysis of this Pull-Request directly on SonarCloud
+
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+
+Awesome work, congrats on your first merged pull request!\n
+
+Please follow the pull-request-notice to create an issue first and correct the title and description. @GOODBOY008 \r\n\r\nhttps://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md
+
+will add test cast when this pr https://github.com/apache/dolphinscheduler/pull/16741 merged
+
+> This is not an implementation I can accept, we already have two kinds of i18n implementation, right now we introduced another new one. We need to make sure for one plugin there only exist one i18n implementation. The i18n of parameter type is controlled by front-end, place holder is controlled by front-end/back-end, this look strange.\r\n> \r\n> It will be great if the parameter type is also controlled at this way.\r\n\r\nThis time I am solving the display problem, and next I plan to extract all prompt information and put it on the front end, then retrieve the prompt information through specifying keys
+
+> > This is not an implementation I can accept, we already have two kinds of i18n implementation, right now we introduced another new one. We need to make sure for one plugin there only exist one i18n implementation. The i18n of parameter type is controlled by front-end, place holder is controlled by front-end/back-end, this look strange.\r\n> > It will be great if the parameter type is also controlled at this way.\r\n> \r\n> This time I am solving the display problem, and next I plan to extract all prompt information and put it on the front end, then retrieve the prompt information through specifying keys\r\n\r\nGlad to hear that you have plan, you can submit issue to track this.
+
+![image](https://github.com/user-attachments/assets/2252378c-1296-4bd7-9bc7-9146bdbc88df)\r\n\r\n![image](https://github.com/user-attachments/assets/d0666ae0-295e-4d27-b7c3-a53ec16ff044)\r\n\r\n\r\nAll failures look like timeout issues, can someone help to re-trigger the CI? thanks
+
+> All failures look like timeout issues, can someone help to re-trigger the CI? thanks\r\n\r\nDone.
+
+re-trigger CI
+
+Please retry analysis of this Pull-Request directly on SonarCloud
+
+Please retry analysis of this Pull-Request directly on SonarCloud
+
+This pull request has been automatically marked as stale because it has not had recent activity for 120 days. It will be closed in 7 days if no further activity occurs.
+
+This pull request has been closed because it has not had recent activity. You could reopen it if you try to continue your work, and anyone who are interested in it are encouraged to continue work on this pull request.
+
+Please check failed UT. @sdhzwc 
+
+> Please check failed UT. @sdhzwc\r\n\r\ndone
+
+Duplicated with #16711
+
+> Please create an improvement sub issue first and link to this PR.\r\n\r\nSure. 
+
+This pull request has been automatically marked as stale because it has not had recent activity for 120 days. It will be closed in 7 days if no further activity occurs.
+
+This pull request has been closed because it has not had recent activity. You could reopen it if you try to continue your work, and anyone who are interested in it are encouraged to continue work on this pull request.
+
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+
+> Please add some docs. @hanhanzhang\r\n\r\nok, can you guide me on how to add doc？
+
+> ok, can you guide me on how to add doc？\r\n\r\nYou should add it to the following files:\r\nhttps://github.com/apache/dolphinscheduler/blob/dev/docs/docs/zh/guide/task/flink.md\r\nhttps://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/guide/task/flink.md
+
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+
+Awesome work, congrats on your first merged pull request!\n
+
+Please retry analysis of this Pull-Request directly on SonarCloud
+
+I think you miss the code of master-server .The task of other system sholud call other system in master-server .
+
+> This requires adding at least one of the following tests to ensure stability.\r\n> \r\n> * cluster-test\r\n> * api-test\r\n> * e2e-test\r\n\r\nI will complete it later
+
+> This requires adding at least one of the following tests to ensure stability.\r\n> \r\n> * cluster-test\r\n> * api-test\r\n> * e2e-test\r\n\r\nIs it adding UT, testing functions in the class?
+
+> Is it adding UT, testing functions in the class?\r\n\r\nUT and these tests are different types of tests. You can find the corresponding examples in the following links.\r\n\r\n- [cluster-test](https://github.com/apache/dolphinscheduler/tree/dev/.github/workflows/cluster-test)\r\n- [api-test](https://github.com/apache/dolphinscheduler/tree/dev/dolphinscheduler-api-test)\r\n- [e2e](https://github.com/apache/dolphinscheduler/tree/dev/dolphinscheduler-e2e)
+
+> > Is it adding UT, testing functions in the class?\r\n> \r\n> UT and these tests are different types of tests. You can find the corresponding examples in the following links.\r\n> \r\n> * [cluster-test](https://github.com/apache/dolphinscheduler/tree/dev/.github/workflows/cluster-test)\r\n> * [api-test](https://github.com/apache/dolphinscheduler/tree/dev/dolphinscheduler-api-test)\r\n> * [e2e](https://github.com/apache/dolphinscheduler/tree/dev/dolphinscheduler-e2e)\r\n\r\nThank you
+
+> > Is it adding UT, testing functions in the class?\r\n> \r\n> UT and these tests are different types of tests. You can find the corresponding examples in the following links.\r\n> \r\n> * [cluster-test](https://github.com/apache/dolphinscheduler/tree/dev/.github/workflows/cluster-test)\r\n> * [api-test](https://github.com/apache/dolphinscheduler/tree/dev/dolphinscheduler-api-test)\r\n> * [e2e](https://github.com/apache/dolphinscheduler/tree/dev/dolphinscheduler-e2e)\r\n\r\nif a new UT is added, can we avoid writing this test, add unit tests for `NettyRemotingClient` and `NettyRemotingServer`
+
+> I found that it has not reached a coverage rate of 60%. How can I increase coverage? Is it possible to increase arbitrarily?\r\n\r\nYes. You should add more UT.
+
+> Missing docs, unit-test.\r\n\r\nok
+
+> +1 Please add e2e test later\r\n\r\nokay, I will do it
+
+Please retry analysis of this Pull-Request directly on SonarCloud
+
+By the way, do not close the related issue when the pr is open. The issue will be automatically closed when the pr is merged.\r\nThanks for your first contribution.
+
+This pull request has been automatically marked as stale because it has not had recent activity for 120 days. It will be closed in 7 days if no further activity occurs.
+
+This pull request has been closed because it has not had recent activity. You could reopen it if you try to continue your work, and anyone who are interested in it are encouraged to continue work on this pull request.
+
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+
+Duplicated with #16673
+
+Thanks for opening this pull request! Please check out our contributing guidelines. (https://github.com/apache/dolphinscheduler/blob/dev/docs/docs/en/contribute/join/pull-request.md)\n
+
+@Radeity PTAL.
+
+To to target specific issue from PR, we recommend use keyword fix: #issue_id or close: #issue_id or closes: #issue_id in your PR describe(not title, just desc). It would not only connect issue to PR but also close issue automatically when PR is be closed.
+
+> To to target specific issue from PR, we recommend use keyword fix: #issue_id or close: #issue_id or closes: #issue_id in your PR describe(not title, just desc). It would not only connect issue to PR but also close issue automatically when PR is be closed.\r\n\r\n![image](https://github.com/user-attachments/assets/9a71801b-019d-413c-80e1-7fbdcb5f3621)\r\nLike this?
+
+> Like this?\r\n\r\nYes.
+
+@SbloodyS cc
+
+In fact, there are some status is never used, and some statuses are not belong to workflow instance, it would be better if you can fix these together.\r\n
