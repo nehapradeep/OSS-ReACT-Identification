@@ -1130,3 +1130,33 @@ pulsar,ReACT-91: Be quick to respond to the newcomer: (check for quick responses
 Based on the provided discussion chunks  there's no clear evidence of consistently quick responses to newcomers. While some comments receive replies  the timeliness of those responses is not readily apparent  and there's no specific indication that newcomers are prioritized for rapid assistance. The discussions seem to focus more on issue resolution and feature requests rather than immediate onboarding support.",No.
 pulsar,ReACT-92: Be kind and make newcomers feel part of the team (Sentiment Analysis of the discussion comments),"
 Based on the provided discussions  there isn't enough consistent positive sentiment to confidently say the project excels at making newcomers feel welcome. While some interactions are helpful  instances of impatience  dismissiveness  or a lack of clear guidance for new contributors appear present  hindering a uniformly welcoming environment. A more proactive and consistently encouraging tone would be needed to confidently meet the ""be kind and make newcomers feel part of the team"" recommendation.",No
+dolphinscheduler,ReACT-14 Merge pull requests promptly.,Meets criteria (Avg merge time: 78.30 hours),Yes
+dolphinscheduler,ReACT-62 Encourage developers to start contributing to the project early.,Does not meet criteria (First commit date 2024-09-19 21:54:15+08:00 does not match repo creation month/year or insufficient contributions in first 2 months: 0),No
+dolphinscheduler,ReACT-81 Keep knowledge up to date and findable.,Meets criteria (Last README update: 2025-01-13 18:18:58+08:00),Yes
+dolphinscheduler,ReACT-9,Does not meet criteria (Keyword 'how to request for access' not found),No
+dolphinscheduler,ReACT-19,Does not meet criteria (Keyword 'flag newcomers' not found),No
+dolphinscheduler,ReACT-33,Does not meet criteria (Keyword 'contribution guidelines' not found),No
+dolphinscheduler,ReACT-84,Does not meet criteria (Keyword 'onboarding support' not found),No
+dolphinscheduler,ReACT-11 Keep the project small and simple.,Meets criteria,Yes
+dolphinscheduler,ReACT-26 Conduct unit tests.,Meets criteria,Yes
+dolphinscheduler,ReACT-32 Promote code transparency. Keep the code as simple as possible,"Does not meet criteria (Comment ratio is 0.07, which is below the recommended threshold of 15%.)",No
+dolphinscheduler,ReACT-82 Have and enforce a code of conduct,Does not meet criteria (No code of conduct file found in the project.),No
+dolphinscheduler,ReACT-66 Perform adequate testing before integrating a feature,Meets criteria,Yes
+dolphinscheduler,ReACT-3: Utilize a common programming language,java: 59.87%; xml: 11.13%; ts: 6.23%; md: 6.23%; yaml: 5.97%; sh: 2.52%; sql: 2.20%; tsx: 1.13%; yml: 1.07%; properties: 0.94%; txt: 0.82%; dockerfile: 0.75%; js: 0.44%; scss: 0.38%; png: 0.19%; json: 0.06%; jsx: 0.06%,N/A
+dolphinscheduler,"ReACT-65: Maintain the current project platform; refrain from altering it. (if available on github, ReACT is satisfied)",Meets criteria,N/A
+dolphinscheduler,ReACT-16,"Total Integrators: 0, Total Merge Commits: 0, Earliest Merge: No merge commits found, Latest Merge: No merge commits found",No
+dolphinscheduler,ReACT-36,"Meets criteria (Active developers: 5, Threshold: 50)",Yes
+dolphinscheduler,ReACT-38,"Does not meet criteria (Experienced contributors: 3, Threshold: 5)",No
+dolphinscheduler,ReACT-100,No documentation of processes and practices found in the project.,No
+dolphinscheduler,ReACT-93,No clear communication channels (like Zulip or chat platforms) found.,No
+dolphinscheduler,ReACT-77,Mailing list is not mentioned.,No
+dolphinscheduler,ReACT-60,GitHub stars are not present.,No
+dolphinscheduler,ReACT-53,The project is not incubated by a large software foundation.,No
+dolphinscheduler,ReACT-20,The project does not communicate through various channels.,No
+dolphinscheduler,ReACT-97,The project license is not mentioned or not Apache License.,No
+dolphinscheduler,ReACT-98,Clear build and run instructions are provided.,Yes
+dolphinscheduler,ReACT-95,Contribution guidelines are clearly mentioned.,Yes
+dolphinscheduler,ReACT-102,Security considerations are not documented.,No
+dolphinscheduler,ReACT-63,Average modified-to-added lines ratio: 0.09. Average number of modified files per commit: 116.78. Average number of new files added: 1366.00. Total number of commits analyzed: 1602.,Yes
+dolphinscheduler,ReACT-64,Number of code files modified: 4. Number of documentation files modified: 4. Code-to-Documentation file ratio: 1.00.,Yes
+dolphinscheduler,ReACT-78,Total number of commits analyzed: 1602. Number of commits involving code comment updates: 49. Percentage of commits with comment updates: 3.06%. ,No
