@@ -1,0 +1,1003 @@
+Issue #24081: Labels: area/broker, doc-not-needed, ready-to-test
+@rdhabalia Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #24080: Labels: area/broker, doc-not-needed, ready-to-test
+Issue #24079: Labels: area/broker, doc-not-needed, ready-to-test
+Issue #24077: Labels: doc-not-needed
+Issue #24076: Labels: type/feature, type/PIP, doc-not-needed, ready-to-test, area/ML
+Issue #24074: Labels: doc-label-missing, dependencies, go
+@dependabot[bot] Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #24073: Labels: doc-label-missing
+@zjxxzjwang Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #24072: Labels: type/bug, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/4.0.4, release/3.0.11, release/3.3.6
+Good work @shibd 
+Issue #24071: Labels: type/bug, area/client, doc-not-needed, PIP, release/4.0.4
+Issue #24070: Labels: type/enhancement
+Issue #24069: Labels: doc-not-needed, ready-to-test
+Issue #24067: Labels: doc-not-needed, ready-to-test, release/4.0.4, release/3.0.11
+Issue #24066: Labels: doc-not-needed, ready-to-test
+/pulsarbot run-failure-checks
+Issue #24065: Labels: area/metrics, doc-not-needed, ready-to-test, release/4.0.4, release/3.0.11, release/3.3.6
+This turned to be the wrong solution. #24060 is correct. It was a bug in Prometheus which caused the issues. After spending quite a mount of effort I wasn\
+Issue #24064: Labels: doc-not-needed, ready-to-test, release/4.0.4, release/3.0.11, release/3.3.6
+> Early detection hasBrokerBelowLowerBound\r\n\r\nThis would be a better name for the PR. The "optimization" itself is more about code cleanup than an actual optimization that has an impact. The title should also be specific about the area where this change is made, mentioning the ThresholdShedder. \r\n\r\nbtw. For larger PRs, it\
+Issue #24063: Labels: doc-not-needed, ready-to-test, release/4.0.4, release/3.0.11, release/3.3.6
+Issue #24062: Labels: doc-required
+@jklinaku Would you be interested in submitting a PR to apache/pulsar-site where the content is maintained?\nThe source of the data in the matrix comes from this json file: https://github.com/apache/pulsar-site/blob/main/data/matrix.js\n
+Issue #24061: Labels: type/bug, doc-not-needed, ready-to-test, release/4.0.4, release/3.0.11, release/3.3.6
+@poorbarcode Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #24060: Labels: doc-not-needed, ready-to-test, release/4.0.4, release/3.0.11, release/3.3.6
+Issue #24059: Labels: type/bug, area/client, doc-not-needed, release/4.0.4, release/3.0.11, release/3.3.6
+@SantanuKar43 Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #24058: Labels: doc-not-needed, ready-to-test, release/4.0.4, release/3.0.11, release/3.3.6
+@poorbarcode In branch-3.0, there are at least 2 tests where this can be seen in the output. \r\norg.apache.pulsar.broker.service.ClusterMigrationTest#testClusterMigration is one. The issue is #24038\r\n
+Issue #24057: Labels: No Labels
+Issue #24056: Labels: doc-not-needed, ready-to-test
+Issue #24055: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-4.0, release/4.0.4, release/3.0.11, release/3.3.6
+> The estimated entry count may be a negative value in some cases, then the read operation will get an empty result.\r\n\r\n@gaoran10 Just wondering how it could the result could exceed `Integer.MAX_VALUE` so that the integer value becomes negative in the current logic. Is it the line `result += remainEntriesOfLedger;` in `estimateEntryCountBySize` method that causes it? Could we also improve the existing logic and add some test cases to reproduce and prevent such regressions?
+Issue #24054: Labels: doc-not-needed, ready-to-test, release/4.0.4, release/3.0.11, release/3.3.6
+Issue #24053: Labels: type/bug
+Issue #24051: Labels: type/enhancement
+Issue #24050: Labels: doc-label-missing
+@frHimanshu Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #24049: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/4.0.4, release/3.0.11, release/3.3.6
+Issue #24048: Labels: type/bug, area/admin, doc-not-needed, ready-to-test, triage/lhotari/important, release/4.0.4, release/3.0.11
+Issue #24047: Labels: type/enhancement
+Is this in any way related to #23502? /cc @summeriiii 
+Issue #24046: Labels: type/bug
+Issue #24045: Labels: doc-not-needed
+> There are unnecessary calls in the individualAckNormal. Delete the line of code that calls updateBlockedConsumerOnUnackedMsgs to improve performance.\r\n\r\n@guan46 Please explain what "improve performance" means. This type of PRs will be wasting reviewer\
+Issue #24043: Labels: type/bug
+@dao-jun @BewareMyPower When are you planning to merge this [fix](https://github.com/apache/pulsar/pull/24048)? Also, can you uplift this fix from the 3.0.x version?
+Issue #24042: Labels: area/test, doc-not-needed, ready-to-test, release/4.0.4, release/3.0.11, release/3.3.6
+Issue #24041: Labels: No Labels
+Issue #24040: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-4.0, release/4.0.4
+/pulsarbot rerun-failure-checks
+Issue #24039: Labels: type/bug
+@nryanov please try replacing `command: >` with `command: |`. It could be a similar issue as https://github.com/apache/pulsar-helm-chart/pull/572 , originating from a Go Yaml issue, https://github.com/go-yaml/yaml/issues/789 .
+Issue #24038: Labels: type/bug
+@poorbarcode Do you have a chance to fix this? org.apache.pulsar.sql.presto.TestCacheSizeAllocator.cacheSizeAllocatorTest failure seems to be related to #23931.
+Issue #24037: Labels: doc-not-needed, ready-to-test, release/3.0.11
+branch-3.0 is broken, #24038
+Issue #24036: Labels: type/enhancement
+Issue #24035: Labels: doc-not-needed, cherry-picked/branch-4.0, release/4.0.4
+@thetumbled Is it #23611 where the regression was introduced? Does the previous implementation have a similar issue?
+Issue #24034: Labels: type/bug
+maybe need to cherrypick https://github.com/apache/pulsar/pull/20697 to branch3.0
+Issue #24033: Labels: doc-not-needed
+Issue #24032: Labels: type/bug, doc-not-needed, ready-to-test, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/4.0.4, release/3.3.6
+Issue #24031: Labels: doc-not-needed, ready-to-test
+Issue #24029: Labels: doc-required
+Issue #24028: Labels: doc, area/broker, area/metrics, ready-to-test, PIP
+Issue #24027: Labels: doc-not-needed, release/3.0.9, release/4.0.4, release/3.3.6
+Issue #24025: Labels: type/enhancement, area/tieredstorage, doc-not-needed, ready-to-test, cherry-picked/branch-3.3, release/3.3.6
+Issue #24023: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.0.6, cherry-picked/branch-4.0, release/4.0.4, release/3.0.11, release/3.3.6
+Issue #24022: Labels: doc-not-needed, PIP
+Please remember to send a `vote closed` email for the vote thread
+Issue #24020: Labels: area/client, type/feature, doc-required, PIP, release/4.0.4
+The pip document has been merged, we can continue to review this pr. Thanks for your review. @BewareMyPower @nodece @dao-jun @codelipenghui @shibd @Technoboy- 
+Issue #24019: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.3.5, release/4.0.3, release/3.0.11
+Issue #24018: Labels: type/bug
+Maybe related to https://github.com/apache/pulsar/issues/9464 with the network error vector.
+Issue #24015: Labels: doc-not-needed
+Issue #24014: Labels: type/bug, area/broker, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.3.5, release/4.0.4, release/3.0.11
+Issue #24012: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.3.5, release/4.0.3
+I pushed changes to add `dispatchRateLimiterFactoryClassName` setting for toggling between the "classic" (before PIP-322) implementation and PIP-322 implementation using AsyncTokenBucket. We can default to the "classic" implementation which reverts the PIP-322 changes for dispatch rate limiter until the default configuration value is changed.
+Issue #24011: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/4.0.4, release/3.0.11, release/3.3.6
+Issue #24010: Labels: No Labels
+Apache Bookkeeper do not support load balance between bookies natively.\nTo mitigate the defect of unbalance, you can try this pr: https://github.com/apache/bookkeeper/pull/4246, or implement your own load balance feature that is suitable to your specific enviroment.
+Issue #24008: Labels: area/broker, doc-not-needed, ready-to-test, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/4.0.4, release/3.3.6
+Issue #24007: Labels: doc-required
+Issue #24006: Labels: area/broker, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/4.0.4, release/3.0.11, release/3.3.6
+@rdhabalia Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #24004: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/4.0.4, release/3.0.11, release/3.3.6
+@clayburn Do you have a chance to check the deadlock details available in the issue description which contains references to Gradle Develocity Maven Extension?
+Issue #24003: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/4.0.4, release/3.0.11, release/3.3.6
+Issue #24002: Labels: area/broker, doc-not-needed
+> First, the issue we are discussing already occurred after merging patch #23930. I spent a good amount of time deeply analyzing the problem and found that multiple threads can attempt to consume tokens, leading to negative token accumulation. While I understand that negative tokens can occur, the concern here is that a large number of negative tokens takes considerable time to recover to a positive state, sometimes exceeding an hour, delaying publish/consume operations.\r\n\r\nThanks for sharing these details. I think that we\
+Issue #24001: Labels: type/bug
+Issue #24000: Labels: doc-not-needed, ready-to-test
+There seems to be a compilation error with the changes\r\n```\r\n  [INFO] -------------------------------------------------------------\r\n  Error:  COMPILATION ERROR : \r\n  [INFO] -------------------------------------------------------------\r\n  Error:  /home/runner/work/pulsar/pulsar/tests/pulsar-client-all-shade-test/src/test/java/org/apache/pulsar/tests/integration/SimpleProducerConsumerTest.java:[589,74] incompatible types: io.netty.buffer.ByteBuf cannot be converted to org.apache.pulsar.shade.io.netty.buffer.ByteBuf\r\n  Error:  /home/runner/work/pulsar/pulsar/tests/pulsar-client-all-shade-test/src/test/java/org/apache/pulsar/tests/integration/SimpleProducerConsumerTest.java:[593,76] incompatible types: io.netty.buffer.ByteBuf cannot be converted to org.apache.pulsar.shade.io.netty.buffer.ByteBuf\r\n  ```\r\n\r\n\r\n\r\nSince the problem to solve is about IDE usage, one way to get around the IDE issue is to disable the `integrationTests` profile in IntelliJ.\r\n\r\n<img width="432" alt="image" src="https://github.com/user-attachments/assets/9d9bc133-a742-479b-8531-ffd5a6b1fd8a" />\r\n\r\nAnother solution is to run the build on the command line to first build the shaded libraries. \r\n\r\nIn IntelliJ development another way to speed up development is to uncheck the `main` profile and check `core-modules` profile so that only the core modules are enabled in IntelliJ. This is described in https://pulsar.apache.org/contribute/setup-ide/#further-configuration
+Issue #23999: Labels: type/bug
+When the redeliveryMessages queue has messages and isDispatcherStuckOnReplays is true, message distribution will be stuck.\n\nhttps://github.com/apache/pulsar/blob/67ae209e995017fe41ac6a9c998aa7e63576c837/pulsar-broker/src/main/java/org/apache/pulsar/broker/service/persistent/PersistentDispatcherMultipleConsumers.java#L318\n\n
+Issue #23998: Labels: type/flaky-tests, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+Issue #23997: Labels: doc-not-needed, PIP
+Issue #23996: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+Issue #23995: Labels: doc-not-needed, ready-to-test, release/4.0.4, release/3.0.11, release/3.3.6
+Fixing a potentially flaky test that uses a bad way to trigger leader election.
+Issue #23994: Labels: doc-not-needed, cherry-picked/branch-4.0, release/4.0.3
+I reverted https://github.com/apache/pulsar/pull/23940 in branch-4.0
+Issue #23993: Labels: type/bug
+Issue #23992: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+Issue #23991: Labels: No Labels
+This happened again now, We are facing the same issue once in 2 days.\nCan anyone suggest how to mitigate the issue?
+Issue #23989: Labels: doc-not-needed
+Changes related to configuration modification need a pip.
+Issue #23988: Labels: release/blocker, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+cherry-picking depends on #23686
+Issue #23986: Labels: doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+Issue #23985: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+@merlimat Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23984: Labels: doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+This PR does not include the zk.Stat ephemral check fix, since https://github.com/apache/pulsar/pull/23902 (fix zkStat.getEphemeralOwner() != 0) requires more work to update test framework. 
+Issue #23983: Labels: type/enhancement, release/blocker, doc-not-needed, release/4.0.4
+Issue #23982: Labels: type/bug
+Issue #23981: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+Issue #23980: Labels: type/bug, doc-not-needed, release/4.0.4, release/3.0.11, release/3.3.6
+Issue #23979: Labels: doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+> Can we also set to skip by default?\r\n\r\n@merlimat I think that would be useful starting from Pulsar 4.1 . Do we need a PIP for making that change?
+Issue #23978: Labels: area/cli, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.3.5, release/4.0.3, release/3.0.11
+Issue #23977: Labels: doc-not-needed, ready-to-test, release/4.0.4, release/3.0.11, release/3.3.6
+Some test is requried to ensure the notification logic is triggered and works correct.
+Issue #23976: Labels: doc-not-needed, ready-to-test
+@merlimat Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23975: Labels: type/bug, area/broker, doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/4.0.4, release/3.0.11, release/3.3.6
+Issue #23974: Labels: area/client, area/broker, doc-not-needed, ready-to-test
+ping,. if anyone can review it.
+Issue #23973: Labels: doc-not-needed, ready-to-test, dependencies, java
+@dependabot[bot] Please add the following content to your PR description and select a checkbox:\r\n```\r\n- [ ] `doc` <!-- Your PR contains doc changes -->\r\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\r\n- [x] `doc-not-needed` <!-- Your PR changes do not impact docs -->\r\n- [ ] `doc-complete` <!-- Docs have been already added -->\r\n```
+Issue #23971: Labels: area/client, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+Issue #23970: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+Issue #23969: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-4.0, release/4.0.3
+/pulsarbot rerun-failure-checks
+Issue #23968: Labels: type/enhancement
+Issue #23967: Labels: area/client, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+Issue #23966: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+Issue #23965: Labels: area/security, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+Issue #23964: Labels: area/security, doc-not-needed, ready-to-test, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/4.0.2, release/3.3.5
+Issue #23963: Labels: type/bug
+Hi @lhotari, thank you for your interest in this issue.\n\nWe are trying to reduce data usage by increasing the keep-alive intervals. We have managed this on the broker and client sides, but the Proxy is the only component where we couldn’t due to its hardcoded 30-second interval.\n\nAfter a Pulsar client is created:\n\t•\tOne connection is established through the Proxy to get partition metadata — this connection is affected by the Proxy’s keep-alive.\n\t•\tConnections to each broker for data transfer use the broker’s keep-alive settings, which work as expected.\n\nNot being able to configure the Proxy’s keep-alive leads to unnecessary data usage, especially with many connections. Making it configurable would help align it with the rest of our Pulsar setup.\n\nLooking forward to your feedback. Thank you!
+Issue #23962: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.3.5, release/4.0.3, release/3.0.11
+SpscArrayQueue has a memory barrier to ensure data consistency in concurrent situations, whereas ArrayDeque has no memory barrier. ArrayDeque can improve performance in non-concurrent situations @lhotari 
+Issue #23961: Labels: area/build, doc-not-needed, ready-to-test
+Thank you. I happened to already fix this issue. I pushed the fix directly to the branch.
+Issue #23960: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+Issue #23959: Labels: doc-not-needed
+Issue #23958: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+Issue #23957: Labels: area/broker, doc-not-needed, ready-to-test, area/ML, cherry-picked/branch-3.0, category/performance, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+Issue #23956: Labels: doc-not-needed, release/4.0.4, release/3.0.11, release/3.3.6
+Issue #23955: Labels: type/bug, doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+Issue #23954: Labels: doc-not-needed, ready-to-test
+/pulsarbot rerun-failure-checks
+Issue #23953: Labels: type/enhancement
+Issue #23952: Labels: type/bug
+\nThis might be related to #23901 changes.
+Issue #23951: Labels: type/bug, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+/pulsarbot rerun-failure-checks
+Issue #23950: Labels: doc, PIP
+Issue #23947: Labels: doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-4.0, release/3.0.10, release/4.0.3
+Issue #23946: Labels: type/enhancement, doc-required, area/metrics, ready-to-test
+Issue #23945: Labels: type/PIP, doc-not-needed, PIP
+hi, @RobertIndie @tjiuming @poorbarcode \r\n\r\nThe previous design made it difficult for users to identify where throttling was causing a high backlog. I have rewritten the PIP to separate the metrics at the broker, topic, and subscription levels. Please review it again.\r\n\r\nThanks.
+Issue #23944: Labels: type/enhancement
+RedeliveryCount is maintained by broker, not client.
+Issue #23943: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+@poorbarcode Could you fix the build error on the branch-3.0?\r\n\r\n```\r\nimport static com.google.common.base.Preconditions.checkState;\r\n```\r\nThis import is not used.
+Issue #23942: Labels: doc, area/client, type/feature, area/transaction, ready-to-test
+For PIP process, pls referring to https://github.com/apache/pulsar/tree/master/pip#pulsar-improvement-proposal-pip
+Issue #23941: Labels: type/bug
+Issue #23940: Labels: type/enhancement, area/broker, doc-not-needed
+Some shadow topic related tests failed, I will fix them
+Issue #23939: Labels: type/enhancement, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+Issue #23938: Labels: type/enhancement, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+Issue #23937: Labels: type/bug
+Issue #23936: Labels: type/bug
+Reproduction steps:\n1. At this point, the breakpoint consumers. introySet(). removeIf (e ->TopicName. get (e.g. etKey()). getPartitionedTopicName(). equals (topicName)&&! e.getValue().isConnected());\n2. Execute the reset cursor command\n3. MultiTopicscosumerImpl will delete consumers and continuously add consumers corresponding to the last partition
+Issue #23935: Labels: type/enhancement, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+Issue #23934: Labels: type/enhancement
+Issue #23933: Labels: doc-not-needed, ready-to-test
+/pulsarbot rerun-failure-checks
+Issue #23932: Labels: doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+/pulsarbot rerun-failure-checks
+Issue #23931: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.3.5, release/4.0.3, release/3.0.11
+> * The feature `managedLedgerMaxReadsInFlightSize` assumes the entry size is `10kb` when it read nothing. Otherwise, it uses the average entries size of the entries read out before.\r\n\r\nAfter #23901 changes this case would be very rare since it would apply only for the first read in case no entries were produced to the topic.
+Issue #23930: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.3.5, release/4.0.3
+> Although clock sources aren\
+Issue #23929: Labels: type/enhancement, area/broker, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+Issue #23928: Labels: type/enhancement, area/broker, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+@RobertIndie Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23927: Labels: type/bug, doc-not-needed, ready-to-test
+Some questions:\r\n\r\n1. why do the message properties allow duplicated keys?\r\n2. we remove one of the duplicate keys while reading the messages. Is it some properties lost for the user?
+Issue #23926: Labels: doc-not-needed
+Issue #23925: Labels: type/bug
+Issue #23924: Labels: doc-not-needed
+Issue #23923: Labels: type/bug
+Issue #23922: Labels: doc-required
+I am currently accessing this page normally.\n
+Issue #23921: Labels: type/bug
+This is also a location where permits can leak:\nhttps://github.com/apache/pulsar/blob/3d0625ba64294fb0fe7dafc27c7a34883b4be51b/pulsar-broker/src/main/java/org/apache/pulsar/broker/service/Producer.java#L198-L205\n\n`headersAndPayload` is already released and might be recycled when the code gets executed. 
+Issue #23920: Labels: type/bug
+Now looking back at the datadog metrics when `pulsar.pulsar_publish_rate_limit_times` went back down to 0, we observed that the producer got back to normal and records were delivered to consumers.\n\nCurrently we are using Failover subscription mode. I have captured some threaddumps and a heapdump from one Pulsar broker, will try to share it.\n\nRegarding stats of the partitioned topic during the consumer not getting records issue, we have captured using `pulsar-admin topics partitioned-stats persistent://public/default/topic_name` (basically without the `--per-partiton` flag) - https://gist.github.com/soumya-ghosh/e97e19f716e8b917eae9cb55f91b9aa9\nWe had reported this issue on slack - https://apache-pulsar.slack.com/archives/C5Z4T36F7/p1737060570361949\n\nNon-zero backlog metric when a console consume is started from pulsar cli.\n![Image](https://github.com/user-attachments/assets/0dc8fab9-05a4-4ba3-9d04-2b2a783a9b4b)\n\nMessages are delivered after 10 minutes and backlog goes to 0.\n![Image](https://github.com/user-attachments/assets/ac946e26-be6c-4865-9511-5ad099eeb96d)\n\nWill try to capture the partitioned level stats and internal stats when issue occurs again.\n\n\nWe suspect both producer and consumer issues are inter-related as observed them happening at the same.\n\n\n
+Issue #23919: Labels: type/bug, area/broker, doc-not-needed, cherry-picked/branch-4.0, release/4.0.3
+/pulsarbot rerun-failure-checks 
+Issue #23918: Labels: doc-not-needed
+Issue #23917: Labels: type/bug
+Issue #23916: Labels: type/bug
+@lhotari sorry I mean 3.0.8, the 1 afterwards was added from our pipeline when tagging it and pushing to our artifactory.\n\nWe ran the 3.0.8 LTS version of pulsar. \nhttps://pulsar.apache.org/release-notes/versioned/pulsar-3.0.8/ \n
+Issue #23915: Labels: doc-not-needed, cherry-picked/branch-4.0, release/4.0.3
+I accidentally closed #23904, I submitted a new pr @lhotari 
+Issue #23914: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+Issue #23912: Labels: type/enhancement
+Issue #23911: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+Issue #23910: Labels: type/bug, release/4.0.2
+@Gilthoniel  Thanks for reporting this issue.\n\nThe change added in #22792 can be disabled by configuring `managedLedgerCursorResetLedgerCloseTimestampMaxClockSkewMillis=-1`. This configuration value doesn\
+Issue #23909: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+LGTM 👍 
+Issue #23908: Labels: type/bug
+1. New messages are consumed but the backlog is still growing then because markDeletePosition is not moving due to the fact that for some reason there is no continuity in acknowledgments
+Issue #23907: Labels: doc-not-needed
+@Denovo1998 Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23906: Labels: area/test, type/flaky-tests
+Issue #23905: Labels: doc-not-needed
+This would be a major change to the admin client. It feels that there\
+Issue #23904: Labels: doc-not-needed
+Issue #23903: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+```java\r\npackage org.apache.bookkeeper.mledger.util;\r\n\r\nimport io.netty.util.Recycler;\r\nimport java.util.Collections;\r\nimport java.util.concurrent.locks.StampedLock;\r\nimport org.testng.annotations.Test;\r\nimport java.lang.management.GarbageCollectorMXBean;\r\nimport java.lang.management.ManagementFactory;\r\nimport java.util.ArrayList;\r\nimport java.util.List;\r\nimport java.util.concurrent.*;\r\n\r\n\r\npublic class EntryWrapperPerformanceTestNG {\r\n\r\n    private static class EntryWrapper<K, V> {\r\n        private final Recycler.Handle<EntryWrapper> recyclerHandle;\r\n        private static final Recycler<EntryWrapper> RECYCLER = new Recycler<EntryWrapper>() {\r\n            @Override\r\n            protected EntryWrapper newObject(Handle<EntryWrapper> recyclerHandle) {\r\n                return new EntryWrapper(recyclerHandle);\r\n            }\r\n        };\r\n        private final StampedLock lock = new StampedLock();\r\n        private K key;\r\n        private V value;\r\n        long size;\r\n\r\n        private EntryWrapper(Recycler.Handle<EntryWrapper> recyclerHandle) {\r\n            this.recyclerHandle = recyclerHandle;\r\n        }\r\n\r\n        static <K, V> EntryWrapper<K, V> create(K key, V value, long size) {\r\n            EntryWrapper<K, V> entryWrapper = RECYCLER.get();\r\n            long stamp = entryWrapper.lock.writeLock();\r\n            entryWrapper.key = key;\r\n            entryWrapper.value = value;\r\n            entryWrapper.size = size;\r\n            entryWrapper.lock.unlockWrite(stamp);\r\n            return entryWrapper;\r\n        }\r\n\r\n        K getKey() {\r\n            long stamp = lock.tryOptimisticRead();\r\n            K localKey = key;\r\n            if (!lock.validate(stamp)) {\r\n                stamp = lock.readLock();\r\n                localKey = key;\r\n                lock.unlockRead(stamp);\r\n            }\r\n            return localKey;\r\n        }\r\n\r\n        V getValue(K key) {\r\n            long stamp = lock.tryOptimisticRead();\r\n            K localKey = this.key;\r\n            V localValue = this.value;\r\n            if (!lock.validate(stamp)) {\r\n                stamp = lock.readLock();\r\n                localKey = this.key;\r\n                localValue = this.value;\r\n                lock.unlockRead(stamp);\r\n            }\r\n            if (localKey != key) {\r\n                return null;\r\n            }\r\n            return localValue;\r\n        }\r\n\r\n        long getSize() {\r\n            long stamp = lock.tryOptimisticRead();\r\n            long localSize = size;\r\n            if (!lock.validate(stamp)) {\r\n                stamp = lock.readLock();\r\n                localSize = size;\r\n                lock.unlockRead(stamp);\r\n            }\r\n            return localSize;\r\n        }\r\n\r\n        void recycle() {\r\n            key = null;\r\n            value = null;\r\n            size = 0;\r\n            recyclerHandle.recycle(this);\r\n        }\r\n    }\r\n\r\n\r\n    private static final int ITERATIONS = 1_000_000;\r\n    private static final int THREAD_COUNT = 10; // Simulating 10 concurrent threads\r\n    private static final int TEST_RUNS = 100; // Run each test 10 times\r\n\r\n    private long getGCCount() {\r\n        long count = 0;\r\n        for (GarbageCollectorMXBean gcBean : ManagementFactory.getGarbageCollectorMXBeans()) {\r\n            long gcCount = gcBean.getCollectionCount();\r\n            if (gcCount != -1) {\r\n                count += gcCount;\r\n            }\r\n        }\r\n        return count;\r\n    }\r\n\r\n    private long getUsedMemory() {\r\n        System.gc(); // Suggest GC before measuring memory usage\r\n        return Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();\r\n    }\r\n\r\n    private void runTest(String testName, Runnable testLogic) {\r\n        List<Long> times = new ArrayList<>();\r\n        List<Long> gcCounts = new ArrayList<>();\r\n        List<Long> memoryUsages = new ArrayList<>();\r\n\r\n        for (int i = 0; i < TEST_RUNS; i++) {\r\n            long startGC = getGCCount();\r\n            long startMemory = getUsedMemory();\r\n            long startTime = System.nanoTime();\r\n\r\n            testLogic.run();\r\n\r\n            long elapsedTime = System.nanoTime() - startTime;\r\n            long endGC = getGCCount();\r\n            long endMemory = getUsedMemory();\r\n\r\n            times.add(elapsedTime);\r\n            gcCounts.add(endGC - startGC);\r\n            memoryUsages.add(endMemory - startMemory);\r\n\r\n            System.out.println(testName + " - Run " + (i + 1) + " - Time: " + TimeUnit.NANOSECONDS.toMillis(elapsedTime) + " ms, GC: " + (endGC - startGC) + ", Memory: " + (endMemory - startMemory) + " bytes");\r\n        }\r\n\r\n        printStatistics(testName, times, gcCounts, memoryUsages);\r\n    }\r\n\r\n    private void printStatistics(String testName, List<Long> times, List<Long> gcCounts, List<Long> memoryUsages) {\r\n        System.out.println("========= " + testName + " Summary =========");\r\n        System.out.println("Average Time: " + TimeUnit.NANOSECONDS.toMillis(average(times)) + " ms");\r\n        System.out.println("Median Time: " + TimeUnit.NANOSECONDS.toMillis(median(times)) + " ms");\r\n        System.out.println("P99 Time: " + TimeUnit.NANOSECONDS.toMillis(percentile(times, 99)) + " ms");\r\n        System.out.println("Max Time: " + TimeUnit.NANOSECONDS.toMillis(Collections.max(times)) + " ms");\r\n\r\n        System.out.println("Average GC: " + average(gcCounts));\r\n        System.out.println("Median GC: " + median(gcCounts));\r\n        System.out.println("P99 GC: " + percentile(gcCounts, 99));\r\n        System.out.println("Max GC: " + Collections.max(gcCounts));\r\n\r\n        System.out.println("Average Memory: " + average(memoryUsages) + " bytes");\r\n        System.out.println("Median Memory: " + median(memoryUsages) + " bytes");\r\n        System.out.println("P99 Memory: " + percentile(memoryUsages, 99) + " bytes");\r\n        System.out.println("Max Memory: " + Collections.max(memoryUsages) + " bytes");\r\n        System.out.println("====================================");\r\n    }\r\n\r\n    private long average(List<Long> values) {\r\n        return values.stream().mapToLong(Long::longValue).sum() / values.size();\r\n    }\r\n\r\n    private long median(List<Long> values) {\r\n        List<Long> sorted = new ArrayList<>(values);\r\n        Collections.sort(sorted);\r\n        int middle = sorted.size() / 2;\r\n        return (sorted.size() % 2 == 0) ? (sorted.get(middle - 1) + sorted.get(middle)) / 2 : sorted.get(middle);\r\n    }\r\n\r\n    private long percentile(List<Long> values, int percentile) {\r\n        List<Long> sorted = new ArrayList<>(values);\r\n        Collections.sort(sorted);\r\n        int index = (int) Math.ceil(percentile / 100.0 * sorted.size()) - 1;\r\n        return sorted.get(Math.max(0, Math.min(index, sorted.size() - 1)));\r\n    }\r\n\r\n    @Test\r\n    public void testObjectPoolingPerformance() {\r\n        runTest("Object Pooling", () -> {\r\n            for (int i = 0; i < ITERATIONS; i++) {\r\n                EntryWrapper<Integer, String> entry = EntryWrapper.create(i, "Value" + i, i);\r\n                entry.recycle();\r\n            }\r\n        });\r\n    }\r\n\r\n    @Test\r\n    public void testNewObjectPerformance() {\r\n        runTest("New Object Creation", () -> {\r\n            for (int i = 0; i < ITERATIONS; i++) {\r\n                var str = new String("Value" + i); // Creates a new String object each time\r\n            }\r\n        });\r\n    }\r\n\r\n    @Test\r\n    public void testConcurrentObjectPooling() {\r\n        runTest("Concurrent Pooling", () -> {\r\n            ExecutorService executor = Executors.newFixedThreadPool(THREAD_COUNT);\r\n            List<Future<?>> futures = new ArrayList<>();\r\n\r\n            for (int t = 0; t < THREAD_COUNT; t++) {\r\n                futures.add(executor.submit(() -> {\r\n                    for (int i = 0; i < ITERATIONS / THREAD_COUNT; i++) {\r\n                        EntryWrapper<Integer, String> entry = EntryWrapper.create(i, "Value" + i, i);\r\n                        entry.recycle();\r\n                    }\r\n                }));\r\n            }\r\n\r\n            futures.forEach(f -> {\r\n                try {\r\n                    f.get();\r\n                } catch (Exception ignored) {}\r\n            });\r\n\r\n            executor.shutdown();\r\n        });\r\n    }\r\n\r\n    @Test\r\n    public void testConcurrentNewObjectCreation() {\r\n        runTest("Concurrent New Object", () -> {\r\n            ExecutorService executor = Executors.newFixedThreadPool(THREAD_COUNT);\r\n            List<Future<?>> futures = new ArrayList<>();\r\n\r\n            for (int t = 0; t < THREAD_COUNT; t++) {\r\n                futures.add(executor.submit(() -> {\r\n                    //List<String> strings = new ArrayList<>();\r\n                    for (int i = 0; i < ITERATIONS / THREAD_COUNT; i++) {\r\n                        var str = new String("Value" + i); // Creates a new String object each time\r\n                    }\r\n                    //strings.clear();\r\n                }));\r\n            }\r\n\r\n            futures.forEach(f -> {\r\n                try {\r\n                    f.get();\r\n                } catch (Exception ignored) {}\r\n            });\r\n\r\n            executor.shutdown();\r\n        });\r\n    }\r\n}\r\n\r\n```\r\n\r\n```\r\n========= Concurrent New Object Summary =========\r\nAverage Time: 23 ms\r\nMedian Time: 22 ms\r\nP99 Time: 32 ms\r\nMax Time: 255 ms\r\nAverage GC: 4\r\nMedian GC: 4\r\nP99 GC: 4\r\nMax GC: 4\r\nAverage Memory: -20971 bytes\r\nMedian Memory: 0 bytes\r\nP99 Memory: 0 bytes\r\nMax Memory: 0 bytes\r\n====================================\r\n\r\n========= Concurrent Pooling Summary =========\r\nAverage Time: 40 ms\r\nMedian Time: 36 ms\r\nP99 Time: 77 ms\r\nMax Time: 439 ms\r\nAverage GC: 4\r\nMedian GC: 4\r\nP99 GC: 4\r\nMax GC: 4\r\nAverage Memory: -713031 bytes\r\nMedian Memory: 0 bytes\r\nP99 Memory: 2097152 bytes\r\nMax Memory: 2097152 bytes\r\n====================================\r\n\r\n\r\n========= New Object Creation Summary =========\r\nAverage Time: 10 ms\r\nMedian Time: 10 ms\r\nP99 Time: 22 ms\r\nMax Time: 40 ms\r\nAverage GC: 4\r\nMedian GC: 4\r\nP99 GC: 4\r\nMax GC: 4\r\nAverage Memory: -524288 bytes\r\nMedian Memory: 0 bytes\r\nP99 Memory: 2097152 bytes\r\nMax Memory: 2097152 bytes\r\n====================================\r\n\r\n\r\n========= Object Pooling Summary =========\r\nAverage Time: 54 ms\r\nMedian Time: 53 ms\r\nP99 Time: 66 ms\r\nMax Time: 92 ms\r\nAverage GC: 4\r\nMedian GC: 4\r\nP99 GC: 4\r\nMax GC: 4\r\nAverage Memory: -796917 bytes\r\nMedian Memory: 0 bytes\r\nP99 Memory: 0 bytes\r\nMax Memory: 2097152 bytes\r\n====================================\r\n```\r\n\r\n\r\nSharing some test result: object pooling vs jvm young gc performance test
+Issue #23902: Labels: doc-not-needed, triage/lhotari/important, release/3.0.10, release/3.3.5, release/4.0.3
+PR to fix remaining issues: #23988
+Issue #23901: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+It looks like new configurations have been added and the code has been refactored. I think we need a PIP and should avoid cherry-picking back to previous versions.
+Issue #23900: Labels: type/bug
+Issue #23899: Labels: doc-not-needed, ready-to-test, dependencies, cherry-picked/branch-3.0, java, cherry-picked/branch-4.0, release/3.0.10, release/4.0.3
+@dependabot[bot] Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23898: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.3.5, release/4.0.3
+Issue #23897: Labels: type/bug
+Issue #23896: Labels: doc-not-needed
+Issue #23895: Labels: doc-not-needed, PIP
+Issue #23894: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-4.0, release/4.0.3
+@heesung-sn This PR has been rebased now. Please review
+Issue #23893: Labels: doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+Noticed this issue in another test method in the same class after cherry-picking to branch-3.0 and running in branch-3.0: #23906
+Issue #23892: Labels: area/test, doc-not-needed, ready-to-test, cherry-picked/branch-4.0, release/4.0.3
+Issue #23891: Labels: type/bug
+@lhotari \n\ndocker run --rm apachepulsar/pulsar:4.0.2 java -version\n\nOutput for above command\n\n```\n#\n# A fatal error has been detected by the Java Runtime Environment:\n#\n#  SIGILL (0x4) at pc=0x0000ffff9793fc5c, pid=1, tid=7\n#\n# JRE version:  (21.0.5+11) (build )\n# Java VM: OpenJDK 64-Bit Server VM (21.0.5+11-LTS, mixed mode, tiered, compressed oops, compressed class ptrs, g1 gc, linux-aarch64)\n# Problematic frame:\n# j  java.lang.System.registerNatives()V+0 java.base\n#\n# No core dump will be written. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again\n#\n# An error report file with more information is saved as:\n# /tmp/hs_err_pid1.log\n[0.073s][warning][os] Loading hsdis library failed\n#\n# The crash happened outside the Java Virtual Machine in native code.\n# See problematic frame for where to report the bug.\n```\n\nI will try on a different machine, I am not sure whats the issue with my machine, it was working earlier and then stopped working, when it pulled new images using latest.\n\nWhat I did is downloaded the standalone binary zip, extracted it, created a dockerfile with FROM openjdk:24-jdk-slim and ran it using `/bin/pulsar standalone` command, this works on my machine, its something to do with the Java base image that is in the `apachepulsar/pulsar:latest` image.\nmy new dockerfile looks something like below:\n```\nFROM openjdk:24-jdk-slim\n\nWORKDIR /usr/src/app\nCOPY . /usr/src/app\n```\n\ndokcer-compose.yml\n```\nservices:\n  pulsar:\n    build:\n      context: .\n      dockerfile: Dockerfile\n    command: [bin/pulsar, standalone ]\n    image: pulsar-service\n    ports:\n      - \
+Issue #23890: Labels: type/bug
+@conor-nsurely did you find any solution to this ? I faced similar issue and what i am doing is I sclae up the bookie and then delete the bokiee that is giving the error.\n
+Issue #23889: Labels: type/enhancement
+@lhotari  Thank you for your clear and accurate response; I found it very helpful. I will try the latest version of Oxia latter.\n\nIn this case, I am using Pulsar version 4.0.2, with ZooKeeper as the metadata storage service.\n\nI have identified the critical issue: when a broker registers information with the metadata storage service, it sets the `expectedVersion` field to `Optional.empty()`. For implementations using ZooKeeper, this creates a PERSISTENT node, which means that the node cannot be destroyed when the broker crashes.\n- When the broker registers:\nhttps://github.com/apache/pulsar/blob/2a9d4ac85d8d786979afaa0b965cdb27375ae969/pulsar-metadata/src/main/java/org/apache/pulsar/metadata/cache/impl/MetadataCacheImpl.java#L279\n- During ZooKeeper data writing, since `p.getOptions()` is empty, it calls `setData`, leading to a NONODE error, and ultimately calls `internalStorePut` to create a PERSISTENT node:\nhttps://github.com/apache/pulsar/blob/2a9d4ac85d8d786979afaa0b965cdb27375ae969/pulsar-metadata/src/main/java/org/apache/pulsar/metadata/impl/ZKMetadataStore.java#L339-L345\n\nThe verification method is as follows:\n```java\n@Test\npublic void zookeeperEphemeralKeys() throws Exception {\n    final String key1 = newKey();\n    final String key2 = newKey();\n    @Cleanup MetadataStoreExtended store = MetadataStoreExtended.create(zks.getConnectionString(), MetadataStoreConfig.builder().build());\n    store.put(key1, "value-1".getBytes(), Optional.of(-1L), EnumSet.of(CreateOption.Ephemeral)).join();\n    store.put(key2, "value-1".getBytes(), Optional.empty(), EnumSet.of(CreateOption.Ephemeral)).join();\n    store.close();\n\n    @Cleanup MetadataStoreExtended store2 = MetadataStoreExtended.create(zks.getConnectionString(), MetadataStoreConfig.builder().build());\n    assertFalse(store2.exists(key1).join());\n    // This check will not pass\n    assertFalse(store2.exists(key2).join());\n    store2.close();\n}\n```\n\n\nI have made the following modifications.\nWhen using ZooKeeper as the metadata storage service, to allow ephemeral nodes to be set up successfully without requiring a version number\nAre there any other problems that I should consider or test?\nhttps://github.com/apache/pulsar/commit/1e7a3b42e19c8eac8a7c2f16f6f1d0ee5b4dd7cd\n
+Issue #23888: Labels: doc-not-needed, ready-to-test
+/pulsarbot rerun-failure-checks
+Issue #23886: Labels: type/bug, area/client, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+/pulsarbot rerun-failure-checks
+Issue #23885: Labels: area/test, type/flaky-tests
+@thetumbled Do you have a chance to check this flaky test? This flaky test seems to have appeared after PIP-393 changes, #23600 and #23804.
+Issue #23884: Labels: type/bug, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+/pulsarbot rerun-failure-checks
+Issue #23883: Labels: doc-not-needed, area/ci, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+Issue #23882: Labels: area/test, type/flaky-tests
+Issue #23881: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.3.5, release/4.0.3, release/3.0.11
+Issue #23880: Labels: type/bug
+Issue #23879: Labels: type/bug
+Issue #23878: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+Issue #23877: Labels: type/bug
+Issue #23876: Labels: area/test, type/flaky-tests, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+Issue #23875: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+Issue #23874: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-4.0, release/4.0.3
+Issue #23872: Labels: type/bug
+Thanks for reporting the issue @Joforde.\nThe solution for running Pulsar in the build directory is only intended for development.\nThe software package is available after building in `distribution/server/target/apache-pulsar-*-bin.tar.gz`.\nYou can extract this to the location where you want to install Pulsar locally. 
+Issue #23871: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.3.5, release/4.0.3
+Issue #23870: Labels: type/bug
+Issue #23869: Labels: doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+I think we should use AsyncTokenBucket or Guava.RateLimiter.tryAcquire for this rate limiter. \r\n\r\nIMHO, the current logic, requiring acquiredPermit to release is error-prone, when the caller forgets to release it. Instead, I think we better use token bucket-based one, which can automatically fill the bucket.\r\n
+Issue #23867: Labels: type/bug
+This Issue kinda points to version 1.12.0 as having support for records https://github.com/apache/avro/pull/1680
+Issue #23866: Labels: type/bug
+Issue #23865: Labels: type/bug
+Issue #23864: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+Issue #23863: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.3.4, release/3.0.10, release/4.0.3
+Issue #23862: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.9, release/3.3.5, release/4.0.3
+Issue #23861: Labels: doc-not-needed, ready-to-test, dependencies, go
+@dependabot[bot] Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23860: Labels: doc-not-needed
+Issue #23859: Labels: type/bug, doc-required, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+PATL, thanks. @lhotari @BewareMyPower @poorbarcode @dao-jun @codelipenghui @nodece 
+Issue #23858: Labels: doc-not-needed
+Issue #23857: Labels: area/test, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/4.0.2, release/3.0.10, release/3.3.5
+Issue #23855: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/4.0.2, release/3.0.10, release/3.3.5
+> Seems I have mentioned this issue at #23803, it does not matter, could you add a test for the current PR to avoid others doing the same change as #23384?\r\n\r\n@poorbarcode  It\
+Issue #23854: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-4.0, release/4.0.2
+Issue #23853: Labels: type/bug, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.9, release/4.0.2, release/3.3.5
+The PR title is currently very confusing when it\
+Issue #23852: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.9, release/4.0.2, release/3.3.5
+/pulsarbot rerun-failure-checks
+Issue #23851: Labels: doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/4.0.2, release/3.3.5, release/3.0.11
+performing a manual run in https://github.com/apache/pulsar/actions/runs/12804640224 with these changes before merging to validate the changes.
+Issue #23850: Labels: No Labels
+Issue #23848: Labels: type/bug
+Issue #23847: Labels: doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/4.0.2, release/3.0.10, release/3.3.5
+Issue #23846: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-4.0, release/4.0.2, release/3.0.10
+/pulsarbot rerun-failure-checks
+Issue #23845: Labels: type/bug
+It looks like this piece of code triggers a re-read here. I tried the related test cases, but no errors occurred. Could you provide more details about what you meant by "permit"? @lhotari 
+Issue #23844: Labels: doc-required
+@mukesh154 Thanks for the contribution, this looks very useful.
+Issue #23843: Labels: type/bug
+I add `-Djava.net.preferIPv4Stack=false` opt in broker launch command. like this:\n```\ncontainers:\n  - args:\n    - |\n      bin/apply-config-from-env.py conf/broker.conf; bin/gen-yml-from-env.py conf/functions_worker.yml; echo "OK" > status; bin/pulsar zookeeper-shell -server my-release-pulsar-zookeeper:2181 get /loadbalance/brokers/${HOSTNAME}.my-release-pulsar-broker.milvus.svc.cluster.local:8080; while [ $? -eq 0 ]; do\n        echo "broker ${HOSTNAME}.my-release-pulsar-broker.milvus.svc.cluster.local znode still exists ... check in 10 seconds ...";\n        sleep 10;\n        bin/pulsar zookeeper-shell -server my-release-pulsar-zookeeper:2181 get /loadbalance/brokers/${HOSTNAME}.my-release-pulsar-broker.milvus.svc.cluster.local:8080;\n      done; cat conf/pulsar_env.sh; OPTS="${OPTS} -Dlog4j2.formatMsgNoLookups=true -Djava.net.preferIPv4Stack=false" exec bin/pulsar broker;\n    command:\n    - sh\n    - -c\n```\nand I still get exception. \n```\nCaused by: io.netty.resolver.dns.DnsNameResolverException: [13557: /[fd11:1111:1112:15:0:0:0:a]:53] DefaultDnsQuestion(my-release-pulsar-broker-0.my-release-pulsar-broker.milvus.svc.cluster.local. IN A) failed to send a query \
+Issue #23842: Labels: type/bug, doc-not-needed, area/authn, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/4.0.2, release/3.0.10, release/3.3.5
+Issue #23841: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/4.0.2, release/3.0.10, release/3.3.5
+Issue #23840: Labels: type/bug
+could you provide your code? @liusx73 
+Issue #23839: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, category/performance, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/4.0.2, release/3.0.10, release/3.3.5
+Issue #23838: Labels: type/bug
+Issue #23837: Labels: doc, area/broker, ready-to-test, area/ML, category/performance, PIP
+@dao-jun PIP-401 is already taken. Please always search the mailing list and Pulsar issues to find the next unused PIP number. The first one to start a discussion with a PIP number on the dev mailing list wins when there are conflicts.
+Issue #23836: Labels: doc-required
+Issue #23835: Labels: doc-required
+Issue #23834: Labels: type/bug
+Issue #23833: Labels: type/bug, area/broker, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.9, release/3.3.4, release/4.0.2
+Issue #23832: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/4.0.2, release/3.0.10, release/3.3.5
+/pulsarbot rerun-failure-checks
+Issue #23831: Labels: area/tool, doc-not-needed, ready-to-test
+Issue #23830: Labels: doc-not-needed
+@codelipenghui Please feel free take a look, thanks.
+Issue #23829: Labels: doc-not-needed
+@mukesh154 Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23828: Labels: doc-not-needed
+please help review, thanks. @BewareMyPower @poorbarcode @codelipenghui @liangyepianzhou
+Issue #23827: Labels: area/test, type/flaky-tests
+Issue #23826: Labels: doc-not-needed, ready-to-test, category/performance
+[branch-3.3] is sufficient in the PR title for cherry-picking PRs.
+Issue #23825: Labels: area/test, type/flaky-tests
+another one: https://github.com/apache/pulsar/actions/runs/12925497651/job/36047068766?pr=23883#step:11:1222
+Issue #23824: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.9, release/3.3.4, release/4.0.2
+Issue #23823: Labels: doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/4.0.2, release/3.0.10, release/3.3.5
+Issue #23822: Labels: doc-label-missing
+@yunmaoQu Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23820: Labels: doc-not-needed
+@walkinggo Please rename the title of this PR since the current title "change async function time get" is not understandable. You can use LLMs to review and provide suggestions for more understandable language. I shared some tips in https://github.com/apache/pulsar/pull/23806#issuecomment-2569078570 about this. 
+Issue #23819: Labels: doc-not-needed
+> Added `majorCompactionMaxTimeMillis` and `minorCompactionMaxTimeMillis` to `conf/bookkeeper.conf` so that they can be updated from env variables in pulsar docker containers using `apply-config-from-env.py` script.\r\n\r\nThe workaround is to use `PULSAR_PREFIX_` for the environment variables.
+Issue #23818: Labels: type/bug
+Issue #23817: Labels: doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.9, release/3.3.4, release/4.0.2
+Does it will lead to msg out of order?
+Issue #23816: Labels: No Labels
+Currently the Python function code base is maintained in https://github.com/apache/pulsar/tree/master/pulsar-functions/instance/src/main/python, so move the issue here.
+Issue #23815: Labels: doc-not-needed
+> Currently, the subscription replication will be changed by the `org.apache.pulsar.client.api.ConsumerBuilder#replicateSubscriptionState`. The existing subscription should use the original replication policy, this configuration should only affect new subscriptions.\r\n\r\n@nodece Has the behavior always been like this? Just wondering if this is a recent change which would be considered a regression? If not, changing the behavior could be problematic if there are users that rely on this existing behavior.
+Issue #23814: Labels: doc-not-needed
+@yunmaoQu Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23813: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+Issue #23811: Labels: doc-not-needed
+It looks like due to code formatting, many unintended changes were introduced. I added `startTimeNanos` in `JavaExecutionResult` and removed it from `ComponentStatsManager`. Now, the `processTimeEnd` method in `ComponentStatsManager` takes the start time as a parameter and calculates the final time. I also removed the `processTimeStart` method.
+Issue #23810: Labels: type/flaky-tests, doc-not-needed, ready-to-test, cherry-picked/branch-4.0, release/4.0.2
+Issue #23809: Labels: type/bug
+@yyj8 Would you be interested in addressing this issue?
+Issue #23808: Labels: doc-not-needed, ready-to-test
+@yunmaoQu Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23807: Labels: type/bug
+Hi @mrtworo \nHave you found a fix for this issue?\n\nEDIT: Solution is to try the newest helm chart from master. With [pulsar-4.0.0-candidate-3](https://github.com/apache/pulsar-helm-chart/releases/tag/pulsar-4.0.0-candidate-3) issue will disappear.
+Issue #23806: Labels: doc-not-needed
+@zjxxzjwang Please rename this PR. The current title is confusing. \r\n\r\nHint: using ChatGPT or some other LLM could help provide better names for PRs. LLMs are also useful in fixing grammar mistakes.\r\n\r\nOne way to pass the PR details to LLM is to append `.patch` to the url, for example https://github.com/apache/pulsar/pull/23806.patch and then store this in a file that is passed to an LLM. Also store the output of https://api.github.com/repos/apache/pulsar/pulls/23806 and pass that in a file. (Alternative is to print current PR page to PDF and also pass that.)\r\nIn the prompt "please provide a better title and description for this PR with fixed grammar and improved clarity. return the result in downloadable markdown format.".\r\n\r\nHere\
+Issue #23805: Labels: type/bug
+> 3.0.1\r\n\r\n@g0715158  Please attempt to reproduce on latest 3.0.x release, 3.0.8 . Can you reproduce on 3.0.8 ?
+Issue #23804: Labels: doc-not-needed, ready-to-test, PIP, cherry-picked/branch-4.0, release/4.0.2
+> How about adding a test for this change?\r\n\r\nAdded.
+Issue #23803: Labels: doc-not-needed, PIP, release/4.0.4, release/3.0.11, release/3.3.6
+@poorbarcode Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23802: Labels: type/bug, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.9, release/3.3.4, release/4.0.2
+/pulsarbot rerun-failure-checks
+Issue #23801: Labels: type/bug, doc-not-needed, area/authn, ready-to-test, release/3.0.9
+/pulsarbot rerun-failure-checks
+Issue #23800: Labels: type/bug
+Issue #23798: Labels: type/bug, doc-not-needed, area/authn, cherry-picked/branch-4.0, release/4.0.2
+/pulsarbot rerun-failure-checks
+Issue #23797: Labels: type/bug, doc-not-needed, area/authn, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.9, release/3.3.4, release/4.0.2
+/pulsarbot rerun-failure-checks
+Issue #23796: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, triage/lhotari/important, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+/pulsarbot run-failure-checks
+Issue #23795: Labels: type/bug, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.9, release/3.3.4, release/4.0.2
+/pulsarbot rerun-failure-checks
+Issue #23794: Labels: doc-not-needed
+@lhotari @liangyepianzhou @poorbarcode @dao-jun PTAL!
+Issue #23793: Labels: doc-not-needed, PIP
+Issue #23792: Labels: type/bug
+I think it is related to #22541 / https://github.com/apache/pulsar/pull/22541/commits/c0c01c2677d9f68933f20666bbc66bee443de89c. \r\nThere, `@JsonIgnoreProperties(ignoreUnknown = true)` was added to `ClientConfigurationData`.
+Issue #23791: Labels: type/bug, doc-not-needed, cherry-picked/branch-3.0, release/2.10.7, release/2.11.5, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.9, release/3.3.4, release/4.0.2
+Issue #23790: Labels: doc-not-needed, PIP
+Issue #23789: Labels: doc-not-needed, PIP
+Issue #23788: Labels: doc-not-needed
+Issue #23787: Labels: doc-not-needed
+I try to finish it in another pr #23811 becasue i use different branch.i will close this pr,please check it in next pr.
+Issue #23786: Labels: type/bug, doc-not-needed, ready-to-test, cherry-picked/branch-4.0, release/4.0.2
+@mattisonchao Please create a separate PR for cherry-picking to branch-3.3 since there are major merge conflicts. The merge conflicts seem to be mainly due to lack of #23319 changes in branch-3.3 .\r\n
+Issue #23785: Labels: doc-not-needed, ready-to-test, release/4.0.4, release/3.0.11
+LGTM
+Issue #23784: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.9, release/3.3.4, release/4.0.2
+Issue #23783: Labels: type/enhancement
+This may not be a problem, you can change the log level by environment variables, for example\r\n\r\nbroker-statefulset.yaml\r\n```yaml\r\nenv:\r\n  - name: PULSAR_LOG_LEVEL\r\n    value: debug\r\n```\r\n\r\n
+Issue #23782: Labels: area/geo-replication, doc-not-needed, ready-to-test
+/pulsarbot rerun-failure-checks
+Issue #23781: Labels: area/geo-replication, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.9, release/3.3.4, release/4.0.2
+/pulsarbot rerun-failure-checks
+Issue #23780: Labels: area/broker, doc-not-needed, ready-to-test, category/performance, cherry-picked/branch-4.0, release/4.0.2
+Issue #23779: Labels: area/broker, area/transaction, doc-not-needed, ready-to-test, category/performance, cherry-picked/branch-4.0, release/4.0.2
+Issue #23778: Labels: type/bug
+Did you solve it?\nI\
+Issue #23777: Labels: doc-not-needed
+@walkinggo Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23776: Labels: area/tieredstorage, doc-not-needed, ready-to-test, category/performance, cherry-picked/branch-4.0, release/4.0.2
+Issue #23775: Labels: type/enhancement, doc-not-needed, area/ML
+Issue #23774: Labels: doc-not-needed, ready-to-test
+@315157973 @poorbarcode @liangyepianzhou @lhotari PTAL
+Issue #23773: Labels: type/enhancement
+Issue #23772: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.9, release/3.3.4, release/4.0.2
+/pulsarbot rerun-failure-checks
+Issue #23771: Labels: type/enhancement
+@nodece @yyj8 I wonder if this is an issue with blue-green cluster migration?
+Issue #23770: Labels: doc-not-needed, PIP
+@nodece would it be possible to cover #23769 feature too? That enables subscription replication for all subscriptions at the broker level if I understand it correctly. Could you work together with @yyj8 to cover that?
+Issue #23769: Labels: doc-required
+@lhotari Good idea, I suggest we should add this feature to the #23770, I also required this feature.
+Issue #23768: Labels: type/enhancement
+Issue #23767: Labels: doc-not-needed, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.3.4, release/4.0.2
+/pulsarbot rerun-failure-checks
+Issue #23766: Labels: doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.9, release/3.3.4, release/4.0.2
+@danpi Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23765: Labels: type/bug
+Issue #23764: Labels: doc-not-needed, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.3.4, release/4.0.2
+/pulsarbot rerun-failure-checks
+Issue #23763: Labels: type/bug
+Issue #23762: Labels: release/blocker, doc-not-needed, ready-to-test, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.3.4, release/4.0.2
+\r\n> In order to use Amazon Kinesis Producer Library on Alpine, the stable solution is to compile this binary specifically for Alpine.\r\n\r\nI think it would be hard to maintain this build script in this pulsar repo.\r\n\r\nnit: are we planning to export those IO connectors from the repo and maintain them separately?\r\n\r\n\r\n
+Issue #23761: Labels: area/client, doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.9, release/3.3.4, release/4.0.2
+Issue #23759: Labels: type/bug, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5
+/pulsarbot rerun-failure-checks
+Issue #23758: Labels: doc
+Issue #23757: Labels: doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.9, release/3.3.4, release/4.0.2
+> > This adjustment would enhance flexibility in managing subscription replication policies, such as applying the policy that comes from the namespace or topic level, which streamlines the configuration of subscription replication behavior. This feature is in progress.\r\n> \r\n> This will be a useful feature.\r\n\r\n@nodece Please check #23769, it seems to be a related new feature.
+Issue #23756: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.3.4, release/4.0.2
+Issue #23755: Labels: doc-not-needed
+@JHC9010 Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23753: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.9, release/3.3.4, release/4.0.2
+Issue #23752: Labels: area/build, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.9, release/3.3.4, release/4.0.2
+btw. regarding the StackOverflowError, the config in `.mvn/jvm.config` with `-Xss1500k` has been a workaround for this problem. We can keep that setting even if Lombok has improved since it\
+Issue #23751: Labels: area/broker, doc-required, area/metrics, type/PIP, ready-to-test
+@lhotari \r\n\r\n> Since Pulsar is slowly migrating to OTel for metrics, please also handle OTel for this added metric.\r\n> \r\n> For metric changes, it would be useful to at least have a discussion on the dev mailing list since our PIP policy states that a PIP is required for changes in metrics.\r\n\r\nThanks for your comment. You are right, this a WIP PR, and I will do it later when I am available
+Issue #23750: Labels: type/enhancement
+Issue #23748: Labels: doc-required
+Issue #23747: Labels: type/flaky-tests, doc-not-needed, cherry-picked/branch-4.0, release/4.0.2
+Issue #23746: Labels: area/test, type/flaky-tests
+Issue #23745: Labels: type/bug
+Issue #23743: Labels: area/security, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.9, release/3.3.4, release/4.0.2
+Issue #23742: Labels: type/enhancement
+Issue #23741: Labels: type/bug
+Please use the correct URL.\r\n- Pulsar Admin: `http://mypath.com:1234`. Default to `http://localhost:8080` if you run the pulsar locally.\r\n- Pulsar Client: `http://mypath.com:1234` or `pulsar://mypath.com:6650`. Default to `pulsar://localhost:6650` if you run the pulsar locally.
+Issue #23739: Labels: type/bug
+BTW, according the doc, seems the delayed message should be auto acked if TTL expires.\r\n\r\nhttps://pulsar.apache.org/docs/3.0.x/concepts-messaging/#delayed-message-delivery\r\n<img width="990" alt="image" src="https://github.com/user-attachments/assets/b2e6f546-c759-4a22-9bc1-bf4958895012" />\r\n
+Issue #23738: Labels: type/bug, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.9, release/3.3.4, release/4.0.2
+/pulsarbot rerun-failure-checks
+Issue #23737: Labels: doc-label-missing, ready-to-test, dependencies, go
+@dependabot[bot] Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23736: Labels: type/bug
+Issue #23735: Labels: type/bug
+can you please provide more related logs?
+Issue #23734: Labels: area/function, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.9, release/3.3.4, release/4.0.2
+Issue #23732: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.9, release/3.3.4, release/4.0.2
+The releases are in-progress to include this fix. Ongoing vote threads:\r\n[Release Apache Pulsar 3.0.9 based on 3.0.9-candidate-2](https://lists.apache.org/thread/pzqb4cz9yw7rvcgq7ft0y93qtdnj232d)\r\n[Release Apache Pulsar 3.3.4 based on 3.3.4-candidate-2](https://lists.apache.org/thread/qog1gxdhlvohjbo4j1po98hkg8mb11c3)\r\n[Release Apache Pulsar 4.0.2 based on 4.0.2-candidate-3](https://lists.apache.org/thread/k3p7k69glm66bz4kl0cy397tk7v3nyvy)
+Issue #23731: Labels: doc-not-needed
+Issue #23730: Labels: type/bug, area/admin, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-4.0, release/4.0.2, release/3.0.11
+Thanks @dao-jun. Could we add tests to cover this? The lack of tests made it possible that this regression happened in the first place.
+Issue #23728: Labels: type/bug
+Change to `3.0.8`, debug normally with IDEA.
+Issue #23726: Labels: type/bug
+lose metrics name: pulsar subscribtion backlog
+Issue #23725: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.9, release/3.3.4, release/4.0.2
+Issue #23724: Labels: doc-label-missing, dependencies, java
+@dependabot[bot] Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23723: Labels: type/enhancement, area/function
+I would like to try to resolve this issue. Could you assign it to me? @lhotari 
+Issue #23722: Labels: doc-required
+Thanks for your report. The latest Pulsar uses picocli to parse the command, it is more strict than jcommander. I reported this issue to the picocli a long time ago, go to https://github.com/remkop/picocli/issues/2348.\r\n\r\nCould you use `/bin/sh/ -c "COMMAND"` in the `docker-compose.yml`? You can check https://github.com/apache/pulsar-client-go/pull/1304, it works fine.\r\n\r\n\r\n
+Issue #23721: Labels: area/test, doc-not-needed, ready-to-test, cherry-picked/branch-4.0, release/4.0.2
+Issue #23720: Labels: type/bug, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.9, release/3.3.4, release/4.0.2
+/pulsarbot rerun-failure-checks
+Issue #23719: Labels: type/bug, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.9, release/3.3.4, release/4.0.2
+/pulsarbot rerun-failure-checks
+Issue #23718: Labels: doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.9, release/3.3.4, release/4.0.2
+/pulsarbot rerun-failure-checks
+Issue #23717: Labels: type/bug
+The Netty JNI is incorrectly linked:\r\n\r\n```bash\r\ncf43f09c95f1:/tmp$ ldd libnetty_tcnative_linux_aarch_6412030080574647118807.so \r\n\t/lib/ld-musl-aarch64.so.1 (0xffff9501c000)\r\n\tlibrt.so.1 => /lib/ld-musl-aarch64.so.1 (0xffff9501c000)\r\n\tlibdl.so.2 => /lib/ld-musl-aarch64.so.1 (0xffff9501c000)\r\n\tlibgcc_s.so.1 => /usr/lib/libgcc_s.so.1 (0xffff94dbc000)\r\n\tlibc.so.6 => /lib/ld-musl-aarch64.so.1 (0xffff9501c000)\r\nError relocating libnetty_tcnative_linux_aarch_6412030080574647118807.so: __getauxval: symbol not found\r\n```\r\n\r\nFrom [here](https://github.com/grpc/grpc-java/issues/10096#issuecomment-1520411572),\r\n\r\n> musl refuses to tell you "symbol can\
+Issue #23716: Labels: doc-not-needed, PIP
+Issue #23715: Labels: type/bug
+@Technoboy- Do you have a chance to handle this?
+Issue #23714: Labels: doc-not-needed
+Issue #23713: Labels: type/bug, area/client, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-4.0, release/3.0.9, release/4.0.2
+Issue #23712: Labels: type/bug, area/metrics, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/4.0.2, release/3.0.10, release/3.3.5
+WDYT, @lhotari @coderzc 
+Issue #23711: Labels: doc-required
+Issue #23710: Labels: doc-required, triage/lhotari/important
+The download page at https://pulsar.apache.org/download/ is mostly OK, and should be used instead
+Issue #23709: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.9, release/3.3.4, release/4.0.2
+@omarkj Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23708: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.9, release/3.3.4, release/4.0.2
+Issue #23707: Labels: type/enhancement
+Are there any limitations in the specific technical framework for implementing weak references? How should we limit the size of the cache?
+Issue #23706: Labels: type/bug
+addressed by #23708
+Issue #23705: Labels: type/bug, release/4.0.3
+Issue #23704: Labels: type/bug
+btw. It would be useful context to explain the issue that you ran into with pulsar-storm. That seems to require serialization support?
+Issue #23702: Labels: doc-required
+Mixing message counts and entries counts is also elsewhere in Pulsar, example #23263
+Issue #23701: Labels: doc-required
+Issue #23699: Labels: type/enhancement
+Do you have any idea on it? @lhotari @dao-jun @poorbarcode @codelipenghui @BewareMyPower 
+Issue #23698: Labels: type/enhancement, area/client, doc-not-needed, ready-to-test, cherry-picked/branch-4.0, release/4.0.2
+Issue #23697: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/4.0.4, release/3.0.11, release/3.3.6
+/pulsarbot rerun-failure-checks
+Issue #23696: Labels: type/bug
+Is this related to #23620 or #23594?
+Issue #23695: Labels: doc-not-needed, ready-to-test, release/4.0.4, release/3.0.11, release/3.3.6
+Good catch! the `connected` is always false after the connection is reconnected/disconnected.\r\n\r\nCould you check https://github.com/apache/pulsar/blob/v4.0.1/pulsar-common/src/main/java/org/apache/pulsar/common/policies/data/stats/TopicStatsImpl.java#L335-L343? This seems to be the root cause.
+Issue #23694: Labels: type/bug
+Issue #23693: Labels: doc-not-needed, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.3.4, release/4.0.2
+I am curious about how pulsar ensure the two message ids from two clusters corresponding to the same message are equal, or they are just not equal?  Not equal may introduce lots of problem.
+Issue #23692: Labels: doc-not-needed
+@pengxiangrui127 Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23691: Labels: doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.9, release/3.3.4, release/4.0.2
+/pulsarbot rerun-failure-checks
+Issue #23690: Labels: type/bug
+Issue #23689: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.3.4, release/4.0.2
+@lhotari \r\n\r\nIf do not cherry-pick into `branch-3.0`, there is a downgrade compatibility issue:\r\n- upgrade to `4.0.x`\r\n- Set a larger value for the policy.\r\n- downgrade to `3.0.x`, the value will be transferred to a negative value,
+Issue #23688: Labels: type/bug, area/client, doc-not-needed, ready-to-test, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.3.4, release/4.0.2
+@hangc0276 Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23687: Labels: doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-4.0, release/3.0.9, release/4.0.2
+Issue #23686: Labels: type/bug, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/4.0.2, release/3.0.10, release/3.3.5
+Issue #23685: Labels: doc-label-missing, ready-to-test, dependencies, cherry-picked/branch-3.0, java, cherry-picked/branch-4.0, release/3.0.9, release/4.0.2
+@dependabot[bot] Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23684: Labels: area/security, doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.9, release/3.3.4, release/4.0.2
+Thanks for contributing @ZachChuba
+Issue #23683: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.9, release/3.3.4, release/4.0.2
+Issue #23681: Labels: doc-not-needed
+Issue #23680: Labels: doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-4.0, release/3.0.9, release/4.0.2
+/pulsarbot rerun-failure-checks
+Issue #23679: Labels: doc-not-needed
+@Gilthoniel Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23678: Labels: type/bug
+```sh\r\ndocker run -it --rm apachepulsar/pulsar:4.0.1 sh -c "PULSAR_PREFIX_journalDirectories=test bin/apply-config-from-env.py conf/bookkeeper.conf; cat conf/bookkeeper.conf | grep journal"\r\n```\r\n\r\nLog:\r\n```\r\nUnable to find image \
+Issue #23676: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.3.4, release/4.0.2
+/pulsarbot rerun-failure-checks
+Issue #23675: Labels: area/broker, doc-not-needed, ready-to-test, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.3.4, release/4.0.2
+Issue #23674: Labels: type/bug
+Issue #23673: Labels: type/bug
+Issue #23672: Labels: doc-not-needed
+> We found that sometimes readPosition is larger than lastPosition. If this happens, messages will not be consumed, messages will be backlogged, and recovery will not be possible.\r\n \r\nIt is possible that the messages has been dispatched to consumer, but not acked. Have you verified this? \r\nBefore comprehending the root of this phenomenon,  we should cautious with adding such check, though it looks simple.
+Issue #23671: Labels: type/bug, area/broker, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.9, release/3.3.4, release/4.0.2
+Issue #23670: Labels: type/bug
+Issue #23669: Labels: doc-not-needed, ready-to-test, dependencies, java
+@dependabot[bot] Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23668: Labels: area/test, type/flaky-tests
+Issue #23667: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.3.4, release/4.0.2
+Issue #23666: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.9, release/3.3.4, release/4.0.2
+@visxu With this we would also ensure that no lookup related to the `__change_events` topic is in progress while setting the `lookupPermitsBefore` variable, right?
+Issue #23665: Labels: doc-complete
+@visxu Please select only one documentation label in your PR description.
+Issue #23663: Labels: area/broker, doc-not-needed, ready-to-test, cherry-picked/branch-3.3, release/4.0.1, cherry-picked/branch-4.0, release/3.3.4
+Issue #23662: Labels: type/bug
+Issue #23661: Labels: type/enhancement
+The first step would be to document the existing behavior to https://pulsar.apache.org/docs/next/admin-api-topics/#create-subscription and to OpenAPI spec (generated from Swagger annotations).\r\n\r\n![image](https://github.com/user-attachments/assets/1fc37677-e59e-414c-972e-da1e8ffe6983)\r\n
+Issue #23660: Labels: area/broker, area/security, doc-not-needed, ready-to-test, cherry-picked/branch-3.3, release/4.0.1, cherry-picked/branch-4.0, release/3.3.4
+Issue #23659: Labels: doc-not-needed, PIP
+Issue #23658: Labels: doc-not-needed
+Issue #23657: Labels: doc-not-needed, ready-to-test, release/4.0.1, cherry-picked/branch-4.0
+Issue #23656: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.3, release/3.3.3, release/4.0.1, cherry-picked/branch-4.0
+Issue #23655: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+Issue #23654: Labels: type/bug
+@BewareMyPower Is this related to #23147 changes? Would you mind checking this issue?
+Issue #23653: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.3, release/3.3.3, release/4.0.1, cherry-picked/branch-4.0
+Issue #23652: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-4.0, release/3.0.9, release/4.0.2
+/pulsarbot rerun-failure-checks
+Issue #23651: Labels: doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+Issue #23650: Labels: type/bug
+@thetumbled Any ideas of how to address this deadlock in shutdown of NegativeAcksTracker?
+Issue #23649: Labels: area/proxy, doc-not-needed, ready-to-test
+Issue #23648: Labels: type/PIP, doc-not-needed, ready-to-test, PIP
+@rdhabalia Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23647: Labels: doc-not-needed, release/important-notice, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+Issue #23646: Labels: doc-not-needed, ready-to-test, release/3.0.9, release/4.0.2
+Closing in favor of #23647 since integration tests fail when the dependency is removed from client side.
+Issue #23645: Labels: doc-not-needed, cherry-picked/branch-3.3, release/3.3.3, release/4.0.1, cherry-picked/branch-4.0
+Issue #23644: Labels: doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+@equanz Do we need tests for validating the behavior?
+Issue #23643: Labels: doc-required
+Looking at the `internalSendAsync` [implementation](https://github.com/apache/pulsar-client-go/blob/64c47537311d59a60f8d6463b2ba91a68065354e/pulsar/producer_partition.go#L1168), it would only be blocking if `DisableBlockIfQueueFull` is set to `false` and the queue is full.
+Issue #23642: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+/pulsarbot rerun-failure-checks
+Issue #23641: Labels: doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+@Shawyeok Please submit a similar PR to BookKeeper for jetcd-core-shaded.
+Issue #23640: Labels: doc-not-needed, release/4.0.1, cherry-picked/branch-4.0
+Issue #23639: Labels: doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+@hboutemy Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23638: Labels: doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+Issue #23637: Labels: area/security, doc-not-needed, ready-to-test, cherry-picked/branch-3.3, release/4.0.1, cherry-picked/branch-4.0, release/3.3.4
+oh, sure. let me add one. 
+Issue #23636: Labels: doc-not-needed
+> > fix error throughput log in performanceConsumer. bytes -> Mb no need to *8.\r\n> \r\n> The previous calculation is intentional. The previous unit has been megabits instead of megabytes.\r\n> \r\n> https://github.com/apache/pulsar/blob/002fa49692ff4b8b038bf2edeeb3b32ed218e64f/pulsar-testclient/src/main/java/org/apache/pulsar/testclient/PerformanceConsumer.java#L526\r\n\r\nOk. But I think MB is clearer
+Issue #23635: Labels: type/enhancement
+Issue #23634: Labels: doc-not-needed, release/4.0.4
+@yyj8 Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23633: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+Issue #23632: Labels: doc-required, release/important-notice, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+@Shawyeok Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23629: Labels: type/enhancement
+Issue #23628: Labels: type/enhancement, doc-not-needed, ready-to-test
+@jiangpengcheng Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23627: Labels: doc-not-needed
+@lhotari Hello lhotari, this pr(https://github.com/apache/pulsar/pull/23562) merger was terminated because of the wrong deletion of the warehouse before. Now I have submitted the same pr again, please approve, thank you! 
+Issue #23626: Labels: type/enhancement, doc-not-needed, cherry-picked/branch-3.3, release/3.3.3, release/4.0.1, cherry-picked/branch-4.0
+/pulsarbot run-failure-checks
+Issue #23625: Labels: doc-required
+I want to do it if no one want. could you assign it to me? @lhotari 
+Issue #23624: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+Issue #23622: Labels: type/bug, triage/lhotari/important
+Issue #23621: Labels: doc-not-needed, ready-to-test
+@crossoverJie Which Pulsar client and broker version did you experience this with?\r\n
+Issue #23620: Labels: doc-not-needed
+Related to #23594
+Issue #23619: Labels: doc-not-needed, type/refactor, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+Issue #23618: Labels: type/bug, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+/pulsarbot rerun-failure-checks
+Issue #23617: Labels: type/bug
+Issue #23616: Labels: type/bug
+@zhengcongyi Please add textual description if you file issues. If you face a problem and cannot describe it, ask a question in GitHub Discussions instead of creating issues.
+Issue #23615: Labels: type/bug, doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/4.0.1, cherry-picked/branch-4.0, release/3.0.9, release/3.3.4
+close reopen to retrigger the ci 
+Issue #23614: Labels: type/enhancement
+Issue #23613: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+Issue #23612: Labels: area/broker, area/metrics, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+@zymap Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23611: Labels: type/enhancement, doc-not-needed, ready-to-test, category/performance, release/4.0.1, cherry-picked/branch-4.0
+Issue #23610: Labels: area/client, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+Issue #23609: Labels: doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+@lhotari @dao-jun PTAL! 
+Issue #23608: Labels: doc-not-needed, PIP
+@poorbarcode How does this compare to the previous work in this area:\r\n* [PIP 81: Split the individual acknowledgments into multiple entries](https://github.com/apache/pulsar/wiki/PIP-81%3A-Split-the-individual-acknowledgments-into-multiple-entries)\r\n* [PIP-381: Handle large PositionInfo state](https://github.com/apache/pulsar/blob/master/pip/pip-381-large-positioninfo.md)\r\n* https://github.com/apache/pulsar/pull/9292\r\n
+Issue #23607: Labels: doc-not-needed, ready-to-test, release/4.0.1, cherry-picked/branch-4.0
+> Please update this file:\r\n> \r\n> https://github.com/apache/pulsar/blob/27158532de26d40e7a402769e73ddd3be43f0623/distribution/server/src/assemble/LICENSE.bin.txt#L484-L485\r\n\r\nYes, you are right. let me rebase first. :) 
+Issue #23606: Labels: type/bug
+> 3.0.1\r\n\r\nDoes this problem also reproduce with the 3.0.7 version of Pulsar broker and Pulsar client? How about 4.0.0 ?
+Issue #23605: Labels: type/enhancement
+@dao-jun @lhotari PTAL.
+Issue #23604: Labels: doc-not-needed, area/metadata, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+@lhotari \r\n> How did you find out that IntelliJ expects this format?\r\n\r\nThere is a silent error in the pulsar-metadata module dependencies, which I discovered by coincidence.\r\n\r\n![image_1731639655772_0](https://github.com/user-attachments/assets/3a1e3c96-8121-4885-9085-c8c8f2debeed)\r\n\r\n<img width="785" alt="image" src="https://github.com/user-attachments/assets/a6dcc83c-ce7b-4bf0-b089-0504a2c835ba">\r\n\r\n> Could we remove overriding of finalName in pom.xml so that we\
+Issue #23603: Labels: type/bug
+This issue report could be changed into an enhancement request about key-ordered message delivery during re-partitioning. One of the initial ways to address this is to document how to handle such cases as I described above. There could be advanced support for handling this in an automated way.
+Issue #23602: Labels: area/test, doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+Issue #23601: Labels: doc-not-needed, PIP
+List some experiment data:\r\n```\r\n    static long trimLowerBit(long timestamp, int bits) {\r\n        return timestamp & (-1L << bits);\r\n    }\r\n\r\n    public static void main(String[] args) throws IOException {\r\n        ConcurrentLongLongPairHashMap map1 = ConcurrentLongLongPairHashMap.newBuilder()\r\n                .autoShrink(true)\r\n                .concurrencyLevel(16)\r\n                .build();\r\n        // timestamp -> ledgerId -> entryId, no need to batch index, if different messages have\r\n        // different timestamp, there will be multiple entries in the map\r\n        // AVL Tree -> LongOpenHashMap -> Roaring64Bitmap\r\n        // there are many timestamp, a few ledgerId, many entryId\r\n        Long2ObjectSortedMap<Long2ObjectMap<Roaring64Bitmap>> map2 = new Long2ObjectAVLTreeMap<>();\r\n        \r\n        long numMessages = 1000000, numLedgers=100;\r\n        long numEntries = numMessages/numLedgers;\r\n        long ledgerId, entryId, partitionIndex, timestamp=System.currentTimeMillis();\r\n        for(long i=0; i<numLedgers; i++) {\r\n            ledgerId = 10000+i;\r\n            for(long j=0; j<numEntries; j++) {\r\n                entryId = 10000+j;\r\n                partitionIndex = 0;\r\n                // 1ms per message\r\n                timestamp++;\r\n                map1.put(ledgerId, entryId, partitionIndex, timestamp);\r\n                \r\n                timestamp = trimLowerBit(timestamp, 8);\r\n                if (map2.containsKey(timestamp)) {\r\n                    Long2ObjectMap<Roaring64Bitmap> ledgerMap = map2.get(timestamp);\r\n                    if (ledgerMap.containsKey(ledgerId)) {\r\n                        ledgerMap.get(ledgerId).add(entryId);\r\n                    } else {\r\n                        Roaring64Bitmap entrySet = new Roaring64Bitmap();\r\n                        entrySet.add(entryId);\r\n                        ledgerMap.put(ledgerId, entrySet);\r\n                    }\r\n                } else {\r\n                    Long2ObjectMap<Roaring64Bitmap> ledgerMap = new Long2ObjectOpenHashMap<>();\r\n                    Roaring64Bitmap entrySet = new Roaring64Bitmap();\r\n                    entrySet.add(entryId);\r\n                    ledgerMap.put(ledgerId, entrySet);\r\n                    map2.put(timestamp, ledgerMap);\r\n                }\r\n            }\r\n        }\r\n        try {\r\n            Thread.sleep(10000000);\r\n        } catch (InterruptedException e) {\r\n            // TODO Auto-generated catch block\r\n            e.printStackTrace();\r\n        }\r\n    }\r\n```\r\n![image](https://github.com/user-attachments/assets/298ef601-ad41-4b4b-b433-34a235b5c509)\r\n\r\nThe memory occupation of the new data structure is down to 0.82MB, while `ConcurrentLongLongPairHashMap` need 64MB, `HashMap` need 178MB.\r\n
+Issue #23600: Labels: doc-not-needed, ready-to-test, PIP, cherry-picked/branch-4.0, release/4.0.2
+I will implement a space efficient map structure for `ConcurrentTripleLong2LongHashMap` later, which for now use hashmap to ensure the logical correction.
+Issue #23599: Labels: type/bug
+zookeeper config:\r\n[Uploading zoo.txt…]()\r\n
+Issue #23598: Labels: doc-not-needed, release/4.0.1, cherry-picked/branch-4.0
+Issue #23597: Labels: type/bug
+Duplicate of #23596
+Issue #23596: Labels: area/security, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+Thank you for fixing this!
+Issue #23595: Labels: doc-label-missing, dependencies, java
+@dependabot[bot] Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23594: Labels: type/bug, doc-not-needed, ready-to-test, release/4.0.4, release/3.0.11, release/3.3.6
+LGTM.\r\n\r\nDo we need to support decoding URL-encoded subscription names in broker side? Thus users can use existing URL-encoded subscription names in HTTP requests.
+Issue #23593: Labels: type/bug, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+Issue #23592: Labels: doc-label-missing, PIP
+@KannarFr Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23591: Labels: area/tieredstorage, doc-required, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+@zymap Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23590: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+/pulsarbot rerun-failure-checks
+Issue #23589: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+/pulsarbot rerun-failure-checks
+Issue #23588: Labels: type/bug
+Issue #23586: Labels: type/enhancement
+Issue #23585: Labels: doc-not-needed, cherry-picked/branch-3.3, release/3.3.3, release/4.0.1, cherry-picked/branch-4.0
+@lhotari \r\nThanks for pointed out, `otel.sdk.disabled=true` is documented in [PIP-320][pip-320], so I think it would be better have a consistent toggle option to enable OTel in pulsar.\r\n\r\n[pip-320]: https://github.com/apache/pulsar/blob/master/pip/pip-320.md#opting-in
+Issue #23584: Labels: type/enhancement, doc-required, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+/pulsarbot rerun-failure-checks\r\n
+Issue #23583: Labels: doc-not-needed, PIP
+@shibd Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23582: Labels: doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+@thetumbled Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23581: Labels: area/security, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+Issue #23580: Labels: doc-label-missing, cherry-picked/branch-3.3, release/3.3.3
+@heesung-sn Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23579: Labels: area/broker, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+Issue #23578: Labels: type/bug, area/client, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+Issue #23577: Labels: doc-required, cherry-picked/branch-3.3, release/3.3.3, release/4.0.1, cherry-picked/branch-4.0
+Can you add a test to verify this case that the consumer name is specified?
+Issue #23576: Labels: doc-not-needed, PIP
+/pulsarbot rerun-failure-checks
+Issue #23575: Labels: No Labels
+Issue #23574: Labels: type/bug
+> 2.10.6\r\n\r\nPulsar 2.10.x is a very old and outdated version of Pulsar. Currently [supported versions](https://pulsar.apache.org/contribute/release-policy/#supported-versions) are 4.0.x, 3.3.x and 3.0.x. \r\nDoes this problem reproduce with a supported Pulsar broker version and supported Pulsar client version?
+Issue #23572: Labels: type/bug
+Issue #23569: Labels: type/enhancement
+Good suggestion. However I have another word, sometimes you need multiple interceptors are executed in extremely order.\r\nMaybe you can add a new boolean parameter `requireOrder` flag to determine whether to execute interceptors in order or parallel.
+Issue #23568: Labels: doc-not-needed
+Issue #23567: Labels: doc, PIP
+Now the vote passed, could you help approve this PR? @shibd 
+Issue #23566: Labels: type/flaky-tests, doc-not-needed, release/4.0.1, cherry-picked/branch-4.0
+Issue #23565: Labels: doc-label-missing, PIP
+@heesung-sn Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23564: Labels: doc-not-needed
+@frankjkelly Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23563: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+Issue #23562: Labels: doc-not-needed, release/3.3.3, release/3.0.8, release/4.0.1
+@zjxxzjwang Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23561: Labels: type/enhancement, area/broker, doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+Issue #23560: Labels: type/bug, area/client, doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+Do you have a chance to add a test case?
+Issue #23559: Labels: type/bug
+\r\n**UPDATE**: Ha ha - please ignore the earlier comment here - I only now realized those are scripts and not actually binaries 
+Issue #23557: Labels: type/enhancement
+Should this be handled by the consumer? \r\n\r\nFrom the docs:\r\n\r\n> The functionality of a dead letter topic is implemented by consumers. You can decide how to handle the messages in the dead letter topic.\r\n\r\nDead letter topics are designed to handle messages that failed processing. Typically, they aren’t reprocessed in the same transactional flow as normal messages, so maintaining order is less relevant.
+Issue #23556: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+Issue #23555: Labels: type/enhancement
+Related issue #23554
+Issue #23554: Labels: doc-required
+Issue #23553: Labels: type/enhancement
+Issue #23552: Labels: type/flaky-tests, doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+Issue #23551: Labels: doc-not-needed, release/4.0.4, release/3.0.11, release/3.3.6
+@codelipenghui @congbobo184  Can you help review this pr?
+Issue #23550: Labels: type/bug
+Issue #23549: Labels: doc-required, ready-to-test
+btw, we probably want to add this bundle load data filtering logic here as well,\r\n\r\nhttps://github.com/apache/pulsar/blob/master/pulsar-broker/src/main/java/org/apache/pulsar/broker/loadbalance/impl/ModularLoadManagerImpl.java#L1125
+Issue #23548: Labels: area/function, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+Issue #23547: Labels: type/bug
+Issue #23546: Labels: doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+Issue #23545: Labels: area/client, doc-not-needed, ready-to-test
+@rdhabalia Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23544: Labels: area/broker, doc-not-needed, ready-to-test, cherry-picked/branch-3.3, release/3.3.3, release/4.0.1, cherry-picked/branch-4.0
+Issue #23543: Labels: type/bug
+Issue #23542: Labels: area/test, type/flaky-tests
+Issue #23541: Labels: type/bug
+In fact,\r\nthere are other tests impacted by this bug.\r\n\r\n- NonDurableConsumerMessagingTest\r\n- ReaderMessagingTest
+Issue #23540: Labels: area/test, doc-not-needed, ready-to-test, cherry-picked/branch-3.3, release/3.3.3, release/4.0.1, cherry-picked/branch-4.0
+@dragosvictor @heesung-sn  Please review
+Issue #23539: Labels: type/enhancement
+and i think using the kubernetes API for  metadata backend is a not good idea,  This is frequently written data.
+Issue #23538: Labels: type/enhancement, area/connector, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+Issue #23536: Labels: area/test, doc-not-needed
+@heesung-sn Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23535: Labels: area/broker, doc-not-needed, ready-to-test, cherry-picked/branch-3.3, release/3.3.3, release/4.0.1, cherry-picked/branch-4.0
+Issue #23534: Labels: area/broker, doc-not-needed, ready-to-test, cherry-picked/branch-3.3, release/3.3.3, release/4.0.1, cherry-picked/branch-4.0
+Issue #23533: Labels: type/enhancement
+Issue #23532: Labels: area/security, doc-not-needed, ready-to-test, cherry-picked/branch-3.3, release/3.3.3, release/4.0.1, cherry-picked/branch-4.0
+Issue #23531: Labels: doc-not-needed
+Issue #23530: Labels: type/bug, area/broker, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+Okay, I will take a look tomorrow.
+Issue #23527: Labels: doc-not-needed
+Issue #23526: Labels: doc-required, PIP
+Please add the PIP number to the PR title as we usually do.
+Issue #23525: Labels: doc-required, ready-to-test
+Please add the PIP number to the PR title as we usually do.
+Issue #23524: Labels: doc-not-needed, ready-to-test, release/3.3.3, release/3.0.8, release/4.0.1
+Issue #23523: Labels: doc-not-needed
+Issue #23522: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.2, cherry-picked/branch-3.3, release/3.2.5, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+Issue #23521: Labels: doc-not-needed
+Issue #23520: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+Issue #23518: Labels: doc-not-needed, ready-to-test, release/4.0.1, cherry-picked/branch-4.0
+@ZhaoGuorui666 Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23517: Labels: doc-not-needed, ready-to-test, release/3.3.3
+@heesung-sn Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23516: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.3, release/3.3.3, release/4.0.1, cherry-picked/branch-4.0
+@heesung-sn is there a need to backport this change?
+Issue #23515: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, triage/lhotari/important, cherry-picked/branch-4.0
+`org.apache.pulsar.client.api.BrokerServiceLookupTest#testLookupConnectionNotCloseIfGetUnloadingExOrMetadataEx` should be a flaky test.
+Issue #23514: Labels: type/bug
+Issue #23513: Labels: type/bug, release/4.0.1, triage/lhotari/important
+@lhotari please take a look
+Issue #23512: Labels: doc-required
+Yes, I checked the doc and source code, I agree the suggestion. \r\nPlease assign the issue to me.\r\n@crossoverJie 
+Issue #23510: Labels: doc-not-needed, doc-label-missing, ready-to-test, release/3.3.3
+@heesung-sn Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23509: Labels: type/bug
+@qmonmert Please configure your application to use the Pulsar BOM, the documentation has been updated recently (1 minute ago) to also cover Spring Boot gradle builds where there has been a similar issue in the past:\r\nhttps://pulsar.apache.org/docs/4.0.x/client-libraries-java-setup/#pulsar-bom\r\n\r\nDoes this address your problem?
+Issue #23508: Labels: doc, ready-to-test, release/4.0.1, cherry-picked/branch-4.0
+@BewareMyPower @lhotari @Technoboy- PTAL~
+Issue #23507: Labels: doc-not-needed, doc-label-missing, ready-to-test, release/3.3.3
+@heesung-sn Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23506: Labels: type/bug
+I noticed also multiple other issues in InflightReadsLimiter / PendingReadsManager:\r\n* PendingReadsManager will acquire permits for partial reads in de-duplication which is wrong\r\n  * This results in acquiring duplicate permits
+Issue #23505: Labels: type/bug
+Hi lhotari,\r\n\r\nI have been looking into this issue today and noticed that you have self-assigned it. I would like to discuss the following points with you:\r\n\r\nWhere is the dispatcherMaxReadSizeBytes limit applied in the code?\r\n\r\n* Before inserting into the replay queue?\r\n![image](https://github.com/user-attachments/assets/f905b510-40c7-4acc-9ee4-6f77596cf3a5)\r\n\r\n* Within the readMoreEntries() method? (However, I noticed that the calculateToRead() method already imposes a limit at the beginning)\r\n![image](https://github.com/user-attachments/assets/a170da1f-57cf-4f3b-9eef-09ca81f45140)\r\n\r\nLooking forward to your PR and learning from your approach to resolving this issue.\r\n\r\nThank you!
+Issue #23504: Labels: type/bug, category/performance
+Issue #23503: Labels: type/enhancement
+Issue #23502: Labels: type/bug, doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+@BewareMyPower @lhotari PTAL, thanks
+Issue #23501: Labels: type/bug
+Issue #23500: Labels: doc-label-missing
+@mattisonchao Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23499: Labels: doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+> It looks the CompletableFuture.supplyAsync(() -> clientCnx, clientCnx.ctx().executor()); can fix this issue, but I don’t understand this fix way.\n\nIndeed, it would be more consistent to use `thenComposeAsync` to switch the executor for all code branches instead of just a single branch.
+Issue #23498: Labels: doc-required
+Issue #23497: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+/pulsarbot rerun-failure-checks
+Issue #23496: Labels: doc-not-needed, doc-label-missing, ready-to-test, cherry-picked/branch-3.3, release/3.3.3
+@heesung-sn Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23495: Labels: doc-not-needed
+@coderzc PTAL~
+Issue #23494: Labels: type/bug
+Issue #23493: Labels: type/bug
+@lhotari  i will try it.
+Issue #23492: Labels: area/test, doc-not-needed, ready-to-test, cherry-picked/branch-3.3, release/3.3.3, release/4.0.1, cherry-picked/branch-4.0
+Issue #23491: Labels: type/enhancement
+Issue #23489: Labels: doc-not-needed, release/2.11.0, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.2.5, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+/pulsarbot rerun-failure-checks
+Issue #23488: Labels: doc-not-needed, release/4.0.4
+Thanks for the contribution, @hanmz. Would you be able to add a test case to cover this change?
+Issue #23487: Labels: doc-not-needed
+Issue #23486: Labels: type/flaky-tests, doc-not-needed, ready-to-test, release/4.0.1, cherry-picked/branch-4.0
+Finding the test that was running when the heap dump was created can be found in Eclipse MAT with OQL query `select * from org.testng.internal.TestResult where m_status = 16`\r\n\r\n<img width="944" alt="image" src="https://github.com/user-attachments/assets/86bb6cdd-bfa0-4af0-9302-34af94d3b209">\r\n\r\n
+Issue #23485: Labels: area/test, type/flaky-tests
+Hi @lhotari \r\nI would like to share my findings about the test case. It tests the pausing of a multi-topic consumer by doing the following:\r\n- There are 3 topics.\r\n- Step 1: Produce 5 messages per topic. Create a multi-topic consumer for topic 1 and 2 (but not topic 3) with receiverQueueSize of 1. Receive 8 messages. Here it looks to me like 4 messages of topic 1 and 4 messages of topic 2 **should** be consumed? In successful test runs this is the case. Then one message remains in the queue of each of the two (internal) consumers. However, in unsuccessful test runs, for me, it was always the case that 5 messages of one topic, and 3 messages of the other topic were received.\r\n- Step 2: Pause the multi-topic consumer.\r\n- Step 3: Add topic 3 to the subscription of the multi-topic consumer. Now there are 3 internal consumers, one per topic.\r\n- Step 4: Produce 5 more messages per topic. \r\n- Step 5: Here the receiver queues of consumer 1 and 2 **should** be cleared by receiving 2 messages. In successful test runs this is the case. In failing test runs 2 messages of the same topic are received.\r\n- Step 6: It is expected, that both consumer queues are empty, and since the multi-consumer is paused, no message should be consumed. A problem might be that the following code is used:\r\n```java\r\n// 6. should not consume any messages\r\nAwaitility.await().untilAsserted(() -> assertNull(consumer.receive(RECEIVE_TIMEOUT_SECONDS, TimeUnit.SECONDS)));\r\n```     \r\ninstead of:\r\n```java\r\n// 6. should not consume any messages\r\nassertNull(consumer.receive(RECEIVE_TIMEOUT_SECONDS, TimeUnit.SECONDS));\r\n```     \r\nWith the current test code, it is possible that a message is received in the first call of the await, but no message is received in the next call, and then `assertNull` succeeds. Then the test does not fail even though a message is received. This is why, in the end, the counter of received messages is 29 instead of 30, because one message is received in step 6.\r\n- Step 7: Resume multi-topic consumer.\r\n- Step 8: Consume the remaining messages.\r\n\r\nIt seems, that the multi-topic consumer is automatically resumed between steps 2 and 7 in `MultiTopicsConsumerImpl.resumeReceivingFromPausedConsumersIfNeeded()`.\r\n\r\n
+Issue #23484: Labels: area/dependency, doc-not-needed, ready-to-test, release/4.0.1, cherry-picked/branch-4.0
+Issue #23483: Labels: type/flaky-tests, doc-not-needed, ready-to-test, cherry-picked/branch-3.3, release/3.3.3, release/4.0.1, cherry-picked/branch-4.0
+Issue #23482: Labels: type/enhancement
+Issue #23481: Labels: area/security, doc-not-needed, ready-to-test, release/4.0.1, cherry-picked/branch-4.0
+Issue #23480: Labels: type/enhancement
+Issue #23479: Labels: area/metrics, doc-not-needed, ready-to-test, release/4.0.1, cherry-picked/branch-4.0
+Closing and reopening to get Pulsar CI unblocking changes included.
+Issue #23478: Labels: doc-not-needed, ready-to-test
+Issue #23477: Labels: type/enhancement
+Issue #23476: Labels: type/enhancement
+Issue #23475: Labels: type/enhancement
+Issue #23474: Labels: area/test, type/flaky-tests
+Issue #23473: Labels: area/test, doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8
+Issue #23472: Labels: area/test, type/flaky-tests
+2 other threads related to the dead lock, in `TableViewLoadDataStoreImpl.removeAsync` method:\r\n\r\n> [pulsar-load-manager-6391-1](https://jstack.review/?https://gist.github.com/lhotari/17557838cea2e4d4f4f1556fd4caec98#tda_1_threaddetails_0x00007f4fd8e276e0)waiting to acquire [ [0x000010002025ce08](https://jstack.review/?https://gist.github.com/lhotari/17557838cea2e4d4f4f1556fd4caec98#tda_1_sync_0x000010002025ce08) ] , holding [ [0x000010001e5511f0](https://jstack.review/?https://gist.github.com/lhotari/17557838cea2e4d4f4f1556fd4caec98#tda_1_sync_0x000010001e5511f0) [0x00001000202630c0](https://jstack.review/?https://gist.github.com/lhotari/17557838cea2e4d4f4f1556fd4caec98#tda_1_sync_0x00001000202630c0) ]\r\n> at org.apache.pulsar.broker.loadbalance.extensions.store.TableViewLoadDataStoreImpl.removeAsync(TableViewLoadDataStoreImpl.java)\r\n> at org.apache.pulsar.broker.loadbalance.extensions.channel.ServiceUnitStateChannelImpl.doCleanup(ServiceUnitStateChannelImpl.java:1602)\r\n> at org.apache.pulsar.broker.loadbalance.extensions.channel.ServiceUnitStateChannelImpl.lambda$scheduleCleanup$45(ServiceUnitStateChannelImpl.java:1357)\r\n> at org.apache.pulsar.broker.loadbalance.extensions.channel.ServiceUnitStateChannelImpl$$Lambda$3727/0x00007f50392595c0.run(Unknown Source)\r\n> at java.util.concurrent.CompletableFuture$AsyncRun.run(java.base@17.0.13/CompletableFuture.java:1804)\r\n> at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)\r\n> at java.lang.Thread.run(java.base@17.0.13/Thread.java:840)\r\n\r\n> [broker-client-shared-internal-executor-6394-1](https://jstack.review/?https://gist.github.com/lhotari/17557838cea2e4d4f4f1556fd4caec98#tda_1_threaddetails_0x00007f4fe47f8f30)waiting to acquire [ [0x000010002025ce08](https://jstack.review/?https://gist.github.com/lhotari/17557838cea2e4d4f4f1556fd4caec98#tda_1_sync_0x000010002025ce08) ] , holding [ [0x0000100034a98bc8](https://jstack.review/?https://gist.github.com/lhotari/17557838cea2e4d4f4f1556fd4caec98#tda_1_sync_0x0000100034a98bc8) [0x00001005062490e8](https://jstack.review/?https://gist.github.com/lhotari/17557838cea2e4d4f4f1556fd4caec98#tda_1_sync_0x00001005062490e8) ]\r\n> at org.apache.pulsar.broker.loadbalance.extensions.store.TableViewLoadDataStoreImpl.removeAsync(TableViewLoadDataStoreImpl.java)\r\n> at org.apache.pulsar.broker.loadbalance.extensions.reporter.TopBundleLoadDataReporter.tombstone(TopBundleLoadDataReporter.java:109)\r\n> at org.apache.pulsar.broker.loadbalance.extensions.reporter.TopBundleLoadDataReporter.handleEvent(TopBundleLoadDataReporter.java:138)\r\n> at org.apache.pulsar.broker.loadbalance.extensions.channel.StateChangeListeners.lambda$notify$3(StateChangeListeners.java:74)\r\n> at org.apache.pulsar.broker.loadbalance.extensions.channel.StateChangeListeners$$Lambda$3849/0x00007f5038922d18.accept(Unknown Source)\r\n> at java.util.concurrent.CopyOnWriteArrayList.forEach(java.base@17.0.13/CopyOnWriteArrayList.java:807)\r\n> at org.apache.pulsar.broker.loadbalance.extensions.channel.StateChangeListeners.notify(StateChangeListeners.java:72)\r\n> at java.util.concurrent.CompletableFuture$UniAccept.tryFire(java.base@17.0.13/CompletableFuture.java:718)\r\n> at java.util.concurrent.CompletableFuture.postComplete(java.base@17.0.13/CompletableFuture.java:510)\r\n> at java.util.concurrent.CompletableFuture.complete(java.base@17.0.13/CompletableFuture.java:2147)\r\n> at org.apache.pulsar.client.impl.ConsumerBase.lambda$completePendingReceive$0(ConsumerBase.java:333)\r\n> at org.apache.pulsar.client.impl.ConsumerBase$$Lambda$1932/0x00007f5038bd6358.run(Unknown Source)\r\n> at java.util.concurrent.ThreadPoolExecutor.runWorker(java.base@17.0.13/ThreadPoolExecutor.java:1136)\r\n> at java.util.concurrent.ThreadPoolExecutor$Worker.run(java.base@17.0.13/ThreadPoolExecutor.java:635)\r\n> at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)\r\n> at java.lang.Thread.run(java.base@17.0.13/Thread.java:840)
+Issue #23471: Labels: area/broker, doc-not-needed, ready-to-test, cherry-picked/branch-4.0
+Issue #23470: Labels: doc-not-needed, ready-to-test
+Issue #23469: Labels: triage/lhotari/important
+@Shawyeok Thank you! These changes may affect some users.\r\n\r\nRight now, The `com.google.protobuf:protobuf-java` dependency has been added to my project, and it works fine.\r\n\r\n
+Issue #23468: Labels: type/bug, area/client, doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+Issue #23466: Labels: type/enhancement
+the changes to `maxMessagePublishBufferSizeInMB` and `managedLedgerCacheSizeMB` should be highlighted strongly in the release notes. They can even be considered as breaking changes. Most of the production systems might be relying on the default values. In broker pods with available memory of 4GB or above, this would lead to a change of max publish buffer of 2+GB to 500MB - this is a big change and might actually slip in silently, leading to degradation of the system.\r\n\r\nthe cache eviction config changes look good.
+Issue #23465: Labels: doc-not-needed
+@IZUMI-Zu Thanks for the contribution! Please submit a similar PR to https://github.com/apache/bookkeeper 
+Issue #23464: Labels: doc-not-needed, area/ci, ready-to-test
+Issue #23463: Labels: doc-not-needed, ready-to-test
+/pulsarbot rerun-failure-checks
+Issue #23462: Labels: doc-not-needed, PIP
+Issue #23461: Labels: type/bug, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, release/3.0.8
+/pulsarbot rerun-failure-checks
+Issue #23459: Labels: area/function, area/dependency, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+Issue #23458: Labels: type/bug, area/broker, area/metrics, doc-not-needed, release/3.3.3, release/3.0.8, release/4.0.1
+There is a PIP to improve this case https://github.com/apache/pulsar/pull/23351, which is better than just handle the ServiceNotReady exception. I will close this PR.
+Issue #23457: Labels: area/test, type/flaky-tests
+Hi, Lari. @lhotari Could you please assign me the issue, I wanna contribute it. :)
+Issue #23456: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.0
+Issue #23455: Labels: area/test, type/flaky-tests
+Issue #23452: Labels: doc, release/blocker, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.0
+Issue #23451: Labels: type/bug
+> Broker: Pulsar 3.1.2\r\n\r\n@dwang-qm Pulsar 3.1.x is not supported. Please re-test with a [supported version](https://pulsar.apache.org/contribute/release-policy/#supported-versions). That is currently Pulsar broker 3.0.7 or 3.3.2 . Thanks!
+Issue #23450: Labels: doc-not-needed, ready-to-test, release/4.0.0
+Issue #23449: Labels: area/broker, doc-not-needed, release/4.0.1, cherry-picked/branch-4.0
+@pdolif Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23448: Labels: area/build, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.0
+<img width="1068" alt="image" src="https://github.com/user-attachments/assets/ab78c94f-a970-4596-9368-ba873f6652bd">\r\n\r\nIt works in my local env now. Just a note that the `-XX:+ZGenerational` option should be removed from the `@ext:redhat.java`\
+Issue #23447: Labels: area/broker, doc-not-needed, ready-to-test, release/4.0.0
+Issue #23446: Labels: doc-not-needed, release/4.0.0
+Issue #23445: Labels: type/enhancement
+Issue #23443: Labels: No Labels
+Issue #23442: Labels: doc-not-needed, ready-to-test
+Issue #23441: Labels: doc-not-needed, ready-to-test
+Issue #23440: Labels: area/build, doc-not-needed, ready-to-test, cherry-picked/branch-3.3, release/3.3.3, release/4.0.0
+Issue #23439: Labels: No Labels
+Issue #23438: Labels: doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.0
+<img width="1880" alt="59778ea0-ce0c-47ee-aa1d-4a0efb710c53" src="https://github.com/user-attachments/assets/6853619c-a25a-4ad9-9f19-32c0ac937b5d">\r\n\r\nI\
+Issue #23437: Labels: doc-not-needed, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.0
+Issue #23436: Labels: type/bug, triage/lhotari/important
+> it doesn\
+Issue #23434: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.0
+Issue #23433: Labels: type/bug, doc-not-needed, ready-to-test, cherry-picked/branch-3.3, release/3.3.3
+`ServiceUnitStateChannelTest.testOverrideOrphanStateData` failed, I will take a look.
+Issue #23432: Labels: type/enhancement
+Issue #23431: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.3, release/3.3.3
+Issue #23430: Labels: area/client, doc-not-needed, cherry-picked/branch-2.11, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8
+Issue #23429: Labels: area/broker, doc-required, ready-to-test
+Issue #23428: Labels: area/broker, doc-not-needed, area/schema, ready-to-test
+@rdhabalia Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+Issue #23427: Labels: doc-not-needed, PIP
+Issue #23426: Labels: release/blocker, doc-not-needed, ready-to-test
+Issue #23425: Labels: type/bug
+Issue #23424: Labels: area/broker, release/blocker, doc-not-needed, ready-to-test
+Issue #23423: Labels: area/broker, doc-not-needed, ready-to-test
+Issue #23421: Labels: release/blocker
+Issue #23420: Labels: release/blocker
+Issue #23419: Labels: doc-not-needed, ready-to-test
+Issue #23418: Labels: doc-not-needed, ready-to-test
+Issue #23417: Labels: area/test, type/flaky-tests
+Issue #23416: Labels: area/test, type/flaky-tests
+Issue #23415: Labels: doc-not-needed, ready-to-test
+Issue #23414: Labels: type/flaky-tests, doc-not-needed, area/ci, ready-to-test
+Issue #23413: Labels: area/test, type/flaky-tests
+Issue #23412: Labels: area/test, type/flaky-tests
+Issue #23411: Labels: area/security, doc-not-needed, ready-to-test, cherry-picked/branch-3.3, release/3.3.3, release/4.0.0
+Issue #23410: Labels: area/build, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8
+Issue #23409: Labels: type/enhancement
+Issue #23407: Labels: doc-not-needed
+Issue #23406: Labels: type/enhancement
+Issue #23405: Labels: area/dependency, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8
+Issue #23404: Labels: type/bug
+Issue #23403: Labels: type/enhancement
+Issue #23402: Labels: type/enhancement
+Issue #23401: Labels: area/client, doc-not-needed, ready-to-test
+Issue #23399: Labels: area/test, doc-not-needed, ready-to-test
+Issue #23398: Labels: doc-not-needed, PIP
+Issue #23397: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.3, release/3.3.3
+Issue #23396: Labels: type/bug
+Issue #23395: Labels: area/broker, doc-not-needed, ready-to-test
+Issue #23394: Labels: area/security, release/blocker, cherry-picked/branch-2.8, doc-not-needed, cherry-picked/branch-2.9, cherry-picked/branch-2.10, cherry-picked/branch-2.11, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.1, cherry-picked/branch-3.2, cherry-picked/branch-3.3, release/3.0.7, release/3.3.2
+Issue #23393: Labels: area/security, doc-not-needed, dependencies, java
+Issue #23392: Labels: type/bug, release/blocker
+Issue #23390: Labels: type/enhancement, area/broker, doc-not-needed
+Issue #23389: Labels: area/test, type/flaky-tests
+Issue #23388: Labels: area/test, type/flaky-tests
+Issue #23387: Labels: type/PIP, doc-not-needed, ready-to-test, PIP
+Issue #23386: Labels: doc-not-needed, PIP
+Issue #23385: Labels: area/test, type/flaky-tests
+Issue #23384: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, category/reliability, cherry-picked/branch-3.3, release/3.0.7, release/3.3.2, cherry-picked/branch-4.0
+Issue #23383: Labels: doc-required
+Issue #23382: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.3, release/3.3.3
+Issue #23381: Labels: doc-not-needed, ready-to-test
+Issue #23380: Labels: doc-not-needed, ready-to-test
+Issue #23378: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.3.3, release/3.0.8, release/4.0.1, cherry-picked/branch-4.0
+Issue #23377: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.0.7, release/3.3.2
+Issue #23376: Labels: doc-not-needed, ready-to-test
+Issue #23375: Labels: doc-not-needed, ready-to-test
+Issue #23374: Labels: doc-not-needed, ready-to-test
+Issue #23373: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.3, release/3.3.2
+Issue #23372: Labels: doc-not-needed, ready-to-test
+Issue #23371: Labels: type/bug, area/client, area/broker, type/flaky-tests, doc-not-needed, ready-to-test, cherry-picked/branch-3.3, release/3.3.3
+Issue #23370: Labels: area/cli, doc-not-needed, ready-to-test
+Issue #23369: Labels: area/test, doc-not-needed, ready-to-test
+Issue #23368: Labels: type/bug, doc-not-needed, ready-to-test, area/ML, cherry-picked/branch-3.0, release/3.1.4, cherry-picked/branch-3.3, release/3.2.5, release/3.3.3, release/3.0.8
+Issue #23367: Labels: doc-not-needed, ready-to-test
+Issue #23366: Labels: doc-not-needed, ready-to-test
+Issue #23365: Labels: area/test, type/flaky-tests
+Issue #23364: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.0.7, release/3.3.2
+Issue #23363: Labels: doc, type/PIP, ready-to-test, PIP
+Issue #23362: Labels: release/blocker, doc-not-needed, ready-to-test, cherry-picked/branch-3.3, release/3.3.2
+Issue #23361: Labels: doc-not-needed
+Issue #23360: Labels: type/bug, release/blocker, doc-not-needed, cherry-picked/branch-3.0, category/reliability, cherry-picked/branch-3.2, cherry-picked/branch-3.3, release/3.2.5, release/3.3.3, release/3.0.8, release/4.0.0
+Issue #23359: Labels: type/bug, area/broker, doc-not-needed, cherry-picked/branch-3.3, release/3.3.2
+Issue #23358: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.3, release/3.3.2
+Issue #23357: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, release/3.0.8
+Issue #23356: Labels: area/security, release/blocker, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.0.7, release/3.3.2
+Issue #23355: Labels: doc-not-needed, PIP
+Issue #23354: Labels: doc-not-needed
+Issue #23353: Labels: doc-not-needed, release/3.0.11, release/3.3.6
+Issue #23352: Labels: doc-required, ready-to-test, category/reliability
+Issue #23351: Labels: doc-not-needed, PIP
+Issue #23350: Labels: type/enhancement
+Issue #23349: Labels: type/bug, doc-not-needed, ready-to-test, cherry-picked/branch-3.3, release/3.3.3
+Issue #23348: Labels: type/bug
+Issue #23347: Labels: area/cli, doc-label-missing, ready-to-test
+Issue #23346: Labels: area/cli, doc-not-needed, ready-to-test
+Issue #23345: Labels: area/client, doc-not-needed, ready-to-test
+Issue #23344: Labels: doc-not-needed, area/schema
+Issue #23343: Labels: doc-not-needed, ready-to-test
+Issue #23342: Labels: doc-not-needed, ready-to-test
+Issue #23341: Labels: type/bug, release/blocker
+Issue #23340: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.0.7, release/3.3.2
+Issue #23339: Labels: type/bug
+Issue #23338: Labels: area/security, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.0.7, release/3.3.2
+Issue #23337: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.0.7, release/3.3.2
+Issue #23336: Labels: doc-not-needed, ready-to-test
+Issue #23335: Labels: doc-not-needed, ready-to-test, release/3.0.7
+Issue #23334: Labels: doc-not-needed, release/3.0.11, release/3.3.6
+Issue #23331: Labels: release/blocker, doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, cherry-picked/branch-4.0, release/3.0.10, release/3.3.5, release/4.0.3
+Issue #23330: Labels: type/bug, release/blocker
+Issue #23329: Labels: doc-not-needed, ready-to-test
+Issue #23328: Labels: doc-not-needed, PIP
+Issue #23327: Labels: doc-not-needed, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.3, release/3.0.7, release/3.3.2
+Issue #23326: Labels: type/bug, area/broker, doc-not-needed, ready-to-test
+Issue #23325: Labels: type/bug
+Issue #23324: Labels: type/bug
+Issue #23323: Labels: type/bug
+Issue #23322: Labels: type/enhancement, area/broker, doc-not-needed, ready-to-test
+Issue #23321: Labels: type/bug
+Issue #23320: Labels: doc-not-needed, ready-to-test
+Issue #23319: Labels: doc, PIP
+Issue #23318: Labels: doc-not-needed, cherry-picked/branch-2.10, cherry-picked/branch-2.11, ready-to-test, cherry-picked/branch-3.0, cherry-picked/branch-3.1, cherry-picked/branch-3.2, release/3.1.4, release/2.10.7, release/2.11.5, cherry-picked/branch-3.3, release/3.2.5, release/3.0.7, release/3.3.2
+Issue #23315: Labels: type/bug
+Issue #23314: Labels: type/enhancement

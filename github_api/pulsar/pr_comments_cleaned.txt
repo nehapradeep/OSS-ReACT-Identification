@@ -1,0 +1,1179 @@
+@rdhabalia Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+@dependabot[bot] Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+@zjxxzjwang Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+> > 计算速率的时间段就是两个任务之间的间隔，如果两个任务之间的时间间隔很小，计算速度就会很大。\r\n> \r\n> 很好的观察，@zjxxzjwang看来这个 PR 不仅仅是一个优化，还针对修复无效率统计。\r\n> \r\n> 但是，当前的更改会使“主题统计信息”不准确，因为在这种情况下速率不会更新。出于一致性原因，更新速率应以相同的方式在所有代码路径中进行。 一种可能的解决方案是将 PersistentMessageExpiryMonitor 中的 updateRates 方法设为私有，并在返回更新后的速率之前在 getMessageExpiryRate 方法的实现中调用 updateRates。\r\n\r\n\r\n\r\n> > 计算速率的时间段就是两个任务之间的间隔，如果两个任务之间的时间间隔很小，计算速度就会很大。\r\n> \r\n> 很好的观察，@zjxxzjwang看来这个 PR 不仅仅是一个优化，还针对修复无效率统计。\r\n> \r\n> 但是，当前的更改会使“主题统计信息”不准确，因为在这种情况下速率不会更新。出于一致性原因，更新速率应以相同的方式在所有代码路径中进行。 一种可能的解决方案是将 PersistentMessageExpiryMonitor 中的 updateRates 方法设为私有，并在返回更新后的速率之前在 getMessageExpiryRate 方法的实现中调用 updateRates。\r\n\r\nHello, the rate will continue to be updated ，because the updateRates method of the PersistentTopic class will also be executed at regular intervals, and the time period used to calculate the rate will be fixed (the timing period of the updateRates method). The calculated rate can be explained more strongly.  @lhotari 
+
+> However, the current change would make "topic stats" inaccurate since the rate wouldn\
+
+Good work @shibd 
+
+/pulsarbot run-failure-checks
+
+This turned to be the wrong solution. #24060 is correct. It was a bug in Prometheus which caused the issues. After spending quite a mount of effort I wasn\
+
+> Early detection hasBrokerBelowLowerBound\r\n\r\nThis would be a better name for the PR. The "optimization" itself is more about code cleanup than an actual optimization that has an impact. The title should also be specific about the area where this change is made, mentioning the ThresholdShedder. \r\n\r\nbtw. For larger PRs, it\
+
+@lhotari Thanks for the recommendation, this is a great tool for writing PRs.
+
+why should we reorder the check logic?
+
+> why should we reorder the check logic?\r\n\r\nIf `hasBrokerBelowLowerBound` is not obtained, the subsequent `brokerData` does not need to be retrieved, achieving the effect of returning as quickly as possible.
+
+@poorbarcode Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+@lhotari Could you take a look again?\r\n
+
+@SantanuKar43 Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+@poorbarcode In branch-3.0, there are at least 2 tests where this can be seen in the output. \r\norg.apache.pulsar.broker.service.ClusterMigrationTest#testClusterMigration is one. The issue is #24038\r\n
+
+It seems that `currentLedger` could be null immediately after the ledger has been created, but not after that.
+
+Closing this PR since @poorbarcode will create a new PR addressing the root cause.
+
+> The estimated entry count may be a negative value in some cases, then the read operation will get an empty result.\r\n\r\n@gaoran10 Just wondering how it could the result could exceed `Integer.MAX_VALUE` so that the integer value becomes negative in the current logic. Is it the line `result += remainEntriesOfLedger;` in `estimateEntryCountBySize` method that causes it? Could we also improve the existing logic and add some test cases to reproduce and prevent such regressions?
+
+> Just wondering how it could the result could exceed Integer.MAX_VALUE so that the integer value becomes negative in the current logic. Is it the line result += remainEntriesOfLedger; in estimateEntryCountBySize method that causes it? Could we also improve the existing logic and add some test cases to reproduce and prevent such regressions?\r\n\r\nYou can try to use this newly added case in the test, if the bytesSize is a Long max value, the result may beyond the Integer max value.\r\n```\r\nvar ml = (ManagedLedgerImpl) factory.open(mlName);\r\nml.addEntry(new byte[1000]);\r\nint entryCount11 = ManagedCursorImpl.estimateEntryCountBySize(\r\n        Long.MAX_VALUE, PositionFactory.create(ml.getCurrentLedger().getId(), 0), ml);\r\n```
+
+@frHimanshu Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+@bot label "not-doc"\r\n
+
+> There are unnecessary calls in the individualAckNormal. Delete the line of code that calls updateBlockedConsumerOnUnackedMsgs to improve performance.\r\n\r\n@guan46 Please explain what "improve performance" means. This type of PRs will be wasting reviewer\
+
+> I\
+
+In the individualAckNormal method, the checkCanRemovePendingAcksAndHandle method is called. (The checkCanRemovePendingAcksAndHandle method removes the pending acknowledgments and then updates the blocked state of the consumer.) After subsequently updating the number of unacknowledged messages, the updateBlockedConsumerOnUnackedMsgs method is called again to update the blocked state of the consumer. This is a redundant call. @lhotari 
+
+The unit test has passed. Please take a look. @lhotari 
+
+> The unit test has passed. Please take a look. @lhotari \n\n@guan46 please confirm that you have considered all previous feedback and answer to the detailed points 
+
+> please confirm that you have considered all previous feedback and answer to the detailed points\r\n\r\nWhich question are you referring to that has not been answered @lhotari 
+
+> Has my PR made Pulsar better? For new members of the community, I believe that what\
+
+/pulsarbot rerun-failure-checks
+
+> The changes LGTM, but the SQL worker container restarts in a loop:\r\n\r\nThanks, @visortelle . I removed Pulsar SQL and Pulsar Manager from the example and adjusted the max heap size settings so that it will startup with reasonable resources.
+
+branch-3.0 is broken, #24038
+
+@thetumbled Is it #23611 where the regression was introduced? Does the previous implementation have a similar issue?
+
+> @thetumbled Is it #23611 where the regression was introduced? Does the previous implementation have a similar issue?\r\n\r\nThe previous implementation has sequence issue too, but triggered by other way. Previouse implementation sort the triple tuple (timestamp, ledgerid, entryid) with heap sort algorithm, which is not a stable sort method. \r\nWe may meet issue like this: \r\n```\r\ntracker.addMessage(0, 0, 1)\r\ntracker.addMessage(1, 1,  1)\r\ntracker.addMessage(2, 2, 1)\r\n```\r\nThese three messages are scheduled to be delivered at the same time, but the dispatch sequence may not be 0, 1, 2 due to the sort algorithm.\r\n
+
+Please remember to send a `vote closed` email for the vote thread
+
+> Please remember to send a `vote closed` email for the vote thread\r\n\r\nGot it. I plan to send the vote closed email next week to fulfill the requirement of vote exposurement.\r\n
+
+> > Please remember to send a `vote closed` email for the vote thread\r\n> \r\n> Got it. I plan to send the vote closed email next week to fulfill the requirement of vote exposurement.\r\n\r\n@thetumbled Thanks for the driving the PIP. I missed the voting period and sent feedback (that should have happened during the discussion) on the voting thread: https://lists.apache.org/thread/g11mz7oxpvgjq61og23prqrg5vdkkk5s . I added the details in the PIP implementation.
+
+The pip document has been merged, we can continue to review this pr. Thanks for your review. @BewareMyPower @nodece @dao-jun @codelipenghui @shibd @Technoboy- 
+
+Great work, @thetumbled. Thanks for making this happen. The PIP-409 solution will help resolve long time issues such as #19463 and #21954.
+
+> LGTM, good work @thetumbled . Great to see this finally solving many use cases.\r\n\r\nThanks for your review and contributions!
+
+> One remaining issue about naming. Commented added.\r\n\r\nfixed, thanks.
+
+I pushed changes to add `dispatchRateLimiterFactoryClassName` setting for toggling between the "classic" (before PIP-322) implementation and PIP-322 implementation using AsyncTokenBucket. We can default to the "classic" implementation which reverts the PIP-322 changes for dispatch rate limiter until the default configuration value is changed.
+
+@rdhabalia One of the key behavior differences has been that by default AsyncTokenBucket adds tokens to the bucket very frequently (every 16 milliseconds) based on the consumed time and the "classic" RateLimiterImpl adds tokens once in a rate period (1 second). In this commit 9c0e4cf9, I made changes to have similar behavior for the AsyncTokenBucket implementation. It makes the behavior very similar to RateLimiterImpl. The rate during the first second results in 2x rate. You can see the behavior if you wish by `gh pr checkout 24012` and running the `org.apache.pulsar.broker.service.DispatchRateLimiterOverconsumingTest` test which now runs both implementations.
+
+> I pushed changes to add dispatchRateLimiterFactoryClassName setting for toggling between the "classic" (before PIP-322) implementation and PIP-322 implementation \r\n\r\nSeems like a usecase of Pluggable rate-limiter interface. please find below discussion where someone again refused to take the feedback.\r\nhttps://lists.apache.org/thread/lz57m8smqolc34h6r5nymd8ppxgv26p7\r\n\r\nwe have made interface for taking time `System.nanoTime()`  by having interface of `LongSupplier clockSource()` but refused to add an interface for rate-limiter implementation and impacting business critical usecases. \r\nanyways, let\
+
+> > I pushed changes to add dispatchRateLimiterFactoryClassName setting for toggling between the "classic" (before PIP-322) implementation and PIP-322 implementation\r\n> \r\n> Seems like a usecase of Pluggable rate-limiter interface. please find below discussion where someone again refused to take the feedback. https://lists.apache.org/thread/lz57m8smqolc34h6r5nymd8ppxgv26p7\r\n\r\nThat\
+
+The test case in 088ca04 reproduced the issue #23920 and demonstrates that it is now fixed with the changes in this PR.
+
+> this PR had a configuration change that required to creation of a PIP.\r\n\r\n```\r\n# org.apache.pulsar.broker.service.persistent.DispatchRateLimiterFactoryAsyncTokenBucket (default, PIP-322 implementation)\r\n# and org.apache.pulsar.broker.service.persistent.DispatchRateLimiterFactoryClassic (legacy implementation)\r\n```\r\n\r\nI see the documents here. But I cannot see what\
+
+@rdhabalia Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+@clayburn Do you have a chance to check the deadlock details available in the issue description which contains references to Gradle Develocity Maven Extension?
+
+@clayburn Another similar deadlock in https://github.com/apache/pulsar/actions/runs/13410108649/job/37458643828#step:13:794. Do you know if this is fixed with com.gradle:develocity-maven-extension:1.23.1 ?\r\n\r\n```\r\nFound one Java-level deadlock:\r\n=============================\r\n"main":\r\n  waiting to lock monitor 0x00007f0955d2ebe0 (object 0x0000100005cb0d00, a org.apache.logging.log4j.core.appender.OutputStreamManager),\r\n  which is held by "BookieDeathWatcher-33633"\r\n\r\n"BookieDeathWatcher-33633":\r\n  waiting to lock monitor 0x00007f06940429f0 (object 0x0000100032fb3198, a com.gradle.maven.scan.extension.test.listener.obfuscated.g.b),\r\n  which is held by "main"\r\n\r\nJava stack information for the threads listed above:\r\n===================================================\r\n"main":\r\n\tat org.apache.logging.log4j.core.appender.OutputStreamManager.writeBytes(OutputStreamManager.java:365)\r\n\t- waiting to lock <0x0000100005cb0d00> (a org.apache.logging.log4j.core.appender.OutputStreamManager)\r\n\tat org.apache.logging.log4j.core.layout.TextEncoderHelper.writeEncodedText(TextEncoderHelper.java:101)\r\n\tat org.apache.logging.log4j.core.layout.TextEncoderHelper.encodeText(TextEncoderHelper.java:66)\r\n\tat org.apache.logging.log4j.core.layout.StringBuilderEncoder.encode(StringBuilderEncoder.java:67)\r\n\tat org.apache.logging.log4j.core.layout.StringBuilderEncoder.encode(StringBuilderEncoder.java:31)\r\n\tat org.apache.logging.log4j.core.layout.PatternLayout.encode(PatternLayout.java:240)\r\n\tat org.apache.logging.log4j.core.layout.PatternLayout.encode(PatternLayout.java:58)\r\n\tat org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender.directEncodeEvent(AbstractOutputStreamAppender.java:227)\r\n\tat org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender.tryAppend(AbstractOutputStreamAppender.java:220)\r\n\tat org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender.append(AbstractOutputStreamAppender.java:211)\r\n\tat org.apache.logging.log4j.core.config.AppenderControl.tryCallAppender(AppenderControl.java:160)\r\n\tat org.apache.logging.log4j.core.config.AppenderControl.callAppender0(AppenderControl.java:133)\r\n\tat org.apache.logging.log4j.core.config.AppenderControl.callAppenderPreventRecursion(AppenderControl.java:124)\r\n\tat org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:88)\r\n\tat org.apache.logging.log4j.core.config.LoggerConfig.callAppenders(LoggerConfig.java:705)\r\n\tat org.apache.logging.log4j.core.config.LoggerConfig.processLogEvent(LoggerConfig.java:663)\r\n\tat org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:639)\r\n\tat org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:575)\r\n\tat org.apache.logging.log4j.core.config.AwaitCompletionReliabilityStrategy.log(AwaitCompletionReliabilityStrategy.java:92)\r\n\tat org.apache.logging.log4j.core.Logger.log(Logger.java:169)\r\n\tat org.apache.logging.log4j.spi.AbstractLogger.tryLogMessage(AbstractLogger.java:2906)\r\n\tat org.apache.logging.log4j.spi.AbstractLogger.logMessageTrackRecursion(AbstractLogger.java:2859)\r\n\tat org.apache.logging.log4j.spi.AbstractLogger.logMessageSafely(AbstractLogger.java:2841)\r\n\tat org.apache.logging.log4j.spi.AbstractLogger.logMessage(AbstractLogger.java:2637)\r\n\tat org.apache.logging.log4j.spi.AbstractLogger.logIfEnabled(AbstractLogger.java:2402)\r\n\tat org.apache.logging.slf4j.Log4jLogger.info(Log4jLogger.java:178)\r\n\tat org.testcontainers.utility.ImageNameSubstitutor.instance(ImageNameSubstitutor.java:60)\r\n\t- locked <0x000010003f263640> (a java.lang.Class for org.testcontainers.utility.ImageNameSubstitutor)\r\n\tat org.testcontainers.images.RemoteDockerImage.<init>(RemoteDockerImage.java:41)\r\n\tat org.testcontainers.images.RemoteDockerImage.<init>(RemoteDockerImage.java:52)\r\n\tat org.testcontainers.containers.GenericContainer.setDockerImageName(GenericContainer.java:1396)\r\n\tat org.testcontainers.containers.GenericContainer.<init>(GenericContainer.java:258)\r\n\tat io.etcd.jetcd.launcher.EtcdContainer.<init>(EtcdContainer.java:68)\r\n\tat io.etcd.jetcd.launcher.EtcdClusterImpl.lambda$new$1(EtcdClusterImpl.java:59)\r\n\tat io.etcd.jetcd.launcher.EtcdClusterImpl$$Lambda/0x00007f06d9002240.apply(Unknown Source)\r\n\tat java.util.stream.ReferencePipeline$3$1.accept(java.base@21.0.6/ReferencePipeline.java:197)\r\n\tat java.util.ArrayList$ArrayListSpliterator.forEachRemaining(java.base@21.0.6/ArrayList.java:1708)\r\n\tat java.util.stream.AbstractPipeline.copyInto(java.base@21.0.6/AbstractPipeline.java:509)\r\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(java.base@21.0.6/AbstractPipeline.java:499)\r\n\tat java.util.stream.ReduceOps$ReduceOp.evaluateSequential(java.base@21.0.6/ReduceOps.java:921)\r\n\tat java.util.stream.AbstractPipeline.evaluate(java.base@21.0.6/AbstractPipeline.java:234)\r\n\tat java.util.stream.ReferencePipeline.collect(java.base@21.0.6/ReferencePipeline.java:682)\r\n\tat io.etcd.jetcd.launcher.EtcdClusterImpl.<init>(EtcdClusterImpl.java:61)\r\n\tat io.etcd.jetcd.launcher.Etcd$Builder.build(Etcd.java:116)\r\n\tat io.etcd.jetcd.test.EtcdClusterExtension$Builder.build(EtcdClusterExtension.java:172)\r\n\tat org.apache.pulsar.metadata.BaseMetadataStoreTest.getEtcdClusterConnectString(BaseMetadataStoreTest.java:181)\r\n\t- locked <0x0000100045d9aa60> (a org.apache.pulsar.broker.EndToEndMetadataTest)\r\n\tat org.apache.pulsar.metadata.BaseMetadataStoreTest.lambda$allImplementations$3(BaseMetadataStoreTest.java:142)\r\n\tat org.apache.pulsar.metadata.BaseMetadataStoreTest$$Lambda/0x00007f06d8bac000.get(Unknown Source)\r\n\tat org.apache.pulsar.metadata.BaseMetadataStoreTest$StringSupplier.get(BaseMetadataStoreTest.java:202)\r\n\tat org.apache.pulsar.metadata.BaseMetadataStoreTest$StringSupplier.toString(BaseMetadataStoreTest.java:207)\r\n\tat java.lang.String.valueOf(java.base@21.0.6/String.java:4465)\r\n\tat com.gradle.maven.scan.extension.test.listener.testng.g.a(SourceFile:137)\r\n\tat com.gradle.maven.scan.extension.test.listener.testng.g.b(SourceFile:118)\r\n\tat com.gradle.maven.scan.extension.test.listener.testng.g.a(SourceFile:104)\r\n\tat com.gradle.maven.scan.extension.test.listener.testng.k.a(SourceFile:21)\r\n\tat com.gradle.maven.scan.extension.test.listener.testng.j.a(SourceFile:117)\r\n\tat com.gradle.maven.scan.extension.test.listener.testng.l.a(SourceFile:155)\r\n\tat com.gradle.maven.scan.extension.test.listener.testng.h.onTestStart(SourceFile:256)\r\n\t- locked <0x0000100032fb3198> (a com.gradle.maven.scan.extension.test.listener.obfuscated.g.b)\r\n\tat com.gradle.maven.scan.extension.test.listener.testng.e.onTestStart(SourceFile:66)\r\n\tat com.gradle.maven.scan.extension.test.listener.testng.ExceptionWrappingTestNGListener.onTestStart(SourceFile:84)\r\n\tat org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:106)\r\n\tat org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:277)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:638)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)\r\n\tat org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)\r\n\tat org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)\r\n\tat org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)\r\n\tat org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)\r\n\tat org.testng.TestRunner$$Lambda/0x00007f06d82c3cb0.accept(Unknown Source)\r\n\tat java.util.ArrayList.forEach(java.base@21.0.6/ArrayList.java:1596)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:829)\r\n\tat org.testng.TestRunner.run(TestRunner.java:602)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:437)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:330)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1176)\r\n\tat org.testng.TestNG.runSuites(TestNG.java:1099)\r\n\tat org.testng.TestNG.run(TestNG.java:1067)\r\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)\r\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)\r\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeLazy(TestNGDirectoryTestSuite.java:117)\r\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:86)\r\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)\r\n"BookieDeathWatcher-33633":\r\n\tat com.gradle.maven.scan.extension.test.listener.obfuscated.h.a.a(SourceFile:105)\r\n\t- waiting to lock <0x0000100032fb3198> (a com.gradle.maven.scan.extension.test.listener.obfuscated.g.b)\r\n\tat com.gradle.maven.scan.extension.test.listener.obfuscated.h.a.b(SourceFile:65)\r\n\tat com.gradle.maven.scan.extension.test.listener.obfuscated.h.a$$Lambda/0x00007f06d[820](https://github.com/apache/pulsar/actions/runs/13410108649/job/37458643828#step:13:821)9308.text(Unknown Source)\r\n\tat com.gradle.maven.scan.extension.test.listener.obfuscated.l.a.a(SourceFile:85)\r\n\tat com.gradle.maven.scan.extension.test.listener.obfuscated.l.a.flush(SourceFile:78)\r\n\tat com.gradle.maven.scan.extension.test.listener.obfuscated.l.a.write(SourceFile:72)\r\n\tat java.io.PrintStream.implWrite(java.base@21.0.6/PrintStream.java:643)\r\n\tat java.io.PrintStream.write(java.base@21.0.6/PrintStream.java:623)\r\n\tat com.gradle.maven.scan.extension.test.listener.obfuscated.l.b.write(SourceFile:203)\r\n\tat org.apache.logging.log4j.core.appender.ConsoleAppender$SystemOutStream.write(ConsoleAppender.java:381)\r\n\tat java.io.PrintStream.implWrite(java.base@21.0.6/PrintStream.java:643)\r\n\tat java.io.PrintStream.write(java.base@21.0.6/PrintStream.java:623)\r\n\tat org.apache.logging.log4j.core.util.CloseShieldOutputStream.write(CloseShieldOutputStream.java:53)\r\n\tat org.apache.logging.log4j.core.appender.OutputStreamManager.writeToDestination(OutputStreamManager.java:263)\r\n\t- eliminated <0x0000100005cb0d00> (a org.apache.logging.log4j.core.appender.OutputStreamManager)\r\n\tat org.apache.logging.log4j.core.appender.OutputStreamManager.flushBuffer(OutputStreamManager.java:296)\r\n\t- locked <0x0000100005cb0d00> (a org.apache.logging.log4j.core.appender.OutputStreamManager)\r\n\tat org.apache.logging.log4j.core.appender.OutputStreamManager.flush(OutputStreamManager.java:307)\r\n\t- locked <0x0000100005cb0d00> (a org.apache.logging.log4j.core.appender.OutputStreamManager)\r\n\tat org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender.directEncodeEvent(AbstractOutputStreamAppender.java:229)\r\n\tat org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender.tryAppend(AbstractOutputStreamAppender.java:220)\r\n\tat org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender.append(AbstractOutputStreamAppender.java:211)\r\n\tat org.apache.logging.log4j.core.config.AppenderControl.tryCallAppender(AppenderControl.java:160)\r\n\tat org.apache.logging.log4j.core.config.AppenderControl.callAppender0(AppenderControl.java:133)\r\n\tat org.apache.logging.log4j.core.config.AppenderControl.callAppenderPreventRecursion(AppenderControl.java:124)\r\n\tat org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:88)\r\n\tat org.apache.logging.log4j.core.config.LoggerConfig.callAppenders(LoggerConfig.java:705)\r\n\tat org.apache.logging.log4j.core.config.LoggerConfig.processLogEvent(LoggerConfig.java:663)\r\n\tat org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:639)\r\n\tat org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:575)\r\n\tat org.apache.logging.log4j.core.config.AwaitCompletionReliabilityStrategy.log(AwaitCompletionReliabilityStrategy.java:92)\r\n\tat org.apache.logging.log4j.core.Logger.log(Logger.java:169)\r\n\tat org.apache.logging.log4j.spi.AbstractLogger.tryLogMessage(AbstractLogger.java:2906)\r\n\tat org.apache.logging.log4j.spi.AbstractLogger.logMessageTrackRecursion(AbstractLogger.java:2859)\r\n\tat org.apache.logging.log4j.spi.AbstractLogger.logMessageSafely(AbstractLogger.java:2[841](https://github.com/apache/pulsar/actions/runs/13410108649/job/37458643828#step:13:842))\r\n\tat org.apache.logging.log4j.spi.AbstractLogger.logMessage(AbstractLogger.java:2625)\r\n\tat org.apache.logging.log4j.spi.AbstractLogger.logIfEnabled(AbstractLogger.java:2373)\r\n\tat org.apache.logging.slf4j.Log4jLogger.info(Log4jLogger.java:173)\r\n\tat org.apache.bookkeeper.proto.BookieServer$DeathWatcher.run(BookieServer.java:285)\r\n\r\nFound 1 deadlock.\r\n```
+
+The problem seems to consistently reproduce. For example it failed in the build of this PR: https://github.com/apache/pulsar/actions/runs/13413883514/job/37470450862?pr=24004#step:13:857 
+
+Since Testcontainers seems to always be part of the stack traces, I have a PR to upgrade to latest Testcontainers version in #24003, just to rule out any known issues related to Testcontainers that are fixed in latest. 
+
+@lhotari , I looked into this issue on the Develocity Maven extension side. I think I have something that we can try to prevent the deadlock from happening.\r\n\r\nWhen your build is running, we capture info about the TestNG tests as they start. If the test uses a `DataProvider`, we will evaluate the `toString` value of the parameter to show meaningful iteration names in Build Scan. It looks like one of the `toString` methods causes this deadlock. In particular, all of the stacktraces you shared have this common part (the following snippet is from this [comment](https://github.com/apache/pulsar/pull/24004#issuecomment-2668967183)):\r\n\r\n```\r\n"main":\r\n        at org.testcontainers.DockerClientFactory.getOrInitializeStrategy(DockerClientFactory.java:143)\r\n        - waiting to lock <0x0000100034234678> (a [Ljava.lang.Object;)\r\n        at org.testcontainers.DockerClientFactory.dockerHostIpAddress(DockerClientFactory.java:328)\r\n        at org.testcontainers.containers.ContainerState.getHost(ContainerState.java:64)\r\n        at io.etcd.jetcd.launcher.EtcdContainer.clientEndpoint(EtcdContainer.java:264)\r\n        at io.etcd.jetcd.launcher.EtcdClusterImpl$$Lambda/0x00007f467101ed80.apply(Unknown Source)\r\n        at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\r\n        at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)\r\n        at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)\r\n        at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)\r\n        at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)\r\n        at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\r\n        at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)\r\n        at io.etcd.jetcd.launcher.EtcdClusterImpl.clientEndpoints(EtcdClusterImpl.java:113)\r\n        // toString supplier for the parameter\r\n        at org.apache.pulsar.metadata.BaseMetadataStoreTest.getEtcdClusterConnectString(BaseMetadataStoreTest.java:185) \r\n        - locked <0x0000100035f33218> (a org.apache.pulsar.broker.EndToEndMetadataTest)\r\n        // data provider definition\r\n        at org.apache.pulsar.metadata.BaseMetadataStoreTest.lambda$allImplementations$3(BaseMetadataStoreTest.java:142) \r\n        at org.apache.pulsar.metadata.BaseMetadataStoreTest$$Lambda/0x00007f4670bfe800.get(Unknown Source)\r\n        at org.apache.pulsar.metadata.BaseMetadataStoreTest$StringSupplier.get(BaseMetadataStoreTest.java:202)\r\n        at org.apache.pulsar.metadata.BaseMetadataStoreTest$StringSupplier.toString(BaseMetadataStoreTest.java:207)\r\n        at java.lang.String.valueOf(String.java:4465)\r\n        // here Develocity extension tries to get a string representation of the parameter.\r\n```\r\n\r\nAt the same time, we see that some other thread is already executing `DockerClientFactory#getorInitializeStrategy`, which seems to cause this deadlock:\r\n\r\n```\r\n"Thread-140":\r\n        ...\r\n        at org.testcontainers.DockerClientFactory.getOrInitializeStrategy(DockerClientFactory.java:150)\r\n        - locked <0x0000100034234678> (a [Ljava.lang.Object;)\r\n        at org.testcontainers.DockerClientFactory.client(DockerClientFactory.java:191)\r\n        - locked <0x0000100034234678> (a [Ljava.lang.Object;)\r\n        at org.testcontainers.DockerClientFactory$1.getDockerClient(DockerClientFactory.java:104)\r\n        at com.github.dockerjava.api.DockerClientDelegate.authConfig(DockerClientDelegate.java:109)\r\n        at org.testcontainers.containers.GenericContainer.start(GenericContainer.java:321)\r\n        at io.etcd.jetcd.launcher.EtcdContainer.start(EtcdContainer.java:245)\r\n        at io.etcd.jetcd.launcher.EtcdClusterImpl.lambda$start$2(EtcdClusterImpl.java:72)\r\n        at io.etcd.jetcd.launcher.EtcdClusterImpl$$Lambda/0x00007f4670f58b18.run(Unknown Source)\r\n        at java.lang.Thread.runWith(Thread.java:1596)\r\n        at java.lang.Thread.run(Thread.java:1583)\r\n```\r\n\r\nIs there any way to simplify [this parameter name supplier](https://github.com/apache/pulsar/blob/master/pulsar-metadata/src/test/java/org/apache/pulsar/metadata/BaseMetadataStoreTest.java#L142) to not invoke the Testcontainers API (the `clientEndpoints` call [here](https://github.com/apache/pulsar/blob/master/pulsar-metadata/src/test/java/org/apache/pulsar/metadata/BaseMetadataStoreTest.java#L185) will do that)? \r\n\r\nI am not 100% sure that it will help. For the sake of experiments, you could set it to some dumb value and see if the deadlock still happens at the same place. The deadlock stacktrace will point to the parameter value that causes it. It can happen that there are other parameter values that will cause the deadlock. Let us know if this helps.
+
+Workaround applied in 51563a1.
+
+> First, the issue we are discussing already occurred after merging patch #23930. I spent a good amount of time deeply analyzing the problem and found that multiple threads can attempt to consume tokens, leading to negative token accumulation. While I understand that negative tokens can occur, the concern here is that a large number of negative tokens takes considerable time to recover to a positive state, sometimes exceeding an hour, delaying publish/consume operations.\r\n\r\nThanks for sharing these details. I think that we\
+
+> From the shared data, it’s evident that the tokens is negative, and broker only becomes positive after multiple rounds of token refreshing. This behavior can lead to unacceptable delays in reaching a positive value.\r\n\r\n@nodece Yes, before #23930, there was such a problem. @rdhabalia hasn\
+
+Our cluster also use new rateLimiter in pip-323 . In our test, previous rateLimiter is actually not a strict rate limiter implementation, because without negative token, token is added in every second and broker would resume netty autoRead config. This would make rateLimiter not strict. I guess this point has been described in pip-323.\r\n\r\nAnd I guess the described issue in this pr is also exist. With a very huge spike in traffic(much larger than the rate config), may lead to a large negative token. For me, this issue may be inconsequential, because we use broker rateLimiter to avoid abnormal traffic crashing down broker. If the traffic is a bit larger than rate config, after a few time it would recover. If the traffic is very abnormal, should stuck and check out the reason.\r\n\r\nIn general, making token not negative seems is not a appropriate solution, it just go back to previous rateLimiter implementation which can not limit the traffic as our thought.
+
+> I have explained why this is not how AsyncTokenBucket works and is designed.\r\n\r\nSorry for overlooking the behavior of the broker for re-reading the network package from the channel.\r\n\r\n\r\nIn the current implementation of the AsyncTokenBucket, the `tokens` only become positive after multiple rounds of refreshing. This behavior is unacceptable, as it introduces unnecessary delays in processing. The primary concern here is that I can tolerate a surge in traffic during the next rate limit cycle, but I cannot accept no traffic at all.\r\n\r\n> with a huge spike in a traffic, and publish/consume stuck for a longer time\r\n\r\nWe can directly increase `pendingConsumedTokens`, please check my test.\r\n
+
+> > I have explained why this is not how AsyncTokenBucket works and is designed.\r\n> \r\n> Sorry for overlooking the behavior of the broker for re-reading the network package from the channel.\r\n> \r\n> In the current implementation of the AsyncTokenBucket, the `tokens` only become positive after multiple rounds of refreshing. This behavior is unacceptable, as it introduces unnecessary delays in processing. The primary concern here is that I can tolerate a surge in traffic during the next rate limit cycle, but I cannot accept no traffic at all.\r\n\r\n@nodece  The AsyncTokenBucket itself is working correctly. I agree that it\
+
+> > @rdhabalia I have replied in [#24002 (comment)](https://github.com/apache/pulsar/pull/24002#issuecomment-2673622135). Please also reply to the questions I have asked in [#24002 (comment)](https://github.com/apache/pulsar/pull/24002#issuecomment-2671338784) . That will help us make progress together.\r\n> \r\n> I don\
+
+Issue behind #24001 and reproduced in https://github.com/apache/pulsar/blob/master/pulsar-broker/src/test/java/org/apache/pulsar/broker/service/DispatchRateLimiterOverconsumingTest.java has been fixed by #24012.
+
+There seems to be a compilation error with the changes\r\n```\r\n  [INFO] -------------------------------------------------------------\r\n  Error:  COMPILATION ERROR : \r\n  [INFO] -------------------------------------------------------------\r\n  Error:  /home/runner/work/pulsar/pulsar/tests/pulsar-client-all-shade-test/src/test/java/org/apache/pulsar/tests/integration/SimpleProducerConsumerTest.java:[589,74] incompatible types: io.netty.buffer.ByteBuf cannot be converted to org.apache.pulsar.shade.io.netty.buffer.ByteBuf\r\n  Error:  /home/runner/work/pulsar/pulsar/tests/pulsar-client-all-shade-test/src/test/java/org/apache/pulsar/tests/integration/SimpleProducerConsumerTest.java:[593,76] incompatible types: io.netty.buffer.ByteBuf cannot be converted to org.apache.pulsar.shade.io.netty.buffer.ByteBuf\r\n  ```\r\n\r\n\r\n\r\nSince the problem to solve is about IDE usage, one way to get around the IDE issue is to disable the `integrationTests` profile in IntelliJ.\r\n\r\n<img width="432" alt="image" src="https://github.com/user-attachments/assets/9d9bc133-a742-479b-8531-ffd5a6b1fd8a" />\r\n\r\nAnother solution is to run the build on the command line to first build the shaded libraries. \r\n\r\nIn IntelliJ development another way to speed up development is to uncheck the `main` profile and check `core-modules` profile so that only the core modules are enabled in IntelliJ. This is described in https://pulsar.apache.org/contribute/setup-ide/#further-configuration
+
+Fixing a potentially flaky test that uses a bad way to trigger leader election.
+
+I reverted https://github.com/apache/pulsar/pull/23940 in branch-4.0
+
+cherry-pick commit in branch-4.0 is 6b46035\r\n
+
+Changes related to configuration modification need a pip.
+
+> > Good catch! I leave some comments. Since this pr aim to fix a bug, could you add a unit test to reproduce the bug that max retry times double the maxRequestRetry in the httpclient\
+
+cherry-picking depends on #23686
+
+@merlimat Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+This PR does not include the zk.Stat ephemral check fix, since https://github.com/apache/pulsar/pull/23902 (fix zkStat.getEphemeralOwner() != 0) requires more work to update test framework. 
+
+> Can we also set to skip by default?\r\n\r\n@merlimat I think that would be useful starting from Pulsar 4.1 . Do we need a PIP for making that change?
+
+Some test is requried to ensure the notification logic is triggered and works correct.
+
+> ledger zk path is like "/ledgers/00/0601/L7170". But currently it exist pattern regex error cause zk data notification can not execute.\r\n\r\nGreat catch @TakaHiR07. What is the current impact of this in Pulsar & Bookkeeper (which is using PulsarLedgerManager in the Pulsar distribution of Bookkeeper)?
+
+> Great catch @TakaHiR07. What is the current impact of this in Pulsar & Bookkeeper (which is using PulsarLedgerManager in the Pulsar distribution of Bookkeeper)?\r\n\r\nOne impact is all the asyncOpenLedgerNoRecovery in pulsar can not register successful MetadataListener. The code is here:  https://github.com/apache/bookkeeper/blob/606db747eae9856fed0aeb3f16ef01e7c9254e26/bookkeeper-server/src/main/java/org/apache/bookkeeper/client/ReadOnlyLedgerHandle.java#L95-L105\r\n\r\nI am not sure whether other place use PulsarLedgerManager and register zk listener.
+
+> > Great catch @TakaHiR07. What is the current impact of this in Pulsar & Bookkeeper (which is using PulsarLedgerManager in the Pulsar distribution of Bookkeeper)?\r\n> \r\n> One impact is all the asyncOpenLedgerNoRecovery in pulsar can not register successful MetadataListener. The code is here: https://github.com/apache/bookkeeper/blob/606db747eae9856fed0aeb3f16ef01e7c9254e26/bookkeeper-server/src/main/java/org/apache/bookkeeper/client/ReadOnlyLedgerHandle.java#L95-L105\r\n> \r\n> I am not sure whether other place use PulsarLedgerManager and register zk listener.\r\n\r\nI wonder what parts of the metadata could change. My guess is LAC (lastAddConfirmed) and length based on this:\r\nhttps://github.com/apache/bookkeeper/blob/54bdc0d60b32830b513089167cee67f52f4735eb/bookkeeper-server/src/main/java/org/apache/bookkeeper/client/LedgerHandle.java#L367-L370 .\r\nI would assume that this would be relevant when the ledger is in recovery state. \r\nStates: \r\nhttps://github.com/apache/bookkeeper/blob/2192caaf9738cf4efb799647cc5a5f68bf1823b2/bookkeeper-server/src/main/java/org/apache/bookkeeper/client/api/LedgerMetadata.java#L154-L167
+
+@merlimat Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+ping,. if anyone can review it.
+
+@dependabot[bot] Please add the following content to your PR description and select a checkbox:\r\n```\r\n- [ ] `doc` <!-- Your PR contains doc changes -->\r\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\r\n- [x] `doc-not-needed` <!-- Your PR changes do not impact docs -->\r\n- [ ] `doc-complete` <!-- Docs have been already added -->\r\n```
+
+/pulsarbot rerun-failure-checks
+
+SpscArrayQueue has a memory barrier to ensure data consistency in concurrent situations, whereas ArrayDeque has no memory barrier. ArrayDeque can improve performance in non-concurrent situations @lhotari 
+
+> SpscArrayQueue has a memory barrier to ensure data consistency in concurrent situations, whereas ArrayDeque has no memory barrier. ArrayDeque can improve performance in non-concurrent situations @lhotari\r\n\r\n@guan46 Yes, I agree on that. I\
+
+All the tests of my repo have passed, please take a look.Thank you! @lhotari 
+
+All the tests of my repo have passed, please take a look. @lhotari 
+
+/pulsarbot rerun-failure-checks
+
+Thank you. I happened to already fix this issue. I pushed the fix directly to the branch.
+
+CI running at https://github.com/apache/pulsar/actions/runs/13266313203
+
+/pulsarbot rerun-failure-checks
+
+/pulsarbot rerun-failure-checks
+
+hi, @RobertIndie @tjiuming @poorbarcode \r\n\r\nThe previous design made it difficult for users to identify where throttling was causing a high backlog. I have rewritten the PIP to separate the metrics at the broker, topic, and subscription levels. Please review it again.\r\n\r\nThanks.
+
+@poorbarcode Could you fix the build error on the branch-3.0?\r\n\r\n```\r\nimport static com.google.common.base.Preconditions.checkState;\r\n```\r\nThis import is not used.
+
+@nodece \r\n\r\n> Could you fix the build error on the branch-3.0?\r\n> ```\r\n> import static com.google.common.base.Preconditions.checkState;\r\n> ```\r\n> This import is not used.\r\n\r\n@lhotari has fixed, Thanks
+
+For PIP process, pls referring to https://github.com/apache/pulsar/tree/master/pip#pulsar-improvement-proposal-pip
+
+PIP PR filed here: https://github.com/apache/pulsar/pull/23950, will follow those guidelines by emailing out to the thread soon, etc.
+
+@BewareMyPower @dao-jun The PIP has been approved and merged, https://github.com/apache/pulsar/blob/master/pip/pip-407.md . PTAL and review
+
+Some shadow topic related tests failed, I will fix them
+
+@BewareMyPower Please also remove the comment "Jump to specific thread to avoid contention from writers writing from different threads" that is now obsolete: https://github.com/apache/pulsar/blob/cc7b3816ce14a2ddff18dbf04216769fdb8751db/managed-ledger/src/main/java/org/apache/bookkeeper/mledger/impl/ManagedLedgerImpl.java#L804 
+
+/pulsarbot rerun-failure-checks
+
+/pulsarbot rerun-failure-checks
+
+> * The feature `managedLedgerMaxReadsInFlightSize` assumes the entry size is `10kb` when it read nothing. Otherwise, it uses the average entries size of the entries read out before.\r\n\r\nAfter #23901 changes this case would be very rare since it would apply only for the first read in case no entries were produced to the topic.
+
+@lhotari \r\n\r\n>> The feature managedLedgerMaxReadsInFlightSize assumes the entry size is 10kb when it read nothing. Otherwise, it uses the average entries size of the entries read out before.\r\n\r\n> After https://github.com/apache/pulsar/pull/23901 changes this case would be very rare since it would apply only for the first read in case no entries were produced to the topic.\r\n\r\nAgree, but for the following case, the current solution is better\r\n- There are `50k` entries in the ledger\r\n  - `1` entry was read out, the average size estimated is less accurate than the current implementation.\r\n- The topic was sent for `30` days, and the customer changed the schema of the topic.\r\n  -  `total size/ total count`  is less accurate than the current implementation\r\n- Additionally, the current solution will never get an inaccurate value such as `1` or `10k`, because it always calculates the exact average size for the entries and it will read a unique entry if no entries to read.
+
+/pulsarbot rerun-failure-checks
+
+@poorbarcode Great work, Yubiao! I can backport and cherry-pick this to branch-3.3 and branch-3.0.
+
+> Although clock sources aren\
+
+Checking test failures in SubscriptionMessageDispatchThrottlingTest
+
+I fixed the flaky throttling tests and moved them to broker-api group. There were multiple issues in the flaky tests.
+
+@RobertIndie Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+Some questions:\r\n\r\n1. why do the message properties allow duplicated keys?\r\n2. we remove one of the duplicate keys while reading the messages. Is it some properties lost for the user?
+
+If a message has duplicated keys in its property, I think we should allow the downstream to determine how to process such duplicated keys rather than retain a random value for such keys. For example, we can support throwing an exception that contains a list of `<duplicated-key, values...>`.
+
+That makes sense to me. I approved it because it solves the issue when duplicated keys are already written as the properties. Regarding the producer side to prevent duplicated keys in `MessageMetadata`, I think it can be done in a separated PR.
+
+/pulsarbot rerun-failure-checks 
+
+/pulsarbot rerun-failure-checks
+
+Good work @dao-jun , thanks for handling this.
+
+> Good work @dao-jun , thanks for handling this.\r\n\r\nThanks for review, you are welcome
+
+I accidentally closed #23904, I submitted a new pr @lhotari 
+
+I updated the address, but there are some errors in the tests.Please take a look. @lhotari 
+
+> I updated the address, but there are some errors in the tests.Please take a look. @lhotari\r\n\r\nWhat you should do is to ensure that tests pass with your changes. If not, it\
+
+All the tests of my repo have passed, please take a look @lhotari 
+
+/pulsarbot rerun-failure-checks
+
+/pulsarbot rerun-failure-checks 
+
+LGTM 👍 
+
+@Denovo1998 Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+> When the cancellation messages are stored in the topic, cancellation would only work when the DelayedDeliveryTracker state is such that it has "indexed" the delayed messages and the cancellation messages. For example, the InMemoryDelayedDeliveryTracker keeps state only in memory. The impact of the cancellation commands in the topic would be that before delivering any scheduled message, the state would have to be caught up before delivering a scheduled message. This is just a first thought about the possible impact of supporting cancellation. Due to such performance impacting details, it\
+
+This is a big new feature, impacting the core logic, a pip may be needed to get more opinions from the community.
+
+> This is a big new feature, impacting the core logic, a pip may be needed to get more opinions from the community.\r\n\r\nYes. It‘s very interesting and challenging for me. I will launch the PIP process later.
+
+This would be a major change to the admin client. It feels that there\
+
+> This would be a major change to the admin client.\r\n\r\nShould be client, not admin client?\r\n\r\n> It feels that there\
+
+```java\r\npackage org.apache.bookkeeper.mledger.util;\r\n\r\nimport io.netty.util.Recycler;\r\nimport java.util.Collections;\r\nimport java.util.concurrent.locks.StampedLock;\r\nimport org.testng.annotations.Test;\r\nimport java.lang.management.GarbageCollectorMXBean;\r\nimport java.lang.management.ManagementFactory;\r\nimport java.util.ArrayList;\r\nimport java.util.List;\r\nimport java.util.concurrent.*;\r\n\r\n\r\npublic class EntryWrapperPerformanceTestNG {\r\n\r\n    private static class EntryWrapper<K, V> {\r\n        private final Recycler.Handle<EntryWrapper> recyclerHandle;\r\n        private static final Recycler<EntryWrapper> RECYCLER = new Recycler<EntryWrapper>() {\r\n            @Override\r\n            protected EntryWrapper newObject(Handle<EntryWrapper> recyclerHandle) {\r\n                return new EntryWrapper(recyclerHandle);\r\n            }\r\n        };\r\n        private final StampedLock lock = new StampedLock();\r\n        private K key;\r\n        private V value;\r\n        long size;\r\n\r\n        private EntryWrapper(Recycler.Handle<EntryWrapper> recyclerHandle) {\r\n            this.recyclerHandle = recyclerHandle;\r\n        }\r\n\r\n        static <K, V> EntryWrapper<K, V> create(K key, V value, long size) {\r\n            EntryWrapper<K, V> entryWrapper = RECYCLER.get();\r\n            long stamp = entryWrapper.lock.writeLock();\r\n            entryWrapper.key = key;\r\n            entryWrapper.value = value;\r\n            entryWrapper.size = size;\r\n            entryWrapper.lock.unlockWrite(stamp);\r\n            return entryWrapper;\r\n        }\r\n\r\n        K getKey() {\r\n            long stamp = lock.tryOptimisticRead();\r\n            K localKey = key;\r\n            if (!lock.validate(stamp)) {\r\n                stamp = lock.readLock();\r\n                localKey = key;\r\n                lock.unlockRead(stamp);\r\n            }\r\n            return localKey;\r\n        }\r\n\r\n        V getValue(K key) {\r\n            long stamp = lock.tryOptimisticRead();\r\n            K localKey = this.key;\r\n            V localValue = this.value;\r\n            if (!lock.validate(stamp)) {\r\n                stamp = lock.readLock();\r\n                localKey = this.key;\r\n                localValue = this.value;\r\n                lock.unlockRead(stamp);\r\n            }\r\n            if (localKey != key) {\r\n                return null;\r\n            }\r\n            return localValue;\r\n        }\r\n\r\n        long getSize() {\r\n            long stamp = lock.tryOptimisticRead();\r\n            long localSize = size;\r\n            if (!lock.validate(stamp)) {\r\n                stamp = lock.readLock();\r\n                localSize = size;\r\n                lock.unlockRead(stamp);\r\n            }\r\n            return localSize;\r\n        }\r\n\r\n        void recycle() {\r\n            key = null;\r\n            value = null;\r\n            size = 0;\r\n            recyclerHandle.recycle(this);\r\n        }\r\n    }\r\n\r\n\r\n    private static final int ITERATIONS = 1_000_000;\r\n    private static final int THREAD_COUNT = 10; // Simulating 10 concurrent threads\r\n    private static final int TEST_RUNS = 100; // Run each test 10 times\r\n\r\n    private long getGCCount() {\r\n        long count = 0;\r\n        for (GarbageCollectorMXBean gcBean : ManagementFactory.getGarbageCollectorMXBeans()) {\r\n            long gcCount = gcBean.getCollectionCount();\r\n            if (gcCount != -1) {\r\n                count += gcCount;\r\n            }\r\n        }\r\n        return count;\r\n    }\r\n\r\n    private long getUsedMemory() {\r\n        System.gc(); // Suggest GC before measuring memory usage\r\n        return Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();\r\n    }\r\n\r\n    private void runTest(String testName, Runnable testLogic) {\r\n        List<Long> times = new ArrayList<>();\r\n        List<Long> gcCounts = new ArrayList<>();\r\n        List<Long> memoryUsages = new ArrayList<>();\r\n\r\n        for (int i = 0; i < TEST_RUNS; i++) {\r\n            long startGC = getGCCount();\r\n            long startMemory = getUsedMemory();\r\n            long startTime = System.nanoTime();\r\n\r\n            testLogic.run();\r\n\r\n            long elapsedTime = System.nanoTime() - startTime;\r\n            long endGC = getGCCount();\r\n            long endMemory = getUsedMemory();\r\n\r\n            times.add(elapsedTime);\r\n            gcCounts.add(endGC - startGC);\r\n            memoryUsages.add(endMemory - startMemory);\r\n\r\n            System.out.println(testName + " - Run " + (i + 1) + " - Time: " + TimeUnit.NANOSECONDS.toMillis(elapsedTime) + " ms, GC: " + (endGC - startGC) + ", Memory: " + (endMemory - startMemory) + " bytes");\r\n        }\r\n\r\n        printStatistics(testName, times, gcCounts, memoryUsages);\r\n    }\r\n\r\n    private void printStatistics(String testName, List<Long> times, List<Long> gcCounts, List<Long> memoryUsages) {\r\n        System.out.println("========= " + testName + " Summary =========");\r\n        System.out.println("Average Time: " + TimeUnit.NANOSECONDS.toMillis(average(times)) + " ms");\r\n        System.out.println("Median Time: " + TimeUnit.NANOSECONDS.toMillis(median(times)) + " ms");\r\n        System.out.println("P99 Time: " + TimeUnit.NANOSECONDS.toMillis(percentile(times, 99)) + " ms");\r\n        System.out.println("Max Time: " + TimeUnit.NANOSECONDS.toMillis(Collections.max(times)) + " ms");\r\n\r\n        System.out.println("Average GC: " + average(gcCounts));\r\n        System.out.println("Median GC: " + median(gcCounts));\r\n        System.out.println("P99 GC: " + percentile(gcCounts, 99));\r\n        System.out.println("Max GC: " + Collections.max(gcCounts));\r\n\r\n        System.out.println("Average Memory: " + average(memoryUsages) + " bytes");\r\n        System.out.println("Median Memory: " + median(memoryUsages) + " bytes");\r\n        System.out.println("P99 Memory: " + percentile(memoryUsages, 99) + " bytes");\r\n        System.out.println("Max Memory: " + Collections.max(memoryUsages) + " bytes");\r\n        System.out.println("====================================");\r\n    }\r\n\r\n    private long average(List<Long> values) {\r\n        return values.stream().mapToLong(Long::longValue).sum() / values.size();\r\n    }\r\n\r\n    private long median(List<Long> values) {\r\n        List<Long> sorted = new ArrayList<>(values);\r\n        Collections.sort(sorted);\r\n        int middle = sorted.size() / 2;\r\n        return (sorted.size() % 2 == 0) ? (sorted.get(middle - 1) + sorted.get(middle)) / 2 : sorted.get(middle);\r\n    }\r\n\r\n    private long percentile(List<Long> values, int percentile) {\r\n        List<Long> sorted = new ArrayList<>(values);\r\n        Collections.sort(sorted);\r\n        int index = (int) Math.ceil(percentile / 100.0 * sorted.size()) - 1;\r\n        return sorted.get(Math.max(0, Math.min(index, sorted.size() - 1)));\r\n    }\r\n\r\n    @Test\r\n    public void testObjectPoolingPerformance() {\r\n        runTest("Object Pooling", () -> {\r\n            for (int i = 0; i < ITERATIONS; i++) {\r\n                EntryWrapper<Integer, String> entry = EntryWrapper.create(i, "Value" + i, i);\r\n                entry.recycle();\r\n            }\r\n        });\r\n    }\r\n\r\n    @Test\r\n    public void testNewObjectPerformance() {\r\n        runTest("New Object Creation", () -> {\r\n            for (int i = 0; i < ITERATIONS; i++) {\r\n                var str = new String("Value" + i); // Creates a new String object each time\r\n            }\r\n        });\r\n    }\r\n\r\n    @Test\r\n    public void testConcurrentObjectPooling() {\r\n        runTest("Concurrent Pooling", () -> {\r\n            ExecutorService executor = Executors.newFixedThreadPool(THREAD_COUNT);\r\n            List<Future<?>> futures = new ArrayList<>();\r\n\r\n            for (int t = 0; t < THREAD_COUNT; t++) {\r\n                futures.add(executor.submit(() -> {\r\n                    for (int i = 0; i < ITERATIONS / THREAD_COUNT; i++) {\r\n                        EntryWrapper<Integer, String> entry = EntryWrapper.create(i, "Value" + i, i);\r\n                        entry.recycle();\r\n                    }\r\n                }));\r\n            }\r\n\r\n            futures.forEach(f -> {\r\n                try {\r\n                    f.get();\r\n                } catch (Exception ignored) {}\r\n            });\r\n\r\n            executor.shutdown();\r\n        });\r\n    }\r\n\r\n    @Test\r\n    public void testConcurrentNewObjectCreation() {\r\n        runTest("Concurrent New Object", () -> {\r\n            ExecutorService executor = Executors.newFixedThreadPool(THREAD_COUNT);\r\n            List<Future<?>> futures = new ArrayList<>();\r\n\r\n            for (int t = 0; t < THREAD_COUNT; t++) {\r\n                futures.add(executor.submit(() -> {\r\n                    //List<String> strings = new ArrayList<>();\r\n                    for (int i = 0; i < ITERATIONS / THREAD_COUNT; i++) {\r\n                        var str = new String("Value" + i); // Creates a new String object each time\r\n                    }\r\n                    //strings.clear();\r\n                }));\r\n            }\r\n\r\n            futures.forEach(f -> {\r\n                try {\r\n                    f.get();\r\n                } catch (Exception ignored) {}\r\n            });\r\n\r\n            executor.shutdown();\r\n        });\r\n    }\r\n}\r\n\r\n```\r\n\r\n```\r\n========= Concurrent New Object Summary =========\r\nAverage Time: 23 ms\r\nMedian Time: 22 ms\r\nP99 Time: 32 ms\r\nMax Time: 255 ms\r\nAverage GC: 4\r\nMedian GC: 4\r\nP99 GC: 4\r\nMax GC: 4\r\nAverage Memory: -20971 bytes\r\nMedian Memory: 0 bytes\r\nP99 Memory: 0 bytes\r\nMax Memory: 0 bytes\r\n====================================\r\n\r\n========= Concurrent Pooling Summary =========\r\nAverage Time: 40 ms\r\nMedian Time: 36 ms\r\nP99 Time: 77 ms\r\nMax Time: 439 ms\r\nAverage GC: 4\r\nMedian GC: 4\r\nP99 GC: 4\r\nMax GC: 4\r\nAverage Memory: -713031 bytes\r\nMedian Memory: 0 bytes\r\nP99 Memory: 2097152 bytes\r\nMax Memory: 2097152 bytes\r\n====================================\r\n\r\n\r\n========= New Object Creation Summary =========\r\nAverage Time: 10 ms\r\nMedian Time: 10 ms\r\nP99 Time: 22 ms\r\nMax Time: 40 ms\r\nAverage GC: 4\r\nMedian GC: 4\r\nP99 GC: 4\r\nMax GC: 4\r\nAverage Memory: -524288 bytes\r\nMedian Memory: 0 bytes\r\nP99 Memory: 2097152 bytes\r\nMax Memory: 2097152 bytes\r\n====================================\r\n\r\n\r\n========= Object Pooling Summary =========\r\nAverage Time: 54 ms\r\nMedian Time: 53 ms\r\nP99 Time: 66 ms\r\nMax Time: 92 ms\r\nAverage GC: 4\r\nMedian GC: 4\r\nP99 GC: 4\r\nMax GC: 4\r\nAverage Memory: -796917 bytes\r\nMedian Memory: 0 bytes\r\nP99 Memory: 0 bytes\r\nMax Memory: 2097152 bytes\r\n====================================\r\n```\r\n\r\n\r\nSharing some test result: object pooling vs jvm young gc performance test
+
+PR to fix remaining issues: #23988
+
+It looks like new configurations have been added and the code has been refactored. I think we need a PIP and should avoid cherry-picking back to previous versions.
+
+> Could we confirm if we are not over-engineering this rate limiter?\r\n\r\nGood questions, @heesung-sn.\r\n\r\n> * can\
+
+This PR is too huge as a "bug fix". How could a bug fix be so huge?\r\n\r\nIt\
+
+> This PR is too huge as a "bug fix". How could a bug fix be so huge?\r\n\r\n@BewareMyPower Please see issues #23504 and #23506. The original solution has never worked properly.\r\n\r\n> It\
+
+>  we also found a memory leak due to ByteBuf objects not released.\r\n\r\nTo avoid misleading someone else, the memory leak issue is not caused by this PR, see https://github.com/apache/pulsar/pull/23955 
+
+Fix for change related PendingReadsManager deadlock: #23958
+
+@dependabot[bot] Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+@heesung-sn This PR has been rebased now. Please review
+
+Noticed this issue in another test method in the same class after cherry-picking to branch-3.0 and running in branch-3.0: #23906
+
+/pulsarbot rerun-failure-checks
+
+/pulsarbot rerun-failure-checks
+
+BTW, it works fine in our private pulsar. We are using the `pulsar-client-all` to feat the broker resource(broker-stats/topic/namespace/subscript/so on) info.
+
+The interface classes present here should be excluded from shading: https://github.com/apache/pulsar/tree/master/pulsar-client-admin-api/src/main/java/org/apache/pulsar/policies/data/loadbalancer\r\n\r\nSomething like\r\n```xml\r\n<relocation>\r\n  <pattern>org.apache.pulsar.policies</pattern>\r\n  <shadedPattern>org.apache.pulsar.shade.org.apache.pulsar.policies</shadedPattern>\r\n  <excludes>\r\n    <exclude>org\\.apache\\.pulsar\\.policies\\.data\\.loadbalancer\\.(LoadManagerReport|NamespaceBundleStats|ResourceUsage|ServiceLookupData)($.*)?</exclude>\r\n  </excludes>\r\n</relocation>\r\n```
+
+/pulsarbot rerun-failure-checks
+
+I think we should use AsyncTokenBucket or Guava.RateLimiter.tryAcquire for this rate limiter. \r\n\r\nIMHO, the current logic, requiring acquiredPermit to release is error-prone, when the caller forgets to release it. Instead, I think we better use token bucket-based one, which can automatically fill the bucket.\r\n
+
+@dependabot[bot] Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+PATL, thanks. @lhotari @BewareMyPower @poorbarcode @dao-jun @codelipenghui @nodece 
+
+> Seems I have mentioned this issue at #23803, it does not matter, could you add a test for the current PR to avoid others doing the same change as #23384?\r\n\r\n@poorbarcode  It\
+
+@lhotari \r\n\r\n>  I don\
+
+> @lhotari\r\n> \r\n> > I don\
+
+@lhotari \r\n\r\n> What type of test do you have in mind?\r\n\r\nA test to reproduce the issue that #23384 introduced, which can prevent others from making the same change as https://github.com/apache/pulsar/pull/23384
+
+> @lhotari\r\n> \r\n> > What type of test do you have in mind?\r\n> \r\n> A test to reproduce the issue that #23384 introduced, which can prevent others from making the same change as #23384\r\n\r\n@poorbarcode There was no known issue that #23384 introduced. It\
+
+The PR title is currently very confusing when it\
+
+@lhotari \r\n\r\n> Are you referring to these changes that "reverted" something: https://github.com/apache/pulsar/pull/23761/files , or is it something else?\r\n\r\nSorry, it should be `recover`, which means the producer\
+
+/pulsarbot rerun-failure-checks
+
+> @lhotari\r\n> \r\n> > Are you referring to these changes that "reverted" something: https://github.com/apache/pulsar/pull/23761/files , or is it something else?\r\n> \r\n> Sorry, it should be `recover`, which means the producer\
+
+> Sorry, it should be `recover`, which means the producer\
+
+@lhotari \r\n\r\n> @poorbarcode Please also make updates in the description where it mentions the very misleading sentence "closed producers were reverted mistakenly".\r\n\r\nModified
+
+ProducerCloseTest.testProducerCloseCallback fails. Is that flakiness or a real failure?
+
+ProducerCloseTest.testProducerCloseCallback failed again. @poorbarcode are you able to fix the issue?
+
+@lhotari \r\n\r\n> ProducerCloseTest.testProducerCloseCallback failed again. @poorbarcode are you able to fix the issue?\r\n\r\nFixed, I forget to revert the changes that https://github.com/apache/pulsar/pull/23761 changed\r\n\r\n- https://github.com/apache/pulsar/pull/23761/files#diff-d6fcf8aa2d0035cc386dca0942a452343d6854763c7fd397efa4e660c0069767L1149
+
+/pulsarbot rerun-failure-checks
+
+performing a manual run in https://github.com/apache/pulsar/actions/runs/12804640224 with these changes before merging to validate the changes.
+
+The manual check succeeded, example of one of the build scans: https://develocity.apache.org/s/s24pkee3ghrbk .
+
+/pulsarbot rerun-failure-checks
+
+@mukesh154 Thanks for the contribution, this looks very useful.
+
+@dao-jun PIP-401 is already taken. Please always search the mailing list and Pulsar issues to find the next unused PIP number. The first one to start a discussion with a PIP number on the dev mailing list wins when there are conflicts.
+
+> LGTM, please rename the file\r\n\r\nThanks, renamed.
+
+This PIP is approved with 3 bindings
+
+/pulsarbot rerun-failure-checks
+
+@codelipenghui Please feel free take a look, thanks.
+
+@mukesh154 Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+How many function worker instances do you have when you encounter this problem?
+
+> How many function worker instances do you have when you encounter this problem?\r\n\r\nI have 2 function worker instances when I encounter the problem.
+
+please help review, thanks. @BewareMyPower @poorbarcode @codelipenghui @liangyepianzhou
+
+[branch-3.3] is sufficient in the PR title for cherry-picking PRs.
+
+@yunmaoQu Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+@walkinggo Please rename the title of this PR since the current title "change async function time get" is not understandable. You can use LLMs to review and provide suggestions for more understandable language. I shared some tips in https://github.com/apache/pulsar/pull/23806#issuecomment-2569078570 about this. 
+
+> Added `majorCompactionMaxTimeMillis` and `minorCompactionMaxTimeMillis` to `conf/bookkeeper.conf` so that they can be updated from env variables in pulsar docker containers using `apply-config-from-env.py` script.\r\n\r\nThe workaround is to use `PULSAR_PREFIX_` for the environment variables.
+
+> > Added `majorCompactionMaxTimeMillis` and `minorCompactionMaxTimeMillis` to `conf/bookkeeper.conf` so that they can be updated from env variables in pulsar docker containers using `apply-config-from-env.py` script.\r\n> \r\n> The workaround is to use `PULSAR_PREFIX_` for the environment variables.\r\n\r\nThanks for the workaround. It is still useful to have these parameters in the `bookkeeper.conf`.
+
+Hi @lhotari ,\r\n\r\nPlease let me know if this PR is not required. If so, I’ll proceed to close it.
+
+Does it will lead to msg out of order?
+
+> Does it will lead to msg out of order?\r\n\r\nNo, because the failed OpAddEntry wasn\
+
+> Currently, the subscription replication will be changed by the `org.apache.pulsar.client.api.ConsumerBuilder#replicateSubscriptionState`. The existing subscription should use the original replication policy, this configuration should only affect new subscriptions.\r\n\r\n@nodece Has the behavior always been like this? Just wondering if this is a recent change which would be considered a regression? If not, changing the behavior could be problematic if there are users that rely on this existing behavior.
+
+Perhaps there should be a warn log for cases where subscription time `replicated` flag coming from the client side at subscription (== consumer creation time) differs from the persisted state for replication?
+
+> Perhaps there should be a warn log for cases where subscription time `replicated` flag coming from the client side at subscription (== consumer creation time) differs from the persisted state for replication?\r\n\r\n@lhotari This is a good idea. But ultimately, which configuration do we use? 
+
+> @lhotari This is a good idea. But ultimately, which configuration do we use?\r\n\r\n@nodece What do you mean exactly? Providing an example would be helpful.
+
+> > @lhotari This is a good idea. But ultimately, which configuration do we use?\r\n> \r\n> @nodece What do you mean exactly? Providing an example would be helpful.\r\n\r\n@lhotari \r\n\r\n- case1: The persisted state is true, and the consumer config is false, which is the ultimate value?\r\n- case2: The persisted state is false, and the consumer config is true, which is the ultimate value?\r\n
+
+I think that switching to use the word "initial" instead of "original" in the title and description of this PR could improve the clarity. The reason why I think it\
+
+Any updates?
+
+The original design is reasonable.
+
+@yunmaoQu Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+It looks like due to code formatting, many unintended changes were introduced. I added `startTimeNanos` in `JavaExecutionResult` and removed it from `ComponentStatsManager`. Now, the `processTimeEnd` method in `ComponentStatsManager` takes the start time as a parameter and calculates the final time. I also removed the `processTimeStart` method.
+
+Do I need to create a new PR to remove the unnecessary line changes caused by formatting? @ @lhotari 
+
+> Do I need to create a new PR to remove the unnecessary line changes caused by formatting? @ @lhotari\r\n\r\nIt makes it slightly harder to read the diff when there are formatting changes. However there\
+
+Should I modify the related code logic based on the following error that appeared in my local CI check? @lhotari \r\n\r\n[ERROR] Medium: org.apache.pulsar.functions.instance.JavaInstance$AsyncFuncRequest.getResult() may expose internal representation by returning JavaInstance$AsyncFuncRequest.result [org.apache.pulsar.functions.instance.JavaInstance$AsyncFuncRequest] At JavaInstance.java:[line 50] EI_EXPOSE_REP
+
+> I pass the start time of the result as a parameter rather than making it an inherent attribute of the result. This is because I don\
+
+I have added the content to the corresponding file. Thank you for your help.
+
+@yunmaoQu Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+ok,i test all and could you review it and give me some suggestions 
+
+OK.Should i implement it based on the pre commit or what?
+
+Yes. We can work it together.@walkinggo
+
+Please also update the PR description to match the minimal implementation.
+
+> Please also update the PR description to match the minimal implementation.\r\n\r\n@lhotari I have done this.
+
+> > Please also update the PR description to match the minimal implementation.\r\n> \r\n> @lhotari I have done this.\r\n\r\n@yunmaoQu I don\
+
+checkstyle error:\r\n> [INFO] There is 1 error reported by Checkstyle 10.14.2 with /home/runner/work/pulsar/pulsar/buildtools/src/main/resources/pulsar/checkstyle.xml ruleset.\r\nError:  src/main/java/org/apache/pulsar/client/internal/PulsarClientImplementationBinding.java:[130] (regexp) RegexpSingleline: Trailing whitespace
+
+For locally running a sanity check, you can use this command:\r\n\r\n```shell\r\nmvn -Pcore-modules,-main -T 1C clean install -DskipTests -Dspotbugs.skip=true -DnarPluginPhase=none\r\n```
+
+@lhotari  I test CI in my personal repo，the part i change is ok, you can see https://github.com/yunmaoQu/pulsar/pulls
+
+@lhotari  This pr seems make no sense .Should i close it and focus on other issue?
+
+@zjxxzjwang Please rename this PR. The current title is confusing. \r\n\r\nHint: using ChatGPT or some other LLM could help provide better names for PRs. LLMs are also useful in fixing grammar mistakes.\r\n\r\nOne way to pass the PR details to LLM is to append `.patch` to the url, for example https://github.com/apache/pulsar/pull/23806.patch and then store this in a file that is passed to an LLM. Also store the output of https://api.github.com/repos/apache/pulsar/pulls/23806 and pass that in a file. (Alternative is to print current PR page to PDF and also pass that.)\r\nIn the prompt "please provide a better title and description for this PR with fixed grammar and improved clarity. return the result in downloadable markdown format.".\r\n\r\nHere\
+
+> How about adding a test for this change?\r\n\r\nAdded.
+
+@poorbarcode Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+@lhotari \r\n\r\n> @poorbarcode This diff of this PR is currently messed up, so hard to see what the changes are.\r\n\r\nRebased master, it is clear now.\r\n\r\n> Just wondering if the correct solution would be to prevent replay reads and normal reads to happen at the same time? I reverted such changes from the recent PR with this commit https://github.com/apache/pulsar/commit/06827df01022d656345386a8b9cc9ee6424257ae .\r\n\r\n- A normal reading can not start when there is a pending reading\r\n- A replay reading can start when there is a pending normal reading because maybe there are no more entries to read(the normal reading is just pending there and waiting for new messages)\r\n\r\nI will modify the Motivation to make every thing clear late
+
+> * A replay reading can start when there is a pending normal reading because maybe there are no more entries to read(the normal reading is just pending there and waiting for new messages)\r\n\r\n"the normal reading is just pending there and waiting for new messages". It\
+
+@lhotari \r\n\r\n> "the normal reading is just pending there and waiting for new messages". It\
+
+/pulsarbot rerun-failure-checks
+
+@poorbarcode Please also help summarize the discussion between us to the PR description. I think it should be added to the `Modifications` based on your commit https://github.com/apache/pulsar/pull/23802/commits/303e56279e4f11ccb601662b0cbeb2808fe5d31a
+
+> @poorbarcode Please also help summarize the discussion between us to the PR description. I think it should be added to the Modifications based on your commit https://github.com/apache/pulsar/commit/303e56279e4f11ccb601662b0cbeb2808fe5d31a\r\n\r\nAdded
+
+/pulsarbot rerun-failure-checks
+
+/pulsarbot rerun-failure-checks
+
+/pulsarbot rerun-failure-checks
+
+/pulsarbot rerun-failure-checks
+
+This PR only fixes pulsar chain authentication, not HTTP authentication.  The HTTP authentication has some issues, please see #23842.
+
+/pulsarbot run-failure-checks
+
+Logs uploaded to https://gist.github.com/lhotari/b6d007083c043465f43e2b835cdc429e . I can see a similar errors in https://gist.githubusercontent.com/lhotari/b6d007083c043465f43e2b835cdc429e/raw/74948a7b872693105026732dc7ee243776fb9bc7/org.apache.pulsar.broker.service.ZkSessionExpireTest-output.txt 
+
+The test has been flaky for a longer period of time: https://github.com/apache/pulsar/issues/23389
+
+/pulsarbot rerun-failure-checks
+
+@lhotari @liangyepianzhou @poorbarcode @dao-jun PTAL!
+
+@Denovo1998 I have shared details of how to use LLMs for improving PR titles and descriptions. That would help also for this PR since the title and description is confusing. \r\nhttps://github.com/apache/pulsar/pull/23806#issuecomment-2569078570\r\n\r\n
+
+**Please pay attention to PIP-405.**\r\nhttps://github.com/apache/pulsar/pull/23895\r\nhttps://github.com/apache/pulsar/pull/23896
+
+I try to finish it in another pr #23811 becasue i use different branch.i will close this pr,please check it in next pr.
+
+@mattisonchao Please create a separate PR for cherry-picking to branch-3.3 since there are major merge conflicts. The merge conflicts seem to be mainly due to lack of #23319 changes in branch-3.3 .\r\n
+
+LGTM
+
+/pulsarbot rerun-failure-checks\r\n
+
+/pulsarbot rerun-failure-checks
+
+/pulsarbot rerun-failure-checks\r\n
+
+@lhotari Hello, please help me review
+
+/pulsarbot rerun-failure-checks\r\n
+
+@lhotari hello,please help me review it.
+
+@lhotari i，Hello, can you help me review it
+
+/pulsarbot rerun-failure-checks
+
+/pulsarbot rerun-failure-checks
+
+@walkinggo Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+@315157973 @poorbarcode @liangyepianzhou @lhotari PTAL
+
+/pulsarbot rerun-failure-checks
+
+> It looks you should fix the checkAndCompleteLedgerOpTask():\r\n\r\n+1 
+
+@shibd @nodece \r\n\r\n> It looks you should fix the checkAndCompleteLedgerOpTask():\r\n\r\nGood suggestion. Modified.
+
+> It looks you should fix the `checkAndCompleteLedgerOpTask()`:\r\n> \r\n> ```java\r\n>     protected boolean checkAndCompleteLedgerOpTask(int rc, LedgerHandle lh, Object ctx) {\r\n>         if (ctx instanceof CompletableFuture) {\r\n>             // ledger-creation is already timed out and callback is already completed so, delete this ledger and return.\r\n>             if (((CompletableFuture) ctx).complete(lh)) {\r\n>                 return false;\r\n>             } else {\r\n>                 if (rc == BKException.Code.OK) {\r\n>                     log.warn("[{}]-{} ledger creation timed-out, deleting ledger", this.name, lh.getId());\r\n>                     asyncDeleteLedger(lh.getId(), DEFAULT_LEDGER_DELETE_RETRIES);\r\n>                     return true; // changed\r\n>                 }\r\n>                 return false; // changed\r\n>             }\r\n>         }\r\n>         return false;\r\n>     }\r\n> ```\r\n\r\nIt seems no need to change here, the following steps will handle the case of `rc != OK`
+
+@nodece would it be possible to cover #23769 feature too? That enables subscription replication for all subscriptions at the broker level if I understand it correctly. Could you work together with @yyj8 to cover that?
+
+@yyj8 \r\n\r\n> cluster dimension, namespace dimension, and topic dimension.\r\n\r\nOnce the consumer level is configured, it is the highest priority, the cluster, namespace, and topic levels will be ignored, please see https://github.com/apache/pulsar/pull/23769#issuecomment-2559221226 for details.\r\n\r\n> (2)PR https://github.com/apache/pulsar/pull/23769 add the function of dynamically configuring parameter `replicateAllSubscriptionState` values through the command `bin/pulse admin brokers update-dynamic-config  --config replicateAllSubscriptionState --value true/false`\r\n\r\nThis is feasible.\r\n\r\n
+
+@yyj8 This PIP has been updated, could you have a chance to review this PIP?
+
+> @yyj8 This PIP has been updated, could you have a chance to review this PIP?\r\n\r\nAre you referring to updating the code and modifying the functional design specifications in this pip [pip/pip-398.md](https://github.com/apache/pulsar/pull/23770/files#diff-67fc7a48cc071911c2239d1c628335d4147f54345051f36efd2f18dbcc8339c6) design documentation?\r\n
+
+> > @yyj8 This PIP has been updated, could you have a chance to review this PIP?\r\n> \r\n> Are you referring to updating the code and modifying the functional design specifications in this pip [pip/pip-398.md](https://github.com/apache/pulsar/pull/23770/files#diff-67fc7a48cc071911c2239d1c628335d4147f54345051f36efd2f18dbcc8339c6) design documentation?\r\n\r\nJust for this PIP.\r\n
+
+The term `replicateSubscriptionState` is ambiguous (it\
+
+> The term `replicateSubscriptionState` is ambiguous (it\
+
+@lhotari Do you have more suggestions? If not, I will send a vote to the mailing list.
+
+@lhotari Good idea, I suggest we should add this feature to the #23770, I also required this feature.
+
+This PR introduces an override for the `replicateSubscriptionState` configuration from the consumer level, which is currently correct for the version being worked on. However, this conflicts slightly with PIP #23770, which proposes a configuration at the namespace and topic levels to control subscription replication. The issue arises because PR #23770 assumes that the consumer-level configuration for replicateSubscriptionState is not set, and instead, replication behavior is driven by namespace and topic policies.\r\n\r\nTo avoid this conflict and align with PIP #23770,  I propose modifying this PR to ignore the `replicateSubscriptionState` configuration from the consumer level. This would ensure that subscription replication is controlled exclusively by the namespace and topic policies.\r\n\r\nIf you can set the subscription replication in the namespace or topic level, I belive this should be correct.
+
+/pulsarbot rerun-failure-checks
+
+Thanks @hrzzzz and @lhotari 
+
+@danpi Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+The reason behind this is that there is a possibility of calling the asyncReadEntry0 method in RangeEntryCacheImpl, where at line 272, a thread switch occurs, causing the exception to be lost. However, in the case of an asynchronous call, if we cannot predict when the thread switch will happen, returning the exception via completeExceptionally instead of throwing it directly might be a better approach.
+
+/pulsarbot rerun-failure-checks
+
+\r\n> In order to use Amazon Kinesis Producer Library on Alpine, the stable solution is to compile this binary specifically for Alpine.\r\n\r\nI think it would be hard to maintain this build script in this pulsar repo.\r\n\r\nnit: are we planning to export those IO connectors from the repo and maintain them separately?\r\n\r\n\r\n
+
+nit: please provide more reference links(like dependency location list ) as comments in the build scripts for future updates.
+
+/pulsarbot rerun-failure-checks
+
+@lhotari \r\n\r\nAnswered your question in the discussion channel: https://lists.apache.org/thread/kfm7n6xf9pf7h76k4gx83zv3c2kj6yy1
+
+Hi Lari\r\n\r\nSince there is no more arguments in the email list, I dismissed your change request
+
+@poorbarcode I have replied in https://lists.apache.org/thread/rhb4hbbrqw3238l0563n9nm6s57jrb00 .
+
+> > This adjustment would enhance flexibility in managing subscription replication policies, such as applying the policy that comes from the namespace or topic level, which streamlines the configuration of subscription replication behavior. This feature is in progress.\r\n> \r\n> This will be a useful feature.\r\n\r\n@nodece Please check #23769, it seems to be a related new feature.
+
+@lhotari  Sure, go to #23769 and #23770.
+
+@JHC9010 Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+btw. regarding the StackOverflowError, the config in `.mvn/jvm.config` with `-Xss1500k` has been a workaround for this problem. We can keep that setting even if Lombok has improved since it\
+
+/pulsarbot rerun-failure-checks
+
+@lhotari \r\n\r\n> Since Pulsar is slowly migrating to OTel for metrics, please also handle OTel for this added metric.\r\n> \r\n> For metric changes, it would be useful to at least have a discussion on the dev mailing list since our PIP policy states that a PIP is required for changes in metrics.\r\n\r\nThanks for your comment. You are right, this a WIP PR, and I will do it later when I am available
+
+/pulsarbot rerun-failure-checks
+
+@codelipenghui \r\n\r\n> The fix looks good me, but when I try to run the newly added test on the master branch (without this fix). A lot of test cases can still get passed. Could you please help if this is expected?\r\n\r\n- `testSendMessageSizeExceeded`: it should fail when the `@param is larger than 1`, I improved the test, and it is fine now.\r\n- `testBatchedSendMessageSizeExceeded`: it is expected that the tests can pass because the batch message will only check the max message size that excludes message metadata\r\n- `testInterceptorError`: only `@param eligible` has an issue, so it is expected.\r\n
+
+@dependabot[bot] Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+The releases are in-progress to include this fix. Ongoing vote threads:\r\n[Release Apache Pulsar 3.0.9 based on 3.0.9-candidate-2](https://lists.apache.org/thread/pzqb4cz9yw7rvcgq7ft0y93qtdnj232d)\r\n[Release Apache Pulsar 3.3.4 based on 3.3.4-candidate-2](https://lists.apache.org/thread/qog1gxdhlvohjbo4j1po98hkg8mb11c3)\r\n[Release Apache Pulsar 4.0.2 based on 4.0.2-candidate-3](https://lists.apache.org/thread/k3p7k69glm66bz4kl0cy397tk7v3nyvy)
+
+Thanks @dao-jun. Could we add tests to cover this? The lack of tests made it possible that this regression happened in the first place.
+
+@lhotari @Technoboy- PTAL
+
+@dependabot[bot] Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+CVE-2024-53990 mitigation in PR #23725
+
+Mailing list discussion: https://lists.apache.org/thread/fpg465pxytqkxbs57h7p3mckn9dwh3zq
+
+Closing this in favor of #23732 
+
+/pulsarbot rerun-failure-checks
+
+Hi there, when will this fix be included in the next release?
+
+@poorbarcode Would you mind cherry-picking this to branch-3.0 and branch-3.3? Thanks
+
+> @poorbarcode Would you mind cherry-picking this to branch-3.0 and branch-3.3? Thanks\r\n\r\nDone
+
+/pulsarbot rerun-failure-checks
+
+/pulsarbot rerun-failure-checks
+
+WDYT, @lhotari @coderzc 
+
+> > Whereas, the metric for **one sub** also called `pulsar_delayed_message_index_size_bytes`, which do not comform the metric name norm and is confusing.\r\n> \r\n> @thetumbled Does this cause any problem other than it\
+
+> Currently, it can export metric like:\r\n> \r\n> ```\r\n> # TYPE pulsar_delayed_message_index_size_bytes gauge\r\n> pulsar_delayed_message_index_size_bytes{cluster="MyPulsar",namespace="public/default",topic="persistent://public/default/testNack-partition-0"} 0\r\n> pulsar_delayed_message_index_size_bytes{cluster="MyPulsar",namespace="public/default",topic="persistent://public/default/testNack-partition-0",subscription="sub2"} 0\r\n> ```\r\n> \r\n> The metric of topic and subscription mix together. If we want to filter out the metric of sub to pick out the metric of topic, we need to use promsql like: `pulsar_delayed_message_index_size_bytes{subscription=""}` It is quite weird and i believe that if any user use it already, he/she will contribute a pr to fix this, as these label names can only be access by researching the code, which means he/she is an advanced user and is involved in the community probably.\r\n\r\n@thetumbled Please add this directly to the description of this PR since it clarifies the issue. I\
+
+> > Currently, it can export metric like:\r\n> > ```\r\n> > # TYPE pulsar_delayed_message_index_size_bytes gauge\r\n> > pulsar_delayed_message_index_size_bytes{cluster="MyPulsar",namespace="public/default",topic="persistent://public/default/testNack-partition-0"} 0\r\n> > pulsar_delayed_message_index_size_bytes{cluster="MyPulsar",namespace="public/default",topic="persistent://public/default/testNack-partition-0",subscription="sub2"} 0\r\n> > ```\r\n> > \r\n> > \r\n> >     \r\n> >       \r\n> >     \r\n> > \r\n> >       \r\n> >     \r\n> > \r\n> >     \r\n> >   \r\n> > The metric of topic and subscription mix together. If we want to filter out the metric of sub to pick out the metric of topic, we need to use promsql like: `pulsar_delayed_message_index_size_bytes{subscription=""}` It is quite weird and i believe that if any user use it already, he/she will contribute a pr to fix this, as these label names can only be access by researching the code, which means he/she is an advanced user and is involved in the community probably.\r\n> \r\n> @thetumbled Please add this directly to the description of this PR since it clarifies the issue. I\
+
+> > Currently, it can export metric like:\r\n> > ```\r\n> > # TYPE pulsar_delayed_message_index_size_bytes gauge\r\n> > pulsar_delayed_message_index_size_bytes{cluster="MyPulsar",namespace="public/default",topic="persistent://public/default/testNack-partition-0"} 0\r\n> > pulsar_delayed_message_index_size_bytes{cluster="MyPulsar",namespace="public/default",topic="persistent://public/default/testNack-partition-0",subscription="sub2"} 0\r\n> > ```\r\n> > \r\n> > \r\n> >     \r\n> >       \r\n> >     \r\n> > \r\n> >       \r\n> >     \r\n> > \r\n> >     \r\n> >   \r\n> > The metric of topic and subscription mix together. If we want to filter out the metric of sub to pick out the metric of topic, we need to use promsql like: `pulsar_delayed_message_index_size_bytes{subscription=""}` It is quite weird and i believe that if any user use it already, he/she will contribute a pr to fix this, as these label names can only be access by researching the code, which means he/she is an advanced user and is involved in the community probably.\r\n> \r\n> @thetumbled Please add this directly to the description of this PR since it clarifies the issue. I\
+
+The vote for pip passed , please review this pr again, thanks. @lhotari @dao-jun @BewareMyPower @poorbarcode @Shawyeok @nodece 
+
+> LGTM for the production code. However, you need to update the unit test `PersistentTopicTest#testDelayedDeliveryTrackerMemoryUsageMetric` to align with these changes.\r\n\r\nFixed.
+
+@omarkj Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+- [ ] `doc` <!-- Your PR contains doc changes -->\r\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\r\n- [X] `doc-not-needed` <!-- Your PR changes do not impact docs -->
+
+pls resolve the ci failures
+
+/pulsarbot rerun-failure-checks
+
+@poorbarcode @gaoran10 @Technoboy- @codelipenghui Why could this PR be cherry-picked to branch-3.0 and branch-4.0?\r\n\r\nIt changes the `PulsarApi.proto` by adding a new **feature** flag. How could 3.0 and 4.0 be declared as LTS releases?
+
+@BewareMyPower \r\n\r\n> @poorbarcode @gaoran10 @Technoboy- @codelipenghui Why could this PR be cherry-picked to branch-3.0 and branch-4.0?\r\n> It changes the PulsarApi.proto by adding a new feature flag. How could 3.0 and 4.0 be declared as LTS releases?\r\n\r\n- This PR fixed the bug and `3.0.x & 4.0.x` also need this fix.\r\n- the change of `feature flag` is used for the compatibility
+
+Good catch! the `connected` is always false after the connection is reconnected/disconnected.\r\n\r\nCould you check https://github.com/apache/pulsar/blob/v4.0.1/pulsar-common/src/main/java/org/apache/pulsar/common/policies/data/stats/TopicStatsImpl.java#L335-L343? This seems to be the root cause.
+
+I am curious about how pulsar ensure the two message ids from two clusters corresponding to the same message are equal, or they are just not equal?  Not equal may introduce lots of problem.
+
+@pengxiangrui127 Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+Closing this PR since the issue is handled by #22794.
+
+/pulsarbot rerun-failure-checks
+
+@lhotari \r\n\r\nIf do not cherry-pick into `branch-3.0`, there is a downgrade compatibility issue:\r\n- upgrade to `4.0.x`\r\n- Set a larger value for the policy.\r\n- downgrade to `3.0.x`, the value will be transferred to a negative value,
+
+@hangc0276 Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+It seems that this PR applies only to branch-3.3 and branch-3.4. The bug was most likely introduced in PIP-280 and PIP-343 changes.
+
+@dependabot[bot] Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+Thanks for contributing @ZachChuba
+
+/pulsarbot rerun-failure-checks
+
+@Gilthoniel Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+See issue for reason.
+
+/pulsarbot rerun-failure-checks
+
+> We found that sometimes readPosition is larger than lastPosition. If this happens, messages will not be consumed, messages will be backlogged, and recovery will not be possible.\r\n \r\nIt is possible that the messages has been dispatched to consumer, but not acked. Have you verified this? \r\nBefore comprehending the root of this phenomenon,  we should cautious with adding such check, though it looks simple.
+
+@dependabot[bot] Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+Superseded by #23685.
+
+@visxu With this we would also ensure that no lookup related to the `__change_events` topic is in progress while setting the `lookupPermitsBefore` variable, right?
+
+@lhotari Could you help to approve this? Thanks in advance.
+
+Hi, @pdolif . Could you help loop other committers to approve this ??
+
+@visxu Please select only one documentation label in your PR description.
+
+/pulsarbot rerun-failure-checks
+
+@lhotari Do you have other suggestions?
+
+> @lhotari Do you have other suggestions?\r\n\r\nSince no answer for 5 days, I dismiss the request change
+
+@rdhabalia Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+PIP is approved with +2 binding votes: https://lists.apache.org/thread/s9p7c27182jn7f3qk53rk1gz6qol5nhv
+
+Closing in favor of #23647 since integration tests fail when the dependency is removed from client side.
+
+@equanz Do we need tests for validating the behavior?
+
+@lhotari I have added a simple unit tests to check if KeyManagerProxy can load a cert chain.
+
+/pulsarbot rerun-failure-checks
+
+@lhotari \r\n\r\n> Some typos to fix in the log messages.\r\n\r\nSorry for that. Fixed
+
+@Shawyeok Please submit a similar PR to BookKeeper for jetcd-core-shaded.
+
+> @Shawyeok Please submit a similar PR to BookKeeper for jetcd-core-shaded.\r\n\r\n@lhotari \r\nhttps://github.com/apache/bookkeeper/pull/4532 please feel free to take a look, thanks.
+
+@hboutemy Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+oh, sure. let me add one. 
+
+> > fix error throughput log in performanceConsumer. bytes -> Mb no need to *8.\r\n> \r\n> The previous calculation is intentional. The previous unit has been megabits instead of megabytes.\r\n> \r\n> https://github.com/apache/pulsar/blob/002fa49692ff4b8b038bf2edeeb3b32ed218e64f/pulsar-testclient/src/main/java/org/apache/pulsar/testclient/PerformanceConsumer.java#L526\r\n\r\nOk. But I think MB is clearer
+
+@yyj8 Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+Checkstyle failed due to incorrect import order. I pushed a fix for that problem. @yyj8 If you are using IntelliJ/IDEA, please follow instructions at https://pulsar.apache.org/contribute/setup-ide/#configure-code-style to setup the IDE.
+
+> Checkstyle failed due to incorrect import order. I pushed a fix for that problem. @yyj8 If you are using IntelliJ/IDEA, please follow instructions at https://pulsar.apache.org/contribute/setup-ide/#configure-code-style to setup the IDE.\r\n\r\nOkay, thank you very much for your help.
+
+Closing and reopening to run a fresh CI build with latest changes from master branch.
+
+@Shawyeok Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+@jiangpengcheng Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+/pulsarbot rerun-failure-checks
+
+@lhotari sorry for the trouble, so now should I create a PIP for this one or:\r\n\r\n1. revert his PR\r\n2. create a PIP, discuss and vote\r\n3. and then re-submit this PR ?
+
+Validating compatibility seems like a significant effort. What if this PR doesn’t need to be cherry-picked to older branches and is only merged into the master branch? Would creating a PIP and resubmitting the PR suffice?
+
+@lhotari  ok, I thought we need to add integration tests to the CI\r\n\r\nI just verified it with below steps:\r\n\r\n1. checkout pulsar to previous version (eddf395631811a731fe9c0284b44fd2f6efd2026)\r\n2. update the `LoggingWindowFunction` like below:\r\n```\r\npackage org.apache.pulsar.functions.api.examples.window;\r\n\r\nimport java.util.Collection;\r\nimport org.apache.pulsar.functions.api.Record;\r\nimport org.apache.pulsar.functions.api.WindowContext;\r\nimport org.apache.pulsar.functions.api.WindowFunction;\r\nimport org.slf4j.Logger;\r\n\r\n/**\r\n * A function that demonstrates how to redirect logging to a topic.\r\n * In this particular example, for every input string, the function\r\n * does some logging. If --logTopic topic is specified, these log statements\r\n * end up in that specified pulsar topic.\r\n */\r\npublic class LoggingWindowFunction implements WindowFunction<String, Void> {\r\n\r\n    @Override\r\n    public Void process(Collection<Record<String>> inputs, WindowContext context) throws Exception {\r\n        Logger log = context.getLogger();\r\n        log.info("tenant: {}, namespace: {}, instanceId: {}, replicas: {}", context.getTenant(), context.getNamespace(),\r\n                context.getInstanceId(), context.getNumInstances());\r\n        for (Record<String> record : inputs) {\r\n            log.info(record + "-window-log");\r\n        }\r\n        return null;\r\n    }\r\n}\r\n```\r\n3. build the `pulsar-functions/java-examples` project, it generated a `--jar pulsar-functions/java-examples/target/pulsar-functions-api-examples.jar`\r\n4. checkout pulsar to master (7909d2dfdb4aad8053c133ce6a00d5dddf0b9db8)\r\n5. start the pulsar locally:\r\n```\r\n./bin/pulsar standalone\r\n```\r\n6. create the window function\r\n```\r\n./bin/pulsar-admin functions create --tenant public --namespace default --name window-function --className org.apache.pulsar.functions.api.examples.window.LoggingWindowFunction --inputs persistent://public/default/test-window-input --output persistent://public/default/test-window-output --log-topic persistent://public/default/test-window-logs --jar pulsar-functions/java-examples/target/pulsar-functions-api-examples.jar --cpu 0.1 --window-length-count 10 --sliding-interval-count 5\r\n```\r\n7. produce 5 messages to the input topic:\r\n```\r\n./bin/pulsar-client produce -m "test-message" --value-schema string -n 5 persistent://public/default/test-window-input\r\n```\r\n8. consume from the log topic:\r\n```\r\n./bin/pulsar-client consume -n 0 -s mysub --subscription-position Earliest persistent://public/default/test-window-logs\r\n```\r\n9. the function works correctly and I got expected messages from the log topic:\r\n\r\n```\r\n----- got message -----\r\nkey:[null], properties:[fqn=public/default/window-function, instance=0, loglevel=INFO], content:Window Config: WindowConfig(windowLengthCount=10, windowLengthDurationMs=null, slidingIntervalCount=5, slidingIntervalDurationMs=null, lateDataTopic=null, maxLagMs=null, watermarkEmitIntervalMs=null, timestampExtractorClassName=null, actualWindowFunctionClassName=org.apache.pulsar.functions.api.examples.window.LoggingWindowFunction, processingGuarantees=ATLEAST_ONCE)\r\n----- got message -----\r\nkey:[null], properties:[fqn=public/default/window-function, instance=0, loglevel=INFO], content:tenant: public, namespace: default, instanceId: 0, replicas: 1\r\n----- got message -----\r\nkey:[null], properties:[fqn=public/default/window-function, instance=0, loglevel=INFO], content:org.apache.pulsar.functions.source.PulsarFunctionRecord@32afdbf6-window-log\r\n----- got message -----\r\nkey:[null], properties:[fqn=public/default/window-function, instance=0, loglevel=INFO], content:org.apache.pulsar.functions.source.PulsarFunctionRecord@467cda10-window-log\r\n----- got message -----\r\nkey:[null], properties:[fqn=public/default/window-function, instance=0, loglevel=INFO], content:org.apache.pulsar.functions.source.PulsarFunctionRecord@3e25cfb6-window-log\r\n----- got message -----\r\nkey:[null], properties:[fqn=public/default/window-function, instance=0, loglevel=INFO], content:org.apache.pulsar.functions.source.PulsarFunctionRecord@3997d10c-window-log\r\n----- got message -----\r\nkey:[null], properties:[fqn=public/default/window-function, instance=0, loglevel=INFO], content:org.apache.pulsar.functions.source.PulsarFunctionRecord@752bcda3-window-log\r\n----- got message -----\r\nkey:[null], properties:[fqn=public/default/window-function, instance=0, loglevel=INFO], content:[persistent://public/default/test-window-input] [public/default/window-function] [ef1db] Prefetched messages: 0 --- Consume throughput received: 0.08 msgs/s --- 0.00 Mbit/s --- Ack sent rate: 0.08 ack/s --- Failed messages: 0 --- batch messages: 0 ---Failed acks: 0\r\n----- got message -----\r\nkey:[null], properties:[fqn=public/default/window-function, instance=0, loglevel=INFO], content:[persistent://public/default/test-window-logs] [standalone-23-1] --- Publish throughput: 0.12 msg/s --- 0.00 Mbit/s --- Latency: med: 117.000 ms - 95pct: 117.000 ms - 99pct: 117.000 ms - 99.9pct: 117.000 ms - max: 117.000 ms --- BatchSize: med: 6.000 - 95pct: 6.000 - 99pct: 6.000 - 99.9pct: 6.000 - max: 6.000 --- MsgSize: med: 437.000 bytes - 95pct: 437.000 bytes - 99pct: 437.000 bytes - 99.9pct: 437.000 bytes - max: 437.000 bytes --- Ack received rate: 0.12 ack/s --- Failed messages: 0 --- Pending messages: 1\r\n2024-11-26T12:54:54,980+0000 [pulsar-timer-16-1] INFO  org.apache.pulsar.client.impl.ConsumerStatsRecorderImpl - [persistent://public/default/test-window-logs] [mysub] [9415c] Prefetched messages: 0 --- Consume throughput received: 0.15 msgs/s --- 0.00 Mbit/s --- Ack sent rate: 0.15 ack/s --- Failed messages: 0 --- batch messages: 0 ---Failed acks: 0\r\n```\r\n\r\n\r\n\r\n
+
+The reasons why this is binary compatible seems to be related to these points described in [Java Language Specification about binary compatibility](https://docs.oracle.com/javase/specs/jls/se8/html/jls-13.html):\r\n* Inserting new class or interface types in the type hierarchy. (`BaseContext` was inserted)\r\n* Moving a method upward in the class hierarchy. (methods were moved from `WindowContext` to `BaseContext`)
+
+@lhotari many thx for the explain! I will create a PIP for. this change
+
+Hi @lhotari, here is the follow-up PIP: https://github.com/apache/pulsar/pull/23659, PTAL when you have time
+
+@lhotari Hello lhotari, this pr(https://github.com/apache/pulsar/pull/23562) merger was terminated because of the wrong deletion of the warehouse before. Now I have submitted the same pr again, please approve, thank you! 
+
+> @lhotari Hello lhotari, this pr(#23562) merger was terminated because of the wrong deletion of the warehouse before. Now I have submitted the same pr again, please approve, thank you!\r\n\r\n@zjxxzjwang Makes sense. Please check the review comment about the code comment and the PR title change that I made.
+
+@lhotari PTAL.
+
+/pulsarbot run-failure-checks
+
+@crossoverJie Which Pulsar client and broker version did you experience this with?\r\n
+
+@lhotari please take a look
+
+> [#23621 (comment)](https://github.com/apache/pulsar/pull/23621#discussion_r1851531766) . We don\
+
+Related to #23594
+
+/pulsarbot rerun-failure-checks
+
+/pulsarbot rerun-failure-checks
+
+close reopen to retrigger the ci 
+
+@poorbarcode pls resolve the ci failure
+
+> @poorbarcode pls resolve the ci failure\r\n\r\nSure
+
+@zymap Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+We hit an issue with following core dump\r\n\r\n```\r\n---------------  T H R E A D  ---------------\r\n\r\nCurrent thread (0x00007f334cfa2780):  JavaThread "broker-topic-workers-OrderedExecutor-16-0"        [_thread_in_Java, id=200, stack(0x00007f2fab00d000,0x00007f2fab10da90) (1026K)]\r\n\r\nStack: [0x00007f2fab00d000,0x00007f2fab10da90],  sp=0x00007f2fab10cad0,  free space=1022k\r\nNative frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)\r\nv  ~StubRoutines::jbyte_disjoint_arraycopy_avx3 0x00007f3767573140\r\n\r\nsiginfo: si_signo: 11 (SIGSEGV), si_code: 1 (SEGV_MAPERR), si_addr: 0x00007f2f2d883000\r\n\r\nRegisters:\r\nRAX=0x000000000000001e, RBX=0x00007f33576fc2c0, RCX=0x000000000039211e, RDX=0x00000000003d0715\r\nRSP=0x00007f2fab10cad0, RBP=0x00007f2fab10cad0, RSI=0x00007f2f2d0efee2, RDI=0x00007f2f2d4f0ecb\r\nR8 =0x000000000003e537, R9 =0x00000000802ae9a0, R10=0x00007f376757b1a0, R11=0x000000000000001e\r\nR12=0x00000000003d0715, R13=0x0000040359706768, R14=0x00000000802ce3f0, R15=0x00007f334cfa2780\r\nRIP=0x00007f3767573140, EFLAGS=0x0000000000010202, CSGSFS=0x002b000000000033, ERR=0x0000000000000004\r\n  TRAPNO=0x000000000000000e\r\n\r\n\r\nRegister to memory mapping:\r\n\r\nRAX=0x000000000000001e is an unknown value\r\nRBX={method} {0x00007f33576fc2c0} \
+
+@lhotari Thanks for fixing it!
+
+@lhotari @dao-jun PTAL! 
+
+@poorbarcode How does this compare to the previous work in this area:\r\n* [PIP 81: Split the individual acknowledgments into multiple entries](https://github.com/apache/pulsar/wiki/PIP-81%3A-Split-the-individual-acknowledgments-into-multiple-entries)\r\n* [PIP-381: Handle large PositionInfo state](https://github.com/apache/pulsar/blob/master/pip/pip-381-large-positioninfo.md)\r\n* https://github.com/apache/pulsar/pull/9292\r\n
+
+> Please update this file:\r\n> \r\n> https://github.com/apache/pulsar/blob/27158532de26d40e7a402769e73ddd3be43f0623/distribution/server/src/assemble/LICENSE.bin.txt#L484-L485\r\n\r\nYes, you are right. let me rebase first. :) 
+
+@lhotari \r\n> How did you find out that IntelliJ expects this format?\r\n\r\nThere is a silent error in the pulsar-metadata module dependencies, which I discovered by coincidence.\r\n\r\n![image_1731639655772_0](https://github.com/user-attachments/assets/3a1e3c96-8121-4885-9085-c8c8f2debeed)\r\n\r\n<img width="785" alt="image" src="https://github.com/user-attachments/assets/a6dcc83c-ce7b-4bf0-b089-0504a2c835ba">\r\n\r\n> Could we remove overriding of finalName in pom.xml so that we\
+
+List some experiment data:\r\n```\r\n    static long trimLowerBit(long timestamp, int bits) {\r\n        return timestamp & (-1L << bits);\r\n    }\r\n\r\n    public static void main(String[] args) throws IOException {\r\n        ConcurrentLongLongPairHashMap map1 = ConcurrentLongLongPairHashMap.newBuilder()\r\n                .autoShrink(true)\r\n                .concurrencyLevel(16)\r\n                .build();\r\n        // timestamp -> ledgerId -> entryId, no need to batch index, if different messages have\r\n        // different timestamp, there will be multiple entries in the map\r\n        // AVL Tree -> LongOpenHashMap -> Roaring64Bitmap\r\n        // there are many timestamp, a few ledgerId, many entryId\r\n        Long2ObjectSortedMap<Long2ObjectMap<Roaring64Bitmap>> map2 = new Long2ObjectAVLTreeMap<>();\r\n        \r\n        long numMessages = 1000000, numLedgers=100;\r\n        long numEntries = numMessages/numLedgers;\r\n        long ledgerId, entryId, partitionIndex, timestamp=System.currentTimeMillis();\r\n        for(long i=0; i<numLedgers; i++) {\r\n            ledgerId = 10000+i;\r\n            for(long j=0; j<numEntries; j++) {\r\n                entryId = 10000+j;\r\n                partitionIndex = 0;\r\n                // 1ms per message\r\n                timestamp++;\r\n                map1.put(ledgerId, entryId, partitionIndex, timestamp);\r\n                \r\n                timestamp = trimLowerBit(timestamp, 8);\r\n                if (map2.containsKey(timestamp)) {\r\n                    Long2ObjectMap<Roaring64Bitmap> ledgerMap = map2.get(timestamp);\r\n                    if (ledgerMap.containsKey(ledgerId)) {\r\n                        ledgerMap.get(ledgerId).add(entryId);\r\n                    } else {\r\n                        Roaring64Bitmap entrySet = new Roaring64Bitmap();\r\n                        entrySet.add(entryId);\r\n                        ledgerMap.put(ledgerId, entrySet);\r\n                    }\r\n                } else {\r\n                    Long2ObjectMap<Roaring64Bitmap> ledgerMap = new Long2ObjectOpenHashMap<>();\r\n                    Roaring64Bitmap entrySet = new Roaring64Bitmap();\r\n                    entrySet.add(entryId);\r\n                    ledgerMap.put(ledgerId, entrySet);\r\n                    map2.put(timestamp, ledgerMap);\r\n                }\r\n            }\r\n        }\r\n        try {\r\n            Thread.sleep(10000000);\r\n        } catch (InterruptedException e) {\r\n            // TODO Auto-generated catch block\r\n            e.printStackTrace();\r\n        }\r\n    }\r\n```\r\n![image](https://github.com/user-attachments/assets/298ef601-ad41-4b4b-b433-34a235b5c509)\r\n\r\nThe memory occupation of the new data structure is down to 0.82MB, while `ConcurrentLongLongPairHashMap` need 64MB, `HashMap` need 178MB.\r\n
+
+I add the space complexity analysis of the new data structure, please review it again, thanks. @lhotari @nodece @BewareMyPower @poorbarcode @codelipenghui @dao-jun 
+
+> I add the space complexity analysis of the new data structure, please review it again, thanks. @lhotari @nodece @BewareMyPower @poorbarcode @codelipenghui @dao-jun\r\n\r\nGreat analysis @thetumbled . Please move the analysis from the PR description to the PIP document itself. \r\n\r\nOne small detail (which doesn\
+
+@thetumbled The title of any PR containing PIP documentation should include `[pip]` to distinguish it from other types of PRs. I made that change to the title.
+
+> > I add the space complexity analysis of the new data structure, please review it again, thanks. @lhotari @nodece @BewareMyPower @poorbarcode @codelipenghui @dao-jun\r\n> \r\n> Great analysis @thetumbled . Please move the analysis from the PR description to the PIP document itself.\r\n> \r\n> One small detail (which doesn\
+
+The vote is completed, please review this pr again, thanks. @lhotari @nodece @eolivelli 
+
+I will implement a space efficient map structure for `ConcurrentTripleLong2LongHashMap` later, which for now use hashmap to ensure the logical correction.
+
+This is a very poor solution in the current implementation:\r\nhttps://github.com/apache/pulsar/blob/22cfa5428ef8a4fc6cfc0225182724012f0972c2/pulsar-client/src/main/java/org/apache/pulsar/client/impl/NegativeAcksTracker.java#L80-L88\r\n\r\nThere should be a separate datastructure (a list or queue) which contains the entries in timestamp order. The benefit of that is that iterating could stop after the timestamp condition no longer holds.
+
+> You are right. We need to improve the code execution efficiency too. some kind of structures sorted by timestamp.\r\n\r\nFastutil contains multiple PriorityQueue implementations:  https://fastutil.di.unimi.it/docs/it/unimi/dsi/fastutil/PriorityQueue.html.\r\nFor example, this would work: https://fastutil.di.unimi.it/docs/it/unimi/dsi/fastutil/objects/ObjectArrayPriorityQueue.html\r\nor this one: https://fastutil.di.unimi.it/docs/it/unimi/dsi/fastutil/objects/ObjectHeapPriorityQueue.html
+
+> > You are right. We need to improve the code execution efficiency too. some kind of structures sorted by timestamp.\r\n> \r\n> Fastutil contains multiple PriorityQueue implementations: https://fastutil.di.unimi.it/docs/it/unimi/dsi/fastutil/PriorityQueue.html. For example, this would work: https://fastutil.di.unimi.it/docs/it/unimi/dsi/fastutil/objects/ObjectArrayPriorityQueue.html or this one: https://fastutil.di.unimi.it/docs/it/unimi/dsi/fastutil/objects/ObjectHeapPriorityQueue.html\r\n\r\nI propose a pip to fix several issues with nack tracker, with a new data structure :\r\n```\r\nLong2ObjectSortedMap<Long2ObjectMap<Roaring64Bitmap>> nackedMessages = new Long2ObjectAVLTreeMap<>();\r\n```\r\nThis PR become the implementation PR for PIP-393: https://github.com/apache/pulsar/pull/23601.\r\nI will implement PIP-393 soon.
+
+There are some issues with the licence.\r\n```\r\nRun src/check-binary-license.sh ./distribution/server/target/apache-pulsar-*-bin.tar.gz\r\nit.unimi.dsi-fastutil-core-8.5.14.jar unaccounted for in LICENSE\r\n\r\nIt looks like there are issues with the LICENSE/NOTICE.\r\n```\r\nShould we replace `fastutil-core` with `fastutil`? @lhotari 
+
+> Run src/check-binary-license.sh ./distribution/server/target/apache-pulsar-*-bin.tar.gz\r\n> it.unimi.dsi-fastutil-core-8.5.14.jar unaccounted for in LICENSE\r\n\r\nI wonder whether it is the problem with the `it.unimi.dsi-fastutil-core-8.5.14.jar`, or i need to configure something to fix this?
+
+The implementation is done, please help to review this PIP, thanks. @lhotari @BewareMyPower @nodece @poorbarcode @dao-jun 
+
+Hi, fellows in pulsar communtiy. Could you help to move this feature forward, thanks. \r\n@lhotari @nodece @Technoboy- @codelipenghui @dao-jun @poorbarcode @congbobo184 
+
+@thetumbled  I added 2 commits to this PR to address the shading. The first commit abcfe5c3888296a8feaf3b003220a5dcd5ac6900 adds a solution for minimizing the number of classes that are included from fastutil to the shaded jars. The second commit a03f415 addresses RoaringBitmap shading which was missing.
+
+Thank you for fixing this!
+
+Will there be a backported fix for the 3.* release line or only 4.*?
+
+> Will there be a backported fix for the 3.* release line or only 4.*?\r\n\r\n@gergelyfabian Yes. The changes in this PR have been cherry-picked to branch-3.0, branch-3.3 and branch-4.0. 
+
+> > Will there be a backported fix for the 3.* release line or only 4.*?\r\n> \r\n> @gergelyfabian Yes. The changes in this PR have been cherry-picked to branch-3.0, branch-3.3 and branch-4.0.\r\n\r\nThank you, very useful.
+
+@dependabot[bot] Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+Closing in favor of #23596
+
+LGTM.\r\n\r\nDo we need to support decoding URL-encoded subscription names in broker side? Thus users can use existing URL-encoded subscription names in HTTP requests.
+
+Can you put it into a method to facilitate the extension of more subscription name restrictions in the future
+
+> HTTP Method {topic name}/{subscription name}\r\n\r\nThe subscription name should be URL-encoded. For example, to create a subscription `a/b` for the topic `persistent://public/default/topic1`, the request should be:  \r\n`PUT /admin/v2/persistent/public/default/topic1/subscription/a%252Fb`.\r\n\r\nI believe `pulsar-admin` and `pulsarctl` already handle this properly.\r\n\r\nI appreciate the approach of restricting naming conventions for subscription and topic names. In my organization, subscription names are limited to the following characters: `a-zA-Z0-9.-_`.
+
+Related PR: #23620
+
+@lhotari \r\n\r\n> I think that we should consider implementing https://github.com/apache/pulsar/issues/23614 to validate subscription names instead of preventing the creation of subscription names with slashes.\r\n\r\nBut should we prevent the creation if the result of the validated subscription name is `false`?\r\n\r\nSent a discussion to do that\r\n- https://lists.apache.org/thread/j8shr3wqr1xdv3rxpth2f53ctnzc1ny1
+
+> Sent a discussion to do that\r\n> \r\n> * https://lists.apache.org/thread/j8shr3wqr1xdv3rxpth2f53ctnzc1ny1\r\n\r\n@poorbarcode I think it makes sense to reference https://github.com/apache/pulsar/issues/23614 and https://github.com/apache/pulsar/pull/23620 in the discussion since those describe useful solutions. They are addressing 2 separate issues.
+
+@KannarFr Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+@zymap Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+@lhotari I fixed the issue and pushed a commit to run the pulsar test [here](https://github.com/zymap/pulsar/pull/62). The root cause is after this fix the fileSystemURI is working which makes the integration tests fail due to the permission issue. Because it used the root path. After changing it to the /pulsar/data, it runs successfully in my local.\r\n
+
+@zymap The comment referenced the test failure, https://github.com/apache/pulsar/actions/runs/11977750391/job/33404574103#step:12:11625\r\n\r\n```\r\n  Error:  Tests run: 6, Failures: 3, Errors: 0, Skipped: 3, Time elapsed: 541.109 s <<< FAILURE! - in TestSuite\r\n  Error:  org.apache.pulsar.tests.integration.offload.TestFileSystemOffload.testPublishOffloadAndConsumeDeletionLag[org.apache.pulsar.tests.integration.topologies.PulsarClusterTestBase$$Lambda$539/0x00007f269061e4b0@7e31d53b, org.apache.pulsar.tests.integration.topologies.PulsarClusterTestBase$$Lambda$540/0x00007f269061e6d8@68d8eb4f](4)  Time elapsed: 45.88 s  <<< FAILURE!\r\n  java.lang.AssertionError: expected [true] but found [false]\r\n  \tat org.testng.Assert.fail(Assert.java:110)\r\n  \tat org.testng.Assert.failNotEquals(Assert.java:1577)\r\n  \tat org.testng.Assert.assertTrue(Assert.java:56)\r\n  \tat org.testng.Assert.assertTrue(Assert.java:66)\r\n  \tat org.apache.pulsar.tests.integration.offload.TestBaseOffload.writeAndWaitForOffload(TestBaseOffload.java:267)\r\n  \tat org.apache.pulsar.tests.integration.offload.TestBaseOffload.writeAndWaitForOffload(TestBaseOffload.java:224)\r\n  \tat org.apache.pulsar.tests.integration.offload.TestBaseOffload.testPublishOffloadAndConsumeDeletionLag(TestBaseOffload.java:307)\r\n  \tat org.apache.pulsar.tests.integration.offload.TestFileSystemOffload.testPublishOffloadAndConsumeDeletionLag(TestFileSystemOffload.java:43)\r\n  \tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n  \tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\r\n  \tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n  \tat java.base/java.lang.reflect.Method.invoke(Method.java:569)\r\n  \tat org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)\r\n  \tat org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)\r\n  \tat org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)\r\n  \tat org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)\r\n  \tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n  \tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)\r\n  \tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)\r\n  \tat java.base/java.lang.Thread.run(Thread.java:840)\r\n  \r\n  Error:  org.apache.pulsar.tests.integration.offload.TestFileSystemOffload.testPublishOffloadAndConsumeViaCLI[org.apache.pulsar.tests.integration.topologies.PulsarClusterTestBase$$Lambda$539/0x00007f269061e4b0@18483b8b, org.apache.pulsar.tests.integration.topologies.PulsarClusterTestBase$$Lambda$540/0x00007f269061e6d8@24fc2c80](4)  Time elapsed: 20.055 s  <<< FAILURE!\r\n  org.apache.pulsar.tests.integration.docker.ContainerExecException: /pulsar/bin/pulsar-admin topics offload-status -w persistent://offload-test-cli-egxb/ns1/topic1 failed on 565f687e87d19742184c52a01ec7db077dd5c4d044f3dcb06d57d19fe4185098 with error code 1\r\n  \tat org.apache.pulsar.tests.integration.utils.DockerUtils$2.onComplete(DockerUtils.java:284)\r\n  \tat org.testcontainers.shaded.com.github.dockerjava.core.exec.AbstrAsyncDockerCmdExec$1.onComplete(AbstrAsyncDockerCmdExec.java:51)\r\n  \tat org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.lambda$executeAndStream$1(DefaultInvocationBuilder.java:276)\r\n  \tat java.base/java.lang.Thread.run(Thread.java:840)\r\n  \r\n  Error:  org.apache.pulsar.tests.integration.offload.TestFileSystemOffload.testPublishOffloadAndConsumeViaThreshold[org.apache.pulsar.tests.integration.topologies.PulsarClusterTestBase$$Lambda$539/0x00007f269061e4b0@20a47036, org.apache.pulsar.tests.integration.topologies.PulsarClusterTestBase$$Lambda$540/0x00007f269061e6d8@70c205bf](4)  Time elapsed: 43.208 s  <<< FAILURE!\r\n  java.lang.AssertionError: expected [true] but found [false]\r\n  \tat org.testng.Assert.fail(Assert.java:110)\r\n  \tat org.testng.Assert.failNotEquals(Assert.java:1577)\r\n  \tat org.testng.Assert.assertTrue(Assert.java:56)\r\n  \tat org.testng.Assert.assertTrue(Assert.java:66)\r\n  \tat org.apache.pulsar.tests.integration.offload.TestBaseOffload.testPublishOffloadAndConsumeViaThreshold(TestBaseOffload.java:182)\r\n  \tat org.apache.pulsar.tests.integration.offload.TestFileSystemOffload.testPublishOffloadAndConsumeViaThreshold(TestFileSystemOffload.java:38)\r\n  \tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n  \tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\r\n  \tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n  \tat java.base/java.lang.reflect.Method.invoke(Method.java:569)\r\n  \tat org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)\r\n  \tat org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)\r\n  \tat org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)\r\n  \tat org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)\r\n  \tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n  \tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)\r\n  \tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)\r\n  \tat java.base/java.lang.Thread.run(Thread.java:840)\r\n  \r\n  [INFO] \r\n  [INFO] Results:\r\n  [INFO] \r\n  Error:  Failures: \r\n  Error:    TestFileSystemOffload.testPublishOffloadAndConsumeDeletionLag:43->TestBaseOffload.testPublishOffloadAndConsumeDeletionLag:307->TestBaseOffload.writeAndWaitForOffload:224->TestBaseOffload.writeAndWaitForOffload:267 expected [true] but found [false]\r\n  Error:    TestFileSystemOffload.testPublishOffloadAndConsumeViaCLI » ContainerExec /pulsar/bin/pulsar-admin topics offload-status -w persistent://offload-test-cli-egxb/ns1/topic1 failed on 565f687e87d19742184c52a01ec7db077dd5c4d044f3dcb06d57d19fe4185098 with error code 1\r\n  Error:    TestFileSystemOffload.testPublishOffloadAndConsumeViaThreshold:38->TestBaseOffload.testPublishOffloadAndConsumeViaThreshold:182 expected [true] but found [false]\r\n```\r\nThat problem got resolved by reverting. @zymap  How did you fix that problem?
+
+/pulsarbot rerun-failure-checks
+
+/pulsarbot rerun-failure-checks
+
+@lhotari \r\nThanks for pointed out, `otel.sdk.disabled=true` is documented in [PIP-320][pip-320], so I think it would be better have a consistent toggle option to enable OTel in pulsar.\r\n\r\n[pip-320]: https://github.com/apache/pulsar/blob/master/pip/pip-320.md#opting-in
+
+Workaround for 4.0.0\n\n```\nexport OTEL_SDK_DISABLED=true\n```
+
+/pulsarbot rerun-failure-checks\r\n
+
+hi, Accouding the [vote thread](https://lists.apache.org/thread/vvytpb2tlovmdrkryyg09flqtv1k5dbr) mentions. I cherry-picked this to branch-4.0, branch-3.3, and branch-3.0
+
+@shibd Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+Vote passed, I will merge this PIP.
+
+@thetumbled Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+@heesung-sn Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+@Demogorgon314 can you help review?
+
+Can you add a test to verify this case that the consumer name is specified?
+
+> Can you add a test to verify this case that the consumer name is specified?\r\n\r\n@hanmz \r\nI added a new test case `testMultipleSameNameConsumersToDeadLetterTopic` to test same name consumers situation. Please review again.
+
+/pulsarbot rerun-failure-checks
+
+/pulsarbot rerun-failure-checks
+
+/pulsarbot rerun-failure-checks
+
+close & reopen to trigger CI
+
+@hanmz Please rebase master branch.
+
+reopen to trigger CI
+
+> @hanmz Please rebase master branch.\r\n\r\nDone, please help me review again
+
+Now the vote passed, could you help approve this PR? @shibd 
+
+@heesung-sn Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+@frankjkelly Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+@zjxxzjwang Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+Please add a test case for the new functionality
+
+Do you have a chance to add a test case?
+
+@codelipenghui @congbobo184  Can you help review this pr?
+
+btw, we probably want to add this bundle load data filtering logic here as well,\r\n\r\nhttps://github.com/apache/pulsar/blob/master/pulsar-broker/src/main/java/org/apache/pulsar/broker/loadbalance/impl/ModularLoadManagerImpl.java#L1125
+
+@heesung-sn Updated. PTAL again.
+
+LGTM
+
+@rdhabalia Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+@dragosvictor @heesung-sn  Please review
+
+ref: https://opentelemetry.io/docs/languages/java/configuration/#properties-exporters
+
+@heesung-sn Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+Okay, I will take a look tomorrow.
+
+Please add the PIP number to the PR title as we usually do.
+
+I have a question: Is the compression process before the messages batched or after?\r\nIf messages are compressed after they are batched, small message problem may be avoided?
+
+Please add the PIP number to the PR title as we usually do.
+
+@liangyepianzhou Regarding performance optimizations for compression in Pulsar, there\
+
+>Have you considered in addressing this performance issue in the Pulsar message compression solution?\r\n\r\nSounds good, maybe I can try optimizing it in other PRs
+
+> > Have you considered in addressing this performance issue in the Pulsar message compression solution?\r\n> \r\n> Sounds good, maybe I can try optimizing it in other PRs\r\n\r\n+1, In the Pulsar code base, we have a special module called `microbench` for microbenchmarks with JMH, https://github.com/apache/pulsar/tree/master/microbench . Testing performance with JMH could be useful for such improvements.
+
+> > > Have you considered in addressing this performance issue in the Pulsar message compression solution?\r\n> > \r\n> > \r\n> > Sounds good, maybe I can try optimizing it in other PRs\r\n> \r\n> +1, In the Pulsar code base, we have a special module called `microbench` for microbenchmarks with JMH, https://github.com/apache/pulsar/tree/master/microbench . Testing performance with JMH could be useful for such improvements.\r\n\r\nThanks for the reminder.
+
+> @liangyepianzhou Regarding performance optimizations for compression in Pulsar, there\
+
+> @lhotari I try to optimize it yesterday. but I found that Pulsar did not use `CompositeByteBuf` when sending messages. Single sending uses `io.netty.buffer.UnpooledHeapByteBufmemory`, while batch sending uses `io.netty.buffer.PooledUnsafeDirectByteBufmemory`. They all have memory addresses or\r\n> array, so the current implementation already uses zero copy. It seems that there is no need to optimize?\r\n> And the example you gave, `CompressionCodecSnappyJNI.java`, is a compression class used in testing. It seems that there is no need to compress it.\r\n\r\n@liangyepianzhou I created #23586 to clarify the possible optimization.
+
+@lhotari Do you have time to review the code changes for [pip-389](https://lists.apache.org/thread/xv7x3vmycxzsrhbdo7vmssh8lxxzyxd5) that have been approved on the mailing list?\r\nThank you!
+
+@ZhaoGuorui666 Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+Could you verify https://github.com/apache/pulsar/pull/23518/files#diff-42dd67f8328871b3f0d30446ed1a4f1856807860c5226a9ec6c4d3a9f8813428R4882? Hrere should append a `return`.
+
+I understand the `ManagedCursorImpl.recoverFromLedger()` called by the bottom layer of this test, which calls `Bookeeper.syncOpenLedger()` instead of `TestPulsarMockBookKeeper`\r\n\r\n![image](https://github.com/user-attachments/assets/ee6f1171-3f34-4998-b984-9493e830c080)\r\n\r\n![image](https://github.com/user-attachments/assets/38b08936-6c32-4b78-858e-dbd13af5193e)\r\n
+
+Execute 3000 times, all passed\r\n![image](https://github.com/user-attachments/assets/ab252c30-6d50-4899-ae6a-3ff246546e82)\r\n
+
+In this test, we are using `org.apache.bookkeeper.mledger.impl.ManagedCursorTest.TestPulsarMockBookKeeper`.\r\n\r\n`ManagedCursorImpl.recoverFromLedger()` will call this method from that:\r\n```\r\n  public void asyncOpenLedger(final long lId, final DigestType digestType, final byte[] passwd,\r\n                final OpenCallback cb, final Object ctx) {\r\n            if (ledgerErrors.containsKey(lId)) {\r\n                cb.openComplete(ledgerErrors.get(lId), null, ctx);\r\n                return; // TODO: Please add a return.\r\n            }\r\n            super.asyncOpenLedger(lId, digestType, passwd, cb, ctx);\r\n        }\r\n```\r\n\r\nIt seems that the test results were affected by multiple callback calls.
+
+@nodece Thank you for your prompt and suggestion. It has been revised.
+
+@heesung-sn Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+@heesung-sn is there a need to backport this change?
+
+Do we still maintain 3.x branches? I thought we maintain 4.x only now.\r\n\r\nWe can backport this to 3.3 and 4.0.
+
+> Do we still maintain 3.x branches? I thought we maintain 4.x only now.\r\n> \r\n> We can backport this to 3.3 and 4.0.\r\n\r\n@heesung-sn We follow the schedule available at https://pulsar.apache.org/contribute/release-policy/#supported-versions . branch-3.3 will stop being in active maintenance in about 1 month. 3.0.x is maintained until May 2025.\r\n\r\n
+
+cherry-pick pr to 3.3 https://github.com/apache/pulsar/pull/23580
+
+`org.apache.pulsar.client.api.BrokerServiceLookupTest#testLookupConnectionNotCloseIfGetUnloadingExOrMetadataEx` should be a flaky test.
+
+@lhotari @BewareMyPower @poorbarcode @heesung-sn This PR description has been updated, could you have a chance to review this PR? 
+
+> Please notice that the org.apache.pulsar.client.api.BrokerServiceLookupTest.BundleOfTopic class in the test.\r\n> \r\n>         private void releaseBundleLockAndMakeAcquireFail() throws Exception {\r\n>             ownedBundlesCache.synchronous().invalidateAll();\r\n>             mockZooKeeper.delete(ServiceUnitUtils.path(namespaceBundle), -1);\r\n>             mockZooKeeper.setAlwaysFail(KeeperException.Code.OPERATIONTIMEOUT);\r\n>         }\r\n> This method directly discards the cache and deletes zk data, which may break the test case.\r\n> \r\n> I will double-check the ownership mechanism to avoid the racing condition.\r\n> \r\n\r\n\r\nThis sounds like this ownership metadata and cache inconsistency issue only occurs from the wrong test setup. Should we just fix the test code in this case? 
+
+> This sounds like this ownership metadata and cache inconsistency issue only occurs from the wrong test setup.\r\n\r\n@heesung-sn Sure, this is the root cause.\r\n\r\n> Should we just fix the test code in this case?\r\n\r\nIn one case, the user may delete the ownership on the zk. This PR can fix this issue and help the user recover ownership.\r\n\r\nWhat do you think that?\r\n
+
+> In one case, the user may delete the ownership on the zk. This PR can fix this issue and help the user recover ownership.\r\n\r\nPlease consider adding comments to explain this.\r\n\r\nI think this PR is useful to fix the possible inconsistency state, although I think that we better fix the root cause that makes this inconsistency state, if possible.\r\n\r\n\r\n\r\n\r\n\r\n
+
+@heesung-sn Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+@BewareMyPower @lhotari @Technoboy- PTAL~
+
+@heesung-sn Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+@BewareMyPower @lhotari PTAL, thanks
+
+/pulsarbot run-failure-checks
+
+@mattisonchao Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+> It looks the CompletableFuture.supplyAsync(() -> clientCnx, clientCnx.ctx().executor()); can fix this issue, but I don’t understand this fix way.\n\nIndeed, it would be more consistent to use `thenComposeAsync` to switch the executor for all code branches instead of just a single branch.
+
+> > You call the sync method in the async callback thread, this is an incorrect way. I don\
+
+/pulsarbot rerun-failure-checks
+
+@heesung-sn Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+@coderzc PTAL~
+
+/pulsarbot rerun-failure-checks
+
+Thanks for the contribution, @hanmz. Would you be able to add a test case to cover this change?
+
+Closing and reopening to trigger a new CI run
+
+/pulsarbot rerun-failure-checks
+
+reopen to trigger ci
+
+Finding the test that was running when the heap dump was created can be found in Eclipse MAT with OQL query `select * from org.testng.internal.TestResult where m_status = 16`\r\n\r\n<img width="944" alt="image" src="https://github.com/user-attachments/assets/86bb6cdd-bfa0-4af0-9302-34af94d3b209">\r\n\r\n
+
+Getting registered invocations with [Eclipse MAT Calcite SQL](https://github.com/vlsi/mat-calcite-plugin) query that are contributing to the OOM:\r\n```sql\r\nselect SUM(invocationCount) AS total_invocations, m from (select cast(registeredInvocations[\
+
+Closing and reopening to get Pulsar CI unblocking changes included.
+
+Thanks for contributing, @dao-jun 
+
+@IZUMI-Zu Thanks for the contribution! Please submit a similar PR to https://github.com/apache/bookkeeper 
+
+@lhotari Thank you for the feedback! I have created a similar PR for Apache BookKeeper as requested: https://github.com/apache/bookkeeper/pull/4515. Please let me know if any further adjustments are needed.
+
+/pulsarbot rerun-failure-checks
+
+/pulsarbot rerun-failure-checks
+
+/pulsarbot rerun-failure-checks
+
+There is a PIP to improve this case https://github.com/apache/pulsar/pull/23351, which is better than just handle the ServiceNotReady exception. I will close this PR.
+
+@pdolif Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+<img width="1068" alt="image" src="https://github.com/user-attachments/assets/ab78c94f-a970-4596-9368-ba873f6652bd">\r\n\r\nIt works in my local env now. Just a note that the `-XX:+ZGenerational` option should be removed from the `@ext:redhat.java`\
+
+<img width="1880" alt="59778ea0-ce0c-47ee-aa1d-4a0efb710c53" src="https://github.com/user-attachments/assets/6853619c-a25a-4ad9-9f19-32c0ac937b5d">\r\n\r\nI\
+
+`ServiceUnitStateChannelTest.testOverrideOrphanStateData` failed, I will take a look.
+
+I fixed the test. And I also found the process on `NotFoundException` is unnecessary.\r\n\r\n<img width="1604" alt="image" src="https://github.com/user-attachments/assets/23946778-208b-468b-ad44-7da683843240">\r\n\r\nThe `testCloseAfterLoadingBundles` could still succeed even if we don\
+
+@rdhabalia Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+Closed and reopened to get Pulsar CI to run with fix PR #23431
+
+@psxjoy Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+It looks like we need to wait for Hadoop 3.4.1 release to complete: https://issues.apache.org/jira/browse/HADOOP-19237 
+
+"Exclude the META-INF/services/java.net.spi.InetAddressResolverProvider from your project" is mentioned as a workaround in https://github.com/dnsjava/dnsjava/issues/338. Related Hadoop PR https://github.com/apache/hadoop/pull/7070/files . I guess that there might be ways to exclude and disable dnsjava too. However Hadoop 3.4.1 release would be useful.
+
+> In `contextImpl.java` the `getConsumer()` - When trying to get partitioned topic consumer it throws error consumer not found.\r\n> Instead show error message that partitioned topic not present.\r\n> Also reduces computation to search for consumer.\r\n\r\n@nikam14 Could you please provide more context about the specific use case where you encountered this issue? It would be helpful to understand:\r\n\r\n1. What were you trying to accomplish?\r\n2. What did you expect to happen?\r\n3. What actually happened instead?\r\n\r\nThis additional information will help us better understand the impact on end-users and ensure our solution addresses the root cause effectively.
+
+changes are covered in `testGetConsumer()-ContextImplTest`.\r\nIn `testGetConsumer()` test function we can see if user is trying to get a consumer of partitioned topic it will get error message that " no partitioned topic present ", which means there is no consumer with partitioned topic.\r\n\r\n
+
+> changes are covered in `testGetConsumer()-ContextImplTest`. In `testGetConsumer()` test function we can see if user is trying to get a consumer of partitioned topic it will get error message that " no partitioned topic present ", which means there is no consumer with partitioned topic.\r\n\r\nOk. What is the current error message without this change?
+
+> changes are covered in `testGetConsumer()-ContextImplTest`. In `testGetConsumer()` test function we can see if user is trying to get a consumer of partitioned topic it will get error message that " no partitioned topic present ", which means there is no consumer with partitioned topic.\r\n\r\nthis is not a end user test case. It\
+
+@rdhabalia Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+\r\n> Sure, I was suggesting to send a failure `ServerError.Throttled` to producer as it is just a notification from server to client. and let client receive this error during publish and do necessary backoff.\r\n\r\nAh got it now. So there are a few reasons for this not being a "response" to a send request :\r\n* `CommandSendError` command doesn\
+
+@rdhabalia \r\n\r\nAnswered in discussion channel, we should do this. User can delete the broken schemas manually when they received such error if they wanted\r\n\r\n- Discussion channel: https://lists.apache.org/list.html?dev@pulsar.apache.org\r\n\r\n---\r\n\r\n@vineeth1995 \r\n\r\nDo you know the risk of this PR before you approved it? Could you join this discussion and throw your point?
+
+created PR: https://github.com/apache/pulsar/pull/23428 it will switch back to previous behavior unless force-flag is configured and ledger error is non-recoverable. 
+
+@dependabot[bot] Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+This change conflicts with this one, https://github.com/apache/pulsar/pull/23382. I also added a retry logic in this PR, and I think we need to run the listeners after registering the lock. Otherwise, there can be a racing condition between orphan bundle cleanup and the lock recreation.
+
+> Add option in broker and proxy to optionally prevent them from logging role or orignalPrincipal. If the option is activated they will log `[REDACTED]`.\r\n\r\nDo you have a chance to share some details of the use case where this is needed? Does the role contain sensitive information? Is this a compliance requirement to not log it?
+
+> > Add option in broker and proxy to optionally prevent them from logging role or orignalPrincipal. If the option is activated they will log `[REDACTED]`.\r\n> \r\n> Do you have a chance to share some details of the use case where this is needed? Does the role contain sensitive information? Is this a compliance requirement to not log it?\r\n\r\nWe use token-based authN/authZ, so the role contains the token. This PR will remove logging them and reduce log storage as we produce like 30 log/s just for logging role content (with a 500bytes token).
+
+@lhotari I defined two configuration keys for broker and proxy. One anonymizes using SHA-256. The other put REDACTED. Is that ok?
+
+> @lhotari I defined two configuration keys for broker and proxy. One anonymizes using SHA-256. The other put REDACTED. Is that ok?\r\n\r\n@KannarFr good progress, I added review comments.
+
+> Great work @KannarFr! 2 minor comments remaining. It would be good to document this as a PIP since most new features are documented that way. You can take a minimal approach for the PIP document and cover the relevant details that are provided in this PR.\r\n\r\nDone!
+
+@heesung-sn please add the release labels that this applies to.
+
+I realized we need to add more validation upon this broker delete/create notifications as these notification could be "out-dated".
+
+@heesung-sn I ran into a hanging test recently. Is this something that is related?\r\n\r\nZkSessionExpireTest.cleanup hangs in `ModularLoadManagerImpl.disableBroker`\r\n\r\n```\r\n"main" #1 [2383] prio=5 os_prio=0 cpu=101566.56ms elapsed=3520.41s tid=0x00007f3618030a30 nid=2383 waiting on condition  [0x00007f3621f54000]\r\n   java.lang.Thread.State: WAITING (parking)\r\n\tat jdk.internal.misc.Unsafe.park(java.base@21.0.4/Native Method)\r\n\t- parking to wait for  <0x0000100041604dc8> (a java.util.concurrent.CompletableFuture$Signaller)\r\n\tat java.util.concurrent.locks.LockSupport.park(java.base@21.0.4/LockSupport.java:221)\r\n\tat java.util.concurrent.CompletableFuture$Signaller.block(java.base@21.0.4/CompletableFuture.java:1864)\r\n\tat java.util.concurrent.ForkJoinPool.unmanagedBlock(java.base@21.0.4/ForkJoinPool.java:3780)\r\n\tat java.util.concurrent.ForkJoinPool.managedBlock(java.base@21.0.4/ForkJoinPool.java:3725)\r\n\tat java.util.concurrent.CompletableFuture.waitingGet(java.base@21.0.4/CompletableFuture.java:1898)\r\n\tat java.util.concurrent.CompletableFuture.join(java.base@21.0.4/CompletableFuture.java:2117)\r\n\tat org.apache.pulsar.broker.loadbalance.impl.ModularLoadManagerImpl.disableBroker(ModularLoadManagerImpl.java:603)\r\n\tat org.apache.pulsar.broker.loadbalance.impl.ModularLoadManagerWrapper.disableBroker(ModularLoadManagerWrapper.java:47)\r\n\tat org.apache.pulsar.broker.service.BrokerService.unloadNamespaceBundlesGracefully(BrokerService.java:949)\r\n\tat org.apache.pulsar.broker.service.BrokerService.unloadNamespaceBundlesGracefully(BrokerService.java:936)\r\n\tat org.apache.pulsar.broker.PulsarService.closeAsync(PulsarService.java:520)\r\n\tat org.apache.pulsar.broker.PulsarService.close(PulsarService.java:479)\r\n\tat org.apache.pulsar.broker.service.NetworkErrorTestBase.cleanup(NetworkErrorTestBase.java:215)\r\n\tat org.apache.pulsar.broker.service.ZkSessionExpireTest.cleanup(ZkSessionExpireTest.java:50)\r\n```\r\n\r\n\r\nThread dump: https://gist.github.com/lhotari/68578ba1354d4833af489b9ac3658c8c\r\nAnalysed in jstack.review: https://jstack.review/?https://gist.github.com/lhotari/68578ba1354d4833af489b9ac3658c8c#tda_1_dump\r\n\r\nI created #23388 and #23389 for ZkSessionExpireTest flakiness issues that appeared in subsequent builds.
+
+> @heesung-sn I ran into a hanging test recently. Is this something that is related?\r\n\r\nPotentially, I think this could be related, regarding why the broker registry lock creation didn\
+
+@heesung-sn Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+slightly related #18263
+
+@dlg99 please address the review feedback, https://github.com/apache/pulsar/pull/23380#pullrequestreview-2339343482. 
+
+> Create a producer asynchronously in the org.apache.pulsar.broker.intercept.BrokerInterceptor#onPulsarCommand.\r\n\r\nIs this the only case where this can be reproduced?
+
+> > Create a producer asynchronously in the org.apache.pulsar.broker.intercept.BrokerInterceptor#onPulsarCommand.\r\n> \r\n> Is this the only case where this can be reproduced?\r\n\r\nAt present, it looks like this.\r\n\r\n> @nodece I think that the correct solution would be to call `new BaseCommand().copyFrom(command)` in the interceptor to make a copy of the command. That\
+
+Do you have any suggestions or recommendations for resolving this issue?
+
+@lhotari Your comment has been taken care of.
+
+Any updates?
+
+> Any updates?\r\n\r\n@nodece I added a few review comments.
+
+Ping @lhotari 
+
+Ping @lhotari 
+
+It was cherry-picked to the `branch-3.0` by https://github.com/apache/pulsar/pull/23461.
+
+@lhotari Thanks for your reminder! I sent a [notice](https://lists.apache.org/thread/4h6om2bh7xpw13k4lvwjbb1w2x6r3n4z) to the dev mailing list.\r\n\r\n> Are you going to test branch-3.0 with this change?\r\n\r\nI tested this change in a private ecosystem, it works fine.
+
+Claude AI response to question "what is the difference in starting java with "java -client" or "java -server" in Java 17 ?":\r\n\r\n> # Difference between "java -client" and "java -server" in Java 17\r\n> \r\n> In Java 17, there is no functional difference between starting Java with `java -client` or `java -server`. These flags are essentially deprecated and ignored. Here\
+
+It seems that this failed test was not detected by CI. At least it was not exposed in the latest PR:\r\n\r\n<img width="995" alt="image" src="https://github.com/user-attachments/assets/282bccf0-74df-44fe-8ca3-c8019563d517">\r\n\r\nWe\
+
+> the test is in the quarantine group. The reporting is very unnoticeable at the moment. \r\n\r\nWhere do these tests run? Could you point out a workflow for example?
+
+It looks like test image building fails due to missing supervisor package. It is available also with pip install: http://supervisord.org/installing.html
+
+> It looks like test image building fails due to missing supervisor package. It is available also with pip install: http://supervisord.org/installing.html\r\n\r\nsupervisor has been installed, but there is some remaining issue.
+
+This is a regression in the Alpine image since 3.3.x.\r\n\r\nI did some manual testing to see why the native library cannot be loaded.\r\n\r\n```\r\n237d36ef299c:/tmp/META-INF/native# ldd libconscrypt_openjdk_jni-linux-x86_64.so\r\n\t/lib/ld-musl-x86_64.so.1 (0x7ffffff5d000)\r\n\tlibstdc++.so.6 => /usr/lib/libstdc++.so.6 (0x7fffff06b000)\r\n\tlibpthread.so.0 => /lib/ld-musl-x86_64.so.1 (0x7ffffff5d000)\r\n\tlibm.so.6 => /lib/ld-musl-x86_64.so.1 (0x7ffffff5d000)\r\n\tlibgcc_s.so.1 => /usr/lib/libgcc_s.so.1 (0x7fffff047000)\r\n\tlibc.so.6 => /lib/ld-musl-x86_64.so.1 (0x7ffffff5d000)\r\n\tld-linux-x86-64.so.2 => /lib/ld-linux-x86-64.so.2 (0x7fffff011000)\r\nError relocating /lib/ld-linux-x86-64.so.2: unsupported relocation type 37\r\n```\r\nthis is similar to #22804 error message.\r\n\r\nand\r\n\r\n```\r\n237d36ef299c:/tmp/META-INF/native# /usr/glibc-compat/bin/ldd libconscrypt_openjdk_jni-linux-x86_64.so\r\n./libconscrypt_openjdk_jni-linux-x86_64.so: /usr/lib/libstdc++.so.6: no version information available (required by ./libconscrypt_openjdk_jni-linux-x86_64.so)\r\n./libconscrypt_openjdk_jni-linux-x86_64.so: /usr/lib/libstdc++.so.6: no version information available (required by ./libconscrypt_openjdk_jni-linux-x86_64.so)\r\n./libconscrypt_openjdk_jni-linux-x86_64.so: /usr/lib/libstdc++.so.6: no version information available (required by ./libconscrypt_openjdk_jni-linux-x86_64.so)\r\n\tlibstdc++.so.6 => /usr/lib/libstdc++.so.6 (0x00007ffffef67000)\r\n\tlibpthread.so.0 => /usr/glibc-compat/lib/libpthread.so.0 (0x00007fffff7bf000)\r\n\tlibm.so.6 => /usr/glibc-compat/lib/libm.so.6 (0x00007fffff6df000)\r\n\tlibgcc_s.so.1 => /usr/lib/libgcc_s.so.1 (0x00007fffff6bb000)\r\n\tlibc.so.6 => /usr/glibc-compat/lib/libc.so.6 (0x00007ffffed25000)\r\n\t/usr/glibc-compat/lib64/ld-linux-x86-64.so.2 (0x00007ffffffca000)\r\n\tlibc.musl-x86_64.so.1 => /lib/libc.musl-x86_64.so.1 (0x00007ffffec82000)\r\n```\r\n\r\nI wonder if using Alpine is the correct solution when mixing musl and glibc at runtime:\r\nhttps://github.com/sgerrand/alpine-pkg-glibc/issues/80#issuecomment-2186867224\r\n\r\nAnother comment against mixing musl and glibc at runtime:\r\nhttps://github.com/sgerrand/alpine-pkg-glibc/issues/194#issuecomment-1510140972\r\n\r\n> Yeah, fair enough - I have also seen it in cases where there is an accidental attempt to mix musl and glibc-linked binaries. I got a similar error using a musl JVM build with a different glibc native load library. Tend to agree with you that this is a common mixing problem and probably always a risk to some extent when using glibc on Alpine. You really need everything pure musl, or everything musl (but works with gcompat or libc6-compat shim-like tools...) or everything glibc using this package)\r\n> \r\n> Problems like this are the reasons that a number of the folks on the Alpine team are quite against packages and approaches like this to put glibc back onto a musl-based OS such as Alpine (despite its utility they would seemingly prefer folks use a minimal glibc-based distro instead of Alpine)\r\n\r\nThe comment "You really need everything pure musl, or everything musl (but works with gcompat or libc6-compat shim-like tools...) or everything glibc using this package)" is something that is concerning. @merlimat Any thoughts on that?
+
+Testing again in https://github.com/apache/pulsar-helm-chart/pull/530 .\r\nI patched the 4.0.0-preview.1 image with this type of `Dockerfile`:\r\n```\r\nARG IMAGE=apachepulsar/pulsar-all\r\nARG TAG=4.0.0-preview.1\r\nFROM ${IMAGE}:${TAG}\r\nUSER 0\r\nRUN apk add openssl\r\nUSER 10000\r\n```
+
+There seem to be additional problem, https://github.com/apache/pulsar-helm-chart/actions/runs/11074466958/job/30773380309?pr=530
+
+> There seem to be additional problem, https://github.com/apache/pulsar-helm-chart/actions/runs/11074466958/job/30773380309?pr=530\r\n\r\nThis is a problem in the Helm chart:\r\n```\r\n[pod/pulsar-ci-zookeeper-0/pulsar-ci-zookeeper] pkcs12: Can\
+
+Apache Pulsar Helm chart fix in progress in https://github.com/apache/pulsar-helm-chart/pull/531
+
+@yuweisung Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+> Alpine pthread stack size is too small. In some cases, the pod will be oomkilled due to "cannot create native thread".\r\n\r\nPlease share more details of the error message so that it would be possible to find this PR by searching with the error message. It would be great to have a way to reproduce. \r\n\r\nPlease also share more context for reviewers so that a reviewer could read from some reference what this is about.
+
+This would become obsolete with #23366
+
+Triggering CI with fix #23431 
+
+@poorbarcode Please also handle cherry-picking to branch-3.0 and branch-3.3 
+
+@heesung-sn \r\n\r\n> It appears that this PR fails the test in branch-3.3.\r\n\r\nSure, it will be fixed by the PR: https://github.com/apache/pulsar/pull/23522
+
+I wonder if we need to periodically check this broker registration lock in the monitor thread as well for better fault tolerance.
+
+> periodically check this broker registration lock in the monitor thread as well for better fault tolerance.\r\n\r\nYeah it can handle the case when there is a bug with the metadata store client. But even if it has a bug, we can easily find it from the alerts and fix it by manually restarting the broker or creating the metadata node. Therefore, I neither support nor oppose this idea.
+
+This PR introduced a flaky test #23365, @BewareMyPower do you have a chance to fix it?
+
+I created #24057 which is a similar issue.
+
+The vote has passed, merging.
+
+> In SchemaRegistryServiceImpl.java there are two `getSchema()` methods.\r\n> 1 - `getSchema(String schemaId)`\r\n> 2 - `getSchema(String schemaId, SchemaVersion version)`\r\n> In the first method after getting Schema it is checked that whether the Schema is deleted or not. In Second method it is not checked when Schema.version=Latest .\r\n> Adding the check can improve code.\r\n\r\nInstead of explaining how the code is implemented, please explain why it was a problem instead. You can show this is a test too.
+
+These changes not cover any issue.\r\nChanges are covered by existing tests.\r\nThis PR just improves code.
+
+> These changes not cover any issue. Changes are covered by existing tests. This PR just improves code.\r\n\r\n@nikam14 That doesn\
+
+changes are covered in Test `addLotsOfEntriesThenDelete()-SchemaServiceTest.java`. No need to add test case.
+
+> changes are covered in Test `addLotsOfEntriesThenDelete()-SchemaServiceTest.java`. No need to add test case.\r\n\r\nplease check my comment https://github.com/apache/pulsar/pull/23354#issuecomment-2410666125 . What is the potential future issue you would like to prepare for? Could you please add a test case for that?
+
+This fix might change some behaviors, I will try to fix the root cause
+
+I reverted the changes to `Free` events and disabled all events except the override events (whose `force` field is true) during `cleanOwnerships()`, PTAL again @heesung-sn 
+
+I reran the `ExtensibleLoadManagerCloseTest` for 20 times locally on the latest commit \r\nd429420 and it never failed. Some unnecessary changes are reverted. PTAL again @heesung-sn 
+
+<img width="1006" alt="image" src="https://github.com/user-attachments/assets/692f459f-65cd-47fc-b912-7fa84ecea2a2">\r\n\r\n`ExtensibleLoadManagerImplTest` passed locally now. Let\
+
+@rdhabalia Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+/pulsarbot rerun-failure-checks
+
+/pulsarbot rerun-failure-checks
+
+Converted to draft, some tests have failed.\r\n
+
+/pulsarbot rerun-failure-checks
+
+The `mvn deploy` includes package phase, this causes the jetcd to relocate multiple times.\r\n
+
+> The `mvn deploy` includes package phase, this causes the jetcd to relocate multiple times.\n> \n\n@nodece is there a way to address that? It might get triggered in our releases too.
+
+I checked the Pulsar release document, it is correct.\r\n\r\n“mvn deploy” is correct, “mvn install deploy” is incorrect.
+
+@poorbarcode Please add the following content to your PR description and select a checkbox:\n```\n- [ ] `doc` <!-- Your PR contains doc changes -->\n- [ ] `doc-required` <!-- Your PR changes impact docs and you will update later -->\n- [ ] `doc-not-needed` <!-- Your PR changes do not impact docs -->\n- [ ] `doc-complete` <!-- Docs have been already added -->\n```
+
+Any chance to add a test case?
+
+> Any chance to add a test case?\r\n\r\n@poorbarcode @Technoboy- any chance to handle this?
+
+@poorbarcode Do you have a chance to follow up on the review comment?
+
+> @poorbarcode Do you have a chance to follow up on the review comment?\r\n\r\nAnswered here: https://github.com/apache/pulsar/pull/23336#discussion_r1865112171
+
+Rebase master
+
+/pulsarbot rerun-failure-checks
+
+> Reduce the docker image size.\n\nPlease provide more context in the description.\nHow much does this actually reduce the size?
+
+/pulsarbot rerun-failure-checks
+
+```\r\nPackage: temurin-17-jdk\r\nVersion: 17.0.6.0.0+10\r\nArchitecture: amd64\r\nMaintainer: Eclipse Adoptium Package Maintainers <temurin-dev@eclipse.org>\r\nInstalled-Size: 321706\r\nDepends: adoptium-ca-certificates, java-common, libasound2, libc6, libx11-6, libfontconfig1, libfreetype6, libxext6, libxi6, libxrender1, libxtst6, zlib1g\r\nRecommends: fonts-dejavu-core, fonts-dejavu-extra\r\nProvides: java-compiler, java-runtime, java-runtime-headless, java-sdk, java-sdk-headless, java10-runtime, java10-runtime-headless, java10-sdk, java10-sdk-headless, java11-runtime, java11-runtime-headless, java11-sdk, java11-sdk-headless, java12-runtime, java12-runtime-headless, java12-sdk, java12-sdk-headless, java13-runtime, java13-runtime-headless, java13-sdk, java13-sdk-headless, java14-runtime, java14-runtime-headless, java14-sdk, java14-sdk-headless, java15-runtime, java15-runtime-headless, java15-sdk, java15-sdk-headless, java16-runtime, java16-runtime-headless, java16-sdk, java16-sdk-headless, java17-runtime, java17-runtime-headless, java17-sdk, java17-sdk-headless, java2-runtime, java2-runtime-headless, java2-sdk, java2-sdk-headless, java5-runtime, java5-runtime-headless, java5-sdk, java5-sdk-headless, java6-runtime, java6-runtime-headless, java6-sdk, java6-sdk-headless, java7-runtime, java7-runtime-headless, java7-sdk, java7-sdk-headless, java8-runtime, java8-runtime-headless, java8-sdk, java8-sdk-headless, java9-runtime, java9-runtime-headless, java9-sdk, java9-sdk-headless\r\nSection: java\r\nPriority: optional\r\nDescription: Eclipse Temurin 17 JDK\r\n Eclipse Temurin JDK is an OpenJDK-based development environment to create\r\n applications and components using the programming language Java.\r\nFilename: pool/main/t/temurin-17/temurin-17-jdk_17.0.6.0.0+10_amd64.deb\r\nSHA1: 6fc4f3339da47dd474edc5a2cb10c362fe4e1c60\r\nSHA256: 9e958aa6009514764ec7120117b2dd85350fb706635433743d7fe8dac6578a55\r\nSize: 164880620\r\n```\r\n\r\n`fonts-dejavu-core` and  `fonts-dejavu-extra` looks unnecessary.\r\n\r\nOur private version has already merged this feature, and once there are no issues during testing, I will create a PIP to improve this.
+
+I still think this is a still failure case. Can we add a "reason" label instead of adding a new metric?
+
+@heesung-sn \r\n\r\n> I still think this is a still failure case. Can we add a "reason" label instead of adding a new metric?\r\n\r\nI will start a PIP for this metric, it is useful to detect the following issue:\r\n- https://github.com/apache/pulsar/pull/23018\r\n- DNS error: The client wants to connect to `broker-0.io`, but the client gets an IP from `broker-1`\r\n\r\n---\r\n\r\nUpdate on 2024-09-26 02:05 UTC\r\n- PIP: https://github.com/apache/pulsar/pull/23351\r\n\r\nSince the PIP is in-progress, I mark this PR as `Draft`
+
+closing and reopening to trigger CI
+
+I renamed this to "reduce" out-of-order issues since I\
+
+> I\
+
+One detail that I noticed in ee7a83e7945ca966e7b47fde589179469f4e71b9 is that by increasing the hash ring points from 100 to 200, it will improve the even distribution across the consumers a lot.
+
+@lhotari How about just adding a rehash method for the consumer will put to the same position in the Hash Ring? The benefits for this solution:\r\n\r\n- Less memory overhead (we don\
+
+> @lhotari How about just adding a rehash method for the consumer will put to the same position in the Hash Ring? The benefits for this solution:\r\n\r\n@codelipenghui There wouldn\
+
+> As you mentioned increasing the hash ring points from 100 to 200". It should be more common way for users to get a better distribution to increase the ring points, but for the existing solution or new solution in this PR will use much more heap memory that user expected because we will create list or map for each point. If they have 100 consumers (not a very large case), we will have 20k lists or maps.\r\n\r\nThis PR doesn\
+
+`ExtensibleLoadManagerCloseTest` failed now. Let me take a look
+
+The latest commit might cause some infinite loops. Let me investigate the failed tests.
