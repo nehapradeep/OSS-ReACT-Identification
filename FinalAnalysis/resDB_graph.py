@@ -3,7 +3,6 @@ import seaborn as sns
 from sklearn.metrics import confusion_matrix, f1_score
 import numpy as np
 
-# Updated data from code analysis (predicted labels)
 code_analysis = [
     "Yes", "Yes", "Yes", "No", "No", "Yes", "Yes", "No", "Yes", "No", "Yes", "Yes", 
     "No", "No", "No", "Yes", "Yes", "No", "Yes", "Yes", "No", "No", "No", "No", 
@@ -13,7 +12,6 @@ code_analysis = [
     "Yes", "No", "Yes", "No", "No"
 ]
 
-# Updated data from manual analysis (true labels)
 manual_analysis = [
     "Yes", "Yes", "Yes", "Yes", "No", "Yes", "Yes", "No", "Yes", "No", "Yes", "Yes", 
     "<>", "No", "No", "Yes", "Yes", "No", "Yes", "Yes", "Yes", "Yes", "No", "Yes", 
@@ -23,7 +21,6 @@ manual_analysis = [
     "Yes", "No", "Yes", "Yes", "No", "Yes", "No", "No"
 ]
 
-# Mapping "Yes" to 1, "No" to 0, and ignoring "N/A" and "<>"
 def map_labels(data):
     return [1 if label == "Yes" else 0 if label == "No" else None for label in data]
 
@@ -42,20 +39,19 @@ cm = confusion_matrix(filtered_true_labels, filtered_predicted_labels)
 f1 = f1_score(filtered_true_labels, filtered_predicted_labels)
 
 # Plot the confusion matrix using seaborn heatmap with borders
-plt.figure(figsize=(6, 4))  # Adjusted the height of the figure
+plt.figure(figsize=(6, 4))
 sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', cbar=False, 
             xticklabels=['Predicted No', 'Predicted Yes'], 
             yticklabels=['Actual No', 'Actual Yes'],
-            linewidths=1, linecolor='white')  # Added borders between the cells
-plt.title('Confusion Matrix')
+            linewidths=1, linecolor='white')
+plt.title('ResDB')
 plt.xlabel('Predicted Labels')
 plt.ylabel('Actual Labels')
 
-# Adjust the layout to reduce the space for F1 score
-plt.subplots_adjust(bottom=0.15)  # Decreased bottom margin
+plt.subplots_adjust(bottom=0.06)
 
 # Display the F1 score below the plot in red (adjust color as per your need)
-plt.figtext(0.5, -0.12, f'F1 Score: {f1:.2f}', ha='center', va='center', fontsize=12, color='crimson', weight='bold')
+plt.figtext(0.5, -0.12, f'F1 Score: {f1:.2f}', ha='center', va='center', fontsize=14, color='crimson', weight='bold')
 
 # Save the plot as a PNG file
 plt.savefig('resDB_graph_result.png', bbox_inches='tight')
