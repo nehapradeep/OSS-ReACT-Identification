@@ -1,0 +1,544 @@
+PR #17064: [Improvement-17063][UI][DATASYNC] Improvement datasync json parameter validate (State: open)
+URL: https://github.com/apache/dolphinscheduler/pull/17064
+Created at: 2025-03-17T03:51:09Z, Merged at: None
+================================================================================
+PR #17062: [Improvement-17061] Improvement linkis option parameters default  show (State: open)
+URL: https://github.com/apache/dolphinscheduler/pull/17062
+Created at: 2025-03-17T02:59:35Z, Merged at: None
+================================================================================
+PR #17058: [Improvement-17057][Master]Check if the WorkflowGrapth is a dag at constructor (State: open)
+URL: https://github.com/apache/dolphinscheduler/pull/17058
+Created at: 2025-03-14T10:02:56Z, Merged at: None
+================================================================================
+PR #17054: [Fix-17055] Fix nextBranch is empty in switch task (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/17054
+Created at: 2025-03-13T03:38:17Z, Merged at: 2025-03-14T05:45:53Z
+================================================================================
+PR #17053: [Fix-17052][UI]Fix ui-setting route with the same name  (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/17053
+Created at: 2025-03-13T01:37:19Z, Merged at: 2025-03-14T10:24:53Z
+================================================================================
+PR #17051: [Fix-17050][Master] Fix workflow graph topology logical error (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/17051
+Created at: 2025-03-11T07:00:25Z, Merged at: 2025-03-14T03:28:17Z
+================================================================================
+PR #17046: [Improvement-17045][UI] copied task joined with underscore (State: open)
+URL: https://github.com/apache/dolphinscheduler/pull/17046
+Created at: 2025-03-07T01:55:26Z, Merged at: None
+================================================================================
+PR #17041: [Chore] Fix ci error (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/17041
+Created at: 2025-03-04T05:51:39Z, Merged at: 2025-03-06T01:39:57Z
+================================================================================
+PR #17039: [Fix-17036] Fix kerberos will not refresh in HdfsStorageOperator (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/17039
+Created at: 2025-03-03T15:19:58Z, Merged at: 2025-03-07T12:13:49Z
+================================================================================
+PR #17038: [Fix-17030] Fix one task might be duplicate trigger if exist multiple predecessors (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/17038
+Created at: 2025-03-03T14:56:03Z, Merged at: 2025-03-07T11:08:19Z
+================================================================================
+PR #17037: [DSIP-55][Master] Separate the waiting dispatched task into different queue by worker group (State: open)
+URL: https://github.com/apache/dolphinscheduler/pull/17037
+Created at: 2025-03-03T11:39:41Z, Merged at: None
+================================================================================
+PR #17034: 3.2.1 (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/17034
+Created at: 2025-02-28T08:31:02Z, Merged at: None
+================================================================================
+PR #17032: [Improvement-17010][DataX] Change datax_channel_count to a custom parameter (State: open)
+URL: https://github.com/apache/dolphinscheduler/pull/17032
+Created at: 2025-02-27T11:10:17Z, Merged at: None
+================================================================================
+PR #17029: [Improvement-17025][UI] optimize queryLog to avoid infinite recursive invoke (State: open)
+URL: https://github.com/apache/dolphinscheduler/pull/17029
+Created at: 2025-02-25T14:12:37Z, Merged at: None
+================================================================================
+PR #17028: [Fix-17022][tools] SQL syntax error at upgrade sql file in 3.2.0_schema (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/17028
+Created at: 2025-02-24T04:08:50Z, Merged at: 2025-02-24T10:02:38Z
+================================================================================
+PR #17027: [Chore] Add stale issue lables (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/17027
+Created at: 2025-02-23T02:46:15Z, Merged at: 2025-02-23T15:20:14Z
+================================================================================
+PR #17020: [Fix-17019][Task Api] Missing execute path in resource limit mode. (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/17020
+Created at: 2025-02-17T04:05:42Z, Merged at: 2025-02-24T03:48:44Z
+================================================================================
+PR #17008: [Chore] Fix workflow is offline can be trigger (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/17008
+Created at: 2025-02-10T14:37:34Z, Merged at: 2025-02-17T05:44:47Z
+================================================================================
+PR #17006: [Chore] Fix SensitiveDataConverter cannot work (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/17006
+Created at: 2025-02-08T11:41:54Z, Merged at: 2025-02-11T08:19:29Z
+================================================================================
+PR #17005: [Fix-17004] Fix process termination logic in cancelApplication method (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/17005
+Created at: 2025-02-08T08:15:29Z, Merged at: 2025-02-23T02:59:10Z
+================================================================================
+PR #17003: [Improvement-17001] Once workflow is not exist, delete scheduler task (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/17003
+Created at: 2025-02-07T12:24:35Z, Merged at: 2025-02-11T06:50:26Z
+================================================================================
+PR #17002: [Chore] Set update time when online/offline schedule (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/17002
+Created at: 2025-02-07T12:23:55Z, Merged at: 2025-02-09T13:41:56Z
+================================================================================
+PR #17000: [Improvement-16999] Fix SensitiveDataConverter cannot convert empty data (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/17000
+Created at: 2025-02-07T08:54:21Z, Merged at: 2025-02-08T07:20:30Z
+================================================================================
+PR #16998: [Fix-16991] Missing environmentConfig when retry/failover/recover task instance (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16998
+Created at: 2025-02-07T02:34:23Z, Merged at: 2025-02-07T04:09:17Z
+================================================================================
+PR #16995: [Fix-16990] Fix WorkflowExecutionGraph#isTaskFinish is not working correctly (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16995
+Created at: 2025-02-06T03:52:53Z, Merged at: 2025-02-07T02:42:03Z
+================================================================================
+PR #16993: [Feature-16992][dolphinscheduler-task-seatunnel] Implement added seatunnel configuration generation in the form mode (State: open)
+URL: https://github.com/apache/dolphinscheduler/pull/16993
+Created at: 2025-02-02T08:42:36Z, Merged at: None
+================================================================================
+PR #16989: [Fix-16627] [dolphinscheduler-api] LoginHandlerInterceptor.preHandle check session without expire time check (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16989
+Created at: 2025-01-26T02:42:39Z, Merged at: 2025-02-04T09:12:02Z
+================================================================================
+PR #16986: [Improvement-16985][Registry] SubscribeListener support set scope (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16986
+Created at: 2025-01-24T06:27:03Z, Merged at: 2025-02-04T09:53:34Z
+================================================================================
+PR #16983: [Improvement-16982][Master] When master startup, initialize the cluster from registry (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16983
+Created at: 2025-01-23T09:06:03Z, Merged at: 2025-01-24T06:15:52Z
+================================================================================
+PR #16980: [Fix-16978][Master] Fix AbstractDelayEvent compare method is incorrect (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16980
+Created at: 2025-01-23T05:47:37Z, Merged at: 2025-01-29T02:13:07Z
+================================================================================
+PR #16973: [Fix-16972] update maven-resources-plugin to 3.3.0 (#16972) (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16973
+Created at: 2025-01-22T07:21:22Z, Merged at: None
+================================================================================
+PR #16969: [Chore] python gateway unable to execute workflow (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16969
+Created at: 2025-01-22T02:47:14Z, Merged at: 2025-01-22T11:17:22Z
+================================================================================
+PR #16968: [Fix-16903] Fix monitor page cannot display well (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16968
+Created at: 2025-01-21T12:06:39Z, Merged at: 2025-01-24T00:56:55Z
+================================================================================
+PR #16962: [DSIP-83][datasource-plugin] Add DolphinDB datasource (State: open)
+URL: https://github.com/apache/dolphinscheduler/pull/16962
+Created at: 2025-01-15T06:16:13Z, Merged at: None
+================================================================================
+PR #16957: [Chore] Remove unused alert.rpc.port in common.properties (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16957
+Created at: 2025-01-13T07:49:50Z, Merged at: 2025-01-13T10:18:59Z
+================================================================================
+PR #16953: [Fix-16942] Fix global master failover might cause master dead (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16953
+Created at: 2025-01-10T06:21:27Z, Merged at: 2025-01-10T08:58:04Z
+================================================================================
+PR #16952: add korean i18n (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16952
+Created at: 2025-01-10T05:57:15Z, Merged at: None
+================================================================================
+PR #16947: [Improvement-16947][UI] Task instance log details should always stay at the bottom (State: open)
+URL: https://github.com/apache/dolphinscheduler/pull/16947
+Created at: 2025-01-07T09:04:08Z, Merged at: None
+================================================================================
+PR #16941: [Fix-16940] Fix incorrect docs link in priority parameter (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16941
+Created at: 2025-01-02T07:45:55Z, Merged at: 2025-01-02T11:14:08Z
+================================================================================
+PR #16939: [Fix-16934][api] When creating workflows containing switch nodes in different orders, the copied workflows may lose associations. (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16939
+Created at: 2025-01-02T03:34:10Z, Merged at: 2025-01-17T06:44:07Z
+================================================================================
+PR #16936: [Fix-16935][Doc] fix typos in `PULL_REQUEST_TEMPLATE.md` (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16936
+Created at: 2024-12-30T08:57:51Z, Merged at: 2024-12-30T10:05:33Z
+================================================================================
+PR #16933: [Fix-16540][Task Plugin] Updated the `TaskExecutionContext` to pass OUT parameters to the next node (State: open)
+URL: https://github.com/apache/dolphinscheduler/pull/16933
+Created at: 2024-12-30T05:08:45Z, Merged at: None
+================================================================================
+PR #16925: [Chore] Remove unused step in development-environment-setup.md (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16925
+Created at: 2024-12-25T11:06:45Z, Merged at: 2024-12-26T02:11:08Z
+================================================================================
+PR #16923: [Fix-16918][Task] Fix wrong permissions configuration while executing shell  (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16923
+Created at: 2024-12-25T07:37:32Z, Merged at: 2025-01-08T05:45:13Z
+================================================================================
+PR #16922: [Improvement-16920][UI] Release workflow definition process improvement (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16922
+Created at: 2024-12-25T07:22:19Z, Merged at: 2024-12-27T07:11:12Z
+================================================================================
+PR #16916: [Fix-16914] [Task] ParameterUtils will throw exception when the input contains '$[xx]' (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16916
+Created at: 2024-12-23T12:56:40Z, Merged at: 2024-12-24T09:05:38Z
+================================================================================
+PR #16911: [Fix-16900][api] fix when the copied workflow, the logical node switch loses the flow relationship (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16911
+Created at: 2024-12-23T08:17:09Z, Merged at: 2024-12-30T02:09:38Z
+================================================================================
+PR #16910: [Improvement-16887][Dependent Task] Dependent task improvement (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16910
+Created at: 2024-12-21T12:05:00Z, Merged at: 2025-01-02T09:03:25Z
+================================================================================
+PR #16909: [Fix-16906] Fix tenant has no permission to execute kill command (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16909
+Created at: 2024-12-19T15:41:19Z, Merged at: 2024-12-21T13:11:50Z
+================================================================================
+PR #16908: [Improvement-16907][Master] Response for stop/pasue event when workflow instance statue is ready_stop/ready_pause (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16908
+Created at: 2024-12-19T15:15:48Z, Merged at: 2024-12-25T05:54:44Z
+================================================================================
+PR #16904: [Fix-16905][Alert] Fix incorrect log description in AlertHeartbeatTask (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16904
+Created at: 2024-12-19T04:12:56Z, Merged at: 2024-12-20T02:31:36Z
+================================================================================
+PR #16902: [Chore] Remove unused utils in common module (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16902
+Created at: 2024-12-18T13:46:13Z, Merged at: 2024-12-19T03:09:06Z
+================================================================================
+PR #16899: [Improvement-16870][RPC] Support retry configuration in rpc module (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16899
+Created at: 2024-12-17T15:29:44Z, Merged at: 2024-12-19T01:24:52Z
+================================================================================
+PR #16898: Fix the issue where "remaining connection slots are reserved for non-replication superuser connections" occasionally occurs (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16898
+Created at: 2024-12-16T10:06:11Z, Merged at: None
+================================================================================
+PR #16894: [Chore] Fix JdbcRegistryTestCase might failed due to purge dead clients interval is too small (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16894
+Created at: 2024-12-12T06:23:31Z, Merged at: 2024-12-13T03:43:20Z
+================================================================================
+PR #16893: [Chore] Fix StopWorkflowInstanceExecuteFunctionTest failed on Locale.SIMPLIFIED_CHINESE (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16893
+Created at: 2024-12-12T05:43:20Z, Merged at: 2024-12-16T05:46:16Z
+================================================================================
+PR #16892: [DSIP-87] Remove cache configuration of task (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16892
+Created at: 2024-12-11T15:14:34Z, Merged at: 2024-12-16T06:27:07Z
+================================================================================
+PR #16890: [Chore] Update home.png in read.md (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16890
+Created at: 2024-12-11T14:30:49Z, Merged at: 2024-12-16T02:55:07Z
+================================================================================
+PR #16885: [Fix-16884] Using transaction when fetch command to avoid fetch command from slave database (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16885
+Created at: 2024-12-06T10:37:41Z, Merged at: 2024-12-08T11:47:50Z
+================================================================================
+PR #16883: [Improvement-16880] Merge worker group from config and ui and distinct display it in api  (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16883
+Created at: 2024-12-06T06:22:49Z, Merged at: 2024-12-09T05:27:24Z
+================================================================================
+PR #16881: [Chore] Remove unused JDBCDataSourceProvider (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16881
+Created at: 2024-12-06T04:05:46Z, Merged at: 2024-12-07T10:47:31Z
+================================================================================
+PR #16877: [Chore] Remove unused closeAlert (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16877
+Created at: 2024-12-04T11:43:08Z, Merged at: 2024-12-05T02:54:20Z
+================================================================================
+PR #16875: [Feature-16834] Start worker node with worker group label (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16875
+Created at: 2024-12-04T07:15:19Z, Merged at: 2024-12-06T03:01:39Z
+================================================================================
+PR #16873: [Improvement-16872][Master] Select a coordinator from masters to wake up task group (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16873
+Created at: 2024-12-03T12:44:00Z, Merged at: 2024-12-18T12:03:00Z
+================================================================================
+PR #16869: [Improvement-16867] Add project_code index on t_ds_workflow_definition (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16869
+Created at: 2024-12-03T02:24:35Z, Merged at: 2024-12-03T05:54:55Z
+================================================================================
+PR #16863: [DSIP-79][Task] Add datavines task for data quality (State: open)
+URL: https://github.com/apache/dolphinscheduler/pull/16863
+Created at: 2024-12-01T02:49:28Z, Merged at: None
+================================================================================
+PR #16861: [fix-16859] Fix when complement data,Extended Built-in Param… (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16861
+Created at: 2024-11-29T11:38:10Z, Merged at: None
+================================================================================
+PR #16860: [Improvement-16850][API] Broadcast to cluster when worker group changed (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16860
+Created at: 2024-11-29T10:40:22Z, Merged at: 2024-12-03T07:36:28Z
+================================================================================
+PR #16858: [Fix-16437][Dynamic] Dynamic task unable to execute and may generate multiple workflow instances (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16858
+Created at: 2024-11-29T09:50:54Z, Merged at: None
+================================================================================
+PR #16851: [Fix-16849] load-balance configuration documentation description issue (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16851
+Created at: 2024-11-28T01:13:15Z, Merged at: 2024-12-02T02:06:46Z
+================================================================================
+PR #16847: [Chore] Add flame diagram in CI (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16847
+Created at: 2024-11-27T01:38:22Z, Merged at: 2024-11-27T11:08:09Z
+================================================================================
+PR #16846: [Chore] Remove unused class in dolphinscheduler-service (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16846
+Created at: 2024-11-26T15:25:48Z, Merged at: 2024-11-27T09:00:37Z
+================================================================================
+PR #16844: [DSIP-84][Feature] Add Caché datasource support (#16833) (State: open)
+URL: https://github.com/apache/dolphinscheduler/pull/16844
+Created at: 2024-11-26T02:58:26Z, Merged at: None
+================================================================================
+PR #16842: [DSIP-72][Dynamic Task] Remove dynamic task type (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16842
+Created at: 2024-11-25T09:15:03Z, Merged at: 2024-12-05T07:09:27Z
+================================================================================
+PR #16838: [DSIP-38] Optimize dependency tree (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16838
+Created at: 2024-11-25T06:14:39Z, Merged at: 2024-11-26T09:45:07Z
+================================================================================
+PR #16837: [Fix-16811] [JdbcRegistry] Clear the jdbc EPHEMERAL data and lock which client is not exist (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16837
+Created at: 2024-11-23T23:36:31Z, Merged at: 2024-11-26T13:23:07Z
+================================================================================
+PR #16836: [Improvement-16835][Worker] Clear empty directory under task working path after task instance finish (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16836
+Created at: 2024-11-22T09:12:03Z, Merged at: 2024-11-26T02:19:22Z
+================================================================================
+PR #16829: [Improvement-16758][Deploy] Record the fatal error Log (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16829
+Created at: 2024-11-21T02:39:48Z, Merged at: 2024-11-21T11:54:37Z
+================================================================================
+PR #16826: [Improvement-16106] Add admin-user-filter in LDAP (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16826
+Created at: 2024-11-20T07:02:30Z, Merged at: 2024-11-22T09:39:18Z
+================================================================================
+PR #16824: [Fix-16820][Alert] fix alert status after alert sent by AlertSender (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16824
+Created at: 2024-11-20T03:38:01Z, Merged at: 2024-11-20T09:41:58Z
+================================================================================
+PR #16821: [DSIP-82][Master/Worker] Use FAILOVER_FINISH_NODES to avoid duplicate workflow/task when failover (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16821
+Created at: 2024-11-19T15:22:02Z, Merged at: 2024-11-20T08:04:12Z
+================================================================================
+PR #16814: [Fix-16813] Missing implememts in isTaskExecutionRunnableForbidden (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16814
+Created at: 2024-11-18T03:03:22Z, Merged at: 2024-11-18T11:20:11Z
+================================================================================
+PR #16810: [Improvement-16809] Optimize the AbstractHAServer implementation (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16810
+Created at: 2024-11-15T10:12:17Z, Merged at: 2024-11-18T01:21:05Z
+================================================================================
+PR #16808: [Improvement-16807][UI] Optimize Statistics international display (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16808
+Created at: 2024-11-15T08:53:47Z, Merged at: 2024-11-18T02:48:43Z
+================================================================================
+PR #16803: [Feature-16801][UI] Add copy path of resource file in task definition (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16803
+Created at: 2024-11-15T06:26:03Z, Merged at: 2024-11-18T09:12:19Z
+================================================================================
+PR #16799: [Fix-16331] Fix the resource file cannot be displayed hierarchically (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16799
+Created at: 2024-11-14T02:29:45Z, Merged at: 2024-11-15T04:13:33Z
+================================================================================
+PR #16796: [Fix-16793] WorkerGroupChangeNotifier may can not detect cluster's first time change (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16796
+Created at: 2024-11-13T03:12:24Z, Merged at: 2024-11-14T05:49:56Z
+================================================================================
+PR #16795: [Fix-16793] WorkerGroupChangeNotifier may can not detect cluster's first time change (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16795
+Created at: 2024-11-13T02:32:31Z, Merged at: None
+================================================================================
+PR #16794: [DSIP-78][Data Quality] Remove data quality module (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16794
+Created at: 2024-11-13T02:12:04Z, Merged at: 2024-11-20T01:20:41Z
+================================================================================
+PR #16792: Fix the issue of failing to retrieve logs for K8S tasks. (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16792
+Created at: 2024-11-12T09:31:03Z, Merged at: None
+================================================================================
+PR #16790: [DSIP-73] Add dolphinscheduler-task-executor module to unify the task execution logic (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16790
+Created at: 2024-11-11T14:30:57Z, Merged at: 2024-11-29T07:25:54Z
+================================================================================
+PR #16788: [Improvement-16757][Deploy] Avoid overwrite gc log (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16788
+Created at: 2024-11-07T05:03:10Z, Merged at: 2024-11-07T12:24:41Z
+================================================================================
+PR #16787: [Fix-16786][Datasource] Fix jdbc connect parameters json validation question (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16787
+Created at: 2024-11-07T03:18:41Z, Merged at: 2024-11-08T02:51:21Z
+================================================================================
+PR #16784: [Fix-16783][Datasource] Fix switching multiple data sources, displaying field errors (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16784
+Created at: 2024-11-07T02:07:20Z, Merged at: 2024-11-11T06:03:21Z
+================================================================================
+PR #16782: test (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16782
+Created at: 2024-11-06T13:59:20Z, Merged at: None
+================================================================================
+PR #16780: [Doc-16779] update seatunnel link (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16780
+Created at: 2024-11-06T06:54:16Z, Merged at: 2024-11-06T08:58:27Z
+================================================================================
+PR #16776: [Fix-16768] Add `scheduleTime` parameter to sub-workflow instance. (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16776
+Created at: 2024-11-06T04:12:25Z, Merged at: None
+================================================================================
+PR #16775: [Improvement-16773][Parameter] Create project parameters-Field modify user adds default value (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16775
+Created at: 2024-11-06T04:06:26Z, Merged at: 2024-11-07T06:46:22Z
+================================================================================
+PR #16771: [Fix-16770] [Workflow State Statistics] Fix workflow state statistics status shows error (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16771
+Created at: 2024-11-05T08:34:36Z, Merged at: 2024-11-06T06:39:40Z
+================================================================================
+PR #16769: [Improvement-16802][UI] use relative width for task editor (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16769
+Created at: 2024-11-05T06:44:49Z, Merged at: 2024-11-16T10:22:22Z
+================================================================================
+PR #16763: [Fix-16764] Tasks dispatched failed weren't delayed properly as documented in GlobalTaskDispatchWaitingQueueLooper (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16763
+Created at: 2024-11-05T02:36:14Z, Merged at: 2024-11-05T07:19:43Z
+================================================================================
+PR #16762: [Chore][doc] Correct typos (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16762
+Created at: 2024-11-04T13:54:01Z, Merged at: 2024-11-15T04:46:36Z
+================================================================================
+PR #16756: [Improvement-16746][seatunnel] pass user defined task parameter to seatunnel (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16756
+Created at: 2024-10-31T07:25:46Z, Merged at: 2024-11-05T09:23:30Z
+================================================================================
+PR #16751: [Fix-16517][Alert Instance] Alert plugin instance i18n wrong result in rendering frontend ui (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16751
+Created at: 2024-10-30T10:41:24Z, Merged at: 2024-11-05T06:31:22Z
+================================================================================
+PR #16741: [Fix-16740][SeaTunnel-Task] fix can't submit resource center config file issue (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16741
+Created at: 2024-10-25T10:15:05Z, Merged at: 2024-10-31T13:29:16Z
+================================================================================
+PR #16733: [Doc-16732][Development] development-environment-setup improvement (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16733
+Created at: 2024-10-24T05:42:59Z, Merged at: 2024-10-25T01:55:56Z
+================================================================================
+PR #16726: Cluster e2e (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16726
+Created at: 2024-10-23T01:37:01Z, Merged at: None
+================================================================================
+PR #16715: [Fix-16705] [Built-in Parameter] Fix project name and definition name variable parameter not resolved (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16715
+Created at: 2024-10-21T02:10:26Z, Merged at: 2024-10-25T07:29:57Z
+================================================================================
+PR #16712: [DSIP-16479][Master] Add more workflow Integration test cases in master. (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16712
+Created at: 2024-10-20T08:37:50Z, Merged at: None
+================================================================================
+PR #16711: [Improvement-16725][Master] Add more workflow Integration test cases in master. (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16711
+Created at: 2024-10-20T08:14:29Z, Merged at: None
+================================================================================
+PR #16708: [CI] [Hotfix] Fix docs dead link error (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16708
+Created at: 2024-10-18T07:32:03Z, Merged at: 2024-10-18T11:00:42Z
+================================================================================
+PR #16703: [Feature-16699][Task Plugin] Flink submit option parameter supports placeholder substitution (State: open)
+URL: https://github.com/apache/dolphinscheduler/pull/16703
+Created at: 2024-10-17T07:10:20Z, Merged at: None
+================================================================================
+PR #16701: [Fix-16700] [doc] The Vertica datasource is under "Introduction to Function" (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16701
+Created at: 2024-10-17T01:21:47Z, Merged at: 2024-10-18T23:50:43Z
+================================================================================
+PR #16693: [Fix-16692][Doc] Incorrect docs of howto (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16693
+Created at: 2024-10-14T05:57:03Z, Merged at: 2024-10-14T11:59:18Z
+================================================================================
+PR #16683: [Fix-16682][ApiServer] like query with % support special characher(% \ _) (State: open)
+URL: https://github.com/apache/dolphinscheduler/pull/16683
+Created at: 2024-10-10T03:55:31Z, Merged at: None
+================================================================================
+PR #16681: [Fix-16680][ApiServer] Query project list paging error (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16681
+Created at: 2024-10-10T03:09:41Z, Merged at: 2024-10-12T00:54:03Z
+================================================================================
+PR #16673: [DSIP-76] Support ssl in netty (State: open)
+URL: https://github.com/apache/dolphinscheduler/pull/16673
+Created at: 2024-09-27T12:39:33Z, Merged at: None
+================================================================================
+PR #16669: [Fix-16668][api-server] Fix SSO login bug (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16669
+Created at: 2024-09-27T02:13:47Z, Merged at: None
+================================================================================
+PR #16667: [Chore] Fix publish docker error in CI (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16667
+Created at: 2024-09-27T02:08:43Z, Merged at: 2024-09-27T07:38:12Z
+================================================================================
+PR #16666: [Fix-16655][Doc] Fix the missing document (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16666
+Created at: 2024-09-26T09:19:42Z, Merged at: 2024-09-26T14:37:35Z
+================================================================================
+PR #16664: [Chore] Fix SSO login bug (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16664
+Created at: 2024-09-26T08:57:42Z, Merged at: None
+================================================================================
+PR #16663: [Fix-bug][api] Fix SSO login bug (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16663
+Created at: 2024-09-26T08:55:27Z, Merged at: None
+================================================================================
+PR #16662: [Fix-bug] SSO login dialog: State or code entered incorrectly (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16662
+Created at: 2024-09-26T08:53:07Z, Merged at: None
+================================================================================
+PR #16660: [Fix] fix SSO login bug (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16660
+Created at: 2024-09-26T08:48:40Z, Merged at: None
+================================================================================
+PR #16659:  [Feature-16658][RPC] Implement of Netty add ssl  (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16659
+Created at: 2024-09-26T07:56:56Z, Merged at: None
+================================================================================
+PR #16657: [Improvement-16657][DOC] Update datasource-setting.md (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16657
+Created at: 2024-09-26T06:10:18Z, Merged at: None
+================================================================================
+PR #16654: [DSIP-38] Support upload/download plugins from maven repo (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16654
+Created at: 2024-09-24T09:30:18Z, Merged at: 2024-09-26T06:39:15Z
+================================================================================
+PR #16652: [Fix-16650] Memory leaks in KubernetesApplicationManager (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16652
+Created at: 2024-09-24T06:04:59Z, Merged at: 2024-09-26T12:27:51Z
+================================================================================
+PR #16648: [Improvement-16647][UI][Workflow Instance] Remove deprecated workflow execution states (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16648
+Created at: 2024-09-23T02:48:04Z, Merged at: 2024-10-04T04:37:18Z
+================================================================================
+PR #16643: [DSIP-75] Support auto add license header by spotless (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16643
+Created at: 2024-09-21T07:36:34Z, Merged at: 2024-09-22T08:27:30Z
+================================================================================
+PR #16640: [Improvement-16641] Add thread name in logback (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16640
+Created at: 2024-09-21T04:43:21Z, Merged at: 2024-09-21T06:37:43Z
+================================================================================
+PR #16639: [Chore] Remove maven-javadoc-plugin (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16639
+Created at: 2024-09-21T03:50:03Z, Merged at: 2024-09-21T08:09:29Z
+================================================================================
+PR #16637: [Fix-16338][Test] Fix Master integration test case has been skipped in ci (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16637
+Created at: 2024-09-20T12:40:55Z, Merged at: 2024-09-21T07:31:14Z
+================================================================================
+PR #16636: [Improvement-16635] Using Docker Hub in Schema Check CI (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16636
+Created at: 2024-09-20T06:18:11Z, Merged at: 2024-09-22T02:45:05Z
+================================================================================
+PR #16633: [Chore][CI][Hotfix] Fix sqlserver e2e test ci error (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16633
+Created at: 2024-09-19T07:52:15Z, Merged at: 2024-09-19T13:54:15Z
+================================================================================
+PR #16630: [Fix-16629][UI][Workflow Instance] fix status display error (State: closed)
+URL: https://github.com/apache/dolphinscheduler/pull/16630
+Created at: 2024-09-19T03:35:56Z, Merged at: 2024-09-19T14:29:34Z
+================================================================================
