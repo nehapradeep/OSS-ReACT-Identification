@@ -55,7 +55,7 @@ Additionally, we expanded our dataset to include the ten most popular projects f
    ```
 3. Run the analysis:
    ```sh
-  ./reactAnalysis.sh <project_name> <repo_creation_timestamp>
+   ./reactAnalysis.sh <project_name> <repo_creation_timestamp>
    ```
 
 ## Results
